@@ -1,0 +1,97 @@
+site_name: Azure Synapse Analytics Documentation
+site_description: Comprehensive documentation for Azure Synapse Analytics focusing on Spark Delta Lakehouse and Serverless SQL features
+site_author: Microsoft CSA Team
+site_url: https://microsoft.github.io/csa-inabox-docs
+
+repo_name: fgarofalo56/csa-inabox-docs
+repo_url: https://github.com/fgarofalo56/csa-inabox-docs
+
+copyright: Copyright &copy; 2025 Microsoft
+
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.tabs.link
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+  logo: docs/diagrams/microsoft-logo.png
+  favicon: docs/diagrams/favicon.ico
+  custom_dir: docs/overrides
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: "\n```\n{content}\n```\n"
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: "twemoji"
+      emoji_generator: "to_svg"
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Architecture:
+    - architecture/index.md
+    - Delta Lakehouse: 
+      - architecture/delta-lakehouse/index.md
+    - Serverless SQL: 
+      - architecture/serverless-sql/index.md
+    - Shared Metadata: 
+      - architecture/shared-metadata/index.md
+  - Best Practices:
+    - best-practices/index.md
+    - Performance: best-practices/performance.md
+    - Security: best-practices/security.md
+    - Cost Optimization: best-practices/cost-optimization.md
+    - Data Governance: best-practices/data-governance.md
+  - Code Examples:
+    - code-examples/index.md
+  - Reference:
+    - reference/index.md
+  - FAQ: faq.md
+  - Troubleshooting: troubleshooting.md
+  
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/fgarofalo56/csa-inabox-docs
+    - icon: fontawesome/brands/microsoft
+      link: https://azure.microsoft.com/en-us/services/synapse-analytics/
+  version:
+    provider: mike
+    default: latest
+  css:
+    - assets/stylesheets/extra.css
+  javascript:
+    - assets/javascripts/extra.js

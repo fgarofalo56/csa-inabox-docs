@@ -4,6 +4,82 @@
 
 This repository contains comprehensive technical documentation for Azure Synapse Analytics, focusing primarily on Spark Delta Lakehouse and Serverless SQL capabilities. The documentation is designed for data engineers, data architects, and developers who are implementing or maintaining Azure Synapse Analytics solutions.
 
+## Getting Started
+
+### For Documentation Users
+
+New to Azure Synapse Analytics? Here are the recommended entry points:
+
+1. **For architects**: Start with the [Architecture Documentation](./docs/architecture/index.md) to understand the overall architecture patterns.
+
+2. **For developers**: Check out the [Code Examples](./docs/code-examples/index.md) for practical implementation guidance.
+
+3. **For operations**: Review the [Best Practices](./docs/best-practices/index.md) for optimization and maintenance recommendations.
+
+4. **For security specialists**: Focus on the [Security Best Practices](./docs/best-practices/security.md) documentation.
+
+### For Documentation Contributors
+
+#### Prerequisites
+
+- Python 3.8 or higher
+- Git
+
+#### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/fgarofalo56/csa-inabox-docs.git
+   cd csa-inabox-docs
+   ```
+
+2. Install required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+#### Serving Documentation Locally
+
+To preview the documentation site locally:
+
+```bash
+python project-planning/tools/serve-docs.py
+```
+
+This will start the MkDocs development server and automatically open the site in your default browser at [http://localhost:8000](http://localhost:8000).
+
+Alternatively, you can use MkDocs directly:
+
+```bash
+mkdocs serve
+```
+
+#### Managing Documentation Versions
+
+This project uses `mike` for documentation versioning. The versioning tool script provides a convenient interface:
+
+```bash
+# Create a new version
+python project-planning/tools/version-docs.py create <version> [--alias <alias>] [--title <title>]
+
+# Add an alias to an existing version
+python project-planning/tools/version-docs.py alias <version> <alias>
+
+# List all versions
+python project-planning/tools/version-docs.py list
+
+# Delete a version
+python project-planning/tools/version-docs.py delete <version>
+```
+
+Example:
+
+```bash
+python project-planning/tools/version-docs.py create 1.0.0 --alias latest --title "Version 1.0.0"
+```
+
 ## Documentation Structure
 
 The documentation is organized into the following key areas:
@@ -56,26 +132,25 @@ Visual representations of architecture, data flows, and processes:
 - [Process flow diagrams](./docs/diagrams/index.md#process-flow-diagrams)
 - [Integration patterns](./docs/diagrams/index.md#integration-patterns)
 
-## Getting Started
-
-New to Azure Synapse Analytics? Here are the recommended entry points:
-
-1. **For architects**: Start with the [Architecture Documentation](./docs/architecture/index.md) to understand the overall architecture patterns.
-
-2. **For developers**: Check out the [Code Examples](./docs/code-examples/index.md) for practical implementation guidance.
-
-3. **For operations**: Review the [Best Practices](./docs/best-practices/index.md) for optimization and maintenance recommendations.
-
-4. **For security specialists**: Focus on the [Security Best Practices](./docs/best-practices/security.md) documentation.
-
 ## Contributing
 
-This documentation is maintained following specific guidelines:
+We welcome contributions to improve this documentation. Please follow these guidelines:
 
-1. All documentation is in Markdown format
-2. Architecture diagrams follow a consistent style and naming convention
-3. Code examples include comments and follow style guidelines
-4. All technical claims are verified with references
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature-name`)
+3. Make your changes
+4. Run the documentation locally to verify your changes
+5. Commit your changes with descriptive commit messages
+6. Push to your branch
+7. Create a Pull Request
+
+### Style Guidelines
+
+- Follow markdown best practices
+- Use consistent heading structure
+- Include diagrams where appropriate (stored in the `/docs/diagrams` directory)
+- Provide code examples with proper syntax highlighting
+- All technical claims should be verified with references
 
 For more information on contributing, see:
 
@@ -84,18 +159,18 @@ For more information on contributing, see:
 - [Changelog](./project-planning/CHANGELOG.md)
 - [Project Context](./.ai-context)
 
-## Additional Resources
+## Continuous Integration and Deployment
 
-- [Azure Synapse Analytics Official Documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/)
-- [Delta Lake Documentation](https://docs.delta.io/latest/index.html)
-- [Azure Synapse Analytics Pricing](https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/)
-- [Azure Synapse Analytics Blog](https://techcommunity.microsoft.com/t5/azure-synapse-analytics-blog/bg-p/AzureSynapseAnalyticsBlog)
+This project uses GitHub Actions for CI/CD:
 
-## Changelog
+- **Documentation Deployment**: The documentation is automatically built and deployed when changes are pushed to the main branch
+- **Versioning**: Documentation versions are managed through the `mike` tool and deployed to GitHub Pages
 
-For details on updates and changes to this documentation, see the [CHANGELOG](./project-planning/CHANGELOG.md).
+### GitHub Workflows
 
-## Documentation Map
+- `.github/workflows/deploy-docs.yml`: Builds and deploys the documentation site
+
+## Project Organization
 
 ```text
 Azure Synapse Analytics Documentation
@@ -123,19 +198,41 @@ Azure Synapse Analytics Documentation
 │   │   └── index.md
 │   └── shared-metadata/
 │       └── index.md
+├── assets/
+│   ├── stylesheets/
+│   │   └── extra.css
+│   └── javascripts/
+│       └── extra.js
+├── overrides/
+│   └── main.html
+├── .github/
+│   └── workflows/
+│       └── deploy-docs.yml
 ├── .ai-context
+├── .mike.yml
 ├── LICENSE
 ├── README.md
+├── mkdocs.yml
+├── requirements.txt
 └── project-planning/
     ├── CHANGELOG.md
     ├── PLANNING.md
-    ├── ROADMAP.md
     ├── TASK.md
-    ├── link_check_report.md
     └── tools/
-        ├── README.md
-        └── link_checker.py
+        ├── serve-docs.py
+        └── version-docs.py
 ```
+
+## Additional Resources
+
+- [Azure Synapse Analytics Official Documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/)
+- [Delta Lake Documentation](https://docs.delta.io/latest/index.html)
+- [Azure Synapse Analytics Pricing](https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/)
+- [Azure Synapse Analytics Blog](https://techcommunity.microsoft.com/t5/azure-synapse-analytics-blog/bg-p/AzureSynapseAnalyticsBlog)
+
+## Changelog
+
+For details on updates and changes to this documentation, see the [CHANGELOG](./project-planning/CHANGELOG.md).
 
 ## License
 

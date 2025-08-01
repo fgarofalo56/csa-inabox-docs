@@ -1,0 +1,5 @@
+# Mike configuration for versioned documentation
+alias_type: symlink
+redirect_template: null
+deploy_prefix: ''
+versions_file: versions.json
