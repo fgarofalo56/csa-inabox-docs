@@ -1,6 +1,6 @@
 # Link Check Report
 
-Generated on: 2025-08-01 10:50:17
+Generated on: 2025-08-01 16:28:47
 
 ## Summary
 
@@ -12,20 +12,20 @@ Generated on: 2025-08-01 10:50:17
 
 | File | Link |
 |------|------|
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\architecture\delta-lakehouse-overview.md | ../serverless-sql/index.md |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\architecture\delta-lakehouse-overview.md | ../shared-metadata/index.md |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\diagrams\index.md | ./delta-lakehouse-architecture.png |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\diagrams\index.md | ./serverless-sql-architecture.png |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\architecture\delta-lakehouse-overview.md | ../../best-practices/index.md |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\diagrams\index.md | ./shared-metadata-architecture.png |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\architecture\delta-lakehouse-overview.md | ../../code-examples/index.md |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\README.md | LICENSE |
+| S:\Repos\GitHub\csa-inabox-docs\docs\architecture\delta-lakehouse-overview.md | ../../best-practices/index.md |
+| S:\Repos\GitHub\csa-inabox-docs\docs\architecture\delta-lakehouse-overview.md | ../../code-examples/index.md |
+| S:\Repos\GitHub\csa-inabox-docs\docs\serverless-sql\index.md | /diagrams/serverless-sql-architecture.png |
+| S:\Repos\GitHub\csa-inabox-docs\docs\shared-metadata\index.md | /diagrams/shared-metadata-architecture.png |
+| S:\Repos\GitHub\csa-inabox-docs\docs\shared-metadata\index.md | [TenantId] |
+| S:\Repos\GitHub\csa-inabox-docs\docs\shared-metadata\index.md | [CustomerId], |
+| S:\Repos\GitHub\csa-inabox-docs\docs\shared-metadata\index.md | [Email] |
+| S:\Repos\GitHub\csa-inabox-docs\docs\architecture\delta-lakehouse\index.md | ../../assets/images/delta-lakehouse-diagram.png |
 
 ## Broken External Links
 
 | File | URL |
 |------|-----|
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\best-practices\security.md | https://docs.microsoft.com/en-us/azure/synapse-analytics/security/overview |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\reference\index.md | https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-api |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\docs\reference\index.md | https://docs.microsoft.com/en-us/rest/api/synapse/sql |
-| S:\Repos\GitHub\csa-inabox-docs\CascadeProjects\windsurf-project\README.md | https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/ |
+| S:\Repos\GitHub\csa-inabox-docs\docs\best-practices\security.md | https://learn.microsoft.com/en-us/azure/synapse-analytics/security/overview |
+| S:\Repos\GitHub\csa-inabox-docs\docs\troubleshooting.md | https://azure.microsoft.com/en-us/support/create-ticket/ |
+| S:\Repos\GitHub\csa-inabox-docs\README.md | http://localhost:8000 |
+| S:\Repos\GitHub\csa-inabox-docs\README.md | https://azure.microsoft.com/en-us/pricing/details/synapse-analytics/ |

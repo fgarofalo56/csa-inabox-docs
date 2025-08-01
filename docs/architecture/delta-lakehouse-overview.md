@@ -1,8 +1,9 @@
-[Home](/README.md) > [Architecture](./index.md) > Delta Lakehouse Overview
-
 # Azure Synapse Analytics Delta Lakehouse Architecture
 
+[Home](/README.md) > [Architecture](./index.md) > Delta Lakehouse Overview
+
 ## Overview
+
 Azure Synapse Analytics Delta Lakehouse is a unified analytics platform that combines the best of data warehousing and big data processing. This architecture enables organizations to build a modern data architecture that supports both analytics and operational workloads.
 
 ## Key Components
@@ -59,18 +60,21 @@ graph TD
 ## Key Features
 
 ### 1. Schema Management
+
 - Schema enforcement
 - Schema evolution
 - Version control
 - Time travel capabilities
 
 ### 2. Performance Optimization
+
 - Data skipping
 - Z-ordering
 - Clustering
 - Statistics collection
 
 ### 3. Security
+
 - Role-based access control
 - Row-level security
 - Data masking
@@ -79,25 +83,29 @@ graph TD
 ## Best Practices
 
 ### Storage Organization
+
 - Use hierarchical folder structure
 - Implement proper partitioning
 - Regularly optimize files
 - Use appropriate file sizes
 
 ### Schema Design
+
 - Start with a flexible schema
 - Plan for schema evolution
 - Use appropriate data types
 - Implement proper indexing
 
 ### Performance
+
 - Use appropriate partitioning
 - Implement proper bucketing
 - Use Z-ordering for queries
 - Regularly optimize files
 
 ## Next Steps
+
 1. [Serverless SQL Architecture](../serverless-sql/index.md)
 2. [Shared Metadata Architecture](../shared-metadata/index.md)
-3. [Best Practices](../../best-practices/index.md)
-4. [Code Examples](../../code-examples/index.md)
+3. [Best Practices](/docs/best-practices/index.md)
+4. [Code Examples](/docs/code-examples/index.md)
