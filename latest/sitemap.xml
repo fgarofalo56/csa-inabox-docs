@@ -71,6 +71,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/latest/assets/images/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/latest/best-practices/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
