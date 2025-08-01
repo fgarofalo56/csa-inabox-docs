@@ -1,0 +1,87 @@
+name: Link Checker
+
+on:
+  # Run on push to main branch
+  push:
+    branches: [main]
+  # Run on pull requests
+  pull_request:
+    branches: [main]
+  # Run on a schedule (weekly on Monday at 9:00 AM)
+  schedule:
+    - cron: '0 9 * * 1'
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+          
+      - name: Run link checker
+        run: |
+          python project-planning/tools/link_checker.py .
+          
+      - name: Upload link check report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: link-check-report
+          path: project-planning/link_check_report.md
+          
+      - name: Create or update issue on broken links
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            
+            // Read the link check report
+            const reportContent = fs.readFileSync('project-planning/link_check_report.md', 'utf8');
+            
+            // Search for existing open issues about broken links
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: ['broken-links']
+            });
+            
+            const issueTitle = '🔗 Broken Links Detected';
+            const issueBody = `## Broken Links Report\n\nThe link checker has detected broken links in the documentation.\n\n${reportContent}\n\nPlease fix these links to ensure documentation integrity.`;
+            
+            if (issues.data.length > 0) {
+              // Update existing issue
+              const issue = issues.data[0];
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: issueBody
+              });
+              console.log(`Updated existing issue #${issue.number}`);
+            } else {
+              // Create new issue
+              const newIssue = await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: issueTitle,
+                body: issueBody,
+                labels: ['broken-links', 'documentation', 'bug']
+              });
+              console.log(`Created new issue #${newIssue.data.number}`);
+            }

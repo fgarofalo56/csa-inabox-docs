@@ -1,0 +1,52 @@
+# Azure Synapse Analytics Documentation Project
+
+## Project Context
+This documentation project covers Azure Synapse Analytics, focusing on Delta Lakehouse and Serverless SQL components. The project uses a structured approach to technical documentation with specific patterns and standards.
+
+## Key Decisions
+
+### Documentation Structure
+- Using a hierarchical structure with architecture, best-practices, code-examples, diagrams, and reference sections
+- All documentation files are in Markdown format for maximum compatibility and ease of maintenance
+- Planning files are kept in a separate project-planning directory
+
+### Content Standards
+- Technical accuracy prioritized with code examples for all key concepts
+- Diagrams included for visual representation of architecture and workflows
+- Consistent formatting with proper headings, tables, and code blocks
+- Cross-references between related documents for improved navigation
+
+### Implementation Patterns
+- Delta Lakehouse uses the Bronze-Silver-Gold medallion architecture for data organization
+- Serverless SQL documentation covers both ad-hoc querying and metadata-driven approaches
+- Integration patterns focus on cross-engine scenarios (Spark + SQL)
+
+## Common Gotchas
+- Delta Lake requires specific configuration in Spark sessions to enable all features
+- Serverless SQL has specific syntax for accessing different file formats
+- Time travel queries have different syntax between Spark SQL and Serverless SQL
+- Access control needs to be configured at both the Azure Storage and Synapse levels
+
+## Future Considerations
+- Integration with Azure DevOps for documentation CI/CD
+- Adding interactive tutorials for hands-on experience
+- Expanding security and compliance guidelines
+- Including performance benchmarking and optimization guides
+
+## Naming Conventions
+- File names use kebab-case (lowercase with hyphens)
+- Section headings use Title Case
+- Code variables use camelCase in examples
+- SQL keywords use UPPERCASE in examples
+
+## File Organization Rules
+- Each major section has its own directory
+- Each directory contains an index.md file for overview
+- Detailed topics have their own markdown files
+- Supporting assets (diagrams, etc.) are stored in the same directory as the markdown files that reference them
+
+## Update Process
+1. Changes should be proposed via pull requests
+2. Technical accuracy should be verified by at least one reviewer
+3. Update the CHANGELOG.md with all significant changes
+4. Ensure cross-references remain valid after updates
