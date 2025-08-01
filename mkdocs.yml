@@ -26,7 +26,7 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
-  logo: assets/images/microsoft-logo.png
+  logo: assets/images/Azure-Synapse-Analytics.png
   favicon: assets/images/favicon.ico
   custom_dir: docs/overrides
 
@@ -56,26 +56,26 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Architecture:
-    - architecture/index.md
-    - Delta Lakehouse: 
-      - architecture/delta-lakehouse/index.md
-    - Serverless SQL: 
-      - architecture/serverless-sql/index.md
-    - Shared Metadata: 
-      - architecture/shared-metadata/index.md
+      - architecture/index.md
+      - Delta Lakehouse:
+          - architecture/delta-lakehouse/index.md
+      - Serverless SQL:
+          - architecture/serverless-sql/index.md
+      - Shared Metadata:
+          - architecture/shared-metadata/index.md
   - Best Practices:
-    - best-practices/index.md
-    - Performance: best-practices/performance.md
-    - Security: best-practices/security.md
-    - Cost Optimization: best-practices/cost-optimization.md
-    - Data Governance: best-practices/data-governance.md
+      - best-practices/index.md
+      - Performance: best-practices/performance.md
+      - Security: best-practices/security.md
+      - Cost Optimization: best-practices/cost-optimization.md
+      - Data Governance: best-practices/data-governance.md
   - Code Examples:
-    - code-examples/index.md
+      - code-examples/index.md
   - Reference:
-    - reference/index.md
+      - reference/index.md
   - FAQ: faq.md
   - Troubleshooting: troubleshooting.md
-  
+
 extra:
   social:
     - icon: fontawesome/brands/github
