@@ -1,33 +1,15 @@
-[Home](../../README.md) > Architecture
-
 # Azure Synapse Analytics Architecture
 
-This section provides detailed architectural documentation for Azure Synapse Analytics components, focusing on two primary areas:
+This section provides comprehensive architectural guidance for implementing Azure Synapse Analytics, focusing on the following key areas:
 
-## Architecture Components
+## Overview
 
-Azure Synapse Analytics offers multiple computation models to support various data processing and analytics scenarios:
+Azure Synapse Analytics provides an integrated analytics platform that combines big data processing, data warehousing, and data integration into a single service. This architecture documentation covers the best practices and implementation patterns for building robust and scalable solutions.
 
-### Delta Lakehouse
+## Architecture Areas
 
-Delta Lakehouse architecture combines the best of data lakes and data warehouses, providing an open-format storage layer with ACID transactions, schema enforcement, and data versioning capabilities.
+- [Delta Lakehouse Architecture](./delta-lakehouse/index.md): Implementing a scalable and reliable Delta Lake-based data lakehouse using Azure Synapse Analytics Spark pools.
 
-- [Delta Lakehouse Overview](./delta-lakehouse-overview.md) - Introduction to the Delta Lakehouse pattern in Azure Synapse
+- [Serverless SQL Architecture](../serverless-sql/index.md): Architectural patterns and implementation guidance for leveraging Serverless SQL pools in Azure Synapse Analytics.
 
-### Serverless SQL
-
-Serverless SQL architecture allows you to query data directly in your data lake without moving or copying data, using familiar T-SQL syntax.
-
-- [Serverless SQL Overview](./serverless-sql/serverless-overview.md) - Introduction to Serverless SQL capabilities
-
-### Shared Metadata
-
-Shared metadata architecture enables seamless integration between different compute engines while maintaining a single source of truth for your data.
-
-- [Shared Metadata Architecture](./shared-metadata/index.md) - Overview of the shared metadata capabilities and integration points
-
-## Related Resources
-
-- [Best Practices](../best-practices/index.md) - Recommendations for optimizing your Synapse implementation
-- [Code Examples](../code-examples/index.md) - Practical code samples for implementation
-- [Reference Guides](../reference/index.md) - Technical reference documentation
+- [Shared Metadata Architecture](./shared-metadata/index.md): Approaches for implementing a shared metadata layer across different compute engines in Azure Synapse Analytics.

@@ -26,8 +26,8 @@ theme:
     - content.code.copy
   icon:
     repo: fontawesome/brands/github
-  logo: docs/diagrams/microsoft-logo.png
-  favicon: docs/diagrams/favicon.ico
+  logo: assets/images/microsoft-logo.png
+  favicon: assets/images/favicon.ico
   custom_dir: docs/overrides
 
 plugins:
@@ -42,20 +42,14 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: "\n```\n{content}\n```\n"
+  - pymdownx.superfences
   - admonition
   - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
   - tables
   - footnotes
-  - pymdownx.emoji:
-      emoji_index: "twemoji"
-      emoji_generator: "to_svg"
+  - pymdownx.emoji
   - toc:
       permalink: true
 
