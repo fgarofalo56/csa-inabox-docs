@@ -1,132 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/faq/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/faq/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/troubleshooting/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/delta-lakehouse-overview/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/delta-lakehouse-overview/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/delta-lakehouse/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/delta-lakehouse/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/delta-lakehouse/detailed-architecture/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/delta-lakehouse/detailed-architecture/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/serverless-sql/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/serverless-sql/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/serverless-sql/detailed-architecture/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/serverless-sql/detailed-architecture/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/serverless-sql/serverless-overview/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/serverless-sql/serverless-overview/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/shared-metadata/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/shared-metadata/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/shared-metadata/shared-metadata-examples/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/shared-metadata/shared-metadata-examples/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/shared-metadata/shared-metadata-visuals/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/shared-metadata/shared-metadata-visuals/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/architecture/shared-metadata/shared-metadata/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/shared-metadata/shared-metadata/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/best-practices/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/assets/images/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/best-practices/cost-optimization/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/best-practices/data-governance/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/cost-optimization/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/best-practices/performance-optimization/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/data-governance/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/best-practices/security/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/implementation-patterns/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/code-examples/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/performance-optimization/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/diagrams/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/performance/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/reference/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/security/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/reference/security-checklist/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/reference/security/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/serverless-sql/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://microsoft.github.io/csa-inabox-docs/1.0.0/shared-metadata/</loc>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/security-checklist/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/security/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/serverless-sql/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/shared-metadata/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
     </url>

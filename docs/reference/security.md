@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Security Reference
 
-[Home](../../README.md) > [Reference](./index.md) > Security Guide
+[Home](/README.md) > [Reference](./index.md) > Security Guide
 
 ## Overview
 
@@ -9,12 +9,14 @@ This document provides comprehensive security guidance for Azure Synapse Analyti
 ## Network Security
 
 ### Network Isolation
+
 - Use private endpoints to ensure data flows through Azure backbone network
 - Configure managed virtual networks for Synapse workspaces
 - Use IP firewall rules to restrict access
 - Enable service endpoints for added protection
 
 ### Connectivity
+
 ```mermaid
 graph TD
     Client[Client] -- Private Link --> PE[Private Endpoint]
@@ -26,12 +28,14 @@ graph TD
 ## Authentication and Authorization
 
 ### Authentication Methods
+
 - Microsoft Entra ID (formerly Azure AD) integration
 - Multi-factor authentication
 - Managed identities for Azure resources
 - Service principals with limited scopes
 
 ### Role-Based Access Control (RBAC)
+
 - Synapse RBAC roles:
   - Synapse Administrator
   - Synapse Contributor
@@ -44,6 +48,7 @@ graph TD
 ## Data Protection
 
 ### Encryption
+
 - Encryption at rest (storage level)
 - Encryption in transit (TLS 1.2+)
 - Customer-managed keys integration

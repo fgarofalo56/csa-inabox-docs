@@ -1,4 +1,4 @@
-[Home](../../README.md) > [Best Practices](./index.md) > Cost Optimization
+[Home](/README.md) > [Best Practices](./index.md) > Cost Optimization
 
 # Cost Optimization Best Practices for Azure Synapse Analytics
 

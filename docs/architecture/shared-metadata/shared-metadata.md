@@ -1,4 +1,4 @@
-[Home](../../../README.md) > [Architecture](../index.md) > Shared Metadata Architecture
+[Home](/README.md) > [Architecture](../index.md) > Shared Metadata Architecture
 
 # Azure Synapse Shared Metadata Architecture
 

@@ -1,4 +1,4 @@
-[Home](../../../README.md) > [Architecture](../index.md) > Serverless SQL
+[Home](/README.md) > [Architecture](../index.md) > Serverless SQL
 
 # Serverless SQL Architecture
 

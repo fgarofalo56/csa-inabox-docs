@@ -1,4 +1,4 @@
-[Home](../../README.md) > [Best Practices](./index.md) > Data Governance
+[Home](/README.md) > [Best Practices](./index.md) > Data Governance
 
 # Data Governance Best Practices for Azure Synapse Analytics
 
@@ -7,12 +7,15 @@
 ### Core Components
 
 #### Data Catalog
+
 - **Metadata Management**: Implement comprehensive metadata for all data assets
 - **Business Glossary**: Maintain standardized definitions of business terms
 - **Data Dictionary**: Document technical metadata including data types, constraints, and relationships
 
 #### Data Quality Framework
+
 - **Quality Rules**: Define and implement data quality rules
+
   ```python
   # Example quality rule implementation in PySpark
   from pyspark.sql.functions import col, when, count
@@ -28,10 +31,12 @@
           "null_percentage": (null_count / total_count) * 100 if total_count > 0 else 0
       }
   ```
+
 - **Validation Frameworks**: Implement automated data validation pipelines
 - **Quality Metrics**: Track and report key quality metrics (completeness, accuracy, consistency)
 
 #### Data Lineage
+
 - **End-to-End Tracking**: Record data movement from source to consumption
 - **Impact Analysis**: Enable analysis of upstream/downstream impacts of changes
 - **Audit Trail**: Maintain history of data transformations and processing
@@ -41,7 +46,9 @@
 ### Automated Discovery
 
 #### Data Estate Scanning
+
 - **Automated Scanning**: Schedule regular scans of your data estate
+
   ```json
   {
     "name": "Scan-Synapse",

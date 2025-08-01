@@ -1,4 +1,4 @@
-[Home](../../README.md) > [Architecture](./index.md) > Delta Lakehouse Overview
+[Home](/README.md) > [Architecture](./index.md) > Delta Lakehouse Overview
 
 # Azure Synapse Analytics Delta Lakehouse Architecture
 
@@ -8,6 +8,7 @@ Azure Synapse Analytics Delta Lakehouse is a unified analytics platform that com
 ## Key Components
 
 ### 1. Delta Lake
+
 - Open-source storage layer that brings ACID transactions to Apache Spark and big data workloads
 - Built on top of Apache Parquet
 - Supports schema evolution and enforcement
@@ -15,12 +16,14 @@ Azure Synapse Analytics Delta Lakehouse is a unified analytics platform that com
 - Optimized for both streaming and batch processing
 
 ### 2. Spark Processing
+
 - Apache Spark as the compute engine
 - Runs on Synapse Spark pools
 - Supports both batch and real-time processing
 - Native integration with Delta Lake
 
 ### 3. Storage Layer
+
 - Azure Data Lake Storage Gen2
 - ADLS Gen2 provides:
   - High scalability

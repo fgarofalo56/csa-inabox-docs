@@ -1,4 +1,4 @@
-[Home](../../../README.md) > [Architecture](../index.md) > [Serverless SQL](./index.md) > Overview
+[Home](/README.md) > [Architecture](../index.md) > [Serverless SQL](./index.md) > Overview
 
 # Azure Synapse Serverless SQL Architecture
 

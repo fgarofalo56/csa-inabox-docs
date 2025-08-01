@@ -1,4 +1,4 @@
-[Home](../../README.md) > [Best Practices](./index.md) > Performance Optimization
+[Home](/README.md) > [Best Practices](./index.md) > Performance Optimization
 
 # Performance Optimization Best Practices
 
@@ -7,10 +7,12 @@
 ### Spark Pool Optimization
 
 #### Resource Configuration
+
 - **Autoscale Configuration**: Set appropriate min and max node counts based on workload patterns
 - **Node Size Selection**: Choose the right memory-to-core ratio based on workload characteristics
 - **Dynamic Allocation**: Enable dynamic executor allocation for variable workloads
 - **Spark Configurations**:
+
   ```
   spark.sql.adaptive.enabled = true
   spark.sql.adaptive.coalescePartitions.enabled = true
@@ -18,12 +20,16 @@
   ```
 
 #### Code Optimization
+
 - **DataFrame Caching**: Cache intermediate DataFrames for reuse in complex workflows
+
   ```python
   df = spark.read.format("delta").load("/path/to/data")
   df.cache()  # Cache the DataFrame for repeated use
   ```
+
 - **Partition Pruning**: Ensure your queries can leverage partition pruning
+
   ```python
   # Good - enables partition pruning
   df.filter(df.date_column == "2025-01-01").show()
@@ -31,7 +37,9 @@
   # Bad - prevents partition pruning
   df.filter(year(df.date_column) == 2025).show()
   ```
+
 - **Broadcast Joins**: Use broadcast joins for small-to-large table joins
+
   ```python
   from pyspark.sql.functions import broadcast
   
@@ -45,7 +53,9 @@
 ### Serverless SQL Optimization
 
 #### Query Structure
+
 - **Predicate Pushdown**: Structure queries to enable predicate pushdown to the storage layer
+
   ```sql
   -- Good: Enables pushdown
   SELECT * FROM external_table WHERE date_column = '2025-01-01'

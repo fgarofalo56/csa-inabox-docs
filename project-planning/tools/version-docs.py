@@ -29,7 +29,7 @@ def run_command(command):
         sys.exit(1)
 
 
-def create_version(version, alias=None, title=None):
+def create_version(version, alias=None, title=None, ignore=False, rebase=False):
     """Create a new documentation version."""
     cmd = f"mike deploy {version}"
     
@@ -38,6 +38,12 @@ def create_version(version, alias=None, title=None):
     
     if title:
         cmd += f" --title \"{title}\""
+        
+    if ignore:
+        cmd += f" --ignore"
+        
+    if rebase:
+        cmd += f" --rebase"
     
     print(f"Creating version {version}...")
     result = run_command(cmd)
@@ -91,6 +97,8 @@ def main():
     create_parser.add_argument("version", help="Version number (e.g., '1.0.0')")
     create_parser.add_argument("--alias", help="Alias for this version (e.g., 'latest')")
     create_parser.add_argument("--title", help="Title for this version")
+    create_parser.add_argument("--ignore", action="store_true", help="Ignore unrelated histories when deploying")
+    create_parser.add_argument("--rebase", action="store_true", help="Rebase onto remote when deploying")
     
     # Add alias command
     alias_parser = subparsers.add_parser("alias", help="Add an alias to a version")
@@ -107,7 +115,7 @@ def main():
     args = parser.parse_args()
     
     if args.command == "create":
-        create_version(args.version, args.alias, args.title)
+        create_version(args.version, args.alias, args.title, args.ignore, args.rebase)
     elif args.command == "alias":
         add_alias(args.version, args.alias)
     elif args.command == "delete":

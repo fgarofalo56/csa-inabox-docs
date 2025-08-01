@@ -1,4 +1,4 @@
-[Home](../../../README.md) > [Architecture](../index.md) > Shared Metadata
+[Home](/README.md) > [Architecture](../index.md) > Shared Metadata
 
 # Azure Synapse Analytics Shared Metadata
 

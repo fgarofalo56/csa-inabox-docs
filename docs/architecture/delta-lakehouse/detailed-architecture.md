@@ -1,23 +1,23 @@
-[Home](../../../README.md) > [Architecture](../index.md) > [Delta Lakehouse](./index.md) > Detailed Architecture
-
 # Azure Synapse Analytics Delta Lakehouse Detailed Architecture
 
+[Home](/README.md) > [Architecture](../index.md) > [Delta Lakehouse](./index.md) > Detailed Architecture
 ## Overview
 
 The Delta Lakehouse architecture combines the best of data lakes and data warehouses, providing ACID transactions, schema enforcement, and time travel capabilities while maintaining the flexibility and scalability of a data lake. This document details the implementation of a Delta Lakehouse using Azure Synapse Analytics.
-
 ## Core Components
 
 ### Storage Layer
 
-**Azure Data Lake Storage Gen2 (ADLS Gen2)**
+#### Azure Data Lake Storage Gen2 (ADLS Gen2)
+
 - Hierarchical namespace for efficient directory/file operations
 - Built-in security with Azure Active Directory integration
 - Cost-effective storage with tiering capabilities (hot, cool, archive)
 - Designed for high throughput and parallelism
 
-**Storage Organization**
-```
+#### Storage Organization
+
+```text
 datalake/
 ├── bronze/             # Raw ingested data
 │   ├── source1/
@@ -32,13 +32,15 @@ datalake/
 
 ### Compute Layer
 
-**Azure Synapse Spark Pools**
+#### Azure Synapse Spark Pools
+
 - Fully managed Apache Spark service
 - Autoscaling capabilities based on workload
 - Native integration with Delta Lake
 - Configurable for memory-optimized or compute-optimized workloads
 
-**Pool Configurations**
+#### Pool Configurations
+
 | Pool Type | Node Size | Autoscale | Use Case |
 |-----------|----------|-----------|----------|
 | Small | Medium (8 vCores) | 3-10 nodes | Development, testing |
@@ -47,14 +49,16 @@ datalake/
 
 ### Delta Lake Integration
 
-**Key Components**
+#### Key Components
+
 - Transaction log for ACID compliance
 - Optimistic concurrency control
 - Schema enforcement and evolution
 - Data skipping and Z-ordering for query optimization
 - Time travel capabilities
 
-**Implementation**
+#### Implementation
+
 ```python
 # Example of configuring Spark with Delta Lake
 spark = SparkSession.builder \
@@ -73,19 +77,22 @@ spark.conf.set("spark.databricks.delta.autoCompact.enabled", "true")
 
 ### Bronze-Silver-Gold Pattern
 
-**Bronze Layer (Raw Data)**
+#### Bronze Layer (Raw Data)
+
 - Ingests data in raw format with minimal transformation
 - Preserves original data for auditing and reprocessing
 - Implemented as Delta tables with schema inference
 - Retention policies based on compliance requirements
 
-**Silver Layer (Processed Data)**
+#### Silver Layer (Processed Data)
+
 - Cleaned and conformed data
 - Standardized formats and data types
 - Data quality checks and validation
 - Implemented as Delta tables with strict schemas
 
-**Gold Layer (Business Data)**
+#### Gold Layer (Business Data)
+
 - Aggregated, enriched data ready for consumption
 - Optimized for specific business domains or use cases
 - Often dimensional models or denormalized structures
@@ -93,13 +100,15 @@ spark.conf.set("spark.databricks.delta.autoCompact.enabled", "true")
 
 ### Data Ingestion Patterns
 
-**Batch Ingestion**
+#### Batch Ingestion
+
 - Using Azure Synapse pipelines for orchestration
 - Scheduled or event-triggered processing
 - Support for various source formats (CSV, JSON, Parquet, etc.)
 - Parallel loading for high-volume data
 
-**Stream Ingestion**
+#### Stream Ingestion
+
 - Integration with Azure Event Hubs or Kafka
 - Real-time processing with Structured Streaming
 - Delta Lake's support for streaming writes
@@ -107,11 +116,13 @@ spark.conf.set("spark.databricks.delta.autoCompact.enabled", "true")
 
 ### Data Processing Patterns
 
-**ELT (Extract, Load, Transform)**
+#### ELT (Extract, Load, Transform)
+
 - Load raw data into Bronze layer
 - Transform in-place using Spark SQL or DataFrame APIs
 - Move processed data to Silver and Gold layers
 - Leverages Synapse's distributed processing capabilities
+- Optimize and manage metadata with VACUUM and ANALYZE
 
 ## Advanced Features
 
@@ -163,12 +174,14 @@ changes = spark.read.format("delta") \
 
 ### Optimizations
 
-**Data Skipping**
+#### Data Skipping
+
 - Delta Lake maintains statistics on data files
 - Query predicates use these statistics to skip irrelevant files
 - Significantly improves query performance
 
-**Z-Ordering**
+#### Z-Ordering
+
 - Multi-dimensional clustering technique
 - Colocates related data together
 - Improves query performance when filtering on Z-ordered columns
@@ -178,7 +191,8 @@ changes = spark.read.format("delta") \
 OPTIMIZE delta_table ZORDER BY (date_column, region_column)
 ```
 
-**File Compaction**
+#### File Compaction
+
 - Combines small files into larger ones
 - Reduces metadata overhead
 - Improves scan performance
@@ -192,26 +206,30 @@ OPTIMIZE delta_table
 
 ### Authentication and Authorization
 
-**Azure Active Directory Integration**
+#### Azure Active Directory Integration
+
 - Single sign-on with Azure AD
 - Role-based access control (RBAC)
 - Integration with existing identity systems
 - Support for managed identities
 
-**Fine-grained Access Control**
+#### Fine-grained Access Control
+
 - Table-level and column-level security
 - Row-level security through Delta Lake filters
 - Dynamic data masking for sensitive fields
 
 ### Data Governance
 
-**Azure Purview Integration**
+#### Azure Purview Integration
+
 - Automated data discovery and classification
 - Data lineage tracking
 - Sensitive data identification
 - Centralized metadata management
 
-**Metadata Management**
+#### Metadata Management
+
 - Schema history tracking
 - Transaction history logging
 - Origin tracking with detailed provenance
@@ -221,13 +239,15 @@ OPTIMIZE delta_table
 
 ### Performance Monitoring
 
-**Azure Monitor Integration**
+#### Azure Monitor Integration
+
 - Resource utilization tracking
 - Query performance metrics
 - Cost analysis
 - Alerting on performance degradation
 
-**Delta-specific Metrics**
+#### Delta-specific Metrics
+
 - Transaction log size and growth rate
 - Data skipping effectiveness
 - Compaction efficiency
@@ -235,13 +255,15 @@ OPTIMIZE delta_table
 
 ### Cost Optimization Strategies
 
-**Storage Optimization**
+#### Storage Optimization
+
 - Tiered storage policies
 - Data lifecycle management
 - Vacuum operations to remove stale files
 - Compression settings optimization
 
-**Compute Optimization**
+#### Compute Optimization
+
 - Right-sizing Spark pools
 - Autoscaling configurations
 - Workload isolation for predictable performance
@@ -254,6 +276,7 @@ OPTIMIZE delta_table
 - Query Delta tables directly from Serverless SQL pools
 - Create external tables over Delta format
 - Join between Delta Lake and other data sources
+
 - Cross-engine queries (Spark and SQL)
 
 ### Power BI Integration
@@ -261,6 +284,7 @@ OPTIMIZE delta_table
 - Direct Query support for Delta tables
 - Composite models combining Delta Lake with other sources
 - Incremental refresh based on Delta Lake partitioning
+
 - Enterprise-scale semantic models
 
 ### Azure Machine Learning
@@ -268,6 +292,7 @@ OPTIMIZE delta_table
 - Feature store implementation using Delta Lake
 - Model training on Delta tables
 - Model deployment with feature versioning
+
 - MLOps workflows with data and model versioning
 
 ## Reference Implementation
