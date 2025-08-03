@@ -67,6 +67,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated tools documentation with automated link checking information
 - Fixed markdown linting issues across documentation files
 
+## [0.4.0] - 2025-08-12
+
+### Added
+
+- Comprehensive Delta Lake code examples:
+  - Auto Loader data ingestion patterns with schema evolution and partition management
+  - Change Data Capture (CDC) implementation with Delta Lake Change Data Feed, time travel, streaming CDC, and SCD Type 2 patterns
+  - Table optimization techniques including OPTIMIZE, VACUUM, Z-ORDER, and monitoring
+- Serverless SQL code examples:
+  - Query optimization techniques for performance and cost efficiency
+  - File format selection, column pruning, and predicate pushdown examples
+  - External table management with statistics
+  - Resource management and concurrency optimization
+- Enhanced navigation structure:
+  - Created dedicated index pages for code examples sections
+  - Improved documentation organization with consistent structure
+  - Added breadcrumb navigation for code examples
+- Fixed additional markdown lint issues across documentation
+
 ## [Unreleased]
 
 ### Planned

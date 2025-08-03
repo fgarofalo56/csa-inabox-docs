@@ -116,6 +116,36 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake/cdc/change-data-capture/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake/ingestion/auto-loader/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake/optimization/table-optimization/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/serverless-sql/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/serverless-sql/query-optimization/</loc>
+         <lastmod>2025-08-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/</loc>
          <lastmod>2025-08-01</lastmod>
          <changefreq>daily</changefreq>
