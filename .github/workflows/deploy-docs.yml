@@ -3,11 +3,20 @@ name: Deploy Documentation
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
       - '.github/workflows/deploy-docs.yml'
+      - 'project-planning/tools/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - '.github/workflows/deploy-docs.yml'
+      - 'project-planning/tools/**'
   workflow_dispatch:
 
 permissions:
@@ -17,14 +26,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
       
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.9
+          python-version: "3.11"
+          cache: pip
       
       - name: Install dependencies
         run: |
@@ -36,7 +46,14 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
       
-      - name: Deploy documentation with versioning
+      - name: Build documentation
         run: |
-          mike deploy --push --update-aliases latest
-          mike set-default --push latest
+          mkdocs build --verbose --clean
+      
+      - name: Deploy documentation
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          force_orphan: true
