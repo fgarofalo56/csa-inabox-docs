@@ -14,16 +14,16 @@ theme:
     primary: indigo
     accent: blue
   features:
+    - navigation.tracking
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
+    - toc.integrate
+    - content.tabs.link
     - navigation.indexes
     - navigation.top
     - search.highlight
     - search.share
     - search.suggest
-    - content.tabs.link
-    - content.code.copy
   icon:
     repo: fontawesome/brands/github
   logo: assets/images/Azure-Synapse-Analytics.png
@@ -56,23 +56,32 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Architecture:
-      - architecture/index.md
+      - Overview: architecture/index.md
       - Delta Lakehouse:
-          - architecture/delta-lakehouse/index.md
+          - Overview: architecture/delta-lakehouse/index.md
       - Serverless SQL:
-          - architecture/serverless-sql/index.md
+          - Overview: architecture/serverless-sql/index.md
       - Shared Metadata:
-          - architecture/shared-metadata/index.md
+          - Overview: architecture/shared-metadata/index.md
   - Best Practices:
-      - best-practices/index.md
-      - Performance: best-practices/performance.md
-      - Security: best-practices/security.md
+      - Overview: best-practices/index.md
+      - Performance Optimization: best-practices/performance.md
+      - Security & Compliance: best-practices/security.md
       - Cost Optimization: best-practices/cost-optimization.md
       - Data Governance: best-practices/data-governance.md
   - Code Examples:
-      - code-examples/index.md
+      - Overview: code-examples/index.md
+      - Delta Lake Guide: code-examples/delta-lake-guide.md
+      - Serverless SQL Guide: code-examples/serverless-sql-guide.md
+      - Integration Guide: code-examples/integration-guide.md
   - Reference:
-      - reference/index.md
+      - Overview: reference/index.md
+      - Security Checklist: reference/security-checklist.md
+  - Diagrams:
+      - Architecture Diagrams: diagrams/architecture-diagrams.md
+      - Security Diagrams: diagrams/security-diagrams.md
+      - Process Flowcharts: diagrams/process-flowcharts.md
+      - Data Governance Diagrams: diagrams/data-governance-diagrams.md
   - FAQ: faq.md
   - Troubleshooting: troubleshooting.md
 

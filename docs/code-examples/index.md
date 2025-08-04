@@ -4,37 +4,39 @@
 
 This section contains practical code examples for Azure Synapse Analytics, organized by feature area. Each example includes code snippets, explanations, and best practices to help you effectively implement Synapse Analytics solutions.
 
-## Categories
+## Comprehensive Guides
 
-### Delta Lake
+We've consolidated our code examples into comprehensive guides for easier navigation and reference:
 
-Delta Lake examples demonstrate how to work with Delta tables in Synapse Analytics using PySpark:
+### [Delta Lake Guide](delta-lake-guide.md)
 
-- [Ingestion](delta-lake/ingestion/auto-loader.md) - Auto Loader examples for efficient data ingestion
-- [Change Data Capture (CDC)](delta-lake/cdc/change-data-capture.md) - CDC implementation patterns and streaming updates
-- [Table Optimization](delta-lake/optimization/table-optimization.md) - Optimize, vacuum, and Z-ORDER Delta tables
+A complete guide for working with Delta Lake in Azure Synapse Analytics, covering:
 
-### Serverless SQL
+- **Data Ingestion** - Auto Loader implementation for efficient data ingestion
+- **Change Data Capture (CDC)** - Patterns for tracking and processing data changes
+- **Table Optimization** - Techniques for maintaining performance with OPTIMIZE, VACUUM and Z-ORDER
 
-Serverless SQL examples show how to effectively query data lakes using SQL in Synapse:
+### [Serverless SQL Guide](serverless-sql-guide.md)
 
-- [Query Optimization](serverless-sql/query-optimization.md) - Performance tuning techniques for serverless SQL
+A comprehensive guide for working with Serverless SQL pools in Azure Synapse, covering:
 
-### Integration
+- **Query Optimization** - Performance tuning techniques for cost-effective queries
+- **External Tables** - Creating and managing external tables with statistics
+- **Security and Access Control** - Implementing row-level and column-level security
 
-Integration examples showcase how to connect Synapse with other Azure services:
+### [Integration Guide](integration-guide.md)
 
-- Coming soon: Azure ML integration
-- Coming soon: Azure Purview integration
-- Coming soon: Azure Data Factory integration
+A detailed guide for integrating Azure Synapse with other Azure services:
+
+- **Azure Machine Learning** - Model training, deployment, and MLOps integration
+- **Microsoft Purview** - Data governance, cataloging, and lineage tracking
+- **Azure Data Factory** - Orchestration patterns and pipeline management
 
 ### Troubleshooting
 
-Troubleshooting examples provide solutions to common issues:
+For troubleshooting guidance and solutions to common issues, please see our dedicated troubleshooting section:
 
-- Coming soon: Spark memory management
-- Coming soon: Serverless SQL connectivity issues
-- Coming soon: Performance diagnostic techniques
+- [Troubleshooting Guide](/docs/troubleshooting/index.md) - Comprehensive solutions for common Synapse Analytics issues
 
 ## Example Structure
 
@@ -56,3 +58,5 @@ To contribute new code examples, please follow these guidelines:
 3. Include detailed comments in code snippets
 4. Ensure all examples are tested and validated
 5. Update the index files to include links to your new example
+
+If you'd like to contribute code examples to this collection, please see our [contribution guidelines](/CONTRIBUTING.md).
