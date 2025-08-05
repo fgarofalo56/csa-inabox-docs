@@ -5,7 +5,9 @@
 !!! info "Reference Section"
     This section provides comprehensive reference materials for Azure Synapse Analytics, including security checklists, configuration references, and best practices summaries. Use these resources as quick references during implementation and operation.
 
+<!-- Markdown lint exception: Inline HTML is used here for Material for MkDocs grid cards feature -->
 <div class="grid cards" markdown>
+
 - :material-shield-check: __Security References__
   
   Security checklists, compliance requirements, and best practices for secure implementation
@@ -21,6 +23,7 @@
 - :material-frequently-asked-questions: __FAQ__
   
   Frequently asked questions and answers for common scenarios
+
 </div>
 
 ## Security References
@@ -84,13 +87,13 @@
 
 ### Performance Optimization Summary
 
-1. **Query Performance**
+1. __Query Performance__
    - Use appropriate file formats (Parquet, Delta)
    - Implement proper partitioning strategies
    - Optimize join operations
    - Apply column pruning
 
-2. **Resource Utilization**
+2. __Resource Utilization__
    - Right-size compute resources
    - Implement auto-scaling
    - Use workload management
@@ -98,13 +101,13 @@
 
 ### Security Implementation Summary
 
-1. **Network Security**
+1. __Network Security__
    - Implement VNet integration
    - Use private endpoints
    - Configure firewall rules
    - Implement NSG controls
 
-2. **Data Protection**
+2. __Data Protection__
    - Enable encryption at rest and in transit
    - Implement column-level security
    - Apply row-level security policies

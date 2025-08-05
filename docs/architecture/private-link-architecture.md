@@ -13,39 +13,38 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
 - :material-connection:{ .lg .middle } __Private Endpoints__
 
     ---
-    
+  
     The interface for connecting privately to Azure services
-    
+  
     [:octicons-arrow-right-24: Endpoint design](#private-endpoint-design)
 
 - :material-dns:{ .lg .middle } __DNS Configuration__
 
     ---
-    
+  
     Private DNS integration for name resolution
-    
+  
     [:octicons-arrow-right-24: DNS setup](#private-dns-configuration)
 
 - :material-virtual-reality:{ .lg .middle } __Network Topology__
 
     ---
-    
+  
     VNet design for Synapse with Private Link
-    
+  
     [:octicons-arrow-right-24: Network design](#network-topology)
 
 - :material-check-network:{ .lg .middle } __Connectivity Validation__
 
     ---
-    
+  
     Testing and validating private connectivity
-    
+  
     [:octicons-arrow-right-24: Validation](#connectivity-validation)
 
 </div>
 
 ## Reference Architecture
-
 
 ```mermaid
 graph TD
@@ -144,7 +143,6 @@ Each private endpoint requires corresponding DNS zone configuration:
 3. __Create A records__ for each private endpoint
 4. __Configure DNS resolution__ between on-premises and Azure
 
-
 ```powershell
 # Example: Create Private DNS Zones
 $resourceGroup = "myResourceGroup"
@@ -185,20 +183,23 @@ Implement these network topology best practices:
 
 Validate your private link configuration with these methods:
 
-1. **DNS Resolution Testing**:
+1. __DNS Resolution Testing__:
+
 ```bash
 # Test DNS resolution
 nslookup myworkspace.sql.azuresynapse.net
 # Should resolve to private IP address
 ```
 
-2. **Connection Testing**:
+2. __Connection Testing__:
+
 ```bash
 # Test SQL connection
 sqlcmd -S myworkspace.sql.azuresynapse.net -U username -P password
 ```
 
-3. **Network Path Analysis**:
+3. __Network Path Analysis__:
+
 ```bash
 # Trace route should not go through internet
 tracert myworkspace.sql.azuresynapse.net
@@ -215,7 +216,6 @@ Configure these hybrid connectivity patterns:
 2. __Site-to-Site VPN__ - Encrypted connection over the internet
 3. __Point-to-Site VPN__ - For individual client connections
 4. __DNS Forwarding__ - Configure DNS forwarding for on-premises name resolution
-
 
 ```mermaid
 graph TD

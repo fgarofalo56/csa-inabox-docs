@@ -5,7 +5,9 @@
 !!! info "Section Overview"
     This section provides comprehensive best practices for implementing and managing Azure Synapse Analytics workloads. These recommendations are based on real-world implementations and Microsoft's official guidance to help you optimize performance, security, cost, and operational efficiency.
 
+<!-- Markdown lint exception: Inline HTML is used here for Material for MkDocs grid cards feature -->
 <div class="grid cards" markdown>
+
 - :material-rocket-launch-outline: __Performance Optimization__
   
   Strategies and techniques to optimize query performance, Spark jobs, and resource utilization
@@ -21,6 +23,7 @@
 - :material-sitemap: __Implementation Patterns__
   
   Proven architectural patterns and implementation approaches
+
 </div>
 
 ## Key Areas
@@ -69,11 +72,11 @@
 
 When implementing Azure Synapse Analytics, we recommend following this phased approach:
 
-1. **Establish Foundation** - Set up networking, security, and governance
-2. **Implement Core Infrastructure** - Deploy and configure Synapse workspace and storage
-3. **Develop Initial Workloads** - Start with high-value use cases
-4. **Optimize** - Tune performance and costs based on actual usage
-5. **Scale** - Expand to additional use cases and data sources
+1. __Establish Foundation__ - Set up networking, security, and governance
+2. __Implement Core Infrastructure__ - Deploy and configure Synapse workspace and storage
+3. __Develop Initial Workloads__ - Start with high-value use cases
+4. __Optimize__ - Tune performance and costs based on actual usage
+5. __Scale__ - Expand to additional use cases and data sources
 
 ## Related Resources
 

@@ -1,0 +1,72 @@
+name: Markdown Lint
+
+on:
+  push:
+    paths:
+      - '**.md'
+      - '.markdownlint.json'
+      - '.github/workflows/markdown-lint.yml'
+  pull_request:
+    paths:
+      - '**.md'
+      - '.markdownlint.json'
+      - '.github/workflows/markdown-lint.yml'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  markdownlint:
+    name: Run markdownlint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Run markdownlint
+        id: lint
+        run: |
+          # Create output directory for reports
+          mkdir -p markdown-lint-report
+          
+          # Run markdownlint and capture output
+          markdownlint '**/*.md' -c .markdownlint.json -o markdown-lint-report/results.json || true
+          
+          # Generate summary report
+          echo "# Markdown Linting Report" > markdown-lint-report/summary.md
+          echo "Generated: $(date)" >> markdown-lint-report/summary.md
+          echo "" >> markdown-lint-report/summary.md
+          
+          # Count issues
+          ISSUE_COUNT=$(jq '. | length' markdown-lint-report/results.json)
+          echo "Found $ISSUE_COUNT linting issues." >> markdown-lint-report/summary.md
+          echo "::set-output name=issue-count::$ISSUE_COUNT"
+          
+          if [ "$ISSUE_COUNT" -gt "0" ]; then
+            echo "" >> markdown-lint-report/summary.md
+            echo "## Issues by File" >> markdown-lint-report/summary.md
+            jq -r 'group_by(.fileName) | .[] | "### \(.[0].fileName)\n\n\(. | map("- Line \(.lineNumber): \(.ruleNames[0]) - \(.ruleDescription)") | join("\n"))\n"' markdown-lint-report/results.json >> markdown-lint-report/summary.md
+          fi
+          
+          # Print summary to console
+          cat markdown-lint-report/summary.md
+      
+      - name: Upload lint results
+        uses: actions/upload-artifact@v4
+        with:
+          name: markdown-lint-results
+          path: markdown-lint-report
+          retention-days: 14
+
+      - name: Check for lint issues
+        if: ${{ steps.lint.outputs.issue-count != '0' }}
+        run: |
+          echo "::warning::Found ${{ steps.lint.outputs.issue-count }} markdown linting issues. Check the workflow artifacts for details."
+          # Uncomment the line below to make the workflow fail on lint issues
+          # exit 1

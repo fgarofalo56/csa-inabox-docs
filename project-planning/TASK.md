@@ -212,6 +212,15 @@ Documentation tasks previously completed for the Azure Synapse Analytics documen
 - [x] Fix SQL code fragment links (Completed: 2025-08-06)
 - [x] Update cross-references between documentation sections (Completed: 2025-08-06)
 
+## Markdown Linting Improvements (2025-08-06)
+
+- [x] Create markdown-lint-fixes.md planning document (Completed: 2025-08-06)
+- [x] Create .markdownlint.json configuration file with exceptions for HTML elements (Completed: 2025-08-06)
+- [ ] Fix trailing spaces in markdown files
+- [ ] Fix strong style formatting (use underscores instead of asterisks)
+- [ ] Add blank lines around fenced code blocks
+- [ ] Fix list formatting and proper indentation
+
 ## Documentation Gaps Identified (2025-08-04)
 
 The following gaps were identified in a comprehensive review of the documentation:
