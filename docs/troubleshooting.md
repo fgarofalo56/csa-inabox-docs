@@ -1,6 +1,16 @@
 # Troubleshooting Guide
 
-This guide covers common issues and solutions when working with Azure Synapse Analytics.
+!!! note "Comprehensive Troubleshooting Documentation Available"
+    This page has been replaced with a comprehensive troubleshooting section. Please visit the [Troubleshooting Documentation](troubleshooting/index.md) for detailed guides on resolving common issues with Azure Synapse Analytics.
+
+## Quick Links
+
+- [Spark Issues](troubleshooting/spark-troubleshooting.md)
+- [Serverless SQL Issues](troubleshooting/serverless-sql-troubleshooting.md)
+- [Connectivity Issues](troubleshooting/connectivity-troubleshooting.md)
+- [Authentication Issues](troubleshooting/authentication-troubleshooting.md)
+- [Delta Lake Issues](troubleshooting/delta-lake-troubleshooting.md)
+- [Pipeline Issues](troubleshooting/pipeline-troubleshooting.md)
 
 ## Connection Issues
 

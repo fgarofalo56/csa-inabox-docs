@@ -6,89 +6,92 @@ This guide covers common connectivity and network-related issues in Azure Synaps
 
 Connectivity issues in Azure Synapse Analytics typically fall into these categories:
 
-1. **Networking Configuration**: Firewall rules, private endpoints, network security groups
-2. **Authentication Problems**: Token errors, identity issues, credential failures
-3. **Service Availability**: Regional outages, service health incidents
-4. **Client Configuration**: Driver issues, client tool misconfiguration
-5. **Cross-Service Integration**: Problems connecting Synapse to other Azure services
+1. __Networking Configuration__: Firewall rules, private endpoints, network security groups
+2. __Authentication Problems__: Token errors, identity issues, credential failures
+3. __Service Availability__: Regional outages, service health incidents
+4. __Client Configuration__: Driver issues, client tool misconfiguration
+5. __Cross-Service Integration__: Problems connecting Synapse to other Azure services
 
 ## Networking Configuration Issues
 
 ### Firewall Rules and IP Restrictions
 
-**Symptoms:**
+__Symptoms:__
+
 - Connection timeout errors
 - "Cannot connect to server" messages
 - Inconsistent connectivity (works from some locations but not others)
 
-**Solutions:**
+__Solutions:__
 
-1. **Verify IP allowlisting**:
+1. __Verify IP allowlisting__:
    - Check if client IP is allowed in Synapse firewall settings
    - Ensure IP ranges cover all required client locations
 
-   ```powershell
-   # PowerShell: View firewall rules
-   Get-AzSynapseFirewallRule -WorkspaceName "synapseworkspace" -ResourceGroupName "resourcegroup"
-   
-   # PowerShell: Add IP address to firewall
-   $ip = (Invoke-WebRequest -uri "https://api.ipify.org/").Content
-   New-AzSynapseFirewallRule -WorkspaceName "synapseworkspace" -ResourceGroupName "resourcegroup" -Name "AllowMyIP" -StartIpAddress $ip -EndIpAddress $ip
-   ```
+```powershell
+# PowerShell: View firewall rules
+Get-AzSynapseFirewallRule -WorkspaceName "synapseworkspace" -ResourceGroupName "resourcegroup"
 
-2. **Configure "Allow Azure services"**:
+# PowerShell: Add IP address to firewall
+$ip = (Invoke-WebRequest -uri "https://api.ipify.org/").Content
+New-AzSynapseFirewallRule -WorkspaceName "synapseworkspace" -ResourceGroupName "resourcegroup" -Name "AllowMyIP" -StartIpAddress $ip -EndIpAddress $ip
+```
+
+1. __Configure "Allow Azure services"__:
    - Enable "Allow Azure services and resources to access this workspace" option
    - Useful for connections from other Azure resources
 
-3. **Check for dynamic IP issues**:
+1. __Check for dynamic IP issues__:
    - If using VPN or dynamic IP allocation, connections might fail after IP changes
    - Consider using a gateway or fixed IP solution
 
 ### Private Endpoint Configuration
 
-**Symptoms:**
+__Symptoms:__
+
 - Can't connect to Synapse when using private endpoints
 - DNS resolution failures
 - Connections working from VNet but not elsewhere
 
-**Solutions:**
+__Solutions:__
 
-1. **Verify private endpoint provisioning**:
+1. __Verify private endpoint provisioning__:
    - Check that private endpoints show "Succeeded" status
    - Validate connection group status
 
-2. **Check DNS configuration**:
+2. __Check DNS configuration__:
    - Ensure private DNS zones are correctly linked to VNets
    - Verify DNS records are properly created
 
-   ```powershell
-   # PowerShell: Check DNS records in private zone
-   Get-AzPrivateDnsRecordSet -ResourceGroupName "resourcegroup" -ZoneName "privatelink.sql.azuresynapse.net"
-   ```
+```powershell
+# PowerShell: Check DNS records in private zone
+Get-AzPrivateDnsRecordSet -ResourceGroupName "resourcegroup" -ZoneName "privatelink.sql.azuresynapse.net"
+```
 
-3. **Test DNS resolution**:
+1. __Test DNS resolution__:
    - Use nslookup to verify DNS resolution from client machine
    - Check if the workspace name resolves to private IP
 
-   ```bash
-   # From a VM in the connected VNet
-   nslookup yourworkspace.sql.azuresynapse.net
-   ```
+```bash
+# From a VM in the connected VNet
+nslookup yourworkspace.sql.azuresynapse.net
+```
 
-4. **Review network security groups (NSGs)**:
+1. __Review network security groups (NSGs)__:
    - Verify NSGs allow required traffic
    - Check for deny rules that might block connectivity
 
 ### Network Security Groups (NSGs)
 
-**Symptoms:**
+__Symptoms:__
+
 - Intermittent connectivity issues
 - Some services working while others fail
 - Timeout errors rather than immediate rejections
 
-**Solutions:**
+__Solutions:__
 
-1. **Review NSG rules**:
+1. __Review NSG rules__:
    - Check inbound and outbound security rules
    - Ensure required ports are open
 
@@ -98,85 +101,87 @@ Connectivity issues in Azure Synapse Analytics typically fall into these categor
    | Dev Endpoint | TCP | 443 |
    | Spark   | TCP      | 443 |
 
-2. **Configure service tags**:
+1. __Configure service tags__:
    - Use Azure service tags like "Sql" in NSG rules
    - Implement least-privilege access model
 
-3. **Enable NSG flow logs**:
+1. __Enable NSG flow logs__:
    - Set up NSG flow logs to diagnose blocked connections
    - Review logs in Log Analytics or Traffic Analytics
 
-   ```powershell
-   # PowerShell: Enable NSG flow logs
-   $nsg = Get-AzNetworkSecurityGroup -Name "myNSG" -ResourceGroupName "resourcegroup"
-   
-   $storageAccount = Get-AzStorageAccount -ResourceGroupName "resourcegroup" -Name "mystorageaccount"
-   
-   Set-AzNetworkWatcherFlowLog -NetworkWatcherName "NetworkWatcher_region" -ResourceGroupName "NetworkWatcherRG" -TargetResourceId $nsg.Id -StorageAccountId $storageAccount.Id -EnableFlowLog $true -FormatType Json -FormatVersion 2
-   ```
+```powershell
+# PowerShell: Enable NSG flow logs
+$nsg = Get-AzNetworkSecurityGroup -Name "myNSG" -ResourceGroupName "resourcegroup"
+
+$storageAccount = Get-AzStorageAccount -ResourceGroupName "resourcegroup" -Name "mystorageaccount"
+
+Set-AzNetworkWatcherFlowLog -NetworkWatcherName "NetworkWatcher_region" -ResourceGroupName "NetworkWatcherRG" -TargetResourceId $nsg.Id -StorageAccountId $storageAccount.Id -EnableFlowLog $true -FormatType Json -FormatVersion 2
+```
 
 ## Authentication Problems
 
 ### Token and Identity Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - "Failed to authenticate" errors
 - Token expiration messages
 - Permission-related failures
 - Single sign-on failures
 
-**Solutions:**
+__Solutions:__
 
-1. **Check Azure AD configuration**:
+1. __Check Azure AD configuration__:
    - Verify user exists in Azure AD tenant
    - Check for conditional access policies
    - Validate multi-factor authentication settings
 
-2. **Inspect token validity and claims**:
+2. __Inspect token validity and claims__:
    - Use [jwt.ms](https://jwt.ms) to decode tokens
    - Check expiration times and claims
    - Verify correct audience and issuer
 
-3. **Review Azure AD app registration**:
+3. __Review Azure AD app registration__:
    - For application connections, check app registration settings
    - Ensure redirect URIs are properly configured
    - Verify required API permissions
 
-4. **Test with alternative credentials**:
+4. __Test with alternative credentials__:
    - Try SQL authentication if available
    - Test with a different user account
    - Use admin account to isolate permission issues
 
 ### Managed Identity Configuration
 
-**Symptoms:**
+__Symptoms:__
+
 - "Failed to obtain access token" errors
 - Services unable to access each other
 - Permission denied errors when using managed identities
 
-**Solutions:**
+__Solutions:__
 
-1. **Verify managed identity is enabled**:
+1. __Verify managed identity is enabled__:
    - Check that managed identity is enabled for services
    - Validate system-assigned vs. user-assigned configuration
 
-2. **Check role assignments**:
+2. __Check RBAC assignments__:
    - Ensure managed identity has appropriate RBAC roles
    - Common roles include "Storage Blob Data Contributor" for ADLS access
 
-   ```powershell
-   # PowerShell: View role assignments for managed identity
-   $id = (Get-AzSynapseWorkspace -Name "synapseworkspace" -ResourceGroupName "resourcegroup").Identity.PrincipalId
-   
-   Get-AzRoleAssignment -ObjectId $id
-   
-   # PowerShell: Assign Storage Blob Data Contributor role
-   $storage = Get-AzStorageAccount -ResourceGroupName "resourcegroup" -Name "storage"
-   
-   New-AzRoleAssignment -ObjectId $id -RoleDefinitionName "Storage Blob Data Contributor" -Scope $storage.Id
-   ```
+```powershell
+# PowerShell: View role assignments for managed identity
+$id = (Get-AzSynapseWorkspace -Name "synapseworkspace" -ResourceGroupName "resourcegroup").Identity.PrincipalId
 
-3. **Test token acquisition**:
+Get-AzRoleAssignment -ObjectId $id
+
+# PowerShell: Assign Storage Blob Data Contributor role
+$storage = Get-AzStorageAccount -ResourceGroupName "resourcegroup" -Name "storage"
+
+New-AzRoleAssignment -ObjectId $id -RoleDefinitionName "Storage Blob Data Contributor" -Scope $storage.Id
+```
+
+1. __Refresh tokens__:
    - Use PowerShell or Azure Cloud Shell to test token acquisition
    - Validate that identity can access required resources
 
@@ -184,142 +189,147 @@ Connectivity issues in Azure Synapse Analytics typically fall into these categor
 
 ### Regional Outages and Service Health
 
-**Symptoms:**
+__Symptoms:__
+
 - Widespread connectivity issues
 - All components of Synapse affected
 - Similar issues reported by others
 
-**Solutions:**
+__Solutions:__
 
-1. **Check Azure Service Health**:
+1. __Check Azure Service Health__:
    - Review [Azure Status](https://status.azure.com)
    - Check for active advisories or incidents
    - Look for Synapse-specific or regional issues
 
-2. **Review service health in Azure portal**:
+2. __Review service health in Azure portal__:
    - Go to Azure portal > Service Health
    - Filter for Synapse Analytics service
    - Check for current or planned maintenance
 
-3. **Configure service health alerts**:
+3. __Configure service health alerts__:
    - Set up alerts for service issues
    - Receive notifications for planned maintenance
 
-   ```powershell
-   # PowerShell: Create service health alert
-   $condition = New-AzActivityLogAlertCondition -Field "category" -Equal "ServiceHealth" `
+```powershell
+# PowerShell: Create service health alert
+$condition = New-AzActivityLogAlertCondition -Field "category" -Equal "ServiceHealth" `
                -AndCondition (New-AzActivityLogAlertCondition -Field "properties.serviceHealthData.service" -Equal "Synapse Analytics")
-               
-   New-AzActivityLogAlert -Location "Global" -Name "SynapseHealthAlert" `
+
+New-AzActivityLogAlert -Location "Global" -Name "SynapseHealthAlert" `
                          -ResourceGroupName "resourcegroup" `
                          -Condition $condition `
                          -ActionGroupId "/subscriptions/subid/resourceGroups/resourcegroup/providers/microsoft.insights/actionGroups/actiongroup"
-   ```
+```
 
 ## Client Configuration
 
 ### Driver and Client Tool Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Connection errors from specific tools or applications
 - Authentication works in some tools but not others
 - "Driver not found" or version incompatibility errors
 
-**Solutions:**
+__Solutions:__
 
-1. **Update ODBC/JDBC drivers**:
+1. __Update ODBC/JDBC drivers__:
    - Use the latest SQL Server drivers
    - Check for compatibility with Azure Synapse
 
-   ```bash
-   # Example connection string for JDBC
-   jdbc:sqlserver://<workspace-name>.sql.azuresynapse.net:1433;database=<database>;user=<user>@<workspace-name>;password=<password>;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.sql.azuresynapse.net;loginTimeout=30;
-   ```
+```bash
+# Example connection string for JDBC
+jdbc:sqlserver://<workspace-name>.sql.azuresynapse.net:1433;database=<database>;user=<user>@<workspace-name>;password=<password>;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.sql.azuresynapse.net;loginTimeout=30;
+```
 
-2. **Check TLS/encryption settings**:
+1. __Check TLS/encryption settings__:
    - Ensure TLS 1.2+ is enabled
    - Verify encryption is enabled in connection strings
    - Check for certificate validation issues
 
-3. **Validate connection strings**:
+1. __Validate connection strings__:
    - Use correct server naming format: `<workspace-name>.sql.azuresynapse.net`
    - Include all required parameters
    - Test connection string with a simple tool like SSMS
 
-4. **Test with different tools**:
+1. __Test with different tools__:
    - Try SQL Server Management Studio
    - Test with Azure Data Studio
    - Use sqlcmd command-line utility
 
-   ```bash
-   # Using sqlcmd
-   sqlcmd -S <workspace-name>.sql.azuresynapse.net -d master -U <username> -P <password> -I -Q "SELECT @@VERSION"
-   ```
+```bash
+# Using sqlcmd
+sqlcmd -S <workspace-name>.sql.azuresynapse.net -d master -U <username> -P <password> -I -Q "SELECT @@VERSION"
+```
 
 ## Cross-Service Integration
 
 ### Storage Connectivity Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Synapse can't access storage accounts
 - "Access denied" when reading/writing data
 - Permission errors during query execution
 
-**Solutions:**
+__Solutions:__
 
-1. **Check storage account network settings**:
+1. __Check storage account network settings__:
    - Verify firewall rules allow Synapse access
    - Check if "Allow trusted Microsoft services" is enabled
    - Ensure private endpoint configuration if used
 
-2. **Review access permissions**:
+1. __Verify user permissions__:
    - Verify Synapse managed identity has proper RBAC roles
    - Check for Storage Blob Data Reader/Contributor roles
    - Verify ACLs if using hierarchical namespace
 
-3. **Test storage connectivity**:
-   ```sql
-   -- SQL Serverless Pool test
-   SELECT TOP 10 *
-   FROM OPENROWSET(
-       BULK 'https://storageaccount.dfs.core.windows.net/container/folder/*',
-       FORMAT = 'CSV',
-       PARSER_VERSION = '2.0',
-       HEADER_ROW = TRUE
-   ) AS [result]
-   ```
+1. __Test storage connectivity__:
 
-   ```python
-   # PySpark test
-   df = spark.read.csv("abfss://container@storageaccount.dfs.core.windows.net/folder/")
-   df.show(5)
-   ```
+```sql
+-- SQL Serverless Pool test
+SELECT TOP 10 *
+FROM OPENROWSET(
+    BULK 'https://storageaccount.dfs.core.windows.net/container/folder/*',
+    FORMAT = 'CSV',
+    PARSER_VERSION = '2.0',
+    HEADER_ROW = TRUE
+) AS [result]
+```
+
+```python
+# PySpark test
+df = spark.read.csv("abfss://container@storageaccount.dfs.core.windows.net/folder/")
+df.show(5)
+```
 
 ### Key Vault Integration Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Can't retrieve secrets from Key Vault
 - "Access denied" errors when using linked services
 - Authentication failures for services using Key Vault credentials
 
-**Solutions:**
+__Solutions:__
 
-1. **Check Key Vault access policies**:
+1. __Check Key Vault access policies__:
    - Ensure Synapse managed identity has "Get" and "List" permissions
    - Verify no deny assignments blocking access
 
-   ```powershell
-   # PowerShell: Grant Key Vault permissions
-   $id = (Get-AzSynapseWorkspace -Name "synapseworkspace" -ResourceGroupName "resourcegroup").Identity.PrincipalId
-   
-   Set-AzKeyVaultAccessPolicy -VaultName "keyvault" -ObjectId $id -PermissionsToSecrets Get,List
-   ```
+```powershell
+# PowerShell: Grant Key Vault permissions
+$id = (Get-AzSynapseWorkspace -Name "synapseworkspace" -ResourceGroupName "resourcegroup").Identity.PrincipalId
 
-2. **Verify network access**:
+Set-AzKeyVaultAccessPolicy -VaultName "keyvault" -ObjectId $id -PermissionsToSecrets Get,List
+```
+
+1. __Verify network access__:
    - Check Key Vault firewall settings
    - Ensure Synapse can reach Key Vault (public or private endpoint)
 
-3. **Test Key Vault linked service**:
+1. __Test Key Vault linked service__:
    - Create a simple linked service to Key Vault
    - Test connection from Synapse UI
    - Check for specific error messages
@@ -328,85 +338,85 @@ Connectivity issues in Azure Synapse Analytics typically fall into these categor
 
 ### Diagnostic Tools
 
-1. **Network Packet Capture**:
+1. __Network Packet Capture__:
    - Use tools like Wireshark or Network Watcher Packet Capture
    - Look for connection attempts, failures, or timeouts
 
-2. **Connection Test Tools**:
+1. __Connection Test Tools__:
    - Use Test-NetConnection (PowerShell) to check port connectivity
    - Run network trace to identify connectivity problems
 
-   ```powershell
-   # PowerShell: Test SQL connectivity
-   Test-NetConnection -ComputerName "<workspace-name>.sql.azuresynapse.net" -Port 1433
-   ```
+```powershell
+# PowerShell: Test SQL connectivity
+Test-NetConnection -ComputerName "<workspace-name>.sql.azuresynapse.net" -Port 1433
+```
 
-3. **Azure Network Watcher**:
+1. __Azure Network Watcher__:
    - Use Connection Troubleshoot feature
    - Check for network topology issues
    - Validate NSG and routing configuration
 
-   ```powershell
-   # PowerShell: Test connection with Network Watcher
-   $source = Get-AzNetworkInterface -Name "sourceNIC" -ResourceGroupName "sourceRG"
-   $dest = Get-AzNetworkInterface -Name "destNIC" -ResourceGroupName "destRG"
-   
-   Test-AzNetworkWatcherConnectivity -NetworkWatcherName "NetworkWatcher_region" `
+```powershell
+# PowerShell: Test connection with Network Watcher
+$source = Get-AzNetworkInterface -Name "sourceNIC" -ResourceGroupName "sourceRG"
+$dest = Get-AzNetworkInterface -Name "destNIC" -ResourceGroupName "destRG"
+
+Test-AzNetworkWatcherConnectivity -NetworkWatcherName "NetworkWatcher_region" `
                                     -ResourceGroupName "NetworkWatcherRG" `
                                     -SourceId $source.Id `
                                     -DestinationId $dest.Id `
                                     -DestinationPort 1433
-   ```
+```
 
 ### Logging and Monitoring
 
-1. **Enable diagnostic logging**:
+1. _Enable diagnostic logging_:
    - Configure Azure Monitor for Synapse
    - Send logs to Log Analytics workspace
    - Set up alerting for connection failures
 
-   ```powershell
-   # PowerShell: Enable diagnostic settings
-   $workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "resourcegroup" -Name "logworkspace"
-   
-   Set-AzDiagnosticSetting -ResourceId "/subscriptions/subid/resourceGroups/resourcegroup/providers/Microsoft.Synapse/workspaces/synapseworkspace" `
-                          -Name "SynapseDiagnostics" `
-                          -WorkspaceId $workspace.ResourceId `
-                          -Category @("SynapseRbacOperations", "SQLSecurityAuditEvents", "SynapseLinkEvent") `
-                          -EnableLog $true
-   ```
+```powershell
+# PowerShell: Enable diagnostic settings
+$workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "resourcegroup" -Name "logworkspace"
+$synapse = Get-AzSynapseWorkspace -Name "synapseworkspace" -ResourceGroupName "resourcegroup"
+Set-AzDiagnosticSetting -Name "SynapseDiagnostics" -ResourceId $synapse.Id `
+  -WorkspaceId $workspace.ResourceId -Enabled $true `
+  -Category "SynapseRbacOperations", "GatewayApiRequests", "BuiltinSqlReqsEnded", "IntegrationPipelineRuns"
+```
 
-2. **Query logs for connection failures**:
-   ```sql
-   -- Log Analytics query for SQL connection failures
-   SynapseBuiltinSqlPoolRequestsEnded
-   | where StatusCode != 0
-   | where TimeGenerated > ago(24h)
-   | order by TimeGenerated desc
-   ```
+1. _Query logs for connection failures_:
+   - Use KQL queries to search for error patterns
 
-3. **Monitor network health**:
+```sql
+-- Log Analytics query for SQL connection failures
+SynapseBuiltinSqlPoolRequestsEnded
+| where StatusCode != 0
+| where TimeGenerated > ago(24h)
+| order by TimeGenerated desc
+```
+
+1. _Monitor network health_:
    - Set up connection monitors in Network Watcher
    - Create dashboards for network performance metrics
 
 ## Best Practices for Reliable Connectivity
 
-1. **Implement proper network design**:
+1. _Implement proper network design_:
    - Use private endpoints for enhanced security
    - Design appropriate network segmentation
    - Implement hybrid connectivity patterns correctly
 
-2. **Create comprehensive firewall rules**:
+2. _Create comprehensive firewall rules_:
    - Document all required IP ranges
    - Review and audit firewall rules regularly
    - Consider using service endpoints where appropriate
 
-3. **Plan for disaster recovery**:
+3. _Plan for disaster recovery_:
    - Document connection procedures
    - Create connectivity testing runbooks
    - Prepare for regional outages or service disruptions
 
-4. **Use managed identities**:
+4. _Use managed identities_:
    - Leverage managed identities for service-to-service authentication
    - Reduce reliance on connection strings with secrets
    - Implement least-privilege access model

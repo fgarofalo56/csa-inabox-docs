@@ -18,9 +18,9 @@ Azure Synapse Analytics is Microsoft's unified analytics service that brings tog
 
 - [Delta Lakehouse Architecture](./delta-lakehouse/index.md): Enterprise-scale lakehouse implementation using Delta Lake and Synapse Spark pools. This modern approach provides ACID transactions, schema enforcement, and time travel capabilities while maintaining the flexibility of a data lake.
 
-- [Serverless SQL Architecture](../serverless-sql/index.md): Pay-per-query patterns for ad-hoc analytics over data lake storage. Learn how to implement a cost-effective query layer for your data lake without provisioning infrastructure.
+- [Serverless SQL Architecture](./serverless-sql/index.md): Pay-per-query patterns for ad-hoc analytics over data lake storage. Learn how to implement a cost-effective query layer for your data lake without provisioning infrastructure.
 
-- [Shared Metadata Architecture](../shared-metadata/index.md): Implementation approaches for unified semantic layers that work across Synapse engines. Create consistent metadata that can be leveraged by SQL pools, Spark pools, and external tools.
+- [Shared Metadata Architecture](./shared-metadata/index.md): Implementation approaches for unified semantic layers that work across Synapse engines. Create consistent metadata that can be leveraged by SQL pools, Spark pools, and external tools.
 
 ## Integration Patterns
 

@@ -59,10 +59,16 @@ nav:
       - Overview: architecture/index.md
       - Delta Lakehouse:
           - Overview: architecture/delta-lakehouse/index.md
+          - Detailed Architecture: architecture/delta-lakehouse/detailed-architecture.md
       - Serverless SQL:
           - Overview: architecture/serverless-sql/index.md
+          - Detailed Architecture: architecture/serverless-sql/detailed-architecture.md
+          - Serverless Overview: architecture/serverless-sql/serverless-overview.md
       - Shared Metadata:
           - Overview: architecture/shared-metadata/index.md
+          - Shared Metadata Examples: architecture/shared-metadata/shared-metadata-examples.md
+          - Shared Metadata Visuals: architecture/shared-metadata/shared-metadata-visuals.md
+          - Implementation Details: architecture/shared-metadata/shared-metadata.md
   - Best Practices:
       - Overview: best-practices/index.md
       - Performance Optimization: best-practices/performance.md
@@ -83,7 +89,14 @@ nav:
       - Process Flowcharts: diagrams/process-flowcharts.md
       - Data Governance Diagrams: diagrams/data-governance-diagrams.md
   - FAQ: faq.md
-  - Troubleshooting: troubleshooting.md
+  - Troubleshooting:
+      - Overview: troubleshooting/index.md
+      - Spark Issues: troubleshooting/spark-troubleshooting.md
+      - Serverless SQL Issues: troubleshooting/serverless-sql-troubleshooting.md
+      - Connectivity Issues: troubleshooting/connectivity-troubleshooting.md
+      - Authentication Issues: troubleshooting/authentication-troubleshooting.md
+      - Delta Lake Issues: troubleshooting/delta-lake-troubleshooting.md
+      - Pipeline Issues: troubleshooting/pipeline-troubleshooting.md
 
 extra:
   social:
