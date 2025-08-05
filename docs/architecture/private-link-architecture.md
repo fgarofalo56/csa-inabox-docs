@@ -7,6 +7,7 @@
 
 Azure Private Link provides secure private connectivity to Azure Synapse Analytics and related services.
 
+<!-- Markdown lint exception: Inline HTML is used here for Material for MkDocs grid cards feature -->
 <div class="grid cards" markdown>
 
 - :material-connection:{ .lg .middle } __Private Endpoints__
@@ -44,6 +45,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
 </div>
 
 ## Reference Architecture
+
 
 ```mermaid
 graph TD
@@ -137,10 +139,11 @@ Azure Synapse Analytics requires multiple private endpoints for complete private
 
 Each private endpoint requires corresponding DNS zone configuration:
 
-1. **Create private DNS zones** for each endpoint type
-2. **Link DNS zones** to your virtual network
-3. **Create A records** for each private endpoint
-4. **Configure DNS resolution** between on-premises and Azure
+1. __Create private DNS zones__ for each endpoint type
+2. __Link DNS zones__ to your virtual network
+3. __Create A records__ for each private endpoint
+4. __Configure DNS resolution__ between on-premises and Azure
+
 
 ```powershell
 # Example: Create Private DNS Zones
@@ -169,11 +172,11 @@ New-AzPrivateDnsVirtualNetworkLink -ResourceGroupName $resourceGroup `
 
 Implement these network topology best practices:
 
-1. **Hub-Spoke Model** - Central connectivity hub with Synapse in a spoke VNet
-2. **Dedicated Subnets** - Separate subnet for private endpoints
-3. **Network Security Groups** - Control traffic flow between subnets
-4. **Route Tables** - Direct traffic through security appliances when needed
-5. **Azure Firewall** - Filter outbound traffic from Synapse
+1. __Hub-Spoke Model__ - Central connectivity hub with Synapse in a spoke VNet
+2. __Dedicated Subnets__ - Separate subnet for private endpoints
+3. __Network Security Groups__ - Control traffic flow between subnets
+4. __Route Tables__ - Direct traffic through security appliances when needed
+5. __Azure Firewall__ - Filter outbound traffic from Synapse
 
 !!! tip "Best Practice"
     Use subnet segregation to separate private endpoints by service type for better security and management.
@@ -183,23 +186,23 @@ Implement these network topology best practices:
 Validate your private link configuration with these methods:
 
 1. **DNS Resolution Testing**:
-   ```bash
-   # Test DNS resolution
-   nslookup myworkspace.sql.azuresynapse.net
-   # Should resolve to private IP address
-   ```
+```bash
+# Test DNS resolution
+nslookup myworkspace.sql.azuresynapse.net
+# Should resolve to private IP address
+```
 
 2. **Connection Testing**:
-   ```bash
-   # Test SQL connection
-   sqlcmd -S myworkspace.sql.azuresynapse.net -U username -P password
-   ```
+```bash
+# Test SQL connection
+sqlcmd -S myworkspace.sql.azuresynapse.net -U username -P password
+```
 
 3. **Network Path Analysis**:
-   ```bash
-   # Trace route should not go through internet
-   tracert myworkspace.sql.azuresynapse.net
-   ```
+```bash
+# Trace route should not go through internet
+tracert myworkspace.sql.azuresynapse.net
+```
 
 ## Hybrid Connectivity Scenarios
 
@@ -208,10 +211,11 @@ Validate your private link configuration with these methods:
 
 Configure these hybrid connectivity patterns:
 
-1. **ExpressRoute with Private Peering** - Dedicated circuit for low-latency connectivity
-2. **Site-to-Site VPN** - Encrypted connection over the internet
-3. **Point-to-Site VPN** - For individual client connections
-4. **DNS Forwarding** - Configure DNS forwarding for on-premises name resolution
+1. __ExpressRoute with Private Peering__ - Dedicated circuit for low-latency connectivity
+2. __Site-to-Site VPN__ - Encrypted connection over the internet
+3. __Point-to-Site VPN__ - For individual client connections
+4. __DNS Forwarding__ - Configure DNS forwarding for on-premises name resolution
+
 
 ```mermaid
 graph TD
@@ -249,11 +253,11 @@ graph TD
 
 Design your private link architecture for scalability and high availability:
 
-1. **Multiple Private Endpoints** in different subnets for load distribution
-2. **Redundant ExpressRoute Circuits** for hybrid connectivity
-3. **Zone-Redundant VPN Gateways** for high availability
-4. **Multiple DNS Servers** for resilient name resolution
-5. **Cross-Region Private Endpoints** for disaster recovery scenarios
+1. __Multiple Private Endpoints__ in different subnets for load distribution
+2. __Redundant ExpressRoute Circuits__ for hybrid connectivity
+3. __Zone-Redundant VPN Gateways__ for high availability
+4. __Multiple DNS Servers__ for resilient name resolution
+5. __Cross-Region Private Endpoints__ for disaster recovery scenarios
 
 ## Implementation Checklist
 
