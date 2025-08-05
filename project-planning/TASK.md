@@ -220,7 +220,7 @@ Documentation tasks previously completed for the Azure Synapse Analytics documen
 - [x] Create pre-commit hook for markdown linting (Completed: 2025-08-04)
 - [x] Fix strong style formatting in reference/index.md (use underscores instead of asterisks) (Completed: 2025-08-04)
 - [x] Fix strong style formatting in best-practices/index.md (use underscores instead of asterisks) (Completed: 2025-08-04)
-- [x] Fix strong style formatting in serverless-sql/index.md (use underscores instead of asterisks) (Completed: 2025-08-04)
+- [x] Fix strong style formatting in serverless-sql/index.md (use underscores instead of asterisks) (Completed: 2025-08-04, Verified: 2025-08-07)
 - [x] Fix strong style formatting in architecture/index.md (use underscores instead of asterisks) (Completed: 2025-08-04)
 - [x] Fix strong style formatting in code-examples/index.md (use underscores instead of asterisks) (Completed: 2025-08-07)
 - [x] Fix strong style formatting in code-examples/integration-guide.md (use underscores instead of asterisks) (Completed: 2025-08-07)
@@ -231,6 +231,12 @@ Documentation tasks previously completed for the Azure Synapse Analytics documen
 - [x] Update markdownlint config to use fenced code blocks consistently (Completed: 2025-08-07)
 - [x] Fix trailing newlines in markdown files (Completed: 2025-08-07)
 - [ ] Fix remaining trailing spaces in all markdown files
+- [x] Fix strong style formatting in monitoring/logging-monitoring-guide.md (use underscores instead of asterisks) (Completed: 2025-08-07)
+- [x] Fix strong style formatting in troubleshooting.md (use underscores instead of asterisks) (Completed: 2025-08-07)
+- [x] Fix strong style formatting in shared-metadata/index.md (use underscores instead of asterisks) (Completed: 2025-08-07)
+- [x] Fix strong style formatting in best-practices/data-governance.md (use underscores instead of asterisks) (Completed: 2025-08-07)
+- [x] Fix strong style formatting in tutorials/interactive-data-pipeline.md (use underscores instead of asterisks) (Completed: 2025-08-07)
+- [x] Fix strong style formatting and list formatting in troubleshooting/authentication-troubleshooting.md (Completed: 2025-08-07)
 - [ ] Fix remaining strong style formatting in all markdown files (use underscores instead of asterisks)
 - [ ] Fix remaining list formatting and proper indentation issues
 

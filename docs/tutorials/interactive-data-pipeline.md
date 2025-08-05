@@ -62,9 +62,9 @@ Write-Output "Sample data uploaded successfully to $storageAccountName/$containe
 
 ### Step 2: Set Up Linked Service for Sample Data
 
-1. In Synapse Studio, navigate to **Manage** > **Linked services**
-2. Click **+ New** to create a new linked service
-3. Select **Azure Data Lake Storage Gen2** and click **Continue**
+1. In Synapse Studio, navigate to __Manage__ > __Linked services__
+2. Click __+ New__ to create a new linked service
+3. Select __Azure Data Lake Storage Gen2__ and click __Continue__
 4. Configure the linked service:
    - Name: `TutorialDataStorage`
    - Authentication method: Select appropriate method (Managed Identity recommended)
@@ -72,61 +72,61 @@ Write-Output "Sample data uploaded successfully to $storageAccountName/$containe
    - Azure subscription: Select your subscription
    - Storage account name: Select your storage account
    - Test connection: Verify connection succeeds
-5. Click **Create**
+5. Click __Create__
 
 ## Part 1: Data Ingestion with Synapse Pipeline
 
 ### Step 1: Create a Pipeline
 
-1. In Synapse Studio, navigate to **Integrate**
-2. Click **+** > **Pipeline**
+1. In Synapse Studio, navigate to __Integrate__
+2. Click __+__ > __Pipeline__
 3. Name your pipeline `SalesPipeline`
 
 ### Step 2: Add Copy Data Activity
 
-1. In the Activities pane, expand **Move & Transform** and drag a **Copy data** activity to the pipeline canvas
+1. In the Activities pane, expand __Move & Transform__ and drag a __Copy data__ activity to the pipeline canvas
 2. Select the Copy data activity and configure:
-   - **Source tab**:
-     - Source dataset: Click **+ New**
-     - Select **Azure Data Lake Storage Gen2** > **DelimitedText**
+   - __Source tab__:
+     - Source dataset: Click __+ New__
+     - Select __Azure Data Lake Storage Gen2__ > __DelimitedText__
      - Name: `SalesRawData`
      - Linked service: Select `TutorialDataStorage`
      - File path: Browse to `/tutorial/raw/sales/`
      - First row as header: Checked
      - Import schema: From connection/store
-   - **Sink tab**:
-     - Sink dataset: Click **+ New**
-     - Select **Azure Data Lake Storage Gen2** > **DelimitedText**
+   - __Sink tab__:
+     - Sink dataset: Click __+ New__
+     - Select __Azure Data Lake Storage Gen2__ > __DelimitedText__
      - Name: `SalesStaging`
      - Linked service: Select `TutorialDataStorage`
      - File path: Type `/tutorial/staging/sales/`
      - First row as header: Checked
-3. In the **Mapping tab**, click **Import schemas** and verify column mappings
+3. In the __Mapping tab__, click __Import schemas__ and verify column mappings
 
 ### Step 3: Add Parameters and Trigger Settings
 
-1. Go to the **Parameters** tab for your pipeline
+1. Go to the __Parameters__ tab for your pipeline
 2. Add a parameter:
    - Name: `ProcessDate`
    - Type: String
    - Default value: `@utcnow('yyyy-MM-dd')`
 3. Configure the Copy activity:
    - Select the Copy activity
-   - Go to **Sink** > **SalesStaging dataset** > **Parameters**
+   - Go to __Sink__ > __SalesStaging dataset__ > __Parameters__
    - Set File path to: `/tutorial/staging/sales/@{pipeline().parameters.ProcessDate}/`
 
 ### Step 4: Run the Pipeline
 
-1. Click **Debug** to run the pipeline
-2. Monitor the pipeline execution in the **Output** tab
+1. Click __Debug__ to run the pipeline
+2. Monitor the pipeline execution in the __Output__ tab
 3. Once completed, verify data was copied to the staging folder
 
 ## Part 2: Data Transformation with Spark
 
 ### Step 1: Create a Spark Notebook
 
-1. In Synapse Studio, navigate to **Develop**
-2. Click **+** > **Notebook**
+1. In Synapse Studio, navigate to __Develop__
+2. Click __+__ > __Notebook__
 3. Name your notebook `SalesTransformation`
 4. Connect to your Spark pool
 
@@ -238,16 +238,16 @@ spark.sql("SHOW TABLES IN sales").show()
 ### Step 3: Run the Notebook
 
 1. Replace `<your-storage-account-name>` with your actual storage account name
-2. Run each cell in sequence by clicking the **▶** button
+2. Run each cell in sequence by clicking the __▶__ button
 3. Review the output of each cell to ensure it executes correctly
 
 ## Part 3: Query Data with Serverless SQL
 
 ### Step 1: Navigate to Serverless SQL
 
-1. In Synapse Studio, click on **Data** in the left navigation
-2. Expand your workspace and select **Built-in**
-3. Navigate to **Lake database** > **sales**
+1. In Synapse Studio, click on __Data__ in the left navigation
+2. Expand your workspace and select __Built-in__
+3. Navigate to __Lake database__ > __sales__
 4. You should see the tables created by Spark: `detailed_sales` and `product_sales_monthly`
 
 ### Step 2: Create Views for Analysis
@@ -336,18 +336,18 @@ Now let's combine all the steps into a single orchestrated pipeline:
 
 ### Step 1: Create a Master Pipeline
 
-1. In Synapse Studio, navigate to **Integrate**
-2. Click **+** > **Pipeline**
+1. In Synapse Studio, navigate to __Integrate__
+2. Click __+__ > __Pipeline__
 3. Name your pipeline `MasterSalesPipeline`
 
 ### Step 2: Add the Copy Data Activity
 
-1. Drag a **Copy data** activity from the **Move & Transform** category
+1. Drag a __Copy data__ activity from the __Move & Transform__ category
 2. Configure it exactly as in Part 1, using the same source and sink datasets
 
 ### Step 3: Add the Notebook Activity
 
-1. Drag a **Notebook** activity from the **Synapse** category
+1. Drag a __Notebook__ activity from the __Synapse__ category
 2. Connect the Copy activity's output to the Notebook activity input
 3. Configure the Notebook:
    - Notebook: Select `SalesTransformation`
@@ -356,13 +356,13 @@ Now let's combine all the steps into a single orchestrated pipeline:
 
 ### Step 4: Configure Pipeline Success Email (Optional)
 
-1. Drag a **Web** activity from the **General** category
+1. Drag a __Web__ activity from the __General__ category
 2. Connect the Notebook activity's output to the Web activity input
 3. Configure for sending an email notification using Logic Apps or other email service
 
 ### Step 5: Run the Master Pipeline
 
-1. Click **Debug** to test the pipeline
+1. Click __Debug__ to test the pipeline
 2. Monitor the execution in the pipeline canvas
 3. Verify all activities complete successfully
 
@@ -370,35 +370,35 @@ Now let's combine all the steps into a single orchestrated pipeline:
 
 ### Step 1: Connect Power BI to Synapse
 
-1. In Synapse Studio, navigate to **Develop**
-2. Click **+** > **Power BI** > **Power BI report**
+1. In Synapse Studio, navigate to __Develop__
+2. Click __+__ > __Power BI__ > __Power BI report__
 3. If prompted, sign in to your Power BI account
 
 ### Step 2: Create a Direct Query Report
 
-1. Select **Build new report**
+1. Select __Build new report__
 2. In the connection dialog:
    - Connect to: Select your Synapse workspace
-   - SQL pool: Select **Built-in**
-   - Database: Select **sales**
+   - SQL pool: Select __Built-in__
+   - Database: Select __sales__
 3. Choose DirectQuery mode
 
 ### Step 3: Design Visualizations
 
 Create the following visualizations:
 
-1. **Sales Trend Line Chart**:
+1. __Sales Trend Line Chart__:
    - Drag `vw_SalesTrends` to the canvas
    - Create a line chart with:
      - Axis: Month and Year
      - Values: TotalSales
 
-2. **Product Performance Card**:
+2. __Product Performance Card__:
    - Create a table visualization with:
      - Values: ProductName, TotalRevenue, PerformanceCategory
    - Apply conditional formatting to PerformanceCategory
 
-3. **Units Sold by Product Pie Chart**:
+3. __Units Sold by Product Pie Chart__:
    - Create a pie chart with:
      - Legend: ProductName
      - Values: TotalUnitsSold
@@ -406,16 +406,16 @@ Create the following visualizations:
 ### Step 4: Save and Publish the Report
 
 1. Save the report as `Sales Analysis Dashboard`
-2. Click **Publish** to publish to your Power BI workspace
+2. Click __Publish__ to publish to your Power BI workspace
 3. Return to Synapse Studio and link the report to your workspace
 
 ## Part 6: Automate and Schedule
 
 ### Step 1: Create a Trigger for the Pipeline
 
-1. In Synapse Studio, navigate to **Integrate**
+1. In Synapse Studio, navigate to __Integrate__
 2. Select your `MasterSalesPipeline`
-3. Click **Add trigger** > **New/Edit**
+3. Click __Add trigger__ > __New/Edit__
 4. Configure a schedule trigger:
    - Type: Schedule
    - Start date: Select today's date
@@ -424,10 +424,10 @@ Create the following visualizations:
 
 ### Step 2: Set Up Monitoring
 
-1. Navigate to **Monitor** in Synapse Studio
-2. Select **Pipeline runs**
+1. Navigate to __Monitor__ in Synapse Studio
+2. Select __Pipeline runs__
 3. Configure pipeline run alerts:
-   - Click **New alert rule**
+   - Click __New alert rule__
    - Set condition: Failed pipeline runs
    - Set action group: Create a new action group for email notifications
 

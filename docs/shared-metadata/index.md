@@ -10,27 +10,27 @@ The Shared Metadata Architecture in Azure Synapse Analytics enables a unified se
 
 ### Core Components
 
-1. **Azure Synapse Analytics Workspace**
+1. __Azure Synapse Analytics Workspace__
    - Central hub for all analytics activities
    - Integration point for different compute engines
    - Management of shared metadata artifacts
 
-2. **Synapse SQL Pools (Dedicated and Serverless)**
+2. __Synapse SQL Pools (Dedicated and Serverless)__
    - T-SQL interface for data access
    - Support for external tables over data lake
    - View definitions for logical data modeling
 
-3. **Synapse Spark Pools**
+3. __Synapse Spark Pools__
    - Apache Spark processing engine
    - Support for Delta, Parquet, and other formats
    - Integration with SQL through SparkSQL
 
-4. **Azure Data Lake Storage Gen2**
+4. __Azure Data Lake Storage Gen2__
    - Common storage layer for all data
    - Support for POSIX-compliant ACLs
    - Hierarchical namespace for organization
 
-5. **Metadata Services**
+5. __Metadata Services__
    - Synapse Workspace Metadata
    - Azure Purview for cataloging and lineage
    - Git integration for metadata version control
@@ -129,25 +129,25 @@ customer_summary = spark.read \
 
 ### Schema Propagation
 
-1. **Source of Truth Approach**
+1. __Source of Truth Approach__
    - Designate one system (typically SQL) as the schema authority
    - Automate schema propagation to other engines
    - Use tools like Azure Data Factory or Synapse Pipelines for orchestration
 
-2. **Schema Evolution Handling**
+2. __Schema Evolution Handling__
    - Implement version control for schema changes
    - Use schema compatibility modes in Delta Lake
    - Automate testing of schema compatibility
 
 ### Metadata Management
 
-1. **Azure Purview Integration**
+1. __Azure Purview Integration__
    - Central catalog for data assets
    - Automated scanning and classification
    - Lineage tracking across engines
    - Business glossary integration
 
-2. **Custom Metadata Registry**
+2. __Custom Metadata Registry__
    - Create a metadata registry database
    - Track schema versions and changes
    - Store engine-specific optimizations
@@ -178,17 +178,17 @@ GRANT SELECT ON [dbo].[Customer]([Email]) TO [MarketingTeam];
 
 ### Cross-Engine Query Optimization
 
-1. **Dedicated SQL Pool Optimizations**
+1. __Dedicated SQL Pool Optimizations__
    - Distribution keys aligned with join columns
    - Partition aligned with filtering patterns
    - Statistics maintenance
 
-2. **Serverless SQL Optimizations**
+2. __Serverless SQL Optimizations__
    - Optimal file formats (Parquet/Delta)
    - Partition elimination strategies
    - File size optimization
 
-3. **Spark Optimizations**
+3. __Spark Optimizations__
    - Spark configuration tuning
    - Broadcast joins for dimension tables
    - Partition pruning through predicate pushdown
@@ -197,60 +197,60 @@ GRANT SELECT ON [dbo].[Customer]([Email]) TO [MarketingTeam];
 
 ### Enterprise Data Warehouse Modernization
 
-1. **Hybrid Approach**
+1. __Hybrid Approach__
    - Keep core EDW workloads in Dedicated SQL Pool
    - Use Spark for data preparation and ML
    - Use Serverless SQL for ad-hoc exploration
    - Maintain consistent business definitions across all engines
 
-2. **Phased Migration**
+2. __Migration Pattern__
    - Start with shared metadata layer
    - Gradually migrate workloads to appropriate engines
    - Maintain backward compatibility
 
 ### Advanced Analytics Integration
 
-1. **Machine Learning Pipeline**
+1. __Machine Learning Pipeline__
    - Feature engineering in SQL or Spark
    - Model training in Spark
    - Model scoring in SQL or Spark
    - Consistent data access across pipeline stages
 
-2. **Real-time Analytics**
+2. __Real-time Analytics__
    - Stream processing in Spark
    - Serving layer in SQL
    - Shared schema definitions
 
 ## DevOps and Governance
 
-1. **CI/CD for Metadata**
+1. __CI/CD for Metadata__
    - Source control for all metadata definitions
    - Automated testing for cross-engine compatibility
    - Deployment pipelines for metadata changes
 
-2. **Monitoring and Observability**
+2. __Monitoring and Observability__
    - Track query performance across engines
    - Monitor metadata usage patterns
    - Audit access to sensitive data
 
 ## Best Practices
 
-1. **Design for Compatibility**
+1. __Design for Compatibility__
    - Use data types supported across engines
    - Avoid engine-specific SQL extensions where possible
    - Document engine-specific behaviors
 
-2. **Implement Data Governance Early**
+2. __Implement Data Governance Early__
    - Define data ownership and stewardship
    - Establish metadata management practices
    - Automate compliance and quality checks
 
-3. **Balance Flexibility and Control**
+3. __Balance Flexibility and Control__
    - Allow specialized optimizations per engine
    - Maintain core business logic consistency
    - Enable self-service while ensuring governance
 
-4. **Optimize for Performance**
+4. __Optimize for Performance__
    - Profile workloads across engines
    - Apply engine-specific optimizations
    - Use appropriate compute for each workload type

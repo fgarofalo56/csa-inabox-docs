@@ -111,9 +111,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `docs/architecture/index.md`
   - `docs/code-examples/index.md`
   - `docs/code-examples/integration-guide.md`
+  - `docs/monitoring/logging-monitoring-guide.md`
+  - `docs/troubleshooting.md`
+  - `docs/shared-metadata/index.md`
+  - `docs/best-practices/data-governance.md`
+  - `docs/tutorials/interactive-data-pipeline.md`
+  - `docs/troubleshooting/authentication-troubleshooting.md`
 - Updated markdownlint configuration to consistently use fenced code blocks throughout documentation
 - Added blank lines around lists to improve readability and comply with markdown standards
 - Fixed trailing newlines in markdown files
+- Enhanced GitHub Actions markdown lint workflow with error threshold functionality for gradual strict mode enforcement
+- Improved developer experience with comprehensive markdown linting guidelines in README.md
 
 ## [0.5.0] - 2025-08-06
 

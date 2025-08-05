@@ -166,6 +166,38 @@ To learn more about the hooks and common linting fixes, see the [Git Hooks READM
 - Provide code examples with proper syntax highlighting
 - All technical claims should be verified with references
 
+### Markdown Linting
+
+This project enforces consistent markdown formatting through automated linting:
+
+#### Local Markdown Linting
+
+1. Install the markdownlint CLI:
+
+   ```bash
+   npm install -g markdownlint-cli
+   ```
+
+2. Run the linter manually (from project root):
+
+   ```bash
+   markdownlint '**/*.md' -c .markdownlint.json
+   ```
+
+3. Alternatively, set up the git hooks as described above to automatically check before commits.
+
+#### Key Markdown Style Rules
+
+- __Strong formatting__: Use underscores (`__text__`) not asterisks (`**text**`) for strong formatting
+- __Code blocks__: Use fenced code blocks (\`\`\`) with language specification
+- __Lists__: Include blank lines before and after lists
+- __Headings__: Ensure proper heading hierarchy (only one H1 per document)
+- __HTML__: When using inline HTML (for Material for MkDocs components), add appropriate comments
+
+#### CI/CD Integration
+
+The GitHub Actions workflow `.github/workflows/markdown-lint.yml` automatically checks markdown files on pull requests and pushes. The workflow is configured with an error threshold that will be gradually lowered as linting issues are fixed across the documentation.
+
 For more information on contributing, see:
 
 - [Project Planning](./project-planning/PLANNING.md)

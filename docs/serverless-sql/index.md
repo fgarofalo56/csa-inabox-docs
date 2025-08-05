@@ -196,7 +196,7 @@ JOIN [dbo].[Sales] s ON c.[CustomerId] = s.[CustomerId];
    - Storage account configuration as code
    - Terraform for resource provisioning
 
-2. **CI/CD for Database Objects**
+2. __CI/CD for Database Objects__
    - Source control for SQL scripts
    - Automated testing for views and procedures
    - Deployment pipelines for schema changes

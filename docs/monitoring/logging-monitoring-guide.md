@@ -16,12 +16,12 @@ Azure Synapse Analytics provides multiple layers of monitoring capabilities to g
 
 A comprehensive monitoring solution for Azure Synapse Analytics typically involves:
 
-1. **Azure Monitor**: The foundational monitoring service for all Azure resources
-2. **Log Analytics**: Collection, aggregation, and analysis of telemetry and log data
-3. **Azure Metrics**: Near real-time performance and health metrics
-4. **Application Insights**: Deep application monitoring for custom applications
-5. **Diagnostic Settings**: Configuration of log and metric collection
-6. **Alerting**: Proactive notification when issues arise
+1. __Azure Monitor__: The foundational monitoring service for all Azure resources
+2. __Log Analytics__: Collection, aggregation, and analysis of telemetry and log data
+3. __Azure Metrics__: Near real-time performance and health metrics
+4. __Application Insights__: Deep application monitoring for custom applications
+5. __Diagnostic Settings__: Configuration of log and metric collection
+6. __Alerting__: Proactive notification when issues arise
 
 ![Synapse Monitoring Architecture](../images/monitoring-architecture.png)
 
@@ -32,8 +32,8 @@ A comprehensive monitoring solution for Azure Synapse Analytics typically involv
 To enable comprehensive logging for your Synapse workspace:
 
 1. Navigate to your Synapse workspace in the Azure portal
-2. Select **Diagnostic settings** under Monitoring
-3. Click **Add diagnostic setting**
+2. Select __Diagnostic settings__ under Monitoring
+3. Click __Add diagnostic setting__
 4. Provide a name for your settings
 5. Select the logs and metrics you want to collect
 6. Choose destination(s) for your logs:
@@ -75,19 +75,19 @@ Set-AzDiagnosticSetting -ResourceId $workspace.Id `
 
 Each storage option has specific benefits:
 
-1. **Log Analytics Workspace**:
+1. __Log Analytics Workspace__:
    - Best for interactive querying and analysis
    - Supports complex KQL queries and dashboards
    - Enables cross-component correlation
    - Powers alerting based on log queries
 
-2. **Azure Storage Account**:
+2. __Azure Storage Account__:
    - Long-term retention of logs
    - Cost-effective for large volumes
    - Useful for compliance and audit requirements
    - Can be analyzed using other tools like Power BI
 
-3. **Event Hub**:
+3. __Event Hub__:
    - Real-time log streaming to external systems
    - Integration with third-party SIEM solutions
    - Custom real-time processing pipelines
@@ -134,8 +134,8 @@ Each storage option has specific benefits:
 
 Azure provides built-in dashboards, but you can create custom dashboards for Synapse monitoring:
 
-1. Navigate to **Dashboard** in the Azure portal
-2. Click **+ New dashboard**
+1. Navigate to __Dashboard__ in the Azure portal
+2. Click __+ New dashboard__
 3. Name your dashboard (e.g., "Synapse Monitoring")
 4. Add tiles using the gallery or pin metrics from your resources
 5. Organize tiles in logical groups:
@@ -147,26 +147,26 @@ Azure provides built-in dashboards, but you can create custom dashboards for Syn
 
 ### Key Sections for Your Dashboard
 
-1. **Workspace Health**:
+1. __Workspace Health__:
    - Overall workspace status
    - Recent operations
 
-2. **SQL Pool Performance**:
+2. __SQL Pool Performance__:
    - DWU/cDWU utilization
    - Active vs. queued queries
    - Data IO and tempdb usage
 
-3. **Spark Performance**:
+3. __Spark Performance__:
    - Active applications
    - Core and memory utilization
    - Job success rates
 
-4. **Pipeline Execution**:
+4. __Pipeline Execution__:
    - Success/failure rates
    - Pipeline duration trends
    - Activity performance
 
-5. **Security and Access**:
+5. __Security and Access__:
    - Failed login attempts
    - RBAC operations
    - Firewall blocks
@@ -175,19 +175,19 @@ Azure provides built-in dashboards, but you can create custom dashboards for Syn
 
 ### Critical Alerts to Configure
 
-1. **Health and Availability**:
+1. __Health and Availability__:
    - Workspace availability drops below 100%
    - Service health incidents affecting Synapse
    - Failed connectivity to dependent services
 
-2. **Performance Alerts**:
+2. __Performance Alerts__:
    - SQL Pool: DWU utilization >90% for >30 minutes
    - SQL Pool: Queued queries >5 for >10 minutes
    - Spark Pool: Pending applications >3 for >15 minutes
    - Pipeline: Run duration >150% of baseline
    - Integration Runtime: CPU >90% for >15 minutes
 
-3. **Failure Alerts**:
+3. __Failure Alerts__:
    - SQL: Failed queries >5 in 10 minutes
    - Spark: Failed jobs >3 in 1 hour
    - Pipelines: Success rate <90% in last hour
@@ -214,8 +214,8 @@ Add-AzMetricAlertRuleV2 -Name "High DWU Alert" `
 
 Create action groups to define what happens when alerts are triggered:
 
-1. Navigate to **Monitor > Alerts > Action Groups**
-2. Click **+ Add action group**
+1. Navigate to __Monitor > Alerts > Action Groups__
+2. Click __+ Add action group__
 3. Configure notification methods:
    - Email: For non-urgent notifications
    - SMS: For critical alerts requiring immediate attention
@@ -304,19 +304,19 @@ SynapseIntegrationPipelineRuns
 
 Azure Workbooks provide interactive reports for monitoring. Create workbooks for:
 
-1. **SQL Pool Performance Dashboard**:
+1. __SQL Pool Performance Dashboard__:
    - Query performance trends
    - Resource utilization patterns
    - Top resource-intensive queries
    - Concurrency metrics
 
-2. **Spark Job Analysis**:
+2. __Spark Job Analysis__:
    - Job success/failure rates
    - Execution time trends
    - Resource consumption patterns
    - Application logs
 
-3. **Pipeline Execution Monitoring**:
+3. __Pipeline Execution Monitoring__:
    - Pipeline health overview
    - Duration trends by pipeline
    - Activity failure analysis
@@ -373,22 +373,22 @@ Azure Workbooks provide interactive reports for monitoring. Create workbooks for
 
 Implement a comprehensive monitoring strategy:
 
-1. **Real-time operational monitoring**:
+1. __Real-time operational monitoring__:
    - Dashboards for current state visibility
    - Alerts for immediate response
    - Resource health monitoring
 
-2. **Performance analysis**:
+2. __Performance analysis__:
    - Trend analysis across components
    - Query store for SQL performance
    - Spark history server integration
 
-3. **Cost and resource optimization**:
+3. __Cost and resource optimization__:
    - DWU/Spark core utilization
    - Idle resource detection
    - Scaling opportunity identification
 
-4. **Security and compliance monitoring**:
+4. __Security and compliance monitoring__:
    - Authentication failures
    - Firewall events
    - RBAC changes
@@ -408,12 +408,12 @@ For advanced security monitoring:
 
 ### Integrating with DevOps Processes
 
-1. **Deployment Monitoring**:
+1. __Deployment Monitoring__:
    - Track performance before/after deployments
    - Set up alerts for post-deployment issues
    - Integrate monitoring data into CI/CD pipelines
 
-2. **Infrastructure as Code**:
+2. __Infrastructure as Code__:
    - Automate creation of monitoring resources
    - Version control dashboard and alert configurations
    - Script diagnostic setting deployment

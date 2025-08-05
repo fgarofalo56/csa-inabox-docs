@@ -16,7 +16,10 @@ on:
 # Environment variables for controlling behavior
 env:
   # Set to 'true' to make the workflow fail on lint errors
-  STRICT_MODE: 'false'
+  STRICT_MODE: 'true'
+  # Set error threshold - workflow will only fail if more than this number of errors are found
+  # This allows for gradual enforcement as errors are fixed
+  ERROR_THRESHOLD: '50'
 
 jobs:
   markdownlint:
@@ -74,10 +77,14 @@ jobs:
         run: |
           echo "::warning::Found ${{ steps.lint.outputs.issue-count }} markdown linting issues. Check the workflow artifacts for details."
           
-          # Fail the workflow if in strict mode
+          # Fail the workflow if in strict mode and issues exceed the threshold
           if [ "${{ env.STRICT_MODE }}" = "true" ]; then
-            echo "::error::Failing build due to markdown lint issues (STRICT_MODE is enabled)"
-            exit 1
+            if [ ${{ steps.lint.outputs.issue-count }} -gt ${{ env.ERROR_THRESHOLD }} ]; then
+              echo "::error::Failing build due to too many markdown lint issues (${{ steps.lint.outputs.issue-count }} > ${{ env.ERROR_THRESHOLD }})"
+              exit 1
+            else
+              echo "Continuing despite lint issues (${{ steps.lint.outputs.issue-count }} <= ${{ env.ERROR_THRESHOLD }} threshold)"
+            fi
           else
             echo "Continuing despite lint issues (STRICT_MODE is disabled)"
           fi

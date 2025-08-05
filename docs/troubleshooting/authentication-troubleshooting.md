@@ -6,36 +6,42 @@ This guide covers common authentication and authorization problems in Azure Syna
 
 Authentication and authorization issues in Azure Synapse Analytics typically fall into these categories:
 
-1. **Identity Problems**: User authentication failures, token issues, AAD integration
-2. **Role-Based Access Control**: Missing permissions, role assignment issues
-3. **Workspace Access Management**: Synapse RBAC configuration problems
-4. **Service Principal Authentication**: App registration issues, secret management
-5. **Managed Identity Configuration**: System and user-assigned identity problems
-6. **Cross-Service Authorization**: Access issues between Synapse and other Azure services
+1. __Identity Problems__: User authentication failures, token issues, AAD integration
+
+2. __Role-Based Access Control__: Missing permissions, role assignment issues
+
+3. __Workspace Access Management__: Synapse RBAC configuration problems
+
+4. __Service Principal Authentication__: App registration issues, secret management
+
+5. __Managed Identity Configuration__: System and user-assigned identity problems
+
+6. __Cross-Service Authorization__: Access issues between Synapse and other Azure services
 
 ## Identity Problems
 
 ### Azure Active Directory Authentication Failures
 
-**Symptoms:**
+__Symptoms:__
+
 - "Login failed for user" errors
 - Authentication timeout messages
 - MFA-related interruptions or failures
 - Conditional access policy blocks
 
-**Solutions:**
+__Solutions:__
 
-1. **Verify AAD configuration**:
+1. __Verify AAD configuration__:
    - Check that user exists in the correct AAD tenant
    - Verify user is not blocked or disabled
    - Ensure user has been added to the Synapse workspace
 
-2. **Test AAD connectivity**:
+2. __Test AAD connectivity__:
    - Try signing in to Azure portal with the same credentials
    - Check for tenant-wide AAD issues or outages
    - Verify DNS resolution for login.microsoftonline.com
 
-3. **Check for conditional access policies**:
+3. __Check for conditional access policies__:
    - Review conditional access policies that might block Synapse access
    - Check for location-based restrictions
    - Verify device compliance requirements
@@ -45,25 +51,26 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    Get-AzureADMSConditionalAccessPolicy | Where-Object {$_.DisplayName -like "*Synapse*"}
    ```
 
-4. **Validate MFA configuration**:
+4. __Validate MFA configuration__:
    - Ensure MFA methods are registered and current
    - Try alternative MFA methods if available
    - Check for MFA outages or service issues
 
 ### Token and Session Management
 
-**Symptoms:**
+__Symptoms:__
+
 - "Token expired" errors
 - Frequent reauthentication requests
 - Unable to acquire token for resource
 
-**Solutions:**
+__Solutions:__
 
-1. **Check token lifetime policies**:
+1. __Check token lifetime policies__:
    - Review AAD token lifetime settings
    - Check for custom token lifetime policies
 
-2. **Inspect token claims and audience**:
+2. __Inspect token claims and audience__:
    - Use [jwt.ms](https://jwt.ms) to decode and verify token contents
    - Ensure token audience matches the expected resource
 
@@ -80,7 +87,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    }
    ```
 
-3. **Validate token acquisition flow**:
+3. __Validate token acquisition flow__:
    - Test token acquisition with Microsoft Authentication Library (MSAL)
    - Check for consent issues or missing permissions
 
@@ -92,7 +99,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    $token.AccessToken | clip
    ```
 
-4. **Address browser or client issues**:
+4. __Address browser or client issues__:
    - Clear browser cache and cookies
    - Try different browsers
    - Check browser extensions that might interfere with authentication
@@ -101,15 +108,16 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
 
 ### Missing Azure RBAC Permissions
 
-**Symptoms:**
+__Symptoms:__
+
 - "Forbidden" or "Unauthorized" errors
 - Limited access to Synapse components
 - Can't perform specific operations
 - Permission-related errors in specific components
 
-**Solutions:**
+__Solutions:__
 
-1. **Verify role assignments**:
+1. __Verify role assignments__:
    - Check Azure RBAC roles assigned at subscription, resource group, and resource level
    - Common required roles: Synapse Administrator, Contributor, Storage Blob Data Contributor
 
@@ -122,29 +130,30 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    Get-AzRoleAssignment -ResourceId $workspace.Id -RoleDefinitionName "Synapse Administrator"
    ```
 
-2. **Check inherited permissions**:
+2. __Check inherited permissions__:
    - Review permission inheritance from higher scopes
    - Check for deny assignments that might override allows
 
-3. **Grant required permissions**:
-   ```powershell
-   # PowerShell: Assign Synapse Administrator role
-   $user = Get-AzADUser -UserPrincipalName "user@contoso.com"
-   $workspace = Get-AzSynapseWorkspace -Name "workspace" -ResourceGroupName "resourcegroup"
-   
-   New-AzRoleAssignment -ObjectId $user.Id -RoleDefinitionName "Synapse Administrator" -Scope $workspace.Id
-   ```
+3. __Grant required permissions__:
+
+```powershell
+# PowerShell: Assign Synapse Administrator role
+$user = Get-AzADUser -UserPrincipalName "user@contoso.com"
+$workspace = Get-AzSynapseWorkspace -Name "workspace" -ResourceGroupName "resourcegroup"
+New-AzRoleAssignment -ObjectId $user.Id -RoleDefinitionName "Synapse Administrator" -Scope $workspace.Id
+```
 
 ### Synapse RBAC Configuration
 
-**Symptoms:**
+__Symptoms:__
+
 - Can access workspace but not specific features
 - Permission errors within Synapse Studio
 - "Access denied" when working with specific artifacts
 
-**Solutions:**
+__Solutions:__
 
-1. **Review Synapse RBAC assignments**:
+1. __Review Synapse RBAC assignments__:
    - Check Synapse-specific roles in the workspace
    - Verify item-level permissions
 
@@ -156,7 +165,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    New-AzSynapseRoleAssignment -WorkspaceName "workspace" -RoleDefinitionId "workspace admin" -ObjectId "user-or-group-object-id"
    ```
 
-2. **Check Synapse built-in roles**:
+2. __Check Synapse built-in roles__:
    - Understand the scope and permissions of built-in roles
    - Assign appropriate roles for specific tasks
 
@@ -168,7 +177,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    | Artifact User | Use published artifacts but can't modify them |
    | Artifact Publisher | Create and publish artifacts like notebooks |
 
-3. **Troubleshoot inheritance issues**:
+3. __Troubleshoot inheritance issues__:
    - Check folder-level permissions
    - Review workspace-level permissions
    - Understand permission precedence rules
@@ -177,15 +186,16 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
 
 ### Service Principal Configuration Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Automated processes failing to authenticate
 - "Invalid client secret" errors
 - Application/service principal authentication failures
 - Expired credentials
 
-**Solutions:**
+__Solutions:__
 
-1. **Verify service principal existence and status**:
+1. __Verify service principal existence and status__:
    - Check that app registration and service principal exist
    - Ensure service principal is not disabled
 
@@ -194,7 +204,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    Get-AzADServicePrincipal -ApplicationId "application-id"
    ```
 
-2. **Check client secret or certificate**:
+2. __Check client secret or certificate__:
    - Verify client secret has not expired
    - Check certificate expiration and validity
    - Rotate expired credentials
@@ -209,21 +219,22 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    New-AzADAppCredential -ApplicationId $app.AppId -EndDate $endDate
    ```
 
-3. **Validate permissions and consent**:
+3. __Validate permissions and consent__:
    - Check API permissions assigned to application
    - Ensure admin consent has been granted for required permissions
    - Verify service principal has correct roles assigned
 
 ### Azure Key Vault Integration
 
-**Symptoms:**
+__Symptoms:__
+
 - Can't retrieve secrets from Key Vault
 - Access denied errors when accessing credentials
 - Linked services using Key Vault failing
 
-**Solutions:**
+__Solutions:__
 
-1. **Check Key Vault access policies**:
+1. __Check Key Vault access policies__:
    - Verify service principal or managed identity has Get and List permissions
    - Check for network restrictions blocking access
 
@@ -233,7 +244,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    Set-AzKeyVaultAccessPolicy -VaultName "keyvault" -ObjectId $sp.Id -PermissionsToSecrets Get,List
    ```
 
-2. **Test Key Vault access**:
+2. __Test Key Vault access__:
    - Use Azure CLI or PowerShell to test retrieval
    - Check for specific permission errors
 
@@ -242,7 +253,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    Get-AzKeyVaultSecret -VaultName "keyvault" -Name "secret-name"
    ```
 
-3. **Review Key Vault diagnostic logs**:
+3. __Review Key Vault diagnostic logs__:
    - Enable and check audit logs
    - Look for access denied events
 
@@ -250,14 +261,15 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
 
 ### System-Assigned Managed Identity Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Resources can't authenticate to other services
 - "Failed to obtain access token" errors
 - Permission denied when accessing storage or other services
 
-**Solutions:**
+__Solutions:__
 
-1. **Verify managed identity is enabled**:
+1. __Verify managed identity is enabled__:
    - Check that system-assigned identity is enabled for the workspace
    - Verify identity has been provisioned correctly
 
@@ -267,7 +279,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    $workspace.Identity
    ```
 
-2. **Check role assignments**:
+2. __Check role assignments__:
    - Verify managed identity has appropriate roles on target resources
    - Common roles: Storage Blob Data Contributor, Key Vault Secrets User
 
@@ -277,25 +289,26 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    Get-AzRoleAssignment -ObjectId $workspace.Identity.PrincipalId
    ```
 
-3. **Grant necessary permissions**:
-   ```powershell
-   # PowerShell: Assign Storage Blob Data Contributor role
-   $workspace = Get-AzSynapseWorkspace -Name "workspace" -ResourceGroupName "resourcegroup"
-   $storage = Get-AzStorageAccount -ResourceGroupName "resourcegroup" -Name "storage"
-   
-   New-AzRoleAssignment -ObjectId $workspace.Identity.PrincipalId -RoleDefinitionName "Storage Blob Data Contributor" -Scope $storage.Id
-   ```
+3. __Grant necessary permissions__:
+
+```powershell
+# PowerShell: Assign Storage Blob Data Contributor role
+$workspace = Get-AzSynapseWorkspace -Name "workspace" -ResourceGroupName "resourcegroup"
+$storage = Get-AzStorageAccount -ResourceGroupName "resourcegroup" -Name "storage"
+New-AzRoleAssignment -ObjectId $workspace.Identity.PrincipalId -RoleDefinitionName "Storage Blob Data Contributor" -Scope $storage.Id
+```
 
 ### User-Assigned Managed Identity Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Specific error messages about user-assigned identity
 - Can't assign or use user-assigned identities
 - Access token acquisition failures
 
-**Solutions:**
+__Solutions:__
 
-1. **Check identity creation and assignment**:
+1. __Check identity creation and assignment__:
    - Verify user-assigned identity exists and is properly created
    - Check that it's correctly assigned to the workspace
 
@@ -308,7 +321,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    New-AzSynapseWorkspace -ResourceGroupName "resourcegroup" -Name "workspace" -Location "region" -UserAssignedIdentity $identity.Id
    ```
 
-2. **Validate identity permissions**:
+2. __Validate identity permissions__:
    - Ensure identity has required role assignments
    - Check for permission issues on target resources
 
@@ -318,7 +331,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    Get-AzRoleAssignment -ObjectId $identity.PrincipalId
    ```
 
-3. **Test identity functionality**:
+3. __Test identity functionality__:
    - Create a simple linked service using the identity
    - Check for specific error messages
 
@@ -326,14 +339,15 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
 
 ### Data Lake Storage Access Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Can't read/write data to storage
 - Permission denied errors in Spark or SQL
 - Access control list (ACL) related failures
 
-**Solutions:**
+__Solutions:__
 
-1. **Check storage RBAC roles**:
+1. __Check storage RBAC roles__:
    - Verify Storage Blob Data Contributor/Reader role assignment
    - Check for proper inheritance of permissions
 
@@ -345,7 +359,7 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    New-AzRoleAssignment -ObjectId $user.Id -RoleDefinitionName "Storage Blob Data Contributor" -Scope $storage.Id
    ```
 
-2. **Review ACL configuration**:
+2. __Review ACL configuration__:
    - Check POSIX ACLs on folders and files (for ADLS Gen2)
    - Ensure proper inheritance of ACLs
 
@@ -359,28 +373,29 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
    Update-AzDataLakeGen2Item -Context $ctx -FileSystem "container" -Path "folder" -Acl $acl
    ```
 
-3. **Test storage access**:
+3. __Test storage access__:
    - Use Storage Explorer or PowerShell to test direct access
    - Check for specific permission errors
 
 ### Power BI Integration Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Can't publish to Power BI
 - Power BI linked service failures
 - Authentication errors when refreshing datasets
 
-**Solutions:**
+__Solutions:__
 
-1. **Check Power BI workspace access**:
+1. __Check Power BI workspace access__:
    - Verify user has proper role in Power BI workspace
    - Common roles: Admin, Member, Contributor
 
-2. **Review service principal settings**:
+2. __Review service principal settings__:
    - For automated publishing, check service principal configuration
    - Ensure tenant settings allow service principal usage
 
-3. **Test Power BI permissions**:
+3. __Test Power BI permissions__:
    - Try manual publishing to isolate the issue
    - Check Power BI audit logs for specific errors
 
@@ -388,73 +403,79 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
 
 ### SQL Authentication Issues
 
-**Symptoms:**
+__Symptoms:__
+
 - Can't connect using SQL authentication
 - Password-related errors
 - Login failures specific to SQL endpoints
 
-**Solutions:**
+__Solutions:__
 
-1. **Verify SQL logins and users**:
-   ```sql
-   -- Check SQL logins (run in master database)
-   SELECT name, type_desc, create_date
-   FROM sys.sql_logins
-   ORDER BY create_date DESC;
+1. __Verify SQL logins and users__:
+
+```sql
+-- Check SQL logins (run in master database)
+SELECT name, type_desc, create_date
+FROM sys.sql_logins
+ORDER BY create_date DESC;
    
-   -- Check database users (run in specific database)
-   SELECT name, type_desc, create_date
-   FROM sys.database_principals
-   WHERE type IN ('S', 'U', 'G')
-   ORDER BY name;
-   ```
+-- Check database users (run in specific database)
+SELECT name, type_desc, create_date
+FROM sys.database_principals
+WHERE type IN ('S', 'U', 'G')
+ORDER BY name;
+```
 
-2. **Reset SQL passwords if needed**:
-   ```sql
-   -- Reset SQL login password
-   ALTER LOGIN [login_name] WITH PASSWORD = 'NewPassword123!';
-   ```
+1. __Reset SQL passwords if needed__:
 
-3. **Check contained database users**:
-   ```sql
-   -- Create contained database user
-   CREATE USER [user@contoso.com] FROM EXTERNAL PROVIDER;
-   -- Or for SQL authentication
-   CREATE USER [username] WITH PASSWORD = 'Password123!';
+```sql
+-- Reset SQL login password
+ALTER LOGIN [login_name] WITH PASSWORD = 'NewPassword123!';
+```
+
+1. __Create database users__:
+
+```sql
+-- Create contained database user
+CREATE USER [user@contoso.com] FROM EXTERNAL PROVIDER;
+-- Or for SQL authentication
+CREATE USER [username] WITH PASSWORD = 'Password123!';
    
-   -- Grant permissions
-   ALTER ROLE db_datareader ADD MEMBER [user@contoso.com];
-   ALTER ROLE db_datawriter ADD MEMBER [user@contoso.com];
-   ```
+-- Grant permissions
+ALTER ROLE db_datareader ADD MEMBER [user@contoso.com];
+ALTER ROLE db_datawriter ADD MEMBER [user@contoso.com];
+```
 
 ### Serverless SQL Pool Permissions
 
-**Symptoms:**
+__Symptoms:__
+
 - Can query some files but not others
 - "Access denied" when querying external data
 - Permission errors with specific storage accounts
 
-**Solutions:**
+__Solutions:__
 
-1. **Check passthrough authentication**:
-   - Verify user has direct permissions on storage
+1. __Check passthrough authentication__:
+   - Verify the AAD token is being passed correctly
    - Check if credential passthrough is configured correctly
 
-2. **Review credential configuration**:
-   ```sql
-   -- Create database scoped credential
-   CREATE DATABASE SCOPED CREDENTIAL [credential_name]
-   WITH IDENTITY = 'Managed Identity';
-   
-   -- Create external data source using credential
-   CREATE EXTERNAL DATA SOURCE [data_source_name]
-   WITH (
-       LOCATION = 'abfss://container@account.dfs.core.windows.net',
-       CREDENTIAL = [credential_name]
-   );
-   ```
+1. __Review credential configuration__:
 
-3. **Test with explicit credentials**:
+```sql
+-- Create database scoped credential
+CREATE DATABASE SCOPED CREDENTIAL [credential_name]
+WITH IDENTITY = 'Managed Identity';
+   
+-- Create external data source using credential
+CREATE EXTERNAL DATA SOURCE [data_source_name]
+WITH (
+   LOCATION = 'abfss://container@account.dfs.core.windows.net',
+   CREDENTIAL = [credential_name]
+);
+```
+
+1. __Test with explicit credentials__:
    - Try accessing data with a shared key or SAS token
    - Compare behavior with managed identity authentication
 
@@ -462,32 +483,35 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
 
 ### Diagnostic Tools and Approaches
 
-1. **Enable audit logging**:
+1. __Enable audit logging__:
    - Configure diagnostic settings to capture authentication events
    - Send logs to Log Analytics for analysis
 
    ```powershell
    # PowerShell: Enable diagnostic settings
-   $workspace = Get-AzOperationalInsightsWorkspace -ResourceGroupName "resourcegroup" -Name "logworkspace"
-   
-   Set-AzDiagnosticSetting -ResourceId "/subscriptions/subid/resourceGroups/resourcegroup/providers/Microsoft.Synapse/workspaces/synapseworkspace" `
-                          -Name "SynapseDiagnostics" `
-                          -WorkspaceId $workspace.ResourceId `
-                          -Category @("SQLSecurityAuditEvents", "SynapseRbacOperations") `
+   $workspace = Get-AzSynapseWorkspace -Name "workspace" -ResourceGroupName "resourcegroup"
+   $logAnalytics = Get-AzOperationalInsightsWorkspace -ResourceGroupName "resourcegroup" -Name "lawsworkspace"
+
+   Set-AzDiagnosticSetting -ResourceId $workspace.Id \
+                          -Name "SynapseDiagnostics" \
+                          -WorkspaceId $logAnalytics.ResourceId \
+                          -Category "SQLSecurityAuditEvents", "SynapseRbacOperations" \
+                          -RetentionEnabled $true \
+                          -RetentionInDays 90 \
                           -EnableLog $true
    ```
 
-2. **Check authentication logs**:
-   ```sql
-   -- Log Analytics query for authentication failures
-   SynapseBuiltinSqlPoolRequestsEnded
-   | where StatusCode != 0 and StatusCode != 200
-   | where Category == "SQLSecurityAuditEvents"
-   | where TimeGenerated > ago(24h)
-   | order by TimeGenerated desc
-   ```
+1. __Check authentication logs__:
 
-3. **Use Fiddler or network traces**:
+```sql
+-- Log Analytics query for authentication failures
+SynapseBuiltinSqlPoolRequestsEnded
+| where StatusCode != 0 and StatusCode != 200
+| where Category == "SQLSecurityAuditEvents"
+| order by TimeGenerated desc
+```
+
+1. __Use Fiddler or network traces__:
    - Capture authentication traffic for analysis
    - Look for specific error responses in HTTP traffic
 
@@ -505,22 +529,22 @@ Authentication and authorization issues in Azure Synapse Analytics typically fal
 
 ## Best Practices for Authentication and Authorization
 
-1. **Implement proper identity management**:
+1. __Implement proper identity management__:
    - Use Azure AD groups for role assignments
    - Implement least-privilege principle
    - Regularly review and audit permissions
 
-2. **Secure credential management**:
+2. __Secure credential management__:
    - Use managed identities when possible
    - Store secrets in Azure Key Vault
    - Implement credential rotation policies
 
-3. **Plan authentication strategy**:
+3. __Plan authentication strategy__:
    - Use integrated AAD authentication for interactive users
    - Leverage managed identities for service-to-service authentication
    - Implement service principals for automated processes
 
-4. **Implement comprehensive monitoring**:
+4. __Implement comprehensive monitoring__:
    - Configure diagnostic settings for all components
    - Set up alerts for authentication failures
    - Regularly review audit logs
