@@ -231,3 +231,77 @@ JOIN [dbo].[Sales] s ON c.[CustomerId] = s.[CustomerId];
    - Query across application logs
    - Security and compliance monitoring
    - Operational analytics
+
+!!! info "Serverless SQL Overview"
+    Serverless SQL pools in Azure Synapse Analytics provide an on-demand, pay-per-query service for analyzing data in your data lake. No infrastructure management or cluster administration is required, making it ideal for ad-hoc analytics and exploration.
+
+<div class="grid cards" markdown>
+- :material-credit-card-outline: __Pay-per-Query Model__
+  
+  No infrastructure to manage with costs based only on data processed
+
+- :material-database-search-outline: __Data Lake Exploration__
+  
+  Ad-hoc querying of data in various formats stored in your data lake
+
+- :material-account-group-outline: __Self-Service Analytics__
+  
+  SQL-based data access for business analysts and data scientists
+
+- :material-chart-box-outline: __Operational Analytics__
+  
+  Query logs and operational data with familiar SQL syntax
+</div>
+
+!!! abstract "Direct Lake Query"
+    Query data directly where it resides in Azure Storage without moving or transforming it first.
+
+- Query across multiple file formats (Parquet, CSV, JSON, Delta)
+- Create views and external tables over data lake objects
+- Join data across different storage accounts and containers
+- Use OPENROWSET for schema-on-read capabilities
+
+!!! tip "T-SQL Support"
+    Use familiar T-SQL syntax and built-in functions to query data lake content.
+
+- Standard SQL syntax with T-SQL extensions
+- Built-in analytics functions
+- Window functions and aggregations
+- Data type inference and conversion
+
+!!! warning "Security Controls"
+    Apply robust security measures to protect sensitive data accessed through serverless SQL.
+
+- Row-level security policies
+- Column-level security
+- Dynamic data masking
+- Azure Active Directory integration
+- Storage account access via managed identity
+
+| Use Case | Description | Benefits |
+|----------|-------------|----------|
+| Data Exploration | Ad-hoc querying of data lake content | No data movement, immediate insights |
+| Data Preparation | Transform and cleanse data for analytics | Familiar SQL syntax, scalable processing |
+| Data Virtualization | Create logical data warehouse | Query disparate sources without ETL |
+| Log Analytics | Query application and system logs | Cost-effective analysis without data movement |
+| Data Science Support | Feature engineering and data preparation | SQL-based data transformation |
+
+## Getting Started
+
+```sql
+-- Basic query with OPENROWSET
+SELECT
+    TOP 100 *
+FROM
+    OPENROWSET(
+        BULK 'https://mydatalake.dfs.core.windows.net/data/sales/*.parquet',
+        FORMAT = 'PARQUET'
+    ) AS [result]
+```
+
+## Learn More
+
+- [Query Optimization](/docs/code-examples/serverless-sql-guide.md#query-optimization) - Best practices for query performance
+- [External Tables](/docs/code-examples/serverless-sql-guide.md#external-tables) - Working with metadata objects
+- [Security Implementation](/docs/code-examples/serverless-sql-guide.md#security) - Security best practices
+- [Performance Patterns](/docs/code-examples/serverless-sql-guide.md#performance-patterns) - Common patterns for optimization
