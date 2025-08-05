@@ -48,6 +48,40 @@
   - [x] Fix any broken links discovered - Completed on 2025-08-04
   - [x] Implement GitHub Actions workflow for automated link checking - Completed on 2025-08-05
 
+## GitHub Compatibility Improvements (Added 2025-08-05)
+
+- [ ] Create comprehensive GitHub compatibility plan - Completed on 2025-08-05
+  - [x] Document all issues and solutions in project-planning/github-compatibility-plan.md - Completed on 2025-08-05
+  - [x] Set up project tracking for GitHub compatibility tasks - Completed on 2025-08-05
+- [ ] Convert all index.md files to README.md for better GitHub navigation
+  - [x] Convert docs/README.md from index.md - Completed on 2025-08-05
+  - [x] Convert docs/architecture/README.md from index.md - Completed on 2025-08-05
+  - [x] Convert docs/architecture/delta-lakehouse/README.md from index.md - Completed on 2025-08-05
+  - [x] Convert docs/code-examples/README.md from index.md - Completed on 2025-08-05
+  - [x] Convert docs/troubleshooting/README.md from index.md - Completed on 2025-08-05
+  - [ ] Convert remaining index.md files to README.md
+- [ ] Fix image rendering issues
+  - [x] Consolidate image directories into docs/images/ - Completed on 2025-08-05
+  - [x] Create appropriate subdirectories for organization - Completed on 2025-08-05
+  - [ ] Update all image references to use consistent relative paths
+  - [ ] Add alt text to all images for accessibility
+- [ ] Fix icon rendering
+  - [ ] Replace Material Design and FontAwesome icons with GitHub-compatible alternatives
+  - [ ] Add HTML-based fallbacks for icons where needed
+- [ ] Fix diagram rendering
+  - [x] Create troubleshooting/images directory for diagram images - Completed on 2025-08-05
+  - [ ] Convert critical Mermaid diagrams to static images
+  - [ ] Provide fallback rendering for GitHub display
+- [ ] Update internal links and navigation
+  - [ ] Update mkdocs.yml navigation structure
+  - [x] Add breadcrumb navigation to converted README.md files - Completed on 2025-08-05
+  - [ ] Update all internal links to reflect README.md structure
+- [ ] Testing and verification
+  - [ ] Test documentation rendering in GitHub
+  - [ ] Test documentation build with MkDocs
+  - [ ] Verify all links work correctly
+  - [ ] Ensure all pages are accessible via navigation
+
 ## New Tasks (Added 2025-08-10)
 
 - [x] Fix broken relative links to README.md and image references - Completed on 2025-08-01
@@ -148,7 +182,18 @@
   - [x] Dynamic allocation strategies - Completed on 2025-08-14
   - [x] SQL pool performance optimization techniques - Completed on 2025-08-14
 
-### 8. Visual Enhancements to Documentation
+### 8. GitHub Documentation Compatibility
+
+- [ ] Fix rendering issues with documentation on GitHub
+  - [ ] Convert index.md files to README.md for better GitHub navigation
+  - [ ] Fix image references to ensure proper rendering in GitHub
+  - [ ] Replace Material and FontAwesome icons with GitHub-compatible alternatives
+  - [ ] Fix Mermaid diagrams for GitHub compatibility
+  - [ ] Ensure consistent breadcrumb navigation
+  - [ ] Verify all pages are linked properly
+  - [ ] Optimize documentation organization
+
+### 9. Visual Enhancements to Documentation
 
 - [x] Add visual elements to documentation - Completed on 2025-08-15
   - [x] Add rich admonitions (info, note, tip, warning, etc.) to improve readability - Completed on 2025-08-15

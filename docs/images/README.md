@@ -1,30 +1,40 @@
-# Documentation Images
+# Image Assets for Azure Synapse Analytics Documentation
 
-This directory contains images used throughout the Azure Synapse Analytics documentation.
+This directory contains diagrams and images for the Azure Synapse Analytics documentation.
 
-## Image List
+## Required Diagrams
 
-- `synapse-cicd-workflow.png` - CI/CD workflow diagram for Azure Synapse Analytics
-- `synapse-git-configuration.png` - Git integration configuration screenshot for Synapse
-- `monitoring-architecture.png` - Monitoring architecture diagram for Synapse Analytics
-- `synapse-security-architecture.png` - Security architecture diagram showing defense-in-depth approach
+The following diagrams are referenced in the documentation and should be created:
 
-## Image Creation Guidelines
+1. **delta-lakehouse-diagram.png** - Architecture diagram for the Delta Lakehouse pattern
+2. **serverless-sql-architecture.png** - Architecture diagram for the Serverless SQL pattern
+3. **shared-metadata-architecture.png** - Architecture diagram for the Shared Metadata pattern
+4. **microsoft-logo.png** - Microsoft logo for the documentation header
+5. **favicon.ico** - Favicon for the documentation site
 
-When adding new images to the documentation:
+## Design Guidelines
 
-1. Use consistent styling with existing images
-2. Maintain a 16:9 aspect ratio when appropriate
-3. Use the Azure icon set for Azure services
-4. Include alt text in markdown references
-5. Keep file sizes optimized (< 200KB when possible)
-6. Use PNG format for diagrams and screenshots
-7. Store all images in this central directory
-8. Reference from markdown using relative paths
+When creating these diagrams, please follow these guidelines:
 
-## Image Naming Convention
+- Use the Azure architecture icons from the [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/icons/)
+- Use a consistent color palette aligned with Azure branding
+- Include clear labels for all components
+- Add directional arrows to show data flow
+- Include a legend if needed for complex diagrams
+- Export as PNG with transparent background
+- Target resolution: 1280x720 pixels (16:9 aspect ratio)
 
-- Use lowercase kebab-case for all image filenames
-- Include descriptive names that indicate content
-- Include component names when appropriate
-- Avoid generic names like "diagram1.png"
+## Tools
+
+Recommended tools for creating these diagrams:
+
+- [Draw.io](https://app.diagrams.net/) with the Azure icon set
+- [PowerPoint](https://www.microsoft.com/microsoft-365/powerpoint) with the Azure Architecture templates
+- [Figma](https://www.figma.com/) with Azure UI kits
+
+## Examples
+
+For examples of well-designed Azure architecture diagrams, refer to:
+
+- [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)
+- [Azure Synapse Analytics documentation](https://docs.microsoft.com/en-us/azure/synapse-analytics/)

@@ -54,43 +54,44 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
+  - Home: README.md
   - Architecture:
-      - Overview: architecture/index.md
+      - Overview: architecture/README.md
       - Delta Lakehouse:
-          - Overview: architecture/delta-lakehouse/index.md
+          - Overview: architecture/delta-lakehouse/README.md
           - Detailed Architecture: architecture/delta-lakehouse/detailed-architecture.md
       - Serverless SQL:
-          - Overview: architecture/serverless-sql/index.md
+          - Overview: architecture/serverless-sql/README.md
           - Detailed Architecture: architecture/serverless-sql/detailed-architecture.md
           - Serverless Overview: architecture/serverless-sql/serverless-overview.md
       - Shared Metadata:
-          - Overview: architecture/shared-metadata/index.md
+          - Overview: architecture/shared-metadata/README.md
           - Shared Metadata Examples: architecture/shared-metadata/shared-metadata-examples.md
           - Shared Metadata Visuals: architecture/shared-metadata/shared-metadata-visuals.md
           - Implementation Details: architecture/shared-metadata/shared-metadata.md
   - Best Practices:
-      - Overview: best-practices/index.md
+      - Overview: best-practices/README.md
       - Performance Optimization: best-practices/performance.md
       - Security & Compliance: best-practices/security.md
       - Cost Optimization: best-practices/cost-optimization.md
       - Data Governance: best-practices/data-governance.md
   - Code Examples:
-      - Overview: code-examples/index.md
+      - Overview: code-examples/README.md
       - Delta Lake Guide: code-examples/delta-lake-guide.md
       - Serverless SQL Guide: code-examples/serverless-sql-guide.md
       - Integration Guide: code-examples/integration-guide.md
   - Reference:
-      - Overview: reference/index.md
+      - Overview: reference/README.md
       - Security Checklist: reference/security-checklist.md
   - Diagrams:
+      - Overview: diagrams/README.md
       - Architecture Diagrams: diagrams/architecture-diagrams.md
       - Security Diagrams: diagrams/security-diagrams.md
       - Process Flowcharts: diagrams/process-flowcharts.md
       - Data Governance Diagrams: diagrams/data-governance-diagrams.md
   - FAQ: faq.md
   - Troubleshooting:
-      - Overview: troubleshooting/index.md
+      - Overview: troubleshooting/README.md
       - Spark Issues: troubleshooting/spark-troubleshooting.md
       - Serverless SQL Issues: troubleshooting/serverless-sql-troubleshooting.md
       - Connectivity Issues: troubleshooting/connectivity-troubleshooting.md
