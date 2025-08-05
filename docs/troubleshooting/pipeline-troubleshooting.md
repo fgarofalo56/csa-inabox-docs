@@ -53,7 +53,7 @@ _Solutions:_
    - Ensure that network security groups allow required traffic
 
    Common ports required for different services:
-   
+
    | Service | Port | Protocol |
    |---------|------|----------|
    | Azure SQL | 1433 | TCP |
@@ -841,6 +841,7 @@ _Solutions:_
    ```
 
 3. _Query and analyze pipeline logs_:
+
    ```sql
    -- Log Analytics query for pipeline performance analysis
    SynapseIntegrationPipelineRuns

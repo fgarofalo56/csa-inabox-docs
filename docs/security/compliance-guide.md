@@ -16,31 +16,31 @@ Azure Synapse Analytics provides a comprehensive set of security and compliance 
 
 Azure Synapse Analytics employs a defense-in-depth security architecture with multiple layers of protection:
 
-1. **Network Security**
+1. __Network Security__
    - Private Endpoints
    - Managed Virtual Networks
    - IP Firewall Rules
    - Service Endpoints
 
-2. **Identity and Access Management**
+2. __Identity and Access Management__
    - Azure Active Directory Integration
    - Role-Based Access Control (RBAC)
    - Microsoft Entra ID Privileged Identity Management
    - Conditional Access
 
-3. **Data Protection**
+3. __Data Protection__
    - Transparent Data Encryption (TDE)
    - Customer-Managed Keys (CMK)
    - Dynamic Data Masking
    - Column-Level Encryption
 
-4. **Threat Protection**
+4. __Threat Protection__
    - Advanced Threat Protection
    - Microsoft Defender for Cloud Integration
    - Vulnerability Assessment
    - SQL Audit
 
-5. **Posture Management**
+5. __Posture Management__
    - Security Baselines
    - Compliance Dashboards
    - Security Monitoring
@@ -325,22 +325,22 @@ Set-AzSynapseSqlPoolAudit `
 
 Dedicated SQL Pools require specific security configurations:
 
-1. **Authentication**:
+1. __Authentication__:
    - Enable Azure AD integration
    - Disable SQL authentication when possible
    - Implement MFA for all admin accounts
 
-2. **Authorization**:
+2. __Authorization__:
    - Use row-level security for multi-tenant data
    - Implement column-level security for sensitive data
    - Create security roles aligned with job functions
 
-3. **Encryption**:
+3. __Encryption__:
    - Enable TDE with customer-managed keys
    - Use Always Encrypted for sensitive columns
    - Ensure secure TLS configuration
 
-4. **Auditing**:
+4. __Auditing__:
    - Enable server and database-level auditing
    - Send audit logs to Log Analytics
    - Create alerts for suspicious activities
@@ -349,22 +349,22 @@ Dedicated SQL Pools require specific security configurations:
 
 Secure Spark pools with these configurations:
 
-1. **Authentication**:
+1. __Authentication__:
    - Use Azure AD passthrough authentication
    - Store credentials securely in Key Vault
    - Implement notebook-level access controls
 
-2. **Data Access**:
+2. __Data Access__:
    - Implement ACLs on ADLS Gen2
    - Use credential passthrough for data access
    - Configure service principals with least privilege
 
-3. **Code Security**:
+3. __Code Security__:
    - Scan notebooks for security issues
    - Implement secure coding practices
    - Validate all inputs and parameters
 
-4. **Monitoring**:
+4. __Monitoring__:
    - Enable Spark application insights
    - Monitor job submissions and access patterns
    - Create alerts for abnormal resource usage
@@ -373,17 +373,17 @@ Secure Spark pools with these configurations:
 
 Secure data integration pipelines:
 
-1. **Authentication**:
+1. __Authentication__:
    - Use managed identities for all connections
    - Store credentials in Key Vault
    - Rotate integration runtime credentials regularly
 
-2. **Data Movement**:
+2. __Data Movement__:
    - Enable encryption in transit
    - Implement data validation at boundaries
    - Use private endpoints for all connections
 
-3. **Activity Monitoring**:
+3. __Activity Monitoring__:
    - Log all pipeline executions
    - Monitor for unauthorized data access
    - Track data lineage for compliance reporting
@@ -433,17 +433,17 @@ New-AzPolicyAssignment `
 
 For financial institutions, additional controls may be necessary:
 
-1. **Data Residency**:
+1. __Data Residency__:
    - Configure geo-replication within compliant regions
    - Implement Azure Policy for regional restrictions
    - Document data flows for regulatory review
 
-2. **Transaction Monitoring**:
+2. __Transaction Monitoring__:
    - Implement comprehensive logging for all financial data access
    - Create anomaly detection with Azure Stream Analytics
    - Establish retention policies aligned with regulatory requirements
 
-3. **Segregation of Duties**:
+3. __Segregation of Duties__:
    - Implement strict RBAC with separate roles for data entry, approval, and audit
    - Use Privileged Identity Management for just-in-time access
    - Configure approval workflows for sensitive operations
@@ -452,17 +452,17 @@ For financial institutions, additional controls may be necessary:
 
 For healthcare organizations:
 
-1. **PHI Protection**:
+1. __PHI Protection__:
    - Implement data classification for PHI identification
    - Configure dynamic data masking for all PHI fields
    - Use column-level encryption for sensitive health data
 
-2. **Audit Trails**:
+2. __Audit Trails__:
    - Create comprehensive audit logs for all PHI access
    - Set up alerts for unusual access patterns
    - Maintain logs for the required retention period (typically 7+ years)
 
-3. **Business Associate Agreements**:
+3. __Business Associate Agreements__:
    - Ensure Microsoft BAA covers Synapse Analytics
    - Document all data flows involving PHI
    - Implement backup and disaster recovery aligned with continuity requirements
@@ -471,17 +471,17 @@ For healthcare organizations:
 
 For government workloads:
 
-1. **Sovereign Cloud Deployment**:
+1. __Sovereign Cloud Deployment__:
    - Use Azure Government for regulated workloads
    - Implement FedRAMP High controls
    - Ensure all personnel have appropriate clearance
 
-2. **Data Classification**:
+2. __Data Classification__:
    - Implement classification for controlled unclassified information (CUI)
    - Apply appropriate controls based on classification level
    - Ensure proper handling of sensitive government data
 
-3. **Supply Chain Risk Management**:
+3. __Supply Chain Risk Management__:
    - Document all components and dependencies
    - Implement continuous monitoring for vulnerabilities
    - Maintain approval documentation for all system components

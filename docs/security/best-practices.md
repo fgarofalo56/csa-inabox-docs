@@ -16,7 +16,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Implement Network Isolation
 
-1. **Deploy Managed VNet**
+1. __Deploy Managed VNet__
 
    Always enable the managed virtual network during workspace creation to isolate and control data flow:
 
@@ -33,7 +33,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -AllowAllConnections $false
    ```
 
-2. **Use Private Endpoints**
+2. __Use Private Endpoints__
 
    Connect to Synapse workspace and associated resources through private endpoints:
 
@@ -53,7 +53,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -PrivateLinkServiceConnection $privateEndpointConnection
    ```
 
-3. **Configure IP Firewall Rules**
+3. __Configure IP Firewall Rules__
 
    Restrict public access to your Synapse workspace:
 
@@ -66,7 +66,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -EndIpAddress "203.0.113.255"
    ```
 
-4. **Secure Integration Runtimes**
+4. __Secure Integration Runtimes__
 
    For Azure Integration Runtimes, use VNet-injection. For Self-hosted Integration Runtimes, deploy within a secured corporate network:
 
@@ -80,7 +80,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -Location "EastUS"
    ```
 
-5. **Use Service Endpoints**
+5. __Use Service Endpoints__
 
    Configure service endpoints on your VNet to securely access Azure services:
 
@@ -101,7 +101,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Network Traffic Filtering and Monitoring
 
-1. **Implement Network Security Groups (NSGs)**
+1. __Implement Network Security Groups (NSGs)__
 
    Control network traffic with detailed rules:
 
@@ -125,7 +125,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -SecurityRules $nsgRule
    ```
 
-2. **Enable NSG Flow Logs**
+2. __Enable NSG Flow Logs__
 
    Monitor network traffic for security analysis:
 
@@ -142,7 +142,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -FormatVersion 2
    ```
 
-3. **Implement Azure DDoS Protection**
+3. __Implement Azure DDoS Protection__
 
    Enable DDoS protection on your virtual network:
 
@@ -163,7 +163,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Implement Azure Active Directory Integration
 
-1. **Use Azure AD Authentication**
+1. __Use Azure AD Authentication__
 
    Configure Azure AD authentication for all components:
 
@@ -176,7 +176,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -ObjectId "00000000-0000-0000-0000-000000000000"
    ```
 
-2. **Implement Conditional Access**
+2. __Implement Conditional Access__
 
    Apply conditional access policies for Synapse workspaces:
 
@@ -186,7 +186,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    4. Set access controls: require MFA, compliant devices
    5. Enable the policy
 
-3. **Use Multi-Factor Authentication**
+3. __Use Multi-Factor Authentication__
 
    Enable MFA for all administrative accounts:
 
@@ -196,7 +196,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Apply Principle of Least Privilege
 
-1. **Implement Granular RBAC**
+1. __Implement Granular RBAC__
 
    Assign specific roles based on job functions:
 
@@ -216,7 +216,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -ObjectId "00000000-0000-0000-0000-000000000001"
    ```
 
-2. **Implement SQL Role-Based Access Control**
+2. __Implement SQL Role-Based Access Control__
 
    Use SQL-level security for granular data access:
 
@@ -234,7 +234,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    ALTER ROLE data_analyst ADD MEMBER [analyst@contoso.com];
    ```
 
-3. **Use Privileged Identity Management**
+3. __Use Privileged Identity Management__
 
    Implement just-in-time privileged access:
 
@@ -246,7 +246,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Secure Service Principals and Managed Identities
 
-1. **Use Managed Identities**
+1. __Use Managed Identities__
 
    Leverage managed identities to eliminate stored credentials:
 
@@ -268,7 +268,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -Scope "/subscriptions/<subscription-id>/resourceGroups/myresourcegroup/providers/Microsoft.Storage/storageAccounts/mystorageaccount"
    ```
 
-2. **Secure Service Principals**
+2. __Secure Service Principals__
 
    If using service principals, follow these practices:
 
@@ -298,7 +298,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Implement Encryption
 
-1. **Enable Transparent Data Encryption (TDE)**
+1. __Enable Transparent Data Encryption (TDE)__
 
    Ensure TDE is enabled for all SQL pools:
 
@@ -307,7 +307,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    ALTER DATABASE [MySQLPool] SET ENCRYPTION ON;
    ```
 
-2. **Use Customer-Managed Keys (CMK)**
+2. __Use Customer-Managed Keys (CMK)__
 
    Implement customer-managed keys for storage and workspace encryption:
 
@@ -323,7 +323,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -KeyVaultName $keyVault.VaultName
    ```
 
-3. **Enable Always Encrypted**
+3. __Enable Always Encrypted__
 
    Protect sensitive columns using Always Encrypted:
 
@@ -359,7 +359,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Implement Data-Level Security
 
-1. **Use Dynamic Data Masking**
+1. __Use Dynamic Data Masking__
 
    Mask sensitive data from non-privileged users:
 
@@ -375,7 +375,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    ALTER COLUMN [Phone] ADD MASKED WITH (FUNCTION = 'default()');
    ```
 
-2. **Implement Row-Level Security (RLS)**
+2. __Implement Row-Level Security (RLS)__
 
    Control row access based on user context:
 
@@ -402,7 +402,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    EXEC sp_set_session_context @key = N'TenantId', @value = 42;
    ```
 
-3. **Implement Column-Level Security (CLS)**
+3. __Implement Column-Level Security (CLS)__
 
    Restrict access to specific columns:
 
@@ -414,7 +414,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    GRANT SELECT ON [dbo].[Employees]([EmployeeId], [FirstName], [LastName], [Department]) TO [Analyst];
    ```
 
-4. **Data Classification and Sensitivity Labels**
+4. __Data Classification and Sensitivity Labels__
 
    Implement data discovery and classification:
 
@@ -432,7 +432,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Secure Data Storage and Movement
 
-1. **Use Azure Key Vault for Secrets Management**
+1. __Use Azure Key Vault for Secrets Management__
 
    Store all credentials and secrets in Azure Key Vault:
 
@@ -454,7 +454,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -DefinitionFile (ConvertTo-Json $keyVaultLinkedService -Depth 20)
    ```
 
-2. **Secure Data Movement**
+2. __Secure Data Movement__
 
    Ensure encryption in transit for all data movement:
 
@@ -463,7 +463,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    - Implement ExpressRoute for on-premises connectivity
    - Use TLS 1.2+ for all communications
 
-3. **Implement Storage Security**
+3. __Implement Storage Security__
 
    Secure ADLS Gen2 storage:
 
@@ -485,7 +485,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Implement Comprehensive Monitoring
 
-1. **Enable Diagnostic Logging**
+1. __Enable Diagnostic Logging__
 
    Capture detailed diagnostics for all components:
 
@@ -501,7 +501,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -Category @("SynapseRbacOperations", "GatewayApiRequests", "BuiltinSqlReqsEnded", "IntegrationPipelineRuns", "IntegrationActivityRuns", "IntegrationTriggerRuns")
    ```
 
-2. **Configure Activity Log Alerting**
+2. __Configure Activity Log Alerting__
 
    Create alerts for critical operations:
 
@@ -523,7 +523,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -ActionGroupId $actionGroupId
    ```
 
-3. **Use Microsoft Sentinel**
+3. __Use Microsoft Sentinel__
 
    Configure Microsoft Sentinel for advanced security monitoring:
 
@@ -542,7 +542,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Implement Advanced Threat Protection
 
-1. **Enable Microsoft Defender for Cloud**
+1. __Enable Microsoft Defender for Cloud__
 
    Activate Microsoft Defender for Cloud for Synapse workspaces:
 
@@ -553,7 +553,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -PricingTier "Standard"
    ```
 
-2. **Configure SQL Auditing**
+2. __Configure SQL Auditing__
 
    Enable comprehensive auditing:
 
@@ -568,7 +568,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -WorkspaceResourceId $workspaceId
    ```
 
-3. **Implement Vulnerability Assessment**
+3. __Implement Vulnerability Assessment__
 
    Regular vulnerability scanning and assessment:
 
@@ -584,7 +584,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -ScanResultsContainerName "vulnerability-assessment"
    ```
 
-4. **Configure ATP for SQL Pools**
+4. __Configure ATP for SQL Pools__
 
    Enable Advanced Threat Protection for SQL Pools:
 
@@ -603,7 +603,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Secure CI/CD Practices
 
-1. **Implement Pipeline Security**
+1. __Implement Pipeline Security__
 
    Follow secure CI/CD practices:
 
@@ -612,7 +612,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    - Validate resources with Azure Policy before deployment
    - Scan code for security issues during CI process
 
-2. **Secure Resource Deployment**
+2. __Secure Resource Deployment__
 
    Use Infrastructure as Code with security validations:
 
@@ -625,7 +625,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -TemplateParameterFile "secure-synapse-params.json"
    ```
 
-3. **Implement Secrets Management**
+3. __Implement Secrets Management__
 
    Use secure practices for managing secrets in pipelines:
 
@@ -636,7 +636,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Secure Code Development
 
-1. **Implement Secure SQL Practices**
+1. __Implement Secure SQL Practices__
 
    Prevent SQL injection and other vulnerabilities:
 
@@ -650,7 +650,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    END
    ```
 
-2. **Secure Spark Development**
+2. __Secure Spark Development__
 
    Follow secure development practices for Spark:
 
@@ -670,7 +670,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
        return df
    ```
 
-3. **Secure Notebook Development**
+3. __Secure Notebook Development__
 
    Implement security in Jupyter notebooks:
 
@@ -680,7 +680,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    - Validate all inputs and parameters
    - Sanitize outputs for display
 
-4. **Implement Code Reviews**
+4. __Implement Code Reviews__
 
    Establish security-focused code review processes:
 
@@ -693,7 +693,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Implement Security Baselines
 
-1. **Document Security Standards**
+1. __Document Security Standards__
 
    Create and maintain security baselines for all components:
 
@@ -702,7 +702,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    - Data protection standards
    - Monitoring configuration standards
 
-2. **Perform Regular Security Assessments**
+2. __Perform Regular Security Assessments__
 
    Conduct periodic security reviews:
 
@@ -711,7 +711,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    - Penetration testing
    - Compliance assessments
 
-3. **Implement Security Patching**
+3. __Implement Security Patching__
 
    Keep all components updated:
 
@@ -722,7 +722,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Incident Response
 
-1. **Create Incident Response Plan**
+1. __Create Incident Response Plan__
 
    Develop procedures for security incidents:
 
@@ -732,7 +732,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    - Recovery procedures
    - Post-incident analysis
 
-2. **Implement Security Playbooks**
+2. __Implement Security Playbooks__
 
    Create automated response workflows:
 
@@ -744,7 +744,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -TemplateFile "security-playbook.json"
    ```
 
-3. **Conduct Regular Drills**
+3. __Conduct Regular Drills__
 
    Practice responding to security incidents:
 
@@ -757,7 +757,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
 
 ### Secure Hybrid Connectivity
 
-1. **Implement ExpressRoute**
+1. __Implement ExpressRoute__
 
    Use dedicated connections for hybrid scenarios:
 
@@ -774,7 +774,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
      -BandwidthInMbps 200
    ```
 
-2. **Secure Self-hosted Integration Runtimes**
+2. __Secure Self-hosted Integration Runtimes__
 
    Implement security for on-premises integration runtimes:
 
@@ -784,7 +784,7 @@ Security is a critical aspect of any data analytics platform. Azure Synapse Anal
    - Monitor runtime activities
    - Implement host-based security
 
-3. **Secure Credential Management**
+3. __Secure Credential Management__
 
    Manage credentials securely in hybrid scenarios:
 

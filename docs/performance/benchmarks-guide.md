@@ -16,27 +16,27 @@ Performance benchmarking allows you to establish baselines, identify bottlenecks
 
 Follow these steps for effective benchmarking:
 
-1. **Define clear objectives**
+1. __Define clear objectives__
    - Specific metrics to measure (throughput, latency, resource utilization)
    - Workload characteristics to test
    - Success criteria for each component
 
-2. **Create a controlled environment**
+2. __Create a controlled environment__
    - Isolate resources to avoid interference
    - Document all configuration settings
    - Ensure consistent data volumes and patterns
 
-3. **Prepare representative test data**
+3. __Prepare representative test data__
    - Scale to match production data volumes
    - Reflect production data distributions
    - Include realistic data skew and variety
 
-4. **Execute standardized test runs**
+4. __Execute standardized test runs__
    - Run tests multiple times to account for variance
    - Test at different times of day when relevant
    - Record detailed metrics and execution logs
 
-5. **Analyze and document results**
+5. __Analyze and document results__
    - Calculate statistical measures (mean, median, percentiles)
    - Compare against baselines and objectives
    - Document configuration details with results
@@ -47,24 +47,24 @@ Follow these steps for effective benchmarking:
 
 For comprehensive benchmarking of Dedicated SQL Pools:
 
-1. **Data Loading Performance**
+1. __Data Loading Performance__
    - PolyBase load rates from different sources
    - COPY command performance
    - Partition switching efficiency
    - Comparison of various file formats (Parquet, CSV)
 
-2. **Query Performance**
+2. __Query Performance__
    - Scan operations on large tables
    - Aggregation performance
    - Join performance across distribution strategies
    - Complex analytical query execution times
 
-3. **Concurrency Testing**
+3. __Concurrency Testing__
    - Workload management efficiency
    - Performance under multiple concurrent users
    - Resource class impact on concurrency
 
-4. **Resource Utilization**
+4. __Resource Utilization__
    - DWU/cDWU utilization patterns
    - Memory pressure metrics
    - Tempdb usage
@@ -131,17 +131,17 @@ Track these metrics for Dedicated SQL Pool performance:
 
 ### Benchmarking Methodology for Serverless SQL
 
-1. **File Format Performance**
+1. __File Format Performance__
    - Query performance across formats (Parquet, CSV, JSON)
    - Compression impact on performance
    - Partitioning strategies effectiveness
 
-2. **Data Virtualization Efficiency**
+2. __Data Virtualization Efficiency__
    - External table query performance
    - View performance over external data
    - OPENROWSET vs. external tables comparison
 
-3. **Resource Utilization**
+3. __Resource Utilization__
    - Data processed per query
    - CPU request units
    - Memory allocation efficiency
@@ -197,19 +197,19 @@ SELECT DATEDIFF(ms, @StartTime, GETDATE()) AS Duration_ms;
 
 ### Benchmarking Framework for Spark
 
-1. **Job Execution Performance**
+1. __Job Execution Performance__
    - End-to-end job completion time
    - Task and stage execution metrics
    - Shuffle performance analysis
    - Executor utilization patterns
 
-2. **Data Processing Performance**
+2. __Data Processing Performance__
    - Batch processing throughput
    - Stream processing latency
    - Delta Lake operation performance
    - Machine learning training speed
 
-3. **Resource Allocation Efficiency**
+3. __Resource Allocation Efficiency__
    - Driver and executor memory utilization
    - Core utilization across nodes
    - Scaling efficiency with added resources
@@ -284,19 +284,19 @@ Run identical workloads across these configurations to determine optimal setting
 
 ### Pipeline Benchmarking Framework
 
-1. **Activity Performance**
+1. __Activity Performance__
    - Copy activity throughput
    - Data Flow transformation speed
    - Lookup and validation activity latency
    - External activity integration performance
 
-2. **End-to-End Pipeline Execution**
+2. __End-to-End Pipeline Execution__
    - Overall pipeline duration
    - Activity parallelism efficiency
    - Integration runtime utilization
    - Pipeline run reliability
 
-3. **Scalability Testing**
+3. __Scalability Testing__
    - Performance under increased data volumes
    - Concurrent pipeline execution
    - Integration runtime scaling effectiveness
@@ -378,20 +378,20 @@ Write-Host "Run IDs: $runIds"
 
 ### Delta Lake Operation Benchmarks
 
-1. **Read Performance**
+1. __Read Performance__
    - Full table scans
    - Predicate pushdown efficiency
    - Partition pruning effectiveness
    - Time travel query performance
 
-2. **Write Performance**
+2. __Write Performance__
    - Append operations
    - Merge operations
    - Delete performance
    - Update performance
    - Optimize (compaction) efficiency
 
-3. **Concurrent Operations**
+3. __Concurrent Operations__
    - Read consistency during writes
    - Concurrent write handling
    - Transaction conflict resolution
@@ -512,17 +512,17 @@ metrics_df.write.format("delta").mode("append").save(table_path + "_metrics")
 
 Create standardized comparison tests:
 
-1. **SQL Options Comparison**
+1. __SQL Options Comparison__
    - Dedicated SQL Pool vs. Serverless SQL
    - Synapse SQL vs. Spark SQL
    - Performance vs. cost efficiency analysis
 
-2. **Storage Format Comparison**
+2. __Storage Format Comparison__
    - Parquet vs. Delta Lake
    - CSV vs. Parquet performance delta
    - Compression option impact
 
-3. **Pipeline Processing Options**
+3. __Pipeline Processing Options__
    - Copy Activity vs. Data Flows vs. Spark
    - Mapping Data Flow vs. Wrangling Data Flow
    - Self-hosted IR vs. Azure-hosted IR
@@ -540,17 +540,17 @@ Create standardized comparison tests:
 
 ### Cost Analysis Framework
 
-1. **Component Cost Efficiency**
+1. __Component Cost Efficiency__
    - Performance per dollar metrics
    - Cost comparison of equivalent workloads
    - Idle time minimization strategies
 
-2. **Scaling Economics**
+2. __Scaling Economics__
    - Performance gain vs. cost increase analysis
    - Auto-scaling effectiveness
    - Right-sizing recommendations
 
-3. **Storage Cost Optimization**
+3. __Storage Cost Optimization__
    - Storage format efficiency
    - Compression effectiveness
    - Data lifecycle management
@@ -620,36 +620,36 @@ elseif ($avgDWUUsage -gt 80) {
 
 ### Built-in Synapse Tools
 
-1. **SQL Pool DMVs**
+1. __SQL Pool DMVs__
    - sys.dm_pdw_exec_requests
    - sys.dm_pdw_request_steps
    - sys.dm_pdw_sql_requests
    - sys.dm_pdw_resource_waits
 
-2. **Spark UI and Logs**
+2. __Spark UI and Logs__
    - Job and stage details
    - Event timeline
    - Executor statistics
    - SQL metrics
 
-3. **Pipeline Monitoring**
+3. __Pipeline Monitoring__
    - Run history
    - Activity details
    - Integration runtime monitoring
 
 ### External Benchmarking Tools
 
-1. **JMeter for Load Testing**
+1. __JMeter for Load Testing__
    - SQL endpoint stress testing
    - Concurrent query loads
    - User simulation scenarios
 
-2. **TPC-H/TPC-DS Benchmarks**
+2. __TPC-H/TPC-DS Benchmarks__
    - Industry-standard query patterns
    - Scalable data generation
    - Standardized metrics
 
-3. **Custom Benchmarking Framework**
+3. __Custom Benchmarking Framework__
    - Automated test execution
    - Result collection and analysis
    - Visualization and reporting
@@ -658,34 +658,34 @@ elseif ($avgDWUUsage -gt 80) {
 
 ### Setting Up Performance Baselines
 
-1. **Establish baseline metrics**
+1. __Establish baseline metrics__
    - Document normal performance ranges
    - Set thresholds for alerts
    - Create baseline dashboards
 
-2. **Regular benchmark execution**
+2. __Regular benchmark execution__
    - Schedule automated benchmark runs
    - Compare against baselines
    - Track performance trends over time
 
-3. **Performance regression testing**
+3. __Performance regression testing__
    - Run benchmarks after major changes
    - Compare to previous baselines
    - Alert on significant degradations
 
 ### Integration with Monitoring Systems
 
-1. **Azure Monitor integration**
+1. __Azure Monitor integration__
    - Custom metrics for benchmark results
    - Performance metric dashboards
    - Alerts for performance degradation
 
-2. **Log Analytics queries**
+2. __Log Analytics queries__
    - Performance trend analysis
    - Correlation with system events
    - Custom reporting dashboards
 
-3. **Automated remediation**
+3. __Automated remediation__
    - Auto-scaling based on benchmark results
    - Self-healing for common performance issues
    - Scheduled optimization jobs

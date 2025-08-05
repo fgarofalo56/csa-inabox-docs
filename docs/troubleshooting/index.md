@@ -10,8 +10,10 @@ This section provides comprehensive troubleshooting guides for common issues enc
 !!! abstract "Component-Specific Guides"
     Azure Synapse Analytics is a complex ecosystem with multiple integrated components. Our troubleshooting guides are organized by component area to help you quickly find relevant solutions:
 
+```html
     <div class="grid cards" markdown>
-    
+```
+
     - :fontawesome-solid-fire: __Spark Pool Issues__
       
       Diagnose and resolve common Apache Spark errors
@@ -73,11 +75,13 @@ graph TD
 !!! info "Essential Information to Gather"
     Before diving into specific troubleshooting steps, gather the following information:
 
+```markdown
     1. **Error Messages**: Capture the full text of any error messages
     2. **Timestamp**: Note when the issue occurred
     3. **Resource Details**: Workspace name, pool configuration, operation being performed
     4. **Environment Information**: Network configuration, firewall settings, resource constraints
     5. **Recent Changes**: Any recent changes to configurations, code, or infrastructure
+```
 
 !!! warning "Don't Overlook Log Timestamps"
     When reviewing logs, pay attention to the timezone of log entries. Azure logs may use UTC time rather than your local time zone.
@@ -87,8 +91,10 @@ graph TD
 !!! tip "Monitoring Tools"
     Azure Monitor provides powerful tools for diagnosing issues in Azure Synapse Analytics:
 
+```html
     <div class="grid cards" markdown>
-    
+```
+
     - :material-monitor-dashboard: __Logging and Monitoring__
       
       Comprehensive guide for monitoring your Synapse workspace
