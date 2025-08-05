@@ -10,11 +10,11 @@ The Delta Lakehouse architecture combines the best features of data lakes and da
 
 ### Key Components
 
-1. **Azure Data Lake Storage Gen2**: The foundation storage layer
-2. **Delta Lake Format**: Provides ACID transactions and data versioning
-3. **Azure Synapse Spark Pools**: Processing engine for big data transformations
-4. **Azure Synapse Serverless SQL**: SQL interface for data querying
-5. **Azure Synapse Pipelines**: Orchestration for data processing workflows
+1. __Azure Data Lake Storage Gen2__: The foundation storage layer
+2. __Delta Lake Format__: Provides ACID transactions and data versioning
+3. __Azure Synapse Spark Pools__: Processing engine for big data transformations
+4. __Azure Synapse Serverless SQL__: SQL interface for data querying
+5. __Azure Synapse Pipelines__: Orchestration for data processing workflows
 
 ## Serverless SQL Architecture
 
@@ -24,11 +24,11 @@ The Serverless SQL architecture enables on-demand, scalable analytics without pr
 
 ### Key Components
 
-1. **Azure Data Lake Storage Gen2**: Primary data storage
-2. **Serverless SQL Pool**: On-demand SQL query processing
-3. **External Tables**: Data access layer for files in storage
-4. **Views and Stored Procedures**: Business logic implementation
-5. **PolyBase**: Technology for querying external data sources
+1. __Azure Data Lake Storage Gen2__: Primary data storage
+2. __Serverless SQL Pool__: On-demand SQL query processing
+3. __External Tables__: Data access layer for files in storage
+4. __Views and Stored Procedures__: Business logic implementation
+5. __PolyBase__: Technology for querying external data sources
 
 ## Shared Metadata Architecture
 
@@ -38,15 +38,16 @@ The Shared Metadata architecture enables consistent data access across Spark and
 
 ### Key Components
 
-1. **Metastore**: Central repository for metadata
-2. **Spark Database Definitions**: Schema information for Spark
-3. **SQL Database Definitions**: Schema information for SQL
-4. **Cross-Service Access Patterns**: Patterns for accessing the same data from different services
+1. __Metastore__: Central repository for metadata
+2. __Spark Database Definitions__: Schema information for Spark
+3. __SQL Database Definitions__: Schema information for SQL
+4. __Cross-Service Access Patterns__: Patterns for accessing the same data from different services
 
 ## Enterprise-Scale Reference Architecture
 
 This reference architecture demonstrates a comprehensive enterprise implementation of Azure Synapse Analytics.
 
+<!-- Mermaid diagram for MkDocs rendering -->
 ```mermaid
 graph TD
     ADLS[Azure Data Lake Storage Gen2] --> SP[Synapse Spark]
@@ -70,18 +71,22 @@ graph TD
     PV --> EXT
 ```
 
+<!-- Static image fallback for GitHub -->
+![Enterprise-Scale Reference Architecture showing integration between Azure Data Lake Storage, Synapse Spark, Serverless SQL, Delta Lake Tables, External Tables, Shared Metadata, and integration with Power BI, Azure ML, and security/governance services](../images/diagrams/enterprise-scale-architecture.png)
+
 ### Key Integration Points
 
-1. **Data Lake Integration**: Unified data storage with Azure Data Lake Storage Gen2
-2. **Processing Integration**: Seamless handoff between batch and interactive processing
-3. **Security Integration**: Centralized security with Azure Key Vault and Azure Active Directory
-4. **Governance Integration**: End-to-end data governance with Microsoft Purview
-5. **Monitoring Integration**: Unified monitoring with Azure Monitor and Application Insights
+1. __Data Lake Integration__: Unified data storage with Azure Data Lake Storage Gen2
+2. __Processing Integration__: Seamless handoff between batch and interactive processing
+3. __Security Integration__: Centralized security with Azure Key Vault and Azure Active Directory
+4. __Governance Integration__: End-to-end data governance with Microsoft Purview
+5. __Monitoring Integration__: Unified monitoring with Azure Monitor and Application Insights
 
 ## Multi-Region Deployment Architecture
 
 For enterprise deployments requiring high availability and global distribution:
 
+<!-- Mermaid diagram for MkDocs rendering -->
 ```mermaid
 graph TD
     PR[Primary Region] --> DR[Disaster Recovery Region]
@@ -114,9 +119,12 @@ graph TD
     DRADLS --> GR2SQL
 ```
 
+<!-- Static image fallback for GitHub -->
+![Multi-Region Deployment Architecture showing Primary Region, Disaster Recovery Region, and Global Regions with their interconnected components like ADLS Gen2, Spark Pool, Serverless SQL, and Delta Lake](../images/diagrams/multi-region-architecture.png)
+
 ### Key Design Considerations
 
-1. **Data Replication**: Geo-redundant storage with RA-GRS
-2. **Workload Distribution**: Region-specific workloads for performance
-3. **Disaster Recovery**: Automated failover mechanisms
-4. **Global Data Access**: Consistent data access patterns across regions
+1. __Data Replication__: Geo-redundant storage with RA-GRS
+2. __Workload Distribution__: Region-specific workloads for performance
+3. __Disaster Recovery__: Automated failover mechanisms
+4. __Global Data Access__: Consistent data access patterns across regions

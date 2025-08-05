@@ -1,7 +1,7 @@
 # Deployment Monitoring
 
 !!! abstract "Overview"
-    This guide covers monitoring strategies for Azure Synapse Analytics deployments, including pipeline executions, resource utilization, and performance metrics.
+This guide covers monitoring strategies for Azure Synapse Analytics deployments, including pipeline executions, resource utilization, and performance metrics.
 
 ## :material-monitor-dashboard: Monitoring Deployment Process
 
@@ -11,42 +11,42 @@ Azure Synapse Analytics deployments can be monitored through various mechanisms 
 
 - :material-pipeline-alert:{ .lg .middle } __Pipeline Deployment Monitoring__
 
-    ---
-    
-    Monitor pipeline deployments using Azure DevOps or GitHub Actions logs
-    
-    [:octicons-arrow-right-24: Pipeline monitoring](#pipeline-monitoring)
+---
+
+Monitor pipeline deployments using Azure DevOps or GitHub Actions logs
+
+[:octicons-arrow-right-24: Pipeline monitoring](#pipeline-monitoring)
 
 - :material-chart-timeline:{ .lg .middle } __Resource Deployment Tracking__
 
-    ---
-    
-    Track Azure Resource Manager (ARM) template deployments
-    
-    [:octicons-arrow-right-24: Resource monitoring](#resource-monitoring)
+---
+
+Track Azure Resource Manager (ARM) template deployments
+
+[:octicons-arrow-right-24: Resource monitoring](#resource-monitoring)
 
 - :material-alert-circle-outline:{ .lg .middle } __Deployment Alerts__
 
-    ---
-    
-    Configure alerts for deployment failures and threshold breaches
-    
-    [:octicons-arrow-right-24: Alert configuration](#alert-configuration)
+---
+
+Configure alerts for deployment failures and threshold breaches
+
+[:octicons-arrow-right-24: Alert configuration](#alert-configuration)
 
 - :material-history:{ .lg .middle } __Deployment History__
 
-    ---
-    
-    View historical deployment metrics and success rates
-    
-    [:octicons-arrow-right-24: History and analytics](#history-and-analytics)
+---
+
+View historical deployment metrics and success rates
+
+[:octicons-arrow-right-24: History and analytics](#history-and-analytics)
 
 </div>
 
 ## Pipeline Monitoring
 
 !!! tip "Best Practice"
-    Configure pipeline runs to capture detailed logs in Log Analytics for deeper troubleshooting capabilities.
+Configure pipeline runs to capture detailed logs in Log Analytics for deeper troubleshooting capabilities.
 
 Azure Synapse Analytics pipeline deployments can be monitored through:
 
@@ -61,29 +61,29 @@ steps:
 - task: AzureCLI@2
   displayName: 'Deploy Synapse workspace'
   inputs:
-    azureSubscription: $(azureServiceConnection)
-    scriptType: bash
-    scriptLocation: inlineScript
-    inlineScript: |
-      az synapse workspace create --name $(synapseWorkspaceName) \
-        --resource-group $(resourceGroupName) \
-        --storage-account $(storageAccountName) \
-        --file-system $(fileSystemName) \
-        --sql-admin-login-user $(sqlAdminUsername) \
-        --sql-admin-login-password $(sqlAdminPassword) \
-        --verbose
+azureSubscription: $(azureServiceConnection)
+scriptType: bash
+scriptLocation: inlineScript
+inlineScript: |
+  az synapse workspace create --name $(synapseWorkspaceName) \
+--resource-group $(resourceGroupName) \
+--storage-account $(storageAccountName) \
+--file-system $(fileSystemName) \
+--sql-admin-login-user $(sqlAdminUsername) \
+--sql-admin-login-password $(sqlAdminPassword) \
+--verbose
 ```
 
 ## Resource Monitoring
 
-![Monitoring Architecture](../images/monitoring-architecture.png)
+![Azure Synapse Analytics Deployment Monitoring Architecture with Log Analytics and Application Insights](../images/monitoring/monitoring-architecture.png)
 
 Use Azure Monitor to track the deployment and health of your Synapse Analytics resources:
 
 | Resource Type | Key Metrics | Alert Thresholds |
 |---------------|-------------|------------------|
 | Spark Pools   | Node count, memory utilization | 80% sustained memory utilization |
-| SQL Pools     | DWU utilization, query duration | 90% DWU utilization, >60s query duration |
+| SQL Pools | DWU utilization, query duration | 90% DWU utilization, >60s query duration |
 | Integration Runtime | CPU usage, queue length | >85% CPU for 15 minutes |
 | Data Lake Storage | Throughput, latency | >1s latency, <50% expected throughput |
 
@@ -96,29 +96,29 @@ Configure alerts to notify your team about deployment issues:
   "location": "Global",
   "tags": {},
   "properties": {
-    "description": "Alert when Synapse workspace deployment fails",
-    "severity": 1,
-    "enabled": true,
-    "scopes": [
-      "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Synapse/workspaces/{workspace-name}"
-    ],
-    "evaluationFrequency": "PT5M",
-    "windowSize": "PT5M",
-    "criteria": {
-      "allOf": [
-        {
-          "query": "AzureActivity | where CategoryValue == 'Administrative' and Level == 'Error'",
-          "timeAggregation": "Count",
-          "operator": "GreaterThan",
-          "threshold": 0
-        }
-      ]
-    },
-    "actions": {
-      "actionGroups": [
-        "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/microsoft.insights/actionGroups/{action-group-name}"
-      ]
-    }
+"description": "Alert when Synapse workspace deployment fails",
+"severity": 1,
+"enabled": true,
+"scopes": [
+  "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.Synapse/workspaces/{workspace-name}"
+],
+"evaluationFrequency": "PT5M",
+"windowSize": "PT5M",
+"criteria": {
+  "allOf": [
+{
+  "query": "AzureActivity | where CategoryValue == 'Administrative' and Level == 'Error'",
+  "timeAggregation": "Count",
+  "operator": "GreaterThan",
+  "threshold": 0
+}
+  ]
+},
+"actions": {
+  "actionGroups": [
+"/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/microsoft.insights/actionGroups/{action-group-name}"
+  ]
+}
   }
 }
 ```
@@ -126,7 +126,7 @@ Configure alerts to notify your team about deployment issues:
 ## History and Analytics
 
 !!! info "Integration Point"
-    Deployment monitoring data can be integrated with Azure DevOps Analytics or Power BI for trend analysis.
+Deployment monitoring data can be integrated with Azure DevOps Analytics or Power BI for trend analysis.
 
 Track your deployment history to identify patterns and improvement areas:
 

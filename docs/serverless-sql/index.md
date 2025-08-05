@@ -6,7 +6,7 @@ Serverless SQL is a key component of Azure Synapse Analytics that provides on-de
 
 ## Architecture Components
 
-![Serverless SQL Architecture](../assets/images/serverless-sql-architecture.png)
+![Serverless SQL Architecture in Azure Synapse Analytics](../images/architecture/serverless-sql-architecture.png)
 
 ### Core Components
 

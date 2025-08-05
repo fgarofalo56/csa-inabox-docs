@@ -47,6 +47,7 @@ This section contains architecture diagrams for Azure Synapse Analytics componen
 
 ### Delta Lake Write Flow
 
+<!-- Mermaid diagram for MkDocs rendering -->
 ```mermaid
 graph TD
     A[Data Source] --> B[Data Ingestion]
@@ -60,8 +61,12 @@ graph TD
     E --> F[Analytics Consumption]
 ```
 
+<!-- Static image fallback for GitHub -->
+![Delta Lake Write Flow showing data moving from source through ingestion to Delta Lake zones and finally to analytics consumption](../images/diagrams/delta-lake-write-flow.png)
+
 ### Serverless SQL Query Flow
 
+<!-- Mermaid diagram for MkDocs rendering -->
 ```mermaid
 graph TD
     A[Client Application] --> B[Connection Request]
@@ -72,6 +77,9 @@ graph TD
     F --> G[Results Processing]
     G --> H[Results to Client]
 ```
+
+<!-- Static image fallback for GitHub -->
+![Serverless SQL Query Flow showing the path from client application through connection, query compilation, execution, storage access, and results processing back to client](../images/diagrams/serverless-sql-query-flow.png)
 
 ## Integration Architecture Diagrams
 

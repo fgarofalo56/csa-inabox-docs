@@ -1,7 +1,7 @@
 # Security Monitoring
 
 !!! abstract "Overview"
-    This guide covers security monitoring approaches for Azure Synapse Analytics, including threat detection, audit logging, and compliance monitoring.
+This guide covers security monitoring approaches for Azure Synapse Analytics, including threat detection, audit logging, and compliance monitoring.
 
 ## :material-shield-lock: Security Monitoring Framework
 
@@ -11,50 +11,50 @@ Implement comprehensive security monitoring to detect and respond to security th
 
 - :material-eye-scan:{ .lg .middle } __Threat Detection__
 
-    ---
-    
-    Monitor for suspicious activities and security threats
-    
-    [:octicons-arrow-right-24: Threat monitoring](#threat-detection)
+---
+
+Monitor for suspicious activities and security threats
+
+[:octicons-arrow-right-24: Threat monitoring](#threat-detection)
 
 - :material-file-document-multiple:{ .lg .middle } __Audit Logging__
 
-    ---
-    
-    Track and analyze user and service activities
-    
-    [:octicons-arrow-right-24: Audit configuration](#audit-logging)
+---
+
+Track and analyze user and service activities
+
+[:octicons-arrow-right-24: Audit configuration](#audit-logging)
 
 - :material-alert-circle:{ .lg .middle } __Security Alerting__
 
-    ---
-    
-    Configure proactive alerts for security events
-    
-    [:octicons-arrow-right-24: Alert setup](#security-alerting)
+---
+
+Configure proactive alerts for security events
+
+[:octicons-arrow-right-24: Alert setup](#security-alerting)
 
 - :material-clipboard-check:{ .lg .middle } __Compliance Monitoring__
 
-    ---
-    
-    Track compliance with security standards
-    
-    [:octicons-arrow-right-24: Compliance tracking](#compliance-monitoring)
+---
+
+Track compliance with security standards
+
+[:octicons-arrow-right-24: Compliance tracking](#compliance-monitoring)
 
 </div>
 
 ## Threat Detection
 
 !!! warning "Security Alert"
-    Enable Advanced Threat Protection for all Synapse SQL pools to detect anomalous database activities.
+Enable Advanced Threat Protection for all Synapse SQL pools to detect anomalous database activities.
 
 Azure Synapse Analytics integrates with Azure Defender for SQL and Azure Security Center to provide threat detection capabilities:
 
-1. **SQL Injection Detection** - Identifies attempts to exploit vulnerabilities
-2. **Access from Unusual Locations** - Detects logins from unusual IP addresses
-3. **Unusual Application Sign-ins** - Identifies suspicious authentication patterns
-4. **Brute Force Attempts** - Detects repeated failed authentication attempts
-5. **Data Exfiltration** - Identifies suspicious large data extraction operations
+1. __SQL Injection Detection__ - Identifies attempts to exploit vulnerabilities
+2. __Access from Unusual Locations__ - Detects logins from unusual IP addresses
+3. __Unusual Application Sign-ins__ - Identifies suspicious authentication patterns
+4. __Brute Force Attempts__ - Detects repeated failed authentication attempts
+5. __Data Exfiltration__ - Identifies suspicious large data extraction operations
 
 ```json
 {
@@ -72,7 +72,7 @@ Azure Synapse Analytics integrates with Azure Defender for SQL and Azure Securit
 
 ## Audit Logging
 
-![Security Architecture](../images/synapse-security-architecture.png)
+![Azure Synapse Analytics Security Monitoring Architecture with Defense-in-Depth Controls](../images/security/synapse-security-architecture.png)
 
 Configure comprehensive audit logging for Azure Synapse Analytics:
 
@@ -85,46 +85,46 @@ Configure comprehensive audit logging for Azure Synapse Analytics:
 | Pipeline Executions | Pipeline triggers and activities | 30 days |
 
 !!! example "Audit Log Configuration"
-    ```powershell
-    # Enable diagnostic settings for Synapse workspace
-    $workspace = "mysynapseworkspace"
-    $resourceGroup = "myresourcegroup"
-    $logAnalytics = "/subscriptions/<id>/resourceGroups/<rg>/providers/Microsoft.OperationalInsights/workspaces/<workspace>"
-    
-    # Enable all log categories
-    $logs = @()
-    Get-AzDiagnosticSettingCategory -ResourceId "/subscriptions/<id>/resourceGroups/$resourceGroup/providers/Microsoft.Synapse/workspaces/$workspace" | 
-    Where-Object {$_.CategoryType -eq "Logs"} | 
-    ForEach-Object {
-        $logs += @{
-            Category = $_.Name
-            Enabled = $true
-            RetentionPolicy = @{
-                Days = 90
-                Enabled = $true
-            }
-        }
-    }
-    
-    # Apply the diagnostic setting
-    Set-AzDiagnosticSetting -Name "SecurityMonitoring" `
-        -ResourceId "/subscriptions/<id>/resourceGroups/$resourceGroup/providers/Microsoft.Synapse/workspaces/$workspace" `
-        -WorkspaceId $logAnalytics `
-        -Log $logs
-    ```
+```powershell
+# Enable diagnostic settings for Synapse workspace
+$workspace = "mysynapseworkspace"
+$resourceGroup = "myresourcegroup"
+$logAnalytics = "/subscriptions/<id>/resourceGroups/<rg>/providers/Microsoft.OperationalInsights/workspaces/<workspace>"
+
+# Enable all log categories
+$logs = @()
+Get-AzDiagnosticSettingCategory -ResourceId "/subscriptions/<id>/resourceGroups/$resourceGroup/providers/Microsoft.Synapse/workspaces/$workspace" | 
+Where-Object {$_.CategoryType -eq "Logs"} | 
+ForEach-Object {
+$logs += @{
+Category = $_.Name
+Enabled = $true
+RetentionPolicy = @{
+Days = 90
+Enabled = $true
+}
+}
+}
+
+# Apply the diagnostic setting
+Set-AzDiagnosticSetting -Name "SecurityMonitoring" `
+-ResourceId "/subscriptions/<id>/resourceGroups/$resourceGroup/providers/Microsoft.Synapse/workspaces/$workspace" `
+-WorkspaceId $logAnalytics `
+-Log $logs
+```
 
 ## Security Alerting
 
 Implement these security alert categories for Azure Synapse Analytics:
 
-1. **Authentication Failures** - Multiple failed login attempts
-2. **Permission Changes** - Additions to high-privilege roles
-3. **Firewall Changes** - Modifications to firewall rules
-4. **Suspicious Query Patterns** - Potential data exfiltration attempts
-5. **Configuration Changes** - Critical security setting modifications
+1. __Authentication Failures__ - Multiple failed login attempts
+2. __Permission Changes__ - Additions to high-privilege roles
+3. __Firewall Changes__ - Modifications to firewall rules
+4. __Suspicious Query Patterns__ - Potential data exfiltration attempts
+5. __Configuration Changes__ - Critical security setting modifications
 
 !!! tip "Best Practice"
-    Integrate security alerts with your incident management system using Azure Logic Apps or Azure Functions.
+Integrate security alerts with your incident management system using Azure Logic Apps or Azure Functions.
 
 ```kusto
 // Example KQL query for detecting suspicious authentication patterns
@@ -164,15 +164,15 @@ Create compliance dashboards using Azure Monitor workbooks that provide:
 ## Integration with Azure Purview
 
 !!! info "Integration Point"
-    Azure Purview enhances security monitoring through data governance and classification capabilities.
+Azure Purview enhances security monitoring through data governance and classification capabilities.
 
 Leverage Azure Purview (Microsoft Purview) integration with Synapse Analytics for:
 
-1. **Automated Data Classification** - Identify and tag sensitive data
-2. **Lineage Tracking** - Monitor how sensitive data moves through pipelines
-3. **Access Reviews** - Regularly validate access permissions
-4. **Policy Enforcement** - Apply consistent security policies
-5. **Compliance Reporting** - Generate compliance reports for audits
+1. __Automated Data Classification__ - Identify and tag sensitive data
+2. __Lineage Tracking__ - Monitor how sensitive data moves through pipelines
+3. __Access Reviews__ - Regularly validate access permissions
+4. __Policy Enforcement__ - Apply consistent security policies
+5. __Compliance Reporting__ - Generate compliance reports for audits
 
 ## Related Resources
 
