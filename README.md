@@ -10,13 +10,13 @@ This repository contains comprehensive technical documentation for Azure Synapse
 
 New to Azure Synapse Analytics? Here are the recommended entry points:
 
-1. **For architects**: Start with the [Architecture Documentation](./docs/architecture/index.md) to understand the overall architecture patterns.
+1. __For architects__: Start with the [Architecture Documentation](./docs/architecture/index.md) to understand the overall architecture patterns.
 
-2. **For developers**: Check out the [Code Examples](./docs/code-examples/index.md) for practical implementation guidance.
+2. __For developers__: Check out the [Code Examples](./docs/code-examples/index.md) for practical implementation guidance.
 
-3. **For operations**: Review the [Best Practices](./docs/best-practices/index.md) for optimization and maintenance recommendations.
+3. __For operations__: Review the [Best Practices](./docs/best-practices/index.md) for optimization and maintenance recommendations.
 
-4. **For security specialists**: Focus on the [Security Best Practices](./docs/best-practices/security.md) documentation.
+4. __For security specialists__: Focus on the [Security Best Practices](./docs/best-practices/security.md) documentation.
 
 ### For Documentation Contributors
 
@@ -144,9 +144,23 @@ We welcome contributions to improve this documentation. Please follow these guid
 6. Push to your branch
 7. Create a Pull Request
 
+### Setting Up Git Hooks for Quality Control
+
+This project uses git hooks to ensure documentation quality. To set them up:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+This configures the following hooks:
+
+- __Pre-commit hook__: Runs markdown linting on staged files to catch formatting issues before they're committed
+
+To learn more about the hooks and common linting fixes, see the [Git Hooks README](./.githooks/README.md).
+
 ### Style Guidelines
 
-- Follow markdown best practices
+- Follow markdown best practices and use markdownlint to verify compliance
 - Use consistent heading structure
 - Include diagrams where appropriate (stored in the `/docs/diagrams` directory)
 - Provide code examples with proper syntax highlighting
@@ -163,8 +177,8 @@ For more information on contributing, see:
 
 This project uses GitHub Actions for CI/CD:
 
-- **Documentation Deployment**: The documentation is automatically built and deployed when changes are pushed to the main branch
-- **Versioning**: Documentation versions are managed through the `mike` tool and deployed to GitHub Pages
+- __Documentation Deployment__: The documentation is automatically built and deployed when changes are pushed to the main branch
+- __Versioning__: Documentation versions are managed through the `mike` tool and deployed to GitHub Pages
 
 ### GitHub Workflows
 

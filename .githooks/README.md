@@ -51,7 +51,7 @@ When using inline HTML for Material for MkDocs features, add a comment above:
 
 ### Blank Lines Around Code Blocks
 
-Ensure fenced code blocks are surrounded by blank lines:
+Ensure fenced code blocks are surrounded by blank lines and include a language specifier:
 
 ```markdown
 Text before code.
@@ -62,7 +62,6 @@ def example():
 ```
 
 Text after code.
-```
 
 ### Trailing Spaces
 

@@ -86,6 +86,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Added breadcrumb navigation for code examples
 - Fixed additional markdown lint issues across documentation
 
+## [0.6.0] - 2025-08-04
+
+### Added
+
+- Implemented comprehensive markdown linting system:
+  - Created `.markdownlint.json` configuration file with project-specific rules
+  - Added GitHub Actions workflow for automated markdown linting
+  - Created pre-commit hook for markdown lint checking
+  - Added documentation for using markdown linting tools in `.githooks/README.md`
+
+### Changed
+
+- Standardized markdown formatting across documentation:
+  - Converted strong style formatting from asterisks to underscores
+  - Added proper HTML comments for Material for MkDocs grid cards
+  - Fixed blank lines around fenced code blocks
+  - Corrected list formatting and spacing
+  - Documented exceptions for necessary inline HTML elements
+- Fixed files following new markdown standards:
+  - `docs/reference/index.md`
+  - `docs/best-practices/index.md`
+  - `docs/serverless-sql/index.md`
+  - `docs/architecture/index.md`
+  - `docs/code-examples/index.md`
+  - `docs/code-examples/integration-guide.md`
+- Updated markdownlint configuration to consistently use fenced code blocks throughout documentation
+- Added blank lines around lists to improve readability and comply with markdown standards
+- Fixed trailing newlines in markdown files
+
 ## [0.5.0] - 2025-08-06
 
 ### Added

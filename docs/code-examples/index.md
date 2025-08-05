@@ -12,25 +12,25 @@ We've consolidated our code examples into comprehensive guides for easier naviga
 
 A complete guide for working with Delta Lake in Azure Synapse Analytics, covering:
 
-- **Data Ingestion** - Auto Loader implementation for efficient data ingestion
-- **Change Data Capture (CDC)** - Patterns for tracking and processing data changes
-- **Table Optimization** - Techniques for maintaining performance with OPTIMIZE, VACUUM and Z-ORDER
+- __Data Ingestion__ - Auto Loader implementation for efficient data ingestion
+- __Change Data Capture (CDC)__ - Patterns for tracking and processing data changes
+- __Table Optimization__ - Techniques for maintaining performance with OPTIMIZE, VACUUM and Z-ORDER
 
 ### [Serverless SQL Guide](serverless-sql-guide.md)
 
 A comprehensive guide for working with Serverless SQL pools in Azure Synapse, covering:
 
-- **Query Optimization** - Performance tuning techniques for cost-effective queries
-- **External Tables** - Creating and managing external tables with statistics
-- **Security and Access Control** - Implementing row-level and column-level security
+- __Query Optimization__ - Performance tuning techniques for cost-effective queries
+- __External Tables__ - Creating and managing external tables with statistics
+- __Security and Access Control__ - Implementing row-level and column-level security
 
 ### [Integration Guide](integration-guide.md)
 
 A detailed guide for integrating Azure Synapse with other Azure services:
 
-- **Azure Machine Learning** - Model training, deployment, and MLOps integration
-- **Microsoft Purview** - Data governance, cataloging, and lineage tracking
-- **Azure Data Factory** - Orchestration patterns and pipeline management
+- __Azure Machine Learning__ - Model training, deployment, and MLOps integration
+- __Microsoft Purview__ - Data governance, cataloging, and lineage tracking
+- __Azure Data Factory__ - Orchestration patterns and pipeline management
 
 ### Troubleshooting
 
@@ -42,12 +42,12 @@ For troubleshooting guidance and solutions to common issues, please see our dedi
 
 Each code example follows a consistent structure:
 
-1. **Introduction** - Brief overview of the feature and use case
-2. **Prerequisites** - Required resources and permissions
-3. **Code Examples** - Step-by-step implementation with code snippets
-4. **Best Practices** - Recommendations for optimal implementation
-5. **Common Issues** - Troubleshooting guidance for known issues
-6. **Related Links** - Additional resources for further reading
+1. __Introduction__ - Brief overview of the feature and use case
+2. __Prerequisites__ - Required resources and permissions
+3. __Code Examples__ - Step-by-step implementation with code snippets
+4. __Best Practices__ - Recommendations for optimal implementation
+5. __Common Issues__ - Troubleshooting guidance for known issues
+6. __Related Links__ - Additional resources for further reading
 
 ## Contributing
 

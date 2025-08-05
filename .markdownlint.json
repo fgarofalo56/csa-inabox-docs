@@ -8,8 +8,14 @@
     ]
   },
   "MD046": {
-    "style": "consistent"
+    "style": "fenced"
   },
   "MD036": false,
-  "MD051": false
+  "MD051": false,
+  "MD024": {
+    "siblings_only": true
+  },
+  "MD050": {
+    "style": "underscore"
+  }
 }

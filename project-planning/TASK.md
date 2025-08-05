@@ -216,10 +216,23 @@ Documentation tasks previously completed for the Azure Synapse Analytics documen
 
 - [x] Create markdown-lint-fixes.md planning document (Completed: 2025-08-06)
 - [x] Create .markdownlint.json configuration file with exceptions for HTML elements (Completed: 2025-08-06)
-- [ ] Fix trailing spaces in markdown files
-- [ ] Fix strong style formatting (use underscores instead of asterisks)
-- [ ] Add blank lines around fenced code blocks
-- [ ] Fix list formatting and proper indentation
+- [x] Implement GitHub Actions workflow for markdown linting (Completed: 2025-08-04)
+- [x] Create pre-commit hook for markdown linting (Completed: 2025-08-04)
+- [x] Fix strong style formatting in reference/index.md (use underscores instead of asterisks) (Completed: 2025-08-04)
+- [x] Fix strong style formatting in best-practices/index.md (use underscores instead of asterisks) (Completed: 2025-08-04)
+- [x] Fix strong style formatting in serverless-sql/index.md (use underscores instead of asterisks) (Completed: 2025-08-04)
+- [x] Fix strong style formatting in architecture/index.md (use underscores instead of asterisks) (Completed: 2025-08-04)
+- [x] Fix strong style formatting in code-examples/index.md (use underscores instead of asterisks) (Completed: 2025-08-07)
+- [x] Fix strong style formatting in code-examples/integration-guide.md (use underscores instead of asterisks) (Completed: 2025-08-07)
+- [x] Add proper HTML comments for inline HTML in grid card layouts (Completed: 2025-08-04)
+- [x] Fix blank lines around fenced code blocks (Completed: 2025-08-04)
+- [x] Fix blank lines around lists in code-examples/integration-guide.md (Completed: 2025-08-07)
+- [x] Create documentation for using markdown linting tools (Completed: 2025-08-04)
+- [x] Update markdownlint config to use fenced code blocks consistently (Completed: 2025-08-07)
+- [x] Fix trailing newlines in markdown files (Completed: 2025-08-07)
+- [ ] Fix remaining trailing spaces in all markdown files
+- [ ] Fix remaining strong style formatting in all markdown files (use underscores instead of asterisks)
+- [ ] Fix remaining list formatting and proper indentation issues
 
 ## Documentation Gaps Identified (2025-08-04)
 

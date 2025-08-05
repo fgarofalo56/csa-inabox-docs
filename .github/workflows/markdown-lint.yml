@@ -13,6 +13,11 @@ on:
       - '.github/workflows/markdown-lint.yml'
   workflow_dispatch:  # Allow manual triggering
 
+# Environment variables for controlling behavior
+env:
+  # Set to 'true' to make the workflow fail on lint errors
+  STRICT_MODE: 'false'
+
 jobs:
   markdownlint:
     name: Run markdownlint
@@ -68,5 +73,11 @@ jobs:
         if: ${{ steps.lint.outputs.issue-count != '0' }}
         run: |
           echo "::warning::Found ${{ steps.lint.outputs.issue-count }} markdown linting issues. Check the workflow artifacts for details."
-          # Uncomment the line below to make the workflow fail on lint issues
-          # exit 1
+          
+          # Fail the workflow if in strict mode
+          if [ "${{ env.STRICT_MODE }}" = "true" ]; then
+            echo "::error::Failing build due to markdown lint issues (STRICT_MODE is enabled)"
+            exit 1
+          else
+            echo "Continuing despite lint issues (STRICT_MODE is disabled)"
+          fi

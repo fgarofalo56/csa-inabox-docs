@@ -10,23 +10,23 @@ Serverless SQL is a key component of Azure Synapse Analytics that provides on-de
 
 ### Core Components
 
-1. **Azure Data Lake Storage Gen2**
+1. __Azure Data Lake Storage Gen2__
    - Primary storage for data in various formats (Parquet, CSV, JSON)
    - Hierarchical namespace for efficient organization
    - Integration with Azure AD for security
 
-2. **Azure Synapse Serverless SQL Pool**
+2. __Azure Synapse Serverless SQL Pool__
    - On-demand query service with pay-per-query billing
    - T-SQL interface for data exploration and analysis
    - No infrastructure to provision or manage
    - Automatic scaling based on query complexity
 
-3. **Data Virtualization Layer**
+3. __Data Virtualization Layer__
    - External tables and views for logical data organization
    - Schema-on-read capabilities
    - Support for various file formats and compression types
 
-4. **Integration Components**
+4. __Integration Components__
    - Power BI for reporting and visualization
    - Azure Synapse Pipelines for orchestration
    - Azure Purview for data governance
@@ -39,21 +39,21 @@ Serverless SQL pools perform best with optimized data formats and organization:
 
 #### File Format Hierarchy (Best to Worst)
 
-1. **Parquet**
+1. __Parquet__
    - Columnar format with compression
    - Support for predicate pushdown
    - Partition elimination capabilities
 
-2. **ORC**
+2. __ORC__
    - Similar benefits to Parquet
    - Good compression ratio
 
-3. **CSV/TSV with Header**
+3. __CSV/TSV with Header__
    - Row-based format
    - Moderate performance
    - Good for small datasets
 
-4. **JSON**
+4. __JSON__
    - Flexible schema
    - Lower performance
    - Higher compute costs
@@ -104,22 +104,22 @@ WITH (
 
 ## Performance Best Practices
 
-1. **Use Parquet Format**
+1. __Use Parquet Format__
    - Columnar storage for efficient reads
    - Compression to reduce data size
    - Statistics for query optimization
 
-2. **Implement Effective Partitioning**
+2. __Implement Effective Partitioning__
    - Partition by frequently filtered columns
    - Balance partition size (100MB-1GB ideal)
    - Avoid over-partitioning
 
-3. **Optimize File Sizes**
+3. __Optimize File Sizes__
    - Target file sizes between 100MB-1GB
    - Avoid small files (<100MB)
    - Implement file compaction as needed
 
-4. **Use Query Optimization Techniques**
+4. __Use Query Optimization Techniques__
    - Leverage predicate pushdown
    - Apply column pruning
    - Utilize statistics for better execution plans
@@ -128,12 +128,12 @@ WITH (
 
 Serverless SQL pools use a consumption-based pricing model:
 
-1. **Query Costs**
+1. __Query Costs__
    - Billed per TB of data processed
    - No charges for failed queries
    - Metadata operations are free
 
-2. **Cost Optimization Strategies**
+2. __Cost Optimization Strategies__
    - Limit data scanned with partitioning
    - Use columnar formats to reduce I/O
    - Apply query filters early
@@ -141,16 +141,16 @@ Serverless SQL pools use a consumption-based pricing model:
 
 ## Security Implementation
 
-1. **Authentication**
+1. __Authentication__
    - Azure Active Directory integration
    - Managed identities for service-to-service authentication
 
-2. **Authorization**
+2. __Authorization__
    - Row-Level Security for data filtering
    - Column-Level Security for sensitive data
    - Dynamic data masking for PII
 
-3. **Data Protection**
+3. __Data Protection__
    - In-transit encryption with TLS
    - At-rest encryption with Azure Storage encryption
 
@@ -160,12 +160,12 @@ Serverless SQL pools use a consumption-based pricing model:
 
 Serverless SQL pools integrate seamlessly with Power BI for analytics:
 
-1. **DirectQuery Mode**
+1. __DirectQuery Mode__
    - Real-time querying of data lake
    - No need to import data
    - Pushdown query processing
 
-2. **Import Mode**
+2. __Import Mode__
    - Scheduled data refresh
    - In-memory analytics
    - Disconnected reporting
@@ -191,8 +191,9 @@ JOIN [dbo].[Sales] s ON c.[CustomerId] = s.[CustomerId];
 
 ## Deployment and DevOps
 
-1. **Infrastructure as Code**
-   - ARM templates for workspace configuration
+1. __Infrastructure as Code__
+   - ARM templates or Bicep for Synapse workspace deployment
+   - Storage account configuration as code
    - Terraform for resource provisioning
 
 2. **CI/CD for Database Objects**
@@ -202,32 +203,32 @@ JOIN [dbo].[Sales] s ON c.[CustomerId] = s.[CustomerId];
 
 ## Monitoring and Management
 
-1. **Query Monitoring**
+1. __Query Monitoring__
    - Dynamic Management Views (DMVs) for query insights
    - Azure Monitor integration
    - Query Store for performance tracking
 
-2. **Resource Governance**
+2. __Resource Governance__
    - Query timeout configuration
    - Workload management through classifications
    - Request importance settings
 
 ## Common Use Cases
 
-1. **Data Lake Exploration**
+1. __Data Lake Exploration__
    - Ad-hoc querying of raw and refined data
    - Schema discovery and profiling
 
-2. **Self-Service Analytics**
+2. __Self-Service Analytics__
    - Business analyst access to data lake
    - SQL-based data exploration
 
-3. **Data Science Support**
+3. __Data Science Support__
    - Feature engineering with SQL
    - Training data preparation
    - Model inference data processing
 
-4. **Log Analytics**
+4. __Log Analytics__
    - Query across application logs
    - Security and compliance monitoring
    - Operational analytics
@@ -235,7 +236,9 @@ JOIN [dbo].[Sales] s ON c.[CustomerId] = s.[CustomerId];
 !!! info "Serverless SQL Overview"
     Serverless SQL pools in Azure Synapse Analytics provide an on-demand, pay-per-query service for analyzing data in your data lake. No infrastructure management or cluster administration is required, making it ideal for ad-hoc analytics and exploration.
 
+<!-- Markdown lint exception: Inline HTML is used here for Material for MkDocs grid cards feature -->
 <div class="grid cards" markdown>
+
 - :material-credit-card-outline: __Pay-per-Query Model__
   
   No infrastructure to manage with costs based only on data processed
@@ -251,6 +254,7 @@ JOIN [dbo].[Sales] s ON c.[CustomerId] = s.[CustomerId];
 - :material-chart-box-outline: __Operational Analytics__
   
   Query logs and operational data with familiar SQL syntax
+
 </div>
 
 !!! abstract "Direct Lake Query"

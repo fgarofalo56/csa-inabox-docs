@@ -18,6 +18,7 @@
 - :material-pipe-wrench: __Azure Data Factory__
   
   Orchestration, pipeline management, and monitoring
+
 </div>
 
 ## Table of Contents
@@ -46,11 +47,11 @@
 !!! tip "Integration Best Practices"
     When integrating Azure Synapse Analytics with other Azure services, consider the following common patterns:
 
-    1. **Linked Services**: Creating and managing linked services between Azure Synapse and other Azure services
-    2. **Service Principal Authentication**: Using service principals for secure, non-interactive authentication
-    3. **Data Movement Optimization**: Optimizing data movement between services for performance
-    4. **Metadata Synchronization**: Keeping metadata in sync across services
-    5. **Monitoring and Alerting**: Setting up comprehensive monitoring across integrated services
+    1. __Linked Services__: Creating and managing linked services between Azure Synapse and other Azure services
+    2. __Service Principal Authentication__: Using service principals for secure, non-interactive authentication
+    3. __Data Movement Optimization__: Optimizing data movement between services for performance
+    4. __Metadata Synchronization__: Keeping metadata in sync across services
+    5. __Monitoring and Alerting__: Setting up comprehensive monitoring across integrated services
     
     ```mermaid
     graph LR
@@ -83,6 +84,7 @@
 - :material-infinity: __MLOps__
   
   Implement end-to-end ML lifecycle management
+
 </div>
 
 ### Azure ML Prerequisites
@@ -594,19 +596,19 @@ monitor_client.activity_log_alerts.create_or_update(
 
 ## Best Practices for Service Integration
 
-1. **Use Service Principals**: Create dedicated service principals with minimum required permissions for service-to-service authentication.
+1. __Use Service Principals__: Create dedicated service principals with minimum required permissions for service-to-service authentication.
 
-2. **Implement Comprehensive Logging**: Log all cross-service operations for troubleshooting and auditing.
+2. __Implement Comprehensive Logging__: Log all cross-service operations for troubleshooting and auditing.
 
-3. **Handle Failures Gracefully**: Implement proper error handling and retry logic for cross-service operations.
+3. __Handle Failures Gracefully__: Implement proper error handling and retry logic for cross-service operations.
 
-4. **Monitor End-to-End Performance**: Set up monitoring for the entire data pipeline spanning multiple services.
+4. __Monitor End-to-End Performance__: Set up monitoring for the entire data pipeline spanning multiple services.
 
-5. **Secure Secrets and Credentials**: Use Azure Key Vault to store and manage all credentials used in service integration.
+5. __Secure Secrets and Credentials__: Use Azure Key Vault to store and manage all credentials used in service integration.
 
-6. **Implement Circuit Breakers**: Prevent cascading failures across services by implementing circuit breaker patterns.
+6. __Implement Circuit Breakers__: Prevent cascading failures across services by implementing circuit breaker patterns.
 
-7. **Document Integration Points**: Maintain documentation of all integration points and dependencies between services.
+7. __Document Integration Points__: Maintain documentation of all integration points and dependencies between services.
 
 ## Related Topics
 
