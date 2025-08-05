@@ -6,25 +6,26 @@ This guide covers common issues encountered when working with Delta Lake in Azur
 
 Delta Lake issues in Azure Synapse Analytics typically fall into these categories:
 
-1. **Configuration Issues**: Delta Lake setup and configuration problems
-2. **Compatibility Problems**: Version mismatches and compatibility challenges
-3. **Performance Bottlenecks**: Query performance and optimization issues
-4. **Transaction Conflicts**: Concurrency and transaction management errors
-5. **Data Corruption**: Issues with data consistency and integrity
-6. **Access Control**: Permissions and security configuration problems
+1. _Configuration Issues_: Delta Lake setup and configuration problems
+2. _Compatibility Problems_: Version mismatches and compatibility challenges
+3. _Performance Bottlenecks_: Query performance and optimization issues
+4. _Transaction Conflicts_: Concurrency and transaction management errors
+5. _Data Corruption_: Issues with data consistency and integrity
+6. _Access Control_: Permissions and security configuration problems
 
 ## Configuration Issues
 
 ### Delta Lake Setup Problems
 
-**Symptoms:**
+_Symptoms:_
+
 - "Class not found" errors related to Delta Lake
 - Unable to create or access Delta tables
 - Configuration errors when initializing Delta Lake
 
-**Solutions:**
+_Solutions:_
 
-1. **Verify Delta Lake installation**:
+1. _Verify Delta Lake installation_:
    - Check Spark pool configuration and installed libraries
    - Ensure Delta Lake version is compatible with your Spark version
 
@@ -34,7 +35,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    print(f"Delta Lake version: {DeltaTable.version()}")
    ```
 
-2. **Check for correct imports and packages**:
+2. _Check for correct imports and packages_:
+
    ```python
    # Required imports for Delta Lake in PySpark
    from delta.tables import DeltaTable
@@ -45,7 +47,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    spark.sql("CREATE DATABASE IF NOT EXISTS delta_db")
    ```
 
-3. **Verify Spark configuration**:
+3. _Verify Spark configuration_:
+
    ```python
    # Required Spark configuration for Delta Lake
    spark.conf.set("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
@@ -58,14 +61,15 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Incorrect Storage Configuration
 
-**Symptoms:**
+_Symptoms:_
+
 - Cannot locate or access Delta files
 - Path not found errors when reading Delta tables
 - Authentication issues with storage
 
-**Solutions:**
+_Solutions:_
 
-1. **Check storage account connectivity**:
+1. _Check storage account connectivity_:
    - Verify network connectivity to storage account
    - Check storage account firewall rules
    - Validate storage account permissions
@@ -76,11 +80,12 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    test_df.show()
    ```
 
-2. **Validate storage account configuration**:
+2. _Validate storage account configuration_:
    - Check for proper ADLS Gen2 setup
    - Verify hierarchical namespace is enabled for optimal performance
 
-3. **Configure storage credentials properly**:
+3. _Configure storage credentials properly_:
+
    ```python
    # PySpark: Configure storage access with service principal
    spark.conf.set(f"fs.azure.account.auth.type.storageaccount.dfs.core.windows.net", "OAuth")
@@ -98,15 +103,16 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Version Mismatch Issues
 
-**Symptoms:**
+_Symptoms:_
+
 - "Unsupported Delta protocol version" errors
 - Feature not supported errors
 - Schema evolution errors
 - API incompatibility messages
 
-**Solutions:**
+_Solutions:_
 
-1. **Check Delta Lake version compatibility**:
+1. _Check Delta Lake version compatibility_:
    - Ensure client Delta Lake version matches or is compatible with table version
    - Verify Spark version compatibility with Delta Lake version
 
@@ -117,7 +123,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    | 3.1.x         | 1.1.0, 1.0.1, 1.0.0, 0.8.0    |
    | 3.0.x         | 0.8.0, 0.7.0                  |
 
-2. **Handle reader/writer version mismatches**:
+2. _Handle reader/writer version mismatches_:
+
    ```python
    # PySpark: Check Delta table properties including protocol versions
    from delta.tables import DeltaTable
@@ -126,9 +133,10 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    delta_table.detail().select("minReaderVersion", "minWriterVersion").show()
    ```
 
-3. **Upgrade Delta tables if needed**:
-   ```python
-   # SQL: Upgrade Delta table protocol version
+3. _Upgrade Delta tables if needed_:
+
+   ```sql
+   -- SQL: Upgrade Delta table protocol version
    EXEC delta.system.upgradeTableProtocol 
         'abfss://container@storageaccount.dfs.core.windows.net/delta_table/',
         2, 5;  -- reader version 2, writer version 5
@@ -136,14 +144,15 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Feature Support Issues
 
-**Symptoms:**
+_Symptoms:_
+
 - "Feature not supported" errors
 - Specific Delta Lake features not working
 - Advanced operations failing (like MERGE, DELETE WHERE, etc.)
 
-**Solutions:**
+_Solutions:_
 
-1. **Check feature requirements**:
+1. _Check feature requirements_:
    - Verify your Delta Lake version supports the feature
    - Check protocol version requirements for advanced features
 
@@ -154,11 +163,11 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    | Column Mapping | 1 | 4 |
    | Constraints | 1 | 5 |
 
-2. **Use compatible operations**:
+2. _Use compatible operations_:
    - Fall back to simpler operations if advanced features aren't available
    - Update Delta Lake to newer version if possible
 
-3. **Check for Synapse-specific limitations**:
+3. _Check for Synapse-specific limitations_:
    - Some Delta Lake features may have limitations in Synapse
    - Verify in the latest Synapse documentation which features are fully supported
 
@@ -166,14 +175,15 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Slow Query Performance
 
-**Symptoms:**
+_Symptoms:_
+
 - Queries on Delta tables running slower than expected
 - High latency when reading or writing Delta data
 - Timeouts during operations
 
-**Solutions:**
+_Solutions:_
 
-1. **Optimize file sizes and partitioning**:
+1. _Optimize file sizes and partitioning_:
    - Aim for file sizes between 100-1000 MB
    - Adjust partition columns based on query patterns
    - Avoid too many small files or too few large files
@@ -189,7 +199,7 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    OPTIMIZE delta.`abfss://container@storageaccount.dfs.core.windows.net/delta_table/`;
    ```
 
-2. **Implement data skipping**:
+2. _Implement data skipping_:
    - Use Z-order optimization for multi-dimensional filtering
    - Ensure commonly filtered columns are indexed
 
@@ -202,21 +212,23 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    ZORDER BY (date, region);
    ```
 
-3. **Check compute resources**:
+3. _Check compute resources_:
    - Ensure Spark pool has adequate resources
    - Monitor executor memory and CPU utilization
    - Consider scaling up or out if needed
 
 ### Inefficient Delta Lake Operations
 
-**Symptoms:**
+_Symptoms:_
+
 - VACUUM taking a long time
 - OPTIMIZE operations timing out
 - Slow write performance
 
-**Solutions:**
+_Solutions:_
 
-1. **Tune Delta Lake parameters**:
+1. _Tune Delta Lake parameters_:
+
    ```python
    # PySpark: Configure Delta Lake parameters
    spark.conf.set("spark.databricks.delta.optimize.maxFileSize", "1g")
@@ -228,7 +240,7 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    spark.conf.set("spark.databricks.delta.vacuum.parallelDelete.enabled", "true")
    ```
 
-2. **Monitor and adjust operations**:
+2. _Monitor and adjust operations_:
    - Schedule OPTIMIZE during off-peak hours
    - Run incremental VACUUM operations
    - Use checkpointing to improve performance
@@ -241,7 +253,7 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    VACUUM delta.`abfss://container@storageaccount.dfs.core.windows.net/delta_table/` RETAIN 168 HOURS;
    ```
 
-3. **Improve write performance**:
+3. _Improve write performance_:
    - Use repartition to control parallelism
    - Consider write distribution and sorting
    - Use appropriate save mode
@@ -255,14 +267,16 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Concurrent Operation Issues
 
-**Symptoms:**
+_Symptoms:_
+
 - "Concurrent operation" errors
 - Transaction conflicts during writes
 - Failed Delta operations due to contention
 
-**Solutions:**
+_Solutions:_
 
-1. **Implement retry logic**:
+1. _Implement retry logic_:
+
    ```python
    # PySpark: Retry logic for concurrent operations
    from pyspark.sql.utils import AnalysisException
@@ -288,7 +302,7 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
                raise e
    ```
 
-2. **Use optimistic concurrency control**:
+2. _Use optimistic concurrency control_:
    - Add version or condition checks before updates
    - Use condition expressions in update/delete operations
 
@@ -306,21 +320,23 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    )
    ```
 
-3. **Coordinate operations**:
+3. _Coordinate operations_:
    - Schedule heavy write operations to avoid conflicts
    - Use appropriate timeouts and deadlines
    - Consider implementing locking mechanism for critical operations
 
 ### Checkpoint and Log Issues
 
-**Symptoms:**
+_Symptoms:_
+
 - "Failed to update checkpoint" errors
 - Log corruption or checkpoint failures
 - Cannot access Delta table after failures
 
-**Solutions:**
+_Solutions:_
 
-1. **Check Delta log integrity**:
+1. _Check Delta log integrity_:
+
    ```python
    # PySpark: Inspect Delta log
    from pyspark.sql.functions import input_file_name
@@ -330,14 +346,15 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    log_df.show()
    ```
 
-2. **Force checkpoint creation**:
-   ```python
-   # SQL: Force checkpoint
+2. _Force checkpoint creation_:
+
+   ```sql
+   -- SQL: Force checkpoint
    ALTER TABLE delta.`abfss://container@storageaccount.dfs.core.windows.net/delta_table/` 
    SET TBLPROPERTIES ('delta.checkpointInterval' = 5);
    ```
 
-3. **Check storage permissions**:
+3. _Check storage permissions_:
    - Verify write permissions on the Delta log directory
    - Ensure storage account has no issues
    - Test with manual file creation in the same location
@@ -346,14 +363,16 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Table Metadata Corruption
 
-**Symptoms:**
+_Symptoms:_
+
 - "Cannot parse Delta table metadata" errors
 - Schema mismatch or unexpected schema changes
 - Metadata version inconsistencies
 
-**Solutions:**
+_Solutions:_
 
-1. **Check table history**:
+1. _Check table history_:
+
    ```python
    # PySpark: Review table history
    delta_table.history().show(100)
@@ -362,7 +381,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    SELECT * FROM delta.history('abfss://container@storageaccount.dfs.core.windows.net/delta_table/');
    ```
 
-2. **Restore to previous version**:
+2. _Restore to previous version_:
+
    ```python
    # PySpark: Time travel to previous version
    previous_df = spark.read.format("delta").option("versionAsOf", 10).load("abfss://container@storageaccount.dfs.core.windows.net/delta_table/")
@@ -371,7 +391,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    SELECT * FROM delta.`abfss://container@storageaccount.dfs.core.windows.net/delta_table/` VERSION AS OF 10;
    ```
 
-3. **Rebuild table if necessary**:
+3. _Rebuild table if necessary_:
+
    ```python
    # PySpark: Rebuild table from valid version
    valid_df = spark.read.format("delta").option("versionAsOf", 10).load("abfss://container@storageaccount.dfs.core.windows.net/delta_table/")
@@ -381,14 +402,16 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Schema Evolution Issues
 
-**Symptoms:**
+_Symptoms:_
+
 - "Schema mismatch detected" errors
 - Column not found exceptions
 - Type conversion errors
 
-**Solutions:**
+_Solutions:_
 
-1. **Check schema compatibility**:
+1. _Check schema compatibility_:
+
    ```python
    # PySpark: Compare schemas
    current_schema = delta_table.toDF().schema
@@ -397,7 +420,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    print("Schema compatible:", current_schema.fieldNames() == new_schema.fieldNames())
    ```
 
-2. **Enable schema evolution**:
+2. _Enable schema evolution_:
+
    ```python
    # PySpark: Enable schema evolution
    df.write.format("delta").mode("append").option("mergeSchema", "true").save("abfss://container@storageaccount.dfs.core.windows.net/delta_table/")
@@ -406,7 +430,7 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    SET spark.sql.parquet.mergeSchema = true;
    ```
 
-3. **Handle schema migration carefully**:
+3. _Handle schema migration carefully_:
    - Add new columns with default values
    - Avoid changing column types if possible
    - Use temporary views for complex transformations
@@ -429,14 +453,15 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Permission Errors
 
-**Symptoms:**
+_Symptoms:_
+
 - "Access denied" errors when accessing Delta tables
 - Permission issues with specific operations
 - Can read but not write to Delta tables
 
-**Solutions:**
+_Solutions:_
 
-1. **Check storage access control**:
+1. _Check storage access control_:
    - Verify RBAC roles on storage account
    - Check ACLs if using hierarchical namespace
    - Ensure proper permissions for Delta log directory
@@ -447,25 +472,26 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    Get-AzRoleAssignment -Scope $storage.Id
    ```
 
-2. **Verify service principal permissions**:
+2. _Verify service principal permissions_:
    - For automated processes, check service principal access
    - Ensure appropriate roles are assigned (Storage Blob Data Contributor)
 
-3. **Test access with different credentials**:
+3. _Test access with different credentials_:
    - Try accessing with different identities
    - Test basic storage operations to isolate issues
    - Check for specific permission errors in logs
 
 ### Security Configuration Issues
 
-**Symptoms:**
+_Symptoms:_
+
 - Delta Lake security features not working
 - Row-level or column-level security issues
 - Encryption or sensitive data handling problems
 
-**Solutions:**
+_Solutions:_
 
-1. **Review security configuration**:
+1. _Review security configuration_:
    - Check table properties for security settings
    - Verify appropriate access control implementation
 
@@ -474,7 +500,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    delta_table.detail().select("properties").show(truncate=False)
    ```
 
-2. **Implement row-level security**:
+2. _Implement row-level security_:
+
    ```python
    # PySpark: Create view with row filters
    spark.sql("""
@@ -484,7 +511,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    """)
    ```
 
-3. **Set up column-level security**:
+3. _Set up column-level security_:
+
    ```python
    # PySpark: Create view with column restrictions
    spark.sql("""
@@ -498,14 +526,16 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Serverless SQL Pool Issues
 
-**Symptoms:**
+_Symptoms:_
+
 - Cannot query Delta format from Serverless SQL
 - Format errors when reading Delta tables
 - Schema inference problems
 
-**Solutions:**
+_Solutions:_
 
-1. **Use OPENROWSET with correct parameters**:
+1. _Use OPENROWSET with correct parameters_:
+
    ```sql
    -- SQL: Query Delta table using OPENROWSET
    SELECT TOP 100 *
@@ -515,7 +545,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    ) AS [result]
    ```
 
-2. **Handle schema correctly**:
+2. _Handle schema correctly_:
+
    ```sql
    -- SQL: Specify schema for Delta table
    SELECT TOP 100 *
@@ -530,7 +561,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    ) AS [result]
    ```
 
-3. **Use external tables for better performance**:
+3. _Use external tables for better performance_:
+
    ```sql
    -- SQL: Create external table for Delta
    CREATE EXTERNAL TABLE [delta_external] (
@@ -548,14 +580,16 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Dedicated SQL Pool Issues
 
-**Symptoms:**
+_Symptoms:_
+
 - Cannot access Delta data from dedicated SQL pool
 - Integration issues between Spark and SQL pool
 - Performance issues with large Delta tables
 
-**Solutions:**
+_Solutions:_
 
-1. **Use Spark for ETL to SQL pool**:
+1. _Use Spark for ETL to SQL pool_:
+
    ```python
    # PySpark: ETL from Delta to SQL Pool
    delta_df = spark.read.format("delta").load("abfss://container@storageaccount.dfs.core.windows.net/delta_table/")
@@ -572,7 +606,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
        .save()
    ```
 
-2. **Use COPY statement for batch loading**:
+2. _Use COPY statement for batch loading_:
+
    ```sql
    -- SQL: Load data using COPY
    COPY INTO [dbo].[DeltaTable]
@@ -583,7 +618,7 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    )
    ```
 
-3. **Create and maintain views**:
+3. _Create and maintain views_:
    - Set up views in both Spark and SQL environments
    - Use linked services for cross-service queries
    - Consider materialized views for performance
@@ -592,7 +627,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Log Analysis
 
-1. **Examine Delta transaction logs**:
+1. _Examine Delta transaction logs_:
+
    ```python
    # PySpark: Analyze Delta log files
    delta_log_path = "abfss://container@storageaccount.dfs.core.windows.net/delta_table/_delta_log"
@@ -604,12 +640,13 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
        log_entries.show(truncate=False)
    ```
 
-2. **Check Spark application logs**:
+2. _Check Spark application logs_:
    - Review driver and executor logs for Delta-related errors
    - Look for specific exception patterns
    - Analyze performance metrics for bottlenecks
 
-3. **Utilize Delta history**:
+3. _Utilize Delta history_:
+
    ```python
    # PySpark: Detailed history analysis
    history_df = delta_table.history(100)  # Last 100 operations
@@ -621,7 +658,8 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ### Delta Table Repair and Recovery
 
-1. **Use deep clone for backup**:
+1. _Use deep clone for backup_:
+
    ```python
    # PySpark: Create deep clone as backup
    spark.sql(f"""
@@ -630,12 +668,13 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
    """)
    ```
 
-2. **Manual repair options**:
+2. _Manual repair options_:
    - Use time travel to restore to known good state
    - Rebuild table from raw data if necessary
    - Copy data to new location if log issues persist
 
-3. **Export diagnostics for support**:
+3. _Export diagnostics for support_:
+
    ```python
    # PySpark: Export diagnostic information
    table_detail = delta_table.detail().collect()[0].asDict()
@@ -655,22 +694,22 @@ Delta Lake issues in Azure Synapse Analytics typically fall into these categorie
 
 ## Best Practices for Delta Lake in Synapse
 
-1. **Optimize for performance**:
+1. _Optimize for performance_:
    - Use appropriate partitioning strategy
    - Schedule regular OPTIMIZE and VACUUM operations
    - Implement Z-order indexing for frequently filtered columns
 
-2. **Plan for governance and security**:
+2. _Plan for governance and security_:
    - Implement consistent access control model
    - Use table properties for metadata and governance
    - Document schema evolution strategies
 
-3. **Monitor Delta operations**:
+3. _Monitor Delta operations_:
    - Track history for audit and troubleshooting
    - Set up alerts for failed operations
    - Monitor storage and compute metrics
 
-4. **Design for resilience**:
+4. _Design for resilience_:
    - Implement retry logic for transient issues
    - Create backup strategies using cloning
    - Test failure scenarios and recovery procedures

@@ -18,6 +18,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 ### Linked Service Connection Failures
 
 _Symptoms:_
+
 - "Connection timed out" or "Cannot connect to server" errors
 - Authentication failures when accessing data sources
 - Intermittent connection issues to specific services
@@ -74,6 +75,7 @@ _Solutions:_
 ### Key Vault Integration Problems
 
 _Symptoms:_
+
 - "Access to Azure Key Vault is forbidden" errors
 - Cannot retrieve secrets from Key Vault
 - Credentials stored in Key Vault not resolving
@@ -116,6 +118,7 @@ _Solutions:_
 ### Integration Runtime Issues
 
 _Symptoms:_
+
 - "Integration runtime is not available" errors
 - Self-hosted integration runtime connectivity problems
 - Performance issues with specific integration runtimes
@@ -147,6 +150,7 @@ _Solutions:_
 ### Copy Activity Issues
 
 _Symptoms:_
+
 - Copy activity fails with specific error messages
 - Slow performance during data transfer
 - Unexpected data transformation issues
@@ -207,6 +211,7 @@ _Solutions:_
 ### Mapping Data Flow Problems
 
 _Symptoms:_
+
 - Data flow fails during execution
 - Unexpected transformations or data results
 - Performance issues with complex transformations
@@ -223,7 +228,7 @@ _Solutions:_
    - Expression errors: Test expressions in the expression builder
    - Memory issues: Optimize partitioning and enable debugging with optimized mode
 
-   ```
+   ```sql
    // Example: Explicit data type handling in data flow expression
    toInteger(trim(movieId))
    
@@ -264,6 +269,7 @@ _Solutions:_
 ### Spark Activity Issues
 
 _Symptoms:_
+
 - Spark notebook or job activities failing
 - Long-running Spark activities timing out
 - Resource constraints during execution
@@ -317,6 +323,7 @@ _Solutions:_
 ### Schedule Trigger Issues
 
 _Symptoms:_
+
 - Pipeline not running at expected times
 - Inconsistent schedule execution
 - Missing pipeline runs
@@ -375,6 +382,7 @@ _Solutions:_
 ### Tumbling Window Trigger Issues
 
 _Symptoms:_
+
 - Gaps in tumbling window execution
 - Dependency issues between window runs
 - Reprocessing or backfill problems
@@ -441,6 +449,7 @@ _Solutions:_
 ### Event Trigger Issues
 
 _Symptoms:_
+
 - Pipeline not triggered by storage events
 - Delayed reaction to events
 - Event trigger firing too often or for unexpected events
@@ -493,6 +502,7 @@ _Solutions:_
 ### Slow Pipeline Execution
 
 _Symptoms:_
+
 - Pipelines taking longer than expected
 - Increasing execution times over time
 - Specific activities causing delays
@@ -565,6 +575,7 @@ _Solutions:_
 ### Resource Constraints
 
 _Symptoms:_
+
 - "Resource limitation" errors
 - Queue time increasing for pipeline runs
 - Throttling errors from connected services
@@ -611,6 +622,7 @@ _Solutions:_
 ### Error Handling in Pipelines
 
 _Symptoms:_
+
 - Failed pipelines without proper error information
 - Cascading failures affecting multiple pipelines
 - Inconsistent error handling across activities
@@ -687,6 +699,7 @@ _Solutions:_
 ### External Service Integration Problems
 
 _Symptoms:_
+
 - Failures when connecting to REST APIs
 - Timeout errors with third-party services
 - Inconsistent responses from external endpoints
@@ -749,6 +762,7 @@ _Solutions:_
 ### Pipeline Monitoring Challenges
 
 _Symptoms:_
+
 - Difficulty tracking pipeline execution
 - Missing or incomplete monitoring data
 - Challenges correlating related pipeline runs
@@ -839,6 +853,7 @@ _Solutions:_
 ### Debugging Complex Pipelines
 
 _Symptoms:_
+
 - Difficulty identifying root cause of failures
 - Challenges with pipeline parameter passing
 - Problems with expressions and dynamic content

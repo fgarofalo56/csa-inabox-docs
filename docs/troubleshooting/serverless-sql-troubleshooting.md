@@ -41,7 +41,7 @@ __Solutions:__
    AS SELECT * FROM [CsvTable];
 ```
 
-2. _Use partitioning effectively_:
+1. _Use partitioning effectively_:
    - Query only needed partitions
    - Implement partition pruning in queries
 
@@ -52,11 +52,11 @@ __Solutions:__
    WHERE Year = 2023 AND Month = 8;
 ```
 
-3. _Optimize predicate pushdown_:
+1. _Optimize predicate pushdown_:
    - Structure queries to push filters to storage layer
    - Use WHERE clauses that can be pushed down
 
-4. _Check execution plans_:
+1. _Check execution plans_:
    - Use `EXPLAIN` to understand query execution
    - Look for full scans or inefficient operations
 
@@ -83,16 +83,16 @@ _Solutions:_
    - Split into smaller, manageable queries
    - Use temporary results or materialized views
 
-2. _Increase timeout settings_ (for client tools):
+1. _Increase timeout settings_ (for client tools):
    - Adjust connection timeout in SQL clients
    - Set command timeout in applications
 
-3. _Optimize join operations_:
+1. _Optimize join operations_:
    - Ensure smaller tables are on the right side of joins
    - Use appropriate join types (hash joins for large tables)
    - Consider denormalizing data where appropriate
 
-4. _Implement query hints_:
+1. _Implement query hints_:
    - Use OPTION hints to guide query optimizer
    - Apply ORDER hints for join operations
 
@@ -135,7 +135,7 @@ _Solutions:_
    );
 ```
 
-2. _Pre-validate CSV data_:
+1. _Pre-validate CSV data_:
    - Use validation queries to identify problematic rows
    - Fix source data or handle exceptions
 
@@ -150,7 +150,7 @@ _Solutions:_
    AND [NumericColumn] IS NOT NULL;
 ```
 
-3. _Use explicit schema definition_:
+1. _Use explicit schema definition_:
    - Define column types explicitly instead of relying on inference
    - Use OPENROWSET with explicit schema
 
@@ -189,7 +189,7 @@ _Solutions:_
    FROM [JsonTable];
 ```
 
-2. _Handle nested structures properly_:
+1. _Handle nested structures properly_:
 
 ```sql
    -- Extract nested JSON properties
@@ -200,7 +200,7 @@ _Solutions:_
    FROM [JsonTable];
 ```
 
-3. _Check for malformed JSON_:
+1. _Check for malformed JSON_:
 
 ```sql
    SELECT *
@@ -234,7 +234,7 @@ _Solutions:_
    WHERE [FilterColumn] = 'Value';
 ```
 
-2. _Implement pagination_:
+1. _Implement pagination_:
    - Use ORDER BY with OFFSET-FETCH for pagination
    - Split queries into smaller result sets
 
@@ -246,7 +246,7 @@ _Solutions:_
    OFFSET 1000 ROWS FETCH NEXT 1000 ROWS ONLY;
 ```
 
-3. _Optimize memory-intensive operations_:
+1. _Optimize memory-intensive operations_:
    - Avoid excessive sorting or grouping
    - Use windowing functions carefully
    - Consider materialization of intermediate results
@@ -267,11 +267,11 @@ _Solutions:_
    - Throttle concurrent queries from applications
    - Use connection pooling effectively
 
-2. _Schedule heavy workloads appropriately_:
+1. _Schedule heavy workloads appropriately_:
    - Distribute load across time periods
    - Schedule batch operations during off-peak hours
 
-3. _Monitor resource utilization_:
+1. _Monitor resource utilization_:
    - Track concurrency usage patterns
    - Set alerts for approaching limits
 
@@ -294,7 +294,7 @@ _Solutions:_
    - Check ACL settings for hierarchical namespace
    - Ensure Synapse workspace has proper access
 
-2. _Use managed identity authentication_:
+1. _Use managed identity authentication_:
 
 ```sql
    -- Create credential using managed identity
@@ -309,7 +309,7 @@ _Solutions:_
    );
 ```
 
-3. _Verify network access_:
+1. _Verify network access_:
    - Check firewall settings
    - Verify private endpoints configuration
    - Test with Azure Storage Explorer
@@ -331,11 +331,11 @@ _Solutions:_
    - Use correct URL format (abfss://, wasbs://)
    - Check for typos in container or folder names
 
-2. _Verify file existence_:
+1. _Verify file existence_:
    - Use Storage Explorer to confirm file existence
    - Check folder structure and naming
 
-3. _Test with explicit paths_:
+1. _Test with explicit paths_:
 
 ```sql
    -- Test file access with explicit path
@@ -370,14 +370,14 @@ _Solutions:_
    ON [ExternalTable] ([Column1]);
 ```
 
-2. _Update statistics regularly_:
+1. _Update statistics regularly_:
 
 ```sql
    -- Update statistics
    UPDATE STATISTICS [ExternalTable] ([Column1]);
 ```
 
-3. _Use query hints when necessary_:
+1. _Use query hints when necessary_:
 
 ```sql
    -- Force a specific cardinality estimate
@@ -421,7 +421,7 @@ _Solutions:_
    );
 ```
 
-2. _Use schema discovery tools_:
+1. _Use schema discovery tools_:
 
 ```sql
    -- Discover schema
@@ -436,7 +436,7 @@ _Solutions:_
    ';
 ```
 
-3. _Implement schema validation queries_:
+1. _Implement schema validation queries_:
    - Create validation queries that run before main processing
    - Generate schema comparison reports
 
@@ -464,7 +464,7 @@ Monitor Serverless SQL Pool queries to identify issues:
    ORDER BY r.submit_time DESC;
 ```
 
-2. _Monitor resource usage_:
+1. _Monitor resource usage_:
 
 ```sql
    SELECT
@@ -482,7 +482,7 @@ Monitor Serverless SQL Pool queries to identify issues:
    ORDER BY r.request_id, s.step_index;
 ```
 
-3. _Track query history_:
+1. _Track query history_:
 
 ```sql
    SELECT TOP 100
@@ -525,7 +525,7 @@ Use these diagnostic queries to identify Serverless SQL Pool issues:
    ORDER BY request_id, step_index;
 ```
 
-2. _Get error details_:
+1. _Get error details_:
 
 ```sql
    SELECT
@@ -544,16 +544,16 @@ Use these diagnostic queries to identify Serverless SQL Pool issues:
    - Parquet or ORC for analytical queries
    - Proper partitioning for large datasets
 
-2. _Implement appropriate data organization_:
+1. _Implement appropriate data organization_:
    - Partition by frequently filtered columns
    - Use folder structures that align with query patterns
 
-3. _Follow query optimization guidelines_:
+1. _Follow query optimization guidelines_:
    - Filter data early
    - Project only necessary columns
    - Use appropriate join strategies
 
-4. _Set up monitoring_:
+1. _Set up monitoring_:
    - Configure diagnostic settings
    - Create alerts for query failures
    - Track performance patterns
