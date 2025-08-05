@@ -6,25 +6,25 @@ This guide covers common pipeline issues in Azure Synapse Analytics, providing d
 
 Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
-1. **Connectivity Issues**: Linked service connection failures and networking problems
-2. **Activity Failures**: Errors in specific pipeline activities like Copy, Mapping Data Flow, or custom activities
-3. **Trigger Problems**: Issues with scheduled, tumbling window, or event-based triggers
-4. **Performance Bottlenecks**: Slow-running pipelines and optimization challenges
-5. **Integration Failures**: Problems with external systems and services
-6. **Monitoring and Debugging**: Challenges with monitoring pipelines and troubleshooting failures
+1. _Connectivity Issues_: Linked service connection failures and networking problems
+2. _Activity Failures_: Errors in specific pipeline activities like Copy, Mapping Data Flow, or custom activities
+3. _Trigger Problems_: Issues with scheduled, tumbling window, or event-based triggers
+4. _Performance Bottlenecks_: Slow-running pipelines and optimization challenges
+5. _Integration Failures_: Problems with external systems and services
+6. _Monitoring and Debugging_: Challenges with monitoring pipelines and troubleshooting failures
 
 ## Connectivity Issues
 
 ### Linked Service Connection Failures
 
-**Symptoms:**
+_Symptoms:_
 - "Connection timed out" or "Cannot connect to server" errors
 - Authentication failures when accessing data sources
 - Intermittent connection issues to specific services
 
-**Solutions:**
+_Solutions:_
 
-1. **Verify connection string and configuration**:
+1. _Verify connection string and configuration_:
    - Check linked service configuration for typos or incorrect parameters
    - Test connection in the Synapse Studio UI
    - Validate credentials, account names, and endpoint URLs
@@ -46,7 +46,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-2. **Check network access and firewall rules**:
+2. _Check network access and firewall rules_:
    - Verify IP address restrictions and firewall settings
    - Check private endpoint configurations if used
    - Ensure that network security groups allow required traffic
@@ -60,7 +60,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    | On-premises SQL Server | 1433 | TCP |
    | REST API | 443 | HTTPS |
 
-3. **Validate credentials and permissions**:
+3. _Validate credentials and permissions_:
    - Check if service account or identity has proper permissions
    - For managed identity, verify role assignments
    - Test authentication independently with the same credentials
@@ -73,14 +73,14 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Key Vault Integration Problems
 
-**Symptoms:**
+_Symptoms:_
 - "Access to Azure Key Vault is forbidden" errors
 - Cannot retrieve secrets from Key Vault
 - Credentials stored in Key Vault not resolving
 
-**Solutions:**
+_Solutions:_
 
-1. **Check Key Vault access policies**:
+1. _Check Key Vault access policies_:
    - Ensure Synapse managed identity has Get and List permissions for secrets
    - Verify Key Vault firewall settings allow access from Synapse
 
@@ -90,7 +90,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    Set-AzKeyVaultAccessPolicy -VaultName "keyvault" -ObjectId $workspace.Identity.PrincipalId -PermissionsToSecrets Get,List
    ```
 
-2. **Verify Key Vault linked service**:
+2. _Verify Key Vault linked service_:
    - Test the Key Vault linked service connection
    - Check correct secret names and versions
    - Ensure proper URL format for Key Vault
@@ -108,26 +108,26 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-3. **Test secret retrieval manually**:
+3. _Test secret retrieval manually_:
    - Use Azure Portal or PowerShell to test secret access
    - Verify secret value and expiration
    - Check for specific errors in the activity output
 
 ### Integration Runtime Issues
 
-**Symptoms:**
+_Symptoms:_
 - "Integration runtime is not available" errors
 - Self-hosted integration runtime connectivity problems
 - Performance issues with specific integration runtimes
 
-**Solutions:**
+_Solutions:_
 
-1. **Check integration runtime status**:
+1. _Check integration runtime status_:
    - Verify Azure IR or self-hosted IR status in Synapse Studio
    - Check for alerts or monitoring data indicating issues
    - Ensure sufficient capacity for workload
 
-2. **Troubleshoot self-hosted integration runtime**:
+2. _Troubleshoot self-hosted integration runtime_:
    - Check self-hosted IR logs in Event Viewer (Application and Services Logs > Microsoft > Integration Runtime)
    - Verify outbound connectivity on port 443
    - Check for machine resource constraints (CPU, memory)
@@ -137,7 +137,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    Restart-Service -Name "DIAHostService"
    ```
 
-3. **Configure high availability for critical workloads**:
+3. _Configure high availability for critical workloads_:
    - Set up multiple nodes for self-hosted integration runtime
    - Implement proper monitoring and alerting
    - Consider auto-scaling for Azure integration runtime
@@ -146,19 +146,19 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Copy Activity Issues
 
-**Symptoms:**
+_Symptoms:_
 - Copy activity fails with specific error messages
 - Slow performance during data transfer
 - Unexpected data transformation issues
 
-**Solutions:**
+_Solutions:_
 
-1. **Analyze activity error details**:
+1. _Analyze activity error details_:
    - Review the error message and stack trace in the monitoring view
    - Check specific error codes and failure categories
    - Identify which phase of the copy activity failed (pre-copy, copy, post-copy)
 
-2. **Address common copy activity errors**:
+2. _Address common copy activity errors_:
 
    | Error | Common Cause | Solution |
    |-------|-------------|----------|
@@ -168,7 +168,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    | File format error | Incorrect format settings | Validate format settings match the actual data |
    | Network error | Connectivity or firewall issues | Check network settings and firewall rules |
 
-3. **Optimize copy performance**:
+3. _Optimize copy performance_:
    - Use parallel copies and partitioning for large datasets
    - Configure appropriate integration runtime
    - Use staging for complex transformations
@@ -206,19 +206,19 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Mapping Data Flow Problems
 
-**Symptoms:**
+_Symptoms:_
 - Data flow fails during execution
 - Unexpected transformations or data results
 - Performance issues with complex transformations
 
-**Solutions:**
+_Solutions:_
 
-1. **Debug with data flow monitoring**:
+1. _Debug with data flow monitoring_:
    - Use the data preview feature to verify transformations
    - Enable debug mode for detailed inspection
    - Check row counts and data samples at each step
 
-2. **Address common data flow errors**:
+2. _Address common data flow errors_:
    - Data type mismatches: Validate schema and use explicit casting
    - Expression errors: Test expressions in the expression builder
    - Memory issues: Optimize partitioning and enable debugging with optimized mode
@@ -231,7 +231,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    iifNull(rating, 0.0)
    ```
 
-3. **Optimize data flow performance**:
+3. _Optimize data flow performance_:
    - Configure appropriate TTL for debug sessions
    - Use partitioning strategies for large datasets
    - Adjust optimization settings for performance
@@ -263,19 +263,19 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Spark Activity Issues
 
-**Symptoms:**
+_Symptoms:_
 - Spark notebook or job activities failing
 - Long-running Spark activities timing out
 - Resource constraints during execution
 
-**Solutions:**
+_Solutions:_
 
-1. **Review Spark application logs**:
+1. _Review Spark application logs_:
    - Check Spark driver and executor logs for errors
    - Look for out-of-memory exceptions or task failures
    - Analyze Spark UI for performance bottlenecks
 
-2. **Address common Spark issues**:
+2. _Address common Spark issues_:
    - Memory problems: Adjust executor and driver memory
    - Job failures: Check for code errors or data issues
    - Dependency issues: Verify required libraries and versions
@@ -307,7 +307,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-3. **Optimize Spark configuration**:
+3. _Optimize Spark configuration_:
    - Configure appropriate Spark pool and size
    - Use dynamic allocation for variable workloads
    - Implement proper partitioning strategies
@@ -316,14 +316,14 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Schedule Trigger Issues
 
-**Symptoms:**
+_Symptoms:_
 - Pipeline not running at expected times
 - Inconsistent schedule execution
 - Missing pipeline runs
 
-**Solutions:**
+_Solutions:_
 
-1. **Verify trigger definition**:
+1. _Verify trigger definition_:
    - Check timezone configuration and DST handling
    - Validate CRON expression for correctness
    - Ensure pipeline reference is correct
@@ -362,26 +362,26 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-2. **Check trigger activation status**:
+2. _Check trigger activation status_:
    - Verify trigger is activated in Synapse Studio
    - Look for overlapping schedules or conflicts
    - Check resource constraints that may delay execution
 
-3. **Monitor and analyze trigger history**:
+3. _Monitor and analyze trigger history_:
    - Review trigger run history in monitoring view
    - Check for failed trigger executions
    - Analyze patterns in delayed or skipped executions
 
 ### Tumbling Window Trigger Issues
 
-**Symptoms:**
+_Symptoms:_
 - Gaps in tumbling window execution
 - Dependency issues between window runs
 - Reprocessing or backfill problems
 
-**Solutions:**
+_Solutions:_
 
-1. **Check window configuration**:
+1. _Check window configuration_:
    - Verify window size and delay settings
    - Check dependency settings for correctness
    - Validate start and end times
@@ -428,26 +428,26 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-2. **Troubleshoot dependency chains**:
+2. _Troubleshoot dependency chains_:
    - Visualize dependency chains in monitoring view
    - Check for circular dependencies
    - Verify parent trigger execution status
 
-3. **Implement proper error handling**:
+3. _Implement proper error handling_:
    - Configure retry policies for transient failures
    - Set up appropriate concurrency limits
    - Use activity timeout settings strategically
 
 ### Event Trigger Issues
 
-**Symptoms:**
+_Symptoms:_
 - Pipeline not triggered by storage events
 - Delayed reaction to events
 - Event trigger firing too often or for unexpected events
 
-**Solutions:**
+_Solutions:_
 
-1. **Verify event source configuration**:
+1. _Verify event source configuration_:
    - Check storage account and container names
    - Validate event types and filters
    - Ensure event grid subscription is active
@@ -478,12 +478,12 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-2. **Test event generation manually**:
+2. _Test event generation manually_:
    - Upload test files to trigger events
    - Use Storage Explorer to verify file paths
    - Check event delivery with Event Grid diagnostics
 
-3. **Monitor event processing**:
+3. _Monitor event processing_:
    - Set up diagnostic logs for event subscriptions
    - Check for filtered or dropped events
    - Verify event delivery latency
@@ -492,19 +492,19 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Slow Pipeline Execution
 
-**Symptoms:**
+_Symptoms:_
 - Pipelines taking longer than expected
 - Increasing execution times over time
 - Specific activities causing delays
 
-**Solutions:**
+_Solutions:_
 
-1. **Analyze pipeline monitoring data**:
+1. _Analyze pipeline monitoring data_:
    - Identify slow-running activities using the monitoring view
    - Compare historical performance data
    - Look for patterns in performance degradation
 
-2. **Optimize activity configuration**:
+2. _Optimize activity configuration_:
    - For Copy activities, use parallel copies and staging
    - For Data Flows, optimize partitioning and transformations
    - For Lookups, limit result size and use caching
@@ -534,7 +534,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-3. **Implement parallel processing**:
+3. _Implement parallel processing_:
    - Use ForEach activities with batch size and parallel execution
    - Implement proper dependency chains between activities
    - Balance parallelism with available resources
@@ -564,24 +564,24 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Resource Constraints
 
-**Symptoms:**
+_Symptoms:_
 - "Resource limitation" errors
 - Queue time increasing for pipeline runs
 - Throttling errors from connected services
 
-**Solutions:**
+_Solutions:_
 
-1. **Monitor resource utilization**:
+1. _Monitor resource utilization_:
    - Check integration runtime metrics
    - Monitor Azure service quotas and limits
    - Analyze patterns in resource consumption
 
-2. **Optimize resource allocation**:
+2. _Optimize resource allocation_:
    - Scale up integration runtime for compute-intensive workloads
    - Configure appropriate concurrency limits for triggers
    - Schedule pipelines to avoid peak times
 
-3. **Implement rate limiting and backoff strategies**:
+3. _Implement rate limiting and backoff strategies_:
    - Add wait activities between retries
    - Implement exponential backoff for API calls
    - Use circuit breaker patterns for unreliable services
@@ -610,14 +610,14 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Error Handling in Pipelines
 
-**Symptoms:**
+_Symptoms:_
 - Failed pipelines without proper error information
 - Cascading failures affecting multiple pipelines
 - Inconsistent error handling across activities
 
-**Solutions:**
+_Solutions:_
 
-1. **Implement comprehensive error handling**:
+1. _Implement comprehensive error handling_:
    - Use activity failure outputs in expressions
    - Configure email notifications for failures
    - Store error details in logging tables
@@ -656,7 +656,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-2. **Set up retry policies**:
+2. _Set up retry policies_:
    - Configure appropriate retry counts and intervals
    - Use different strategies for different failure types
    - Implement circuit breaker pattern for external services
@@ -679,26 +679,26 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-3. **Create dedicated error handling pipelines**:
+3. _Create dedicated error handling pipelines_:
    - Implement reusable error handling patterns
    - Centralize error logging and notification
    - Set up automated recovery procedures
 
 ### External Service Integration Problems
 
-**Symptoms:**
+_Symptoms:_
 - Failures when connecting to REST APIs
 - Timeout errors with third-party services
 - Inconsistent responses from external endpoints
 
-**Solutions:**
+_Solutions:_
 
-1. **Analyze API errors**:
+1. _Analyze API errors_:
    - Check response status codes and bodies
    - Validate request headers and authentication
    - Test API directly with tools like Postman
 
-2. **Implement robust Web activities**:
+2. _Implement robust Web activities_:
    - Handle authentication properly
    - Parse and validate responses
    - Configure appropriate timeouts
@@ -739,7 +739,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-3. **Implement circuit breaker patterns**:
+3. _Implement circuit breaker patterns_:
    - Track failure rates for external services
    - Implement fallback mechanisms
    - Use exponential backoff for retries
@@ -748,14 +748,14 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Pipeline Monitoring Challenges
 
-**Symptoms:**
+_Symptoms:_
 - Difficulty tracking pipeline execution
 - Missing or incomplete monitoring data
 - Challenges correlating related pipeline runs
 
-**Solutions:**
+_Solutions:_
 
-1. **Set up comprehensive monitoring**:
+1. _Set up comprehensive monitoring_:
    - Configure diagnostic settings to send logs to Log Analytics
    - Create custom dashboards for pipeline monitoring
    - Implement end-to-end tracing with correlation IDs
@@ -772,7 +772,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
                           -EnableLog $true
    ```
 
-2. **Implement custom logging**:
+2. _Implement custom logging_:
    - Add logging activities to pipelines
    - Store execution metadata in dedicated tables
    - Implement custom metrics for business KPIs
@@ -826,7 +826,7 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
    }
    ```
 
-3. **Query and analyze pipeline logs**:
+3. _Query and analyze pipeline logs_:
    ```sql
    -- Log Analytics query for pipeline performance analysis
    SynapseIntegrationPipelineRuns
@@ -838,24 +838,24 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ### Debugging Complex Pipelines
 
-**Symptoms:**
+_Symptoms:_
 - Difficulty identifying root cause of failures
 - Challenges with pipeline parameter passing
 - Problems with expressions and dynamic content
 
-**Solutions:**
+_Solutions:_
 
-1. **Use debug mode and data preview**:
+1. _Use debug mode and data preview_:
    - Enable debug mode for data flows
    - Test expressions with the expression builder
    - Add set variable activities to inspect values
 
-2. **Implement incremental testing strategy**:
+2. _Implement incremental testing strategy_:
    - Test individual activities first
    - Build up to complete pipelines
    - Use test parameters and datasets
 
-3. **Debug dynamic content and expressions**:
+3. _Debug dynamic content and expressions_:
    - Use set variable activities to capture expression results
    - Output debug information to pipeline annotations
    - Implement logging of dynamic content values
@@ -883,22 +883,22 @@ Pipeline issues in Azure Synapse Analytics typically fall into these categories:
 
 ## Best Practices for Reliable Pipelines
 
-1. **Design for resiliency**:
+1. _Design for resiliency_:
    - Implement comprehensive error handling
    - Use idempotent operations where possible
    - Design for retry and recovery scenarios
 
-2. **Optimize performance**:
+2. _Optimize performance_:
    - Use parallel processing for independent operations
    - Implement appropriate batching strategies
    - Schedule pipelines to avoid resource contention
 
-3. **Monitor and maintain**:
+3. _Monitor and maintain_:
    - Implement comprehensive logging and monitoring
    - Set up alerts for critical failures
    - Regularly review and optimize pipeline performance
 
-4. **Implement proper testing**:
+4. _Implement proper testing_:
    - Create test environments with reduced data volumes
    - Implement CI/CD for pipeline development
    - Maintain test datasets for validation

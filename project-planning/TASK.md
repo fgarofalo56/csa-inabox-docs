@@ -161,6 +161,15 @@
   - [x] Add visual enhancements to Serverless SQL guide - Completed on 2025-08-15
   - [x] Add visual enhancements to Integration guide - Completed on 2025-08-15
 - [x] Fix markdown lint issues in documentation - Completed on 2025-08-15
+  - [x] Fix markdown linting in spark-troubleshooting.md - Completed on 2025-08-16
+    - [x] Convert all strong style formatting from asterisks to underscores
+    - [x] Standardize unordered lists to use dashes
+    - [x] Fix ordered list numbering to use consistent prefix `1.`
+    - [x] Add proper blank lines around lists and headings
+    - [x] Standardize horizontal rule styles
+    - [x] Remove trailing spaces and replace hard tabs with spaces
+    - [x] Ensure fenced code blocks have proper blank lines
+    - [x] Remove multiple consecutive blank lines
 
 ### 8. Security, Compliance and Governance
 
