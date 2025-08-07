@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid Diagram Renderer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #input {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            font-family: monospace;
+        }
+        #controls {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #imageOutput {
+            margin-top: 20px;
+            text-align: center;
+        }
+        #fileSelector {
+            margin-bottom: 20px;
+        }
+        #diagramName {
+            padding: 10px;
+            width: 300px;
+            margin-right: 10px;
+        }
+        .spinner {
+            display: none;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 2s linear infinite;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        select {
+            padding: 10px;
+            margin-right: 10px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>Azure Synapse Analytics Documentation - Mermaid Diagram Renderer</h1>
+        
+        <div id="fileSelector">
+            <label for="diagramSelect">Select a diagram to render:</label>
+            <select id="diagramSelect">
+                <option value="">-- Select a diagram --</option>
+                <option value="compliance-controls">Compliance Controls Architecture</option>
+                <option value="data-classification-framework">Data Classification Framework</option>
+                <option value="data-governance-decision-tree">Data Governance Decision Tree</option>
+                <option value="data-pipeline-implementation">Data Pipeline Implementation</option>
+                <option value="data-protection-model">Data Protection Model</option>
+                <option value="data-quality-framework">Data Quality Framework</option>
+                <option value="defense-in-depth-security">Defense-in-Depth Security</option>
+                <option value="delta-lake-optimization">Delta Lake Optimization</option>
+                <option value="delta-lake-write-flow">Delta Lake Write Flow</option>
+                <option value="end-to-end-governance">End-to-End Governance</option>
+                <option value="enterprise-scale-architecture">Enterprise Scale Architecture</option>
+                <option value="governance-maturity-model">Governance Maturity Model</option>
+                <option value="governance-roles">Governance Roles</option>
+                <option value="identity-access-architecture">Identity Access Architecture</option>
+                <option value="incident-response-process">Incident Response Process</option>
+                <option value="integrated-data-governance">Integrated Data Governance</option>
+                <option value="multi-region-architecture">Multi-Region Architecture</option>
+                <option value="network-isolation-architecture">Network Isolation Architecture</option>
+                <option value="performance-optimization">Performance Optimization</option>
+                <option value="purview-integration">Purview Integration</option>
+                <option value="sensitive-data-protection">Sensitive Data Protection</option>
+                <option value="serverless-sql-query-flow">Serverless SQL Query Flow</option>
+                <option value="serverless-sql-troubleshooting">Serverless SQL Troubleshooting</option>
+            </select>
+            <button id="loadDiagramBtn">Load Diagram</button>
+        </div>
+
+        <h2>Mermaid Code</h2>
+        <textarea id="input" placeholder="Enter Mermaid code here..."></textarea>
+        
+        <div id="controls">
+            <button id="renderBtn">Render Diagram</button>
+            <button id="downloadPngBtn">Download as PNG</button>
+            <button id="downloadSvgBtn">Download as SVG</button>
+            <span id="status"></span>
+        </div>
+        
+        <h2>Output</h2>
+        <div id="output"></div>
+        <div id="imageOutput"></div>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: false,
+            theme: 'default',
+            flowchart: { 
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'linear'
+            },
+            themeVariables: {
+                primaryColor: '#3498db',
+                primaryTextColor: '#fff',
+                primaryBorderColor: '#2980b9',
+                lineColor: '#2c3e50',
+                secondaryColor: '#1abc9c',
+                tertiaryColor: '#f1f1f1'
+            }
+        });
+
+        const diagramData = {
+            "integrated-data-governance": `graph TD
+    subgraph "Governance Foundations"
+        POLICY[Governance Policies]
+        STANDARD[Data Standards]
+        ROLES[Roles & Responsibilities]
+    end
+    
+    subgraph "Azure Synapse Analytics"
+        WORKSPACE[Synapse Workspace]
+        SQLPOOL[Dedicated SQL Pool]
+        SQLSERVER[Serverless SQL Pool]
+        SPARK[Spark Pool]
+        PIPELINE[Synapse Pipeline]
+    end
+    
+    subgraph "Governance Services"
+        PURVIEW[Microsoft Purview]
+        KV[Azure Key Vault]
+        RBAC[Azure RBAC]
+        MONITOR[Azure Monitor]
+    end
+    
+    POLICY --> PURVIEW
+    STANDARD --> PURVIEW
+    ROLES --> RBAC
+    
+    PURVIEW --> WORKSPACE
+    PURVIEW --"Data Discovery"--> SQLPOOL
+    PURVIEW --"Data Classification"--> SQLSERVER
+    PURVIEW --"Lineage Tracking"--> SPARK
+    PURVIEW --"Automated Scanning"--> PIPELINE
+    
+    KV --"Secrets Management"--> WORKSPACE
+    KV --"Encryption Keys"--> SQLPOOL
+    
+    RBAC --"Access Control"--> WORKSPACE
+    RBAC --"Permission Management"--> SQLPOOL
+    RBAC --"Role Assignment"--> SQLSERVER
+    RBAC --"Security Principal"--> SPARK
+    
+    MONITOR --"Auditing"--> WORKSPACE
+    MONITOR --"Performance Tracking"--> SQLPOOL
+    MONITOR --"Resource Utilization"--> SPARK
+    MONITOR --"Pipeline Monitoring"--> PIPELINE`,
+            
+            "governance-maturity-model": `graph TD
+    L1[Level 1:<br>Initial]
+    L2[Level 2:<br>Repeatable]
+    L3[Level 3:<br>Defined]
+    L4[Level 4:<br>Managed]
+    L5[Level 5:<br>Optimized]
+    
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
+    L4 --> L5
+    
+    subgraph "Level 1: Initial"
+        L1_1[Ad-hoc governance]
+        L1_2[Basic security]
+        L1_3[Manual processes]
+    end
+    
+    subgraph "Level 2: Repeatable"
+        L2_1[Documented standards]
+        L2_2[Basic classification]
+        L2_3[Manual lineage tracking]
+        L2_4[Regular reviews]
+    end
+    
+    subgraph "Level 3: Defined"
+        L3_1[Formal governance program]
+        L3_2[Automated classification]
+        L3_3[Basic lineage automation]
+        L3_4[Defined metrics]
+        L3_5[Integration with Purview]
+    end
+    
+    subgraph "Level 4: Managed"
+        L4_1[Quantitative management]
+        L4_2[Automated compliance]
+        L4_3[Full lineage automation]
+        L4_4[Advanced security]
+        L4_5[Comprehensive metadata]
+    end
+    
+    subgraph "Level 5: Optimized"
+        L5_1[Continuous improvement]
+        L5_2[Predictive governance]
+        L5_3[Self-service capabilities]
+        L5_4[Business value alignment]
+        L5_5[Cross-platform governance]
+    end`,
+
+            "data-classification-framework": `graph TD
+    subgraph "Classification Levels"
+        PUBLIC[Public]
+        INTERNAL[Internal]
+        CONFID[Confidential]
+        RESTRICT[Restricted]
+    end
+    
+    subgraph "Regulatory Categories"
+        PII[Personally Identifiable Information]
+        PCI[Payment Card Information]
+        IP[Intellectual Property]
+        CORP[Corporate Data]
+    end
+    
+    subgraph "Implementation"
+        LABELS[Sensitivity Labels]
+        PURVIEW[Microsoft Purview]
+    end
+    
+    subgraph "SQL Protection"
+        SQL_CLASS[SQL Classification]
+        MASK[Dynamic Data Masking]
+        ENCRYPT[Transparent Data Encryption]
+        RLS[Row-Level Security]
+        CLS[Column-Level Security]
+    end
+    
+    subgraph "Storage Protection"
+        DLP[Data Loss Prevention]
+        ACL[Access Control Lists]
+    end
+    
+    PUBLIC --> LABELS
+    INTERNAL --> LABELS
+    CONFID --> LABELS
+    RESTRICT --> LABELS
+    
+    PII --> LABELS
+    PCI --> LABELS
+    IP --> LABELS
+    CORP --> LABELS
+    
+    LABELS --> PURVIEW
+    PURVIEW --> SQL_CLASS
+    PURVIEW --> DLP
+    
+    SQL_CLASS --> MASK
+    SQL_CLASS --> ENCRYPT
+    SQL_CLASS --> RLS
+    SQL_CLASS --> CLS
+    
+    DLP --> ACL`,
+            
+            "purview-integration": `graph TB
+    subgraph "Microsoft Purview"
+        CATALOG[Data Catalog]
+        SCANNING[Automated Scanning]
+        CLASS[Classifications & Labels]
+        LINEAGE[Data Lineage]
+        GLOSSARY[Business Glossary]
+        INSIGHTS[Data Insights]
+    end
+    
+    subgraph "Azure Synapse Analytics"
+        WORKSPACE[Synapse Workspace]
+        SQLPOOL[Dedicated SQL Pool]
+        SQLSERVER[Serverless SQL]
+        SPARK[Spark Pools]
+        ADLS[Data Lake Storage]
+    end
+    
+    CATALOG --"Catalogs Assets in"--> WORKSPACE
+    CATALOG --"Registers Tables in"--> SQLPOOL
+    CATALOG --"Indexes Data in"--> ADLS
+    
+    SCANNING --"Scans"--> SQLPOOL
+    SCANNING --"Discovers"--> SQLSERVER
+    SCANNING --"Monitors"--> ADLS
+    
+    CLASS --"Classifies Data in"--> SQLPOOL
+    CLASS --"Applies Labels to"--> ADLS
+    
+    LINEAGE --"Tracks Data Movement in"--> WORKSPACE
+    LINEAGE --"Maps Transformations in"--> SQLPOOL
+    LINEAGE --"Visualizes Code in"--> SPARK
+    
+    GLOSSARY --"Defines Terms"--> SQLPOOL
+    GLOSSARY --"Standardizes Naming"--> SPARK
+    
+    INSIGHTS --"Reports on"--> WORKSPACE
+    INSIGHTS --"Analyzes"--> SQLPOOL
+    INSIGHTS --"Monitors"--> ADLS`,
+            
+            "incident-response-process": `flowchart TD
+    start[Incident Detected] --> CLASSIFY{Classify Incident}
+    
+    CLASSIFY -->|Performance| PERF[Performance Incident]
+    CLASSIFY -->|Security| SEC[Security Incident]
+    CLASSIFY -->|Availability| AVAIL[Availability Incident]
+    CLASSIFY -->|Data Quality| DQ[Data Quality Incident]
+    
+    PERF --> P_ASSESS[Assess Impact & Severity]
+    SEC --> S_ASSESS[Assess Impact & Severity]
+    AVAIL --> A_ASSESS[Assess Impact & Severity]
+    DQ --> D_ASSESS[Assess Impact & Severity]
+    
+    P_ASSESS --> P_CONTAIN[Containment Actions:<br>- Identify affected workloads<br>- Apply temporary mitigations]
+    S_ASSESS --> S_CONTAIN[Containment Actions:<br>- Isolate affected systems<br>- Block suspicious activity]
+    A_ASSESS --> A_CONTAIN[Containment Actions:<br>- Activate failover if applicable<br>- Notify users]
+    D_ASSESS --> D_CONTAIN[Containment Actions:<br>- Stop affected pipelines<br>- Isolate bad data]
+    
+    P_CONTAIN --> P_INVESTIGATE[Investigation:<br>- Analyze query plans<br>- Review resource metrics<br>- Check for recent changes]
+    S_CONTAIN --> S_INVESTIGATE[Investigation:<br>- Review audit logs<br>- Analyze access patterns<br>- Check for compromised accounts]
+    A_CONTAIN --> A_INVESTIGATE[Investigation:<br>- Check service health<br>- Review dependencies<br>- Analyze error logs]
+    D_CONTAIN --> D_INVESTIGATE[Investigation:<br>- Trace data lineage<br>- Validate source data<br>- Review transformation logic]
+    
+    P_INVESTIGATE --> P_RESOLVE[Resolution:<br>- Optimize queries<br>- Adjust resources<br>- Implement identified fixes]
+    S_INVESTIGATE --> S_RESOLVE[Resolution:<br>- Apply security patches<br>- Update access controls<br>- Enhance monitoring]
+    A_INVESTIGATE --> A_RESOLVE[Resolution:<br>- Restore services<br>- Fix root cause<br>- Validate functionality]
+    D_INVESTIGATE --> D_RESOLVE[Resolution:<br>- Correct data issues<br>- Fix validation rules<br>- Update pipelines]
+    
+    P_RESOLVE --> RECOVER[Recovery Phase]
+    S_RESOLVE --> RECOVER
+    A_RESOLVE --> RECOVER
+    D_RESOLVE --> RECOVER
+    
+    RECOVER --> DOCUMENT[Document Incident]
+    DOCUMENT --> REVIEW[Post-Incident Review]
+    REVIEW --> IMPROVE[Implement Improvements]`,
+    
+            "enterprise-scale-architecture": `graph TD
+    ADLS[Azure Data Lake Storage Gen2] --> SP[Synapse Spark]
+    ADLS --> SQL[Serverless SQL]
+    SP --> DL[Delta Lake Tables]
+    SQL --> EXT[External Tables]
+    DL --> SM[Shared Metadata]
+    EXT --> SM
+    SM --> BI[Power BI]
+    SM --> ML[Azure Machine Learning]
+    ADLS --> ADF[Azure Data Factory]
+    ADF --> SP
+    ADF --> SQL
+    KV[Azure Key Vault] --> SP
+    KV --> SQL
+    KV --> ADF
+    PV[Microsoft Purview] --> ADLS
+    PV --> SP
+    PV --> SQL
+    PV --> DL
+    PV --> EXT`,
+            
+            "multi-region-architecture": `graph TD
+    PR[Primary Region] --> DR[Disaster Recovery Region]
+    PR --> GR1[Global Region 1]
+    PR --> GR2[Global Region 2]
+    
+    subgraph Primary Region
+    PRADLS[ADLS Gen2] --> PRSP[Spark Pool]
+    PRADLS --> PRSQL[Serverless SQL]
+    PRSP --> PRDL[Delta Lake]
+    end
+    
+    subgraph Disaster Recovery Region
+    DRADLS[ADLS Gen2] --> DRSP[Spark Pool]
+    DRADLS --> DRSQL[Serverless SQL]
+    DRSP --> DRDL[Delta Lake]
+    end
+    
+    PRADLS --> DRADLS
+    
+    subgraph Global Region 1
+    GR1SQL[Serverless SQL]
+    end
+    
+    subgraph Global Region 2
+    GR2SQL[Serverless SQL]
+    end
+    
+    DRADLS --> GR1SQL
+    DRADLS --> GR2SQL`
+        };
+
+        document.getElementById('renderBtn').addEventListener('click', renderDiagram);
+        document.getElementById('loadDiagramBtn').addEventListener('click', loadSelectedDiagram);
+        document.getElementById('downloadPngBtn').addEventListener('click', downloadAsPng);
+        document.getElementById('downloadSvgBtn').addEventListener('click', downloadAsSvg);
+
+        function loadSelectedDiagram() {
+            const selected = document.getElementById('diagramSelect').value;
+            if (selected && diagramData[selected]) {
+                document.getElementById('input').value = diagramData[selected];
+                renderDiagram();
+            } else {
+                document.getElementById('status').textContent = "Selected diagram data not found";
+            }
+        }
+
+        function renderDiagram() {
+            const input = document.getElementById('input').value.trim();
+            if (!input) {
+                document.getElementById('status').textContent = "Please enter some Mermaid code";
+                return;
+            }
+
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = `<div class="mermaid">${input}</div>`;
+            
+            try {
+                document.getElementById('status').textContent = "Rendering...";
+                mermaid.run({ nodes: [outputDiv.querySelector('.mermaid')] })
+                    .then(() => {
+                        document.getElementById('status').textContent = "Rendered successfully!";
+                    })
+                    .catch(error => {
+                        document.getElementById('status').textContent = "Error: " + error.message;
+                        console.error(error);
+                    });
+            } catch (error) {
+                document.getElementById('status').textContent = "Error: " + error.message;
+                console.error(error);
+            }
+        }
+
+        function downloadAsPng() {
+            const svg = document.querySelector('.mermaid svg');
+            if (!svg) {
+                document.getElementById('status').textContent = "Render a diagram first";
+                return;
+            }
+
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const img = new Image();
+            
+            img.onload = function() {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                ctx.drawImage(img, 0, 0);
+                
+                const pngData = canvas.toDataURL('image/png');
+                const downloadLink = document.createElement('a');
+                
+                const selectedDiagram = document.getElementById('diagramSelect').value;
+                const filename = selectedDiagram || 'diagram';
+                
+                downloadLink.download = `${filename}.png`;
+                downloadLink.href = pngData;
+                downloadLink.click();
+                
+                document.getElementById('status').textContent = "PNG downloaded";
+            };
+            
+            img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+        }
+
+        function downloadAsSvg() {
+            const svg = document.querySelector('.mermaid svg');
+            if (!svg) {
+                document.getElementById('status').textContent = "Render a diagram first";
+                return;
+            }
+
+            const svgData = new XMLSerializer().serializeToString(svg);
+            const svgBlob = new Blob([svgData], {type: 'image/svg+xml'});
+            const downloadLink = document.createElement('a');
+            
+            const selectedDiagram = document.getElementById('diagramSelect').value;
+            const filename = selectedDiagram || 'diagram';
+            
+            downloadLink.download = `${filename}.svg`;
+            downloadLink.href = URL.createObjectURL(svgBlob);
+            downloadLink.click();
+            
+            document.getElementById('status').textContent = "SVG downloaded";
+        }
+
+        // Initialize with the first diagram if available
+        window.onload = function() {
+            if (Object.keys(diagramData).length > 0) {
+                // Load first diagram by default
+                document.getElementById('diagramSelect').value = Object.keys(diagramData)[0];
+                loadSelectedDiagram();
+            }
+        };
+    </script>
+</body>
+</html>
