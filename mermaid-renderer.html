@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+=!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +11,27 @@
             margin: 20px;
             background-color: #f5f5f5;
         }
+
         #container {
             max-width: 1200px;
             margin: 0 auto;
             background-color: white;
             padding: 20px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         #input {
             width: 100%;
             height: 200px;
             margin-bottom: 10px;
             font-family: monospace;
         }
+
         #controls {
             margin-bottom: 20px;
         }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -36,27 +41,33 @@
             cursor: pointer;
             margin-right: 10px;
         }
+
         button:hover {
             background-color: #45a049;
         }
+
         #output {
             background-color: white;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+
         #imageOutput {
             margin-top: 20px;
             text-align: center;
         }
+
         #fileSelector {
             margin-bottom: 20px;
         }
+
         #diagramName {
             padding: 10px;
             width: 300px;
             margin-right: 10px;
         }
+
         .spinner {
             display: none;
             border: 4px solid #f3f3f3;
@@ -68,10 +79,17 @@
             margin-right: 10px;
             display: inline-block;
         }
+
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
+
         select {
             padding: 10px;
             margin-right: 10px;
@@ -79,10 +97,11 @@
     </style>
     <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 </head>
+
 <body>
     <div id="container">
         <h1>Azure Synapse Analytics Documentation - Mermaid Diagram Renderer</h1>
-        
+
         <div id="fileSelector">
             <label for="diagramSelect">Select a diagram to render:</label>
             <select id="diagramSelect">
@@ -116,24 +135,24 @@
 
         <h2>Mermaid Code</h2>
         <textarea id="input" placeholder="Enter Mermaid code here..."></textarea>
-        
+
         <div id="controls">
             <button id="renderBtn">Render Diagram</button>
             <button id="downloadPngBtn">Download as PNG</button>
             <button id="downloadSvgBtn">Download as SVG</button>
             <span id="status"></span>
         </div>
-        
+
         <h2>Output</h2>
         <div id="output"></div>
         <div id="imageOutput"></div>
     </div>
 
     <script>
-        mermaid.initialize({ 
+        mermaid.initialize({
             startOnLoad: false,
             theme: 'default',
-            flowchart: { 
+            flowchart: {
                 useMaxWidth: true,
                 htmlLabels: true,
                 curve: 'linear'
@@ -193,7 +212,7 @@
     MONITOR --"Performance Tracking"--> SQLPOOL
     MONITOR --"Resource Utilization"--> SPARK
     MONITOR --"Pipeline Monitoring"--> PIPELINE`,
-            
+
             "governance-maturity-model": `graph TD
     L1[Level 1:<br>Initial]
     L2[Level 2:<br>Repeatable]
@@ -296,7 +315,7 @@
     SQL_CLASS --> CLS
     
     DLP --> ACL`,
-            
+
             "purview-integration": `graph TB
     subgraph "Microsoft Purview"
         CATALOG[Data Catalog]
@@ -336,7 +355,7 @@
     INSIGHTS --"Reports on"--> WORKSPACE
     INSIGHTS --"Analyzes"--> SQLPOOL
     INSIGHTS --"Monitors"--> ADLS`,
-            
+
             "incident-response-process": `flowchart TD
     start[Incident Detected] --> CLASSIFY{Classify Incident}
     
@@ -373,7 +392,7 @@
     RECOVER --> DOCUMENT[Document Incident]
     DOCUMENT --> REVIEW[Post-Incident Review]
     REVIEW --> IMPROVE[Implement Improvements]`,
-    
+
             "enterprise-scale-architecture": `graph TD
     ADLS[Azure Data Lake Storage Gen2] --> SP[Synapse Spark]
     ADLS --> SQL[Serverless SQL]
@@ -394,7 +413,7 @@
     PV --> SQL
     PV --> DL
     PV --> EXT`,
-            
+
             "multi-region-architecture": `graph TD
     PR[Primary Region] --> DR[Disaster Recovery Region]
     PR --> GR1[Global Region 1]
@@ -450,7 +469,7 @@
 
             const outputDiv = document.getElementById('output');
             outputDiv.innerHTML = `<div class="mermaid">${input}</div>`;
-            
+
             try {
                 document.getElementById('status').textContent = "Rendering...";
                 mermaid.run({ nodes: [outputDiv.querySelector('.mermaid')] })
@@ -478,25 +497,25 @@
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
             const img = new Image();
-            
-            img.onload = function() {
+
+            img.onload = function () {
                 canvas.width = img.width;
                 canvas.height = img.height;
                 ctx.drawImage(img, 0, 0);
-                
+
                 const pngData = canvas.toDataURL('image/png');
                 const downloadLink = document.createElement('a');
-                
+
                 const selectedDiagram = document.getElementById('diagramSelect').value;
                 const filename = selectedDiagram || 'diagram';
-                
+
                 downloadLink.download = `${filename}.png`;
                 downloadLink.href = pngData;
                 downloadLink.click();
-                
+
                 document.getElementById('status').textContent = "PNG downloaded";
             };
-            
+
             img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
         }
 
@@ -508,21 +527,21 @@
             }
 
             const svgData = new XMLSerializer().serializeToString(svg);
-            const svgBlob = new Blob([svgData], {type: 'image/svg+xml'});
+            const svgBlob = new Blob([svgData], { type: 'image/svg+xml' });
             const downloadLink = document.createElement('a');
-            
+
             const selectedDiagram = document.getElementById('diagramSelect').value;
             const filename = selectedDiagram || 'diagram';
-            
+
             downloadLink.download = `${filename}.svg`;
             downloadLink.href = URL.createObjectURL(svgBlob);
             downloadLink.click();
-            
+
             document.getElementById('status').textContent = "SVG downloaded";
         }
 
         // Initialize with the first diagram if available
-        window.onload = function() {
+        window.onload = function () {
             if (Object.keys(diagramData).length > 0) {
                 // Load first diagram by default
                 document.getElementById('diagramSelect').value = Object.keys(diagramData)[0];
@@ -531,4 +550,5 @@
         };
     </script>
 </body>
+
 </html>

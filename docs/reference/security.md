@@ -20,14 +20,8 @@ This document provides comprehensive security guidance for Azure Synapse Analyti
 
 ### Connectivity
 
-```mermaid
-graph TD
-    Client[Client] -- Private Link --> PE[Private Endpoint]
-    PE --> Synapse[Synapse Workspace]
-    Synapse -- Private Link --> Storage[Azure Storage]
-    Synapse -- Private Link --> KeyVault[Azure Key Vault]
+![Compliance Controls Framework](../images/diagrams/compliance-controls.png)
 
-```
 
 ## Authentication and Authorization
 

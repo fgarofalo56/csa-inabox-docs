@@ -1,6 +1,6 @@
 # Comprehensive Delta Lake Guide for Azure Synapse Analytics
 
-[Home](/) > [Code Examples](/docs/code-examples/index.md) > Delta Lake Guide
+[Home](/) > [Code Examples](../code-examples/index.md) > Delta Lake Guide
 
 !!! info "Guide Overview"
     This comprehensive guide provides detailed examples for working with Delta Lake in Azure Synapse Analytics, covering data ingestion, change data capture, and table optimization techniques.

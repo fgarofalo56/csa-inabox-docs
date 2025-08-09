@@ -43,29 +43,8 @@ Azure Synapse Analytics Delta Lakehouse is a unified analytics platform that com
 
 ## Architecture Diagram
 
-```mermaid
-graph TD
-    ADLS[ADLS Gen2 Storage] --> Delta[Delta Lake]
-    Delta --> Spark[Apache Spark]
-    Spark --> Synapse[Synapse Analytics]
-    Synapse --> Serverless[Serverless SQL]
-    Synapse --> Dedicated[Dedicated SQL]
-    
-    subgraph "Data Ingestion"
-        Ingest[Data Sources]
-        Ingest --> ADLS
-    end
-    
-    subgraph "Processing Layer"
-        Spark --> Delta
-    end
-    
-    subgraph "Analytics Layer"
-        Synapse --> Serverless
-        Synapse --> Dedicated
-    end
+![Compliance Controls Framework](../images/diagrams/compliance-controls.png)
 
-```
 
 ## Key Features
 
@@ -135,5 +114,5 @@ graph TD
 
 1. [Serverless SQL Architecture](../serverless-sql/index.md)
 1. [Shared Metadata Architecture](../shared-metadata/index.md)
-1. [Best Practices](/docs/best-practices/index.md)
-1. [Code Examples](/docs/code-examples/index.md)
+1. [Best Practices](../best-practices/index.md)
+1. [Code Examples](../code-examples/index.md)

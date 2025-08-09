@@ -1,35 +1,33 @@
 # Delta Lakehouse Architecture with Azure Synapse
 
-[Home](../../) > [Architecture](../) > Delta Lakehouse
-
 ## Overview
 
 The Delta Lakehouse architecture combines the flexibility and cost-efficiency of a data lake with the data management and ACID transaction capabilities of a data warehouse. Azure Synapse Analytics provides native integration with Delta Lake format, enabling a modern and efficient lakehouse implementation.
 
 ## Architecture Components
 
-![Delta Lakehouse Architecture](../../images/delta-lakehouse-diagram.png)
+![Delta Lakehouse Architecture](../../assets/images/delta-lakehouse-diagram.png)
 
 ### Core Components
 
-1. __Azure Data Lake Storage Gen2__
+1. **Azure Data Lake Storage Gen2**
    - Foundation for storing all data in raw, refined, and curated zones
    - Hierarchical namespace for efficient file organization
    - Fine-grained ACLs for security at folder and file levels
 
-2. __Delta Lake__
+2. **Delta Lake**
    - Open-source storage layer that brings ACID transactions to data lakes
    - Schema enforcement and evolution capabilities
    - Time travel (data versioning) for auditing and rollbacks
    - Support for optimized Parquet format for performance
 
-3. __Azure Synapse Spark Pools__
+3. **Azure Synapse Spark Pools**
    - Distributed processing engine for data transformation
    - Native support for Delta Lake format
    - Scalable compute for batch and stream processing
    - Integration with Azure Machine Learning for advanced analytics
 
-4. __Azure Synapse SQL__
+4. **Azure Synapse SQL**
    - SQL interface for querying Delta tables
    - Serverless pool for ad-hoc analytics
    - Dedicated pool for enterprise data warehousing
@@ -49,52 +47,61 @@ adls://data/
 
 The medallion architecture organizes your Delta Lake data into layers with increasing data quality and refinement:
 
-1. __Bronze Layer__ (Raw Data)
-   - Raw data ingested from source systems
-   - Preserved in original format with minimal transformation
-   - Append-only pattern with full history
+1. **Bronze Layer** (Raw Data)
+   - Ingestion sink for all source data
+   - Preserves original data format and content
+   - Minimal transformation, primarily ELT
+   - Schema-on-read approach
 
-2. __Silver Layer__ (Validated Data)
-   - Cleansed, filtered, and validated data
-   - Standardized schema and data types
-   - Record-level metadata (processing timestamps, quality flags)
+2. **Silver Layer** (Refined Data)
+   - Cleansed and conformed data
+   - Standardized formats and resolved duplicates
+   - Common data quality rules applied
+   - Typically organized by domain or source system
 
-3. __Gold Layer__ (Business-Ready Data)
-   - Domain-specific data models (star schema, denormalized)
-   - Aggregated and enriched for specific use cases
-   - Optimized for analytics performance
+3. **Gold Layer** (Curated Data)
+   - Business-level aggregates and metrics
+   - Dimensional models for reporting
+   - Feature tables for machine learning
+   - Optimized for specific analytical use cases
 
-## Delta Lake Features in Synapse
+## Performance Optimization
 
-### ACID Transactions
+### Delta Optimizations
 
-Delta Lake provides transactional guarantees for data lake operations:
+- **Data Skipping**: Delta maintains statistics to skip irrelevant files during queries
+- **Z-Ordering**: Multi-dimensional clustering for improved filtering performance
+- **Compaction**: Small file consolidation to optimize read performance
+- **Caching**: Metadata and data caching for frequently accessed tables
 
-- Atomicity: All changes succeed or fail together
-- Consistency: Readers see consistent snapshots
-- Isolation: Concurrent operations don't interfere
-- Durability: Committed changes are permanent
+### Spark Tuning
 
-### Schema Enforcement and Evolution
+- **Autoscaling**: Configure Spark pools to scale based on workload
+- **Partition Management**: Right-size partitions to optimize parallelism
+- **Memory Configuration**: Allocate appropriate memory for shuffle and execution
+- **Query Plan Optimization**: Analyze and tune Spark execution plans
 
-- Schema enforcement validates data types during writes
-- Schema evolution allows controlled schema changes
-- Both features prevent data corruption and ensure quality
+## Governance and Security
 
-### Time Travel
+- **Azure Purview Integration**: Data cataloging and lineage tracking
+- **Column-Level Security**: Fine-grained access control within tables
+- **Row-Level Security**: Filter data based on user context
+- **Transparent Data Encryption**: Data encryption at rest
 
-Access previous versions of data for:
+## Deployment and DevOps
 
-- Audit trails and compliance
-- Data recovery after errors
-- Historical analysis and comparisons
+- **Infrastructure as Code**: Deploy lakehouse components using ARM templates or Terraform
+- **CI/CD Pipelines**: Automated testing and deployment of Spark notebooks and SQL scripts
+- **Monitoring**: Azure Monitor integration for performance tracking and alerts
+- **Delta Live Tables**: Declarative ETL framework for reliable pipeline development
 
-## Implementation Guide
+## Best Practices
 
-For detailed implementation steps, see the [Detailed Architecture](detailed-architecture.md) document.
-
-## Related Resources
-
-- [Delta Lake Guide](../../code-examples/delta-lake-guide.md)
-- [Performance Best Practices](../../best-practices/performance.md)
-- [Security Guidelines](../../best-practices/security.md)
+1. Implement a systematic approach to schema evolution
+2. Use appropriate partitioning strategies based on data access patterns
+3. Apply retention policies to manage data lifecycle efficiently
+4. Leverage checkpoint files for streaming workloads
+5. Implement Slowly Changing Dimension patterns for tracking historical changes
+6. Use Z-Ordering on frequently filtered columns
+7. Maintain separate compute clusters for ETL and query workloads
+8. Implement CI/CD practices for Delta table schema changes

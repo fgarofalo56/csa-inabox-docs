@@ -49,3 +49,13 @@ If you'd like to contribute to this documentation, please see our [contribution 
 - [Azure Synapse Analytics Official Documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/)
 - [Microsoft Azure Documentation](https://learn.microsoft.com/en-us/azure/)
 - [Delta Lake Documentation](https://learn.microsoft.com/en-us/azure/databricks/delta/)
+
+
+## Additional Resources
+
+- [Serverless SQL Overview](serverless-sql.md)
+- [Shared Metadata Overview](shared-metadata.md)
+- [Troubleshooting Overview](troubleshooting.md)
+- [Interactive Data Pipeline Tutorial](tutorials/interactive-data-pipeline.md)
+- [Performance Benchmarks](performance/benchmarks-guide.md)
+- [Security Best Practices](security/best-practices.md)

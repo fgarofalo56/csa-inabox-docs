@@ -1,6 +1,6 @@
 # Auto Loader for Delta Lake in Azure Synapse Analytics
 
-[Home](/) > [Code Examples](/docs/code-examples/index.md) > [Delta Lake](/docs/code-examples/delta-lake/index.md) > Auto Loader
+[Home](/) > [Code Examples](../code-examples/index.md) > [Delta Lake](../code-examples/delta-lake/index.md) > Auto Loader
 
 This guide provides detailed examples for using Auto Loader with Azure Synapse Analytics to efficiently ingest data into Delta Lake tables.
 

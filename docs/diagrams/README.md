@@ -1,100 +1,108 @@
 # Azure Synapse Analytics Architecture Diagrams
 
-[Home](../) > Diagrams
-
 This section contains architecture diagrams for Azure Synapse Analytics components and workflows, focusing on Delta Lakehouse and Serverless SQL capabilities.
 
 ## Delta Lakehouse Architecture
 
-![Delta Lakehouse Architecture](../images/delta-lakehouse-diagram.png)
-*Delta Lakehouse logical architecture implementation in Azure Synapse Analytics*
+![Delta Lakehouse Architecture](./delta-lakehouse-architecture.png)
+
+*Note: The diagram above shows the logical architecture of a Delta Lakehouse implementation in Azure Synapse Analytics.*
 
 ### Components Description
 
-1. __Azure Data Lake Storage Gen2__ - Provides the foundation for storing Delta tables
-2. __Azure Synapse Spark Pools__ - Executes Spark jobs for data processing
-3. __Delta Lake__ - Provides ACID transactions, time travel, and schema enforcement
-4. __Azure Synapse Pipeline__ - Orchestrates data movement and transformation
-5. __Azure Synapse Serverless SQL__ - Provides SQL query capabilities over the Delta Lake
+1. **Azure Data Lake Storage Gen2** - Provides the foundation for storing Delta tables
+2. **Azure Synapse Spark Pools** - Executes Spark jobs for data processing
+3. **Delta Lake** - Provides ACID transactions, time travel, and schema enforcement
+4. **Azure Synapse Pipeline** - Orchestrates data movement and transformation
+5. **Azure Synapse Serverless SQL** - Provides SQL query capabilities over the Delta Lake
 
 ## Serverless SQL Architecture
 
-![Serverless SQL Architecture](../images/serverless-sql-architecture.png)
-*Serverless SQL query architecture in Azure Synapse Analytics*
+![Serverless SQL Architecture](./serverless-sql-architecture.png)
+
+*Note: The diagram above illustrates the serverless SQL query architecture in Azure Synapse Analytics.*
 
 ### Components Description
 
-1. __Azure Synapse Serverless SQL Pool__ - On-demand SQL query service
-2. __Storage Accounts__ - ADLS Gen2, Blob Storage, etc.
-3. __File Formats__ - Support for Parquet, Delta, CSV, JSON
-4. __Query Service__ - Distributed query processing engine
-5. __Results__ - Query results available via JDBC/ODBC or direct export
+1. **Azure Synapse Serverless SQL Pool** - On-demand SQL query service
+2. **Storage Accounts** - ADLS Gen2, Blob Storage, etc.
+3. **File Formats** - Support for Parquet, Delta, CSV, JSON
+4. **Query Service** - Distributed query processing engine
+5. **Results** - Query results available via JDBC/ODBC or direct export
 
 ## Shared Metadata Architecture
 
-![Shared Metadata Architecture](../images/shared-metadata-architecture.png)
-*Shared metadata architecture across different compute engines in Azure Synapse Analytics*
+![Shared Metadata Architecture](./shared-metadata-architecture.png)
+
+*Note: The diagram above shows how metadata can be shared across different compute engines in Azure Synapse Analytics.*
 
 ### Components Description
 
-1. __Azure Synapse Workspace__ - Central workspace for all analytics services
-2. __Metadata Services__ - Shared metadata layer
-3. __Spark Metastore__ - Hive metastore for Spark
-4. __SQL Metadata__ - SQL catalog and metadata
-5. __Integration Runtime__ - Shared integration services
+1. **Azure Synapse Workspace** - Central workspace for all analytics services
+2. **Metadata Services** - Shared metadata layer
+3. **Spark Metastore** - Hive metastore for Spark
+4. **SQL Metadata** - SQL catalog and metadata
+5. **Integration Runtime** - Shared integration services
 
 ## Data Flow Diagrams
 
 ### Delta Lake Write Flow
 
-<!-- Mermaid diagram for MkDocs rendering -->
-```mermaid
-graph TD
-    A[Data Source] --> B[Data Ingestion]
-    B --> C[Delta Lake]
-    C --> D1[Raw Zone]
-    C --> D2[Refined Zone]
-    C --> D3[Curated Zone]
-    D1 --> E[Query Engine]
-    D2 --> E
-    D3 --> E
-    E --> F[Analytics Consumption]
 ```
-
-<!-- Static image fallback for GitHub -->
-![Delta Lake Write Flow showing data moving from source through ingestion to Delta Lake zones and finally to analytics consumption](../images/diagrams/delta-lake-write-flow.png)
+┌────────────┐     ┌────────────┐     ┌────────────┐     ┌────────────┐
+│  Raw Data  │────▶│ Spark Pool │────▶│ Processing │────▶│ Delta Lake │
+└────────────┘     └────────────┘     └────────────┘     └────────────┘
+                                                               │
+                                                               ▼
+                                                        ┌────────────┐
+                                                        │  Metadata  │
+                                                        │   Update   │
+                                                        └────────────┘
+```
 
 ### Serverless SQL Query Flow
 
-<!-- Mermaid diagram for MkDocs rendering -->
-```mermaid
-graph TD
-    A[Client Application] --> B[Connection Request]
-    B --> C[Serverless SQL Endpoint]
-    C --> D[Query Compilation]
-    D --> E[Distributed Query Execution]
-    E --> F[Storage Access]
-    F --> G[Results Processing]
-    G --> H[Results to Client]
+```
+┌────────────┐     ┌────────────┐     ┌────────────┐     ┌────────────┐
+│    User    │────▶│  SQL Query │────▶│ Query Plan │────▶│   Query    │
+│   Query    │     │   Parser   │     │ Generation │     │ Execution  │
+└────────────┘     └────────────┘     └────────────┘     └────────────┘
+                                                               │
+                                                               ▼
+┌────────────┐     ┌────────────┐                       ┌────────────┐
+│  Results   │◀────│   Result   │◀──────────────────────│ Data Source│
+│            │     │ Processing │                       │   Access   │
+└────────────┘     └────────────┘                       └────────────┘
 ```
 
-<!-- Static image fallback for GitHub -->
-![Serverless SQL Query Flow showing the path from client application through connection, query compilation, execution, storage access, and results processing back to client](../images/diagrams/serverless-sql-query-flow.png)
+## Creating Architecture Diagrams
 
-## Integration Architecture Diagrams
+For production documentation, actual diagram images should be created using tools like:
 
-### Azure ML Integration
+1. **Microsoft Visio** - Professional diagramming tool
+2. **Draw.io** - Free online diagramming tool
+3. **Lucidchart** - Collaborative diagramming
+4. **Mermaid** - Markdown-based diagramming
 
-![Azure ML Integration](../images/integration/azure-ml-synapse.png)
-*Integration architecture between Azure Synapse Analytics and Azure Machine Learning*
+## Diagram Standards
 
-### Azure Purview Integration
+When creating architecture diagrams for this documentation:
 
-![Azure Purview Integration](../images/integration/azure-purview-synapse.png)
-*Integration architecture between Azure Synapse Analytics and Microsoft Purview for data governance*
+1. Use Azure official icons for Azure services
+2. Maintain consistent color schemes
+3. Include clear labels for all components
+4. Provide a legend if multiple icon types are used
+5. Ensure high resolution for all exported images
+6. Use PNG format with transparent backgrounds
+7. Include both logical and physical architecture views when appropriate
 
-## Related Resources
+## Placeholder Notice
 
-- [Delta Lakehouse Architecture](../architecture/delta-lakehouse/) - Detailed documentation
-- [Serverless SQL Architecture](../architecture/serverless-sql/) - Detailed documentation
-- [Shared Metadata Architecture](../architecture/shared-metadata/) - Detailed documentation
+The diagrams referenced in this document need to be created and placed in this directory. The text diagrams are placeholders for actual visual diagrams that should follow the standards outlined above.
+
+
+## Diagram Collections
+
+- [Data Governance Diagrams](data-governance-diagrams.md)
+- [Security Diagrams](security-diagrams.md)
+- [Process Flowcharts](process-flowcharts.md)

@@ -1,6 +1,6 @@
 # Comprehensive Serverless SQL Guide for Azure Synapse Analytics
 
-[Home](/) > [Code Examples](/docs/code-examples/index.md) > Serverless SQL Guide
+[Home](/) > [Code Examples](../code-examples/index.md) > Serverless SQL Guide
 
 !!! info "Guide Overview"
     This comprehensive guide provides detailed examples for working with Serverless SQL pools in Azure Synapse Analytics, covering query optimization, external tables, security, and best practices.
@@ -54,62 +54,9 @@
     5. **Integration with BI Tools**: Connect with PowerBI and other visualization tools
 
 !!! example "Architecture Patterns"
-    ```mermaid
-    graph TD
-        A[Data Lake Storage] --> B[Serverless SQL Pool]
-        B --> C[Data Virtualization]  
-        B --> D[Direct Querying]
-        B --> E[Federated Queries]
-        C --> F[BI Tools/Applications]
-        D --> F
-        E --> F
-    ```
+    ![Delta Lake Optimization Process](../images/diagrams/delta-lake-optimization.png)
 
-    Serverless SQL in Azure Synapse Analytics supports several architecture patterns:
-
-    1. **Data Lake Query Engine**: Direct querying of files in storage
-    2. **Data Virtualization Layer**: Creating views and stored procedures over external data
-    3. **Hybrid Architecture**: Combining serverless SQL with dedicated SQL pools
-    4. **Logical Data Warehouse**: Federated queries across multiple data sources
-
-## Prerequisites
-
-!!! note "Required Resources"
-    - Azure Synapse Analytics workspace
-    - Storage account with data files (Parquet, CSV, JSON, etc.)
-    - Appropriate permissions to execute SQL queries
-    - Basic knowledge of T-SQL syntax
-
-## Query Optimization Techniques
-
-!!! abstract "Performance Optimization"
-    Optimizing Serverless SQL queries can significantly reduce cost and improve performance.
-    Apply these techniques to get the most out of your queries.
-
-### File Format Selection
-
-<div class="grid cards" markdown>
-
-- :material-file-delimited: __Parquet__
-  
-  Columnar format with the best performance for analytics
-
-- :material-file-table: __Delta Lake__
-  
-  Optimized format with ACID transactions and time travel
-
-- :material-file: __CSV__
-  
-  Simple text format with higher processing overhead
-
-- :material-code-json: __JSON__
-  
-  Flexible but most expensive to process
-</div>
-
-One of the most important optimization factors is choosing the right file format:
-
-```sql
+sql
 -- Query against Parquet (recommended) - most efficient
 SELECT TOP 100 *
 FROM OPENROWSET(

@@ -49,23 +49,8 @@ Azure Synapse Serverless SQL is a serverless query engine that enables you to qu
 
 ## Shared Metadata Architecture
 
-```mermaid
-graph TD
-    ADLS[ADLS Gen2 Storage] --> Delta[Delta Lake]
-    Delta --> Serverless[Serverless SQL]
-    Delta --> Spark[Spark Pool]
-    
-    subgraph "Metadata Layer"
-        Metadata --> Delta
-        Metadata --> Serverless
-        Metadata --> Spark
-    end
-    
-    subgraph "Security"
-        Security --> Metadata
-        Security --> ADLS
-    end
-```
+![Compliance Controls Framework](../../images/diagrams/compliance-controls.png)
+
 
 ## Best Practices
 

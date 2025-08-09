@@ -45,4 +45,5 @@ graph TD
 
 <!-- Static image fallback for GitHub -->
 ![Description of the diagram](../images/diagrams/filename.png)
+
 ```

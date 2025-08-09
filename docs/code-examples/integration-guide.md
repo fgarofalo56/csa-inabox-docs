@@ -1,6 +1,6 @@
 # Comprehensive Azure Integration Guide for Synapse Analytics
 
-[Home](/) > [Code Examples](/docs/code-examples/index.md) > Integration Guide
+[Home](/) > [Code Examples](../code-examples/index.md) > Integration Guide
 
 !!! info "Guide Overview"
     This comprehensive guide provides code examples and patterns for integrating Azure Synapse Analytics with other Azure services including Azure Machine Learning, Microsoft Purview, and Azure Data Factory.
@@ -53,54 +53,9 @@
     4. __Metadata Synchronization__: Keeping metadata in sync across services
     5. __Monitoring and Alerting__: Setting up comprehensive monitoring across integrated services
     
-    ```mermaid
-    graph LR
-        A[Azure Synapse Analytics] --> B[Azure ML]
-        A --> C[Microsoft Purview]
-        A --> D[Azure Data Factory]
-        B --> E[Model Registry]
-        B --> F[ML Pipelines]
-        C --> G[Data Catalog]
-        C --> H[Lineage Tracking]
-        D --> I[Pipeline Orchestration]
-        D --> J[Monitoring]
-    ```
+    ![Microsoft Purview Integration](../images/diagrams/purview-integration.png)
 
-## Azure Machine Learning Integration
-
-!!! abstract "ML Integration Overview"
-    Azure Machine Learning integration with Synapse Analytics enables data scientists and engineers to build, deploy, and operationalize ML models using Synapse data and compute resources.
-
-<div class="grid cards" markdown>
-
-- :material-cog-transfer: __Model Training__
-  
-  Use Synapse Spark pools to train ML models at scale
-
-- :material-network: __Model Deployment__
-  
-  Deploy models as endpoints for real-time or batch scoring
-
-- :material-infinity: __MLOps__
-  
-  Implement end-to-end ML lifecycle management
-
-</div>
-
-### Azure ML Prerequisites
-
-!!! note "Required Resources"
-    - Azure Synapse Analytics workspace
-    - Azure Machine Learning workspace
-    - Appropriate permissions on both services
-    - Azure Storage account accessible by both services
-    - Azure Key Vault for secrets management
-
-### Azure ML Linked Service Setup
-
-First, create a linked service between Azure Synapse and Azure Machine Learning:
-
-```python
+python
 # PySpark code to configure Azure ML integration in Synapse
 from notebookutils import mssparkutils
 

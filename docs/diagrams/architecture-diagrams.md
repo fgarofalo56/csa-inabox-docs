@@ -48,28 +48,8 @@ The Shared Metadata architecture enables consistent data access across Spark and
 This reference architecture demonstrates a comprehensive enterprise implementation of Azure Synapse Analytics.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-```mermaid
-graph TD
-    ADLS[Azure Data Lake Storage Gen2] --> SP[Synapse Spark]
-    ADLS --> SQL[Serverless SQL]
-    SP --> DL[Delta Lake Tables]
-    SQL --> EXT[External Tables]
-    DL --> SM[Shared Metadata]
-    EXT --> SM
-    SM --> BI[Power BI]
-    SM --> ML[Azure Machine Learning]
-    ADLS --> ADF[Azure Data Factory]
-    ADF --> SP
-    ADF --> SQL
-    KV[Azure Key Vault] --> SP
-    KV --> SQL
-    KV --> ADF
-    PV[Microsoft Purview] --> ADLS
-    PV --> SP
-    PV --> SQL
-    PV --> DL
-    PV --> EXT
-```
+![Microsoft Purview Integration](../images/diagrams/purview-integration.png)
+
 
 <!-- Static image fallback for GitHub -->
 ![Enterprise-Scale Reference Architecture showing integration between Azure Data Lake Storage, Synapse Spark, Serverless SQL, Delta Lake Tables, External Tables, Shared Metadata, and integration with Power BI, Azure ML, and security/governance services](../images/diagrams/enterprise-scale-architecture.png)
@@ -87,37 +67,8 @@ graph TD
 For enterprise deployments requiring high availability and global distribution:
 
 <!-- Mermaid diagram for MkDocs rendering -->
-```mermaid
-graph TD
-    PR[Primary Region] --> DR[Disaster Recovery Region]
-    PR --> GR1[Global Region 1]
-    PR --> GR2[Global Region 2]
-    
-    subgraph Primary Region
-    PRADLS[ADLS Gen2] --> PRSP[Spark Pool]
-    PRADLS --> PRSQL[Serverless SQL]
-    PRSP --> PRDL[Delta Lake]
-    end
-    
-    subgraph Disaster Recovery Region
-    DRADLS[ADLS Gen2] --> DRSP[Spark Pool]
-    DRADLS --> DRSQL[Serverless SQL]
-    DRSP --> DRDL[Delta Lake]
-    end
-    
-    PRADLS --> DRADLS
-    
-    subgraph Global Region 1
-    GR1SQL[Serverless SQL]
-    end
-    
-    subgraph Global Region 2
-    GR2SQL[Serverless SQL]
-    end
-    
-    DRADLS --> GR1SQL
-    DRADLS --> GR2SQL
-```
+![Multi-Region Architecture](../images/diagrams/multi-region-architecture.png)
+
 
 <!-- Static image fallback for GitHub -->
 ![Multi-Region Deployment Architecture showing Primary Region, Disaster Recovery Region, and Global Regions with their interconnected components like ADLS Gen2, Spark Pool, Serverless SQL, and Delta Lake](../images/diagrams/multi-region-architecture.png)

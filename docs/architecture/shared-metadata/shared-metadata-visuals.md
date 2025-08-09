@@ -87,99 +87,10 @@ graph TD
 
 ## Layered Data Architecture with Shared Metadata
 
-```mermaid
-graph TD
-    Storage[ADLS Gen2 Storage]
-    
-    subgraph "Data Layers"
-        Raw[Raw Layer]
-        Silver[Silver/Curated Layer]
-        Gold[Gold/Business Layer]
-        
-        Storage --> Raw
-        Raw --> Silver
-        Silver --> Gold
-    end
-    
-    subgraph "Engine Access Patterns"
-        SparkRaw[Direct Spark access]
-        SQLRaw[Direct SQL access]
-        
-        SparkSilver[Spark with metadata sync]
-        SQLSilver[SQL with metadata sync]
-        
-        SparkGold[Full shared metadata]
-        SQLGold[Full shared metadata]
-        
-        Raw --> SparkRaw
-        Raw --> SQLRaw
-        
-        Silver --> SparkSilver
-        Silver --> SQLSilver
-        
-        Gold --> SparkGold
-        Gold --> SQLGold
-    end
-    
-    subgraph "Recommendations"
-        RecRaw[Minimal shared metadata]
-        RecSilver[Begin applying shared metadata]
-        RecGold[Fully leverage shared metadata]
-        
-        SparkRaw --> RecRaw
-        SQLRaw --> RecRaw
-        
-        SparkSilver --> RecSilver
-        SQLSilver --> RecSilver
-        
-        SparkGold --> RecGold
-        SQLGold --> RecGold
-    end
-```
+![Serverless SQL Query Flow](../../images/diagrams/serverless-sql-query-flow.png)
+
 
 ## Creating and Accessing Synchronized Tables - Process Flow
 
-```mermaid
-flowchart TD
-    Start([Start]) --> CreateDB[Create Database in Spark]
-    CreateDB --> CreateTable[Create Table in Spark using Parquet/Delta/CSV]
-    CreateTable --> InsertData[Insert Data in Spark]
-    InsertData --> Wait[Wait for Async Sync ~few seconds]
-    Wait --> QuerySQL[Query from Serverless SQL Pool]
-    
-    QuerySQL --> UseCase1[Use Case: Analytics]
-    QuerySQL --> UseCase2[Use Case: Reporting]
-    QuerySQL --> UseCase3[Use Case: Data Exploration]
-    
-    subgraph "Code Examples"
-        SparkCode["
-        // Spark SQL
-        CREATE DATABASE mydb;
-        
-        CREATE TABLE mydb.sales (
-            id INT,
-            date DATE,
-            amount DOUBLE,
-            customer STRING
-        ) USING PARQUET;
-        
-        INSERT INTO mydb.sales 
-        VALUES (1, '2023-01-15', 199.99, 'Contoso');
-        "]
-        
-        SQLCode["
-        -- Serverless SQL Pool
-        USE mydb;
-        
-        -- View available tables
-        SELECT * FROM sys.tables;
-        
-        -- Query synchronized table
-        SELECT * FROM mydb.dbo.sales
-        WHERE date >= '2023-01-01';
-        "]
-    end
-    
-    UseCase1 --> SparkCode
-    UseCase2 --> SQLCode
-```
+![Serverless SQL Query Flow](../../images/diagrams/serverless-sql-query-flow.png)
+

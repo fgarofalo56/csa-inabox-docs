@@ -147,16 +147,8 @@ Establish secure connections between your on-premises network and Azure Synapse 
 !!! info "Integration Point"
     Azure Private Link and ExpressRoute work together to provide secure, private connectivity from on-premises environments to Azure Synapse.
 
-```mermaid
-graph TD
-    A[On-Premises Network] -->|ExpressRoute| B[Azure VNet]
-    A -->|Site-to-Site VPN| B
-    B -->|Private Endpoint| C[Synapse Workspace]
-    B -->|Service Endpoint| D[Azure Storage]
-    C -->|Managed PE| D
-    E[Admin Workstation] -->|Azure Bastion| B
-    F[Developer Machine] -->|Conditional Access| C
-```
+![Compliance Controls Framework](../images/diagrams/compliance-controls.png)
+
 
 ## Defense-in-Depth Strategy
 

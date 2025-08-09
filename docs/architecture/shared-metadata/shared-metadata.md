@@ -27,29 +27,8 @@ The shared metadata architecture in Azure Synapse Analytics enables seamless int
 
 ## Architecture Diagram
 
-```mermaid
-graph TD
-    Metadata[Metadata Store] --> Serverless[Serverless SQL]
-    Metadata --> Spark[Spark Pool]
-    Metadata --> Dedicated[Dedicated SQL]
-    
-    subgraph "Metadata Services"
-        Stats[Statistics]
-        Lineage[Data Lineage]
-        Security[Security]
-    end
-    
-    subgraph "Compute Engines"
-        Serverless --> Metadata
-        Spark --> Metadata
-        Dedicated --> Metadata
-    end
-    
-    subgraph "Storage"
-        ADLS[ADLS Gen2]
-        Delta[Delta Lake]
-    end
-```
+![Compliance Controls Framework](../../images/diagrams/compliance-controls.png)
+
 
 ## Best Practices
 
