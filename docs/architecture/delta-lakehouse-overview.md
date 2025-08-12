@@ -1,6 +1,6 @@
 # 🏞️ Azure Synapse Analytics Delta Lakehouse Architecture
 
-[Home](../../README.md) > [Architecture](../README.md) > Delta Lakehouse Overview
+[🏠 Home](../../README.md) > [🏗️ Architecture](../README.md) > 📄 Delta Lakehouse Overview
 
 ---
 

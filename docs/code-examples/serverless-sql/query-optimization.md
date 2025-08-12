@@ -1,6 +1,6 @@
 # Serverless SQL Query Optimization in Azure Synapse Analytics
 
-[Home](../../../README.md) > [Code Examples](../../README.md) > [Serverless SQL](../README.md) > Query Optimization
+[🏠 Home](../../../README.md) > [💻 Code Examples](../../README.md) > [☁️ Serverless SQL](../README.md) > 📄 Query Optimization
 
 This guide provides detailed examples for optimizing SQL queries in Azure Synapse Serverless SQL pools to improve performance and reduce costs.
 

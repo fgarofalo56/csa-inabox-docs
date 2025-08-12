@@ -1,6 +1,6 @@
 # 📚 Azure Synapse Analytics Reference
 
-[Home](../../README.md) > Reference
+[🏠 Home](../../README.md) > 📚 Reference
 
 > 📋 **Reference Hub**  
 > This section provides comprehensive reference materials for Azure Synapse Analytics, including security checklists, configuration references, and best practices summaries. Use these resources as quick references during implementation and operation.

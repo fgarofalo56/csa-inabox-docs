@@ -1,6 +1,6 @@
 # 🔧 Troubleshooting Azure Synapse Analytics
 
-[Home](../../README.md) > Troubleshooting
+[🏠 Home](../../README.md) > 🔧 Troubleshooting
 
 > 🗺️ **Quick Navigation**  
 > Use the sidebar navigation to quickly find specific troubleshooting guides, or refer to the common solutions below.

@@ -1,6 +1,6 @@
 # 🏗️ Azure Synapse Analytics Architecture
 
-[Home](../../README.md) > Architecture
+[🏠 Home](../../README.md) > 🏗️ Architecture
 
 > 📋 **Overview**  
 > This section provides comprehensive architectural guidance for implementing Azure Synapse Analytics solutions in enterprise environments.

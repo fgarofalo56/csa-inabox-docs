@@ -1,6 +1,6 @@
 # ❓ Frequently Asked Questions
 
-[Home](../README.md) > FAQ
+[🏠 Home](../README.md) > ❓ FAQ
 
 > 🔍 **Quick Answers Hub**  
 > Find answers to the most commonly asked questions about Azure Synapse Analytics implementation, configuration, and best practices.

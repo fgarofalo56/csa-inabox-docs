@@ -3,7 +3,8 @@
     "allow": [
       "Bash(mv:*)",
       "Bash(python:*)",
-      "WebFetch(domain:learn.microsoft.com)"
+      "WebFetch(domain:learn.microsoft.com)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []

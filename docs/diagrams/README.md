@@ -1,6 +1,6 @@
 # 📊 Azure Synapse Analytics Architecture Diagrams
 
-[Home](../../README.md) > Diagrams
+[🏠 Home](../../README.md) > 📊 Diagrams
 
 > 🎨 **Visual Architecture Gallery**  
 > This section contains comprehensive architecture diagrams for Azure Synapse Analytics components and workflows, focusing on Delta Lakehouse and Serverless SQL capabilities.
@@ -11,7 +11,7 @@
 
 ### 🖼️ Architecture Overview
 
-![Delta Lakehouse Architecture](./delta-lakehouse-architecture.png)
+![Delta Lakehouse Architecture](./delta-lakehouse-architecture.svg)
 
 > 💡 **Architecture Insight**  
 > The diagram above shows the logical architecture of a Delta Lakehouse implementation in Azure Synapse Analytics, highlighting the unified approach to batch and real-time analytics.
@@ -53,7 +53,7 @@
 
 ### 🖼️ Unified Metadata
 
-![Shared Metadata Architecture](./shared-metadata-architecture.png)
+![Shared Metadata Architecture](./shared-metadata-architecture.svg)
 
 > 🌐 **Cross-Engine Compatibility**  
 > The diagram demonstrates how metadata can be shared across different compute engines in Azure Synapse Analytics, enabling seamless cross-engine data access.

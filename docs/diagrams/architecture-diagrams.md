@@ -1,12 +1,18 @@
 # Azure Synapse Analytics Architecture Diagrams
 
-[Home](../../README.md) > [Diagrams](../README.md) > Architecture Diagrams
+[🏠 Home](../../README.md) > [📊 Diagrams](../README.md) > 📄 Architecture Diagrams
 
 This section contains architecture diagrams for Azure Synapse Analytics, focusing on Delta Lakehouse and Serverless SQL implementations.
 
 ## Delta Lakehouse Architecture
 
 The Delta Lakehouse architecture combines the best features of data lakes and data warehouses, providing ACID transactions, schema enforcement, and data versioning.
+
+### 🏗️ Our Delta Lakehouse Architecture
+
+![Delta Lakehouse Architecture](./delta-lakehouse-architecture.svg)
+
+### 🔗 Microsoft Reference Architecture
 
 ![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
@@ -22,6 +28,12 @@ The Delta Lakehouse architecture combines the best features of data lakes and da
 
 The Serverless SQL architecture enables on-demand, scalable analytics without pre-provisioning resources.
 
+### 🏗️ Our Serverless SQL Architecture
+
+![Serverless SQL Architecture](./serverless-sql-architecture.svg)
+
+### 🔗 Microsoft Reference Architecture
+
 ![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 ### Key Components
@@ -35,6 +47,12 @@ The Serverless SQL architecture enables on-demand, scalable analytics without pr
 ## Shared Metadata Architecture
 
 The Shared Metadata architecture enables consistent data access across Spark and SQL.
+
+### 🏗️ Our Shared Metadata Architecture
+
+![Shared Metadata Architecture](./shared-metadata-architecture.svg)
+
+### 🔗 Microsoft Reference Architecture
 
 ![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 

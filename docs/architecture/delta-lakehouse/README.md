@@ -1,6 +1,6 @@
 # Delta Lakehouse Architecture with Azure Synapse
 
-[Home](../../../README.md) > [Architecture](../../README.md) > Delta Lakehouse
+[🏠 Home](../../../README.md) > [🏗️ Architecture](../../README.md) > 📄 Delta Lakehouse
 
 ## Overview
 

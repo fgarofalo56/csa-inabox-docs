@@ -1,26 +1,50 @@
-# Troubleshooting Guide
+# 🔧 Troubleshooting Guide
 
-[Home](../README.md) > Troubleshooting
+[🏠 Home](../README.md) > 🔧 Troubleshooting
 
-!!! note "Comprehensive Troubleshooting Documentation Available"
-    This page has been replaced with a comprehensive troubleshooting section. Please visit the [Troubleshooting Documentation](troubleshooting/README.md) for detailed guides on resolving common issues with Azure Synapse Analytics.
+<div align="center">
 
-## Quick Links
+![Troubleshooting](https://img.shields.io/badge/Troubleshooting-Guide-red?style=for-the-badge&logo=wrench&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-- [Spark Issues](troubleshooting/spark-troubleshooting.md)
-- [Serverless SQL Issues](troubleshooting/serverless-sql-troubleshooting.md)
-- [Connectivity Issues](troubleshooting/connectivity-troubleshooting.md)
-- [Authentication Issues](troubleshooting/authentication-troubleshooting.md)
-- [Delta Lake Issues](troubleshooting/delta-lake-troubleshooting.md)
-- [Pipeline Issues](troubleshooting/pipeline-troubleshooting.md)
+### 🔧 Problem Resolution Hub
+#### *Quick Solutions • Step-by-Step Guides • Best Practices*
 
-## Connection Issues
+---
 
-### Cannot connect to Synapse workspace
+</div>
 
-__Symptoms__: Unable to access Synapse Studio or connect to the workspace.
+> 📚 **Comprehensive Documentation Available**
+> This page has been replaced with a comprehensive troubleshooting section. Please visit the [🔧 Troubleshooting Documentation](troubleshooting/README.md) for detailed guides on resolving common issues with Azure Synapse Analytics.
 
-__Possible Causes and Solutions__:
+---
+
+## 🚀 Quick Links
+
+<div align="center">
+
+### 🔗 Jump to Common Issue Categories
+
+</div>
+
+| Issue Category | Description | Quick Access |
+|:---------------|:------------|:-------------|
+| ⚡ **[Spark Issues](troubleshooting/spark-troubleshooting.md)** | Apache Spark job failures and performance issues | ![Spark](https://img.shields.io/badge/⚡-Spark-orange) |
+| ☁️ **[Serverless SQL Issues](troubleshooting/serverless-sql-troubleshooting.md)** | Serverless SQL pool query problems | ![SQL](https://img.shields.io/badge/☁️-SQL-blue) |
+| 🌐 **[Connectivity Issues](troubleshooting/connectivity-troubleshooting.md)** | Network and connection problems | ![Network](https://img.shields.io/badge/🌐-Network-green) |
+| 🔐 **[Authentication Issues](troubleshooting/authentication-troubleshooting.md)** | Authentication and authorization problems | ![Auth](https://img.shields.io/badge/🔐-Auth-red) |
+| 🏞️ **[Delta Lake Issues](troubleshooting/delta-lake-troubleshooting.md)** | Delta Lake specific problems | ![Delta](https://img.shields.io/badge/🏞️-Delta-purple) |
+| 🔄 **[Pipeline Issues](troubleshooting/pipeline-troubleshooting.md)** | Synapse Pipeline execution problems | ![Pipeline](https://img.shields.io/badge/🔄-Pipeline-yellow) |
+
+---
+
+## 🌐 Connection Issues
+
+### ❌ Cannot connect to Synapse workspace
+
+> 🚨 **Problem:** Unable to access Synapse Studio or connect to the workspace
+
+#### 🔍 **Possible Causes and Solutions:**
 
 1. __Network Connectivity__:
    - Ensure your network allows connections to the Azure Synapse service endpoints

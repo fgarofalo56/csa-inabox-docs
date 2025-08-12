@@ -1,6 +1,6 @@
 # Serverless SQL Architecture
 
-[Home](../../../README.md) > [Architecture](../../README.md) > Serverless SQL
+[🏠 Home](../../../README.md) > [🏗️ Architecture](../../README.md) > 📄 Serverless SQL
 
 Serverless SQL architecture in Azure Synapse Analytics allows you to query data directly in your data lake without moving or copying data, using familiar T-SQL syntax.
 

@@ -1,6 +1,6 @@
 # 💻 Azure Synapse Analytics Code Examples
 
-[Home](../../README.md) > Code Examples
+[🏠 Home](../../README.md) > 💻 Code Examples
 
 > 🚀 **Practical Implementation**  
 > This section contains practical code examples for Azure Synapse Analytics, organized by feature area. Each example includes code snippets, explanations, and best practices to help you effectively implement Synapse Analytics solutions.
@@ -86,7 +86,7 @@
 | 5️⃣ | **Update Index** | Update index files to include links to your new example |
 
 > 📝 **Contribution Process**  
-> If you'd like to contribute code examples to this collection, please see our [contribution guidelines](../CONTRIBUTING.md).
+> If you'd like to contribute code examples to this collection, please see our [contribution guidelines](../../README.md#-contributing).
 
 ---
 
