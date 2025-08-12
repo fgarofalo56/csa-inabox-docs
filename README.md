@@ -10,11 +10,11 @@ This repository contains comprehensive technical documentation for Azure Synapse
 
 New to Azure Synapse Analytics? Here are the recommended entry points:
 
-1. __For architects__: Start with the [Architecture Documentation](./docs/architecture/index.md) to understand the overall architecture patterns.
+1. __For architects__: Start with the [Architecture Documentation](./docs/architecture/README.md) to understand the overall architecture patterns.
 
-2. __For developers__: Check out the [Code Examples](./docs/code-examples/index.md) for practical implementation guidance.
+2. __For developers__: Check out the [Code Examples](./docs/code-examples/README.md) for practical implementation guidance.
 
-3. __For operations__: Review the [Best Practices](./docs/best-practices/index.md) for optimization and maintenance recommendations.
+3. __For operations__: Review the [Best Practices](./docs/best-practices/README.md) for optimization and maintenance recommendations.
 
 4. __For security specialists__: Focus on the [Security Best Practices](./docs/best-practices/security.md) documentation.
 
@@ -84,15 +84,15 @@ python project-planning/tools/version-docs.py create 1.0.0 --alias latest --titl
 
 The documentation is organized into the following key areas:
 
-### [Architecture](./docs/architecture/index.md)
+### [Architecture](./docs/architecture/README.md)
 
 Detailed architectural guidance for implementing Azure Synapse Analytics, including:
 
 - [Delta Lakehouse Architecture](./docs/architecture/delta-lakehouse-overview.md): Comprehensive architecture for implementing a scalable and reliable Delta Lake-based data lakehouse using Azure Synapse Analytics Spark pools.
 
-- [Serverless SQL Architecture](./docs/serverless-sql/index.md): Architectural patterns and implementation guidance for leveraging Serverless SQL pools in Azure Synapse Analytics.
+- [Serverless SQL Architecture](./docs/serverless-sql/README.md): Architectural patterns and implementation guidance for leveraging Serverless SQL pools in Azure Synapse Analytics.
 
-### [Best Practices](./docs/best-practices/index.md)
+### [Best Practices](./docs/best-practices/README.md)
 
 Guidance and recommendations for optimal implementation and operation of Azure Synapse Analytics:
 
@@ -104,33 +104,33 @@ Guidance and recommendations for optimal implementation and operation of Azure S
 
 - [Data Governance](./docs/best-practices/data-governance.md): Framework and best practices for implementing effective data governance in Azure Synapse Analytics.
 
-### [Code Examples](./docs/code-examples/index.md)
+### [Code Examples](./docs/code-examples/README.md)
 
 Practical code snippets and examples demonstrating common tasks and patterns in Azure Synapse Analytics:
 
-- [PySpark code examples](./docs/code-examples/index.md#pyspark-examples) for Delta Lake operations
-- [Serverless SQL query examples](./docs/code-examples/index.md#serverless-sql-examples)
-- [Integration patterns](./docs/code-examples/index.md#integration-examples)
-- [Performance optimization techniques](./docs/code-examples/index.md#optimization-examples)
+- [PySpark code examples](./docs/code-examples/README.md#pyspark-examples) for Delta Lake operations
+- [Serverless SQL query examples](./docs/code-examples/README.md#serverless-sql-examples)
+- [Integration patterns](./docs/code-examples/README.md#integration-examples)
+- [Performance optimization techniques](./docs/code-examples/README.md#optimization-examples)
 
-### [Reference Documentation](./docs/reference/index.md)
+### [Reference Documentation](./docs/reference/README.md)
 
 Technical reference material including:
 
-- [API references](./docs/reference/index.md#api-references)
-- [System views and DMVs](./docs/reference/index.md#system-views)
-- [Query syntax and language reference](./docs/reference/index.md#query-syntax)
-- [Configuration parameters](./docs/reference/index.md#configuration-parameters)
-- [Limitations and constraints](./docs/reference/index.md#limitations)
+- [API references](./docs/reference/README.md#api-references)
+- [System views and DMVs](./docs/reference/README.md#system-views)
+- [Query syntax and language reference](./docs/reference/README.md#query-syntax)
+- [Configuration parameters](./docs/reference/README.md#configuration-parameters)
+- [Limitations and constraints](./docs/reference/README.md#limitations)
 
-### [Diagrams](./docs/diagrams/index.md)
+### [Diagrams](./docs/diagrams/README.md)
 
 Visual representations of architecture, data flows, and processes:
 
-- [Architecture diagrams](./docs/diagrams/index.md#architecture-diagrams)
-- [Data flow diagrams](./docs/diagrams/index.md#data-flow-diagrams)
-- [Process flow diagrams](./docs/diagrams/index.md#process-flow-diagrams)
-- [Integration patterns](./docs/diagrams/index.md#integration-patterns)
+- [Architecture diagrams](./docs/diagrams/README.md#architecture-diagrams)
+- [Data flow diagrams](./docs/diagrams/README.md#data-flow-diagrams)
+- [Process flow diagrams](./docs/diagrams/README.md#process-flow-diagrams)
+- [Integration patterns](./docs/diagrams/README.md#integration-patterns)
 
 ## Contributing
 

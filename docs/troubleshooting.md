@@ -1,7 +1,7 @@
 # Troubleshooting Guide
 
 !!! note "Comprehensive Troubleshooting Documentation Available"
-    This page has been replaced with a comprehensive troubleshooting section. Please visit the [Troubleshooting Documentation](troubleshooting/index.md) for detailed guides on resolving common issues with Azure Synapse Analytics.
+    This page has been replaced with a comprehensive troubleshooting section. Please visit the [Troubleshooting Documentation](troubleshooting/README.md) for detailed guides on resolving common issues with Azure Synapse Analytics.
 
 ## Quick Links
 

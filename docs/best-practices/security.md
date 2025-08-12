@@ -1,6 +1,6 @@
 # Security Best Practices for Azure Synapse Analytics
 
-[Home](/README.md) > [Best Practices](./index.md) > Security
+[Home](/README.md) > [Best Practices](./README.md) > Security
 
 
 ## Identity and Access Management

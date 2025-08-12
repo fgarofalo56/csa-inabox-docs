@@ -454,7 +454,7 @@ To extend this tutorial:
 
 ## Troubleshooting
 
-If you encounter issues during this tutorial, refer to the [Troubleshooting Guide](../troubleshooting/index.md) for common solutions to Synapse problems.
+If you encounter issues during this tutorial, refer to the [Troubleshooting Guide](../troubleshooting/README.md) for common solutions to Synapse problems.
 
 ## Resources
 

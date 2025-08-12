@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Delta Lakehouse Architecture
 
-[Home](/) > [Architecture](./index.md) > Delta Lakehouse Overview
+[Home](/) > [Architecture](./README.md) > Delta Lakehouse Overview
 
 ## Overview
 
@@ -112,7 +112,7 @@ Azure Synapse Analytics Delta Lakehouse is a unified analytics platform that com
 
 ## Next Steps
 
-1. [Serverless SQL Architecture](../serverless-sql/index.md)
-1. [Shared Metadata Architecture](../shared-metadata/index.md)
-1. [Best Practices](../best-practices/index.md)
-1. [Code Examples](../code-examples/index.md)
+1. [Serverless SQL Architecture](../serverless-sql/README.md)
+1. [Shared Metadata Architecture](../shared-metadata/README.md)
+1. [Best Practices](../best-practices/README.md)
+1. [Code Examples](../code-examples/README.md)

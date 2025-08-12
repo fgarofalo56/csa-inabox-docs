@@ -1,4 +1,4 @@
-[Home](/README.md) > [Architecture](../index.md) > Shared Metadata Architecture
+[Home](/README.md) > [Architecture](../README.md) > Shared Metadata Architecture
 
 # Azure Synapse Shared Metadata Architecture
 
@@ -158,7 +158,7 @@ SELECT * FROM mydb.dbo.mytable
 This layered approach ensures that metadata synchronization complexity is applied where it adds the most value, rather than in raw data layers where direct access patterns may be more efficient.
 
 ## Next Steps
-1. [Delta Lakehouse Architecture](../delta-lakehouse/index.md)
-2. [Serverless SQL Architecture](../serverless-sql/index.md)
-3. [Best Practices](../../best-practices/index.md)
-4. [Code Examples](../../code-examples/index.md)
+1. [Delta Lakehouse Architecture](../delta-lakehouse/README.md)
+2. [Serverless SQL Architecture](../serverless-sql/README.md)
+3. [Best Practices](../../best-practices/README.md)
+4. [Code Examples](../../code-examples/README.md)

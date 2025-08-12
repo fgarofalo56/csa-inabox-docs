@@ -1,4 +1,4 @@
-[Home](/README.md) > [Architecture](../index.md) > [Serverless SQL](./index.md) > Overview
+[Home](/README.md) > [Architecture](../README.md) > [Serverless SQL](./README.md) > Overview
 
 # Azure Synapse Serverless SQL Architecture
 
@@ -105,7 +105,7 @@ GROUP BY customer_id
 ```
 
 ## Next Steps
-1. [Shared Metadata Architecture](../shared-metadata/index.md)
-2. [Best Practices](../../best-practices/index.md)
-3. [Code Examples](../../code-examples/index.md)
+1. [Shared Metadata Architecture](../shared-metadata/README.md)
+2. [Best Practices](../../best-practices/README.md)
+3. [Code Examples](../../code-examples/README.md)
 4. [Security Guide](../../reference/security.md)

@@ -1,6 +1,6 @@
 # Comprehensive Serverless SQL Guide for Azure Synapse Analytics
 
-[Home](/) > [Code Examples](../code-examples/index.md) > Serverless SQL Guide
+[Home](/) > [Code Examples](../code-examples/README.md) > Serverless SQL Guide
 
 !!! info "Guide Overview"
     This comprehensive guide provides detailed examples for working with Serverless SQL pools in Azure Synapse Analytics, covering query optimization, external tables, security, and best practices.
@@ -376,4 +376,4 @@ GO
 
 - [Delta Lake with Serverless SQL](../delta-lake-guide.md#querying-delta-lake-with-serverless-sql)
 - [Integration with Azure ML](../integration/azure-ml.md)
-- [Serverless SQL Architecture](../../architecture/serverless-sql/index.md)
+- [Serverless SQL Architecture](../../architecture/serverless-sql/README.md)

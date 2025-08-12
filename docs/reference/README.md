@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Reference
 
-[Home](/) > [Reference](../reference/index.md)
+[Home](/) > [Reference](../reference/README.md)
 
 !!! info "Reference Section"
     This section provides comprehensive reference materials for Azure Synapse Analytics, including security checklists, configuration references, and best practices summaries. Use these resources as quick references during implementation and operation.
@@ -115,7 +115,7 @@
 
 ## Related Resources
 
-- [Architecture](/docs/architecture/index.md) - Reference architectures
-- [Best Practices](../best-practices/index.md) - Implementation recommendations
-- [Troubleshooting](../troubleshooting/index.md) - Common issues and solutions
+- [Architecture](/docs/architecture/README.md) - Reference architectures
+- [Best Practices](../best-practices/README.md) - Implementation recommendations
+- [Troubleshooting](../troubleshooting/README.md) - Common issues and solutions
 - [FAQ](/docs/faq.md) - Frequently asked questions

@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Delta Lakehouse Detailed Architecture
 
-[Home](/README.md) > [Architecture](../index.md) > [Delta Lakehouse](./index.md) > Detailed Architecture
+[Home](/README.md) > [Architecture](../README.md) > [Delta Lakehouse](./README.md) > Detailed Architecture
 ## Overview
 
 The Delta Lakehouse architecture combines the best of data lakes and data warehouses, providing ACID transactions, schema enforcement, and time travel capabilities while maintaining the flexibility and scalability of a data lake. This document details the implementation of a Delta Lakehouse using Azure Synapse Analytics.
@@ -297,4 +297,4 @@ OPTIMIZE delta_table
 
 ## Reference Implementation
 
-For a detailed reference implementation of Delta Lakehouse in Azure Synapse Analytics, refer to the [code examples section](../../code-examples/index.md) of this documentation.
+For a detailed reference implementation of Delta Lakehouse in Azure Synapse Analytics, refer to the [code examples section](../../code-examples/README.md) of this documentation.

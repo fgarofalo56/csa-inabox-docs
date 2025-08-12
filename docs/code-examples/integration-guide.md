@@ -1,6 +1,6 @@
 # Comprehensive Azure Integration Guide for Synapse Analytics
 
-[Home](/) > [Code Examples](../code-examples/index.md) > Integration Guide
+[Home](/) > [Code Examples](../code-examples/README.md) > Integration Guide
 
 !!! info "Guide Overview"
     This comprehensive guide provides code examples and patterns for integrating Azure Synapse Analytics with other Azure services including Azure Machine Learning, Microsoft Purview, and Azure Data Factory.
@@ -569,4 +569,4 @@ monitor_client.activity_log_alerts.create_or_update(
 
 - [Delta Lake with Azure ML](../delta-lake-guide.md#integrating-delta-lake-with-azure-ml)
 - [Serverless SQL Security](../serverless-sql-guide.md#security-and-access-control)
-- [Enterprise Integration Architecture](../../architecture/integration/index.md)
+- [Enterprise Integration Architecture](../../architecture/integration/README.md)

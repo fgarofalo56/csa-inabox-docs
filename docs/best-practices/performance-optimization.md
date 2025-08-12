@@ -1,4 +1,4 @@
-[Home](/) > [Best Practices](./index.md) > Performance Optimization
+[Home](/) > [Best Practices](./README.md) > Performance Optimization
 
 # Performance Optimization Best Practices
 

@@ -1,6 +1,6 @@
 # Azure Synapse Shared Metadata - Code Examples
 
-[Home](/README.md) > [Architecture](../index.md) > [Shared Metadata](index.md) > Code Examples
+[Home](/README.md) > [Architecture](../README.md) > [Shared Metadata](README.md) > Code Examples
 
 This document provides practical code examples for implementing the shared metadata architecture in Azure Synapse Analytics, focusing on serverless replicated databases, three-part naming solutions, and best practices for implementing layered architectures.
 

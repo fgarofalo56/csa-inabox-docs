@@ -474,7 +474,7 @@ For environments with on-premises components:
 
 ## Related Topics
 
-- [Troubleshooting with Logs](../troubleshooting/index.md)
+- [Troubleshooting with Logs](../troubleshooting/README.md)
 - [Performance Optimization](../best-practices/performance.md)
 - [Security Monitoring](../best-practices/security.md#monitoring)
 - [Cost Management](../best-practices/cost-optimization.md)

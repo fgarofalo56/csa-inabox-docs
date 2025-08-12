@@ -1,6 +1,6 @@
 # Azure Synapse Shared Metadata Architecture - Visual Guides
 
-[Home](/README.md) > [Architecture](../index.md) > [Shared Metadata](index.md) > Visual Guides
+[Home](/README.md) > [Architecture](../README.md) > [Shared Metadata](README.md) > Visual Guides
 
 ## Serverless Replicated Database Synchronization
 

@@ -1,6 +1,6 @@
 # Data Governance Best Practices for Azure Synapse Analytics
 
-[Home](/) > [Best Practices](./index.md) > Data Governance
+[Home](/) > [Best Practices](./README.md) > Data Governance
 
 ## Data Governance Framework
 

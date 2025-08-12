@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Security Reference
 
-[Home](/) > [Reference](./index.md) > Security Guide
+[Home](/) > [Reference](./README.md) > Security Guide
 
 ## Overview
 
@@ -179,6 +179,6 @@ ALTER COLUMN CardNumber ADD MASKED WITH (FUNCTION = 'partial(0,"XXXX-XXXX-XXXX-"
 
 ## Next Steps
 
-1. [Azure Synapse Analytics Best Practices](../best-practices/index.md)
-1. [Shared Metadata Security](../architecture/shared-metadata/index.md)
+1. [Azure Synapse Analytics Best Practices](../best-practices/README.md)
+1. [Shared Metadata Security](../architecture/shared-metadata/README.md)
 1. [Complete Security Checklist](./security-checklist.md)
