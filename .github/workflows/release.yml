@@ -102,7 +102,7 @@ jobs:
           mike deploy --push --update-aliases $VERSION_NUM latest
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.version }}
           name: Azure Synapse Analytics Documentation ${{ steps.version.outputs.version }}
