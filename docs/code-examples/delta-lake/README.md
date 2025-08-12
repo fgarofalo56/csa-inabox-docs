@@ -1,6 +1,6 @@
 # Delta Lake Examples for Azure Synapse Analytics
 
-[Home](../../) > [Code Examples](../) > Delta Lake
+[Home](../../../README.md) > [Code Examples](../../README.md) > Delta Lake
 
 This section provides examples and best practices for working with Delta Lake in Azure Synapse Analytics. Delta Lake is an open-source storage layer that brings reliability to data lakes by providing ACID transactions, scalable metadata handling, and unifying streaming and batch data processing.
 

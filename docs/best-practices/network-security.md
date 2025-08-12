@@ -1,5 +1,7 @@
 # Network Security Best Practices
 
+[Home](../../README.md) > [Best Practices](../README.md) > Network Security
+
 !!! abstract "Overview"
     This guide covers network security best practices for Azure Synapse Analytics, including private endpoints, network isolation, firewall configuration, and secure connectivity patterns.
 

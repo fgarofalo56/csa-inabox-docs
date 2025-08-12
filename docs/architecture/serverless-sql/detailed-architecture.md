@@ -1,6 +1,6 @@
-[Home](/README.md) > [Architecture](../README.md) > [Serverless SQL](./README.md) > Detailed Architecture
-
 # Azure Synapse Analytics Serverless SQL: Detailed Architecture
+
+[Home](../../../README.md) > [Architecture](../../README.md) > [Serverless SQL](../README.md) > Detailed Architecture
 
 ## Overview
 

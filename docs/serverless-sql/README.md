@@ -1,5 +1,7 @@
 # Serverless SQL Architecture
 
+[Home](../../README.md) > Serverless SQL
+
 ## Overview
 
 Serverless SQL is a key component of Azure Synapse Analytics that provides on-demand, scalable SQL query capabilities over data stored in Azure Data Lake Storage. This architecture pattern enables organizations to implement a cost-effective analytics solution without provisioning or managing infrastructure.

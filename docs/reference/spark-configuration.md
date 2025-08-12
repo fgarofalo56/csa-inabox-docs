@@ -1,6 +1,6 @@
 # Spark Configuration
 
-[Home](/README.md) > [Documentation](../README.md) > Spark Configuration
+[Home](../../README.md) > [Reference](../README.md) > Spark Configuration
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Serverless SQL Examples for Azure Synapse Analytics
 
-[Home](../../) > [Code Examples](../) > Serverless SQL
+[Home](../../../README.md) > [Code Examples](../../README.md) > Serverless SQL
 
 This section provides examples and best practices for working with Serverless SQL pools in Azure Synapse Analytics. Serverless SQL pools allow you to query data directly from your data lake storage without the need for data movement or pre-loading.
 

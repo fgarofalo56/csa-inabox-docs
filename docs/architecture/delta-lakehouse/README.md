@@ -1,5 +1,7 @@
 # Delta Lakehouse Architecture with Azure Synapse
 
+[Home](../../../README.md) > [Architecture](../../README.md) > Delta Lakehouse
+
 ## Overview
 
 The Delta Lakehouse architecture combines the flexibility and cost-efficiency of a data lake with the data management and ACID transaction capabilities of a data warehouse. Azure Synapse Analytics provides native integration with Delta Lake format, enabling a modern and efficient lakehouse implementation.

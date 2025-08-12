@@ -1,6 +1,6 @@
 # 🔒 Security Best Practices for Azure Synapse Analytics
 
-[![Home](https://img.shields.io/badge/🏠-Home-blue)](/README.md) > [![Best Practices](https://img.shields.io/badge/📋-Best_Practices-green)](./README.md) > [![Security](https://img.shields.io/badge/🔒-Security-red)](#)
+[Home](../../README.md) > [Best Practices](../README.md) > Security
 
 > 🏡 **Defense-in-Depth Security**  
 > Comprehensive security framework for protecting your Azure Synapse Analytics environment with enterprise-grade controls and compliance capabilities.

@@ -1,5 +1,7 @@
 # Shared Metadata Architecture
 
+[Home](../../README.md) > Shared Metadata
+
 ## Overview
 
 The Shared Metadata Architecture in Azure Synapse Analytics enables a unified semantic layer across different compute engines, allowing consistent data access, governance, and business logic implementation regardless of the query engine used. This approach reduces redundancy, improves maintainability, and provides a consistent view of enterprise data.

@@ -1,5 +1,7 @@
 # Private Link Architecture
 
+[Home](../../README.md) > [Architecture](../README.md) > Private Link Architecture
+
 !!! abstract "Overview"
     This guide details the architecture patterns for implementing Azure Private Link with Azure Synapse Analytics, ensuring secure network isolation and private connectivity.
 

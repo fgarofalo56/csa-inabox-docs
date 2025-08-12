@@ -1,6 +1,6 @@
-[![Home](https://img.shields.io/badge/🏠-Home-blue)](/) > [![Best Practices](https://img.shields.io/badge/📋-Best_Practices-green)](./README.md) > [![Performance](https://img.shields.io/badge/⚡-Performance-orange)](#)
-
 # ⚡ Performance Optimization Best Practices
+
+[Home](../../README.md) > [Best Practices](../README.md) > Performance Optimization
 
 > 🚀 **Performance Excellence Framework**  
 > Comprehensive guide to optimizing performance across all Azure Synapse Analytics components for maximum throughput and efficiency.

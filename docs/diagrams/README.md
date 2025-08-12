@@ -1,5 +1,7 @@
 # 📊 Azure Synapse Analytics Architecture Diagrams
 
+[Home](../../README.md) > Diagrams
+
 > 🎨 **Visual Architecture Gallery**  
 > This section contains comprehensive architecture diagrams for Azure Synapse Analytics components and workflows, focusing on Delta Lakehouse and Serverless SQL capabilities.
 

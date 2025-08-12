@@ -1,5 +1,7 @@
 # Logging and Monitoring in Azure Synapse Analytics
 
+[Home](../../README.md) > [Monitoring](../README.md) > Logging and Monitoring Guide
+
 This guide provides comprehensive information on setting up logging, monitoring, and alerting for Azure Synapse Analytics workspaces and their components, helping you maintain operational visibility and quickly respond to issues.
 
 ## Introduction to Synapse Monitoring

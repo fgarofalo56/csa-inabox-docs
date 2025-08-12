@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Security Reference
 
-[Home](/) > [Reference](./README.md) > Security Guide
+[Home](../../README.md) > [Reference](../README.md) > Security Guide
 
 ## Overview
 

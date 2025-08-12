@@ -1,5 +1,7 @@
 # Delta Lake Optimization
 
+[Home](../../README.md) > [Best Practices](../README.md) > Delta Lake Optimization
+
 !!! abstract "Overview"
     This guide covers optimization strategies for Delta Lake in Azure Synapse Analytics, including file compaction, Z-ordering, caching, and partition management.
 

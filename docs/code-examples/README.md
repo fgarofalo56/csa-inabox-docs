@@ -1,6 +1,6 @@
 # 💻 Azure Synapse Analytics Code Examples
 
-[![Home](https://img.shields.io/badge/🏠-Home-blue)](../) > [![Code Examples](https://img.shields.io/badge/💻-Code_Examples-green)](#)
+[Home](../../README.md) > Code Examples
 
 > 🚀 **Practical Implementation**  
 > This section contains practical code examples for Azure Synapse Analytics, organized by feature area. Each example includes code snippets, explanations, and best practices to help you effectively implement Synapse Analytics solutions.

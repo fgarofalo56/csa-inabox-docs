@@ -1,5 +1,7 @@
 # Security Implementation Diagrams for Azure Synapse Analytics
 
+[Home](../../README.md) > [Diagrams](../README.md) > Security Diagrams
+
 This section provides security implementation diagrams for Azure Synapse Analytics, focusing on security patterns and best practices.
 
 ## Defense-in-Depth Security Architecture

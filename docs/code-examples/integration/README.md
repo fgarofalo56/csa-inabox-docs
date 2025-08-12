@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Integration Examples
 
-[Home](../../) > [Code Examples](../) > Integration
+[Home](../../../README.md) > [Code Examples](../../README.md) > Integration
 
 This section provides code examples and patterns for integrating Azure Synapse Analytics with other Azure services.
 

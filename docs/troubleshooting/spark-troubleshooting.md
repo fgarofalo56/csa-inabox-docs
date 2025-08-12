@@ -1,5 +1,7 @@
 # Spark Troubleshooting Guide
 
+[Home](../../README.md) > [Troubleshooting](../README.md) > Spark Troubleshooting
+
 Apache Spark in Azure Synapse Analytics
 
 This guide provides solutions for common Apache Spark issues in Azure Synapse Analytics. It includes diagnostic approaches, common error patterns, and recommended solutions.

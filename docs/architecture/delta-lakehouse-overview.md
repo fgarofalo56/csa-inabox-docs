@@ -1,6 +1,6 @@
 # 🏞️ Azure Synapse Analytics Delta Lakehouse Architecture
 
-[![Home](https://img.shields.io/badge/🏠-Home-blue)](/) > [![Architecture](https://img.shields.io/badge/🏗️-Architecture-green)](./README.md) > [![Delta Lakehouse](https://img.shields.io/badge/🏞️-Delta_Lakehouse-purple)](#)
+[Home](../../README.md) > [Architecture](../README.md) > Delta Lakehouse Overview
 
 ---
 

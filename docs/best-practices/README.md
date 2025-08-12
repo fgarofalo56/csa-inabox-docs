@@ -1,6 +1,6 @@
 # 📋 Best Practices for Azure Synapse Analytics
 
-[![Home](https://img.shields.io/badge/🏠-Home-blue)](../) > [![Best Practices](https://img.shields.io/badge/📋-Best_Practices-green)](#)
+[Home](../../README.md) > Best Practices
 
 > 🎆 **Excellence Framework**  
 > This section provides comprehensive best practices for implementing and managing Azure Synapse Analytics workloads. These recommendations are based on real-world implementations and Microsoft's official guidance to help you optimize performance, security, cost, and operational efficiency.

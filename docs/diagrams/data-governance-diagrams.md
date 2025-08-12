@@ -1,5 +1,7 @@
 # Data Governance Architecture Diagrams for Azure Synapse Analytics
 
+[Home](../../README.md) > [Diagrams](../README.md) > Data Governance Diagrams
+
 This section provides comprehensive diagrams illustrating data governance architectures and frameworks for Azure Synapse Analytics.
 
 ## Integrated Data Governance Architecture

@@ -1,6 +1,6 @@
-[Home](/README.md) > [Architecture](../README.md) > [Serverless SQL](./README.md) > Overview
-
 # Azure Synapse Serverless SQL Architecture
+
+[Home](../../../README.md) > [Architecture](../../README.md) > [Serverless SQL](../README.md) > Overview
 
 ## Overview
 Azure Synapse Serverless SQL is a serverless query engine that enables you to query data in your data lake using SQL without managing any infrastructure. It works seamlessly with Delta Lakehouse and provides several advantages over traditional SQL databases.

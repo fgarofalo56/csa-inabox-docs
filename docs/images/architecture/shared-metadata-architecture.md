@@ -1,5 +1,7 @@
 # Placeholder Image
 
+[Home](../../../README.md) > [Images](../../README.md) > [Architecture](../README.md) > Shared Metadata Architecture
+
 This is a placeholder for the image: shared-metadata-architecture.png
 
 To replace this placeholder:

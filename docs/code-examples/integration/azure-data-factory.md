@@ -1,5 +1,7 @@
 # Azure Data Factory Integration with Azure Synapse Analytics
 
+[Home](../../../README.md) > [Code Examples](../../README.md) > [Integration](../README.md) > Data Factory Integration
+
 This guide provides examples and best practices for integrating Azure Synapse Analytics with Azure Data Factory for comprehensive data orchestration, ingestion, and transformation.
 
 ## Prerequisites

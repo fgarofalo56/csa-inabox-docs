@@ -1,5 +1,7 @@
 # Troubleshooting Process Diagram
 
+[Home](../../../README.md) > [Images](../../README.md) > [Troubleshooting](../README.md) > Troubleshooting Process
+
 ```mermaid
 graph TD
     A[Identify Issue] --> B[Collect Diagnostic Information]

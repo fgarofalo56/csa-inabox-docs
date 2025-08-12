@@ -1,5 +1,7 @@
 # Microsoft Purview Integration with Azure Synapse Analytics
 
+[Home](../../../README.md) > [Code Examples](../../README.md) > [Integration](../README.md) > Purview Integration
+
 This guide provides examples and best practices for integrating Azure Synapse Analytics with Microsoft Purview (formerly Azure Purview) for comprehensive data governance and cataloging.
 
 ## Prerequisites

@@ -1,6 +1,6 @@
 # 🏗️ Azure Synapse Analytics Architecture
 
-[![Home](https://img.shields.io/badge/🏠-Home-blue)](../) > [![Architecture](https://img.shields.io/badge/🏗️-Architecture-green)](#)
+[Home](../../README.md) > Architecture
 
 > 📋 **Overview**  
 > This section provides comprehensive architectural guidance for implementing Azure Synapse Analytics solutions in enterprise environments.

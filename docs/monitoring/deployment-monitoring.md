@@ -1,5 +1,7 @@
 # Deployment Monitoring
 
+[Home](../../README.md) > [Monitoring](../README.md) > Deployment Monitoring
+
 !!! abstract "Overview"
 This guide covers monitoring strategies for Azure Synapse Analytics deployments, including pipeline executions, resource utilization, and performance metrics.
 

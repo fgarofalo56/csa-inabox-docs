@@ -1,6 +1,6 @@
 # Sql Monitoring
 
-[Home](/README.md) > [Documentation](../README.md) > Sql Monitoring
+[Home](../../README.md) > [Monitoring](../README.md) > SQL Monitoring
 
 ## Overview
 

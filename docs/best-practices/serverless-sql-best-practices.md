@@ -1,6 +1,6 @@
 # Serverless Sql Best Practices
 
-[Home](/README.md) > [Documentation](../README.md) > Serverless Sql Best Practices
+[Home](../../README.md) > [Best Practices](../README.md) > Serverless SQL Best Practices
 
 ## Overview
 

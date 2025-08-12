@@ -1,5 +1,7 @@
 # Azure Synapse Analytics Security and Compliance Guide
 
+[Home](../../README.md) > [Security](../README.md) > Compliance Guide
+
 This comprehensive guide covers security best practices, compliance mappings, and implementation guidance for Azure Synapse Analytics, helping you meet organizational and regulatory requirements while protecting your data assets.
 
 ## Introduction to Security and Compliance in Synapse Analytics

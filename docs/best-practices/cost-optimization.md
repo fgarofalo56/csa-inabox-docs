@@ -1,6 +1,6 @@
-[Home](/README.md) > [Best Practices](./README.md) > Cost Optimization
-
 # Cost Optimization Best Practices for Azure Synapse Analytics
+
+[Home](../../README.md) > [Best Practices](../README.md) > Cost Optimization
 
 ## Understanding Synapse Analytics Cost Model
 

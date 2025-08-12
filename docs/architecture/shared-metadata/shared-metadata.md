@@ -1,6 +1,6 @@
-[Home](/README.md) > [Architecture](../README.md) > Shared Metadata Architecture
-
 # Azure Synapse Shared Metadata Architecture
+
+[Home](../../../README.md) > [Architecture](../../README.md) > [Shared Metadata](../README.md) > Shared Metadata Architecture
 
 ## Overview
 The shared metadata architecture in Azure Synapse Analytics enables seamless integration between different compute engines while maintaining a single source of truth for your data. This architecture is crucial for maintaining consistency across your analytics environment and supports the modern data warehouse pattern by allowing different processing engines to collaborate efficiently.

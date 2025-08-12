@@ -1,5 +1,7 @@
 # Interactive Tutorial: End-to-End Data Pipeline in Synapse Analytics
 
+[Home](../../README.md) > [Tutorials](../README.md) > Interactive Data Pipeline
+
 This interactive tutorial guides you through building a complete data pipeline in Azure Synapse Analytics, from data ingestion to transformation and visualization. Follow along with notebook examples, pipeline templates, and step-by-step instructions.
 
 ## Introduction

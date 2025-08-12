@@ -1,5 +1,7 @@
 # 🎨 Visual Style Guide for Azure Synapse Analytics Documentation
 
+[Home](../README.md) > Visual Style Guide
+
 <div align="center">
 
 ![Style Guide](https://img.shields.io/badge/Style-Guide-blue?style=for-the-badge)

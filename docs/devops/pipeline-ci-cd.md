@@ -1,5 +1,7 @@
 # CI/CD for Azure Synapse Analytics
 
+[Home](../../README.md) > [DevOps](../README.md) > CI/CD Pipeline
+
 This guide provides comprehensive information on implementing continuous integration and continuous deployment (CI/CD) for Azure Synapse Analytics using Azure DevOps. It covers best practices, pipeline setup, and automated testing strategies.
 
 ## Introduction to CI/CD for Synapse

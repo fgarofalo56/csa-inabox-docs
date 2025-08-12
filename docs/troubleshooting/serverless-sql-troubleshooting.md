@@ -1,5 +1,7 @@
 # Troubleshooting Serverless SQL Pool in Azure Synapse Analytics
 
+[Home](../../README.md) > [Troubleshooting](../README.md) > Serverless SQL Troubleshooting
+
 This guide provides solutions for common issues encountered when working with Serverless SQL Pools in Azure Synapse Analytics, including query performance problems, error patterns, and optimization techniques.
 
 ## Common Serverless SQL Issues
