@@ -1,0 +1,89 @@
+# Configuration for PR labeler action
+
+documentation:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/**/*.md'
+      - 'README.md'
+      - 'mkdocs.yml'
+
+architecture:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/architecture/**/*'
+
+best-practices:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/best-practices/**/*'
+
+code-examples:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/code-examples/**/*'
+
+troubleshooting:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/troubleshooting/**/*'
+
+monitoring:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/monitoring/**/*'
+
+security:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/security/**/*'
+      - 'docs/best-practices/security.md'
+
+devops:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/devops/**/*'
+      - '.github/**/*'
+
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'requirements.txt'
+      - 'package.json'
+      - 'package-lock.json'
+
+ci/cd:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/**/*'
+      - '.github/actions/**/*'
+
+tools:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'project-planning/tools/**/*'
+      - '*.js'
+      - '*.py'
+
+configuration:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'mkdocs.yml'
+      - '.markdownlint.json'
+      - '.gitignore'
+      - '.gitattributes'
+
+images:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.png'
+      - '**/*.jpg'
+      - '**/*.jpeg'
+      - '**/*.gif'
+      - '**/*.svg'
+
+diagrams:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'docs/diagrams/**/*'
+      - '**/*.mermaid'
+      - '**/*.drawio'

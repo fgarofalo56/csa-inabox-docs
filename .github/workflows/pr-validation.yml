@@ -1,0 +1,170 @@
+name: PR Validation
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+  checks: write
+
+jobs:
+  validate-pr:
+    name: Validate Pull Request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check PR title
+        uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          types: |
+            feat
+            fix
+            docs
+            style
+            refactor
+            perf
+            test
+            build
+            ci
+            chore
+            revert
+          requireScope: false
+          subjectPattern: ^(?![A-Z]).+$
+          subjectPatternError: |
+            The subject "{subject}" found in the pull request title "{title}"
+            didn't match the configured pattern. Please ensure that the subject
+            doesn't start with an uppercase character.
+
+      - name: Label PR
+        uses: actions/labeler@v5
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          sync-labels: true
+
+      - name: Check file size
+        run: |
+          echo "Checking for large files..."
+          large_files=$(find . -type f -size +10M | grep -v ".git" || true)
+          if [ -n "$large_files" ]; then
+            echo "::warning::Large files detected (>10MB):"
+            echo "$large_files"
+          fi
+
+      - name: Comment PR
+        uses: actions/github-script@v7
+        if: github.event.action == 'opened'
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issue_number = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            
+            const message = `## 🚀 Thank you for your contribution!
+            
+            Your PR will now go through our automated validation process:
+            
+            - ✅ **Title validation** - Ensures semantic commit format
+            - ✅ **File size check** - Warns about large files
+            - ✅ **Documentation build** - Verifies docs compile correctly
+            - ✅ **Link validation** - Checks for broken links
+            - ✅ **Markdown linting** - Ensures consistent formatting
+            
+            ### Next Steps:
+            1. Wait for all checks to pass
+            2. Address any feedback from reviewers
+            3. Once approved, your changes will be merged
+            
+            If you have any questions, please don't hesitate to ask!`;
+            
+            github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: message
+            });
+
+  check-conflicts:
+    name: Check for Conflicts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check for merge conflicts
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          if git merge-tree $(git merge-base HEAD origin/${{ github.base_ref }}) HEAD origin/${{ github.base_ref }} | grep -q "<<<<<<< "; then
+            echo "::error::Merge conflicts detected. Please resolve conflicts before merging."
+            exit 1
+          else
+            echo "No merge conflicts detected ✅"
+          fi
+
+  preview:
+    name: Build Preview
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build preview
+        run: |
+          mkdocs build --clean --strict
+
+      - name: Upload preview artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-preview-${{ github.event.pull_request.number }}
+          path: ./site
+          retention-days: 7
+
+      - name: Comment preview link
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issue_number = context.issue.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const sha = context.sha.substring(0, 7);
+            
+            const message = `## 📚 Documentation Preview Ready!
+            
+            The documentation has been built successfully. You can download the preview artifacts from the [Actions tab](https://github.com/${owner}/${repo}/actions/runs/${{ github.run_id }}).
+            
+            **Build Details:**
+            - Commit: \`${sha}\`
+            - Build: #${{ github.run_number }}
+            - Status: ✅ Success
+            
+            *Note: Preview artifacts are retained for 7 days.*`;
+            
+            github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: message
+            });

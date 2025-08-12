@@ -1,0 +1,31 @@
+# Code Owners for Azure Synapse Analytics Documentation
+# These users will be automatically requested for review when someone opens a pull request
+
+# Global owners
+* @fgarofalo56
+
+# Documentation sections
+/docs/architecture/ @fgarofalo56
+/docs/best-practices/ @fgarofalo56
+/docs/code-examples/ @fgarofalo56
+/docs/troubleshooting/ @fgarofalo56
+/docs/monitoring/ @fgarofalo56
+/docs/security/ @fgarofalo56
+/docs/devops/ @fgarofalo56
+
+# Configuration files
+/mkdocs.yml @fgarofalo56
+/.markdownlint.json @fgarofalo56
+/requirements.txt @fgarofalo56
+
+# GitHub workflows
+/.github/workflows/ @fgarofalo56
+/.github/actions/ @fgarofalo56
+
+# Tools and scripts
+/project-planning/tools/ @fgarofalo56
+*.py @fgarofalo56
+*.js @fgarofalo56
+
+# Project planning
+/project-planning/ @fgarofalo56

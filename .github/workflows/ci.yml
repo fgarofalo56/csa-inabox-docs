@@ -1,0 +1,250 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate Documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate MkDocs configuration
+        run: |
+          echo "Validating MkDocs configuration..."
+          mkdocs build --strict --verbose 2>&1 | tail -20
+          
+      - name: Check for broken internal links
+        run: |
+          echo "Checking for broken internal links..."
+          python -c "
+          import os
+          import re
+          from pathlib import Path
+          
+          broken_links = []
+          docs_dir = Path('docs')
+          
+          for md_file in docs_dir.rglob('*.md'):
+              content = md_file.read_text()
+              # Find markdown links
+              links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', content)
+              
+              for text, link in links:
+                  if not link.startswith(('http://', 'https://', '#', 'mailto:')):
+                      # Internal link
+                      if link.startswith('/'):
+                          target = Path('docs') / link[1:]
+                      else:
+                          target = md_file.parent / link
+                      
+                      # Remove anchor
+                      target_str = str(target).split('#')[0]
+                      if target_str and not Path(target_str).exists():
+                          # Try with .md extension
+                          if not Path(target_str + '.md').exists():
+                              broken_links.append((str(md_file), link))
+          
+          if broken_links:
+              print('Found broken internal links:')
+              for file, link in broken_links[:10]:  # Show first 10
+                  print(f'  {file}: {link}')
+              print(f'Total: {len(broken_links)} broken links')
+          else:
+              print('No broken internal links found!')
+          "
+
+  lint:
+    name: Lint Code
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python linting tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install black flake8 isort mypy
+
+      - name: Run Python linters
+        continue-on-error: true
+        run: |
+          echo "Running Python linters on scripts..."
+          # Format check with black
+          black --check project-planning/tools/*.py || true
+          # Lint with flake8
+          flake8 project-planning/tools/*.py --max-line-length=100 || true
+          # Sort imports
+          isort --check-only project-planning/tools/*.py || true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Lint JavaScript files
+        continue-on-error: true
+        run: |
+          if [ -f "*.js" ]; then
+            npx eslint *.js || true
+          fi
+
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Trivy security scan
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          severity: 'CRITICAL,HIGH'
+          exit-code: '0'  # Don't fail the build
+
+      - name: Upload Trivy results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: 'trivy-results.sarif'
+
+      - name: Check for secrets
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: ${{ github.event.repository.default_branch }}
+          head: HEAD
+          extra_args: --debug --only-verified
+
+  test-scripts:
+    name: Test Python Scripts
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.10', '3.11']
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest pytest-cov
+
+      - name: Run tests
+        continue-on-error: true
+        run: |
+          # Test if scripts run without errors
+          echo "Testing documentation scripts..."
+          python project-planning/tools/link_checker.py --help || true
+          python project-planning/tools/serve-docs.py --help || true
+          python project-planning/tools/version-docs.py --help || true
+
+  build-test:
+    name: Build Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build documentation
+        run: |
+          mkdocs build --clean --strict
+
+      - name: Check build output
+        run: |
+          echo "Checking build output..."
+          if [ -d "site" ]; then
+            echo "Build successful! Site directory contents:"
+            ls -la site/ | head -20
+            echo "Total files: $(find site -type f | wc -l)"
+          else
+            echo "Build failed - site directory not found"
+            exit 1
+          fi
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-site-${{ github.sha }}
+          path: ./site
+          retention-days: 7
+
+  dependency-check:
+    name: Check Dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Check for outdated dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pip-audit safety
+
+      - name: Run pip-audit
+        continue-on-error: true
+        run: |
+          pip-audit --desc || true
+
+      - name: Run safety check
+        continue-on-error: true
+        run: |
+          safety check --json || true

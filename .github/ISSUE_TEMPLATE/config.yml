@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/fgarofalo56/csa-inabox-docs/discussions
+    about: Ask questions and discuss ideas with the community
+  - name: 📖 Documentation Site
+    url: https://fgarofalo56.github.io/csa-inabox-docs
+    about: View the live documentation
+  - name: 🔗 Azure Synapse Analytics Official Docs
+    url: https://learn.microsoft.com/en-us/azure/synapse-analytics/
+    about: Official Microsoft documentation for Azure Synapse Analytics

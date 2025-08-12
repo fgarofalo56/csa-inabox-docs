@@ -1,0 +1,131 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g., v1.0.0)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set version
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+          else
+            VERSION="${{ github.ref_name }}"
+          fi
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Release version: $VERSION"
+
+      - name: Generate changelog
+        id: changelog
+        run: |
+          echo "Generating changelog..."
+          cat > RELEASE_NOTES.md << EOF
+          # Release ${{ steps.version.outputs.version }}
+          
+          ## What's Changed
+          
+          ### 🚀 Features
+          $(git log --pretty=format:"- %s" --grep="^feat" $(git describe --tags --abbrev=0 2>/dev/null || echo "")..HEAD || echo "- No new features")
+          
+          ### 🐛 Bug Fixes
+          $(git log --pretty=format:"- %s" --grep="^fix" $(git describe --tags --abbrev=0 2>/dev/null || echo "")..HEAD || echo "- No bug fixes")
+          
+          ### 📚 Documentation
+          $(git log --pretty=format:"- %s" --grep="^docs" $(git describe --tags --abbrev=0 2>/dev/null || echo "")..HEAD || echo "- No documentation changes")
+          
+          ### 🔧 Other Changes
+          $(git log --pretty=format:"- %s" --grep="^(chore|refactor|style|perf|test|build|ci)" $(git describe --tags --abbrev=0 2>/dev/null || echo "")..HEAD || echo "- No other changes")
+          
+          ## Contributors
+          $(git log --format="%an" $(git describe --tags --abbrev=0 2>/dev/null || echo "")..HEAD | sort -u | sed 's/^/- @/')
+          
+          **Full Changelog**: $(git describe --tags --abbrev=0 2>/dev/null || echo "beginning")...${{ steps.version.outputs.version }}
+          EOF
+          
+          cat RELEASE_NOTES.md
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install mike
+
+      - name: Build documentation
+        run: |
+          mkdocs build --clean --strict
+
+      - name: Create release archive
+        run: |
+          echo "Creating release archive..."
+          tar -czf "synapse-docs-${{ steps.version.outputs.version }}.tar.gz" site/
+          zip -r "synapse-docs-${{ steps.version.outputs.version }}.zip" site/
+
+      - name: Configure Git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Deploy versioned docs
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          VERSION_NUM="${VERSION#v}"  # Remove 'v' prefix
+          
+          echo "Deploying version $VERSION_NUM..."
+          mike deploy --push --update-aliases $VERSION_NUM latest
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: Azure Synapse Analytics Documentation ${{ steps.version.outputs.version }}
+          body_path: RELEASE_NOTES.md
+          draft: false
+          prerelease: false
+          files: |
+            synapse-docs-${{ steps.version.outputs.version }}.tar.gz
+            synapse-docs-${{ steps.version.outputs.version }}.zip
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update latest tag
+        run: |
+          git tag -f latest
+          git push origin latest --force
+
+  notify:
+    name: Notify Release
+    needs: release
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - name: Send notification
+        run: |
+          echo "::notice::Release ${{ github.ref_name }} has been successfully created!"
+          echo "View the release at: https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}"
