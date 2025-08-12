@@ -169,8 +169,8 @@ class LinkChecker:
         if not target_path.suffix and (target_path.with_suffix('.md')).exists():
             return True
             
-        # Check if it points to a directory with an index.md file
-        if target_path.is_dir() and (target_path / 'index.md').exists():
+        # Check if it points to a directory with a README.md file
+        if target_path.is_dir() and (target_path / 'README.md').exists():
             return True
             
         # Link is broken

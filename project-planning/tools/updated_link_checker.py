@@ -72,9 +72,9 @@ class LinkChecker:
         # Remove anchor part if present
         target_path = target_path.split('#')[0]
         
-        # Handle links to directories (assuming index.md)
+        # Handle links to directories (assuming README.md)
         if os.path.isdir(target_path):
-            return not (os.path.exists(os.path.join(target_path, 'index.md')))
+            return not (os.path.exists(os.path.join(target_path, 'README.md')))
         
         # Check if the file exists
         exists = os.path.exists(target_path)

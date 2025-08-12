@@ -125,7 +125,7 @@ class DocumentationAuditor {
             cleanPath,
             cleanPath + '.md',
             path.join(cleanPath, 'README.md'),
-            path.join(cleanPath, 'index.md')
+            path.join(cleanPath, 'README.md')
           ];
           
           for (const possiblePath of possiblePaths) {
