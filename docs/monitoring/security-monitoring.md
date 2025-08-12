@@ -72,7 +72,7 @@ Azure Synapse Analytics integrates with Azure Defender for SQL and Azure Securit
 
 ## Audit Logging
 
-![Azure Synapse Analytics Security Monitoring Architecture with Defense-in-Depth Controls](../images/security/synapse-security-architecture.png)
+![Secure Data Lakehouse Security Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-defender-for-cloud-synopsis.png)
 
 Configure comprehensive audit logging for Azure Synapse Analytics:
 

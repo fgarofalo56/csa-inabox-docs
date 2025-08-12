@@ -6,7 +6,7 @@ This section contains architecture diagrams for Azure Synapse Analytics, focusin
 
 The Delta Lakehouse architecture combines the best features of data lakes and data warehouses, providing ACID transactions, schema enforcement, and data versioning.
 
-![Delta Lakehouse Architecture](delta-lakehouse-architecture.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 ### Key Components
 
@@ -20,7 +20,7 @@ The Delta Lakehouse architecture combines the best features of data lakes and da
 
 The Serverless SQL architecture enables on-demand, scalable analytics without pre-provisioning resources.
 
-![Serverless SQL Architecture](serverless-sql-architecture.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 ### Key Components
 
@@ -34,7 +34,7 @@ The Serverless SQL architecture enables on-demand, scalable analytics without pr
 
 The Shared Metadata architecture enables consistent data access across Spark and SQL.
 
-![Shared Metadata Architecture](shared-metadata-architecture.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 ### Key Components
 
@@ -48,11 +48,11 @@ The Shared Metadata architecture enables consistent data access across Spark and
 This reference architecture demonstrates a comprehensive enterprise implementation of Azure Synapse Analytics.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Microsoft Purview Integration](../images/diagrams/purview-integration.png)
+![Secure Data Lakehouse Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-overview.png)
 
 
 <!-- Static image fallback for GitHub -->
-![Enterprise-Scale Reference Architecture showing integration between Azure Data Lake Storage, Synapse Spark, Serverless SQL, Delta Lake Tables, External Tables, Shared Metadata, and integration with Power BI, Azure ML, and security/governance services](../images/diagrams/enterprise-scale-architecture.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 ### Key Integration Points
 
@@ -67,11 +67,11 @@ This reference architecture demonstrates a comprehensive enterprise implementati
 For enterprise deployments requiring high availability and global distribution:
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Multi-Region Architecture](../images/diagrams/multi-region-architecture.png)
+![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)
 
 
 <!-- Static image fallback for GitHub -->
-![Multi-Region Deployment Architecture showing Primary Region, Disaster Recovery Region, and Global Regions with their interconnected components like ADLS Gen2, Spark Pool, Serverless SQL, and Delta Lake](../images/diagrams/multi-region-architecture.png)
+![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
 ### Key Design Considerations
 

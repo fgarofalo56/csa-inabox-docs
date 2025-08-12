@@ -45,7 +45,7 @@ Configure proactive alerts and notifications
 
 ## Reference Architecture
 
-![Azure Synapse Analytics Monitoring Configuration Architecture with Log Analytics Integration](../images/monitoring/monitoring-architecture.png)
+![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
 ## Initial Setup
 

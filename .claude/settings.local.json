@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(mv:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "WebFetch(domain:learn.microsoft.com)"
     ],
     "deny": [],
     "ask": []

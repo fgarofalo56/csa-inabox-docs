@@ -142,7 +142,7 @@ Delta Lake automatically collects statistics for data skipping:
 
 ## Caching Strategies
 
-![Delta Cache Architecture](../images/delta-cache-architecture.png)
+![Hash Distributed Table Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/hash-distributed-table.png)
 
 Implement these caching strategies:
 

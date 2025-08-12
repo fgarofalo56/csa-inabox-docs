@@ -20,7 +20,7 @@ Azure Synapse Analytics provides a powerful shared metadata architecture that en
 
 ## Architecture Overview
 
-![Shared Metadata Architecture](../../images/shared-metadata-architecture.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 The shared metadata architecture in Azure Synapse Analytics provides a unified metadata experience that bridges the gap between different compute engines, allowing for seamless data access and governance.
 

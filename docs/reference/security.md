@@ -20,7 +20,7 @@ This document provides comprehensive security guidance for Azure Synapse Analyti
 
 ### Connectivity
 
-![Compliance Controls Framework](../images/diagrams/compliance-controls.png)
+![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
 
 ## Authentication and Authorization

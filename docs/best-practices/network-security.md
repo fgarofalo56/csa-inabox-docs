@@ -103,7 +103,7 @@ Configure IP firewall rules to restrict access to your Synapse workspace:
 
 ## Network Isolation
 
-![Network Security Architecture](../images/network-security-architecture.png)
+![Secure Data Lakehouse Access Control](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-access-control.svg)
 
 Implement these network isolation practices:
 
@@ -147,7 +147,7 @@ Establish secure connections between your on-premises network and Azure Synapse 
 !!! info "Integration Point"
     Azure Private Link and ExpressRoute work together to provide secure, private connectivity from on-premises environments to Azure Synapse.
 
-![Compliance Controls Framework](../images/diagrams/compliance-controls.png)
+![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
 
 ## Defense-in-Depth Strategy

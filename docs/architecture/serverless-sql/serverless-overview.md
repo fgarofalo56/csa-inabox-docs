@@ -49,7 +49,7 @@ Azure Synapse Serverless SQL is a serverless query engine that enables you to qu
 
 ## Shared Metadata Architecture
 
-![Compliance Controls Framework](../../images/diagrams/compliance-controls.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 
 ## Best Practices

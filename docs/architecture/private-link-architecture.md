@@ -166,7 +166,7 @@ New-AzPrivateDnsVirtualNetworkLink -ResourceGroupName $resourceGroup `
 
 ## Network Topology
 
-![Private Link Architecture](../images/private-link-architecture.png)
+![Secure Data Lakehouse Access Control](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-access-control.svg)
 
 Implement these network topology best practices:
 

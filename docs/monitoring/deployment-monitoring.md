@@ -76,7 +76,7 @@ inlineScript: |
 
 ## Resource Monitoring
 
-![Azure Synapse Analytics Deployment Monitoring Architecture with Log Analytics and Application Insights](../images/monitoring/monitoring-architecture.png)
+![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
 Use Azure Monitor to track the deployment and health of your Synapse Analytics resources:
 

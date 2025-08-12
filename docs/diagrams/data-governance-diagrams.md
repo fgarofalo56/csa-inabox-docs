@@ -7,72 +7,72 @@ This section provides comprehensive diagrams illustrating data governance archit
 This diagram illustrates how data governance components integrate with Azure Synapse Analytics.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Data Classification Framework](../images/diagrams/data-classification-framework.png)
+![Secure Data Lakehouse Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-overview.png)
 
 <!-- Static image fallback for GitHub -->
-![Integrated Data Governance Architecture showing connections between Governance Foundations (Policies, Standards, Roles), Azure Synapse Analytics components, and Governance Services like Microsoft Purview, Key Vault, RBAC, and Azure Monitor](../images/diagrams/integrated-data-governance.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 ## Data Governance Maturity Model
 
 This diagram illustrates the maturity model for data governance in Azure Synapse Analytics implementations.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Microsoft Purview Integration](../images/diagrams/purview-integration.png)
+![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)
 
 <!-- Static image fallback for GitHub -->
-![Data Governance Maturity Model showing five progression levels from Initial to Optimized with specific capabilities at each level, including ad-hoc governance at Level 1 through cross-platform governance at Level 5](../images/diagrams/governance-maturity-model.png)
+![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
 ## End-to-End Data Governance Architecture
 
 This diagram illustrates an end-to-end data governance architecture for Azure Synapse Analytics.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Data Classification Framework](../images/diagrams/data-classification-framework.png)
+![Secure Data Lakehouse Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-overview.png)
 
 <!-- Static image fallback for GitHub -->
-![End-to-End Data Governance Architecture showing the flow between Data Sources, Ingestion, Processing, Storage, Consumption, and the cross-cutting Governance Layer with components like Data Catalog, Lineage Tracking, and Policy Management](../images/diagrams/end-to-end-governance.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 ## Data Classification Framework
 
 This diagram illustrates a comprehensive data classification framework for Azure Synapse Analytics.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Compliance Controls Framework](../images/diagrams/compliance-controls.png)
+![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
 
 <!-- Static image fallback for GitHub -->
-![Data Classification Framework showing Classification Levels (Public to Restricted), Regulatory Categories (PII, PCI DSS, IP, Corporate), implementation through Sensitivity Labels and Microsoft Purview, and protection methods like Masking and Encryption](../images/diagrams/data-classification-framework.png)
+![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)
 
 ## Microsoft Purview Integration Architecture
 
 This diagram illustrates how Microsoft Purview integrates with Azure Synapse Analytics for comprehensive data governance.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Data Classification Framework](../images/diagrams/data-classification-framework.png)
+![Secure Data Lakehouse Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-overview.png)
 
 <!-- Static image fallback for GitHub -->
-![Microsoft Purview Integration Architecture showing connections between Purview components (Catalog, Scanning, Classifications, etc.) and Azure Synapse Analytics components (Workspace, SQL Pools, Spark, ADLS)](../images/diagrams/purview-integration.png)
+![Secure Data Lakehouse Access Control](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-access-control.svg)
 
 ## Data Quality Framework
 
 This diagram illustrates a comprehensive data quality framework for Azure Synapse Analytics.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Data Pipeline Implementation](../images/diagrams/data-pipeline-implementation.png)
+![Secure Data Lakehouse Pipeline](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-pipeline.svg)
 
 <!-- Static image fallback for GitHub -->
-![Data Quality Framework showing Data Quality Dimensions (Completeness, Accuracy, etc.), Implementation Layer, Azure Synapse Components for validation, and Visualization & Reporting outputs](../images/diagrams/data-quality-framework.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 ## Data Governance Roles and Responsibilities
 
 This diagram illustrates the roles and responsibilities within a data governance framework for Azure Synapse Analytics.
 
 <!-- Mermaid diagram for MkDocs rendering -->
-![Compliance Controls Framework](../images/diagrams/compliance-controls.png)
+![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
 
 <!-- Static image fallback for GitHub -->
-![Data Governance Roles and Responsibilities showing organization layers (Executive, Management, Operational, Technical) and their connections to Governance Activities like Strategy, Policy Management, and Standards Definition](../images/diagrams/governance-roles.png)
+![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)
 
 ## Best Practices for Data Governance
 

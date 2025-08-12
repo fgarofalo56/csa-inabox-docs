@@ -6,7 +6,7 @@ The Delta Lakehouse architecture combines the flexibility and cost-efficiency of
 
 ## Architecture Components
 
-![Delta Lakehouse Architecture](../../assets/images/delta-lakehouse-diagram.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 ### Core Components
 

@@ -54,7 +54,7 @@
     5. **Integration with BI Tools**: Connect with PowerBI and other visualization tools
 
 !!! example "Architecture Patterns"
-    ![Delta Lake Optimization Process](../images/diagrams/delta-lake-optimization.png)
+    ![Secure Data Lakehouse Pipeline](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-pipeline.svg)
 
 sql
 -- Query against Parquet (recommended) - most efficient

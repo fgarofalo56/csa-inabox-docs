@@ -46,7 +46,7 @@ Azure Synapse Analytics employs a defense-in-depth security architecture with mu
    - Security Monitoring
    - Continuous Assessment
 
-![Synapse Security Architecture](../images/synapse-security-architecture.png)
+![Secure Data Lakehouse Security Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-defender-for-cloud-synopsis.png)
 
 ## Regulatory Compliance Frameworks
 

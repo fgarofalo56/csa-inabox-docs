@@ -37,7 +37,7 @@ Serverless SQL pools in Azure Synapse Analytics offer several benefits:
 
 Serverless SQL in Azure Synapse Analytics supports several architecture patterns:
 
-![Serverless SQL Architecture](../../images/serverless-sql-architecture.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 1. __Data Lake Query Engine__: Direct querying of files in storage
 2. __Data Virtualization Layer__: Creating views and stored procedures over external data

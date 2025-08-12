@@ -23,7 +23,7 @@ A typical CI/CD workflow for Azure Synapse Analytics includes:
 5. **Deployment** to QA, staging, and production environments
 6. **Post-deployment validation** and monitoring
 
-![CI/CD Workflow for Synapse](../images/synapse-cicd-workflow.png)
+![Secure Data Lakehouse Data Flow](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-dataflow.svg)
 
 ## Setting Up Source Control
 
@@ -42,7 +42,7 @@ Before implementing CI/CD, set up source control integration:
    - Root folder (e.g., `/synapse`)
    - Import existing resources
 
-![Git Configuration in Synapse Studio](../images/synapse-git-configuration.png)
+![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)
 
 ### Branch Structure and Strategy
 

@@ -23,7 +23,7 @@ A comprehensive monitoring solution for Azure Synapse Analytics typically involv
 5. __Diagnostic Settings__: Configuration of log and metric collection
 6. __Alerting__: Proactive notification when issues arise
 
-![Azure Synapse Analytics Comprehensive Monitoring Architecture with Log Analytics and Dashboards](../images/monitoring/monitoring-architecture.png)
+![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)
 
 ## Setting Up Diagnostic Logging
 

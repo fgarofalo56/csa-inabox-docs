@@ -48,7 +48,7 @@ Delta Lake provides several benefits for data lakes in Azure Synapse Analytics:
 
 Delta Lake in Azure Synapse Analytics typically follows this architecture:
 
-![Delta Lake Architecture](../../images/delta-lake-architecture.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 1. __Bronze Layer__: Raw data ingestion into Delta tables
 2. __Silver Layer__: Cleansed, filtered, and validated data

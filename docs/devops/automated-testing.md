@@ -88,7 +88,7 @@ def test_data_transformation_pipeline(synapse_client):
 
 ## Data Validation
 
-![Data Validation Process](../images/data-validation-process.png)
+![Secure Data Lakehouse Pipeline](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-pipeline.svg)
 
 Implement these data validation techniques:
 

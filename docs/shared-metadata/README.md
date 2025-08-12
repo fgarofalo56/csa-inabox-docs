@@ -6,7 +6,7 @@ The Shared Metadata Architecture in Azure Synapse Analytics enables a unified se
 
 ## Architecture Components
 
-![Shared Metadata Architecture in Azure Synapse Analytics](../images/architecture/shared-metadata-architecture.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 ### Core Components
 

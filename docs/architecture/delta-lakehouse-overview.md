@@ -70,7 +70,7 @@
 > 🖼️ **Visual Architecture**  
 > The following diagram illustrates the key components and data flow in the Delta Lakehouse architecture:
 
-![Delta Lakehouse Architecture](../images/diagrams/compliance-controls.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 *The diagram shows the integration between Azure Data Lake Storage Gen2, Delta Lake, and Synapse Spark pools, highlighting the unified analytics capabilities.*
 

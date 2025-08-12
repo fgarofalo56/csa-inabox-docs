@@ -53,7 +53,7 @@
     4. __Metadata Synchronization__: Keeping metadata in sync across services
     5. __Monitoring and Alerting__: Setting up comprehensive monitoring across integrated services
     
-    ![Microsoft Purview Integration](../images/diagrams/purview-integration.png)
+    ![Secure Data Lakehouse Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-overview.png)
 
 python
 # PySpark code to configure Azure ML integration in Synapse

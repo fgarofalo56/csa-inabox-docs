@@ -27,7 +27,7 @@ The shared metadata architecture in Azure Synapse Analytics enables seamless int
 
 ## Architecture Diagram
 
-![Compliance Controls Framework](../../images/diagrams/compliance-controls.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 
 ## Best Practices

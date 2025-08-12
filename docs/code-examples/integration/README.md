@@ -22,7 +22,7 @@ When integrating Azure Synapse Analytics with other Azure services, consider the
 
 ## Azure Machine Learning Integration
 
-![Azure ML Integration](../../images/integration/azure-ml-synapse.png)
+![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
 Azure Synapse Analytics and Azure Machine Learning integration enables:
 

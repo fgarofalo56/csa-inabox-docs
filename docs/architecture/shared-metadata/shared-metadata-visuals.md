@@ -87,10 +87,10 @@ graph TD
 
 ## Layered Data Architecture with Shared Metadata
 
-![Serverless SQL Query Flow](../../images/diagrams/serverless-sql-query-flow.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
 
 ## Creating and Accessing Synchronized Tables - Process Flow
 
-![Serverless SQL Query Flow](../../images/diagrams/serverless-sql-query-flow.png)
+![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 

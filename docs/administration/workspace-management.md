@@ -101,7 +101,7 @@ az synapse workspace export --name myworkspace \
 
 ## Cost Optimization
 
-![Cost Management Dashboard](../images/cost-management-dashboard.png)
+![Secure Data Lakehouse Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-overview.png)
 
 Strategies to optimize Synapse workspace costs:
 
