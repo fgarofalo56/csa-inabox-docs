@@ -1,5 +1,5 @@
 mkdocs==1.6.1
-mkdocs-material==9.4.6
+mkdocs-material==9.6.18
 mkdocs-minify-plugin==0.8.0
 pymdown-extensions==10.16.1
 mike==2.1.3
