@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0  # Full history for git info
       
@@ -83,7 +83,7 @@ jobs:
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       
       - name: Download build artifacts
         uses: actions/download-artifact@v5
