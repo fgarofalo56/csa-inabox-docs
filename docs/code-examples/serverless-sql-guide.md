@@ -7,19 +7,19 @@
 
 <div class="grid cards" markdown>
 
-- :material-database-search: __Query Optimization__
+- 🔍 __Query Optimization__
   
   Advanced techniques to improve query performance and reduce costs
 
-- :material-table-link: __External Tables__
+- 🔗 __External Tables__
   
   Creating and managing external tables with optimal settings
 
-- :material-shield-lock: __Security__
+- 🛡️ __Security__
   
   Implementing row-level and column-level security controls
 
-- :material-chart-bar: __Performance Patterns__
+- 📊 __Performance Patterns__
   
   Common architectural patterns for optimal serverless SQL usage
 </div>

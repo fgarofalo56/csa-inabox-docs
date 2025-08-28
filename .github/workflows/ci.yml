@@ -100,11 +100,11 @@ jobs:
         run: |
           echo "Running Python linters on scripts..."
           # Format check with black
-          black --check project-planning/tools/*.py || true
+          black --check project_tracking/tools/*.py || true
           # Lint with flake8
-          flake8 project-planning/tools/*.py --max-line-length=100 || true
+          flake8 project_tracking/tools/*.py --max-line-length=100 || true
           # Sort imports
-          isort --check-only project-planning/tools/*.py || true
+          isort --check-only project_tracking/tools/*.py || true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -176,9 +176,9 @@ jobs:
         run: |
           # Test if scripts run without errors
           echo "Testing documentation scripts..."
-          python project-planning/tools/link_checker.py --help || true
-          python project-planning/tools/serve-docs.py --help || true
-          python project-planning/tools/version-docs.py --help || true
+          python project_tracking/tools/link_checker.py --help || true
+          python project_tracking/tools/serve-docs.py --help || true
+          python project_tracking/tools/version-docs.py --help || true
 
   build-test:
     name: Build Test

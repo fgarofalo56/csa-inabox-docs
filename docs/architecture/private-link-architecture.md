@@ -5,14 +5,14 @@
 !!! abstract "Overview"
     This guide details the architecture patterns for implementing Azure Private Link with Azure Synapse Analytics, ensuring secure network isolation and private connectivity.
 
-## :material-lock-network: Private Link Architecture Components
+## 🔐 Private Link Architecture Components
 
 Azure Private Link provides secure private connectivity to Azure Synapse Analytics and related services.
 
 <!-- Markdown lint exception: Inline HTML is used here for Material for MkDocs grid cards feature -->
 <div class="grid cards" markdown>
 
-- :material-connection:{ .lg .middle } __Private Endpoints__
+- 🔗 __Private Endpoints__
 
     ---
   
@@ -20,7 +20,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
   
     [:octicons-arrow-right-24: Endpoint design](#private-endpoint-design)
 
-- :material-dns:{ .lg .middle } __DNS Configuration__
+- 🌐 __DNS Configuration__
 
     ---
   
@@ -28,7 +28,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
   
     [:octicons-arrow-right-24: DNS setup](#private-dns-configuration)
 
-- :material-virtual-reality:{ .lg .middle } __Network Topology__
+- 📡 __Network Topology__
 
     ---
   
@@ -36,7 +36,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
   
     [:octicons-arrow-right-24: Network design](#network-topology)
 
-- :material-check-network:{ .lg .middle } __Connectivity Validation__
+- ✅ __Connectivity Validation__
 
     ---
   
@@ -48,50 +48,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
 
 ## Reference Architecture
 
-```mermaid
-graph TD
-    subgraph "Virtual Network"
-        subgraph "AzureBastionSubnet"
-            Bastion[Azure Bastion]
-        end
-        
-        subgraph "Integration Subnet"
-            SHIR[Self-hosted IR]
-        end
-        
-        subgraph "Compute Subnet"
-            VM[Jump Box VM]
-        end
-        
-        subgraph "PrivateEndpoint Subnet"
-            PE_SQL[PE: SQL]
-            PE_DEV[PE: Dev]
-            PE_Serverless[PE: Serverless SQL]
-            PE_Storage[PE: Data Lake]
-        end
-    end
-    
-    subgraph "Azure Synapse Analytics"
-        SQL[SQL Pools]
-        Dev[Development Endpoint]
-        Serverless[Serverless SQL]
-        Storage[Data Lake Storage]
-    end
-    
-    VM --> PE_SQL
-    VM --> PE_DEV
-    VM --> PE_Serverless
-    VM --> PE_Storage
-    
-    PE_SQL --> SQL
-    PE_DEV --> Dev
-    PE_Serverless --> Serverless
-    PE_Storage --> Storage
-    
-    OnPrem[On-premises Network] -->|ExpressRoute/VPN| VM
-    Internet[Authorized Users] -->|Azure AD Auth| Bastion
-    Bastion --> VM
-```
+![Architecture diagram: architecture-private-link-architecture-diagram-1](../images/diagrams/architecture-private-link-architecture-diagram-1.png)
 
 ## Private Endpoint Design
 
@@ -219,37 +176,7 @@ Configure these hybrid connectivity patterns:
 3. __Point-to-Site VPN__ - For individual client connections
 4. __DNS Forwarding__ - Configure DNS forwarding for on-premises name resolution
 
-```mermaid
-graph TD
-    subgraph "On-Premises"
-        DC[DNS Server]
-        Client[Client Workstations]
-    end
-    
-    subgraph "Azure"
-        subgraph "Hub VNet"
-            VPN[VPN Gateway]
-            DNSF[DNS Forwarder]
-            FW[Azure Firewall]
-        end
-        
-        subgraph "Spoke VNet"
-            PE[Private Endpoints]
-        end
-        
-        subgraph "Azure Services"
-            Synapse[Synapse Analytics]
-        end
-    end
-    
-    Client --> DC
-    DC -->|DNS Query| DNSF
-    Client -->|ExpressRoute/VPN| VPN
-    VPN --> FW
-    FW --> PE
-    PE --> Synapse
-    DNSF --> PE
-```
+![Architecture diagram: architecture-private-link-architecture-diagram-2](../images/diagrams/architecture-private-link-architecture-diagram-2.png)
 
 ## Scalability and High Availability
 

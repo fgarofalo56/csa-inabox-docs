@@ -7,15 +7,15 @@
 
 <div class="grid cards" markdown>
 
-- :material-brain: __Azure Machine Learning__
+- 🧠 __Azure Machine Learning__
   
   Integrate ML models with Synapse data and pipelines
 
-- :material-database-search: __Microsoft Purview__
+- 🔍 __Microsoft Purview__
   
   Data governance, cataloging, and lineage tracking
 
-- :material-pipe-wrench: __Azure Data Factory__
+- 🔧 __Azure Data Factory__
   
   Orchestration, pipeline management, and monitoring
 

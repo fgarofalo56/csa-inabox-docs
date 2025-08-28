@@ -2,19 +2,6 @@
 
 [Home](../../../README.md) > [Images](../../README.md) > [Troubleshooting](../README.md) > Troubleshooting Process
 
-```mermaid
-graph TD
-    A[Identify Issue] --> B[Collect Diagnostic Information]
-    B --> C[Check Documentation & Known Issues]
-    C --> D{Issue Resolved?}
-    D -- Yes --> E[Document Solution]
-    D -- No --> F[Check Logs & Metrics]
-    F --> G[Isolate Problem Component]
-    G --> H[Apply Specific Troubleshooting Steps]
-    H --> I{Issue Resolved?}
-    I -- Yes --> E
-    I -- No --> J[Contact Support]
-    J --> E
-```
+![Architecture diagram: images-troubleshooting-troubleshooting-process-diagram-1](../diagrams/images-troubleshooting-troubleshooting-process-diagram-1.png)
 
 This diagram represents the standard troubleshooting process for Azure Synapse Analytics issues.

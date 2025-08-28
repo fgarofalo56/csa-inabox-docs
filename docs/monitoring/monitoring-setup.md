@@ -5,13 +5,13 @@
 !!! abstract "Overview"
 This guide covers the setup and configuration of monitoring solutions for Azure Synapse Analytics, including Azure Monitor, Log Analytics, and alerting.
 
-## :material-monitor-dashboard: Monitoring Architecture
+## 📊 Monitoring Architecture
 
 Implement comprehensive monitoring for your Azure Synapse Analytics environment to ensure optimal performance, security, and reliability.
 
 <div class="grid cards" markdown>
 
-- :material-cog-outline:{ .lg .middle } __Initial Setup__
+- ⚙️ __Initial Setup__
 
 ---
 
@@ -19,7 +19,7 @@ Configure base monitoring components and permissions
 
 [:octicons-arrow-right-24: Setup steps](#initial-setup)
 
-- :material-chart-line:{ .lg .middle } __Metrics Collection__
+- 📈 __Metrics Collection__
 
 ---
 
@@ -27,7 +27,7 @@ Configure and collect key performance metrics
 
 [:octicons-arrow-right-24: Metrics configuration](#metrics-collection)
 
-- :material-file-search:{ .lg .middle } __Log Analytics__
+- 🔍 __Log Analytics__
 
 ---
 
@@ -35,7 +35,7 @@ Centralize and analyze diagnostic logs
 
 [:octicons-arrow-right-24: Log setup](#log-analytics-setup)
 
-- :material-bell-ring:{ .lg .middle } __Alerting__
+- 🔔 __Alerting__
 
 ---
 

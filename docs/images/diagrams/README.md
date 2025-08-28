@@ -37,11 +37,7 @@ GitHub doesn't natively render Mermaid diagrams, so both the diagram code and st
 
 ```markdown
 <!-- Mermaid diagram for MkDocs rendering -->
-```mermaid
-graph TD
-    A[Step 1] --> B[Step 2]
-    B --> C[Step 3]
-```
+![Architecture diagram: images-diagrams-README-diagram-1](images-diagrams-README-diagram-1.png)
 
 <!-- Static image fallback for GitHub -->
 ![Description of the diagram](../images/diagrams/filename.png)

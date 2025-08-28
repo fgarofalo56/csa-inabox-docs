@@ -23,9 +23,9 @@
 /.github/actions/ @fgarofalo56
 
 # Tools and scripts
-/project-planning/tools/ @fgarofalo56
+/project_tracking/tools/ @fgarofalo56
 *.py @fgarofalo56
 *.js @fgarofalo56
 
 # Project planning
-/project-planning/ @fgarofalo56
+/project_tracking/ @fgarofalo56

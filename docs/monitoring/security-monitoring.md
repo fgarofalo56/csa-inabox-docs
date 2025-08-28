@@ -5,13 +5,13 @@
 !!! abstract "Overview"
 This guide covers security monitoring approaches for Azure Synapse Analytics, including threat detection, audit logging, and compliance monitoring.
 
-## :material-shield-lock: Security Monitoring Framework
+## 🛡️ Security Monitoring Framework
 
 Implement comprehensive security monitoring to detect and respond to security threats in your Azure Synapse Analytics environment.
 
 <div class="grid cards" markdown>
 
-- :material-eye-scan:{ .lg .middle } __Threat Detection__
+- 👁️ __Threat Detection__
 
 ---
 
@@ -19,7 +19,7 @@ Monitor for suspicious activities and security threats
 
 [:octicons-arrow-right-24: Threat monitoring](#threat-detection)
 
-- :material-file-document-multiple:{ .lg .middle } __Audit Logging__
+- 📄 __Audit Logging__
 
 ---
 
@@ -27,7 +27,7 @@ Track and analyze user and service activities
 
 [:octicons-arrow-right-24: Audit configuration](#audit-logging)
 
-- :material-alert-circle:{ .lg .middle } __Security Alerting__
+- ⚠️ __Security Alerting__
 
 ---
 
@@ -35,7 +35,7 @@ Configure proactive alerts for security events
 
 [:octicons-arrow-right-24: Alert setup](#security-alerting)
 
-- :material-clipboard-check:{ .lg .middle } __Compliance Monitoring__
+- ✅ __Compliance Monitoring__
 
 ---
 

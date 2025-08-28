@@ -8,7 +8,7 @@ This documentation project covers Azure Synapse Analytics, focusing on Delta Lak
 ### Documentation Structure
 - Using a hierarchical structure with architecture, best-practices, code-examples, diagrams, and reference sections
 - All documentation files are in Markdown format for maximum compatibility and ease of maintenance
-- Planning files are kept in a separate project-planning directory
+- Planning files are kept in a separate project_tracking directory
 
 ### Content Standards
 - Technical accuracy prioritized with code examples for all key concepts

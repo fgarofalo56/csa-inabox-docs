@@ -241,19 +241,19 @@ JOIN [dbo].[Sales] s ON c.[CustomerId] = s.[CustomerId];
 <!-- Markdown lint exception: Inline HTML is used here for Material for MkDocs grid cards feature -->
 <div class="grid cards" markdown>
 
-- :material-credit-card-outline: __Pay-per-Query Model__
+- 💳 __Pay-per-Query Model__
   
   No infrastructure to manage with costs based only on data processed
 
-- :material-database-search-outline: __Data Lake Exploration__
+- 🔍 __Data Lake Exploration__
   
   Ad-hoc querying of data in various formats stored in your data lake
 
-- :material-account-group-outline: __Self-Service Analytics__
+- 👥 __Self-Service Analytics__
   
   SQL-based data access for business analysts and data scientists
 
-- :material-chart-box-outline: __Operational Analytics__
+- 📦 __Operational Analytics__
   
   Query logs and operational data with familiar SQL syntax
 

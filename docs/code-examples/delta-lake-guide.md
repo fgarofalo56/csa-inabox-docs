@@ -6,15 +6,15 @@
     This comprehensive guide provides detailed examples for working with Delta Lake in Azure Synapse Analytics, covering data ingestion, change data capture, and table optimization techniques.
 
 <div class="grid cards" markdown>
-- :material-database-import: __Data Ingestion__
+- 📥 __Data Ingestion__
   
   Auto Loader techniques for efficient and reliable data ingestion
 
-- :material-history: __Change Data Capture__
+- 📜 __Change Data Capture__
   
   Tracking and processing data changes with Delta Lake
 
-- :material-cog-refresh: __Table Optimization__
+- 🔄 __Table Optimization__
   
   Best practices for maintaining Delta Lake performance
 </div>

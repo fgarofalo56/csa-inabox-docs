@@ -49,19 +49,19 @@ jobs:
       - name: Debug environment
         run: |
           echo "GitHub workspace: $GITHUB_WORKSPACE"
-          echo "Link checker path: $(realpath project-planning/tools/link_checker.py)"
+          echo "Link checker path: $(realpath project_tracking/tools/link_checker.py)"
           echo "Directory structure:"
           find . -type d -not -path "*/\.*" | sort
           
       - name: Verify link checker script exists
         run: |
-          if [ ! -f "project-planning/tools/link_checker.py" ]; then
+          if [ ! -f "project_tracking/tools/link_checker.py" ]; then
             echo "❌ ERROR: Link checker script not found!"
             exit 1
           else
             echo "✅ Link checker script found."
             echo "Script content:"
-            head -n 20 project-planning/tools/link_checker.py
+            head -n 20 project_tracking/tools/link_checker.py
           fi
           
       - name: Run link checker with detailed logging
@@ -69,7 +69,7 @@ jobs:
         run: |
           echo "Running link checker..."
           python -c "import sys; print(f'Python version: {sys.version}')"
-          python project-planning/tools/link_checker.py . 2>&1 | tee link_checker_output.log
+          python project_tracking/tools/link_checker.py . 2>&1 | tee link_checker_output.log
           EXIT_CODE=${PIPESTATUS[0]}
           echo "Link checker exit code: $EXIT_CODE"
           
@@ -92,7 +92,7 @@ jobs:
         with:
           name: link-check-report
           path: |
-            project-planning/link_check_report.md
+            project_tracking/planning/link_check_report.md
             link_checker_output.log
           
       - name: Create or update issue on broken links
@@ -106,7 +106,7 @@ jobs:
             // Read the link check report
             let reportContent = '';
             try {
-              reportContent = fs.readFileSync('project-planning/link_check_report.md', 'utf8');
+              reportContent = fs.readFileSync('project_tracking/planning/link_check_report.md', 'utf8');
             } catch (error) {
               console.error(`Error reading report file: ${error.message}`);
               reportContent = '⚠️ **Error reading link check report file.** Please check the workflow logs for details.';
@@ -168,9 +168,9 @@ jobs:
           import sys, os
           print(f'Python version: {sys.version}')
           print(f'Current directory: {os.getcwd()}')
-          print('Files in project-planning/tools:')
+          print('Files in project_tracking/tools:')
           try:
-              print(os.listdir('project-planning/tools'))
+              print(os.listdir('project_tracking/tools'))
           except Exception as e:
               print(f'Error listing directory: {str(e)}')
           "

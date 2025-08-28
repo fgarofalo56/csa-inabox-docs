@@ -9,7 +9,7 @@ on:
       - 'docs/**'
       - 'mkdocs.yml'
       - '.github/workflows/deploy-docs.yml'
-      - 'project-planning/tools/**'
+      - 'project_tracking/tools/**'
       - 'requirements.txt'
   pull_request:
     branches:
@@ -19,7 +19,7 @@ on:
       - 'docs/**'
       - 'mkdocs.yml'
       - '.github/workflows/deploy-docs.yml'
-      - 'project-planning/tools/**'
+      - 'project_tracking/tools/**'
   workflow_dispatch:
     inputs:
       deploy_version:

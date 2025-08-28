@@ -1,0 +1,74 @@
+{
+  "name": "csa-docs-tools",
+  "version": "1.0.0",
+  "description": "Unified documentation tooling for Cloud Scale Analytics documentation management",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "csa-docs": "./src/bin/csa-docs.js"
+  },
+  "scripts": {
+    "start": "node src/bin/csa-docs.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "build": "npm run lint && npm test",
+    "docs:audit": "node src/bin/csa-docs.js audit",
+    "docs:generate": "node src/bin/csa-docs.js generate-diagrams",
+    "docs:replace": "node src/bin/csa-docs.js replace-mermaid",
+    "docs:fix": "node src/bin/csa-docs.js fix-issues",
+    "docs:validate": "node src/bin/csa-docs.js validate-links",
+    "docs:optimize": "node src/bin/csa-docs.js optimize-images"
+  },
+  "keywords": [
+    "documentation",
+    "azure",
+    "synapse",
+    "diagrams",
+    "markdown",
+    "tooling",
+    "mermaid"
+  ],
+  "author": "CSA Documentation Team",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "chalk": "^5.3.0",
+    "ora": "^7.0.1",
+    "fs-extra": "^11.2.0",
+    "glob": "^10.3.10",
+    "yaml": "^2.3.4",
+    "markdown-it": "^14.0.0",
+    "sharp": "^0.33.2",
+    "puppeteer": "^21.9.0",
+    "@mermaid-js/mermaid-cli": "^10.6.1",
+    "winston": "^3.11.0",
+    "joi": "^17.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/jest": "^29.5.11",
+    "@types/fs-extra": "^11.0.4",
+    "jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/csa-inabox-docs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/csa-inabox-docs/issues"
+  },
+  "homepage": "https://github.com/your-org/csa-inabox-docs#readme"
+}

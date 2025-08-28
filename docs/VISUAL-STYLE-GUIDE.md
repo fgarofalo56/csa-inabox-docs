@@ -175,13 +175,7 @@ def example_function():
 
 ### 🎯 Standard Flow Diagram
 
-```mermaid
-graph LR
-    A[🚀 Start] --> B[📝 Process]
-    B --> C{❓ Decision}
-    C -->|Yes| D[✅ Success]
-    C -->|No| E[❌ Error]
-```
+![Architecture diagram: .-VISUAL-STYLE-GUIDE-diagram-1](images/diagrams/.-VISUAL-STYLE-GUIDE-diagram-1.png)
 
 ---
 

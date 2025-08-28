@@ -82,3 +82,5 @@ bld/
 # Temporary files
 *.tmp
 *.temp
+
+/net-commander

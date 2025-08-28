@@ -5,13 +5,13 @@
 !!! abstract "Overview"
     This guide covers optimization strategies for Delta Lake in Azure Synapse Analytics, including file compaction, Z-ordering, caching, and partition management.
 
-## :material-speedometer: Delta Lake Performance Optimization
+## ⚡ Delta Lake Performance Optimization
 
 Optimize your Delta Lake implementation in Azure Synapse Analytics for maximum performance and efficiency.
 
 <div class="grid cards" markdown>
 
-- :material-file-cabinet:{ .lg .middle } __File Organization__
+- 📁 __File Organization__
 
     ---
     
@@ -19,7 +19,7 @@ Optimize your Delta Lake implementation in Azure Synapse Analytics for maximum p
     
     [:octicons-arrow-right-24: File optimization](#file-organization-optimization)
 
-- :material-order-alphabetical-ascending:{ .lg .middle } __Data Indexing__
+- 📊 __Data Indexing__
 
     ---
     
@@ -27,7 +27,7 @@ Optimize your Delta Lake implementation in Azure Synapse Analytics for maximum p
     
     [:octicons-arrow-right-24: Indexing strategies](#data-indexing)
 
-- :material-memory:{ .lg .middle } __Caching__
+- 💻 __Caching__
 
     ---
     
@@ -35,7 +35,7 @@ Optimize your Delta Lake implementation in Azure Synapse Analytics for maximum p
     
     [:octicons-arrow-right-24: Caching strategies](#caching-strategies)
 
-- :material-text-search:{ .lg .middle } __Query Optimization__
+- 🔍 __Query Optimization__
 
     ---
     

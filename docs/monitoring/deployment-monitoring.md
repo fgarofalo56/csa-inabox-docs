@@ -5,13 +5,13 @@
 !!! abstract "Overview"
 This guide covers monitoring strategies for Azure Synapse Analytics deployments, including pipeline executions, resource utilization, and performance metrics.
 
-## :material-monitor-dashboard: Monitoring Deployment Process
+## 📊 Monitoring Deployment Process
 
 Azure Synapse Analytics deployments can be monitored through various mechanisms to ensure successful resource provisioning and configuration.
 
 <div class="grid cards" markdown>
 
-- :material-pipeline-alert:{ .lg .middle } __Pipeline Deployment Monitoring__
+- 🚨 __Pipeline Deployment Monitoring__
 
 ---
 
@@ -19,7 +19,7 @@ Monitor pipeline deployments using Azure DevOps or GitHub Actions logs
 
 [:octicons-arrow-right-24: Pipeline monitoring](#pipeline-monitoring)
 
-- :material-chart-timeline:{ .lg .middle } __Resource Deployment Tracking__
+- 📊 __Resource Deployment Tracking__
 
 ---
 
@@ -27,7 +27,7 @@ Track Azure Resource Manager (ARM) template deployments
 
 [:octicons-arrow-right-24: Resource monitoring](#resource-monitoring)
 
-- :material-alert-circle-outline:{ .lg .middle } __Deployment Alerts__
+- ⚠️ __Deployment Alerts__
 
 ---
 
@@ -35,7 +35,7 @@ Configure alerts for deployment failures and threshold breaches
 
 [:octicons-arrow-right-24: Alert configuration](#alert-configuration)
 
-- :material-history:{ .lg .middle } __Deployment History__
+- 📜 __Deployment History__
 
 ---
 

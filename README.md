@@ -1,22 +1,22 @@
-# 🚀 Azure Synapse Analytics Documentation
+# 🌐 Cloud Scale Analytics Documentation
 
 <div align="center">
 
-![Azure Synapse](https://img.shields.io/badge/Azure-Synapse_Analytics-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Cloud Scale Analytics](https://img.shields.io/badge/Azure-Cloud_Scale_Analytics-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
 ![Documentation](https://img.shields.io/badge/Documentation-Complete-green?style=for-the-badge&logo=readthedocs&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-### 📚 Comprehensive Technical Documentation for Azure Synapse Analytics
-#### *Spark Delta Lakehouse • Serverless SQL • Best Practices • Code Examples*
+### 📚 Comprehensive Documentation for Azure Cloud Scale Analytics
+#### *Multi-Service Analytics • Architecture Patterns • Real-time Processing • Best Practices*
 
 ---
 
 [🏠 **Home**](#) • 
-[🏗️ **Architecture**](./docs/architecture/README.md) • 
-[💻 **Code Examples**](./docs/code-examples/README.md) • 
-[📋 **Best Practices**](./docs/best-practices/README.md) • 
-[🔧 **Troubleshooting**](./docs/troubleshooting/README.md)
+[📖 **Overview**](./docs/01-overview/README.md) • 
+[🛠️ **Services**](./docs/02-services/README.md) • 
+[🏗️ **Architecture Patterns**](./docs/03-architecture-patterns/README.md) • 
+[💡 **Best Practices**](./docs/05-best-practices/README.md)
 
 </div>
 
@@ -24,16 +24,18 @@
 
 ## 📖 Overview
 
-This repository contains comprehensive technical documentation for Azure Synapse Analytics, focusing primarily on Spark Delta Lakehouse and Serverless SQL capabilities. The documentation is designed for data engineers, data architects, and developers who are implementing or maintaining Azure Synapse Analytics solutions.
+This repository contains comprehensive technical documentation for the complete Azure Cloud Scale Analytics ecosystem. Covering streaming services, analytics compute, storage solutions, and orchestration services, this documentation is designed for data engineers, data architects, solution architects, and developers implementing modern data platforms on Azure.
 
 ### ✨ Key Features
 
-- 🏗️ **Detailed Architecture Patterns** - Complete architectural guidance
-- 💡 **Best Practices** - Proven patterns and recommendations
-- 📝 **Code Examples** - Ready-to-use code snippets
-- 🔒 **Security Guidelines** - Comprehensive security documentation
-- 📊 **Performance Optimization** - Tuning and optimization strategies
-- 💰 **Cost Management** - Cost optimization techniques
+- 🌐 **Complete Analytics Ecosystem** - All Azure analytics services covered
+- 🔄 **Streaming & Batch Processing** - Real-time and batch data patterns
+- 🏗️ **Architecture Patterns** - Proven patterns (Lambda, Medallion, Data Mesh)
+- 🛠️ **Service-Specific Guides** - Deep dive into each Azure service
+- 💡 **Implementation Guidance** - Step-by-step tutorials and best practices
+- 📊 **Performance Optimization** - Tuning strategies across services
+- 🔒 **Enterprise Security** - Comprehensive security guidance
+- 💰 **Cost Optimization** - Cost management across the platform
 
 ---
 
@@ -45,10 +47,12 @@ This repository contains comprehensive technical documentation for Azure Synapse
 
 | Role | Starting Point | Description |
 |:----:|:--------------|:------------|
-| 🏗️ **Architects** | [Architecture Documentation](./docs/architecture/README.md) | Understand overall architecture patterns |
-| 💻 **Developers** | [Code Examples](./docs/code-examples/README.md) | Practical implementation guidance |
-| ⚙️ **Operations** | [Best Practices](./docs/best-practices/README.md) | Optimization and maintenance recommendations |
-| 🔒 **Security** | [Security Best Practices](./docs/best-practices/security.md) | Comprehensive security documentation |
+| 🏗️ **Solution Architects** | [Architecture Patterns](./docs/03-architecture-patterns/README.md) | Complete architectural patterns and reference implementations |
+| 🛠️ **Platform Engineers** | [Services Documentation](./docs/02-services/README.md) | Deep dive into each Azure analytics service |
+| 💻 **Data Engineers** | [Implementation Guides](./docs/04-implementation-guides/README.md) | Step-by-step implementation tutorials |
+| 📊 **Data Scientists** | [Analytics Compute Services](./docs/02-services/analytics-compute/README.md) | Synapse, Databricks, and HDInsight guidance |
+| ⚙️ **Operations Teams** | [Best Practices](./docs/05-best-practices/README.md) | Operational excellence and optimization |
+| 🔒 **Security Teams** | [Security Guide](./docs/10-security/README.md) | Comprehensive security and compliance |
 
 </div>
 
@@ -90,7 +94,7 @@ Required Software:
 To preview the documentation site locally:
 
 ```bash
-python project-planning/tools/serve-docs.py
+python project_tracking/tools/serve-docs.py
 ```
 
 This will start the MkDocs development server and automatically open the site in your default browser at [http://localhost:8000](http://localhost:8000).
@@ -131,72 +135,69 @@ python project-planning/tools/version-docs.py create 1.0.0 --alias latest --titl
 
 <div align="center">
 
-### 🗂️ The documentation is organized into the following key areas:
+### 🗂️ The documentation is organized into comprehensive sections covering the entire Azure analytics ecosystem:
 
 </div>
 
-### 🏗️ [Architecture](./docs/architecture/README.md)
+### 📖 [01 - Overview](./docs/01-overview/README.md)
 
-> **Detailed architectural guidance for implementing Azure Synapse Analytics**
+> **Platform overview and service catalog**
 
 | Component | Description | Link |
 |:----------|:------------|:-----|
-| 🏛️ **Delta Lakehouse** | Scalable Delta Lake-based data lakehouse architecture | [View Details](./docs/architecture/delta-lakehouse-overview.md) |
-| ☁️ **Serverless SQL** | Architectural patterns for Serverless SQL pools | [View Details](./docs/serverless-sql/README.md) |
+| 🌐 **Platform Overview** | Complete Azure analytics ecosystem introduction | [View Details](./docs/01-overview/README.md) |
+| 📋 **Service Catalog** | Comprehensive catalog of all analytics services | [View Details](./docs/01-overview/service-catalog.md) |
+| 🎯 **Service Selection** | Decision trees for choosing the right services | [View Details](./docs/01-overview/choosing-services.md) |
 
-### 💡 [Best Practices](./docs/best-practices/README.md)
+### 🛠️ [02 - Services](./docs/02-services/README.md)
 
-> **Guidance for optimal implementation and operation**
+> **Detailed documentation for each Azure analytics service**
 
-| Practice Area | Focus | Documentation |
-|:-------------|:------|:--------------|
-| ⚡ **Performance** | Query optimization, storage, resources | [📖 Guide](./docs/best-practices/performance-optimization.md) |
-| 🔐 **Security** | Data protection and service security | [📖 Guide](./docs/best-practices/security.md) |
-| 💰 **Cost Optimization** | Cost reduction strategies | [📖 Guide](./docs/best-practices/cost-optimization.md) |
-| 📊 **Data Governance** | Governance framework | [📖 Guide](./docs/best-practices/data-governance.md) |
+| Service Category | Description | Link |
+|:----------------|:------------|:-----|
+| 💾 **Analytics Compute** | Synapse, Databricks, HDInsight | [View Details](./docs/02-services/analytics-compute/README.md) |
+| 🔄 **Streaming Services** | Stream Analytics, Event Hubs, Event Grid | [View Details](./docs/02-services/streaming-services/README.md) |
+| 🗃️ **Storage Services** | Data Lake Gen2, Cosmos DB, Azure SQL | [View Details](./docs/02-services/storage-services/README.md) |
+| 🔧 **Orchestration** | Data Factory, Logic Apps | [View Details](./docs/02-services/orchestration-services/README.md) |
 
-### 💻 [Code Examples](./docs/code-examples/README.md)
+### 🏗️ [03 - Architecture Patterns](./docs/03-architecture-patterns/README.md)
 
-> **Practical code snippets and implementation patterns**
+> **Proven architectural patterns and reference implementations**
 
 ```mermaid
 graph LR
-    A[Code Examples] --> B[🐍 PySpark]
-    A --> C[📊 Serverless SQL]
-    A --> D[🔗 Integration]
-    A --> E[⚡ Optimization]
+    A[Architecture Patterns] --> B[🔄 Streaming]
+    A --> C[📊 Batch]
+    A --> D[🔄 Hybrid]
+    A --> E[🏭 Reference]
 ```
 
-- 🐍 [**PySpark Examples**](./docs/code-examples/README.md#pyspark-examples) - Delta Lake operations
-- 📊 [**Serverless SQL**](./docs/code-examples/README.md#serverless-sql-examples) - Query patterns
-- 🔗 [**Integration Patterns**](./docs/code-examples/README.md#integration-examples) - Service integration
-- ⚡ [**Performance Optimization**](./docs/code-examples/README.md#optimization-examples) - Tuning techniques
+| Pattern Category | Focus | Examples |
+|:----------------|:------|:---------|
+| 🔄 **Streaming Architectures** | Lambda, Kappa, Event Sourcing | [View Details](./docs/03-architecture-patterns/streaming-architectures/README.md) |
+| 📊 **Batch Architectures** | Medallion, Data Mesh, Hub-Spoke | [View Details](./docs/03-architecture-patterns/batch-architectures/README.md) |
+| 🔄 **Hybrid Architectures** | Lambda-Kappa, HTAP, Polyglot | [View Details](./docs/03-architecture-patterns/hybrid-architectures/README.md) |
+| 🏭 **Reference Architectures** | Industry-specific solutions | [View Details](./docs/03-architecture-patterns/reference-architectures/README.md) |
 
-### 📖 [Reference Documentation](./docs/reference/README.md)
+### 🛠️ [04 - Implementation Guides](./docs/04-implementation-guides/README.md)
 
-> **Technical reference material and specifications**
+> **Step-by-step implementation guidance**
 
-<details>
-<summary><b>📚 Click to expand reference topics</b></summary>
+| Guide Type | Focus | Documentation |
+|:-----------|:------|:--------------|
+| 🎯 **End-to-End Solutions** | Complete solution implementations | [View Details](./docs/04-implementation-guides/end-to-end-solutions/README.md) |
+| 🔗 **Integration Scenarios** | Service integration patterns | [View Details](./docs/04-implementation-guides/integration-scenarios/README.md) |
+| 🔄 **Migration Guides** | Legacy to cloud migrations | [View Details](./docs/04-implementation-guides/migration-guides/README.md) |
 
-- 🔌 [**API References**](./docs/reference/README.md#api-references)
-- 📊 [**System Views & DMVs**](./docs/reference/README.md#system-views)
-- 📝 [**Query Syntax Reference**](./docs/reference/README.md#query-syntax)
-- ⚙️ [**Configuration Parameters**](./docs/reference/README.md#configuration-parameters)
-- ⚠️ [**Limitations & Constraints**](./docs/reference/README.md#limitations)
+### 💡 [05 - Best Practices](./docs/05-best-practices/README.md)
 
-</details>
+> **Operational excellence across all services**
 
-### 🎨 [Diagrams](./docs/diagrams/README.md)
-
-> **Visual documentation and architectural diagrams**
-
-| Diagram Type | Description | Link |
-|:------------|:------------|:-----|
-| 🏗️ **Architecture** | System architecture diagrams | [View →](./docs/diagrams/README.md#architecture-diagrams) |
-| 🔄 **Data Flow** | Data movement and transformation | [View →](./docs/diagrams/README.md#data-flow-diagrams) |
-| ⚙️ **Process Flow** | Business process workflows | [View →](./docs/diagrams/README.md#process-flow-diagrams) |
-| 🔗 **Integration** | Service integration patterns | [View →](./docs/diagrams/README.md#integration-patterns) |
+| Practice Area | Focus | Coverage |
+|:-------------|:------|:---------|
+| 🛠️ **Service-Specific** | Per-service optimization | All major services |
+| 🔒 **Cross-Cutting Concerns** | Security, Performance, Cost | Platform-wide |
+| 🎯 **Operational Excellence** | Monitoring, DR, High Availability | Enterprise-ready |
 
 ---
 

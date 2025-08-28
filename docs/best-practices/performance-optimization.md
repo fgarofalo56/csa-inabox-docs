@@ -509,18 +509,7 @@ VACUUM sales_data RETAIN 30 DAYS;         -- Execute cleanup
 
 ### 🔄 Continuous Improvement Process
 
-```mermaid
-graph LR
-    A[📈 Monitor] --> B[🔍 Analyze]
-    B --> C[⚙️ Optimize]
-    C --> D[📋 Measure]
-    D --> A
-    
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff3e0
-```
+![Architecture diagram: best-practices-performance-optimization-diagram-1](../images/diagrams/best-practices-performance-optimization-diagram-1.png)
 
 ---
 

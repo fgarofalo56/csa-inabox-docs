@@ -60,7 +60,7 @@ ci/cd:
 tools:
   - changed-files:
     - any-glob-to-any-file:
-      - 'project-planning/tools/**/*'
+      - 'project_tracking/tools/**/*'
       - '*.js'
       - '*.py'
 

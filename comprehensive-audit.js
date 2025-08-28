@@ -193,7 +193,7 @@ class DocumentationAuditor {
       
       // Skip root-level files and certain special files
       if (rootFiles.includes(fileName) || 
-          relativePath.startsWith('project-planning') ||
+          relativePath.startsWith('project_tracking') ||
           fileName === 'CHANGELOG.md' ||
           fileName === 'LICENSE.md') {
         continue;
@@ -269,7 +269,7 @@ class DocumentationAuditor {
       const relativePath = path.relative(this.docsDir, filePath);
       
       // Skip certain files that don't need to be accessible
-      if (relativePath.startsWith('project-planning') ||
+      if (relativePath.startsWith('project_tracking') ||
           path.basename(filePath) === 'CHANGELOG.md' ||
           path.basename(filePath) === 'LICENSE.md') {
         continue;

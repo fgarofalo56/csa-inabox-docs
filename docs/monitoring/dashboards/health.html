@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Health Dashboard - Cloud Scale Analytics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #0066cc;
+            --success-color: #00a651;
+            --warning-color: #ffb700;
+            --danger-color: #d83b01;
+            --background: #f5f5f5;
+            --card-background: #ffffff;
+            --text-primary: #323130;
+            --text-secondary: #605e5c;
+            --border-color: #edebe9;
+            --shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .dashboard {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: var(--card-background);
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .header .status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        .status-indicator.healthy {
+            background: var(--success-color);
+        }
+
+        .status-indicator.warning {
+            background: var(--warning-color);
+        }
+
+        .status-indicator.critical {
+            background: var(--danger-color);
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: var(--card-background);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .metric-card .label {
+            font-size: 12px;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .metric-card .value {
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .metric-card .change {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .change.positive {
+            color: var(--success-color);
+        }
+
+        .change.negative {
+            color: var(--danger-color);
+        }
+
+        .section {
+            background: var(--card-background);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .section-header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .section-content {
+            padding: 20px;
+        }
+
+        .quality-score {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .score-circle {
+            position: relative;
+            width: 120px;
+            height: 120px;
+        }
+
+        .score-circle svg {
+            transform: rotate(-90deg);
+        }
+
+        .score-circle .background {
+            stroke: var(--border-color);
+            stroke-width: 8;
+            fill: none;
+        }
+
+        .score-circle .progress {
+            stroke-width: 8;
+            fill: none;
+            stroke-linecap: round;
+            transition: stroke-dashoffset 1s ease;
+        }
+
+        .score-circle .score-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .score-details {
+            flex: 1;
+        }
+
+        .score-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .score-item:last-child {
+            border-bottom: none;
+        }
+
+        .issues-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .issue-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid var(--border-color);
+            transition: background 0.2s;
+        }
+
+        .issue-item:hover {
+            background: var(--background);
+        }
+
+        .issue-item:last-child {
+            border-bottom: none;
+        }
+
+        .issue-severity {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .severity-high {
+            background: var(--danger-color);
+        }
+
+        .severity-medium {
+            background: var(--warning-color);
+        }
+
+        .severity-low {
+            background: var(--primary-color);
+        }
+
+        .issue-info {
+            flex: 1;
+        }
+
+        .issue-title {
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .issue-details {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .build-status {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .build-item {
+            padding: 15px;
+            background: var(--background);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .build-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .build-icon.success {
+            background: rgba(0, 166, 81, 0.1);
+            color: var(--success-color);
+        }
+
+        .build-icon.failure {
+            background: rgba(216, 59, 1, 0.1);
+            color: var(--danger-color);
+        }
+
+        .build-info {
+            flex: 1;
+        }
+
+        .build-name {
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+
+        .build-time {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .performance-chart {
+            height: 300px;
+            position: relative;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 100%;
+        }
+
+        .toolbar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #005a9e;
+        }
+
+        .btn-secondary {
+            background: var(--background);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--border-color);
+        }
+
+        .timestamp {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .quality-score {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <div class="header">
+            <h1>📊 Documentation Health Dashboard</h1>
+            <div class="status">
+                <span id="overall-status">Overall Health: Excellent</span>
+                <div class="status-indicator healthy"></div>
+            </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="label">Quality Score</div>
+                <div class="value">92%</div>
+                <div class="change positive">↑ 3% from last week</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Total Pages</div>
+                <div class="value">247</div>
+                <div class="change positive">↑ 12 new pages</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Broken Links</div>
+                <div class="value">3</div>
+                <div class="change negative">↑ 1 from yesterday</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Build Success Rate</div>
+                <div class="value">98.5%</div>
+                <div class="change positive">↑ 0.5% improvement</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Avg Load Time</div>
+                <div class="value">1.2s</div>
+                <div class="change positive">↓ 0.3s faster</div>
+            </div>
+            <div class="metric-card">
+                <div class="label">Search Coverage</div>
+                <div class="value">100%</div>
+                <div class="change">No change</div>
+            </div>
+        </div>
+
+        <!-- Documentation Quality Score -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">Documentation Quality Analysis</div>
+                <div class="toolbar">
+                    <button class="btn btn-secondary" onclick="refreshQuality()">Refresh</button>
+                    <button class="btn" onclick="exportQuality()">Export Report</button>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="quality-score">
+                    <div class="score-circle">
+                        <svg width="120" height="120">
+                            <circle cx="60" cy="60" r="52" class="background"></circle>
+                            <circle cx="60" cy="60" r="52" class="progress" 
+                                    stroke="#00a651"
+                                    stroke-dasharray="326.7" 
+                                    stroke-dashoffset="26"></circle>
+                        </svg>
+                        <div class="score-text">92</div>
+                    </div>
+                    <div class="score-details">
+                        <div class="score-item">
+                            <span>Content Completeness</span>
+                            <strong>95%</strong>
+                        </div>
+                        <div class="score-item">
+                            <span>Code Examples Coverage</span>
+                            <strong>88%</strong>
+                        </div>
+                        <div class="score-item">
+                            <span>Image Optimization</span>
+                            <strong>91%</strong>
+                        </div>
+                        <div class="score-item">
+                            <span>Metadata Quality</span>
+                            <strong>94%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Active Issues -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">Active Issues (7)</div>
+                <div class="toolbar">
+                    <button class="btn btn-secondary" onclick="filterIssues('all')">All</button>
+                    <button class="btn btn-secondary" onclick="filterIssues('high')">High</button>
+                    <button class="btn btn-secondary" onclick="filterIssues('medium')">Medium</button>
+                    <button class="btn btn-secondary" onclick="filterIssues('low')">Low</button>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="issues-list" id="issues-list">
+                    <div class="issue-item">
+                        <div class="issue-severity severity-high"></div>
+                        <div class="issue-info">
+                            <div class="issue-title">Broken link in Serverless SQL guide</div>
+                            <div class="issue-details">Page: /docs/serverless-sql/configuration.md • Detected: 2 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="issue-item">
+                        <div class="issue-severity severity-high"></div>
+                        <div class="issue-info">
+                            <div class="issue-title">Missing images in Delta Lake tutorial</div>
+                            <div class="issue-details">Page: /docs/architecture/delta-lakehouse/README.md • Detected: 5 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="issue-item">
+                        <div class="issue-severity severity-medium"></div>
+                        <div class="issue-info">
+                            <div class="issue-title">Outdated code sample in API reference</div>
+                            <div class="issue-details">Page: /docs/reference/api.md • Detected: 1 day ago</div>
+                        </div>
+                    </div>
+                    <div class="issue-item">
+                        <div class="issue-severity severity-medium"></div>
+                        <div class="issue-info">
+                            <div class="issue-title">Search index not updated</div>
+                            <div class="issue-details">5 new pages not indexed • Detected: 3 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="issue-item">
+                        <div class="issue-severity severity-low"></div>
+                        <div class="issue-info">
+                            <div class="issue-title">Large unoptimized image</div>
+                            <div class="issue-details">Page: /docs/guides/getting-started.md • Size: 2.4MB • Detected: 6 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="issue-item">
+                        <div class="issue-severity severity-low"></div>
+                        <div class="issue-info">
+                            <div class="issue-title">Missing meta description</div>
+                            <div class="issue-details">Page: /docs/best-practices/security.md • Detected: 2 days ago</div>
+                        </div>
+                    </div>
+                    <div class="issue-item">
+                        <div class="issue-severity severity-low"></div>
+                        <div class="issue-info">
+                            <div class="issue-title">Duplicate content detected</div>
+                            <div class="issue-details">Pages: monitoring.md and monitoring/README.md • Detected: 3 days ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Build Status -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">Build & Deployment Status</div>
+                <div class="toolbar">
+                    <button class="btn" onclick="triggerBuild()">Trigger Build</button>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="build-status">
+                    <div class="build-item">
+                        <div class="build-icon success">✓</div>
+                        <div class="build-info">
+                            <div class="build-name">Documentation Build</div>
+                            <div class="build-time">Last run: 15 minutes ago</div>
+                        </div>
+                    </div>
+                    <div class="build-item">
+                        <div class="build-icon success">✓</div>
+                        <div class="build-info">
+                            <div class="build-name">Link Checker</div>
+                            <div class="build-time">Last run: 1 hour ago</div>
+                        </div>
+                    </div>
+                    <div class="build-item">
+                        <div class="build-icon failure">✗</div>
+                        <div class="build-info">
+                            <div class="build-name">Image Optimization</div>
+                            <div class="build-time">Failed: 2 hours ago</div>
+                        </div>
+                    </div>
+                    <div class="build-item">
+                        <div class="build-icon success">✓</div>
+                        <div class="build-info">
+                            <div class="build-name">Search Index</div>
+                            <div class="build-time">Last run: 3 hours ago</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Performance Monitoring -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-title">Performance Metrics</div>
+                <div class="toolbar">
+                    <button class="btn btn-secondary" onclick="changeTimeRange('1h')">1 Hour</button>
+                    <button class="btn btn-secondary" onclick="changeTimeRange('24h')">24 Hours</button>
+                    <button class="btn btn-secondary" onclick="changeTimeRange('7d')">7 Days</button>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="performance-chart">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="timestamp">Last updated: <span id="last-updated"></span></div>
+    </div>
+
+    <script>
+        // Dashboard functionality
+        class HealthDashboard {
+            constructor() {
+                this.issues = [];
+                this.metrics = {};
+                this.buildStatus = {};
+                this.performanceData = [];
+                this.init();
+            }
+
+            init() {
+                this.updateTimestamp();
+                this.loadData();
+                this.setupAutoRefresh();
+                this.initChart();
+            }
+
+            updateTimestamp() {
+                const now = new Date();
+                document.getElementById('last-updated').textContent = now.toLocaleString();
+            }
+
+            async loadData() {
+                try {
+                    // Fetch health metrics
+                    const response = await fetch('/api/monitoring/health');
+                    const data = await response.json();
+                    
+                    this.updateMetrics(data.metrics);
+                    this.updateIssues(data.issues);
+                    this.updateBuildStatus(data.buildStatus);
+                    this.updatePerformance(data.performance);
+                    this.updateOverallStatus(data.overallHealth);
+                } catch (error) {
+                    console.error('Failed to load health data:', error);
+                    // Use mock data for demo
+                    this.loadMockData();
+                }
+            }
+
+            loadMockData() {
+                // Mock data for demonstration
+                this.updateMetrics({
+                    qualityScore: 92,
+                    totalPages: 247,
+                    brokenLinks: 3,
+                    buildSuccessRate: 98.5,
+                    avgLoadTime: 1.2,
+                    searchCoverage: 100
+                });
+            }
+
+            updateMetrics(metrics) {
+                // Update metric cards
+                const cards = document.querySelectorAll('.metric-card');
+                // Update each card with real data
+            }
+
+            updateIssues(issues) {
+                this.issues = issues;
+                // Update issues list
+            }
+
+            updateBuildStatus(status) {
+                this.buildStatus = status;
+                // Update build status display
+            }
+
+            updatePerformance(data) {
+                this.performanceData = data;
+                this.updateChart();
+            }
+
+            updateOverallStatus(health) {
+                const statusElement = document.getElementById('overall-status');
+                const indicator = document.querySelector('.status-indicator');
+                
+                statusElement.textContent = `Overall Health: ${health.status}`;
+                indicator.className = `status-indicator ${health.level}`;
+            }
+
+            setupAutoRefresh() {
+                // Auto-refresh every 5 minutes
+                setInterval(() => {
+                    this.loadData();
+                    this.updateTimestamp();
+                }, 5 * 60 * 1000);
+            }
+
+            initChart() {
+                const canvas = document.getElementById('performanceChart');
+                if (!canvas) return;
+
+                const ctx = canvas.getContext('2d');
+                // Initialize performance chart
+                // Would use Chart.js or similar library in production
+            }
+
+            updateChart() {
+                // Update chart with new performance data
+            }
+        }
+
+        // Global functions for button actions
+        function refreshQuality() {
+            dashboard.loadData();
+        }
+
+        function exportQuality() {
+            const data = dashboard.getQualityReport();
+            const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `health-report-${new Date().toISOString()}.json`;
+            a.click();
+        }
+
+        function filterIssues(severity) {
+            const items = document.querySelectorAll('.issue-item');
+            items.forEach(item => {
+                if (severity === 'all') {
+                    item.style.display = 'flex';
+                } else {
+                    const hasSeverity = item.querySelector(`.severity-${severity}`);
+                    item.style.display = hasSeverity ? 'flex' : 'none';
+                }
+            });
+        }
+
+        function triggerBuild() {
+            if (confirm('Trigger a new documentation build?')) {
+                fetch('/api/monitoring/build/trigger', { method: 'POST' })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert('Build triggered successfully!');
+                        dashboard.loadData();
+                    })
+                    .catch(error => {
+                        alert('Failed to trigger build');
+                    });
+            }
+        }
+
+        function changeTimeRange(range) {
+            // Update performance chart time range
+            dashboard.loadPerformanceData(range);
+        }
+
+        // Initialize dashboard
+        const dashboard = new HealthDashboard();
+    </script>
+</body>
+</html>

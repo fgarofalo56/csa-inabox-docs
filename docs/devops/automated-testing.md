@@ -5,13 +5,13 @@
 !!! abstract "Overview"
     This guide covers automated testing strategies for Azure Synapse Analytics, including pipeline testing, data validation, and continuous integration approaches.
 
-## :material-test-tube: Testing Framework
+## 🧪 Testing Framework
 
 A comprehensive testing strategy ensures reliable and stable Azure Synapse Analytics implementations.
 
 <div class="grid cards" markdown>
 
-- :material-pipe:{ .lg .middle } __Pipeline Testing__
+- ⚡ __Pipeline Testing__
 
     ---
     
@@ -19,7 +19,7 @@ A comprehensive testing strategy ensures reliable and stable Azure Synapse Analy
     
     [:octicons-arrow-right-24: Pipeline tests](#pipeline-testing)
 
-- :material-table:{ .lg .middle } __Data Validation__
+- 📋 __Data Validation__
 
     ---
     
@@ -27,7 +27,7 @@ A comprehensive testing strategy ensures reliable and stable Azure Synapse Analy
     
     [:octicons-arrow-right-24: Data validation](#data-validation)
 
-- :material-notebook-edit:{ .lg .middle } __Notebook Testing__
+- 📝 __Notebook Testing__
 
     ---
     
@@ -35,7 +35,7 @@ A comprehensive testing strategy ensures reliable and stable Azure Synapse Analy
     
     [:octicons-arrow-right-24: Notebook tests](#notebook-testing)
 
-- :material-connection:{ .lg .middle } __Integration Testing__
+- 🔗 __Integration Testing__
 
     ---
     

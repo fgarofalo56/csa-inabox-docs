@@ -5,13 +5,13 @@
 !!! abstract "Overview"
     This guide covers network security best practices for Azure Synapse Analytics, including private endpoints, network isolation, firewall configuration, and secure connectivity patterns.
 
-## :material-security-network: Network Security Architecture
+## 🔐 Network Security Architecture
 
 Implementing robust network security is critical for protecting your Azure Synapse Analytics environment.
 
 <div class="grid cards" markdown>
 
-- :material-private-network:{ .lg .middle } __Private Endpoints__
+- 🔒 __Private Endpoints__
 
     ---
     
@@ -19,7 +19,7 @@ Implementing robust network security is critical for protecting your Azure Synap
     
     [:octicons-arrow-right-24: Private endpoints](#private-endpoints)
 
-- :material-firewall:{ .lg .middle } __Firewall Configuration__
+- 🛡️ __Firewall Configuration__
 
     ---
     
@@ -27,7 +27,7 @@ Implementing robust network security is critical for protecting your Azure Synap
     
     [:octicons-arrow-right-24: Firewall setup](#firewall-configuration)
 
-- :material-shield-lock:{ .lg .middle } __Network Isolation__
+- 🛡️ __Network Isolation__
 
     ---
     
@@ -35,7 +35,7 @@ Implementing robust network security is critical for protecting your Azure Synap
     
     [:octicons-arrow-right-24: Network isolation](#network-isolation)
 
-- :material-transit-connection-variant:{ .lg .middle } __Secure Connectivity__
+- 🚀 __Secure Connectivity__
 
     ---
     

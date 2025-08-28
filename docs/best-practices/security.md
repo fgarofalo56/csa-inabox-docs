@@ -817,20 +817,7 @@ function Test-SynapseSecurityPosture {
 
 ### 🔄 Continuous Security Improvement
 
-```mermaid
-graph TD
-    A[🔍 Assess] --> B[📋 Plan]
-    B --> C[🚀 Implement]
-    C --> D[📋 Monitor]
-    D --> E[🔄 Review]
-    E --> A
-    
-    style A fill:#e3f2fd
-    style B fill:#f3e5f5
-    style C fill:#e8f5e8
-    style D fill:#fff8e1
-    style E fill:#fce4ec
-```
+![Architecture diagram: best-practices-security-diagram-1](../images/diagrams/best-practices-security-diagram-1.png)
 
 ### 📚 Additional Resources
 

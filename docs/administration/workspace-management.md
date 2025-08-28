@@ -5,13 +5,13 @@
 !!! abstract "Overview"
     This guide covers best practices for managing Azure Synapse Analytics workspaces, including governance, access control, and operational tasks.
 
-## :material-office-building: Workspace Administration
+## 🏢 Workspace Administration
 
 Effective management of Azure Synapse Analytics workspaces ensures optimal performance, security, and governance.
 
 <div class="grid cards" markdown>
 
-- :material-account-supervisor:{ .lg .middle } __Access Management__
+- 👥 __Access Management__
 
     ---
     
@@ -19,7 +19,7 @@ Effective management of Azure Synapse Analytics workspaces ensures optimal perfo
     
     [:octicons-arrow-right-24: Access control](#access-control)
 
-- :material-tag-multiple:{ .lg .middle } __Resource Tagging__
+- 🏷️ __Resource Tagging__
 
     ---
     
@@ -27,7 +27,7 @@ Effective management of Azure Synapse Analytics workspaces ensures optimal perfo
     
     [:octicons-arrow-right-24: Tagging strategy](#tagging-strategy)
 
-- :material-backup-restore:{ .lg .middle } __Backup and Recovery__
+- 💾 __Backup and Recovery__
 
     ---
     
@@ -35,7 +35,7 @@ Effective management of Azure Synapse Analytics workspaces ensures optimal perfo
     
     [:octicons-arrow-right-24: Backup procedures](#backup-procedures)
 
-- :material-finance:{ .lg .middle } __Cost Management__
+- 💰 __Cost Management__
 
     ---
     
