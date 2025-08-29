@@ -27,8 +27,8 @@
 
 | Guide | Description | Audience | Status |
 |-------|-------------|----------|--------|
-| **[Contributing Guide](CONTRIBUTING_GUIDE.md)** | How to contribute code and docs | 🤝 Contributors | 📝 Planned |
-| **[Code Review Guide](CODE_REVIEW_GUIDE.md)** | Standards for reviewing code | 👀 Reviewers | 📝 Planned |
+| **[Contributing Guide](CONTRIBUTING_GUIDE.md)** | How to contribute code and docs | 🤝 Contributors | ✅ Available |
+| **[Code Review Guide](CODE_REVIEW_GUIDE.md)** | Standards for reviewing code | 👀 Reviewers | ✅ Available |
 
 ---
 
