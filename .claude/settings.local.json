@@ -95,7 +95,8 @@
       "Bash(docker-compose:*)",
       "Bash([ -d \"azure-agents\" ])",
       "Bash([ -d \"data-services\" ])",
-      "Bash(pip3 install:*)"
+      "Bash(pip3 install:*)",
+      "Bash(markdownlint:*)"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
