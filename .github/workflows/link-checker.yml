@@ -97,7 +97,7 @@ jobs:
           
       - name: Create or update issue on broken links
         if: steps.run_checker.outputs.checker_exit_code != '0'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
