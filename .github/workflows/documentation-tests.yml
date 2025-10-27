@@ -107,7 +107,7 @@ jobs:
       
       - name: Upload test results
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: test-results-${{ matrix.test-type }}
           path: |
@@ -177,7 +177,7 @@ jobs:
       
       - name: Upload built site
         if: success()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: mkdocs-site
           path: site/
@@ -402,7 +402,7 @@ jobs:
           fi
       
       - name: Upload combined report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: documentation-test-report
           path: test-report.md
