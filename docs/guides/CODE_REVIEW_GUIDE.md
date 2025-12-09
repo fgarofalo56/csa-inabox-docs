@@ -212,6 +212,8 @@ __NIT:__ Variable name `d` isn't very descriptive. Maybe `document` or `doc_data
 __QUESTION:__ What happens if `response.json()` fails? Should we handle that exception?
 
 __PRAISE:__ Great use of the builder pattern here! This makes the API much more intuitive to use.
+
+```text
 ```
 
 #### Poor Feedback Examples

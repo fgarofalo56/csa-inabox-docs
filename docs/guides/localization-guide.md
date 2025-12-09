@@ -318,9 +318,11 @@ Exécutez la commande suivante :
 ```bash
 az --version  # version en français
 ```
+
+```text
 ```
 
-#### Links and References
+### Links and References
 
 - Update links to localized versions when available
 - Keep English links if no translation exists

@@ -189,15 +189,16 @@ __Want to be notified?__ [Subscribe to updates →](#)
 ## 🎉 Success Stories
 
 > __"The DP-203 guide was instrumental in my success. The mapped resources and practice scenarios perfectly aligned with the exam. Passed with 820!"__
->
 > *- Sarah M., Data Engineer*
 
+---
+
 > __"After failing my first attempt, I used this guide for my second try. The detailed explanations and study schedule helped me focus on weak areas. Passed with 780!"__
->
 > *- Michael K., Platform Engineer*
 
+---
+
 > __"The exam day strategies alone were worth it. Knowing how to manage time and approach different question types made a huge difference."__
->
 > *- Priya R., Data Analyst transitioning to Engineering*
 
 ---

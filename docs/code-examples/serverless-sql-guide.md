@@ -97,7 +97,7 @@ WITH (
 
 ```
 
-**Performance Comparison:**
+__Performance Comparison:__
 
 | File Format | Query Time | Data Processed | Cost |
 |-------------|------------|----------------|------|

@@ -264,9 +264,11 @@ output = await generator.generate(
     output_path="custom_output.pptx"
 )
 ```
-```text
 
-### **Configuration Examples**
+```text
+```
+
+### __Configuration Examples__
 
 ```markdown
 ## Configuration
@@ -957,9 +959,11 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 - Credit to contributors
 - Third-party libraries used
+
+```text
 ```
 
-### **Document Header Template**
+### __Document Header Template__
 
 ```text
 # 🚀 Document Title
@@ -1205,9 +1209,11 @@ __Solution:__ Check API key configuration in `.env` file
 
 - [Deploy agents to production](deployment-guide.md)
 - [Monitor agent performance](monitoring.md)
+
+```text
 ```
 
-### **Poor Documentation Example**
+### __Poor Documentation Example__
 
 ```text
 # agents

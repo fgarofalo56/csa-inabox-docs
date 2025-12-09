@@ -336,6 +336,8 @@ Optimize your Synapse SQL queries using these techniques:
 1. __Partition large tables__
    - Partition by date for time-series data
    - Ensure partitions have >1 million rows
+
+```text
 ```
 
 ---
@@ -352,10 +354,10 @@ Optimize your Synapse SQL queries using these techniques:
 
 ### Creating Pull Request
 
-1. **Navigate to your fork** on GitHub
-2. **Click "Pull Request"** button
-3. **Select base and compare** branches
-4. **Fill out PR template**:
+1. __Navigate to your fork__ on GitHub
+2. __Click "Pull Request"__ button
+3. __Select base and compare__ branches
+4. __Fill out PR template__:
 
 ```markdown
 ## Description
