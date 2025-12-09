@@ -1,6 +1,6 @@
 # 📝 Multimedia Templates Library
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📝 Templates**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📝 Templates__
 
 ![Status: Resources](https://img.shields.io/badge/Status-Resources-brightgreen)
 ![Templates: 50+](https://img.shields.io/badge/Templates-50+-blue)
@@ -15,7 +15,8 @@ Ready-to-use templates for all multimedia content types. These templates ensure 
 ### 📹 Video Templates
 
 #### Tutorial Video Script Template
-**[Download Template](./video/tutorial-script-template.md)**
+
+__[Download Template](./video/tutorial-script-template.md)__
 
 ```markdown
 # Video Script: [Tutorial Title]
@@ -62,7 +63,8 @@ and [learning objective 3]."
 ```
 
 #### Screen Recording Checklist
-**[Download Checklist](./video/screen-recording-checklist.md)**
+
+__[Download Checklist](./video/screen-recording-checklist.md)__
 
 ```markdown
 # Screen Recording Preparation Checklist
@@ -100,7 +102,8 @@ and [learning objective 3]."
 ### 🎮 Interactive Demo Templates
 
 #### Code Playground Template
-**[Download Template](./interactive/code-playground-template.html)**
+
+__[Download Template](./interactive/code-playground-template.html)__
 
 ```html
 <!DOCTYPE html>
@@ -399,7 +402,8 @@ Request units: 10.2 RU`;
 ### 🎨 Animation Templates
 
 #### Lottie Animation Configuration
-**[Download Template](./animation/lottie-config-template.json)**
+
+__[Download Template](./animation/lottie-config-template.json)__
 
 ```json
 {
@@ -493,7 +497,8 @@ Request units: 10.2 RU`;
 ### 📊 Presentation Templates
 
 #### Slide Deck Structure
-**[Download Template](./presentation/slide-deck-template.yaml)**
+
+__[Download Template](./presentation/slide-deck-template.yaml)__
 
 ```yaml
 presentation:
@@ -644,7 +649,8 @@ presentation:
 ### 🎧 Audio Templates
 
 #### Podcast Episode Script
-**[Download Template](./audio/podcast-script-template.md)**
+
+__[Download Template](./audio/podcast-script-template.md)__
 
 ```markdown
 # Podcast Episode Script
@@ -769,7 +775,8 @@ when we explore [next episode topic].
 ## 🛠️ Production Checklists
 
 ### Master Production Checklist
-**[Download Checklist](./checklists/master-production-checklist.md)**
+
+__[Download Checklist](./checklists/master-production-checklist.md)__
 
 ```markdown
 # Master Multimedia Production Checklist
@@ -822,6 +829,7 @@ when we explore [next episode topic].
 ## 📋 Quick Start Templates
 
 ### 5-Minute Tutorial Template
+
 ```yaml
 quick_tutorial:
   duration: 5_minutes
@@ -845,6 +853,7 @@ quick_tutorial:
 ```
 
 ### Interactive Quiz Template
+
 ```javascript
 const quizTemplate = {
   title: "Azure Synapse Knowledge Check",
@@ -892,13 +901,15 @@ const quizTemplate = {
 ## 🎯 Template Usage Guidelines
 
 ### Selecting the Right Template
-1. **Identify content type** (video, audio, interactive, etc.)
-2. **Determine audience level** (beginner, intermediate, advanced)
-3. **Choose appropriate duration** (quick, standard, comprehensive)
-4. **Select matching template** from library
-5. **Customize for specific needs**
+
+1. __Identify content type__ (video, audio, interactive, etc.)
+2. __Determine audience level__ (beginner, intermediate, advanced)
+3. __Choose appropriate duration__ (quick, standard, comprehensive)
+4. __Select matching template__ from library
+5. __Customize for specific needs__
 
 ### Customization Best Practices
+
 - Maintain brand consistency
 - Keep accessibility features
 - Don't remove required metadata
@@ -909,10 +920,10 @@ const quizTemplate = {
 ## 📚 Additional Resources
 
 - [Template Customization Guide](./guides/customization.md)
-- [Brand Assets](../brand/assets/)
-- [Stock Media Library](../stock/)
-- [Production Tools](../tools/)
-- [Example Projects](../examples/)
+- [Brand Assets](../brand/assets/README.md)
+- [Stock Media Library](../stock/README.md)
+- [Production Tools](../tools/README.md)
+- [Example Projects](../examples/README.md)
 
 ---
 

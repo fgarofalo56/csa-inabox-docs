@@ -1,41 +1,43 @@
 # 🐍 PySpark Data Processing Fundamentals Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../README.md)** | **💻 [Code Labs](README.md)** | **🐍 PySpark Fundamentals**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __💻 [Code Labs](README.md)__ | __🐍 PySpark Fundamentals__
 
 ![Lab](https://img.shields.io/badge/Lab-PySpark_Fundamentals-blue)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)
 ![Level](https://img.shields.io/badge/Level-Beginner_to_Intermediate-yellow)
 ![Interactive](https://img.shields.io/badge/Format-Interactive-orange)
 
-**Master distributed data processing with PySpark through hands-on exercises. Learn DataFrames, transformations, actions, and optimization techniques using real-world datasets and business scenarios.**
+__Master distributed data processing with PySpark through hands-on exercises. Learn DataFrames, transformations, actions, and optimization techniques using real-world datasets and business scenarios.__
 
 ## 🎯 Learning Objectives
 
 By completing this lab, you will be able to:
 
-- ✅ **Create and manipulate** PySpark DataFrames from various data sources
-- ✅ **Apply transformations** to process and clean large datasets efficiently
-- ✅ **Use built-in functions** for aggregations, joins, and window operations
-- ✅ **Optimize PySpark jobs** for better performance and resource utilization
-- ✅ **Debug common issues** and interpret Spark UI for troubleshooting
-- ✅ **Implement best practices** for production-ready PySpark applications
+- ✅ __Create and manipulate__ PySpark DataFrames from various data sources
+- ✅ __Apply transformations__ to process and clean large datasets efficiently
+- ✅ __Use built-in functions__ for aggregations, joins, and window operations
+- ✅ __Optimize PySpark jobs__ for better performance and resource utilization
+- ✅ __Debug common issues__ and interpret Spark UI for troubleshooting
+- ✅ __Implement best practices__ for production-ready PySpark applications
 
 ## ⏱️ Time Estimate: 2-3 hours
 
-- **Setup & Basics**: 30 minutes
-- **Data Processing Exercises**: 90 minutes  
-- **Optimization & Best Practices**: 45 minutes
-- **Challenge Projects**: 30 minutes
+- __Setup & Basics__: 30 minutes
+- __Data Processing Exercises__: 90 minutes  
+- __Optimization & Best Practices__: 45 minutes
+- __Challenge Projects__: 30 minutes
 
 ## 🧪 Lab Environment
 
-### **Option A: Azure Synapse Studio** *(Recommended)*
+### __Option A: Azure Synapse Studio__ *(Recommended)*
+
 ```python
 # Already configured with Spark pools - just start coding!
 # Access via: https://web.azuresynapse.net/
 ```
 
-### **Option B: Local Development**
+### __Option B: Local Development__
+
 ```bash
 # Install PySpark locally
 pip install pyspark jupyter pandas numpy matplotlib seaborn
@@ -46,7 +48,8 @@ export PYSPARK_DRIVER_PYTHON_OPTS="lab"
 pyspark
 ```
 
-### **Option C: GitHub Codespaces**
+### __Option C: GitHub Codespaces__
+
 1. Open [PySpark Lab Repository](https://github.com/your-org/pyspark-lab)
 2. Click "Code" → "Create codespace"  
 3. Environment automatically configured!
@@ -55,7 +58,8 @@ pyspark
 
 We'll work with realistic business datasets throughout this lab:
 
-### **Primary Dataset: E-commerce Transactions**
+### __Primary Dataset: E-commerce Transactions__
+
 ```python
 # Sample data structure
 {
@@ -71,17 +75,18 @@ We'll work with realistic business datasets throughout this lab:
 }
 ```
 
-### **Supporting Datasets**
-- **Customer Profiles**: Demographics, segments, lifetime value
-- **Product Catalog**: Details, pricing, inventory levels
-- **Store Locations**: Geographic data for analysis
-- **Weather Data**: External data for correlation analysis
+### __Supporting Datasets__
+
+- __Customer Profiles__: Demographics, segments, lifetime value
+- __Product Catalog__: Details, pricing, inventory levels
+- __Store Locations__: Geographic data for analysis
+- __Weather Data__: External data for correlation analysis
 
 ## 📚 Lab Modules
 
 ## 🚀 Module 1: PySpark Fundamentals (30 minutes)
 
-### **Exercise 1.1: Setting Up Your Spark Session**
+### __Exercise 1.1: Setting Up Your Spark Session__
 
 ```python
 from pyspark.sql import SparkSession
@@ -105,9 +110,9 @@ print(f"Spark Version: {spark.version}")
 print(f"Available cores: {spark.sparkContext.defaultParallelism}")
 ```
 
-**🎯 Challenge**: Configure Spark for your specific environment (local vs. cloud) and explain each configuration parameter.
+__🎯 Challenge__: Configure Spark for your specific environment (local vs. cloud) and explain each configuration parameter.
 
-### **Exercise 1.2: Creating Your First DataFrame**
+### __Exercise 1.2: Creating Your First DataFrame__
 
 ```python
 # Method 1: From Python data structures
@@ -141,7 +146,8 @@ transactions_df = spark.read \
 print(f"Dataset shape: {transactions_df.count()} rows, {len(transactions_df.columns)} columns")
 ```
 
-**🔍 Exploration Challenge**:
+__🔍 Exploration Challenge__:
+
 ```python
 # YOUR TURN: Explore the dataset
 # 1. Display first 10 rows with formatting
@@ -165,11 +171,12 @@ transactions_df.printSchema()
 transactions_df.describe().show()
 transactions_df.select([count(when(col(c).isNull(), c)).alias(c) for c in transactions_df.columns]).show()
 ```
+
 </details>
 
 ## 🔄 Module 2: Data Transformations (45 minutes)
 
-### **Exercise 2.1: Basic Transformations**
+### __Exercise 2.1: Basic Transformations__
 
 ```python
 # Select specific columns and create derived fields
@@ -192,7 +199,8 @@ enhanced_df = transactions_df.select(
 enhanced_df.show(5)
 ```
 
-**🎯 Your Turn - Data Cleaning**:
+__🎯 Your Turn - Data Cleaning__:
+
 ```python
 # Clean and standardize the data
 cleaned_df = enhanced_df \
@@ -234,9 +242,10 @@ cleaned_df = enhanced_df \
 
 cleaned_df.show(5)
 ```
+
 </details>
 
-### **Exercise 2.2: Aggregations and Group Operations**
+### __Exercise 2.2: Aggregations and Group Operations__
 
 ```python
 # Basic aggregations
@@ -264,7 +273,8 @@ category_analysis = cleaned_df.groupBy("category") \
 category_analysis.show()
 ```
 
-**🎯 Advanced Aggregation Challenge**:
+__🎯 Advanced Aggregation Challenge__:
+
 ```python
 # Create a comprehensive customer analysis
 customer_metrics = cleaned_df.groupBy("customer_id") \
@@ -324,11 +334,12 @@ rfm_df = customer_metrics \
 
 rfm_df.show(10)
 ```
+
 </details>
 
 ## 🔗 Module 3: Joins and Window Functions (45 minutes)
 
-### **Exercise 3.1: DataFrame Joins**
+### __Exercise 3.1: DataFrame Joins__
 
 ```python
 # Create customer dimension data
@@ -359,7 +370,8 @@ enriched_df = transactions_df \
 enriched_df.select("transaction_id", "name", "product_name", "amount", "segment").show(10)
 ```
 
-**🎯 Join Challenge - Sales Analysis**:
+__🎯 Join Challenge - Sales Analysis__:
+
 ```python
 # Create a comprehensive sales report with multiple joins
 # Requirements:
@@ -373,7 +385,7 @@ enriched_df.select("transaction_id", "name", "product_name", "amount", "segment"
 sales_report_df = # Complete this implementation
 ```
 
-### **Exercise 3.2: Window Functions**
+### __Exercise 3.2: Window Functions__
 
 ```python
 from pyspark.sql.window import Window
@@ -396,7 +408,8 @@ windowed_analysis.select(
 ).show(10)
 ```
 
-**🎯 Advanced Window Functions Challenge**:
+__🎯 Advanced Window Functions Challenge__:
+
 ```python
 # Advanced analytics using window functions
 # Calculate:
@@ -418,7 +431,7 @@ advanced_analytics = enriched_df \
 
 ## 🚀 Module 4: Performance Optimization (30 minutes)
 
-### **Exercise 4.1: Understanding Spark Execution**
+### __Exercise 4.1: Understanding Spark Execution__
 
 ```python
 # Enable Spark UI and examine query plans
@@ -445,7 +458,7 @@ execution_time = time.time() - start_time
 print(f"Execution time: {execution_time:.2f} seconds")
 ```
 
-### **Exercise 4.2: Optimization Techniques**
+### __Exercise 4.2: Optimization Techniques__
 
 ```python
 # Optimization 1: Predicate Pushdown
@@ -475,7 +488,8 @@ print("=== Optimized Query Plan ===")
 optimized_with_broadcast.explain(True)
 ```
 
-**🎯 Performance Tuning Challenge**:
+__🎯 Performance Tuning Challenge__:
+
 ```python
 # YOUR TASK: Optimize this complex query
 complex_query = transactions_df \
@@ -504,7 +518,7 @@ optimized_complex_query = # YOUR OPTIMIZED VERSION
 
 ## 📊 Module 5: Data Visualization Integration (20 minutes)
 
-### **Exercise 5.1: Converting to Pandas for Visualization**
+### __Exercise 5.1: Converting to Pandas for Visualization__
 
 ```python
 import matplotlib.pyplot as plt
@@ -554,7 +568,7 @@ plt.show()
 
 ## 🎯 Module 6: Challenge Projects (30 minutes)
 
-### **Challenge 1: Customer Cohort Analysis**
+### __Challenge 1: Customer Cohort Analysis__
 
 ```python
 """
@@ -583,7 +597,7 @@ def build_cohort_analysis(transactions_df):
 cohort_result = build_cohort_analysis(enriched_df)
 ```
 
-### **Challenge 2: Real-Time Streaming Simulation**
+### __Challenge 2: Real-Time Streaming Simulation__
 
 ```python
 """
@@ -614,7 +628,7 @@ for i in range(0, total_rows, batch_size):
     process_streaming_batch(batch_df, i // batch_size)
 ```
 
-### **Challenge 3: Machine Learning Feature Engineering**
+### __Challenge 3: Machine Learning Feature Engineering__
 
 ```python
 """
@@ -644,7 +658,7 @@ ml_features = create_ml_features(enriched_df, customers_df)
 
 ## ✅ Lab Validation & Testing
 
-### **Automated Test Suite**
+### __Automated Test Suite__
 
 ```python
 def run_lab_tests():
@@ -712,7 +726,7 @@ def run_lab_tests():
 run_lab_tests()
 ```
 
-### **Performance Benchmark**
+### __Performance Benchmark__
 
 ```python
 def benchmark_performance():
@@ -744,7 +758,7 @@ performance_gain = benchmark_performance()
 
 ## 🎓 Knowledge Assessment
 
-### **Quick Quiz**
+### __Quick Quiz__
 
 ```python
 # Answer these questions in comments:
@@ -767,7 +781,7 @@ performance_gain = benchmark_performance()
 """
 ```
 
-### **Practical Assessment**
+### __Practical Assessment__
 
 Complete this real-world scenario:
 
@@ -799,24 +813,27 @@ def build_marketing_report(transactions_df, customers_df, products_df):
 marketing_report = build_marketing_report(transactions_df, customers_df, products_df)
 ```
 
-## 🎉 Congratulations!
+## 🎉 Congratulations
 
 You've completed the PySpark Fundamentals Lab! Here's what you've accomplished:
 
-### **✅ Skills Gained**
-- **DataFrame Operations**: Creation, transformation, and manipulation
-- **Data Processing**: Cleaning, filtering, and aggregation techniques
-- **Advanced Analytics**: Joins, window functions, and complex queries
-- **Performance Optimization**: Caching, partitioning, and query tuning
-- **Production Practices**: Testing, monitoring, and error handling
+### __✅ Skills Gained__
 
-### **🔧 Technical Achievements**
+- __DataFrame Operations__: Creation, transformation, and manipulation
+- __Data Processing__: Cleaning, filtering, and aggregation techniques
+- __Advanced Analytics__: Joins, window functions, and complex queries
+- __Performance Optimization__: Caching, partitioning, and query tuning
+- __Production Practices__: Testing, monitoring, and error handling
+
+### __🔧 Technical Achievements__
+
 - Processed large datasets efficiently using distributed computing
 - Implemented complex business logic using PySpark functions
 - Optimized queries for better performance and resource utilization
 - Created reusable, maintainable code following best practices
 
-### **📊 Business Impact Understanding**
+### __📊 Business Impact Understanding__
+
 - Translated business requirements into technical solutions
 - Built analytics that drive real business decisions  
 - Implemented patterns used in production data pipelines
@@ -824,44 +841,46 @@ You've completed the PySpark Fundamentals Lab! Here's what you've accomplished:
 
 ## 🚀 Next Steps
 
-### **Continue Your Learning Journey**
+### __Continue Your Learning Journey__
 
-1. **Advanced PySpark Topics**:
+1. __Advanced PySpark Topics__:
    - [Delta Lake Integration Lab](delta-lake-deep-dive.md)
-   - [Streaming Analytics with Structured Streaming](../stream-analytics/)
+   - [Streaming Analytics with Structured Streaming](../stream-analytics/README.md)
    - [ML Pipeline Integration](ml-pipeline-lab.md)
 
-2. **Production Skills**:
+2. __Production Skills__:
    - [CI/CD for Analytics Pipelines](cicd-analytics.md)
    - [Monitoring and Observability](../synapse/13-monitoring.md)
    - [Security and Governance](data-security-lab.md)
 
-3. **Certification Preparation**:
-   - **DP-203**: Azure Data Engineer Associate
-   - **DP-300**: Azure Database Administrator Associate
+3. __Certification Preparation__:
+   - __DP-203__: Azure Data Engineer Associate
+   - __DP-300__: Azure Database Administrator Associate
 
-### **Apply Your Skills**
+### __Apply Your Skills__
 
-- **Personal Projects**: Build analytics for your own datasets
-- **Open Source Contributions**: Contribute to PySpark ecosystem
-- **Community Engagement**: Share learnings and help others
-- **Professional Growth**: Apply concepts in your current role
+- __Personal Projects__: Build analytics for your own datasets
+- __Open Source Contributions__: Contribute to PySpark ecosystem
+- __Community Engagement__: Share learnings and help others
+- __Professional Growth__: Apply concepts in your current role
 
 ## 📞 Support & Resources
 
-### **Additional Learning Materials**
-- **Official PySpark Documentation**: [spark.apache.org/docs/latest/api/python/](https://spark.apache.org/docs/latest/api/python/)
-- **Spark SQL Guide**: [spark.apache.org/docs/latest/sql-programming-guide.html](https://spark.apache.org/docs/latest/sql-programming-guide.html)
-- **Azure Synapse Spark**: [docs.microsoft.com/azure/synapse-analytics/spark/](https://docs.microsoft.com/azure/synapse-analytics/spark/)
+### __Additional Learning Materials__
 
-### **Community & Support**
-- **Stack Overflow**: Tag questions with `pyspark` and `azure-synapse`
-- **GitHub Discussions**: [Lab Repository Discussions](https://github.com/your-org/pyspark-lab/discussions)
-- **Office Hours**: Weekly Q&A sessions (Wednesdays 3 PM PT)
+- __Official PySpark Documentation__: [spark.apache.org/docs/latest/api/python/](https://spark.apache.org/docs/latest/api/python/)
+- __Spark SQL Guide__: [spark.apache.org/docs/latest/sql-programming-guide.html](https://spark.apache.org/docs/latest/sql-programming-guide.html)
+- __Azure Synapse Spark__: [docs.microsoft.com/azure/synapse-analytics/spark/](https://docs.microsoft.com/azure/synapse-analytics/spark/)
+
+### __Community & Support__
+
+- __Stack Overflow__: Tag questions with `pyspark` and `azure-synapse`
+- __GitHub Discussions__: [Lab Repository Discussions](https://github.com/your-org/pyspark-lab/discussions)
+- __Office Hours__: Weekly Q&A sessions (Wednesdays 3 PM PT)
 
 ---
 
-**🎓 Lab Completed Successfully!**
+__🎓 Lab Completed Successfully!__
 
 *You're now ready to tackle real-world data processing challenges with PySpark. The skills you've gained form the foundation for advanced analytics, machine learning, and production data engineering workflows.*
 

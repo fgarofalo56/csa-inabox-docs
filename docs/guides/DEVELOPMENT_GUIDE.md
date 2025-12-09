@@ -1,6 +1,6 @@
 # 🚀 Development Guide
 
-> **🏠 [Home](../../README.md)** | **📚 [Documentation](../README.md)** | **📖 [Guides](./README.md)**
+> __🏠 [Home](../../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
 
 ---
 
@@ -30,10 +30,10 @@ This guide provides comprehensive instructions for developers working on the Clo
 
 | Component | Minimum Version | Recommended Version | Notes |
 |-----------|----------------|-------------------|--------|
-| **Python** | 3.8+ | 3.11+ | Required for documentation tools |
-| **Node.js** | 14.x | 18.x LTS | For markdown linting |
-| **Git** | 2.25+ | Latest | Version control |
-| **Docker** | 20.10+ | Latest | Optional for containerized development |
+| __Python__ | 3.8+ | 3.11+ | Required for documentation tools |
+| __Node.js__ | 14.x | 18.x LTS | For markdown linting |
+| __Git__ | 2.25+ | Latest | Version control |
+| __Docker__ | 20.10+ | Latest | Optional for containerized development |
 
 ### Required Software
 
@@ -53,10 +53,10 @@ pip --version     # Should be recent
 
 ### Azure Prerequisites
 
-- **Azure Subscription** (for deployment and testing)
-- **Azure CLI** installed and configured
-- **Service Principal** with appropriate permissions
-- **Azure DevOps** access (optional)
+- __Azure Subscription__ (for deployment and testing)
+- __Azure CLI__ installed and configured
+- __Service Principal__ with appropriate permissions
+- __Azure DevOps__ access (optional)
 
 ---
 
@@ -139,7 +139,7 @@ mkdocs serve
 
 ### Key Directories
 
-```
+```text
 csa-inabox-docs/
 ├── docs/                  # Documentation content
 │   ├── guides/           # Development guides
@@ -188,11 +188,11 @@ git checkout -b feature/your-feature-name
 
 Follow these guidelines:
 
-1. **Check existing documentation** before creating new files
-2. **Follow directory structure** from [DIRECTORY_STRUCTURE_GUIDE.md](./DIRECTORY_STRUCTURE_GUIDE.md)
-3. **Apply markdown standards** from [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md)
-4. **Update navigation** in `mkdocs.yml` if adding new pages
-5. **Add/update tests** for any code changes
+1. __Check existing documentation__ before creating new files
+2. __Follow directory structure__ from [DIRECTORY_STRUCTURE_GUIDE.md](./DIRECTORY_STRUCTURE_GUIDE.md)
+3. __Apply markdown standards__ from [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md)
+4. __Update navigation__ in `mkdocs.yml` if adding new pages
+5. __Add/update tests__ for any code changes
 
 ### 3. Test Changes
 
@@ -297,11 +297,11 @@ Brief description with **bold** and *italic* text.
 
 ## Section with Code
 
-```python
+\```python
 # Code example with syntax highlighting
 def example():
     return "Hello, World!"
-```
+\```
 
 ## Table Example
 
@@ -313,7 +313,7 @@ def example():
 
 - [Internal link](../other-doc.md)
 - [External link](https://azure.microsoft.com)
-```
+\```
 
 ### Shell Script Standards
 
@@ -399,11 +399,11 @@ class TestValidator:
 
 ### Adding New Documentation
 
-1. **Determine location** using [DIRECTORY_STRUCTURE_GUIDE.md](./DIRECTORY_STRUCTURE_GUIDE.md)
-2. **Create markdown file** following [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md)
-3. **Update navigation** in `mkdocs.yml`
-4. **Add cross-references** to related documents
-5. **Test locally** with `mkdocs serve`
+1. __Determine location__ using [DIRECTORY_STRUCTURE_GUIDE.md](./DIRECTORY_STRUCTURE_GUIDE.md)
+2. __Create markdown file__ following [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md)
+3. __Update navigation__ in `mkdocs.yml`
+4. __Add cross-references__ to related documents
+5. __Test locally__ with `mkdocs serve`
 
 ### Documentation Types
 
@@ -551,6 +551,7 @@ python -m mkdocs.config
 ### Tools and Extensions
 
 #### VS Code Extensions
+
 - Python
 - Markdown All in One
 - markdownlint
@@ -558,6 +559,7 @@ python -m mkdocs.config
 - GitLens
 
 #### Command Line Tools
+
 - `mkdocs` - Documentation generator
 - `markdownlint` - Markdown linter
 - `pytest` - Testing framework
@@ -570,10 +572,10 @@ python -m mkdocs.config
 
 ### Support Channels
 
-- **GitHub Issues**: [Create Issue](https://github.com/fgarofalo56/csa-inabox-docs/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
-- **Team Slack**: #csa-documentation
-- **Email**: csa-docs@microsoft.com
+- __GitHub Issues__: [Create Issue](https://github.com/fgarofalo56/csa-inabox-docs/issues)
+- __Discussions__: [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
+- __Team Slack__: #csa-documentation
+- __Email__: <csa-docs@microsoft.com>
 
 ### Useful Commands
 
@@ -593,6 +595,6 @@ pytest --help
 
 ---
 
-**Last Updated:** January 28, 2025  
-**Version:** 1.0.0  
-**Maintainer:** CSA Documentation Team
+__Last Updated:__ January 28, 2025  
+__Version:__ 1.0.0  
+__Maintainer:__ CSA Documentation Team

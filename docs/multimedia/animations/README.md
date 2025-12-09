@@ -1,6 +1,6 @@
 # 🎨 Animation Storyboards & Motion Graphics
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 Animations**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎨 Animations__
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Animations: 30+](https://img.shields.io/badge/Animations-30+-blue)
@@ -15,9 +15,10 @@ High-quality animations and motion graphics that bring Cloud Scale Analytics con
 ### 📊 Data Flow Animations
 
 #### Real-time Stream Processing
-**Duration**: 30 seconds  
-**Format**: Lottie JSON  
-**[View Animation](./animations/stream-processing.json)** | **[Storyboard](./storyboards/stream-processing.md)**
+
+__Duration__: 30 seconds  
+__Format__: Lottie JSON  
+__[View Animation](./animations/stream-processing.json)__ | __[Storyboard](./storyboards/stream-processing.md)__
 
 ```json
 {
@@ -54,9 +55,10 @@ High-quality animations and motion graphics that bring Cloud Scale Analytics con
 ```
 
 #### ETL Pipeline Visualization
-**Duration**: 45 seconds  
-**Format**: SVG Animation  
-**[View Animation](./animations/etl-pipeline.svg)** | **[Storyboard](./storyboards/etl-pipeline.md)**
+
+__Duration__: 45 seconds  
+__Format__: SVG Animation  
+__[View Animation](./animations/etl-pipeline.svg)__ | __[Storyboard](./storyboards/etl-pipeline.md)__
 
 ```svg
 <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
@@ -136,22 +138,25 @@ High-quality animations and motion graphics that bring Cloud Scale Analytics con
 ### 🏗️ Architecture Evolution Animations
 
 #### Scaling Architecture Animation
-**Duration**: 60 seconds  
-**Format**: After Effects + Lottie  
-**[View Animation](./animations/scaling-architecture.json)**
+
+__Duration__: 60 seconds  
+__Format__: After Effects + Lottie  
+__[View Animation](./animations/scaling-architecture.json)__
 
 Storyboard:
-1. **0-10s**: Single server setup
-2. **10-20s**: Scale out to multiple nodes
-3. **20-30s**: Add load balancing
-4. **30-40s**: Implement caching layer
-5. **40-50s**: Add geo-distribution
-6. **50-60s**: Complete enterprise architecture
+
+1. __0-10s__: Single server setup
+2. __10-20s__: Scale out to multiple nodes
+3. __20-30s__: Add load balancing
+4. __30-40s__: Implement caching layer
+5. __40-50s__: Add geo-distribution
+6. __50-60s__: Complete enterprise architecture
 
 #### Modernization Journey
-**Duration**: 90 seconds  
-**Format**: SVG + CSS Animation  
-**[View Animation](./animations/modernization.html)**
+
+__Duration__: 90 seconds  
+__Format__: SVG + CSS Animation  
+__[View Animation](./animations/modernization.html)__
 
 ```html
 <!DOCTYPE html>
@@ -263,9 +268,10 @@ Storyboard:
 ### 🔄 Process Workflow Visualizations
 
 #### Data Ingestion Workflow
-**Duration**: 40 seconds  
-**Format**: Lottie  
-**[View Animation](./animations/data-ingestion.json)**
+
+__Duration__: 40 seconds  
+__Format__: Lottie  
+__[View Animation](./animations/data-ingestion.json)__
 
 ```javascript
 // Lottie Animation Controller
@@ -326,9 +332,10 @@ class DataIngestionAnimation {
 ```
 
 ### 🔐 Security Layer Animation
-**Duration**: 35 seconds  
-**Format**: SVG + GSAP  
-**[View Animation](./animations/security-layers.html)**
+
+__Duration__: 35 seconds  
+__Format__: SVG + GSAP  
+__[View Animation](./animations/security-layers.html)__
 
 ```javascript
 // GSAP Timeline for Security Animation
@@ -402,9 +409,10 @@ securityTimeline
 ## 🎯 Service Interaction Patterns
 
 ### Microservices Communication
-**Duration**: 50 seconds  
-**Format**: Canvas Animation  
-**[View Animation](./animations/microservices.html)**
+
+__Duration__: 50 seconds  
+__Format__: Canvas Animation  
+__[View Animation](./animations/microservices.html)__
 
 ```javascript
 // Canvas-based Microservices Animation
@@ -566,11 +574,13 @@ class Message {
 ## 🎨 Animation Production Tools
 
 ### After Effects Templates
-- **[Data Flow Template](./templates/after-effects/data-flow.aep)**
-- **[Architecture Diagram Template](./templates/after-effects/architecture.aep)**
-- **[Process Animation Template](./templates/after-effects/process.aep)**
+
+- __[Data Flow Template](./templates/after-effects/data-flow.aep)__
+- __[Architecture Diagram Template](./templates/after-effects/architecture.aep)__
+- __[Process Animation Template](./templates/after-effects/process.aep)__
 
 ### Lottie Export Settings
+
 ```json
 {
   "exportSettings": {
@@ -596,6 +606,7 @@ class Message {
 ## 🛠️ Animation Framework
 
 ### Custom Animation Library
+
 ```javascript
 // Synapse Animation Framework
 class SynapseAnimator {
@@ -666,6 +677,7 @@ class DataFlowAnimation {
 ## 📐 Storyboard Templates
 
 ### Standard Storyboard Format
+
 ```markdown
 # Animation: [Title]
 **Duration**: XX seconds
@@ -710,6 +722,7 @@ class DataFlowAnimation {
 ## ♿ Accessibility Features
 
 ### Motion Preferences
+
 ```javascript
 // Respect user motion preferences
 const prefersReducedMotion = window.matchMedia(
@@ -752,6 +765,7 @@ class AccessibleAnimation {
 ## 📊 Performance Optimization
 
 ### Animation Performance Guidelines
+
 ```javascript
 // Performance monitoring
 class AnimationPerformance {
@@ -791,21 +805,23 @@ class AnimationPerformance {
 ## 🎯 Usage Guidelines
 
 ### When to Use Animations
-- **Complex Concepts**: Multi-step processes, data flows
-- **Engagement**: Landing pages, introductions
-- **Demonstrations**: Feature showcases, tutorials
-- **Transitions**: Section changes, state updates
+
+- __Complex Concepts__: Multi-step processes, data flows
+- __Engagement__: Landing pages, introductions
+- __Demonstrations__: Feature showcases, tutorials
+- __Transitions__: Section changes, state updates
 
 ### When to Avoid
-- **Critical Information**: Don't rely solely on animation
-- **Performance Concerns**: Low-bandwidth or older devices
-- **Accessibility**: When static alternatives work better
-- **Documentation**: Core technical specifications
+
+- __Critical Information__: Don't rely solely on animation
+- __Performance Concerns__: Low-bandwidth or older devices
+- __Accessibility__: When static alternatives work better
+- __Documentation__: Core technical specifications
 
 ## 📚 Resources
 
 - [Animation Guidelines](./guides/animation-guidelines.md)
-- [Storyboard Templates](./templates/storyboards/)
+- [Storyboard Templates](./templates/storyboards//README.md)
 - [Performance Best Practices](./guides/performance.md)
 - [Accessibility Standards](./guides/accessibility.md)
 - [Export Settings](./guides/export-settings.md)

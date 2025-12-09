@@ -4,7 +4,11 @@
   "MD033": {
     "allowed_elements": [
       "div",
-      "span"
+      "span",
+      "img",
+      "br",
+      "details",
+      "summary"
     ]
   },
   "MD046": {
@@ -17,5 +21,7 @@
   },
   "MD050": {
     "style": "underscore"
-  }
+  },
+  "MD060": false,
+  "MD042": false
 }

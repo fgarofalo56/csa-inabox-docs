@@ -7,7 +7,7 @@ from unittest.mock import patch, Mock
 import yaml
 import tempfile
 
-from src.csa_docs_tools.build_tester import DocumentationBuildTester
+from csa_docs_tools.build_tester import DocumentationBuildTester
 
 
 class TestDocumentationBuildTester:

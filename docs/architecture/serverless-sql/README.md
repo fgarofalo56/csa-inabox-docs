@@ -30,7 +30,7 @@ Serverless SQL pools in Azure Synapse Analytics provide a serverless distributed
 
 Organize your data lake with a clear folder structure to optimize query performance:
 
-```
+```text
 adls://data/
 ├── raw/
 ├── curated/

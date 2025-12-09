@@ -1,6 +1,6 @@
 # 🎮 Interactive Demos & Code Playgrounds
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 Interactive Demos**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎮 Interactive Demos__
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Demos: 15+](https://img.shields.io/badge/Demos-15+-blue)
@@ -14,7 +14,7 @@ Interactive demonstrations and hands-on code playgrounds that allow users to exp
 
 ### 🏗️ Architecture Builder
 
-**[Launch Architecture Builder](./demos/architecture-builder/index.html)**
+__[Launch Architecture Builder](./demos/architecture-builder/index.html)__
 
 An interactive drag-and-drop tool for designing Azure Synapse architectures.
 
@@ -43,7 +43,7 @@ const architectureBuilder = {
 
 ### 💰 Cost Calculator Tool
 
-**[Open Cost Calculator](./demos/cost-calculator/index.html)**
+__[Open Cost Calculator](./demos/cost-calculator/index.html)__
 
 Interactive calculator for estimating Azure Synapse Analytics costs.
 
@@ -126,7 +126,7 @@ Interactive calculator for estimating Azure Synapse Analytics costs.
 
 ### 🎯 Query Optimizer Playground
 
-**[Try Query Optimizer](./demos/query-optimizer/index.html)**
+__[Try Query Optimizer](./demos/query-optimizer/index.html)__
 
 Interactive SQL query optimization tool with real-time performance analysis.
 
@@ -180,13 +180,13 @@ class QueryOptimizer {
 
 ### 🔄 Pipeline Designer
 
-**[Open Pipeline Designer](./demos/pipeline-designer/index.html)**
+__[Open Pipeline Designer](./demos/pipeline-designer/index.html)__
 
 Visual pipeline designer for Azure Data Factory workflows.
 
 ### 📊 Data Flow Simulator
 
-**[Launch Data Flow Simulator](./demos/data-flow-simulator/index.html)**
+__[Launch Data Flow Simulator](./demos/data-flow-simulator/index.html)__
 
 Simulate and visualize data flows through your architecture.
 
@@ -354,23 +354,23 @@ graph TD
 
 ### Implementation Wizard
 
-**[Launch Implementation Wizard](./demos/implementation-wizard/index.html)**
+__[Launch Implementation Wizard](./demos/implementation-wizard/index.html)__
 
 Step-by-step guided setup for common scenarios:
 
-1. **Data Lake Setup**
+1. __Data Lake Setup__
    - Storage account configuration
    - Container structure
    - Access control setup
    - Sample data upload
 
-2. **Workspace Configuration**
+2. __Workspace Configuration__
    - Workspace creation
    - Linked services
    - Security settings
    - Git integration
 
-3. **Pipeline Development**
+3. __Pipeline Development__
    - Source connection
    - Transformation logic
    - Destination setup
@@ -442,7 +442,7 @@ class PerformanceCalculator {
 
 ### Resource Sizing Calculator
 
-**[Open Resource Calculator](./demos/resource-calculator/index.html)**
+__[Open Resource Calculator](./demos/resource-calculator/index.html)__
 
 Calculate optimal resource allocation based on workload characteristics.
 
@@ -681,13 +681,15 @@ const InteractionTracker = {
 
 ### Creating New Interactive Demos
 
-1. **Setup Development Environment**
+1. __Setup Development Environment__
+
 ```bash
 npm install @azure/synapse-demo-toolkit
 npm install -D webpack webpack-cli typescript
 ```
 
-2. **Create Demo Component**
+1. __Create Demo Component__
+
 ```typescript
 import { InteractiveDemo } from '@azure/synapse-demo-toolkit';
 
@@ -706,7 +708,8 @@ export class MyCustomDemo extends InteractiveDemo {
 }
 ```
 
-3. **Deploy to Documentation**
+1. __Deploy to Documentation__
+
 ```bash
 npm run build
 npm run deploy-demo --name="my-custom-demo"

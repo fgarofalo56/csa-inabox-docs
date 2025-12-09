@@ -1,6 +1,6 @@
 # Troubleshooting Connectivity Issues in Azure Synapse Analytics
 
-[Home](../../README.md) > [Troubleshooting](../README.md) > Connectivity Troubleshooting
+[Home](../../README.md) > Troubleshooting > Connectivity Troubleshooting
 
 This guide covers common connectivity and network-related issues in Azure Synapse Analytics, providing diagnostic approaches and solutions for establishing reliable connections to your Synapse workspace and its components.
 

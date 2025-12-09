@@ -5,11 +5,12 @@ This guide helps you get started with the comprehensive versioning workflow for 
 ## Overview
 
 The CSA documentation now supports:
-- **Semantic versioning** with automated releases
-- **Multi-version navigation** for users
-- **Quality gates** ensuring release quality
-- **Migration tools** for smooth upgrades
-- **Automated deployment** via GitHub Actions
+
+- __Semantic versioning__ with automated releases
+- __Multi-version navigation__ for users
+- __Quality gates__ ensuring release quality
+- __Migration tools__ for smooth upgrades
+- __Automated deployment__ via GitHub Actions
 
 ## Prerequisites
 
@@ -62,13 +63,14 @@ mike set-default 1.0.0
 
 ### Option 1: Automated Release (Recommended)
 
-1. **Create and push a version tag**:
+1. __Create and push a version tag__:
+
    ```bash
    git tag v1.1.0
    git push origin v1.1.0
    ```
 
-2. **Monitor the GitHub Actions workflow**:
+2. __Monitor the GitHub Actions workflow__:
    - Go to your repository's Actions tab
    - Watch the "Versioned Documentation Release" workflow
    - The workflow will automatically:
@@ -80,7 +82,8 @@ mike set-default 1.0.0
 
 ### Option 2: Manual Release
 
-1. **Validate release readiness**:
+1. __Validate release readiness__:
+
    ```bash
    python -c "
    from src.csa_docs_tools.release_manager import ReleaseManager
@@ -98,7 +101,8 @@ mike set-default 1.0.0
    "
    ```
 
-2. **Generate changelog**:
+2. __Generate changelog__:
+
    ```bash
    python -c "
    from src.csa_docs_tools.release_manager import ReleaseManager
@@ -110,7 +114,8 @@ mike set-default 1.0.0
    "
    ```
 
-3. **Deploy the version**:
+3. __Deploy the version__:
+
    ```bash
    mkdocs build
    mike deploy 1.1.0 "CSA Documentation v1.1.0" --update-aliases
@@ -119,6 +124,7 @@ mike set-default 1.0.0
 ## Version Management Commands
 
 ### List All Versions
+
 ```bash
 # Using Mike
 mike list
@@ -136,16 +142,19 @@ for v in versions:
 ```
 
 ### Set Default Version
+
 ```bash
 mike set-default 1.1.0
 ```
 
 ### Delete Old Version
+
 ```bash
 mike delete 0.9.0
 ```
 
 ### Generate Migration Guide
+
 ```bash
 python -c "
 from src.csa_docs_tools.migration_manager import MigrationManager
@@ -187,7 +196,8 @@ asyncio.run(validate())
 
 ### Release Branch Workflow
 
-1. **Create release branch**:
+1. __Create release branch__:
+
    ```bash
    python -c "
    from src.csa_docs_tools.release_manager import ReleaseManager
@@ -199,7 +209,8 @@ asyncio.run(validate())
    "
    ```
 
-2. **Make changes and finalize**:
+2. __Make changes and finalize__:
+
    ```bash
    # Make your documentation changes
    # ...
@@ -219,7 +230,8 @@ asyncio.run(validate())
 
 ### Hotfix Workflow
 
-1. **Create hotfix branch from tag**:
+1. __Create hotfix branch from tag__:
+
    ```bash
    python -c "
    from src.csa_docs_tools.release_manager import ReleaseManager
@@ -231,7 +243,8 @@ asyncio.run(validate())
    "
    ```
 
-2. **Fix issues and release**:
+2. __Fix issues and release__:
+
    ```bash
    # Make your fixes
    # ...
@@ -293,7 +306,8 @@ manager.add_migration_rule(rule)
 
 ### Common Issues
 
-1. **Build failures**:
+1. __Build failures__:
+
    ```bash
    # Check build logs
    mkdocs build --verbose
@@ -311,7 +325,8 @@ manager.add_migration_rule(rule)
    "
    ```
 
-2. **Version conflicts**:
+2. __Version conflicts__:
+
    ```bash
    # Check existing versions
    mike list
@@ -320,38 +335,42 @@ manager.add_migration_rule(rule)
    mike delete problematic-version
    ```
 
-3. **Permission errors**:
+3. __Permission errors__:
    - Ensure GitHub token has required permissions
    - Check repository settings for Pages deployment
    - Verify workflow permissions in `.github/workflows/`
 
 ### Getting Help
 
-1. **Check workflow logs** in GitHub Actions tab
-2. **Review validation reports** in `validation_reports/`
-3. **Consult integration test results** in `docs/versioning/INTEGRATION_TEST_RESULTS.md`
+1. __Check workflow logs__ in GitHub Actions tab
+2. __Review validation reports__ in `validation_reports/`
+3. __Consult integration test results__ in `docs/versioning/INTEGRATION_TEST_RESULTS.md`
 
 ## Best Practices
 
 ### Version Numbering
+
 - Use semantic versioning: `MAJOR.MINOR.PATCH`
 - Major: Breaking changes to documentation structure
 - Minor: New sections or significant content additions
 - Patch: Bug fixes, typos, minor updates
 
 ### Release Planning
+
 - Plan major releases with migration guides
 - Use prerelease versions for testing: `2.0.0-beta.1`
 - Keep stable versions for at least 6 months
 - Archive prerelease versions regularly
 
 ### Quality Assurance
+
 - Always run quality gates before releases
 - Test navigation changes thoroughly
 - Validate all links, especially external ones
 - Review performance impact of large changes
 
 ### User Communication
+
 - Include clear release notes
 - Provide migration guides for breaking changes
 - Use deprecation notices for content removal
@@ -359,4 +378,4 @@ manager.add_migration_rule(rule)
 
 ---
 
-**Next Steps**: Once comfortable with basics, explore advanced features like custom quality gates, migration rules, and performance optimization.
+__Next Steps__: Once comfortable with basics, explore advanced features like custom quality gates, migration rules, and performance optimization.

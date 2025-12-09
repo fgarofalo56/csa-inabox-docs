@@ -1,20 +1,21 @@
 # 🔧 Troubleshooting Guide
 
-[🏠 Home](../README.md) > 🔧 Troubleshooting
+🏠 Home > 🔧 Troubleshooting
 
 <div align="center">
 
 ![Troubleshooting](https://img.shields.io/badge/Troubleshooting-Guide-red?style=for-the-badge&logo=wrench&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-### 🔧 Problem Resolution Hub
-#### *Quick Solutions • Step-by-Step Guides • Best Practices*
+## 🔧 Problem Resolution Hub
+
+*Quick Solutions • Step-by-Step Guides • Best Practices*
 
 ---
 
 </div>
 
-> 📚 **Comprehensive Documentation Available**
+> 📚 __Comprehensive Documentation Available__
 > This page has been replaced with a comprehensive troubleshooting section. Please visit the [🔧 Troubleshooting Documentation](troubleshooting/README.md) for detailed guides on resolving common issues with Azure Synapse Analytics.
 
 ---
@@ -29,12 +30,12 @@
 
 | Issue Category | Description | Quick Access |
 |:---------------|:------------|:-------------|
-| ⚡ **[Spark Issues](troubleshooting/spark-troubleshooting.md)** | Apache Spark job failures and performance issues | ![Spark](https://img.shields.io/badge/⚡-Spark-orange) |
-| ☁️ **[Serverless SQL Issues](troubleshooting/serverless-sql-troubleshooting.md)** | Serverless SQL pool query problems | ![SQL](https://img.shields.io/badge/☁️-SQL-blue) |
-| 🌐 **[Connectivity Issues](troubleshooting/connectivity-troubleshooting.md)** | Network and connection problems | ![Network](https://img.shields.io/badge/🌐-Network-green) |
-| 🔐 **[Authentication Issues](troubleshooting/authentication-troubleshooting.md)** | Authentication and authorization problems | ![Auth](https://img.shields.io/badge/🔐-Auth-red) |
-| 🏞️ **[Delta Lake Issues](troubleshooting/delta-lake-troubleshooting.md)** | Delta Lake specific problems | ![Delta](https://img.shields.io/badge/🏞️-Delta-purple) |
-| 🔄 **[Pipeline Issues](troubleshooting/pipeline-troubleshooting.md)** | Synapse Pipeline execution problems | ![Pipeline](https://img.shields.io/badge/🔄-Pipeline-yellow) |
+| ⚡ __[Spark Issues](troubleshooting/spark-troubleshooting.md)__ | Apache Spark job failures and performance issues | ![Spark](https://img.shields.io/badge/⚡-Spark-orange) |
+| ☁️ __[Serverless SQL Issues](troubleshooting/serverless-sql-troubleshooting.md)__ | Serverless SQL pool query problems | ![SQL](https://img.shields.io/badge/☁️-SQL-blue) |
+| 🌐 __[Connectivity Issues](troubleshooting/connectivity-troubleshooting.md)__ | Network and connection problems | ![Network](https://img.shields.io/badge/🌐-Network-green) |
+| 🔐 __[Authentication Issues](troubleshooting/authentication-troubleshooting.md)__ | Authentication and authorization problems | ![Auth](https://img.shields.io/badge/🔐-Auth-red) |
+| 🏞️ __[Delta Lake Issues](troubleshooting/delta-lake-troubleshooting.md)__ | Delta Lake specific problems | ![Delta](https://img.shields.io/badge/🏞️-Delta-purple) |
+| 🔄 __[Pipeline Issues](troubleshooting/pipeline-troubleshooting.md)__ | Synapse Pipeline execution problems | ![Pipeline](https://img.shields.io/badge/🔄-Pipeline-yellow) |
 
 ---
 
@@ -42,9 +43,9 @@
 
 ### ❌ Cannot connect to Synapse workspace
 
-> 🚨 **Problem:** Unable to access Synapse Studio or connect to the workspace
+> 🚨 __Problem:__ Unable to access Synapse Studio or connect to the workspace
 
-#### 🔍 **Possible Causes and Solutions:**
+#### 🔍 __Possible Causes and Solutions:__
 
 1. __Network Connectivity__:
    - Ensure your network allows connections to the Azure Synapse service endpoints

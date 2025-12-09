@@ -1,6 +1,6 @@
 # Troubleshooting Delta Lake Issues in Azure Synapse Analytics
 
-[Home](../../README.md) > [Troubleshooting](../README.md) > Delta Lake Troubleshooting
+[Home](../../README.md) > Troubleshooting > Delta Lake Troubleshooting
 
 This guide covers common issues encountered when working with Delta Lake in Azure Synapse Analytics, providing diagnostic approaches and solutions for both SQL and Spark interfaces.
 

@@ -1,6 +1,6 @@
 # 🏛️ Delta Lakehouse Architecture with Azure Synapse
 
-> **🏠 [Home](../../../../../../README.md)** | **📖 [Overview](../../../../../01-overview/README.md)** | **🛠️ [Services](../../../../README.md)** | **💾 [Analytics Compute](../../../README.md)** | **🎯 [Synapse](../../README.md)** | **🔥 [Spark Pools](../README.md)** | **🏛️ Delta Lakehouse**
+> __🏠 [Home](../../../../../../README.md)__ | __📖 [Overview](../../../../../01-overview/README.md)__ | __🛠️ [Services](../../../../README.md)__ | __💾 [Analytics Compute](../../../README.md)__ | __🎯 [Synapse](../../README.md)__ | __🔥 Spark Pools__ | __🏛️ Delta Lakehouse__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Architecture](https://img.shields.io/badge/Pattern-Medallion-blue?style=flat-square)
@@ -16,11 +16,11 @@ The Delta Lakehouse architecture combines the flexibility and cost-efficiency of
 
 ### 🔥 Key Benefits
 
-- **ACID Transactions**: Ensure data consistency across concurrent operations
-- **Schema Enforcement & Evolution**: Maintain data quality while allowing schema changes
-- **Time Travel**: Query historical versions of data for auditing and rollbacks
-- **Unified Batch & Streaming**: Single architecture for all data processing needs
-- **Performance Optimization**: Advanced optimization features for analytical workloads
+- __ACID Transactions__: Ensure data consistency across concurrent operations
+- __Schema Enforcement & Evolution__: Maintain data quality while allowing schema changes
+- __Time Travel__: Query historical versions of data for auditing and rollbacks
+- __Unified Batch & Streaming__: Single architecture for all data processing needs
+- __Performance Optimization__: Advanced optimization features for analytical workloads
 
 ---
 
@@ -101,9 +101,10 @@ graph TB
 The medallion architecture organizes your Delta Lake data into layers with increasing data quality and refinement:
 
 ### 🥉 Bronze Layer (Raw Data)
+
 ![Raw](https://img.shields.io/badge/Quality-Raw-brown?style=flat-square)
 
-**Purpose**: Ingestion sink for all source data with minimal processing
+__Purpose__: Ingestion sink for all source data with minimal processing
 
 ```text
 /bronze/
@@ -118,13 +119,15 @@ The medallion architecture organizes your Delta Lake data into layers with incre
     └── campaigns/
 ```
 
-**Characteristics**:
+__Characteristics__:
+
 - Preserves original data format and content
 - Minimal transformation, primarily ELT approach
 - Schema-on-read strategy
 - Full audit trail of data ingestion
 
-**Example Implementation**:
+__Example Implementation__:
+
 ```python
 # Ingest raw data to Bronze layer
 raw_df = spark.read.json("/landing/sales_data/*.json")
@@ -143,9 +146,10 @@ bronze_df.write \
 ```
 
 ### 🥈 Silver Layer (Refined Data)
+
 ![Refined](https://img.shields.io/badge/Quality-Refined-silver?style=flat-square)
 
-**Purpose**: Cleansed and conformed data with applied data quality rules
+__Purpose__: Cleansed and conformed data with applied data quality rules
 
 ```text
 /silver/
@@ -160,13 +164,15 @@ bronze_df.write \
     └── campaigns_normalized/
 ```
 
-**Characteristics**:
+__Characteristics__:
+
 - Standardized formats and resolved duplicates
 - Common data quality rules applied
 - Typically organized by domain or source system
 - Business rules validation
 
-**Example Implementation**:
+__Example Implementation__:
+
 ```python
 # Read from Bronze layer
 bronze_df = spark.read.format("delta").load("/bronze/sales_system/orders")
@@ -190,9 +196,10 @@ silver_df.write \
 ```
 
 ### 🥇 Gold Layer (Curated Data)
+
 ![Curated](https://img.shields.io/badge/Quality-Curated-gold?style=flat-square)
 
-**Purpose**: Business-level aggregates optimized for analytics and reporting
+__Purpose__: Business-level aggregates optimized for analytics and reporting
 
 ```text
 /gold/
@@ -208,13 +215,15 @@ silver_df.write \
     └── operational_metrics/
 ```
 
-**Characteristics**:
+__Characteristics__:
+
 - Business-level aggregates and metrics
 - Dimensional models for reporting (star schema)
 - Feature tables for machine learning
 - Optimized for specific analytical use cases
 
-**Example Implementation**:
+__Example Implementation__:
+
 ```python
 # Read from Silver layer
 orders_df = spark.read.format("delta").load("/silver/sales/orders_cleaned")
@@ -247,6 +256,7 @@ daily_sales.write \
 ### 🚀 Delta Lake Optimizations
 
 #### Data Skipping
+
 Delta automatically maintains min/max statistics for efficient query pruning:
 
 ```python
@@ -259,6 +269,7 @@ df.write \
 ```
 
 #### Z-Ordering
+
 Multi-dimensional clustering for improved filtering performance:
 
 ```sql
@@ -268,6 +279,7 @@ ZORDER BY (product_category, customer_segment)
 ```
 
 #### Auto Compaction
+
 Automatically optimize small files during writes:
 
 ```python
@@ -285,6 +297,7 @@ df.write \
 ### 🔧 Spark Pool Optimization
 
 #### Cluster Configuration
+
 ```python
 # Configure Spark pools for Delta workloads
 spark.conf.set("spark.sql.adaptive.enabled", "true")
@@ -294,6 +307,7 @@ spark.conf.set("spark.databricks.delta.cache.enabled", "true")
 ```
 
 #### Memory Optimization
+
 ```python
 # Optimize for large Delta table operations
 spark.conf.set("spark.sql.files.maxPartitionBytes", "134217728")  # 128MB
@@ -308,6 +322,7 @@ spark.conf.set("spark.sql.adaptive.coalescePartitions.initialPartitionNum", "200
 ### Data Access Control
 
 #### Column-Level Security
+
 ```sql
 -- Create secure view with column masking
 CREATE VIEW gold.customer_summary_secure AS
@@ -323,6 +338,7 @@ FROM gold.customer_summary
 ```
 
 #### Row-Level Security
+
 ```python
 # Implement row-level filtering based on user context
 def apply_rls_filter(df, user_context):
@@ -337,6 +353,7 @@ def apply_rls_filter(df, user_context):
 ### Compliance & Auditing
 
 #### Time Travel for Auditing
+
 ```sql
 -- Query historical data for compliance
 SELECT * FROM delta.`/gold/financial_data`
@@ -348,6 +365,7 @@ TIMESTAMP AS OF '2024-01-01 00:00:00'
 ```
 
 #### Data Lineage Tracking
+
 ```python
 # Track data lineage with metadata
 lineage_metadata = {
@@ -369,6 +387,7 @@ df.write \
 ## 🔄 Streaming Integration
 
 ### Real-time Data Processing
+
 ```python
 # Stream processing to Bronze layer
 stream_df = spark.readStream \
@@ -393,6 +412,7 @@ bronze_stream.writeStream \
 ```
 
 ### Batch + Stream Unified Processing
+
 ```python
 # Unified processing for batch and streaming data
 def process_orders(source_df, target_path):
@@ -415,6 +435,7 @@ processed_stream = process_orders(stream_df, "/silver/orders")
 ## 🚀 Implementation Best Practices
 
 ### 1. Schema Design
+
 ```python
 # Define schema with data quality constraints
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, TimestampType
@@ -436,6 +457,7 @@ df.write \
 ```
 
 ### 2. Change Data Capture (CDC)
+
 ```python
 # Implement CDC pattern with Delta merge
 def upsert_data(source_df, target_path, key_columns):

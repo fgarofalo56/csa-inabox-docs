@@ -1,6 +1,6 @@
 # 👀 Code Review Guide
 
-> **🏠 [Home](../../README.md)** | **📚 [Documentation](../README.md)** | **📖 [Guides](./README.md)**
+> __🏠 [Home](../../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
 
 ---
 
@@ -27,21 +27,21 @@ This guide provides comprehensive standards and best practices for code review w
 
 ### Core Principles
 
-1. **Collaborative Learning** - Reviews are opportunities to learn and teach
-2. **Quality Focus** - Maintain high standards while being constructive
-3. **Respectful Communication** - Be kind, specific, and helpful
-4. **Continuous Improvement** - Use reviews to improve processes
-5. **Shared Ownership** - Everyone is responsible for code quality
+1. __Collaborative Learning__ - Reviews are opportunities to learn and teach
+2. __Quality Focus__ - Maintain high standards while being constructive
+3. __Respectful Communication__ - Be kind, specific, and helpful
+4. __Continuous Improvement__ - Use reviews to improve processes
+5. __Shared Ownership__ - Everyone is responsible for code quality
 
 ### Goals of Code Review
 
 | Goal | Description | Benefit |
 |------|-------------|---------|
-| **Bug Prevention** | Catch issues before they reach production | Reliability |
-| **Knowledge Sharing** | Spread domain knowledge across team | Team Growth |
-| **Standard Enforcement** | Ensure coding standards are followed | Consistency |
-| **Architecture Alignment** | Maintain architectural principles | Maintainability |
-| **Security** | Identify security vulnerabilities | Protection |
+| __Bug Prevention__ | Catch issues before they reach production | Reliability |
+| __Knowledge Sharing__ | Spread domain knowledge across team | Team Growth |
+| __Standard Enforcement__ | Ensure coding standards are followed | Consistency |
+| __Architecture Alignment__ | Maintain architectural principles | Maintainability |
+| __Security__ | Identify security vulnerabilities | Protection |
 
 ---
 
@@ -65,10 +65,10 @@ graph LR
 
 | Stage | Target Time | Maximum Time |
 |-------|-------------|--------------|
-| **Initial Response** | 24 hours | 48 hours |
-| **First Review** | 3 business days | 1 week |
-| **Follow-up Reviews** | 24 hours | 48 hours |
-| **Final Approval** | Same day | 24 hours |
+| __Initial Response__ | 24 hours | 48 hours |
+| __First Review__ | 3 business days | 1 week |
+| __Follow-up Reviews__ | 24 hours | 48 hours |
+| __Final Approval__ | Same day | 24 hours |
 
 ---
 
@@ -76,14 +76,16 @@ graph LR
 
 ### Pre-Review Checklist
 
-**For Authors:**
+__For Authors:__
+
 - [ ] Self-review completed
 - [ ] All tests pass
 - [ ] Documentation updated
 - [ ] Commit messages are clear
 - [ ] PR description is complete
 
-**For Reviewers:**
+__For Reviewers:__
+
 - [ ] Understand the context and requirements
 - [ ] Check related issues and discussions
 - [ ] Review previous feedback on similar changes
@@ -91,6 +93,7 @@ graph LR
 ### Code Quality Checklist
 
 #### Functionality
+
 - [ ] Code does what it's supposed to do
 - [ ] Edge cases are handled
 - [ ] Error handling is appropriate
@@ -98,6 +101,7 @@ graph LR
 - [ ] No obvious bugs or logic errors
 
 #### Design & Architecture
+
 - [ ] Follows project architecture patterns
 - [ ] Abstractions are appropriate
 - [ ] No unnecessary complexity
@@ -105,6 +109,7 @@ graph LR
 - [ ] DRY principle followed
 
 #### Readability & Style
+
 - [ ] Code is easy to read and understand
 - [ ] Naming conventions followed
 - [ ] Functions/methods have single responsibility
@@ -112,6 +117,7 @@ graph LR
 - [ ] Style guide compliance
 
 #### Testing
+
 - [ ] Adequate test coverage
 - [ ] Tests are meaningful and robust
 - [ ] Test names are descriptive
@@ -119,6 +125,7 @@ graph LR
 - [ ] No flaky or brittle tests
 
 #### Documentation
+
 - [ ] Public APIs documented
 - [ ] Complex logic explained
 - [ ] README updated if needed
@@ -126,6 +133,7 @@ graph LR
 - [ ] Examples provided where helpful
 
 #### Security & Performance
+
 - [ ] No hardcoded secrets or credentials
 - [ ] Input validation implemented
 - [ ] SQL injection prevention
@@ -139,24 +147,28 @@ graph LR
 ### Review Depth Levels
 
 #### Light Review (15-30 minutes)
-- **When**: Small bug fixes, typos, minor updates
-- **Focus**: Correctness, style, basic functionality
-- **Scope**: <50 lines changed
+
+- __When__: Small bug fixes, typos, minor updates
+- __Focus__: Correctness, style, basic functionality
+- __Scope__: <50 lines changed
 
 #### Standard Review (30-60 minutes)
-- **When**: Feature additions, moderate refactoring
-- **Focus**: All checklist items, design patterns
-- **Scope**: 50-200 lines changed
+
+- __When__: Feature additions, moderate refactoring
+- __Focus__: All checklist items, design patterns
+- __Scope__: 50-200 lines changed
 
 #### Deep Review (1-2 hours)
-- **When**: Major features, architectural changes
-- **Focus**: Comprehensive review, multiple perspectives
-- **Scope**: >200 lines changed, complex logic
+
+- __When__: Major features, architectural changes
+- __Focus__: Comprehensive review, multiple perspectives
+- __Scope__: >200 lines changed, complex logic
 
 #### Architectural Review (2+ hours)
-- **When**: System design changes, new patterns
-- **Focus**: Long-term maintainability, scalability
-- **Scope**: Multiple files, system-wide impact
+
+- __When__: System design changes, new patterns
+- __Focus__: Long-term maintainability, scalability
+- __Scope__: Multiple files, system-wide impact
 
 ---
 
@@ -168,12 +180,12 @@ Use clear prefixes to categorize feedback:
 
 | Prefix | Meaning | Action Required |
 |--------|---------|-----------------|
-| **`MUST:`** | Critical issue that blocks merge | Fix required |
-| **`SHOULD:`** | Important improvement needed | Fix strongly recommended |
-| **`CONSIDER:`** | Suggestion for improvement | Optional |
-| **`NIT:`** | Minor style or preference issue | Optional |
-| **`QUESTION:`** | Need clarification | Response needed |
-| **`PRAISE:`** | Positive feedback | None - but appreciated! |
+| __`MUST:`__ | Critical issue that blocks merge | Fix required |
+| __`SHOULD:`__ | Important improvement needed | Fix strongly recommended |
+| __`CONSIDER:`__ | Suggestion for improvement | Optional |
+| __`NIT:`__ | Minor style or preference issue | Optional |
+| __`QUESTION:`__ | Need clarification | Response needed |
+| __`PRAISE:`__ | Positive feedback | None - but appreciated! |
 
 ### Effective Feedback Examples
 
@@ -191,20 +203,20 @@ query = "SELECT * FROM users WHERE id = %s"
 cursor.execute(query, (user_id,))
 ```
 
-**SHOULD:** This function is doing too many things. Consider breaking it into smaller, focused functions for better testability and readability.
+__SHOULD:__ This function is doing too many things. Consider breaking it into smaller, focused functions for better testability and readability.
 
-**CONSIDER:** You might want to add logging here for debugging purposes, especially since this handles external API calls.
+__CONSIDER:__ You might want to add logging here for debugging purposes, especially since this handles external API calls.
 
-**NIT:** Variable name `d` isn't very descriptive. Maybe `document` or `doc_data`?
+__NIT:__ Variable name `d` isn't very descriptive. Maybe `document` or `doc_data`?
 
-**QUESTION:** What happens if `response.json()` fails? Should we handle that exception?
+__QUESTION:__ What happens if `response.json()` fails? Should we handle that exception?
 
-**PRAISE:** Great use of the builder pattern here! This makes the API much more intuitive to use.
+__PRAISE:__ Great use of the builder pattern here! This makes the API much more intuitive to use.
 ```
 
 #### Poor Feedback Examples
 
-```markdown
+```text
 ❌ "This is wrong." 
 ✅ "MUST: This function doesn't handle the case where input is None."
 
@@ -223,25 +235,29 @@ cursor.execute(query, (user_id,))
 
 #### For Authors
 
-1. **Acknowledge All Feedback**
+1. __Acknowledge All Feedback__
+
    ```markdown
    Thanks for the thorough review! I've addressed all the MUST and SHOULD items.
    ```
 
-2. **Be Specific About Changes**
+2. __Be Specific About Changes__
+
    ```markdown
    ✅ Fixed SQL injection vulnerability in user_service.py:45
    ✅ Extracted validation logic into separate function
    ⏭️ Logging suggestion noted for future iteration
    ```
 
-3. **Ask for Clarification When Needed**
+3. __Ask for Clarification When Needed__
+
    ```markdown
    QUESTION: Regarding the caching suggestion - are you thinking Redis or in-memory? 
    The usage pattern might affect the choice.
    ```
 
-4. **Explain Decisions**
+4. __Explain Decisions__
+
    ```markdown
    I kept the recursive approach because:
    1. The max depth is guaranteed to be <10
@@ -309,20 +325,20 @@ Use GitHub's suggestion feature for simple fixes:
 
 | Issue | Example | Solution |
 |-------|---------|----------|
-| **Magic Numbers** | `if size > 1000:` | `MAX_FILE_SIZE = 1000` |
-| **Long Functions** | 50+ line function | Break into smaller functions |
-| **Unclear Names** | `data`, `temp`, `x` | Use descriptive names |
-| **Missing Error Handling** | No try/catch blocks | Add appropriate error handling |
-| **Hardcoded Values** | `"prod-db-server"` | Use configuration |
+| __Magic Numbers__ | `if size > 1000:` | `MAX_FILE_SIZE = 1000` |
+| __Long Functions__ | 50+ line function | Break into smaller functions |
+| __Unclear Names__ | `data`, `temp`, `x` | Use descriptive names |
+| __Missing Error Handling__ | No try/catch blocks | Add appropriate error handling |
+| __Hardcoded Values__ | `"prod-db-server"` | Use configuration |
 
 ### Review Issues
 
 | Issue | Problem | Solution |
 |-------|---------|----------|
-| **Nitpicky Reviews** | Focus on minor style issues | Address major issues first |
-| **Unclear Feedback** | Vague comments | Be specific and actionable |
-| **Delayed Reviews** | Week+ response time | Set expectations, communicate delays |
-| **Inconsistent Standards** | Different rules per reviewer | Document and agree on standards |
+| __Nitpicky Reviews__ | Focus on minor style issues | Address major issues first |
+| __Unclear Feedback__ | Vague comments | Be specific and actionable |
+| __Delayed Reviews__ | Week+ response time | Set expectations, communicate delays |
+| __Inconsistent Standards__ | Different rules per reviewer | Document and agree on standards |
 
 ---
 
@@ -332,39 +348,39 @@ Use GitHub's suggestion feature for simple fixes:
 
 #### Do This ✅
 
-1. **Start with positives** - Acknowledge good work
-2. **Be specific** - Point to exact lines and issues
-3. **Suggest solutions** - Don't just point out problems
-4. **Ask questions** - Understand author's reasoning
-5. **Focus on important issues** - Don't bikeshed
-6. **Review promptly** - Respect author's time
+1. __Start with positives__ - Acknowledge good work
+2. __Be specific__ - Point to exact lines and issues
+3. __Suggest solutions__ - Don't just point out problems
+4. __Ask questions__ - Understand author's reasoning
+5. __Focus on important issues__ - Don't bikeshed
+6. __Review promptly__ - Respect author's time
 
 #### Avoid This ❌
 
-1. **Being harsh or dismissive**
-2. **Nitpicking without context**
-3. **Requesting changes without explanation**
-4. **Ignoring the bigger picture**
-5. **Inconsistent feedback**
-6. **Review fatigue - too many small comments**
+1. __Being harsh or dismissive__
+2. __Nitpicking without context__
+3. __Requesting changes without explanation__
+4. __Ignoring the bigger picture__
+5. __Inconsistent feedback__
+6. __Review fatigue - too many small comments__
 
 ### For Authors
 
 #### Do This ✅
 
-1. **Self-review first** - Catch obvious issues
-2. **Provide context** - Explain complex decisions
-3. **Keep PRs focused** - One feature/fix per PR
-4. **Respond to all feedback** - Show you've considered everything
-5. **Ask for help** - Don't struggle alone
+1. __Self-review first__ - Catch obvious issues
+2. __Provide context__ - Explain complex decisions
+3. __Keep PRs focused__ - One feature/fix per PR
+4. __Respond to all feedback__ - Show you've considered everything
+5. __Ask for help__ - Don't struggle alone
 
 #### Avoid This ❌
 
-1. **Taking feedback personally**
-2. **Defensive responses**
-3. **Ignoring feedback**
-4. **Rushing to address comments**
-5. **Large, unfocused PRs**
+1. __Taking feedback personally__
+2. __Defensive responses__
+3. __Ignoring feedback__
+4. __Rushing to address comments__
+5. __Large, unfocused PRs__
 
 ---
 
@@ -426,11 +442,11 @@ Track these metrics to improve review process:
 
 | Metric | Target | Measurement |
 |--------|--------|-------------|
-| **Review Response Time** | <24 hours | Time to first response |
-| **Review Completion Time** | <3 days | Time to approval/merge |
-| **Defects Found in Review** | >80% | Issues caught before production |
-| **Review Coverage** | 100% | PRs that receive review |
-| **Review Participation** | >75% | Team members actively reviewing |
+| __Review Response Time__ | <24 hours | Time to first response |
+| __Review Completion Time__ | <3 days | Time to approval/merge |
+| __Defects Found in Review__ | >80% | Issues caught before production |
+| __Review Coverage__ | 100% | PRs that receive review |
+| __Review Participation__ | >75% | Team members actively reviewing |
 
 ### Review Dashboard Example
 
@@ -449,11 +465,11 @@ Track these metrics to improve review process:
 
 ### Building Review Culture
 
-1. **Lead by Example** - Senior developers model good behavior
-2. **Celebrate Learning** - Share interesting findings from reviews
-3. **Make it Safe** - No blame, focus on improvement
-4. **Regular Retrospectives** - Continuously improve the process
-5. **Recognize Contributors** - Acknowledge good reviewers
+1. __Lead by Example__ - Senior developers model good behavior
+2. __Celebrate Learning__ - Share interesting findings from reviews
+3. __Make it Safe__ - No blame, focus on improvement
+4. __Regular Retrospectives__ - Continuously improve the process
+5. __Recognize Contributors__ - Acknowledge good reviewers
 
 ### Review Etiquette
 
@@ -471,24 +487,27 @@ Track these metrics to improve review process:
 ## 📚 Resources
 
 ### Internal Documentation
+
 - [Development Guide](./DEVELOPMENT_GUIDE.md)
 - [Testing Guide](./TESTING_GUIDE.md)
 - [Contributing Guide](./CONTRIBUTING_GUIDE.md)
 - [Style Guides](./MARKDOWN_STYLE_GUIDE.md)
 
 ### External Resources
+
 - [Google's Code Review Guidelines](https://google.github.io/eng-practices/review/)
 - [GitHub's Code Review Best Practices](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/)
 - [Best Practices for Code Review](https://smartbear.com/learn/code-review/best-practices-for-peer-code-review/)
 
 ### Tools
-- **GitHub** - Built-in review tools
-- **SonarQube** - Code quality analysis
-- **CodeClimate** - Automated code review
-- **DeepCode** - AI-powered code review
+
+- __GitHub__ - Built-in review tools
+- __SonarQube__ - Code quality analysis
+- __CodeClimate__ - Automated code review
+- __DeepCode__ - AI-powered code review
 
 ---
 
-**Last Updated:** January 28, 2025  
-**Version:** 1.0.0  
-**Maintainer:** CSA Documentation Team
+__Last Updated:__ January 28, 2025  
+__Version:__ 1.0.0  
+__Maintainer:__ CSA Documentation Team

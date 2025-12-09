@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Architecture Diagrams
 
-[🏠 Home](../../README.md) > [📊 Diagrams](../README.md) > 📄 Architecture Diagrams
+[🏠 Home](../../README.md) > 📊 Diagrams > 📄 Architecture Diagrams
 
 This section contains architecture diagrams for Azure Synapse Analytics, focusing on Delta Lakehouse and Serverless SQL implementations.
 
@@ -10,7 +10,7 @@ The Delta Lakehouse architecture combines the best features of data lakes and da
 
 ### 🏗️ Our Delta Lakehouse Architecture
 
-![Delta Lakehouse Architecture](./delta-lakehouse-architecture.svg)
+![Delta Lakehouse Architecture](./delta-lakehouse-architecture.svg/README.md)
 
 ### 🔗 Microsoft Reference Architecture
 
@@ -30,7 +30,7 @@ The Serverless SQL architecture enables on-demand, scalable analytics without pr
 
 ### 🏗️ Our Serverless SQL Architecture
 
-![Serverless SQL Architecture](./serverless-sql-architecture.svg)
+![Serverless SQL Architecture](./serverless-sql-architecture.svg/README.md)
 
 ### 🔗 Microsoft Reference Architecture
 
@@ -50,7 +50,7 @@ The Shared Metadata architecture enables consistent data access across Spark and
 
 ### 🏗️ Our Shared Metadata Architecture
 
-![Shared Metadata Architecture](./shared-metadata-architecture.svg)
+![Shared Metadata Architecture](./shared-metadata-architecture.svg/README.md)
 
 ### 🔗 Microsoft Reference Architecture
 
@@ -70,7 +70,6 @@ This reference architecture demonstrates a comprehensive enterprise implementati
 <!-- Mermaid diagram for MkDocs rendering -->
 ![Secure Data Lakehouse Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-overview.png)
 
-
 <!-- Static image fallback for GitHub -->
 ![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
 
@@ -88,7 +87,6 @@ For enterprise deployments requiring high availability and global distribution:
 
 <!-- Mermaid diagram for MkDocs rendering -->
 ![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)
-
 
 <!-- Static image fallback for GitHub -->
 ![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)

@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+   "MCP_DOCKER": {
+      "type": "stdio",
+      "command": "docker",
+      "args": ["mcp", "gateway", "run"],
+      "env": {},
+      "description": "Docker MCP gateway"
+    },
+    "serena": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "ide-assistant"
+      ],
+      "description": "Serena code intelligence"
+    }
+  }
+}

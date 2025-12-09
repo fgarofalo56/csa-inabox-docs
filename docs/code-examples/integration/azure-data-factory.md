@@ -1,6 +1,6 @@
 # Azure Data Factory Integration with Azure Synapse Analytics
 
-[Home](../../../README.md) > [Code Examples](../../README.md) > [Integration](../README.md) > Data Factory Integration
+[Home](../../../README.md) > [Code Examples](../../README.md) > Integration > Data Factory Integration
 
 This guide provides examples and best practices for integrating Azure Synapse Analytics with Azure Data Factory for comprehensive data orchestration, ingestion, and transformation.
 
@@ -456,34 +456,34 @@ mssparkutils.fs.put(
 
 ## Best Practices for Synapse and ADF Integration
 
-1. **Use the Right Tool for the Job**:
+1. __Use the Right Tool for the Job__:
    - ADF for orchestration and data movement
    - Synapse for complex transformations and analytics
 
-2. **Parameter Passing**: Use pipeline parameters to make your integrations dynamic and reusable.
+2. __Parameter Passing__: Use pipeline parameters to make your integrations dynamic and reusable.
 
-3. **Error Handling**: Implement comprehensive error handling and notifications across both services.
+3. __Error Handling__: Implement comprehensive error handling and notifications across both services.
 
-4. **Monitoring Integration**: Set up integrated monitoring across both services using Azure Monitor.
+4. __Monitoring Integration__: Set up integrated monitoring across both services using Azure Monitor.
 
-5. **Performance Optimization**:
+5. __Performance Optimization__:
    - Use PolyBase for bulk data loading into Synapse
    - Leverage mapping data flows for no-code transformations
    - Use Spark pools for complex transformations
 
-6. **Security Best Practices**:
+6. __Security Best Practices__:
    - Use managed identities for authentication between services
    - Store secrets in Azure Key Vault
    - Implement private endpoints for network isolation
    - Use RBAC to control access to both services
 
-7. **Cost Optimization**:
+7. __Cost Optimization__:
    - Scale down resources when not in use
    - Use serverless SQL pools for ad-hoc queries
    - Monitor DTU/DWU usage in dedicated SQL pools
    - Optimize pipeline execution frequency
 
-8. **Pipeline Design**:
+8. __Pipeline Design__:
    - Break complex processes into modular pipelines
    - Use triggers for scheduling and event-based execution
    - Implement proper dependency management between activities

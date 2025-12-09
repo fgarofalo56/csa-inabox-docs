@@ -16,7 +16,7 @@
 [📖 **Overview**](./docs/01-overview/README.md) • 
 [🛠️ **Services**](./docs/02-services/README.md) • 
 [🏗️ **Architecture Patterns**](./docs/03-architecture-patterns/README.md) • 
-[💡 **Best Practices**](./docs/05-best-practices/README.md)
+[💡 **Best Practices**](./docs/best-practices/README.md)
 
 </div>
 
@@ -49,10 +49,10 @@ This repository contains comprehensive technical documentation for the complete 
 |:----:|:--------------|:------------|
 | 🏗️ **Solution Architects** | [Architecture Patterns](./docs/03-architecture-patterns/README.md) | Complete architectural patterns and reference implementations |
 | 🛠️ **Platform Engineers** | [Services Documentation](./docs/02-services/README.md) | Deep dive into each Azure analytics service |
-| 💻 **Data Engineers** | [Implementation Guides](./docs/04-implementation-guides/README.md) | Step-by-step implementation tutorials |
+| 💻 **Data Engineers** | [Tutorials](./docs/tutorials/README.md) | Step-by-step implementation tutorials |
 | 📊 **Data Scientists** | [Analytics Compute Services](./docs/02-services/analytics-compute/README.md) | Synapse, Databricks, and HDInsight guidance |
-| ⚙️ **Operations Teams** | [Best Practices](./docs/05-best-practices/README.md) | Operational excellence and optimization |
-| 🔒 **Security Teams** | [Security Guide](./docs/10-security/README.md) | Comprehensive security and compliance |
+| ⚙️ **Operations Teams** | [Best Practices](./docs/best-practices/README.md) | Operational excellence and optimization |
+| 🔒 **Security Teams** | [Security Guide](./docs/security/README.md) | Comprehensive security and compliance |
 
 </div>
 
@@ -94,7 +94,7 @@ Required Software:
 To preview the documentation site locally:
 
 ```bash
-python project_tracking/tools/serve-docs.py
+python scripts/development/serve-docs.py
 ```
 
 This will start the MkDocs development server and automatically open the site in your default browser at [http://localhost:8000](http://localhost:8000).
@@ -111,22 +111,22 @@ This project uses `mike` for documentation versioning. The versioning tool scrip
 
 ```bash
 # Create a new version
-python project-planning/tools/version-docs.py create <version> [--alias <alias>] [--title <title>]
+python scripts/development/version-docs.py create <version> [--alias <alias>] [--title <title>]
 
 # Add an alias to an existing version
-python project-planning/tools/version-docs.py alias <version> <alias>
+python scripts/development/version-docs.py alias <version> <alias>
 
 # List all versions
-python project-planning/tools/version-docs.py list
+python scripts/development/version-docs.py list
 
 # Delete a version
-python project-planning/tools/version-docs.py delete <version>
+python scripts/development/version-docs.py delete <version>
 ```
 
 Example:
 
 ```bash
-python project-planning/tools/version-docs.py create 1.0.0 --alias latest --title "Version 1.0.0"
+python scripts/development/version-docs.py create 1.0.0 --alias latest --title "Version 1.0.0"
 ```
 
 ---
@@ -147,7 +147,7 @@ python project-planning/tools/version-docs.py create 1.0.0 --alias latest --titl
 |:----------|:------------|:-----|
 | 🌐 **Platform Overview** | Complete Azure analytics ecosystem introduction | [View Details](./docs/01-overview/README.md) |
 | 📋 **Service Catalog** | Comprehensive catalog of all analytics services | [View Details](./docs/01-overview/service-catalog.md) |
-| 🎯 **Service Selection** | Decision trees for choosing the right services | [View Details](./docs/01-overview/choosing-services.md) |
+| 🎯 **Service Selection** | Decision trees for choosing the right services | [View Details](./docs/01-overview/service-catalog.md#service-selection-guide) |
 
 ### 🛠️ [02 - Services](./docs/02-services/README.md)
 
@@ -157,8 +157,8 @@ python project-planning/tools/version-docs.py create 1.0.0 --alias latest --titl
 |:----------------|:------------|:-----|
 | 💾 **Analytics Compute** | Synapse, Databricks, HDInsight | [View Details](./docs/02-services/analytics-compute/README.md) |
 | 🔄 **Streaming Services** | Stream Analytics, Event Hubs, Event Grid | [View Details](./docs/02-services/streaming-services/README.md) |
-| 🗃️ **Storage Services** | Data Lake Gen2, Cosmos DB, Azure SQL | [View Details](./docs/02-services/storage-services/README.md) |
-| 🔧 **Orchestration** | Data Factory, Logic Apps | [View Details](./docs/02-services/orchestration-services/README.md) |
+| 🗃️ **Storage Services** | Data Lake Gen2, Cosmos DB, Azure SQL | [View Details](./docs/02-services/README.md#-storage-services) |
+| 🔧 **Orchestration** | Data Factory, Logic Apps | [View Details](./docs/02-services/README.md#-orchestration-services) |
 
 ### 🏗️ [03 - Architecture Patterns](./docs/03-architecture-patterns/README.md)
 
@@ -174,22 +174,22 @@ graph LR
 
 | Pattern Category | Focus | Examples |
 |:----------------|:------|:---------|
-| 🔄 **Streaming Architectures** | Lambda, Kappa, Event Sourcing | [View Details](./docs/03-architecture-patterns/streaming-architectures/README.md) |
-| 📊 **Batch Architectures** | Medallion, Data Mesh, Hub-Spoke | [View Details](./docs/03-architecture-patterns/batch-architectures/README.md) |
-| 🔄 **Hybrid Architectures** | Lambda-Kappa, HTAP, Polyglot | [View Details](./docs/03-architecture-patterns/hybrid-architectures/README.md) |
-| 🏭 **Reference Architectures** | Industry-specific solutions | [View Details](./docs/03-architecture-patterns/reference-architectures/README.md) |
+| 🔄 **Streaming Architectures** | Lambda, Kappa, Event Sourcing | [View Details](./docs/03-architecture-patterns/README.md#-streaming-architecture-patterns) |
+| 📊 **Batch Architectures** | Medallion, Data Mesh, Hub-Spoke | [View Details](./docs/03-architecture-patterns/README.md#-batch-architecture-patterns) |
+| 🔄 **Hybrid Architectures** | Lambda-Kappa, HTAP, Polyglot | [View Details](./docs/03-architecture-patterns/README.md#-hybrid-architecture-patterns) |
+| 🏭 **Reference Architectures** | Industry-specific solutions | [View Details](./docs/solutions/README.md) |
 
-### 🛠️ [04 - Implementation Guides](./docs/04-implementation-guides/README.md)
+### 🛠️ [04 - Implementation Guides](./docs/tutorials/README.md)
 
 > **Step-by-step implementation guidance**
 
 | Guide Type | Focus | Documentation |
 |:-----------|:------|:--------------|
-| 🎯 **End-to-End Solutions** | Complete solution implementations | [View Details](./docs/04-implementation-guides/end-to-end-solutions/README.md) |
-| 🔗 **Integration Scenarios** | Service integration patterns | [View Details](./docs/04-implementation-guides/integration-scenarios/README.md) |
-| 🔄 **Migration Guides** | Legacy to cloud migrations | [View Details](./docs/04-implementation-guides/migration-guides/README.md) |
+| 🎯 **End-to-End Solutions** | Complete solution implementations | [View Details](./docs/solutions/README.md) |
+| 🔗 **Integration Scenarios** | Service integration patterns | [View Details](./docs/tutorials/integration/README.md) |
+| 🔄 **Learning Paths** | Role-based learning journeys | [View Details](./docs/tutorials/README.md#-learning-paths-by-role) |
 
-### 💡 [05 - Best Practices](./docs/05-best-practices/README.md)
+### 💡 [05 - Best Practices](./docs/best-practices/README.md)
 
 > **Operational excellence across all services**
 
@@ -232,6 +232,76 @@ graph LR
 5. **📤 Commit** with descriptive messages
 6. **💮 Push** to your branch
 7. **🔄 Create** a Pull Request
+
+### 🎯 Contribution Options
+
+<div align="center">
+
+| Contribution Type | Description | Get Started |
+|:-----------------|:------------|:------------|
+| 📝 **Documentation** | Improve existing docs or add new content | [Documentation Request](.github/ISSUE_TEMPLATE/documentation-request.md) |
+| 🐛 **Bug Reports** | Report errors or broken links | [Open Issue](https://github.com/fgarofalo56/csa-inabox-docs/issues/new) |
+| 💡 **Suggestions** | Propose new features or improvements | [Start Discussion](https://github.com/fgarofalo56/csa-inabox-docs/discussions) |
+| 🔄 **Pull Requests** | Submit changes directly | [Create PR](https://github.com/fgarofalo56/csa-inabox-docs/compare) |
+
+</div>
+
+### 📖 Contributor Resources
+
+- **[Contributing Guide](./docs/guides/CONTRIBUTING_GUIDE.md)** - Complete contribution guidelines
+- **[Markdown Style Guide](./docs/guides/MARKDOWN_STYLE_GUIDE.md)** - Documentation formatting standards
+- **[Directory Structure Guide](./docs/guides/DIRECTORY_STRUCTURE_GUIDE.md)** - File organization standards
+
+---
+
+## 🏆 Contributors
+
+We celebrate and appreciate all contributors to this project!
+
+### 🌟 Hall of Fame
+
+<div align="center">
+
+**Thank you to all our contributors who help make Azure analytics more accessible!**
+
+[![Contributors](https://img.shields.io/github/contributors/fgarofalo56/csa-inabox-docs?style=for-the-badge)](https://github.com/fgarofalo56/csa-inabox-docs/graphs/contributors)
+
+</div>
+
+### Recognition Categories
+
+<div align="center">
+
+| Category | Description | Recognition |
+|:---------|:------------|:------------|
+| 📚 **Documentation Champions** | Most documentation contributions | Top 3 contributors by merged PRs |
+| ✨ **Quality Advocates** | Highest quality submissions | Contributors with 95%+ approval rate |
+| 👥 **Community Leaders** | Active reviewers and mentors | Top PR reviewers |
+| 💡 **Innovation Stars** | Creative solutions and improvements | Best new feature contributions |
+
+</div>
+
+### Contribution Levels
+
+<div align="center">
+
+| Level | Contributions | Badge |
+|:------|:--------------|:------|
+| **Contributor** | 1+ merged PR | ![Contributor](https://img.shields.io/badge/Level-Contributor-blue?style=flat-square) |
+| **Regular Contributor** | 5+ merged PRs | ![Regular](https://img.shields.io/badge/Level-Regular-green?style=flat-square) |
+| **Core Contributor** | 10+ merged PRs | ![Core](https://img.shields.io/badge/Level-Core-orange?style=flat-square) |
+| **Maintainer** | Consistent high-quality | ![Maintainer](https://img.shields.io/badge/Level-Maintainer-red?style=flat-square) |
+
+</div>
+
+### How to Get Featured
+
+1. Make quality contributions to the documentation
+2. Help review and improve others' pull requests
+3. Participate actively in discussions
+4. Follow our [Code of Conduct](./docs/guides/CONTRIBUTING_GUIDE.md#code-of-conduct)
+
+**[View Full Contributing Guide →](./docs/guides/CONTRIBUTING_GUIDE.md)**
 
 ### 🎯 Setting Up Git Hooks for Quality Control
 
@@ -328,9 +398,9 @@ GitHub Actions automatically validates:
 
 | Document | Purpose | Link |
 |:---------|:--------|:-----|
-| 📅 **Planning** | Project roadmap | [View](./project-planning/PLANNING.md) |
-| ✅ **Tasks** | Current work items | [View](./project-planning/TASK.md) |
-| 📜 **Changelog** | Version history | [View](./project-planning/CHANGELOG.md) |
+| 📋 **Style Guide** | Markdown standards | [View](./docs/guides/MARKDOWN_STYLE_GUIDE.md) |
+| 🏗️ **Structure Guide** | Directory organization | [View](./docs/guides/DIRECTORY_STRUCTURE_GUIDE.md) |
+| 🤝 **Contributing** | Contribution guidelines | [View](./docs/guides/CONTRIBUTING_GUIDE.md) |
 | 🤖 **AI Context** | Development context | [View](./.ai-context) |
 
 </div>
@@ -411,13 +481,15 @@ Azure Synapse Analytics Documentation
 ├── README.md
 ├── mkdocs.yml
 ├── requirements.txt
-└── project-planning/
-    ├── CHANGELOG.md
-    ├── PLANNING.md
-    ├── TASK.md
-    └── tools/
-        ├── serve-docs.py
-        └── version-docs.py
+├── scripts/
+│   ├── development/
+│   │   ├── serve-docs.py
+│   │   └── version-docs.py
+│   └── maintenance/
+│       └── link_checker.py
+└── src/
+    └── csa_docs_tools/
+        └── (validation tools)
 ```
 
 ---
@@ -443,7 +515,7 @@ Azure Synapse Analytics Documentation
 
 > **Track updates and improvements**
 
-📖 View detailed version history: [**CHANGELOG**](./project-planning/CHANGELOG.md)
+This project tracks changes through git commits and GitHub releases. Task management is handled via Archon MCP server.
 
 ---
 

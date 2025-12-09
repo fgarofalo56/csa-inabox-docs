@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import Mock, patch, MagicMock
 from packaging.version import Version as PackagingVersion
 
-from src.csa_docs_tools.version_manager import (
+from csa_docs_tools.version_manager import (
     SemanticVersionManager,
     VersionInfo,
     VersionType,

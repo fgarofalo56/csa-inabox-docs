@@ -1,18 +1,96 @@
-# 🔒 Security Best Practices for Azure Synapse Analytics
+---
+title: "Security Best Practices for Azure Synapse Analytics"
+description: "Enterprise security framework for Azure Synapse Analytics"
+author: "Security Team"
+last_updated: "2025-12-09"
+version: "1.0.0"
+category: "Security"
+tags: ["security", "compliance", "authentication", "encryption"]
+compliance: ["GDPR", "HIPAA", "SOX"]
+---
 
-[Home](../../README.md) > [Best Practices](../README.md) > Security
+# Security Best Practices for Azure Synapse Analytics
 
-> 🏡 **Defense-in-Depth Security**  
+[Home](../../README.md) > Best Practices > Security
+
+> 🏡 __Defense-in-Depth Security__  
 > Comprehensive security framework for protecting your Azure Synapse Analytics environment with enterprise-grade controls and compliance capabilities.
-
 
 ---
 
 ## 🔐 Identity and Access Management
 
-> 🏗️ **Security Foundation**  
+> 🏗️ __Security Foundation__
 > Identity and access management forms the cornerstone of your Synapse security architecture.
 
+### Security Architecture Overview
+
+The following diagram illustrates the layered security architecture for Azure Synapse Analytics:
+
+```mermaid
+graph TB
+    subgraph "Identity Layer"
+        A[Azure Active Directory]
+        B[Multi-Factor Authentication]
+        C[Conditional Access Policies]
+    end
+
+    subgraph "Network Layer"
+        D[Private Endpoints]
+        E[Managed Virtual Network]
+        F[NSG Rules]
+        G[IP Firewall]
+    end
+
+    subgraph "Data Layer"
+        H[Encryption at Rest]
+        I[Encryption in Transit]
+        J[Row-Level Security]
+        K[Column-Level Security]
+        L[Dynamic Data Masking]
+    end
+
+    subgraph "Application Layer"
+        M[RBAC Controls]
+        N[Workspace Permissions]
+        O[SQL Permissions]
+    end
+
+    subgraph "Monitoring Layer"
+        P[Azure Monitor]
+        Q[Security Center]
+        R[Audit Logs]
+        S[Sentinel SIEM]
+    end
+
+    A --> M
+    B --> A
+    C --> A
+
+    M --> N
+    M --> O
+
+    D --> E
+    E --> F
+    F --> G
+
+    H --> L
+    I --> L
+    J --> L
+    K --> L
+
+    N --> P
+    O --> P
+    P --> R
+    Q --> S
+    R --> S
+
+    style A fill:#4CAF50
+    style D fill:#2196F3
+    style H fill:#FF9800
+    style M fill:#9C27B0
+    style P fill:#F44336
+```
 
 ### 🌐 Azure Active Directory Integration
 
@@ -20,9 +98,9 @@
 
 | Security Control | Implementation | Compliance Level | Risk Mitigation |
 |------------------|----------------|------------------|-----------------|
-| 🔐 **AAD Authentication** | Primary authentication method | ![Enterprise](https://img.shields.io/badge/Level-Enterprise-darkgreen) | ![High](https://img.shields.io/badge/Risk-High-red) |
-| 🤖 **Managed Identities** | Service-to-service authentication | ![Recommended](https://img.shields.io/badge/Level-Recommended-blue) | ![Medium](https://img.shields.io/badge/Risk-Medium-orange) |
-| 🔐 **Multi-Factor Authentication** | Required for all user access | ![Critical](https://img.shields.io/badge/Priority-Critical-red) | ![Very High](https://img.shields.io/badge/Risk-Very_High-darkred) |
+| 🔐 __AAD Authentication__ | Primary authentication method | ![Enterprise](https://img.shields.io/badge/Level-Enterprise-darkgreen) | ![High](https://img.shields.io/badge/Risk-High-red) |
+| 🤖 __Managed Identities__ | Service-to-service authentication | ![Recommended](https://img.shields.io/badge/Level-Recommended-blue) | ![Medium](https://img.shields.io/badge/Risk-Medium-orange) |
+| 🔐 __Multi-Factor Authentication__ | Required for all user access | ![Critical](https://img.shields.io/badge/Priority-Critical-red) | ![Very High](https://img.shields.io/badge/Risk-Very_High-darkred) |
 
 ```json
 {
@@ -37,7 +115,7 @@
 }
 ```
 
-> ⚠️ **Security Alert**  
+> ⚠️ __Security Alert__  
 > Always enable AAD-only authentication to prevent SQL authentication bypass attempts.
 
 ---
@@ -46,9 +124,9 @@
 
 | Authorization Layer | Control Type | Implementation | Security Impact |
 |--------------------|--------------|----------------|------------------|
-| 🔐 **RBAC (Built-in Roles)** | Least privilege principle | Azure built-in roles | ![High](https://img.shields.io/badge/Impact-High-green) |
-| 📋 **Custom Roles** | Specialized access requirements | Custom role definitions | ![Medium](https://img.shields.io/badge/Impact-Medium-yellow) |
-| 🌐 **Conditional Access** | Context-based access control | Azure AD policies | ![Very High](https://img.shields.io/badge/Impact-Very_High-darkgreen) |
+| 🔐 __RBAC (Built-in Roles)__ | Least privilege principle | Azure built-in roles | ![High](https://img.shields.io/badge/Impact-High-green) |
+| 📋 __Custom Roles__ | Specialized access requirements | Custom role definitions | ![Medium](https://img.shields.io/badge/Impact-Medium-yellow) |
+| 🌐 __Conditional Access__ | Context-based access control | Azure AD policies | ![Very High](https://img.shields.io/badge/Impact-Very_High-darkgreen) |
 
 ```powershell
 # 🔐 Assign appropriate Synapse roles
@@ -62,7 +140,8 @@ New-AzRoleAssignment -SignInName analyst@contoso.com `
     -Scope "/subscriptions/<sub-id>/resourceGroups/<rg>/providers/Microsoft.Synapse/workspaces/<workspace>"
 ```
 
-> 📋 **RBAC Best Practices**  
+> 📋 __RBAC Best Practices__  
+>
 > - Start with least privilege
 > - Use built-in roles when possible
 > - Regular access reviews (quarterly)
@@ -74,9 +153,9 @@ New-AzRoleAssignment -SignInName analyst@contoso.com `
 
 | Security Feature | Purpose | Implementation Complexity | Security Level |
 |------------------|---------|---------------------------|----------------|
-| 🌐 **IP Firewall Rules** | Restrict network access by IP range | ![Low](https://img.shields.io/badge/Complexity-Low-green) | ![Medium](https://img.shields.io/badge/Security-Medium-yellow) |
-| 🔗 **Private Link** | Secure VNet connectivity | ![High](https://img.shields.io/badge/Complexity-High-red) | ![Very High](https://img.shields.io/badge/Security-Very_High-darkgreen) |
-| 🌐 **Managed VNet** | Network isolation | ![Medium](https://img.shields.io/badge/Complexity-Medium-orange) | ![High](https://img.shields.io/badge/Security-High-green) |
+| 🌐 __IP Firewall Rules__ | Restrict network access by IP range | ![Low](https://img.shields.io/badge/Complexity-Low-green) | ![Medium](https://img.shields.io/badge/Security-Medium-yellow) |
+| 🔗 __Private Link__ | Secure VNet connectivity | ![High](https://img.shields.io/badge/Complexity-High-red) | ![Very High](https://img.shields.io/badge/Security-Very_High-darkgreen) |
+| 🌐 __Managed VNet__ | Network isolation | ![Medium](https://img.shields.io/badge/Complexity-Medium-orange) | ![High](https://img.shields.io/badge/Security-High-green) |
 
 ```json
 {
@@ -98,17 +177,18 @@ New-AzRoleAssignment -SignInName analyst@contoso.com `
 }
 ```
 
-> 🔒 **Network Security Layers**  
-> 1. **Private Link** - Secure VNet communication
-> 2. **Managed VNet** - Isolated compute environment  
-> 3. **IP Firewall** - Additional IP-based filtering
-> 4. **NSG Rules** - Subnet-level traffic control
+> 🔒 __Network Security Layers__  
+>
+> 1. __Private Link__ - Secure VNet communication
+> 2. __Managed VNet__ - Isolated compute environment  
+> 3. __IP Firewall__ - Additional IP-based filtering
+> 4. __NSG Rules__ - Subnet-level traffic control
 
 ---
 
 ## 📜 Data Security
 
-> 🔒 **Data Protection Excellence**  
+> 🔒 __Data Protection Excellence__  
 > Implement comprehensive data protection controls to secure sensitive information at rest, in transit, and in use.
 
 ### 🔐 Encryption and Data Protection
@@ -117,9 +197,9 @@ New-AzRoleAssignment -SignInName analyst@contoso.com `
 
 | Encryption Type | Implementation | Key Management | Compliance Impact |
 |----------------|----------------|----------------|-------------------|
-| 🔒 **At Rest** | All storage encrypted by default | Microsoft or customer-managed | ![Required](https://img.shields.io/badge/Compliance-Required-red) |
-| 💪 **In Transit** | TLS 1.2+ for all connections | Certificate-based | ![Critical](https://img.shields.io/badge/Priority-Critical-darkred) |
-| 🏭 **TDE (SQL Pools)** | Transparent database encryption | Service or customer-managed | ![Enterprise](https://img.shields.io/badge/Level-Enterprise-blue) |
+| 🔒 __At Rest__ | All storage encrypted by default | Microsoft or customer-managed | ![Required](https://img.shields.io/badge/Compliance-Required-red) |
+| 💪 __In Transit__ | TLS 1.2+ for all connections | Certificate-based | ![Critical](https://img.shields.io/badge/Priority-Critical-darkred) |
+| 🏭 __TDE (SQL Pools)__ | Transparent database encryption | Service or customer-managed | ![Enterprise](https://img.shields.io/badge/Level-Enterprise-blue) |
 
 ```powershell
 # 🔐 Configure customer-managed encryption
@@ -137,7 +217,8 @@ Set-AzSqlDatabaseTransparentDataEncryption `
     -State "Enabled"
 ```
 
-> 🔑 **Key Management Best Practices**  
+> 🔑 __Key Management Best Practices__  
+>
 > - Use Azure Key Vault for centralized key management
 > - Implement key rotation policies (annual)
 > - Separate encryption keys by environment
@@ -149,9 +230,9 @@ Set-AzSqlDatabaseTransparentDataEncryption `
 
 | Protection Technique | Use Case | Implementation | Privacy Level |
 |---------------------|----------|----------------|---------------|
-| 🏷️ **Data Classification** | Discover and label sensitive data | SQL sensitivity labels | ![Discovery](https://img.shields.io/badge/Type-Discovery-blue) |
-| 🎭 **Dynamic Data Masking** | Hide sensitive data from unauthorized users | Column-level masking | ![Runtime](https://img.shields.io/badge/Type-Runtime-green) |
-| 🔄 **Data Anonymization** | De-identify data for analytics | Tokenization, perturbation | ![Permanent](https://img.shields.io/badge/Type-Permanent-purple) |
+| 🏷️ __Data Classification__ | Discover and label sensitive data | SQL sensitivity labels | ![Discovery](https://img.shields.io/badge/Type-Discovery-blue) |
+| 🎭 __Dynamic Data Masking__ | Hide sensitive data from unauthorized users | Column-level masking | ![Runtime](https://img.shields.io/badge/Type-Runtime-green) |
+| 🔄 __Data Anonymization__ | De-identify data for analytics | Tokenization, perturbation | ![Permanent](https://img.shields.io/badge/Type-Permanent-purple) |
 
 ```sql
 -- 🏷️ Data Classification - Label sensitive columns
@@ -177,11 +258,12 @@ ADD MASKED WITH (FUNCTION = 'email()')
 FOR COLUMN email_address;
 ```
 
-> 🔍 **Data Protection Layers**  
-> 1. **Discovery**: Identify sensitive data automatically
-> 2. **Classification**: Label data based on sensitivity  
-> 3. **Protection**: Apply appropriate controls
-> 4. **Monitoring**: Track access to sensitive data
+> 🔍 __Data Protection Layers__  
+>
+> 1. __Discovery__: Identify sensitive data automatically
+> 2. __Classification__: Label data based on sensitivity  
+> 3. __Protection__: Apply appropriate controls
+> 4. __Monitoring__: Track access to sensitive data
 
 ---
 
@@ -191,9 +273,9 @@ FOR COLUMN email_address;
 
 | Security Control | Implementation | Granularity | Use Cases |
 |------------------|----------------|-------------|----------|
-| 📋 **Row-Level Security (RLS)** | Filter predicates and policies | Row-level | Multi-tenant, regional data |
-| 📜 **Column-Level Security** | GRANT/DENY permissions | Column-level | Salary data, PII protection |
-| 🔍 **SQL Vulnerability Assessment** | Automated security scanning | Database-level | Compliance, risk management |
+| 📋 __Row-Level Security (RLS)__ | Filter predicates and policies | Row-level | Multi-tenant, regional data |
+| 📜 __Column-Level Security__ | GRANT/DENY permissions | Column-level | Salary data, PII protection |
+| 🔍 __SQL Vulnerability Assessment__ | Automated security scanning | Database-level | Compliance, risk management |
 
 ```sql
 -- 📋 Row-Level Security Implementation
@@ -234,7 +316,8 @@ SELECT
 FROM employees;
 ```
 
-> 🔒 **Security Policy Management**  
+> 🔒 __Security Policy Management__  
+>
 > - Test policies thoroughly before production deployment
 > - Monitor policy performance impact
 > - Document security predicates for maintenance
@@ -244,7 +327,7 @@ FROM employees;
 
 ## 🌐 Network Security
 
-> 🏡 **Network Defense Strategy**  
+> 🏡 __Network Defense Strategy__  
 > Implement multi-layered network security controls to protect against unauthorized access and data exfiltration.
 
 ### 🔒 Network Isolation Architecture
@@ -253,9 +336,9 @@ FROM employees;
 
 | Endpoint Type | Security Level | Use Case | Network Traffic |
 |---------------|----------------|----------|------------------|
-| 🔗 **Private Endpoints** | Highest security | Production workloads | ![Private](https://img.shields.io/badge/Traffic-Private-darkgreen) |
-| 🌐 **Service Endpoints** | Medium security | Legacy compatibility | ![Service_Network](https://img.shields.io/badge/Traffic-Service_Network-orange) |
-| 🌍 **Public Endpoints** | Basic security | Development/testing | ![Public](https://img.shields.io/badge/Traffic-Public-red) |
+| 🔗 __Private Endpoints__ | Highest security | Production workloads | ![Private](https://img.shields.io/badge/Traffic-Private-darkgreen) |
+| 🌐 __Service Endpoints__ | Medium security | Legacy compatibility | ![Service_Network](https://img.shields.io/badge/Traffic-Service_Network-orange) |
+| 🌍 __Public Endpoints__ | Basic security | Development/testing | ![Public](https://img.shields.io/badge/Traffic-Public-red) |
 
 ```json
 {
@@ -278,7 +361,8 @@ FROM employees;
 }
 ```
 
-> 🔗 **Private Endpoint Best Practices**  
+> 🔗 __Private Endpoint Best Practices__  
+>
 > - Create separate private endpoints for different Synapse services (SQL, Dev, SqlOnDemand)
 > - Use dedicated subnets for private endpoints  
 > - Configure private DNS zones for name resolution
@@ -290,9 +374,9 @@ FROM employees;
 
 | NSG Rule Type | Direction | Purpose | Security Impact |
 |---------------|-----------|---------|------------------|
-| 📌 **Restrictive Inbound** | Inbound | Limit access to necessary ports only | ![High](https://img.shields.io/badge/Impact-High-green) |
-| 📎 **Controlled Outbound** | Outbound | Prevent data exfiltration | ![Very High](https://img.shields.io/badge/Impact-Very_High-darkgreen) |
-| 📊 **Application Security Groups** | Both | Logical grouping of resources | ![Medium](https://img.shields.io/badge/Impact-Medium-yellow) |
+| 📌 __Restrictive Inbound__ | Inbound | Limit access to necessary ports only | ![High](https://img.shields.io/badge/Impact-High-green) |
+| 📎 __Controlled Outbound__ | Outbound | Prevent data exfiltration | ![Very High](https://img.shields.io/badge/Impact-Very_High-darkgreen) |
+| 📊 __Application Security Groups__ | Both | Logical grouping of resources | ![Medium](https://img.shields.io/badge/Impact-Medium-yellow) |
 
 ```json
 {
@@ -327,7 +411,8 @@ FROM employees;
 }
 ```
 
-> 🏡 **NSG Security Strategy**  
+> 🏡 __NSG Security Strategy__  
+>
 > - Default deny for all traffic
 > - Explicit allow rules for required traffic only
 > - Regular review of NSG rules
@@ -339,9 +424,9 @@ FROM employees;
 
 | Feature | Security Benefit | Implementation | Risk Mitigation |
 |---------|------------------|----------------|------------------|
-| 🔒 **Data Exfiltration Protection** | Prevents unauthorized data export | Managed VNet isolation | ![Very High](https://img.shields.io/badge/Risk-Very_High-darkred) |
-| ✅ **Approved Private Endpoints** | Controls outbound connectivity | Whitelist approach | ![High](https://img.shields.io/badge/Risk-High-red) |
-| 📋 **Network Monitoring** | Detect suspicious activity | Azure Monitor integration | ![Medium](https://img.shields.io/badge/Risk-Medium-orange) |
+| 🔒 __Data Exfiltration Protection__ | Prevents unauthorized data export | Managed VNet isolation | ![Very High](https://img.shields.io/badge/Risk-Very_High-darkred) |
+| ✅ __Approved Private Endpoints__ | Controls outbound connectivity | Whitelist approach | ![High](https://img.shields.io/badge/Risk-High-red) |
+| 📋 __Network Monitoring__ | Detect suspicious activity | Azure Monitor integration | ![Medium](https://img.shields.io/badge/Risk-Medium-orange) |
 
 ```json
 {
@@ -362,8 +447,9 @@ FROM employees;
 }
 ```
 
-> 🔒 **Data Exfiltration Protection**  
+> 🔒 __Data Exfiltration Protection__  
 > When enabled, Synapse managed VNet prevents:
+>
 > - Unauthorized data copying to external storage
 > - Connections to non-approved private endpoints
 > - Data transfer outside approved Azure AD tenants
@@ -372,7 +458,7 @@ FROM employees;
 
 ## 🔑 Secret Management
 
-> 🔐 **Secure Credential Management**  
+> 🔐 __Secure Credential Management__  
 > Implement centralized, secure credential management using Azure Key Vault integration.
 
 ### 🔑 Azure Key Vault Integration
@@ -381,9 +467,9 @@ FROM employees;
 
 | Secret Type | Storage Method | Rotation Policy | Access Control |
 |-------------|----------------|------------------|----------------|
-| 📊 **Connection Strings** | Key Vault secrets | Every 90 days | ![Restricted](https://img.shields.io/badge/Access-Restricted-red) |
-| 🔑 **API Keys** | Key Vault secrets | Every 30 days | ![Service_Principal](https://img.shields.io/badge/Auth-Service_Principal-blue) |
-| 📜 **Certificates** | Key Vault certificates | Every 365 days | ![Managed_Identity](https://img.shields.io/badge/Auth-Managed_Identity-green) |
+| 📊 __Connection Strings__ | Key Vault secrets | Every 90 days | ![Restricted](https://img.shields.io/badge/Access-Restricted-red) |
+| 🔑 __API Keys__ | Key Vault secrets | Every 30 days | ![Service_Principal](https://img.shields.io/badge/Auth-Service_Principal-blue) |
+| 📜 __Certificates__ | Key Vault certificates | Every 365 days | ![Managed_Identity](https://img.shields.io/badge/Auth-Managed_Identity-green) |
 
 ```python
 # 🔑 Secure secret retrieval in Synapse Spark
@@ -404,7 +490,8 @@ df.write \
   .save("/delta/table")
 ```
 
-> 🔄 **Key Rotation Best Practices**  
+> 🔄 __Key Rotation Best Practices__  
+>
 > - Automate rotation using Azure Automation or Logic Apps
 > - Implement dual-key strategy for zero-downtime rotation
 > - Monitor key usage and expiration dates
@@ -416,9 +503,9 @@ df.write \
 
 | Parameter Type | Security Method | Implementation | Risk Level |
 |----------------|-----------------|----------------|------------|
-| 📊 **Pipeline Parameters** | Secure string type | Azure Synapse pipelines | ![Low](https://img.shields.io/badge/Risk-Low-green) |
-| 🔗 **Linked Service Credentials** | Key Vault integration | JSON configuration | ![Very Low](https://img.shields.io/badge/Risk-Very_Low-darkgreen) |
-| 🌐 **Environment Variables** | Key Vault references | Runtime configuration | ![Medium](https://img.shields.io/badge/Risk-Medium-yellow) |
+| 📊 __Pipeline Parameters__ | Secure string type | Azure Synapse pipelines | ![Low](https://img.shields.io/badge/Risk-Low-green) |
+| 🔗 __Linked Service Credentials__ | Key Vault integration | JSON configuration | ![Very Low](https://img.shields.io/badge/Risk-Very_Low-darkgreen) |
+| 🌐 __Environment Variables__ | Key Vault references | Runtime configuration | ![Medium](https://img.shields.io/badge/Risk-Medium-yellow) |
 
 ```json
 {
@@ -453,18 +540,18 @@ df.write \
 }
 ```
 
-> 🔐 **Secure Configuration Pattern**  
+> 🔐 __Secure Configuration Pattern__  
+>
 > 1. Store all credentials in Key Vault
 > 2. Reference secrets using linked services
 > 3. Never hardcode credentials in pipelines
 > 4. Use managed identities where possible
 
-
 ---
 
 ## 📈 Auditing and Monitoring
 
-> 🔍 **Security Observability**  
+> 🔍 __Security Observability__  
 > Implement comprehensive logging and monitoring to detect, investigate, and respond to security incidents.
 
 ### 📋 Comprehensive Audit Strategy
@@ -473,9 +560,9 @@ df.write \
 
 | Audit Component | Log Categories | Retention | Compliance Impact |
 |----------------|----------------|-----------|-------------------|
-| 🏭 **Synapse Workspace** | RBAC, pipelines, SQL requests | 90 days minimum | ![Required](https://img.shields.io/badge/Compliance-Required-red) |
-| 📊 **SQL Pools** | DDL, DML, login events | 1 year recommended | ![Critical](https://img.shields.io/badge/Priority-Critical-darkred) |
-| 🔥 **Spark Pools** | Job execution, data access | 90 days minimum | ![Important](https://img.shields.io/badge/Priority-Important-orange) |
+| 🏭 __Synapse Workspace__ | RBAC, pipelines, SQL requests | 90 days minimum | ![Required](https://img.shields.io/badge/Compliance-Required-red) |
+| 📊 __SQL Pools__ | DDL, DML, login events | 1 year recommended | ![Critical](https://img.shields.io/badge/Priority-Critical-darkred) |
+| 🔥 __Spark Pools__ | Job execution, data access | 90 days minimum | ![Important](https://img.shields.io/badge/Priority-Important-orange) |
 
 ```json
 {
@@ -526,11 +613,12 @@ ADD (DATABASE_ROLE_MEMBER_CHANGE_GROUP)
 WITH (STATE = ON);
 ```
 
-> 🔍 **Advanced Threat Protection Features**  
-> - **SQL Injection Detection**: Identify potential injection attacks
-> - **Anomalous Database Access**: Detect unusual access patterns
-> - **Potentially Harmful Application**: Monitor suspicious applications
-> - **Brute Force Attacks**: Detect password attack attempts
+> 🔍 __Advanced Threat Protection Features__  
+>
+> - __SQL Injection Detection__: Identify potential injection attacks
+> - __Anomalous Database Access__: Detect unusual access patterns
+> - __Potentially Harmful Application__: Monitor suspicious applications
+> - __Brute Force Attacks__: Detect password attack attempts
 
 ---
 
@@ -538,9 +626,9 @@ WITH (STATE = ON);
 
 | Monitoring Tool | Purpose | Detection Capability | Response Time |
 |----------------|---------|---------------------|---------------|
-| 🛡️ **Azure Security Center** | Vulnerability assessment | ![High](https://img.shields.io/badge/Detection-High-green) | ![Manual](https://img.shields.io/badge/Response-Manual-blue) |
-| 🔍 **Azure Sentinel** | SIEM and SOAR capabilities | ![Very High](https://img.shields.io/badge/Detection-Very_High-darkgreen) | ![Automated](https://img.shields.io/badge/Response-Automated-green) |
-| 🚨 **Security Alerts** | Real-time incident notification | ![Medium](https://img.shields.io/badge/Detection-Medium-yellow) | ![Immediate](https://img.shields.io/badge/Response-Immediate-darkgreen) |
+| 🛡️ __Azure Security Center__ | Vulnerability assessment | ![High](https://img.shields.io/badge/Detection-High-green) | ![Manual](https://img.shields.io/badge/Response-Manual-blue) |
+| 🔍 __Azure Sentinel__ | SIEM and SOAR capabilities | ![Very High](https://img.shields.io/badge/Detection-Very_High-darkgreen) | ![Automated](https://img.shields.io/badge/Response-Automated-green) |
+| 🚨 __Security Alerts__ | Real-time incident notification | ![Medium](https://img.shields.io/badge/Detection-Medium-yellow) | ![Immediate](https://img.shields.io/badge/Response-Immediate-darkgreen) |
 
 ```kusto
 // 🔍 Azure Sentinel - Synapse suspicious activity query
@@ -575,20 +663,20 @@ $alertRule = @{
 New-AzSentinelAlertRule @alertRule
 ```
 
-> 🚨 **Security Incident Response Plan**  
-> 1. **Detection**: Automated alerts and monitoring
-> 2. **Investigation**: Use Sentinel workbooks for analysis
-> 3. **Containment**: Disable accounts, block IPs
-> 4. **Eradication**: Remove threat, patch vulnerabilities
-> 5. **Recovery**: Restore services, monitor for reoccurrence
-> 6. **Lessons Learned**: Update procedures and controls
-
+> 🚨 __Security Incident Response Plan__  
+>
+> 1. __Detection__: Automated alerts and monitoring
+> 2. __Investigation__: Use Sentinel workbooks for analysis
+> 3. __Containment__: Disable accounts, block IPs
+> 4. __Eradication__: Remove threat, patch vulnerabilities
+> 5. __Recovery__: Restore services, monitor for reoccurrence
+> 6. __Lessons Learned__: Update procedures and controls
 
 ---
 
 ## 📋 Compliance and Governance
 
-> 🏛️ **Regulatory Excellence**  
+> 🏛️ __Regulatory Excellence__  
 > Implement comprehensive governance frameworks to meet regulatory requirements and maintain data integrity.
 
 ### 🏠 Data Governance Framework
@@ -597,9 +685,9 @@ New-AzSentinelAlertRule @alertRule
 
 | Governance Component | Tool | Capability | Compliance Benefit |
 |---------------------|------|------------|-------------------|
-| 🔍 **Data Discovery** | Azure Purview | Automated data classification | ![High](https://img.shields.io/badge/Benefit-High-green) |
-| 🗺️ **Data Lineage** | Purview + Synapse integration | End-to-end data tracking | ![Very High](https://img.shields.io/badge/Benefit-Very_High-darkgreen) |
-| 📋 **Metadata Management** | Purview Data Catalog | Centralized metadata repository | ![Medium](https://img.shields.io/badge/Benefit-Medium-yellow) |
+| 🔍 __Data Discovery__ | Azure Purview | Automated data classification | ![High](https://img.shields.io/badge/Benefit-High-green) |
+| 🗺️ __Data Lineage__ | Purview + Synapse integration | End-to-end data tracking | ![Very High](https://img.shields.io/badge/Benefit-Very_High-darkgreen) |
+| 📋 __Metadata Management__ | Purview Data Catalog | Centralized metadata repository | ![Medium](https://img.shields.io/badge/Benefit-Medium-yellow) |
 
 ```json
 {
@@ -617,11 +705,12 @@ New-AzSentinelAlertRule @alertRule
 }
 ```
 
-> 🔍 **Data Classification Strategy**  
-> - **Public**: No restrictions (marketing data)
-> - **Internal**: Company confidential (business metrics)
-> - **Confidential**: Restricted access (customer PII)
-> - **Restricted**: Highest protection (financial, health data)
+> 🔍 __Data Classification Strategy__  
+>
+> - __Public__: No restrictions (marketing data)
+> - __Internal__: Company confidential (business metrics)
+> - __Confidential__: Restricted access (customer PII)
+> - __Restricted__: Highest protection (financial, health data)
 
 ---
 
@@ -629,9 +718,9 @@ New-AzSentinelAlertRule @alertRule
 
 | Compliance Framework | Requirements | Implementation | Audit Frequency |
 |---------------------|--------------|----------------|------------------|
-| 🌍 **GDPR** | Data subject rights, consent management | Privacy controls, data masking | ![Quarterly](https://img.shields.io/badge/Audit-Quarterly-blue) |
-| 🏥 **HIPAA** | PHI protection, access logging | Encryption, audit trails | ![Monthly](https://img.shields.io/badge/Audit-Monthly-orange) |
-| 💼 **SOX** | Financial data controls, change management | Segregation of duties, approval workflows | ![Annual](https://img.shields.io/badge/Audit-Annual-green) |
+| 🌍 __GDPR__ | Data subject rights, consent management | Privacy controls, data masking | ![Quarterly](https://img.shields.io/badge/Audit-Quarterly-blue) |
+| 🏥 __HIPAA__ | PHI protection, access logging | Encryption, audit trails | ![Monthly](https://img.shields.io/badge/Audit-Monthly-orange) |
+| 💼 __SOX__ | Financial data controls, change management | Segregation of duties, approval workflows | ![Annual](https://img.shields.io/badge/Audit-Annual-green) |
 
 ```sql
 -- 🗺️ Data retention policies for compliance
@@ -657,7 +746,8 @@ ALTER TABLE patient_records SET TBLPROPERTIES (
 );
 ```
 
-> 🗺️ **Data Residency Compliance**  
+> 🗺️ __Data Residency Compliance__  
+>
 > ```json
 > {
 >   "geoReplication": {
@@ -676,7 +766,7 @@ ALTER TABLE patient_records SET TBLPROPERTIES (
 
 ## 🚀 Security DevOps (SecDevOps)
 
-> 🔒 **Shift-Left Security**  
+> 🔒 __Shift-Left Security__  
 > Integrate security controls throughout the development lifecycle for continuous security validation.
 
 ### 🔄 Security-Integrated CI/CD
@@ -685,10 +775,10 @@ ALTER TABLE patient_records SET TBLPROPERTIES (
 
 | Pipeline Stage | Security Control | Implementation | Automation Level |
 |---------------|------------------|----------------|-------------------|
-| 📋 **Code Commit** | Static analysis, credential scanning | GitHub Advanced Security | ![Automated](https://img.shields.io/badge/Level-Automated-green) |
-| 🏗️ **Infrastructure** | Template validation, policy compliance | Azure Policy, Bicep | ![Automated](https://img.shields.io/badge/Level-Automated-green) |
-| 🧪 **Testing** | Security testing, vulnerability scanning | Automated test suites | ![Semi_Automated](https://img.shields.io/badge/Level-Semi_Automated-yellow) |
-| 🚀 **Deployment** | Secure configuration, access validation | ARM templates, RBAC | ![Manual](https://img.shields.io/badge/Level-Manual-orange) |
+| 📋 __Code Commit__ | Static analysis, credential scanning | GitHub Advanced Security | ![Automated](https://img.shields.io/badge/Level-Automated-green) |
+| 🏗️ __Infrastructure__ | Template validation, policy compliance | Azure Policy, Bicep | ![Automated](https://img.shields.io/badge/Level-Automated-green) |
+| 🧪 __Testing__ | Security testing, vulnerability scanning | Automated test suites | ![Semi_Automated](https://img.shields.io/badge/Level-Semi_Automated-yellow) |
+| 🚀 __Deployment__ | Secure configuration, access validation | ARM templates, RBAC | ![Manual](https://img.shields.io/badge/Level-Manual-orange) |
 
 ```yaml
 # 🚀 Azure DevOps pipeline with security controls
@@ -731,7 +821,8 @@ stages:
           -enableDataExfiltrationProtection true
 ```
 
-> 🔒 **Security Gate Criteria**  
+> 🔒 __Security Gate Criteria__  
+>
 > - Zero high-severity vulnerabilities
 > - No exposed credentials or secrets
 > - All security policies compliant
@@ -743,10 +834,10 @@ stages:
 
 | Management Activity | Frequency | Automation | Responsibility |
 |--------------------|-----------|------------|----------------|
-| 🔍 **Security Assessment** | Monthly | ![Automated](https://img.shields.io/badge/Type-Automated-green) | Security team |
-| 🛠️ **Vulnerability Scanning** | Weekly | ![Automated](https://img.shields.io/badge/Type-Automated-green) | DevOps team |
-| 📈 **Security Metrics** | Daily | ![Automated](https://img.shields.io/badge/Type-Automated-green) | Monitoring system |
-| 📋 **Compliance Review** | Quarterly | ![Manual](https://img.shields.io/badge/Type-Manual-orange) | Compliance team |
+| 🔍 __Security Assessment__ | Monthly | ![Automated](https://img.shields.io/badge/Type-Automated-green) | Security team |
+| 🛠️ __Vulnerability Scanning__ | Weekly | ![Automated](https://img.shields.io/badge/Type-Automated-green) | DevOps team |
+| 📈 __Security Metrics__ | Daily | ![Automated](https://img.shields.io/badge/Type-Automated-green) | Monitoring system |
+| 📋 __Compliance Review__ | Quarterly | ![Manual](https://img.shields.io/badge/Type-Manual-orange) | Compliance team |
 
 ```powershell
 # 📈 Automated security posture assessment
@@ -792,45 +883,46 @@ function Test-SynapseSecurityPosture {
 }
 ```
 
-> 📈 **Security Metrics Dashboard**  
-> - **Security Score**: Overall security posture (0-100)
-> - **Vulnerability Count**: High/Medium/Low severity issues
-> - **Compliance Status**: % compliant with security policies
-> - **Incident Response Time**: Average time to resolution
+> 📈 __Security Metrics Dashboard__  
+>
+> - __Security Score__: Overall security posture (0-100)
+> - __Vulnerability Count__: High/Medium/Low severity issues
+> - __Compliance Status__: % compliant with security policies
+> - __Incident Response Time__: Average time to resolution
 
 ---
 
 ## 🎆 Security Excellence Summary
 
-> 🏡 **Defense-in-Depth Achieved**  
+> 🏡 __Defense-in-Depth Achieved__  
 > Implementing a comprehensive security strategy requires coordinated controls across all architectural layers.
 
 ### 📋 Security Implementation Checklist
 
 | Security Layer | Implementation Status | Key Controls | Risk Mitigation |
 |----------------|----------------------|--------------|------------------|
-| ✅ **Identity & Access** | Complete | AAD, MFA, RBAC, Conditional Access | ![Very High](https://img.shields.io/badge/Mitigation-Very_High-darkgreen) |
-| ✅ **Data Protection** | Complete | Encryption, Classification, Masking | ![High](https://img.shields.io/badge/Mitigation-High-green) |
-| ✅ **Network Security** | Complete | Private Link, NSG, Managed VNet | ![High](https://img.shields.io/badge/Mitigation-High-green) |
-| ✅ **Monitoring & Audit** | Complete | Logging, SIEM, Threat Detection | ![Medium](https://img.shields.io/badge/Mitigation-Medium-yellow) |
-| ✅ **Governance** | Complete | Policies, Compliance, Lineage | ![Medium](https://img.shields.io/badge/Mitigation-Medium-yellow) |
+| ✅ __Identity & Access__ | Complete | AAD, MFA, RBAC, Conditional Access | ![Very High](https://img.shields.io/badge/Mitigation-Very_High-darkgreen) |
+| ✅ __Data Protection__ | Complete | Encryption, Classification, Masking | ![High](https://img.shields.io/badge/Mitigation-High-green) |
+| ✅ __Network Security__ | Complete | Private Link, NSG, Managed VNet | ![High](https://img.shields.io/badge/Mitigation-High-green) |
+| ✅ __Monitoring & Audit__ | Complete | Logging, SIEM, Threat Detection | ![Medium](https://img.shields.io/badge/Mitigation-Medium-yellow) |
+| ✅ __Governance__ | Complete | Policies, Compliance, Lineage | ![Medium](https://img.shields.io/badge/Mitigation-Medium-yellow) |
 
 ### 🔄 Continuous Security Improvement
 
-![Architecture diagram: best-practices-security-diagram-1](../images/diagrams/best-practices-security-diagram-1.png)
+![Security continuous improvement cycle diagram showing threat assessment, control implementation, monitoring, and compliance validation phases](../images/diagrams/best-practices-security-diagram-1.png)
 
 ### 📚 Additional Resources
 
 | Resource Type | Description | Link |
 |---------------|-------------|------|
-| 📚 **Official Documentation** | Microsoft's comprehensive security guidance | [![Security Docs](https://img.shields.io/badge/Microsoft-Security_Docs-blue)](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/overview) |
-| 📋 **Security Checklist** | Detailed security implementation checklist | [Security Checklist](../reference/security-checklist.md) |
-| 🔧 **Troubleshooting** | Security issue resolution procedures | [Security Troubleshooting](../troubleshooting/security-troubleshooting.md) |
+| 📚 __Official Documentation__ | Microsoft's comprehensive security guidance | [![Security Docs](https://img.shields.io/badge/Microsoft-Security_Docs-blue)](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/overview) |
+| 📋 __Security Checklist__ | Detailed security implementation checklist | [Security Checklist](../reference/security-checklist.md) |
+| 🔧 __Troubleshooting__ | Security issue resolution procedures | [Security Troubleshooting](../troubleshooting/security-troubleshooting.md) |
 
 ---
 
-> 🔒 **Security is a Journey**  
+> 🔒 __Security is a Journey__
 > Security is not a one-time implementation but an ongoing process of continuous improvement. Regular reviews, updates, and adaptations to emerging threats ensure your Azure Synapse Analytics environment remains secure and compliant.
-
-> 🚀 **Next Steps**  
+>
+> 🚀 __Next Steps__
 > Ready to implement these security controls? Start with our [security implementation checklist](../reference/security-checklist.md) and [security troubleshooting guide](../troubleshooting/security-troubleshooting.md).

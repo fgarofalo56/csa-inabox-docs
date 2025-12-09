@@ -1,6 +1,6 @@
 # Private Link Architecture
 
-[Home](../../README.md) > [Architecture](../README.md) > Private Link Architecture
+[Home](../../README.md) > Architecture > Private Link Architecture
 
 !!! abstract "Overview"
     This guide details the architecture patterns for implementing Azure Private Link with Azure Synapse Analytics, ensuring secure network isolation and private connectivity.
@@ -18,7 +18,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
   
     The interface for connecting privately to Azure services
   
-    [:octicons-arrow-right-24: Endpoint design](#private-endpoint-design)
+    [→ Endpoint design](#private-endpoint-design)
 
 - 🌐 __DNS Configuration__
 
@@ -26,7 +26,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
   
     Private DNS integration for name resolution
   
-    [:octicons-arrow-right-24: DNS setup](#private-dns-configuration)
+    [→ DNS setup](#private-dns-configuration)
 
 - 📡 __Network Topology__
 
@@ -34,7 +34,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
   
     VNet design for Synapse with Private Link
   
-    [:octicons-arrow-right-24: Network design](#network-topology)
+    [→ Network design](#network-topology)
 
 - ✅ __Connectivity Validation__
 
@@ -42,13 +42,13 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
   
     Testing and validating private connectivity
   
-    [:octicons-arrow-right-24: Validation](#connectivity-validation)
+    [→ Validation](#connectivity-validation)
 
 </div>
 
 ## Reference Architecture
 
-![Architecture diagram: architecture-private-link-architecture-diagram-1](../images/diagrams/architecture-private-link-architecture-diagram-1.png)
+![Azure Synapse Analytics Private Link reference architecture showing private endpoints, virtual networks, and secure connectivity patterns](../images/diagrams/architecture-private-link-architecture-diagram-1.png)
 
 ## Private Endpoint Design
 
@@ -150,14 +150,14 @@ nslookup myworkspace.sql.azuresynapse.net
 # Should resolve to private IP address
 ```
 
-2. __Connection Testing__:
+1. __Connection Testing__:
 
 ```bash
 # Test SQL connection
 sqlcmd -S myworkspace.sql.azuresynapse.net -U username -P password
 ```
 
-3. __Network Path Analysis__:
+1. __Network Path Analysis__:
 
 ```bash
 # Trace route should not go through internet
@@ -176,7 +176,7 @@ Configure these hybrid connectivity patterns:
 3. __Point-to-Site VPN__ - For individual client connections
 4. __DNS Forwarding__ - Configure DNS forwarding for on-premises name resolution
 
-![Architecture diagram: architecture-private-link-architecture-diagram-2](../images/diagrams/architecture-private-link-architecture-diagram-2.png)
+![Hybrid connectivity architecture for Azure Synapse Analytics showing ExpressRoute, VPN connections, and DNS forwarding for on-premises integration](../images/diagrams/architecture-private-link-architecture-diagram-2.png)
 
 ## Scalability and High Availability
 

@@ -1,4 +1,14 @@
-# Delta Lakehouse Architecture with Azure Synapse
+---
+title: "Delta Lakehouse Architecture with Azure Synapse"
+description: "Comprehensive guide to Delta Lakehouse architecture patterns in Azure Synapse"
+author: "Architecture Team"
+last_updated: "2025-12-09"
+version: "1.0.0"
+category: "Architecture"
+tags: ["delta-lake", "lakehouse", "medallion-architecture"]
+---
+
+# Delta Lakehouse Architecture
 
 [🏠 Home](../../../README.md) > [🏗️ Architecture](../../README.md) > 📄 Delta Lakehouse
 
@@ -12,24 +22,24 @@ The Delta Lakehouse architecture combines the flexibility and cost-efficiency of
 
 ### Core Components
 
-1. **Azure Data Lake Storage Gen2**
+1. __Azure Data Lake Storage Gen2__
    - Foundation for storing all data in raw, refined, and curated zones
    - Hierarchical namespace for efficient file organization
    - Fine-grained ACLs for security at folder and file levels
 
-2. **Delta Lake**
+2. __Delta Lake__
    - Open-source storage layer that brings ACID transactions to data lakes
    - Schema enforcement and evolution capabilities
    - Time travel (data versioning) for auditing and rollbacks
    - Support for optimized Parquet format for performance
 
-3. **Azure Synapse Spark Pools**
+3. __Azure Synapse Spark Pools__
    - Distributed processing engine for data transformation
    - Native support for Delta Lake format
    - Scalable compute for batch and stream processing
    - Integration with Azure Machine Learning for advanced analytics
 
-4. **Azure Synapse SQL**
+4. __Azure Synapse SQL__
    - SQL interface for querying Delta tables
    - Serverless pool for ad-hoc analytics
    - Dedicated pool for enterprise data warehousing
@@ -45,23 +55,54 @@ adls://data/
 └── curated/              # Business-ready data products
 ```
 
+### Data Flow Diagram
+
+The following diagram illustrates the end-to-end data flow through the Delta Lakehouse architecture:
+
+```mermaid
+graph LR
+    A[Data Sources] --> B[Ingestion Layer]
+    B --> C[Bronze Layer<br/>Raw Data]
+    C --> D[Silver Layer<br/>Refined Data]
+    D --> E[Gold Layer<br/>Curated Data]
+
+    C --> F[Delta Lake Storage]
+    D --> F
+    E --> F
+
+    F --> G[Spark Pools<br/>Processing]
+    F --> H[Serverless SQL<br/>Querying]
+    F --> I[Dedicated SQL<br/>Analytics]
+
+    G --> J[Analytics & BI]
+    H --> J
+    I --> J
+
+    G --> K[Machine Learning]
+
+    style C fill:#CD7F32
+    style D fill:#C0C0C0
+    style E fill:#FFD700
+    style F fill:#90EE90
+```
+
 ### Medallion Architecture
 
 The medallion architecture organizes your Delta Lake data into layers with increasing data quality and refinement:
 
-1. **Bronze Layer** (Raw Data)
+1. __Bronze Layer__ (Raw Data)
    - Ingestion sink for all source data
    - Preserves original data format and content
    - Minimal transformation, primarily ELT
    - Schema-on-read approach
 
-2. **Silver Layer** (Refined Data)
+2. __Silver Layer__ (Refined Data)
    - Cleansed and conformed data
    - Standardized formats and resolved duplicates
    - Common data quality rules applied
    - Typically organized by domain or source system
 
-3. **Gold Layer** (Curated Data)
+3. __Gold Layer__ (Curated Data)
    - Business-level aggregates and metrics
    - Dimensional models for reporting
    - Feature tables for machine learning
@@ -71,31 +112,31 @@ The medallion architecture organizes your Delta Lake data into layers with incre
 
 ### Delta Optimizations
 
-- **Data Skipping**: Delta maintains statistics to skip irrelevant files during queries
-- **Z-Ordering**: Multi-dimensional clustering for improved filtering performance
-- **Compaction**: Small file consolidation to optimize read performance
-- **Caching**: Metadata and data caching for frequently accessed tables
+- __Data Skipping__: Delta maintains statistics to skip irrelevant files during queries
+- __Z-Ordering__: Multi-dimensional clustering for improved filtering performance
+- __Compaction__: Small file consolidation to optimize read performance
+- __Caching__: Metadata and data caching for frequently accessed tables
 
 ### Spark Tuning
 
-- **Autoscaling**: Configure Spark pools to scale based on workload
-- **Partition Management**: Right-size partitions to optimize parallelism
-- **Memory Configuration**: Allocate appropriate memory for shuffle and execution
-- **Query Plan Optimization**: Analyze and tune Spark execution plans
+- __Autoscaling__: Configure Spark pools to scale based on workload
+- __Partition Management__: Right-size partitions to optimize parallelism
+- __Memory Configuration__: Allocate appropriate memory for shuffle and execution
+- __Query Plan Optimization__: Analyze and tune Spark execution plans
 
 ## Governance and Security
 
-- **Azure Purview Integration**: Data cataloging and lineage tracking
-- **Column-Level Security**: Fine-grained access control within tables
-- **Row-Level Security**: Filter data based on user context
-- **Transparent Data Encryption**: Data encryption at rest
+- __Azure Purview Integration__: Data cataloging and lineage tracking
+- __Column-Level Security__: Fine-grained access control within tables
+- __Row-Level Security__: Filter data based on user context
+- __Transparent Data Encryption__: Data encryption at rest
 
 ## Deployment and DevOps
 
-- **Infrastructure as Code**: Deploy lakehouse components using ARM templates or Terraform
-- **CI/CD Pipelines**: Automated testing and deployment of Spark notebooks and SQL scripts
-- **Monitoring**: Azure Monitor integration for performance tracking and alerts
-- **Delta Live Tables**: Declarative ETL framework for reliable pipeline development
+- __Infrastructure as Code__: Deploy lakehouse components using ARM templates or Terraform
+- __CI/CD Pipelines__: Automated testing and deployment of Spark notebooks and SQL scripts
+- __Monitoring__: Azure Monitor integration for performance tracking and alerts
+- __Delta Live Tables__: Declarative ETL framework for reliable pipeline development
 
 ## Best Practices
 

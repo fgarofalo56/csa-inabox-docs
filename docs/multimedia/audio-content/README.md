@@ -1,6 +1,6 @@
 # 🎧 Audio Content & Narration Scripts
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 Audio Content**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎧 Audio Content__
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Episodes: 12+](https://img.shields.io/badge/Episodes-12+-blue)
@@ -15,9 +15,10 @@ Professional audio content including podcast episodes, voice-over narrations, au
 ### Episode Guide
 
 #### Episode 1: Introduction to Cloud Scale Analytics
-**Duration**: 25 minutes  
-**Guests**: Product Team Lead, Solutions Architect  
-**[Listen](./episodes/ep01-introduction.mp3)** | **[Transcript](./transcripts/ep01-introduction.md)**
+
+__Duration__: 25 minutes  
+__Guests__: Product Team Lead, Solutions Architect  
+__[Listen](./episodes/ep01-introduction.mp3)__ | __[Transcript](./transcripts/ep01-introduction.md)__
 
 ```markdown
 ## Episode Script Outline
@@ -66,14 +67,16 @@ Thanks for listening to Cloud Scale Insights!"
 ```
 
 #### Episode 2: Data Lake Architecture Deep Dive
-**Duration**: 30 minutes  
-**Guests**: Data Architect, Azure MVP  
-**[Listen](./episodes/ep02-data-lake.mp3)** | **[Transcript](./transcripts/ep02-data-lake.md)**
+
+__Duration__: 30 minutes  
+__Guests__: Data Architect, Azure MVP  
+__[Listen](./episodes/ep02-data-lake.mp3)__ | __[Transcript](./transcripts/ep02-data-lake.md)__
 
 #### Episode 3: Performance Optimization Strategies
-**Duration**: 35 minutes  
-**Guests**: Performance Engineer, Customer Success Manager  
-**[Listen](./episodes/ep03-performance.mp3)** | **[Transcript](./transcripts/ep03-performance.md)**
+
+__Duration__: 35 minutes  
+__Guests__: Performance Engineer, Customer Success Manager  
+__[Listen](./episodes/ep03-performance.mp3)__ | __[Transcript](./transcripts/ep03-performance.md)__
 
 ### Podcast Production Guidelines
 
@@ -108,6 +111,7 @@ production_standards:
 ### Video Narration Templates
 
 #### Technical Tutorial Narration
+
 ```markdown
 ## Script: Setting Up Your First Synapse Workspace
 
@@ -159,6 +163,7 @@ close to your data sources and users."
 ### Accessibility Audio Descriptions
 
 #### Architecture Diagram Audio Description
+
 ```markdown
 ## Audio Description: Cloud Scale Analytics Architecture
 
@@ -196,6 +201,7 @@ surround the entire architecture, indicating comprehensive protection."
 ## 🎵 Background Music & Sound Effects
 
 ### Music Library
+
 ```javascript
 // Audio Asset Management
 const audioAssets = {
@@ -249,6 +255,7 @@ const audioAssets = {
 ## 🔊 Audio Production Workflow
 
 ### Recording Setup
+
 ```markdown
 ## Professional Recording Checklist
 
@@ -285,6 +292,7 @@ const audioAssets = {
 ```
 
 ### Audio Processing Pipeline
+
 ```python
 # Python script for batch audio processing
 import numpy as np
@@ -361,6 +369,7 @@ class AudioProcessor:
 ## 📝 Transcript Standards
 
 ### Transcript Format Template
+
 ```markdown
 # Transcript: [Title]
 
@@ -408,6 +417,7 @@ we're discussing [topic].
 ## 🎛️ Audio Specifications
 
 ### Technical Requirements
+
 ```yaml
 audio_specifications:
   voice_recording:
@@ -441,6 +451,7 @@ audio_specifications:
 ## 🔍 Quality Control Checklist
 
 ### Audio QC Process
+
 ```markdown
 ## Audio Quality Control
 
@@ -479,6 +490,7 @@ audio_specifications:
 ## 📊 Analytics and Feedback
 
 ### Listener Metrics
+
 ```javascript
 // Audio Analytics Tracking
 class AudioAnalytics {
@@ -544,6 +556,7 @@ class AudioAnalytics {
 ## 🎓 Voice Talent Guidelines
 
 ### Narration Best Practices
+
 ```markdown
 ## Professional Narration Guidelines
 
@@ -591,6 +604,7 @@ class AudioAnalytics {
 ## 🔗 Distribution Channels
 
 ### Publishing Platforms
+
 ```yaml
 distribution:
   podcasts:
@@ -623,7 +637,7 @@ distribution:
 - [Voice Talent Directory](./talent/directory.md)
 - [Music Library](./music/library.md)
 - [Sound Effects Collection](./sfx/collection.md)
-- [Transcript Templates](./templates/transcripts/)
+- [Transcript Templates](./templates/transcripts//README.md)
 - [Accessibility Standards](./guides/accessibility.md)
 
 ---

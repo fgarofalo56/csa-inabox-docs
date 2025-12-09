@@ -437,15 +437,17 @@ query.awaitTermination()
 
 ## Best Practices
 
-1. **Enable Change Data Feed Proactively**: Enable it on tables where you anticipate needing change tracking.
+1. __Enable Change Data Feed Proactively__: Enable it on tables where you anticipate needing change tracking.
 
-2. **Optimize for Write Performance**: When implementing CDC patterns that involve frequent updates:
+2. __Optimize for Write Performance__: When implementing CDC patterns that involve frequent updates:
+
    ```python
    spark.conf.set("spark.databricks.delta.optimizeWrite.enabled", "true")
    spark.conf.set("spark.databricks.delta.autoCompact.enabled", "true")
    ```
 
-3. **Set Appropriate Retention Period**: Configure the change data feed retention period:
+3. __Set Appropriate Retention Period__: Configure the change data feed retention period:
+
    ```python
    spark.sql(f"""
    ALTER TABLE delta.`{delta_table_path}`
@@ -453,7 +455,8 @@ query.awaitTermination()
    """)
    ```
 
-4. **Consider Partitioning**: Partition your data appropriately to improve CDC query performance:
+4. __Consider Partitioning__: Partition your data appropriately to improve CDC query performance:
+
    ```python
    df.write \
      .format("delta") \
@@ -461,7 +464,8 @@ query.awaitTermination()
      .save(delta_table_path)
    ```
 
-5. **Optimize After Large CDC Operations**: Run OPTIMIZE after large CDC operations:
+5. __Optimize After Large CDC Operations__: Run OPTIMIZE after large CDC operations:
+
    ```python
    spark.sql(f"OPTIMIZE delta.`{delta_table_path}`")
    ```
@@ -470,18 +474,19 @@ query.awaitTermination()
 
 ### Issue: Change Data Feed is not capturing changes
 
-**Solution**: Verify that Change Data Feed is enabled and that you are reading with the correct version range.
+__Solution__: Verify that Change Data Feed is enabled and that you are reading with the correct version range.
 
 ### Issue: Performance degradation with large change volumes
 
-**Solution**: 
+__Solution__:
+
 - Use appropriate partitioning
 - Implement incremental processing with smaller batch sizes
 - Consider compaction after large change operations
 
 ### Issue: Duplicate records in CDC processing
 
-**Solution**: Implement idempotent operations and use checkpoints to ensure exactly-once processing.
+__Solution__: Implement idempotent operations and use checkpoints to ensure exactly-once processing.
 
 ## Related Links
 

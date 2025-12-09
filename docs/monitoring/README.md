@@ -43,44 +43,51 @@ graph TB
 ## Components
 
 ### 1. Documentation Analytics System
-- **Usage Tracking**: Monitors page visits, unique users, and session duration
-- **Journey Mapping**: Tracks user navigation paths through documentation
-- **Search Analytics**: Analyzes search queries and result effectiveness
-- **Content Performance**: Measures engagement with different documentation sections
+
+- __Usage Tracking__: Monitors page visits, unique users, and session duration
+- __Journey Mapping__: Tracks user navigation paths through documentation
+- __Search Analytics__: Analyzes search queries and result effectiveness
+- __Content Performance__: Measures engagement with different documentation sections
 
 ### 2. Health Monitoring Dashboard
-- **Quality Scores**: Tracks documentation completeness and accuracy
-- **Link Health**: Monitors broken links and redirects
-- **Build Status**: Displays documentation build success/failure
-- **Performance Metrics**: Shows page load times and resource usage
+
+- __Quality Scores__: Tracks documentation completeness and accuracy
+- __Link Health__: Monitors broken links and redirects
+- __Build Status__: Displays documentation build success/failure
+- __Performance Metrics__: Shows page load times and resource usage
 
 ### 3. User Feedback System
-- **Page-Level Feedback**: Collects ratings and comments per page
-- **Issue Reporting**: Streamlined workflow for documentation issues
-- **Suggestions Portal**: Community-driven improvement ideas
-- **Contribution Tracking**: Monitors community contributions
+
+- __Page-Level Feedback__: Collects ratings and comments per page
+- __Issue Reporting__: Streamlined workflow for documentation issues
+- __Suggestions Portal__: Community-driven improvement ideas
+- __Contribution Tracking__: Monitors community contributions
 
 ### 4. Performance Monitoring
-- **Load Times**: Tracks page and asset loading performance
-- **Search Response**: Measures search functionality speed
-- **Image Optimization**: Monitors image loading and compression
-- **Mobile Performance**: Tracks responsiveness across devices
+
+- __Load Times__: Tracks page and asset loading performance
+- __Search Response__: Measures search functionality speed
+- __Image Optimization__: Monitors image loading and compression
+- __Mobile Performance__: Tracks responsiveness across devices
 
 ### 5. Automated Reporting
-- **Daily Health Reports**: System status and critical issues
-- **Weekly Summaries**: Usage patterns and trends
-- **Monthly Analysis**: Deep dive into metrics and insights
-- **Custom Reports**: Configurable reports for stakeholders
+
+- __Daily Health Reports__: System status and critical issues
+- __Weekly Summaries__: Usage patterns and trends
+- __Monthly Analysis__: Deep dive into metrics and insights
+- __Custom Reports__: Configurable reports for stakeholders
 
 ## Privacy & Compliance
 
 ### GDPR Compliance
+
 - Anonymous data collection by default
 - User consent management
 - Data retention policies
 - Right to erasure support
 
 ### Data Protection
+
 - Encrypted storage for sensitive data
 - IP anonymization
 - Cookie-less tracking options
@@ -88,12 +95,14 @@ graph TB
 
 ## Quick Start
 
-1. **Enable Monitoring**
+1. __Enable Monitoring__
+
    ```bash
    ./scripts/enable-monitoring.sh
    ```
 
-2. **Configure Analytics**
+2. __Configure Analytics__
+
    ```yaml
    # config/analytics.yml
    analytics:
@@ -102,14 +111,14 @@ graph TB
      retention_days: 90
    ```
 
-3. **Access Dashboards**
+3. __Access Dashboards__
    - Analytics: `/monitoring/dashboards/analytics`
    - Health: `/monitoring/dashboards/health`
    - Feedback: `/monitoring/feedback/portal`
 
 ## Directory Structure
 
-```
+```text
 monitoring/
 ├── analytics/           # Analytics implementation
 │   ├── tracker.js      # Client-side tracking
@@ -141,16 +150,17 @@ monitoring/
 
 | Metric Category | Key Indicators | Update Frequency |
 |----------------|---------------|------------------|
-| **Usage** | Page views, Unique users, Session duration | Real-time |
-| **Engagement** | Scroll depth, Time on page, Bounce rate | Real-time |
-| **Search** | Query volume, Result clicks, Zero results | Real-time |
-| **Quality** | Broken links, Missing pages, Outdated content | Daily |
-| **Performance** | Load time, TTFB, Core Web Vitals | Real-time |
-| **Feedback** | Ratings, Comments, Issues reported | Real-time |
+| __Usage__ | Page views, Unique users, Session duration | Real-time |
+| __Engagement__ | Scroll depth, Time on page, Bounce rate | Real-time |
+| __Search__ | Query volume, Result clicks, Zero results | Real-time |
+| __Quality__ | Broken links, Missing pages, Outdated content | Daily |
+| __Performance__ | Load time, TTFB, Core Web Vitals | Real-time |
+| __Feedback__ | Ratings, Comments, Issues reported | Real-time |
 
 ## Integration Points
 
 ### MkDocs Integration
+
 ```yaml
 plugins:
   - search
@@ -161,6 +171,7 @@ plugins:
 ```
 
 ### CI/CD Integration
+
 ```yaml
 - name: Documentation Health Check
   uses: ./monitoring/actions/health-check
@@ -171,6 +182,6 @@ plugins:
 
 ## Support
 
-- **Documentation**: [Monitoring Guide](./guides/monitoring.md)
-- **Issues**: [GitHub Issues](https://github.com/microsoft/csa-inabox-docs/issues)
-- **Contact**: csa-docs-team@microsoft.com
+- __Documentation__: [Monitoring Guide](./guides/monitoring.md)
+- __Issues__: [GitHub Issues](https://github.com/microsoft/csa-inabox-docs/issues)
+- __Contact__: <csa-docs-team@microsoft.com>

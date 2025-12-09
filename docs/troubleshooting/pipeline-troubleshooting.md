@@ -1,6 +1,6 @@
 # Troubleshooting Pipeline Issues in Azure Synapse Analytics
 
-[Home](../../README.md) > [Troubleshooting](../README.md) > Pipeline Troubleshooting
+[Home](../../README.md) > Troubleshooting > Pipeline Troubleshooting
 
 This guide covers common pipeline issues in Azure Synapse Analytics, providing diagnostic approaches and solutions for data integration workflows, activity failures, and pipeline orchestration problems.
 

@@ -34,12 +34,11 @@ To generate new static images from Mermaid diagrams:
 
 GitHub doesn't natively render Mermaid diagrams, so both the diagram code and static image are provided:
 
-
 ```markdown
 <!-- Mermaid diagram for MkDocs rendering -->
-![Architecture diagram: images-diagrams-README-diagram-1](images-diagrams-README-diagram-1.png)
+![Example diagram showing Mermaid integration pattern with MkDocs and GitHub fallback rendering](images-diagrams-README-diagram-1.png)
 
 <!-- Static image fallback for GitHub -->
-![Description of the diagram](../images/diagrams/filename.png)
+![Example static image fallback for GitHub when Mermaid diagrams are not rendered](../images/diagrams/filename.png)
 
 ```

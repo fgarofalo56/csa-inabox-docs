@@ -1,6 +1,6 @@
 # 🎨 Visual Style Guide for Azure Synapse Analytics Documentation
 
-[Home](../README.md) > Visual Style Guide
+Home > Visual Style Guide
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 ![Version](https://img.shields.io/badge/Version-1.0-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-### 📚 Consistent Visual Standards for Professional Documentation
+## 📚 Consistent Visual Standards for Professional Documentation
 
 </div>
 
@@ -26,18 +26,18 @@ This guide establishes visual standards for creating consistent, professional, a
 
 | Category | Primary Icon | Alternative Icons | Usage |
 |:---------|:------------|:------------------|:------|
-| **Architecture** | 🏗️ | 🏛️, 🌉 | System design, patterns |
-| **Code/Development** | 💻 | 🔧, ⚙️, 🛠️ | Code examples, tools |
-| **Security** | 🔒 | 🔐, 🛡️, 🔑 | Security topics |
-| **Performance** | ⚡ | 🚀, 📈, ⏱️ | Optimization, speed |
-| **Best Practices** | 💡 | 📋, ✨, 🎯 | Guidelines, tips |
-| **Warning/Caution** | ⚠️ | 🚨, ❗, ⛔ | Important notices |
-| **Success/Complete** | ✅ | ✔️, 🎉, 👍 | Positive outcomes |
-| **Error/Failed** | ❌ | ❗, 🔴, 🚫 | Negative outcomes |
-| **Documentation** | 📚 | 📖, 📝, 📄 | Text content |
-| **Data/Analytics** | 📊 | 📈, 📉, 💾 | Data topics |
-| **Cloud/Azure** | ☁️ | 🌐, 🔷, 🌍 | Cloud services |
-| **Process/Workflow** | 🔄 | ➡️, 🔀, 📍 | Steps, flows |
+| __Architecture__ | 🏗️ | 🏛️, 🌉 | System design, patterns |
+| __Code/Development__ | 💻 | 🔧, ⚙️, 🛠️ | Code examples, tools |
+| __Security__ | 🔒 | 🔐, 🛡️, 🔑 | Security topics |
+| __Performance__ | ⚡ | 🚀, 📈, ⏱️ | Optimization, speed |
+| __Best Practices__ | 💡 | 📋, ✨, 🎯 | Guidelines, tips |
+| __Warning/Caution__ | ⚠️ | 🚨, ❗, ⛔ | Important notices |
+| __Success/Complete__ | ✅ | ✔️, 🎉, 👍 | Positive outcomes |
+| __Error/Failed__ | ❌ | ❗, 🔴, 🚫 | Negative outcomes |
+| __Documentation__ | 📚 | 📖, 📝, 📄 | Text content |
+| __Data/Analytics__ | 📊 | 📈, 📉, 💾 | Data topics |
+| __Cloud/Azure__ | ☁️ | 🌐, 🔷, 🌍 | Cloud services |
+| __Process/Workflow__ | 🔄 | ➡️, 🔀, 📍 | Steps, flows |
 
 ### 🎨 Heading Icon Rules
 
@@ -55,6 +55,7 @@ This guide establishes visual standards for creating consistent, professional, a
 ### 🎯 Badge Types and Usage
 
 #### Status Badges
+
 ```markdown
 ![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Beta-yellow?style=flat-square)
@@ -62,6 +63,7 @@ This guide establishes visual standards for creating consistent, professional, a
 ```
 
 #### Complexity Badges
+
 ```markdown
 ![Complexity](https://img.shields.io/badge/Complexity-Basic-green?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -69,6 +71,7 @@ This guide establishes visual standards for creating consistent, professional, a
 ```
 
 #### Performance Impact Badges
+
 ```markdown
 ![Impact](https://img.shields.io/badge/Impact-Low-green?style=flat-square)
 ![Impact](https://img.shields.io/badge/Impact-Medium-yellow?style=flat-square)
@@ -105,6 +108,7 @@ This guide establishes visual standards for creating consistent, professional, a
 ### 📐 Section Separators
 
 Always use horizontal rules between major sections:
+
 ```markdown
 ---
 ```
@@ -122,6 +126,7 @@ Always use horizontal rules between major sections:
 ### 📦 Code Block Formatting
 
 Always specify language for syntax highlighting:
+
 ```python
 # Python example with proper highlighting
 def example_function():
@@ -136,11 +141,11 @@ def example_function():
 
 | Color | Hex Code | Usage | Examples |
 |:------|:---------|:------|:---------|
-| 🟢 **Green** | `#28a745` | Success, Good, Complete | Active, Low Impact |
-| 🟡 **Yellow** | `#ffc107` | Warning, Caution, Medium | Beta, Medium Impact |
-| 🔴 **Red** | `#dc3545` | Error, High Priority | Critical, High Impact |
-| 🔵 **Blue** | `#007bff` | Information, Primary | Default, Links |
-| ⚫ **Gray** | `#6c757d` | Disabled, Inactive | Deprecated, N/A |
+| 🟢 __Green__ | `#28a745` | Success, Good, Complete | Active, Low Impact |
+| 🟡 __Yellow__ | `#ffc107` | Warning, Caution, Medium | Beta, Medium Impact |
+| 🔴 __Red__ | `#dc3545` | Error, High Priority | Critical, High Impact |
+| 🔵 __Blue__ | `#007bff` | Information, Primary | Default, Links |
+| ⚫ __Gray__ | `#6c757d` | Disabled, Inactive | Deprecated, N/A |
 
 ---
 
@@ -175,7 +180,7 @@ def example_function():
 
 ### 🎯 Standard Flow Diagram
 
-![Architecture diagram: .-VISUAL-STYLE-GUIDE-diagram-1](images/diagrams/.-VISUAL-STYLE-GUIDE-diagram-1.png)
+![Example Mermaid flow diagram showing standard documentation workflow with color-coded nodes and directional flows](images/diagrams/.-VISUAL-STYLE-GUIDE-diagram-1.png)
 
 ---
 
@@ -201,6 +206,7 @@ Before adding new documentation, ensure:
 ### Copy-Paste Templates
 
 #### Document Header
+
 ```markdown
 # 🚀 Document Title
 
@@ -217,6 +223,7 @@ Before adding new documentation, ensure:
 ```
 
 #### Section Header
+
 ```markdown
 ## 📖 Section Title
 
@@ -226,6 +233,7 @@ Before adding new documentation, ensure:
 ```
 
 #### Feature Table
+
 ```markdown
 | Feature | Description | Status |
 |:--------|:------------|:-------|
@@ -249,6 +257,6 @@ Before adding new documentation, ensure:
 
 ### 🌟 Maintaining Visual Excellence
 
-**Consistency • Clarity • Professionalism**
+__Consistency • Clarity • Professionalism__
 
 </div>

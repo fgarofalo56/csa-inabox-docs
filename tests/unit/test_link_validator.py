@@ -6,7 +6,7 @@ from pathlib import Path
 from unittest.mock import Mock, AsyncMock, patch
 import aiohttp
 
-from src.csa_docs_tools.link_validator import LinkValidator, LinkResult
+from csa_docs_tools.link_validator import LinkValidator, LinkResult
 
 
 class TestLinkValidator:

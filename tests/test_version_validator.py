@@ -5,7 +5,7 @@ import pytest
 from pathlib import Path
 from unittest.mock import Mock, patch, AsyncMock, MagicMock
 
-from src.csa_docs_tools.version_validator import (
+from csa_docs_tools.version_validator import (
     VersionValidator,
     QualityGate,
     ValidationResult,

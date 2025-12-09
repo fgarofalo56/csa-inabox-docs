@@ -1,6 +1,6 @@
 # Microsoft Purview Integration with Azure Synapse Analytics
 
-[Home](../../../README.md) > [Code Examples](../../README.md) > [Integration](../README.md) > Purview Integration
+[Home](../../../README.md) > [Code Examples](../../README.md) > Integration > Purview Integration
 
 This guide provides examples and best practices for integrating Azure Synapse Analytics with Microsoft Purview (formerly Azure Purview) for comprehensive data governance and cataloging.
 
@@ -255,25 +255,25 @@ client.pipelines.create_or_update(pipeline_name, pipeline)
 
 ## Best Practices for Synapse and Microsoft Purview Integration
 
-1. **Automated Data Classification**: Configure automated scanning and classification rules to identify and tag sensitive data.
+1. __Automated Data Classification__: Configure automated scanning and classification rules to identify and tag sensitive data.
 
-2. **Data Lineage Tracking**: Use Purview's lineage capabilities to track data transformations across your Synapse pipelines.
+2. __Data Lineage Tracking__: Use Purview's lineage capabilities to track data transformations across your Synapse pipelines.
 
-3. **Glossary Alignment**: Align business glossary terms in Purview with Synapse data assets to improve data understanding.
+3. __Glossary Alignment__: Align business glossary terms in Purview with Synapse data assets to improve data understanding.
 
-4. **Access Control Integration**: Implement consistent access control policies across Synapse and Purview.
+4. __Access Control Integration__: Implement consistent access control policies across Synapse and Purview.
 
-5. **Automated Metadata Updates**: Update metadata in Purview automatically when data changes in Synapse.
+5. __Automated Metadata Updates__: Update metadata in Purview automatically when data changes in Synapse.
 
-6. **Governance Dashboard**: Create a custom governance dashboard that combines Synapse and Purview insights.
+6. __Governance Dashboard__: Create a custom governance dashboard that combines Synapse and Purview insights.
 
-7. **Security Best Practices**:
+7. __Security Best Practices__:
    - Use managed identities for authentication
    - Implement private endpoints for secure connectivity
    - Apply least privilege access principles
    - Audit all data access through Purview
 
-8. **Search Integration**: Embed Purview's search capabilities within Synapse Studio for seamless data discovery.
+8. __Search Integration__: Embed Purview's search capabilities within Synapse Studio for seamless data discovery.
 
 ## Common Integration Scenarios
 

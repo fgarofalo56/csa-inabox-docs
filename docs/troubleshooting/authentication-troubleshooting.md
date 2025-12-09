@@ -1,6 +1,6 @@
 # Troubleshooting Authentication and Authorization Issues in Azure Synapse Analytics
 
-[Home](../../README.md) > [Troubleshooting](../README.md) > Authentication Troubleshooting
+[Home](../../README.md) > Troubleshooting > Authentication Troubleshooting
 
 This guide covers common authentication and authorization problems in Azure Synapse Analytics, providing solutions for identity, access management, and permission-related issues across all Synapse components.
 

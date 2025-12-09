@@ -5,7 +5,7 @@ import yaml
 from pathlib import Path
 from unittest.mock import patch
 
-from src.csa_docs_tools.navigation_validator import NavigationStructureValidator, NavigationIssue
+from csa_docs_tools.navigation_validator import NavigationStructureValidator, NavigationIssue
 
 
 class TestNavigationStructureValidator:

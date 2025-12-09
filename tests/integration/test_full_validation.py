@@ -5,7 +5,7 @@ import asyncio
 from pathlib import Path
 from unittest.mock import patch
 
-from src.csa_docs_tools import (
+from csa_docs_tools import (
     DocumentationBuildTester,
     LinkValidator,
     MarkdownQualityChecker,
@@ -86,7 +86,7 @@ class TestFullValidationWorkflow:
             # Mock external link responses
             with patch.object(validator, 'validate_external_link') as mock_external:
                 # Mock successful external link validation
-                from src.csa_docs_tools.link_validator import LinkResult
+                from csa_docs_tools.link_validator import LinkResult
                 mock_external.return_value = LinkResult(
                     url="https://portal.azure.com",
                     status_code=200,

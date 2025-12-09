@@ -1,6 +1,6 @@
 # Security Monitoring
 
-[Home](../../README.md) > [Monitoring](../README.md) > Security Monitoring
+[Home](../../README.md) > Monitoring > Security Monitoring
 
 !!! abstract "Overview"
 This guide covers security monitoring approaches for Azure Synapse Analytics, including threat detection, audit logging, and compliance monitoring.
@@ -17,7 +17,7 @@ Implement comprehensive security monitoring to detect and respond to security th
 
 Monitor for suspicious activities and security threats
 
-[:octicons-arrow-right-24: Threat monitoring](#threat-detection)
+[→ Threat monitoring](#threat-detection)
 
 - 📄 __Audit Logging__
 
@@ -25,7 +25,7 @@ Monitor for suspicious activities and security threats
 
 Track and analyze user and service activities
 
-[:octicons-arrow-right-24: Audit configuration](#audit-logging)
+[→ Audit configuration](#audit-logging)
 
 - ⚠️ __Security Alerting__
 
@@ -33,7 +33,7 @@ Track and analyze user and service activities
 
 Configure proactive alerts for security events
 
-[:octicons-arrow-right-24: Alert setup](#security-alerting)
+[→ Alert setup](#security-alerting)
 
 - ✅ __Compliance Monitoring__
 
@@ -41,7 +41,7 @@ Configure proactive alerts for security events
 
 Track compliance with security standards
 
-[:octicons-arrow-right-24: Compliance tracking](#compliance-monitoring)
+[→ Compliance tracking](#compliance-monitoring)
 
 </div>
 
@@ -78,7 +78,7 @@ Azure Synapse Analytics integrates with Azure Defender for SQL and Azure Securit
 
 Configure comprehensive audit logging for Azure Synapse Analytics:
 
-| Log Category | Description | Retention | 
+| Log Category | Description | Retention |
 |-------------|-------------|-----------|
 | SQL Security Audit Logs | Authentication events, permission changes, data access | 90 days |
 | Management Activities | Resource creation, modification, deletion | 90 days |
@@ -87,6 +87,7 @@ Configure comprehensive audit logging for Azure Synapse Analytics:
 | Pipeline Executions | Pipeline triggers and activities | 30 days |
 
 !!! example "Audit Log Configuration"
+
 ```powershell
 # Enable diagnostic settings for Synapse workspace
 $workspace = "mysynapseworkspace"

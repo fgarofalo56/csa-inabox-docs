@@ -6,11 +6,11 @@ This directory contains diagrams and images for the Azure Synapse Analytics docu
 
 The following diagrams are referenced in the documentation and should be created:
 
-1. **delta-lakehouse-diagram.png** - Architecture diagram for the Delta Lakehouse pattern
-2. **serverless-sql-architecture.png** - Architecture diagram for the Serverless SQL pattern
-3. **shared-metadata-architecture.png** - Architecture diagram for the Shared Metadata pattern
-4. **microsoft-logo.png** - Microsoft logo for the documentation header
-5. **favicon.ico** - Favicon for the documentation site
+1. __delta-lakehouse-diagram.png__ - Architecture diagram for the Delta Lakehouse pattern
+2. __serverless-sql-architecture.png__ - Architecture diagram for the Serverless SQL pattern
+3. __shared-metadata-architecture.png__ - Architecture diagram for the Shared Metadata pattern
+4. __microsoft-logo.png__ - Microsoft logo for the documentation header
+5. __favicon.ico__ - Favicon for the documentation site
 
 ## Design Guidelines
 

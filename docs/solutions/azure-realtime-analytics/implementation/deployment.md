@@ -1,6 +1,6 @@
 # 🚀 Deployment Guide
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 [Implementation](./README.md)** | **🚀 Deployment**
+> __🏠 [Home](../../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🚀 Solution__ | __🔧 [Implementation](./README.md)__ | __🚀 Deployment__
 
 ---
 
@@ -457,11 +457,11 @@ with open('health_check_results.json', 'w') as f:
 
 | Issue | Symptoms | Solution |
 |-------|----------|----------|
-| **Terraform state lock** | "Error acquiring the state lock" | Run `terraform force-unlock <lock-id>` |
-| **Insufficient quota** | "OperationNotAllowed" errors | Request quota increase in Azure portal |
-| **VNet peering failed** | Databricks unreachable | Verify address spaces don't overlap |
-| **Storage access denied** | 403 errors on containers | Check firewall rules and private endpoints |
-| **Cluster startup fails** | "Cluster terminated" | Review driver logs in Databricks |
+| __Terraform state lock__ | "Error acquiring the state lock" | Run `terraform force-unlock <lock-id>` |
+| __Insufficient quota__ | "OperationNotAllowed" errors | Request quota increase in Azure portal |
+| __VNet peering failed__ | Databricks unreachable | Verify address spaces don't overlap |
+| __Storage access denied__ | 403 errors on containers | Check firewall rules and private endpoints |
+| __Cluster startup fails__ | "Cluster terminated" | Review driver logs in Databricks |
 
 ### Rollback Procedure
 
@@ -478,10 +478,10 @@ terraform state push terraform.tfstate.backup
 
 ### Support Escalation
 
-1. **Level 1**: Check deployment logs and health dashboard
-2. **Level 2**: Review Azure Monitor alerts and diagnostics
-3. **Level 3**: Contact platform team: platform@company.com
-4. **Level 4**: Open Azure support ticket (if critical)
+1. __Level 1__: Check deployment logs and health dashboard
+2. __Level 2__: Review Azure Monitor alerts and diagnostics
+3. __Level 3__: Contact platform team: <platform@company.com>
+4. __Level 4__: Open Azure support ticket (if critical)
 
 ---
 
@@ -502,13 +502,13 @@ terraform state push terraform.tfstate.backup
 
 ## 📚 Next Steps
 
-1. **[Configure Databricks](./databricks-setup.md)** - Set up workspaces and clusters
-2. **[Implement Stream Processing](./stream-processing.md)** - Deploy streaming pipelines
-3. **[Setup Monitoring](../operations/monitoring.md)** - Configure observability
-4. **[Run Performance Tests](../operations/performance.md)** - Validate system performance
+1. __[Configure Databricks](./databricks-setup.md)__ - Set up workspaces and clusters
+2. __[Implement Stream Processing](./stream-processing.md)__ - Deploy streaming pipelines
+3. __[Setup Monitoring](../operations/monitoring.md)__ - Configure observability
+4. __[Run Performance Tests](../operations/performance.md)__ - Validate system performance
 
 ---
 
-**Last Updated:** January 29, 2025  
-**Version:** 1.0.0  
-**Maintainer:** Platform Engineering Team
+__Last Updated:__ January 29, 2025  
+__Version:__ 1.0.0  
+__Maintainer:__ Platform Engineering Team

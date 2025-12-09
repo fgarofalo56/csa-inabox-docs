@@ -1,6 +1,6 @@
 # 🔧 Operations Documentation
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 Operations**
+> __🏠 [Home](../../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🚀 Solution__ | __🔧 Operations__
 
 ---
 
@@ -45,11 +45,11 @@ Key Metrics:
 
 | Component | Tool | Purpose |
 |-----------|------|---------|
-| **Infrastructure** | Azure Monitor | Resource metrics and logs |
-| **Application** | Application Insights | Application performance |
-| **Security** | Azure Sentinel | Security monitoring |
-| **Business** | Power BI | Business KPIs |
-| **Costs** | Cost Management | Budget tracking |
+| __Infrastructure__ | Azure Monitor | Resource metrics and logs |
+| __Application__ | Application Insights | Application performance |
+| __Security__ | Azure Sentinel | Security monitoring |
+| __Business__ | Power BI | Business KPIs |
+| __Costs__ | Cost Management | Budget tracking |
 
 ### Alert Configuration
 
@@ -110,25 +110,25 @@ spark.sql("""
 
 #### Performance Tuning Checklist
 
-- [ ] **Cluster Optimization**
+- [ ] __Cluster Optimization__
   - Right-size cluster nodes
   - Enable auto-scaling
   - Use spot instances where appropriate
   - Configure Photon acceleration
 
-- [ ] **Query Optimization**
+- [ ] __Query Optimization__
   - Analyze query plans
   - Add appropriate indexes
   - Implement partition pruning
   - Use broadcast joins for small tables
 
-- [ ] **Storage Optimization**
+- [ ] __Storage Optimization__
   - Run OPTIMIZE regularly
   - Configure Z-ORDER by common filters
   - Implement data compaction
   - Archive old data
 
-- [ ] **Network Optimization**
+- [ ] __Network Optimization__
   - Use Azure backbone
   - Implement caching strategies
   - Optimize data serialization
@@ -197,11 +197,11 @@ def forecast_capacity(metric_name, days_ahead=30):
 
 | Component | RPO | RTO | Backup Frequency |
 |-----------|-----|-----|------------------|
-| **Data Lake** | 1 hour | 4 hours | Continuous replication |
-| **Databricks** | 4 hours | 2 hours | Daily snapshots |
-| **Kafka** | 5 minutes | 30 minutes | Multi-region replication |
-| **Power BI** | 24 hours | 4 hours | Daily export |
-| **Configuration** | 1 hour | 1 hour | Git versioning |
+| __Data Lake__ | 1 hour | 4 hours | Continuous replication |
+| __Databricks__ | 4 hours | 2 hours | Daily snapshots |
+| __Kafka__ | 5 minutes | 30 minutes | Multi-region replication |
+| __Power BI__ | 24 hours | 4 hours | Daily export |
+| __Configuration__ | 1 hour | 1 hour | Git versioning |
 
 ### Backup Procedures
 
@@ -317,11 +317,11 @@ class DisasterRecoveryOrchestrator:
 
 | Task | Frequency | Duration | Impact |
 |------|-----------|----------|--------|
-| **Cluster Restart** | Weekly | 15 min | Minimal - rolling restart |
-| **Security Patching** | Monthly | 2 hours | None - staged deployment |
-| **Platform Upgrade** | Quarterly | 4 hours | Read-only mode |
-| **DR Testing** | Quarterly | 8 hours | Secondary region only |
-| **Capacity Review** | Monthly | 2 hours | None |
+| __Cluster Restart__ | Weekly | 15 min | Minimal - rolling restart |
+| __Security Patching__ | Monthly | 2 hours | None - staged deployment |
+| __Platform Upgrade__ | Quarterly | 4 hours | Read-only mode |
+| __DR Testing__ | Quarterly | 8 hours | Secondary region only |
+| __Capacity Review__ | Monthly | 2 hours | None |
 
 ### Maintenance Runbooks
 
@@ -392,11 +392,11 @@ DESCRIBE HISTORY bronze.events LIMIT 10;
 
 | Issue | Symptoms | Root Cause | Resolution |
 |-------|----------|------------|------------|
-| **High Latency** | Processing >10s | Cluster undersized | Scale up cluster |
-| **Data Skew** | Uneven partitions | Poor partition key | Repartition data |
-| **Memory Errors** | OOM exceptions | Large broadcasts | Optimize joins |
-| **Connection Timeout** | Failed queries | Network issues | Check firewall rules |
-| **Cost Spike** | Budget alerts | Runaway jobs | Implement job timeout |
+| __High Latency__ | Processing >10s | Cluster undersized | Scale up cluster |
+| __Data Skew__ | Uneven partitions | Poor partition key | Repartition data |
+| __Memory Errors__ | OOM exceptions | Large broadcasts | Optimize joins |
+| __Connection Timeout__ | Failed queries | Network issues | Check firewall rules |
+| __Cost Spike__ | Budget alerts | Runaway jobs | Implement job timeout |
 
 ### Diagnostic Scripts
 
@@ -469,10 +469,10 @@ graph TD
 
 | Severity | Response Time | Escalation | Authority |
 |----------|--------------|------------|-----------|
-| **Critical** | 15 minutes | Immediate page | Can stop production |
-| **High** | 1 hour | Team notification | Can modify config |
-| **Medium** | 4 hours | Next business day | Can restart services |
-| **Low** | 24 hours | Weekly review | Can update docs |
+| __Critical__ | 15 minutes | Immediate page | Can stop production |
+| __High__ | 1 hour | Team notification | Can modify config |
+| __Medium__ | 4 hours | Next business day | Can restart services |
+| __Low__ | 24 hours | Weekly review | Can update docs |
 
 ### Post-Incident Review Template
 
@@ -517,6 +517,6 @@ Memory pressure on streaming cluster due to large broadcast join
 
 ---
 
-**Last Updated:** January 29, 2025  
-**Version:** 1.0.0  
-**Maintainer:** Platform Operations Team
+__Last Updated:__ January 29, 2025  
+__Version:__ 1.0.0  
+__Maintainer:__ Platform Operations Team

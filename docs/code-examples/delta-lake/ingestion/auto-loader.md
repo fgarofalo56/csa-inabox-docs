@@ -221,19 +221,21 @@ query.awaitTermination()
 
 ## Best Practices
 
-1. **Schema Inference**: Use schema inference for development but consider providing an explicit schema in production for better control.
+1. __Schema Inference__: Use schema inference for development but consider providing an explicit schema in production for better control.
 
-2. **Checkpoint Management**: Always set a checkpoint location to keep track of which files have been processed.
+2. __Checkpoint Management__: Always set a checkpoint location to keep track of which files have been processed.
 
-3. **Error Handling**: Add error handling options to handle corrupted files:
+3. __Error Handling__: Add error handling options to handle corrupted files:
+
    ```python
    .option("cloudFiles.schemaLocation", checkpoint_path)
    .option("cloudFiles.rescuedDataColumn", "_rescued_data")
    ```
 
-4. **Resource Allocation**: Adjust `maxFilesPerTrigger` based on your cluster's processing capacity.
+4. __Resource Allocation__: Adjust `maxFilesPerTrigger` based on your cluster's processing capacity.
 
-5. **Notification Mode**: Use notification mode when available for more efficient file discovery:
+5. __Notification Mode__: Use notification mode when available for more efficient file discovery:
+
    ```python
    .option("cloudFiles.useNotifications", "true")
    ```
@@ -242,15 +244,16 @@ query.awaitTermination()
 
 ### Issue: Files are not being processed
 
-**Solution**: Check if the service principal has appropriate permissions on the storage account.
+__Solution__: Check if the service principal has appropriate permissions on the storage account.
 
 ### Issue: Schema mismatch errors
 
-**Solution**: Enable schema evolution with `mergeSchema` and `cloudFiles.schemaEvolutionMode`.
+__Solution__: Enable schema evolution with `mergeSchema` and `cloudFiles.schemaEvolutionMode`.
 
 ### Issue: Performance bottlenecks
 
-**Solution**: 
+__Solution__:
+
 - Increase parallelism with `spark.sql.shuffle.partitions`
 - Use efficient file formats like Parquet
 - Optimize file sizes (aim for 128MB to 1GB)

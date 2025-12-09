@@ -1,6 +1,6 @@
 # 🧪 Testing Guide
 
-> **🏠 [Home](../../README.md)** | **📚 [Documentation](../README.md)** | **📖 [Guides](./README.md)**
+> __🏠 [Home](../../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
 
 ---
 
@@ -29,15 +29,15 @@ This guide provides comprehensive testing strategies, standards, and procedures 
 
 ### Core Principles
 
-1. **Test Early, Test Often** - Integrate testing into development workflow
-2. **Comprehensive Coverage** - Test all critical paths and edge cases
-3. **Fast Feedback** - Quick test execution for rapid iteration
-4. **Maintainable Tests** - Clear, documented, and easy to update
-5. **Automated Validation** - Minimize manual testing through automation
+1. __Test Early, Test Often__ - Integrate testing into development workflow
+2. __Comprehensive Coverage__ - Test all critical paths and edge cases
+3. __Fast Feedback__ - Quick test execution for rapid iteration
+4. __Maintainable Tests__ - Clear, documented, and easy to update
+5. __Automated Validation__ - Minimize manual testing through automation
 
 ### Testing Pyramid
 
-```
+```text
         /\
        /  \  E2E Tests (5%)
       /    \
@@ -54,12 +54,12 @@ This guide provides comprehensive testing strategies, standards, and procedures 
 
 | Type | Purpose | Scope | Speed | Frequency |
 |------|---------|-------|-------|-----------|
-| **Unit Tests** | Test individual components | Single function/class | Fast (ms) | Every commit |
-| **Integration Tests** | Test component interactions | Multiple components | Medium (seconds) | Every PR |
-| **E2E Tests** | Test complete workflows | Full system | Slow (minutes) | Before release |
-| **Documentation Tests** | Validate docs quality | Markdown files | Fast | Every change |
-| **Link Tests** | Check link validity | All links | Medium | Daily |
-| **Performance Tests** | Measure performance | Critical paths | Varies | Weekly |
+| __Unit Tests__ | Test individual components | Single function/class | Fast (ms) | Every commit |
+| __Integration Tests__ | Test component interactions | Multiple components | Medium (seconds) | Every PR |
+| __E2E Tests__ | Test complete workflows | Full system | Slow (minutes) | Before release |
+| __Documentation Tests__ | Validate docs quality | Markdown files | Fast | Every change |
+| __Link Tests__ | Check link validity | All links | Medium | Daily |
+| __Performance Tests__ | Measure performance | Critical paths | Varies | Weekly |
 
 ---
 
@@ -67,7 +67,7 @@ This guide provides comprehensive testing strategies, standards, and procedures 
 
 ### Directory Organization
 
-```
+```text
 tests/
 ├── __init__.py
 ├── conftest.py                    # Shared fixtures
@@ -604,13 +604,15 @@ exclude_lines = [
 
 ### Test Writing Guidelines
 
-1. **Clear Test Names** - Describe what is being tested
+1. __Clear Test Names__ - Describe what is being tested
+
    ```python
    def test_validate_returns_true_for_valid_markdown():  # Good
    def test_1():  # Bad
    ```
 
-2. **Arrange-Act-Assert Pattern**
+2. __Arrange-Act-Assert Pattern__
+
    ```python
    def test_process_data():
        # Arrange
@@ -624,11 +626,11 @@ exclude_lines = [
        assert result.success is True
    ```
 
-3. **One Assertion Per Test** - Keep tests focused
-4. **Use Fixtures** - DRY principle for test setup
-5. **Mock External Dependencies** - Isolate unit tests
-6. **Test Edge Cases** - Empty, null, boundary values
-7. **Use Descriptive Assertions** - Clear failure messages
+3. __One Assertion Per Test__ - Keep tests focused
+4. __Use Fixtures__ - DRY principle for test setup
+5. __Mock External Dependencies__ - Isolate unit tests
+6. __Test Edge Cases__ - Empty, null, boundary values
+7. __Use Descriptive Assertions__ - Clear failure messages
 
 ### Test Markers
 
@@ -729,16 +731,16 @@ def isolated_filesystem(tmp_path, monkeypatch):
 
 ### Testing Tools
 
-- **pytest** - Test framework
-- **pytest-cov** - Coverage plugin
-- **pytest-asyncio** - Async support
-- **pytest-mock** - Mock helpers
-- **pytest-xdist** - Parallel execution
-- **tox** - Test automation
-- **hypothesis** - Property-based testing
+- __pytest__ - Test framework
+- __pytest-cov__ - Coverage plugin
+- __pytest-asyncio__ - Async support
+- __pytest-mock__ - Mock helpers
+- __pytest-xdist__ - Parallel execution
+- __tox__ - Test automation
+- __hypothesis__ - Property-based testing
 
 ---
 
-**Last Updated:** January 28, 2025  
-**Version:** 1.0.0  
-**Maintainer:** CSA Documentation Team
+__Last Updated:__ January 28, 2025  
+__Version:__ 1.0.0  
+__Maintainer:__ CSA Documentation Team

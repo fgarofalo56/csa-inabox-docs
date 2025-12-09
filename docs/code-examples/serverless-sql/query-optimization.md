@@ -1,6 +1,6 @@
 # Serverless SQL Query Optimization in Azure Synapse Analytics
 
-[🏠 Home](../../../README.md) > [💻 Code Examples](../../README.md) > [☁️ Serverless SQL](../README.md) > 📄 Query Optimization
+[🏠 Home](../../../README.md) > [💻 Code Examples](../../README.md) > ☁️ Serverless SQL > 📄 Query Optimization
 
 This guide provides detailed examples for optimizing SQL queries in Azure Synapse Serverless SQL pools to improve performance and reduce costs.
 
@@ -494,35 +494,35 @@ ORDER BY s.bytes_processed DESC;
 
 ## Best Practices
 
-1. **Use Parquet Format**: Parquet provides the best performance for both storage and query efficiency.
+1. __Use Parquet Format__: Parquet provides the best performance for both storage and query efficiency.
 
-2. **Apply Column Pruning**: Always select only the columns you need instead of using SELECT *.
+2. __Apply Column Pruning__: Always select only the columns you need instead of using SELECT *.
 
-3. **Leverage Partitioning**: Use partitioned data and partition elimination in your queries.
+3. __Leverage Partitioning__: Use partitioned data and partition elimination in your queries.
 
-4. **Create Statistics**: Create statistics on external tables for better query optimization.
+4. __Create Statistics__: Create statistics on external tables for better query optimization.
 
-5. **Use CETAS**: Create External Table As Select (CETAS) to materialize intermediate results and optimize complex queries.
+5. __Use CETAS__: Create External Table As Select (CETAS) to materialize intermediate results and optimize complex queries.
 
-6. **Regular Monitoring**: Monitor query performance and data processed to identify optimization opportunities.
+6. __Regular Monitoring__: Monitor query performance and data processed to identify optimization opportunities.
 
-7. **Proper File Sizes**: Aim for file sizes between 100MB and 1GB for optimal performance.
+7. __Proper File Sizes__: Aim for file sizes between 100MB and 1GB for optimal performance.
 
-8. **Minimize File Count**: Reduce the number of small files by using CETAS to combine them.
+8. __Minimize File Count__: Reduce the number of small files by using CETAS to combine them.
 
-9. **Enable Result Set Caching**: For frequently executed identical queries.
+9. __Enable Result Set Caching__: For frequently executed identical queries.
 
-10. **Use WITH Clause**: Simplify complex queries with common table expressions.
+10. __Use WITH Clause__: Simplify complex queries with common table expressions.
 
 ## Common Issues and Solutions
 
 ### Issue: Slow query performance on CSV files
 
-**Solution**: Convert CSV to Parquet using CETAS for better performance.
+__Solution__: Convert CSV to Parquet using CETAS for better performance.
 
 ### Issue: Out of memory errors
 
-**Solution**:
+__Solution__:
 
 - Reduce the amount of data processed in a single query
 - Implement proper partitioning
@@ -530,7 +530,7 @@ ORDER BY s.bytes_processed DESC;
 
 ### Issue: High costs due to excessive data scanning
 
-**Solution**:
+__Solution__:
 
 - Implement column pruning
 - Use partitioning and partition elimination

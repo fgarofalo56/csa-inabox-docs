@@ -481,21 +481,24 @@ spark.sql(f"""
 
 ### Issue: Slow query performance despite optimization
 
-**Solution**:
+__Solution__:
+
 - Check data skew in partitions
 - Verify Z-ORDER columns match query predicates
 - Consider adjusting file sizes for your specific workload
 
 ### Issue: VACUUM removing files that are still needed
 
-**Solution**:
+__Solution__:
+
 - Use longer retention periods (7 days minimum recommended)
 - Always run with DRY RUN first
 - Ensure no long-running queries or operations are using old versions
 
 ### Issue: Out of memory errors during OPTIMIZE
 
-**Solution**:
+__Solution__:
+
 - Optimize smaller partitions individually
 - Increase executor memory
 - Use bin-packing optimization instead of Z-ORDER for very large tables

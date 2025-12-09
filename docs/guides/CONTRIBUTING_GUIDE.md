@@ -1,6 +1,6 @@
 # 🤝 Contributing Guide
 
-> **🏠 [Home](../../README.md)** | **📚 [Documentation](../README.md)** | **📖 [Guides](./README.md)**
+> __🏠 [Home](../../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
 
 ---
 
@@ -32,11 +32,11 @@ We are committed to providing a friendly, safe, and welcoming environment for al
 
 ### Expected Behavior
 
-- **Be respectful** and considerate in communication
-- **Be collaborative** and supportive of others
-- **Accept constructive** criticism gracefully
-- **Focus on** what is best for the community
-- **Show empathy** towards other community members
+- __Be respectful__ and considerate in communication
+- __Be collaborative__ and supportive of others
+- __Accept constructive__ criticism gracefully
+- __Focus on__ what is best for the community
+- __Show empathy__ towards other community members
 
 ### Unacceptable Behavior
 
@@ -48,24 +48,37 @@ We are committed to providing a friendly, safe, and welcoming environment for al
 
 ### Reporting Issues
 
-Report Code of Conduct violations to: csa-docs-conduct@microsoft.com
+Report Code of Conduct violations to: <csa-docs-conduct@microsoft.com>
 
 ---
 
 ## 🚀 How to Contribute
 
+### Quick Start for First-Time Contributors
+
+New to contributing? Start here!
+
+1. __Browse [Good First Issues](https://github.com/fgarofalo56/csa-inabox-docs/labels/good%20first%20issue)__ - Beginner-friendly tasks
+2. __Read the [Markdown Style Guide](./MARKDOWN_STYLE_GUIDE.md)__ - Learn our formatting standards
+3. __Set up your environment__ - Follow the [Getting Started](#getting-started) section below
+4. __Make a small change__ - Fix a typo or improve a sentence
+5. __Submit your first PR__ - Follow our [Pull Request Process](#pull-request-process)
+
+Need help? Ask in [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)!
+
 ### Ways to Contribute
 
-| Contribution Type | Description | Skill Level |
-|------------------|-------------|-------------|
-| **Report Bugs** 🐛 | Report issues and problems | Beginner |
-| **Suggest Features** 💡 | Propose new features or improvements | Beginner |
-| **Fix Typos** ✏️ | Correct spelling and grammar | Beginner |
-| **Improve Docs** 📚 | Enhance existing documentation | Intermediate |
-| **Add Examples** 📝 | Create new examples and tutorials | Intermediate |
-| **Fix Bugs** 🔧 | Resolve reported issues | Intermediate |
-| **Add Features** ⚡ | Implement new functionality | Advanced |
-| **Review PRs** 👀 | Review others' contributions | Advanced |
+| Contribution Type | Description | Skill Level | Issue Template |
+|------------------|-------------|-------------|----------------|
+| __Report Bugs__ 🐛 | Report issues and problems | Beginner | [Bug Report](../../.github/ISSUE_TEMPLATE/bug-report.md) |
+| __Suggest Features__ 💡 | Propose new features or improvements | Beginner | [Feature Request](../../.github/ISSUE_TEMPLATE/feature_request.md) |
+| __Request Docs__ 📋 | Request new or improved documentation | Beginner | [Documentation Request](../../.github/ISSUE_TEMPLATE/documentation-request.md) |
+| __Fix Typos__ ✏️ | Correct spelling and grammar | Beginner | Direct PR |
+| __Improve Docs__ 📚 | Enhance existing documentation | Intermediate | Direct PR |
+| __Add Examples__ 📝 | Create new examples and tutorials | Intermediate | Direct PR |
+| __Fix Bugs__ 🔧 | Resolve reported issues | Intermediate | Direct PR |
+| __Add Features__ ⚡ | Implement new functionality | Advanced | Direct PR |
+| __Review PRs__ 👀 | Review others' contributions | Advanced | Review queue |
 
 ---
 
@@ -73,10 +86,10 @@ Report Code of Conduct violations to: csa-docs-conduct@microsoft.com
 
 ### Prerequisites
 
-1. **GitHub Account** - [Sign up](https://github.com/join)
-2. **Git Installed** - [Download](https://git-scm.com/downloads)
-3. **Python 3.8+** - [Download](https://www.python.org/downloads/)
-4. **Text Editor** - VS Code recommended
+1. __GitHub Account__ - [Sign up](https://github.com/join)
+2. __Git Installed__ - [Download](https://git-scm.com/downloads)
+3. __Python 3.8+__ - [Download](https://www.python.org/downloads/)
+4. __Text Editor__ - VS Code recommended
 
 ### First-Time Setup
 
@@ -179,6 +192,7 @@ git checkout -b feature/your-feature-name
 #### 3. Make Your Changes
 
 Follow these guidelines:
+
 - Read [DIRECTORY_STRUCTURE_GUIDE.md](./DIRECTORY_STRUCTURE_GUIDE.md)
 - Follow [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md)
 - Update tests if applicable
@@ -220,8 +234,9 @@ git commit -m "feat: add Azure Synapse performance guide
 Closes #123"
 ```
 
-**Commit Message Format:**
-```
+__Commit Message Format:__
+
+```text
 <type>(<scope>): <subject>
 
 <body>
@@ -229,7 +244,8 @@ Closes #123"
 <footer>
 ```
 
-**Types:**
+__Types:__
+
 - `feat`: New feature
 - `fix`: Bug fix
 - `docs`: Documentation changes
@@ -253,37 +269,37 @@ git push origin feature/your-feature-name
 
 #### Adding New Documentation
 
-1. **Determine location** using directory structure guide
-2. **Create markdown file** following style guide
-3. **Update navigation** in `mkdocs.yml`
-4. **Add cross-references** to related docs
-5. **Test locally** with `mkdocs serve`
+1. __Determine location__ using directory structure guide
+2. __Create markdown file__ following style guide
+3. __Update navigation__ in `mkdocs.yml`
+4. __Add cross-references__ to related docs
+5. __Test locally__ with `mkdocs serve`
 
 #### Improving Existing Docs
 
-1. **Identify improvements** needed
-2. **Make changes** following guidelines
-3. **Preserve existing** structure where possible
-4. **Update metadata** (last updated, version)
-5. **Test all links** and references
+1. __Identify improvements__ needed
+2. __Make changes__ following guidelines
+3. __Preserve existing__ structure where possible
+4. __Update metadata__ (last updated, version)
+5. __Test all links__ and references
 
 ### Code Contributions
 
 #### Adding Features
 
-1. **Discuss first** - Open issue for significant changes
-2. **Follow architecture** - Maintain clean architecture
-3. **Write tests** - Include unit and integration tests
-4. **Document changes** - Update relevant documentation
-5. **Consider backwards** compatibility
+1. __Discuss first__ - Open issue for significant changes
+2. __Follow architecture__ - Maintain clean architecture
+3. __Write tests__ - Include unit and integration tests
+4. __Document changes__ - Update relevant documentation
+5. __Consider backwards__ compatibility
 
 #### Fixing Bugs
 
-1. **Verify bug** - Reproduce the issue
-2. **Write test** - Add test that fails
-3. **Fix bug** - Make test pass
-4. **Verify fix** - Ensure no regressions
-5. **Document** - Update changelog if needed
+1. __Verify bug__ - Reproduce the issue
+2. __Write test__ - Add test that fails
+3. __Fix bug__ - Make test pass
+4. __Verify fix__ - Ensure no regressions
+5. __Document__ - Update changelog if needed
 
 ### Example Contributions
 
@@ -317,7 +333,7 @@ Optimize your Synapse SQL queries using these techniques:
    ON dbo.FactSales;
    ```
 
-3. **Partition large tables**
+1. __Partition large tables__
    - Partition by date for time-series data
    - Ensure partitions have >1 million rows
 ```
@@ -368,11 +384,11 @@ Closes #issue-number
 
 ### PR Best Practices
 
-1. **Keep PRs focused** - One feature/fix per PR
-2. **Write clear descriptions** - Explain what and why
-3. **Include screenshots** - For UI changes
-4. **Reference issues** - Link related issues
-5. **Respond to feedback** - Address review comments promptly
+1. __Keep PRs focused__ - One feature/fix per PR
+2. __Write clear descriptions__ - Explain what and why
+3. __Include screenshots__ - For UI changes
+4. __Reference issues__ - Link related issues
+5. __Respond to feedback__ - Address review comments promptly
 
 ---
 
@@ -382,7 +398,8 @@ Closes #issue-number
 
 See [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md) for complete standards.
 
-**Key Points:**
+__Key Points:__
+
 - Use ATX headers (`#`)
 - One H1 per document
 - Include navigation breadcrumbs
@@ -415,12 +432,14 @@ class ExampleClass:
 
 ### Git Standards
 
-**Branch Names:**
+__Branch Names:__
+
 - `feature/description`
 - `fix/issue-description`
 - `docs/what-updated`
 
-**Commit Messages:**
+__Commit Messages:__
+
 - Present tense
 - Imperative mood
 - Under 72 characters
@@ -432,38 +451,38 @@ class ExampleClass:
 
 ### Review Timeline
 
-- **Initial Response**: Within 48 hours
-- **Full Review**: Within 1 week
-- **Iteration**: As needed
+- __Initial Response__: Within 48 hours
+- __Full Review__: Within 1 week
+- __Iteration__: As needed
 
 ### Review Criteria
 
 | Aspect | What We Look For |
 |--------|------------------|
-| **Correctness** | Changes work as intended |
-| **Style** | Follows project guidelines |
-| **Tests** | Adequate test coverage |
-| **Documentation** | Clear and complete |
-| **Performance** | No degradation |
-| **Security** | No vulnerabilities |
+| __Correctness__ | Changes work as intended |
+| __Style__ | Follows project guidelines |
+| __Tests__ | Adequate test coverage |
+| __Documentation__ | Clear and complete |
+| __Performance__ | No degradation |
+| __Security__ | No vulnerabilities |
 
 ### Review Feedback
 
 #### Responding to Reviews
 
-1. **Thank reviewer** for their time
-2. **Address all** comments
-3. **Ask questions** if unclear
-4. **Update PR** based on feedback
-5. **Request re-review** when ready
+1. __Thank reviewer__ for their time
+2. __Address all__ comments
+3. __Ask questions__ if unclear
+4. __Update PR__ based on feedback
+5. __Request re-review__ when ready
 
 #### Comment Types
 
-- **`MUST`** - Required change
-- **`SHOULD`** - Strongly recommended
-- **`CONSIDER`** - Suggestion
-- **`NIT`** - Minor issue
-- **`QUESTION`** - Clarification needed
+- __`MUST`__ - Required change
+- __`SHOULD`__ - Strongly recommended
+- __`CONSIDER`__ - Suggestion
+- __`NIT`__ - Minor issue
+- __`QUESTION`__ - Clarification needed
 
 ---
 
@@ -473,16 +492,28 @@ class ExampleClass:
 
 | Level | Contributions | Benefits |
 |-------|--------------|----------|
-| **Contributor** | 1+ merged PR | Listed in contributors |
-| **Regular Contributor** | 5+ merged PRs | Review permissions |
-| **Core Contributor** | 10+ merged PRs | Write access consideration |
-| **Maintainer** | Consistent high-quality contributions | Full repository access |
+| __Contributor__ | 1+ merged PR | Listed in contributors |
+| __Regular Contributor__ | 5+ merged PRs | Review permissions |
+| __Core Contributor__ | 10+ merged PRs | Write access consideration |
+| __Maintainer__ | Consistent high-quality contributions | Full repository access |
+
+### Hall of Fame
+
+We celebrate our top contributors! Outstanding contributors are featured in our [Hall of Fame](../../README.md#-contributors) section.
+
+__Recognition Categories:__
+
+- __Documentation Champions__ - Most documentation contributions
+- __Quality Advocates__ - Highest quality submissions
+- __Community Leaders__ - Active reviewers and mentors
+- __Innovation Stars__ - Creative solutions and improvements
 
 ### Attribution
 
 - Contributors are listed in [CONTRIBUTORS.md](../../CONTRIBUTORS.md)
 - Significant contributions mentioned in release notes
 - Annual contributor spotlight blog posts
+- Featured in README.md Contributors section
 
 ---
 
@@ -492,20 +523,20 @@ class ExampleClass:
 
 | Channel | Purpose | Response Time |
 |---------|---------|---------------|
-| **GitHub Issues** | Bug reports, features | 48 hours |
-| **GitHub Discussions** | Questions, ideas | 72 hours |
-| **Pull Requests** | Code review | 1 week |
-| **Email** | Private concerns | 1 week |
+| __GitHub Issues__ | Bug reports, features | 48 hours |
+| __GitHub Discussions__ | Questions, ideas | 72 hours |
+| __Pull Requests__ | Code review | 1 week |
+| __Email__ | Private concerns | 1 week |
 
 ### Getting Help
 
 #### Where to Ask
 
-1. **Documentation question** → GitHub Discussions
-2. **Bug report** → GitHub Issues
-3. **Feature request** → GitHub Issues
-4. **Code help** → Pull Request comments
-5. **General discussion** → GitHub Discussions
+1. __Documentation question__ → GitHub Discussions
+2. __Bug report__ → GitHub Issues
+3. __Feature request__ → GitHub Issues
+4. __Code help__ → Pull Request comments
+5. __General discussion__ → GitHub Discussions
 
 #### How to Ask
 
@@ -525,7 +556,7 @@ Clear description of the problem
 
 ## Additional Information
 Any other relevant details
-```
+\```
 
 ---
 
@@ -549,18 +580,20 @@ Any other relevant details
 ### Learning Resources
 
 #### For Beginners
+
 - [First Contributions](https://firstcontributions.github.io/)
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [GitHub Skills](https://skills.github.com/)
 
 #### For Advanced Contributors
+
 - [Pro Git Book](https://git-scm.com/book)
 - [GitHub Actions Documentation](https://docs.github.com/actions)
 - [Python Testing Best Practices](https://realpython.com/python-testing/)
 
 ---
 
-## 🎉 Thank You!
+## 🎉 Thank You
 
 Your contributions make this project better for everyone. Whether you're fixing a typo, adding documentation, or implementing features, every contribution matters!
 
@@ -573,8 +606,8 @@ Your contributions make this project better for everyone. Whether you're fixing 
 
 ---
 
-**Last Updated:** January 28, 2025  
-**Version:** 1.0.0  
-**Maintainer:** CSA Documentation Team
+__Last Updated:__ January 28, 2025  
+__Version:__ 1.0.0  
+__Maintainer:__ CSA Documentation Team
 
 *Happy Contributing! 🚀*

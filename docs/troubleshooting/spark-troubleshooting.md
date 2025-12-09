@@ -1,6 +1,6 @@
 # Spark Troubleshooting Guide
 
-[Home](../../README.md) > [Troubleshooting](../README.md) > Spark Troubleshooting
+[Home](../../README.md) > Troubleshooting > Spark Troubleshooting
 
 Apache Spark in Azure Synapse Analytics
 

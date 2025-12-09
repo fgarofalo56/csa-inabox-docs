@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 from unittest.mock import Mock, patch, MagicMock, call
 
-from src.csa_docs_tools.release_manager import (
+from csa_docs_tools.release_manager import (
     ReleaseManager,
     ReleaseConfig,
     ChangelogEntry,

@@ -1,6 +1,6 @@
 # Process Flowcharts for Azure Synapse Analytics
 
-[Home](../../README.md) > [Diagrams](../README.md) > Process Flowcharts
+[Home](../../README.md) > Diagrams > Process Flowcharts
 
 This section provides flowcharts for common processes related to Azure Synapse Analytics, including troubleshooting, optimization, and implementation workflows.
 
@@ -20,7 +20,6 @@ This flowchart provides a systematic approach to troubleshooting performance iss
 
 <!-- Mermaid diagram for MkDocs rendering -->
 ![Secure Data Lakehouse Data Flow](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-dataflow.svg)
-
 
 <!-- Static image fallback for GitHub -->
 ![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)

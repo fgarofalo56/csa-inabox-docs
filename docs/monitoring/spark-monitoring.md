@@ -1,6 +1,6 @@
 # Spark Monitoring
 
-[Home](../../README.md) > [Monitoring](../README.md) > Spark Monitoring
+[Home](../../README.md) > Monitoring > Spark Monitoring
 
 ## Overview
 
@@ -18,17 +18,17 @@ This document provides comprehensive guidance on spark monitoring.
 
 ### Recommended Approaches
 
-1. **First Practice**: Description of the first best practice
-2. **Second Practice**: Description of the second best practice
-3. **Third Practice**: Description of the third best practice
+1. __First Practice__: Description of the first best practice
+2. __Second Practice__: Description of the second best practice
+3. __Third Practice__: Description of the third best practice
 
 ## Implementation Guide
 
 ### Step-by-Step Instructions
 
-1. **Step 1**: Initial setup and configuration
-2. **Step 2**: Implementation details
-3. **Step 3**: Testing and validation
+1. __Step 1__: Initial setup and configuration
+2. __Step 2__: Implementation details
+3. __Step 3__: Testing and validation
 
 ## Common Issues and Solutions
 

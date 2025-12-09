@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Serverless SQL: Detailed Architecture
 
-[Home](../../../README.md) > [Architecture](../../README.md) > [Serverless SQL](../README.md) > Detailed Architecture
+[Home](../../../README.md) > [Architecture](../../README.md) > Serverless SQL > Detailed Architecture
 
 ## Overview
 
@@ -12,24 +12,24 @@ Azure Synapse Serverless SQL Pool provides on-demand, auto-scaling SQL query cap
 
 Serverless SQL in Azure Synapse Analytics utilizes a distributed query processing architecture:
 
-1. **Query Parsing and Planning**
+1. __Query Parsing and Planning__
    - SQL query parsing and syntax validation
    - Query plan optimization based on statistics and metadata
    - Distributed execution plan generation
 
-2. **Compute Layer**
+2. __Compute Layer__
    - Dynamically allocated compute resources based on query complexity
    - Automatic scaling during query execution
    - Pay-per-query billing model (TB processed)
 
-3. **Data Access Layer**
+3. __Data Access Layer__
    - Parallel data access to storage systems
    - Native support for multiple file formats
    - Data virtualization capabilities
 
 ### Logical Architecture
 
-```
+```text
 ┌───────────────────────────────────────────────────┐
 │                 Client Applications               │
 │  (SSMS, Azure Data Studio, Power BI, Custom Apps) │
@@ -75,13 +75,15 @@ Serverless SQL Pool provides a dedicated SQL endpoint with:
 
 ### Resource Management
 
-**Dynamic Resource Allocation**
+__Dynamic Resource Allocation__
+
 - Resources automatically scale based on query complexity
 - Parallel processing adapts to data volume and query patterns
 - CPU and memory allocation optimized for each query phase
 - Isolation between multiple concurrent queries
 
-**Billing Model**
+__Billing Model__
+
 - Pay only for data processed during query execution
 - Billed per TB of data scanned
 - No charges when idle
@@ -89,13 +91,15 @@ Serverless SQL Pool provides a dedicated SQL endpoint with:
 
 ### Query Processing
 
-**Query Compilation**
+__Query Compilation__
+
 - SQL query parsing and validation
 - Syntax compatibility with T-SQL
 - Query plan optimization for distributed execution
 - Statistics-based cardinality estimation
 
-**Execution Engine**
+__Execution Engine__
+
 - Massively parallel processing (MPP) architecture
 - Distributed query execution across multiple nodes
 - Dynamic node allocation based on workload
@@ -109,10 +113,10 @@ Serverless SQL Pool provides native support for multiple file formats:
 
 | Format | Key Features | Best For |
 |--------|-------------|----------|
-| **Parquet** | Columnar storage, compression, predicate pushdown | Analytics workloads, high-performance queries |
-| **Delta** | ACID transactions, time travel, schema evolution | Data lakes with transactional requirements |
-| **CSV** | Human-readable, widely supported, variable delimiters | Data exchange, simple datasets |
-| **JSON** | Semi-structured data, nested objects, arrays | Application logs, API data, flexible schemas |
+| __Parquet__ | Columnar storage, compression, predicate pushdown | Analytics workloads, high-performance queries |
+| __Delta__ | ACID transactions, time travel, schema evolution | Data lakes with transactional requirements |
+| __CSV__ | Human-readable, widely supported, variable delimiters | Data exchange, simple datasets |
+| __JSON__ | Semi-structured data, nested objects, arrays | Application logs, API data, flexible schemas |
 
 ### External Tables
 
@@ -144,7 +148,8 @@ WITH
 
 Serverless SQL Pool extends T-SQL with specialized syntax for external data access:
 
-**OPENROWSET**
+__OPENROWSET__
+
 - Ad-hoc queries against file storage
 - Schema inference capabilities
 - Format-specific options for optimal access
@@ -158,7 +163,8 @@ FROM OPENROWSET(
 ) AS [result]
 ```
 
-**Specialized Functions**
+__Specialized Functions__
+
 - `FILEPATH()` - Access file path information
 - `FILENAME()` - Extract filename from path
 - `FORMAT_TYPE()` - Determine file format details
@@ -190,12 +196,14 @@ SELECT * FROM OPENROWSET(
 
 ### Metadata Integration
 
-**Schema Discovery**
+__Schema Discovery__
+
 - Automatic schema inference from Delta metadata
 - Data type mapping between Spark and SQL types
 - Support for nested structures and arrays
 
-**Statistics Utilization**
+__Statistics Utilization__
+
 - Leverages Delta statistics for query optimization
 - Data skipping based on min/max values
 - Partition elimination for efficient data access
@@ -213,12 +221,14 @@ Serverless SQL Pool supports multiple authentication methods:
 
 ### Authorization and Access Control
 
-**Resource-level Security**
+__Resource-level Security__
+
 - Role-based access control (RBAC) on Synapse workspace
 - SQL role-based security for database objects
 - Managed private endpoints for network isolation
 
-**Data-level Security**
+__Data-level Security__
+
 - Row-level security (RLS) policies
 - Column-level security and data masking
 - Azure storage access control with SAS or AAD
@@ -234,17 +244,20 @@ WITH (STATE = ON);
 
 ### Query Performance Techniques
 
-**Data Layout Optimization**
+__Data Layout Optimization__
+
 - Partitioning strategies for efficient filtering
 - File size optimization (recommended: 100MB-1GB)
 - Data organization for common access patterns
 
-**Predicate Pushdown**
+__Predicate Pushdown__
+
 - Filter pushdown to storage layer
 - Column pruning for reading only required fields
 - Partition elimination for scanned data reduction
 
-**Statistics Management**
+__Statistics Management__
+
 - Creating statistics on key columns
 - AUTO_CREATE_STATISTICS option
 - Regular statistics updates for changing data
@@ -256,12 +269,14 @@ CREATE STATISTICS Stats_OrderDate ON ExternalTable(OrderDate);
 
 ### Caching Mechanisms
 
-**Result Set Cache**
+__Result Set Cache__
+
 - Automatic caching of query results
 - Cache invalidation on data changes
 - Configurable TTL for cached results
 
-**Metadata Caching**
+__Metadata Caching__
+
 - Storage of file listings and statistics
 - Schema caching for faster queries
 - Partition metadata for efficient access
@@ -380,7 +395,7 @@ Tools and practices for cost optimization:
 
 Using Serverless SQL as a query layer over a data lake:
 
-```
+```text
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Power BI    ├───►│ Serverless  ├───►│ Data Lake   │
 │ Excel       │    │ SQL Pool    │    │ (ADLS Gen2) │
@@ -392,7 +407,7 @@ Using Serverless SQL as a query layer over a data lake:
 
 Combining dedicated and serverless pools for different workloads:
 
-```
+```text
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ Mission-    ├───►│ Dedicated   ├───►│ Curated     │
 │ Critical    │    │ SQL Pool    │    │ Data Mart   │
@@ -411,7 +426,7 @@ Combining dedicated and serverless pools for different workloads:
 
 Using Serverless SQL as a data virtualization layer:
 
-```
+```text
 ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
 │ BI Tools    │    │ Serverless  │    │ Azure SQL   │
 │ Custom Apps ├───►│ SQL Pool    ├───►│ Cosmos DB   │

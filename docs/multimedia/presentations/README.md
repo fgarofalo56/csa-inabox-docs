@@ -1,6 +1,6 @@
 # 📊 Presentation Templates & Materials
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 Presentations**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📊 Presentations__
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Templates: 20+](https://img.shields.io/badge/Templates-20+-blue)
@@ -15,10 +15,11 @@ Professional presentation templates and materials designed for various audiences
 ### 👔 Executive Presentations
 
 #### Cloud Scale Analytics Overview
-**Duration**: 15 minutes  
-**Slides**: 20  
-**Audience**: C-Level, Decision Makers  
-**[Download PPTX](./templates/executive/csa-overview.pptx)** | **[View PDF](./templates/executive/csa-overview.pdf)**
+
+__Duration__: 15 minutes  
+__Slides__: 20  
+__Audience__: C-Level, Decision Makers  
+__[Download PPTX](./templates/executive/csa-overview.pptx)__ | __[View PDF](./templates/executive/csa-overview.pdf)__
 
 ```yaml
 presentation:
@@ -76,18 +77,20 @@ presentation:
 ```
 
 #### Digital Transformation Journey
-**Duration**: 20 minutes  
-**Slides**: 25  
-**Audience**: Board Members, Stakeholders  
-**[Download PPTX](./templates/executive/digital-transformation.pptx)**
+
+__Duration__: 20 minutes  
+__Slides__: 25  
+__Audience__: Board Members, Stakeholders  
+__[Download PPTX](./templates/executive/digital-transformation.pptx)__
 
 ### 🔧 Technical Deep-Dives
 
 #### Azure Synapse Architecture Deep Dive
-**Duration**: 60 minutes  
-**Slides**: 80  
-**Audience**: Architects, Engineers  
-**[Download PPTX](./templates/technical/synapse-architecture.pptx)**
+
+__Duration__: 60 minutes  
+__Slides__: 80  
+__Audience__: Architects, Engineers  
+__[Download PPTX](./templates/technical/synapse-architecture.pptx)__
 
 ```markdown
 ## Slide Deck Structure
@@ -130,18 +133,20 @@ presentation:
 ```
 
 #### Performance Optimization Masterclass
-**Duration**: 90 minutes  
-**Slides**: 120  
-**Audience**: DBAs, Performance Engineers  
-**[Download PPTX](./templates/technical/performance-optimization.pptx)**
+
+__Duration__: 90 minutes  
+__Slides__: 120  
+__Audience__: DBAs, Performance Engineers  
+__[Download PPTX](./templates/technical/performance-optimization.pptx)__
 
 ### 🎓 Training Materials
 
 #### Synapse Analytics Fundamentals
-**Duration**: 4 hours (Half-day workshop)  
-**Slides**: 150  
-**Labs**: 6 hands-on exercises  
-**[Download Course Pack](./templates/training/fundamentals-pack.zip)**
+
+__Duration__: 4 hours (Half-day workshop)  
+__Slides__: 150  
+__Labs__: 6 hands-on exercises  
+__[Download Course Pack](./templates/training/fundamentals-pack.zip)__
 
 ```javascript
 // Training Module Structure
@@ -211,12 +216,14 @@ const trainingModules = {
 ### 🎯 Customer Demo Templates
 
 #### Proof of Concept Presentation
-**Duration**: 30 minutes  
-**Slides**: 35  
-**Audience**: Technical Evaluators  
-**[Download PPTX](./templates/demo/poc-presentation.pptx)**
+
+__Duration__: 30 minutes  
+__Slides__: 35  
+__Audience__: Technical Evaluators  
+__[Download PPTX](./templates/demo/poc-presentation.pptx)__
 
 ### Demo Script Example
+
 ```markdown
 ## Demo: Real-time Analytics Pipeline
 
@@ -264,6 +271,7 @@ const trainingModules = {
 ### Master Slide Layouts
 
 #### Title Slide
+
 ```html
 <slide layout="title">
   <background>gradient-azure</background>
@@ -276,6 +284,7 @@ const trainingModules = {
 ```
 
 #### Content Slide with Bullets
+
 ```html
 <slide layout="content-bullets">
   <title>Key Benefits</title>
@@ -293,6 +302,7 @@ const trainingModules = {
 ```
 
 #### Architecture Diagram Slide
+
 ```html
 <slide layout="diagram">
   <title>Reference Architecture</title>
@@ -313,6 +323,7 @@ const trainingModules = {
 ```
 
 #### Comparison Slide
+
 ```html
 <slide layout="comparison">
   <title>Traditional vs. Modern</title>
@@ -344,6 +355,7 @@ const trainingModules = {
 ## 🎨 Visual Design Guidelines
 
 ### Color Palette
+
 ```css
 /* Azure Brand Colors */
 :root {
@@ -368,6 +380,7 @@ const trainingModules = {
 ```
 
 ### Typography
+
 ```css
 /* Heading Styles */
 .slide-title {
@@ -393,6 +406,7 @@ const trainingModules = {
 ```
 
 ### Animation Timings
+
 ```javascript
 // Slide Animation Configuration
 const animationSettings = {
@@ -468,6 +482,7 @@ Conclude by linking to the next slide..."
 ## 🎬 Presentation Delivery Tips
 
 ### Virtual Presentations
+
 ```javascript
 // Virtual Presentation Checklist
 const virtualChecklist = {
@@ -498,6 +513,7 @@ const virtualChecklist = {
 ```
 
 ### In-Person Presentations
+
 ```javascript
 // In-Person Presentation Checklist
 const inPersonChecklist = {
@@ -530,6 +546,7 @@ const inPersonChecklist = {
 ## 📊 Slide Deck Analytics
 
 ### Engagement Metrics
+
 ```javascript
 // Track presentation effectiveness
 class PresentationAnalytics {
@@ -572,6 +589,7 @@ class PresentationAnalytics {
 ## 🛠️ PowerPoint Automation
 
 ### Generate Slides from Data
+
 ```python
 # Python script for automated slide generation
 from pptx import Presentation
@@ -632,22 +650,25 @@ class SynapsePresentation:
 ## 📦 Resource Library
 
 ### Icons and Graphics
-- [Azure Architecture Icons](./resources/icons/azure/)
-- [Data Flow Diagrams](./resources/diagrams/)
-- [Background Templates](./resources/backgrounds/)
-- [Chart Templates](./resources/charts/)
+
+- [Azure Architecture Icons](./resources/icons/azure/README.md)
+- [Data Flow Diagrams](./resources/diagrams/README.md)
+- [Background Templates](./resources/backgrounds/README.md)
+- [Chart Templates](./resources/charts/README.md)
 
 ### Stock Images
-- [Technology Images](./resources/images/technology/)
-- [Team Photos](./resources/images/team/)
-- [Office Environments](./resources/images/office/)
-- [Abstract Backgrounds](./resources/images/abstract/)
+
+- [Technology Images](./resources/images/technology/README.md)
+- [Team Photos](./resources/images/team/README.md)
+- [Office Environments](./resources/images/office/README.md)
+- [Abstract Backgrounds](./resources/images/abstract/README.md)
 
 ### Animations and Transitions
-- [Slide Transitions](./resources/animations/transitions/)
-- [Object Animations](./resources/animations/objects/)
-- [Chart Animations](./resources/animations/charts/)
-- [Text Effects](./resources/animations/text/)
+
+- [Slide Transitions](./resources/animations/transitions/README.md)
+- [Object Animations](./resources/animations/objects/README.md)
+- [Chart Animations](./resources/animations/charts/README.md)
+- [Text Effects](./resources/animations/text/README.md)
 
 ## 📚 Additional Resources
 

@@ -1,6 +1,6 @@
 # Network Security Best Practices
 
-[Home](../../README.md) > [Best Practices](../README.md) > Network Security
+[Home](../../README.md) > Best Practices > Network Security
 
 !!! abstract "Overview"
     This guide covers network security best practices for Azure Synapse Analytics, including private endpoints, network isolation, firewall configuration, and secure connectivity patterns.
@@ -14,34 +14,34 @@ Implementing robust network security is critical for protecting your Azure Synap
 - 🔒 __Private Endpoints__
 
     ---
-    
+
     Secure private connectivity to Azure services
-    
-    [:octicons-arrow-right-24: Private endpoints](#private-endpoints)
+
+    [→ Private endpoints](#private-endpoints)
 
 - 🛡️ __Firewall Configuration__
 
     ---
-    
+
     IP-based access control for Synapse workspace
-    
-    [:octicons-arrow-right-24: Firewall setup](#firewall-configuration)
+
+    [→ Firewall setup](#firewall-configuration)
 
 - 🛡️ __Network Isolation__
 
     ---
-    
+
     Isolate workspaces and data stores in virtual networks
-    
-    [:octicons-arrow-right-24: Network isolation](#network-isolation)
+
+    [→ Network isolation](#network-isolation)
 
 - 🚀 __Secure Connectivity__
 
     ---
-    
+
     Establish secure connections between networks
-    
-    [:octicons-arrow-right-24: Secure connections](#secure-connectivity)
+
+    [→ Secure connections](#secure-connectivity)
 
 </div>
 
@@ -52,7 +52,7 @@ Implementing robust network security is critical for protecting your Azure Synap
 
 Azure Private Endpoints provide secure connectivity to Azure Synapse Analytics services from your virtual network:
 
-1. **Private Endpoint Components** for Synapse Analytics:
+1. __Private Endpoint Components__ for Synapse Analytics:
    - SQL on-demand endpoint
    - SQL dedicated pool endpoint
    - Development endpoint
@@ -109,11 +109,11 @@ Configure IP firewall rules to restrict access to your Synapse workspace:
 
 Implement these network isolation practices:
 
-1. **VNet Integration** - Place Synapse workspace in a virtual network
-2. **Network Security Groups (NSGs)** - Control traffic flow between subnets
-3. **Service Endpoints** - Secure Azure service connections
-4. **Private DNS Zones** - Resolve private endpoint DNS names
-5. **Managed VNet** - Enable managed virtual network for Synapse workspace
+1. __VNet Integration__ - Place Synapse workspace in a virtual network
+2. __Network Security Groups (NSGs)__ - Control traffic flow between subnets
+3. __Service Endpoints__ - Secure Azure service connections
+4. __Private DNS Zones__ - Resolve private endpoint DNS names
+5. __Managed VNet__ - Enable managed virtual network for Synapse workspace
 
 !!! tip "Best Practice"
     Use separate subnets for different Synapse components to apply granular NSG rules.
@@ -141,16 +141,15 @@ New-AzSynapseManagedPrivateEndpoint -WorkspaceName $synapseWorkspace `
 
 Establish secure connections between your on-premises network and Azure Synapse Analytics:
 
-1. **ExpressRoute** - Dedicated private connection to Azure
-2. **VPN Gateway** - Encrypted connection over public internet
-3. **Azure Bastion** - Secure RDP/SSH access to VMs
-4. **Just-in-time Access** - Temporary privileged access
+1. __ExpressRoute__ - Dedicated private connection to Azure
+2. __VPN Gateway__ - Encrypted connection over public internet
+3. __Azure Bastion__ - Secure RDP/SSH access to VMs
+4. __Just-in-time Access__ - Temporary privileged access
 
 !!! info "Integration Point"
     Azure Private Link and ExpressRoute work together to provide secure, private connectivity from on-premises environments to Azure Synapse.
 
 ![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
-
 
 ## Defense-in-Depth Strategy
 

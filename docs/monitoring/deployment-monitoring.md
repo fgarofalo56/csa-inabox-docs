@@ -1,6 +1,6 @@
 # Deployment Monitoring
 
-[Home](../../README.md) > [Monitoring](../README.md) > Deployment Monitoring
+[Home](../../README.md) > Monitoring > Deployment Monitoring
 
 !!! abstract "Overview"
 This guide covers monitoring strategies for Azure Synapse Analytics deployments, including pipeline executions, resource utilization, and performance metrics.
@@ -17,7 +17,7 @@ Azure Synapse Analytics deployments can be monitored through various mechanisms 
 
 Monitor pipeline deployments using Azure DevOps or GitHub Actions logs
 
-[:octicons-arrow-right-24: Pipeline monitoring](#pipeline-monitoring)
+[→ Pipeline monitoring](#pipeline-monitoring)
 
 - 📊 __Resource Deployment Tracking__
 
@@ -25,7 +25,7 @@ Monitor pipeline deployments using Azure DevOps or GitHub Actions logs
 
 Track Azure Resource Manager (ARM) template deployments
 
-[:octicons-arrow-right-24: Resource monitoring](#resource-monitoring)
+[→ Resource monitoring](#resource-monitoring)
 
 - ⚠️ __Deployment Alerts__
 
@@ -33,7 +33,7 @@ Track Azure Resource Manager (ARM) template deployments
 
 Configure alerts for deployment failures and threshold breaches
 
-[:octicons-arrow-right-24: Alert configuration](#alert-configuration)
+[→ Alert configuration](#alert-configuration)
 
 - 📜 __Deployment History__
 
@@ -41,7 +41,7 @@ Configure alerts for deployment failures and threshold breaches
 
 View historical deployment metrics and success rates
 
-[:octicons-arrow-right-24: History and analytics](#history-and-analytics)
+[→ History and analytics](#history-and-analytics)
 
 </div>
 

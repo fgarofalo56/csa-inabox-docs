@@ -1,6 +1,6 @@
 # Automated Testing for Synapse Analytics
 
-[Home](../../README.md) > [DevOps](../README.md) > Automated Testing
+[Home](../../README.md) > DevOps > Automated Testing
 
 !!! abstract "Overview"
     This guide covers automated testing strategies for Azure Synapse Analytics, including pipeline testing, data validation, and continuous integration approaches.
@@ -14,34 +14,34 @@ A comprehensive testing strategy ensures reliable and stable Azure Synapse Analy
 - ⚡ __Pipeline Testing__
 
     ---
-    
+
     Validate pipeline execution and data transformation accuracy
-    
-    [:octicons-arrow-right-24: Pipeline tests](#pipeline-testing)
+
+    [→ Pipeline tests](#pipeline-testing)
 
 - 📋 __Data Validation__
 
     ---
-    
+
     Verify data quality, completeness, and correctness
-    
-    [:octicons-arrow-right-24: Data validation](#data-validation)
+
+    [→ Data validation](#data-validation)
 
 - 📝 __Notebook Testing__
 
     ---
-    
+
     Test Spark notebooks and SQL scripts
-    
-    [:octicons-arrow-right-24: Notebook tests](#notebook-testing)
+
+    [→ Notebook tests](#notebook-testing)
 
 - 🔗 __Integration Testing__
 
     ---
-    
+
     Validate end-to-end processes and integrations
-    
-    [:octicons-arrow-right-24: Integration tests](#integration-testing)
+
+    [→ Integration tests](#integration-testing)
 
 </div>
 
@@ -52,10 +52,10 @@ A comprehensive testing strategy ensures reliable and stable Azure Synapse Analy
 
 Test your Azure Synapse pipelines with these strategies:
 
-1. **Unit Testing** - Test individual activities with sample data
-2. **Integration Testing** - Test pipelines with realistic but constrained data sources
-3. **End-to-End Testing** - Validate full pipeline functionality in a test environment
-4. **Performance Testing** - Measure pipeline execution times with varied data volumes
+1. __Unit Testing__ - Test individual activities with sample data
+2. __Integration Testing__ - Test pipelines with realistic but constrained data sources
+3. __End-to-End Testing__ - Validate full pipeline functionality in a test environment
+4. __Performance Testing__ - Measure pipeline execution times with varied data volumes
 
 ```python
 # Example: Python test for validating pipeline execution results
@@ -102,22 +102,23 @@ Implement these data validation techniques:
 | Business Rules | Validate business-specific rules | Implement custom validation logic |
 
 !!! example "Data Validation Example"
+
     ```python
     # Using Great Expectations for data validation
     import great_expectations as ge
-    
+
     # Load data
     df = ge.read_csv("processed_data.csv")
-    
+
     # Define expectations
     validation_result = df.expect_column_values_to_not_be_null("customer_id")
     assert validation_result.success
-    
+
     validation_result = df.expect_column_values_to_be_between(
         "transaction_amount", min_value=0, max_value=100000
     )
     assert validation_result.success
-    
+
     validation_result = df.expect_column_values_to_be_in_set(
         "status", ["completed", "pending", "failed"]
     )
@@ -128,10 +129,10 @@ Implement these data validation techniques:
 
 Test Spark notebooks and SQL scripts using automated frameworks:
 
-1. **Papermill** - Parameterize and execute notebooks as part of testing
-2. **pytest-spark** - Run Spark tests in isolated contexts
-3. **DBT test** - Test SQL transformations with standard test cases
-4. **JUnit** - Test Java/Scala Spark code
+1. __Papermill__ - Parameterize and execute notebooks as part of testing
+2. __pytest-spark__ - Run Spark tests in isolated contexts
+3. __DBT test__ - Test SQL transformations with standard test cases
+4. __JUnit__ - Test Java/Scala Spark code
 
 ```python
 # Example: Testing a Spark notebook with papermill
@@ -195,12 +196,12 @@ steps:
 
 ## Testing Best Practices
 
-1. **Automate everything** - Include tests in CI/CD pipelines
-2. **Isolate environments** - Use separate test environments
-3. **Clean test data** - Ensure tests clean up after themselves
-4. **Idempotent tests** - Tests should be repeatable with consistent results
-5. **Parallel execution** - Design tests to run in parallel when possible
-6. **Comprehensive coverage** - Test normal flows, edge cases, and failure scenarios
+1. __Automate everything__ - Include tests in CI/CD pipelines
+2. __Isolate environments__ - Use separate test environments
+3. __Clean test data__ - Ensure tests clean up after themselves
+4. __Idempotent tests__ - Tests should be repeatable with consistent results
+5. __Parallel execution__ - Design tests to run in parallel when possible
+6. __Comprehensive coverage__ - Test normal flows, edge cases, and failure scenarios
 
 ## Related Resources
 

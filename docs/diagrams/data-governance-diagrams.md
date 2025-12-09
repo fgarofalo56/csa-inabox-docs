@@ -1,6 +1,6 @@
 # Data Governance Architecture Diagrams for Azure Synapse Analytics
 
-[Home](../../README.md) > [Diagrams](../README.md) > Data Governance Diagrams
+[Home](../../README.md) > Diagrams > Data Governance Diagrams
 
 This section provides comprehensive diagrams illustrating data governance architectures and frameworks for Azure Synapse Analytics.
 
@@ -41,7 +41,6 @@ This diagram illustrates a comprehensive data classification framework for Azure
 <!-- Mermaid diagram for MkDocs rendering -->
 ![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
 
-
 <!-- Static image fallback for GitHub -->
 ![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)
 
@@ -71,7 +70,6 @@ This diagram illustrates the roles and responsibilities within a data governance
 
 <!-- Mermaid diagram for MkDocs rendering -->
 ![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
-
 
 <!-- Static image fallback for GitHub -->
 ![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)

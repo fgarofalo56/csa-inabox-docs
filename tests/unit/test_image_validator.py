@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch, Mock
 from PIL import Image
 
-from src.csa_docs_tools.image_validator import ImageReferenceValidator, ImageIssue
+from csa_docs_tools.image_validator import ImageReferenceValidator, ImageIssue
 
 
 class TestImageReferenceValidator:

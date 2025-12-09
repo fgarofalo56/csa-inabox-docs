@@ -1,24 +1,24 @@
 # 🔄 Azure Data Factory Orchestration Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../README.md)** | **🔄 Data Factory**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🔄 Data Factory__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Data_Factory_Orchestration-blue)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)
 ![Level](https://img.shields.io/badge/Level-Intermediate-yellow)
 ![ETL Focus](https://img.shields.io/badge/Focus-ETL_Orchestration-orange)
 
-**Master enterprise data orchestration with Azure Data Factory. Build complex ETL/ELT pipelines, implement data integration patterns, and create production-ready workflows with monitoring, error handling, and automated scheduling.**
+__Master enterprise data orchestration with Azure Data Factory. Build complex ETL/ELT pipelines, implement data integration patterns, and create production-ready workflows with monitoring, error handling, and automated scheduling.__
 
 ## 🎯 What You'll Build
 
-By completing this tutorial, you'll create a **comprehensive data orchestration platform** featuring:
+By completing this tutorial, you'll create a __comprehensive data orchestration platform__ featuring:
 
-- **🔄 Multi-Source Data Integration** - Ingest from databases, files, APIs, and streaming sources
-- **🏗️ Complex Pipeline Orchestration** - Coordinate dependencies, parallel processing, and conditional logic  
-- **📊 Data Transformation Workflows** - Clean, transform, and enrich data using multiple approaches
-- **🔒 Enterprise Security Integration** - Secure connections, credential management, and access controls
-- **📈 Monitoring & Alerting** - Comprehensive observability with automated incident response
-- **🚀 CI/CD Pipeline Integration** - Version control and automated deployment workflows
+- __🔄 Multi-Source Data Integration__ - Ingest from databases, files, APIs, and streaming sources
+- __🏗️ Complex Pipeline Orchestration__ - Coordinate dependencies, parallel processing, and conditional logic  
+- __📊 Data Transformation Workflows__ - Clean, transform, and enrich data using multiple approaches
+- __🔒 Enterprise Security Integration__ - Secure connections, credential management, and access controls
+- __📈 Monitoring & Alerting__ - Comprehensive observability with automated incident response
+- __🚀 CI/CD Pipeline Integration__ - Version control and automated deployment workflows
 
 ## 🏗️ Architecture Overview
 
@@ -76,21 +76,24 @@ graph TD
 
 ## 📚 Tutorial Modules
 
-### **🚀 Module 1: Foundation & Setup** *(45 minutes)*
+### __🚀 Module 1: Foundation & Setup__ *(45 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [01. Data Factory Fundamentals](01-fundamentals.md) | Core concepts, components, architecture | 15 mins |
 | [02. Environment Setup](02-environment-setup.md) | Resource provisioning, security configuration | 20 mins |
 | [03. Integration Runtime Configuration](03-integration-runtime.md) | Self-hosted and Azure IR setup | 10 mins |
 
-### **🔌 Module 2: Data Source Connectivity** *(60 minutes)*
+### __🔌 Module 2: Data Source Connectivity__ *(60 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [04. Linked Services & Datasets](04-linked-services.md) | Connection management, dataset definitions | 20 mins |
 | [05. Multi-Source Integration](05-multi-source-integration.md) | Databases, files, APIs, cloud services | 25 mins |
 | [06. Secure Connectivity Patterns](06-secure-connectivity.md) | Private endpoints, managed identity, Key Vault | 15 mins |
 
-### **⚙️ Module 3: Pipeline Development** *(90 minutes)*
+### __⚙️ Module 3: Pipeline Development__ *(90 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [07. Basic Pipeline Activities](07-basic-activities.md) | Copy, lookup, get metadata activities | 20 mins |
@@ -98,25 +101,29 @@ graph TD
 | [09. Data Transformation Patterns](09-transformation-patterns.md) | Mapping data flows, Synapse integration | 30 mins |
 | [10. Error Handling & Retry Logic](10-error-handling.md) | Robust pipeline design, failure recovery | 15 mins |
 
-### **📊 Module 4: Advanced Data Flows** *(45 minutes)*
+### __📊 Module 4: Advanced Data Flows__ *(45 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [11. Mapping Data Flows](11-mapping-data-flows.md) | Visual data transformation designer | 25 mins |
 | [12. Wrangling Data Flows](12-wrangling-data-flows.md) | Self-service data preparation | 20 mins |
 
-### **⏰ Module 5: Scheduling & Triggers** *(30 minutes)*
+### __⏰ Module 5: Scheduling & Triggers__ *(30 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [13. Pipeline Triggers](13-triggers.md) | Schedule, tumbling window, event-based triggers | 20 mins |
 | [14. Dependency Management](14-dependency-management.md) | Complex scheduling scenarios | 10 mins |
 
-### **📈 Module 6: Monitoring & Operations** *(30 minutes)*
+### __📈 Module 6: Monitoring & Operations__ *(30 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [15. Monitoring & Alerting](15-monitoring.md) | Azure Monitor integration, custom alerts | 20 mins |
 | [16. Performance Optimization](16-optimization.md) | Pipeline tuning, cost optimization | 10 mins |
 
-### **🚀 Module 7: Production Deployment** *(30 minutes)*
+### __🚀 Module 7: Production Deployment__ *(30 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [17. CI/CD Integration](17-cicd.md) | Git integration, automated deployment | 20 mins |
@@ -124,69 +131,80 @@ graph TD
 
 ## 🎮 Interactive Learning Features
 
-### **🧪 Hands-On Scenarios**
+### __🧪 Hands-On Scenarios__
+
 Work through realistic business scenarios that mirror production challenges:
 
-**Scenario 1: Retail Data Integration**
-- **Sources**: E-commerce database, inventory API, customer feedback files
-- **Transformations**: Data cleansing, standardization, enrichment
-- **Outputs**: Data warehouse, real-time dashboards, ML feature store
+__Scenario 1: Retail Data Integration__
 
-**Scenario 2: Financial Data Processing**
-- **Sources**: Trading systems, market data feeds, regulatory reports
-- **Processing**: High-frequency data validation, aggregation, compliance checks
-- **Outputs**: Risk analytics, regulatory reporting, executive dashboards
+- __Sources__: E-commerce database, inventory API, customer feedback files
+- __Transformations__: Data cleansing, standardization, enrichment
+- __Outputs__: Data warehouse, real-time dashboards, ML feature store
 
-**Scenario 3: Manufacturing IoT Pipeline**
-- **Sources**: Sensor data streams, ERP systems, quality control databases
-- **Processing**: Real-time anomaly detection, predictive maintenance
-- **Outputs**: Operational dashboards, maintenance alerts, efficiency reports
+__Scenario 2: Financial Data Processing__
 
-### **💻 Interactive Development Environment**
-- **Visual Pipeline Designer**: Drag-and-drop interface with real-time validation
-- **Debug Mode**: Step-through pipeline execution with data inspection
-- **Performance Profiler**: Analyze bottlenecks and optimization opportunities
-- **Integration Testing**: Validate pipelines with sample data before production
+- __Sources__: Trading systems, market data feeds, regulatory reports
+- __Processing__: High-frequency data validation, aggregation, compliance checks
+- __Outputs__: Risk analytics, regulatory reporting, executive dashboards
 
-### **🎯 Progressive Skill Building**
-- **Basic Patterns**: Start with simple copy activities and basic transformations
-- **Intermediate Logic**: Add conditional processing and error handling
-- **Advanced Orchestration**: Implement complex workflows with dependencies
-- **Production Patterns**: Add monitoring, alerting, and deployment automation
+__Scenario 3: Manufacturing IoT Pipeline__
+
+- __Sources__: Sensor data streams, ERP systems, quality control databases
+- __Processing__: Real-time anomaly detection, predictive maintenance
+- __Outputs__: Operational dashboards, maintenance alerts, efficiency reports
+
+### __💻 Interactive Development Environment__
+
+- __Visual Pipeline Designer__: Drag-and-drop interface with real-time validation
+- __Debug Mode__: Step-through pipeline execution with data inspection
+- __Performance Profiler__: Analyze bottlenecks and optimization opportunities
+- __Integration Testing__: Validate pipelines with sample data before production
+
+### __🎯 Progressive Skill Building__
+
+- __Basic Patterns__: Start with simple copy activities and basic transformations
+- __Intermediate Logic__: Add conditional processing and error handling
+- __Advanced Orchestration__: Implement complex workflows with dependencies
+- __Production Patterns__: Add monitoring, alerting, and deployment automation
 
 ## 📋 Prerequisites
 
-### **Required Knowledge**
-- [ ] **Azure Fundamentals** - Basic understanding of Azure services and concepts
-- [ ] **SQL Basics** - SELECT, JOIN, WHERE clause operations
-- [ ] **Data Concepts** - ETL processes, data warehousing, data types
-- [ ] **JSON/XML** - Basic understanding of structured data formats
+### __Required Knowledge__
 
-### **Technical Requirements**
-- [ ] **Azure Subscription** with Data Factory service enabled
-- [ ] **Owner or Contributor** role for resource management
-- [ ] **Sample Data Sources** - We'll provide setup scripts for test databases
-- [ ] **Visual Studio Code** with Azure Data Factory extension (optional but recommended)
+- [ ] __Azure Fundamentals__ - Basic understanding of Azure services and concepts
+- [ ] __SQL Basics__ - SELECT, JOIN, WHERE clause operations
+- [ ] __Data Concepts__ - ETL processes, data warehousing, data types
+- [ ] __JSON/XML__ - Basic understanding of structured data formats
 
-### **Recommended Experience**
-- [ ] **Previous Tutorial Completion**: [Azure Synapse basics](../synapse/02-workspace-basics.md) helpful
-- [ ] **PowerShell or Azure CLI** - For automation and scripting
-- [ ] **Business Intelligence** - Understanding of reporting and analytics concepts
+### __Technical Requirements__
+
+- [ ] __Azure Subscription__ with Data Factory service enabled
+- [ ] __Owner or Contributor__ role for resource management
+- [ ] __Sample Data Sources__ - We'll provide setup scripts for test databases
+- [ ] __Visual Studio Code__ with Azure Data Factory extension (optional but recommended)
+
+### __Recommended Experience__
+
+- [ ] __Previous Tutorial Completion__: [Azure Synapse basics](../synapse/02-workspace-basics.md) helpful
+- [ ] __PowerShell or Azure CLI__ - For automation and scripting
+- [ ] __Business Intelligence__ - Understanding of reporting and analytics concepts
 
 ## 💰 Cost Management
 
-### **Tutorial Cost Breakdown**
+### __Tutorial Cost Breakdown__
+
 | Component | Estimated Cost | Usage Pattern |
 |-----------|----------------|---------------|
-| **Data Factory** | $5-15/month | Pipeline orchestration, IR usage |
-| **Data Movement** | $10-25/month | Copy activities, data transfer |
-| **Compute (Data Flows)** | $20-50/month | Spark cluster usage |
-| **Storage** | $2-5/month | Temporary data, logging |
-| **Monitoring** | $3-8/month | Log Analytics, Application Insights |
+| __Data Factory__ | $5-15/month | Pipeline orchestration, IR usage |
+| __Data Movement__ | $10-25/month | Copy activities, data transfer |
+| __Compute (Data Flows)__ | $20-50/month | Spark cluster usage |
+| __Storage__ | $2-5/month | Temporary data, logging |
+| __Monitoring__ | $3-8/month | Log Analytics, Application Insights |
 
-**Total Estimated Monthly Cost**: $40-100 for tutorial completion and practice
+__Total Estimated Monthly Cost__: $40-100 for tutorial completion and practice
 
-### **Cost Optimization Strategies**
+### __Cost Optimization Strategies__
+
 ```json
 {
   "optimization_techniques": {
@@ -201,8 +219,10 @@ Work through realistic business scenarios that mirror production challenges:
 
 ## 🚀 Quick Start Options
 
-### **🎯 Complete Tutorial Path** *(Recommended)*
+### __🎯 Complete Tutorial Path__ *(Recommended)*
+
 Follow all modules sequentially for comprehensive ADF mastery:
+
 ```powershell
 # Clone tutorial resources and start setup
 git clone https://github.com/your-org/adf-tutorial
@@ -210,48 +230,58 @@ cd adf-tutorial
 .\scripts\setup-environment.ps1 -SubscriptionId "your-sub-id"
 ```
 
-### **🎮 Interactive Demo** *(30 minutes)*
+### __🎮 Interactive Demo__ *(30 minutes)*
+
 Quick hands-on experience with pre-built scenarios:
+
 ```powershell
 # Deploy demo environment with sample data and pipelines
 .\scripts\deploy-demo.ps1 -ResourceGroup "adf-demo-rg" -Location "East US"
 ```
 
-### **🔧 Scenario-Specific Learning**
+### __🔧 Scenario-Specific Learning__
+
 Focus on specific aspects:
 
-**Data Engineering Focus**:
+__Data Engineering Focus__:
+
 - Modules 2-4 (Connectivity, pipeline development, data flows)
 
-**Architecture Focus**:
+__Architecture Focus__:
+
 - Modules 1, 3, 6-7 (Fundamentals, orchestration, production)
 
-**Operations Focus**:
+__Operations Focus__:
+
 - Modules 5-7 (Scheduling, monitoring, deployment)
 
 ## 🎯 Learning Objectives
 
-### **By Tutorial Completion, You Will:**
+### __By Tutorial Completion, You Will:__
 
-**🏗️ Design & Architecture**
+__🏗️ Design & Architecture__
+
 - Design scalable data integration architectures using ADF
 - Choose appropriate integration patterns for different scenarios
 - Implement security best practices for data movement and processing
 - Plan for high availability and disaster recovery
 
-**💻 Implementation Skills**
+__💻 Implementation Skills__
+
 - Build complex multi-source data integration pipelines
 - Implement robust error handling and retry mechanisms
 - Create reusable pipeline patterns and templates
 - Optimize pipeline performance and cost
 
-**🔄 Operations & Monitoring**
+__🔄 Operations & Monitoring__
+
 - Set up comprehensive monitoring and alerting systems
 - Implement CI/CD workflows for pipeline deployment
 - Troubleshoot pipeline failures and performance issues
 - Manage environments and promote changes safely
 
-**📊 Business Value**
+__📊 Business Value__
+
 - Translate business requirements into technical pipeline designs
 - Implement data governance and quality controls
 - Measure and optimize data processing performance
@@ -259,7 +289,8 @@ Focus on specific aspects:
 
 ## 💼 Real-World Use Cases
 
-### **Enterprise Data Integration**
+### __Enterprise Data Integration__
+
 ```json
 {
   "scenario": "Global Retail Chain",
@@ -282,7 +313,8 @@ Focus on specific aspects:
 }
 ```
 
-### **Modern Data Warehouse Migration**
+### __Modern Data Warehouse Migration__
+
 ```json
 {
   "scenario": "Financial Services Legacy Modernization",
@@ -307,9 +339,10 @@ Focus on specific aspects:
 
 ## 🔧 Advanced Patterns You'll Master
 
-### **Complex Orchestration Patterns**
+### __Complex Orchestration Patterns__
 
-**Dynamic Pipeline Generation**:
+__Dynamic Pipeline Generation__:
+
 ```json
 {
   "pattern": "Metadata-Driven ETL",
@@ -327,7 +360,8 @@ Focus on specific aspects:
 }
 ```
 
-**Event-Driven Processing**:
+__Event-Driven Processing__:
+
 ```json
 {
   "pattern": "Real-Time Event Response",
@@ -345,15 +379,17 @@ Focus on specific aspects:
 }
 ```
 
-### **Enterprise Integration Patterns**
+### __Enterprise Integration Patterns__
 
-**Multi-Cloud and Hybrid Connectivity**:
+__Multi-Cloud and Hybrid Connectivity__:
+
 - Securely connect to AWS S3, Google Cloud Storage
 - Integrate with on-premises systems via self-hosted IR
 - Implement cross-cloud data synchronization
 - Handle network security and compliance requirements
 
-**Data Governance Integration**:
+__Data Governance Integration__:
+
 - Automatic metadata capture and lineage tracking
 - Data quality validation and reporting
 - PII detection and masking automation
@@ -361,7 +397,7 @@ Focus on specific aspects:
 
 ## 📊 Performance & Optimization
 
-### **Pipeline Performance Tuning**
+### __Pipeline Performance Tuning__
 
 Learn advanced optimization techniques:
 
@@ -385,13 +421,15 @@ Learn advanced optimization techniques:
 }
 ```
 
-**Data Flow Optimization**:
+__Data Flow Optimization__:
+
 - Spark cluster auto-scaling configuration
 - Partition optimization strategies
 - Memory and compute tuning
 - Debug vs. production cluster sizing
 
-**Cost Optimization**:
+__Cost Optimization__:
+
 - Integration Runtime rightsizing
 - Trigger scheduling optimization
 - Data movement cost reduction
@@ -399,10 +437,11 @@ Learn advanced optimization techniques:
 
 ## 🎓 Assessment & Validation
 
-### **Hands-On Challenges**
+### __Hands-On Challenges__
 
-**Challenge 1: Build End-to-End Data Pipeline**
-```
+__Challenge 1: Build End-to-End Data Pipeline__
+
+```text
 Requirements:
 - Ingest data from 3+ different source types
 - Implement data quality validation
@@ -410,14 +449,15 @@ Requirements:
 - Deploy using CI/CD pipeline
 
 Success Criteria:
-- Pipeline processes 100K+ records successfully  
+- Pipeline processes 100K+ records successfully
 - Handles at least 2 different error scenarios
 - Completes within performance SLA
 - Passes all data quality checks
 ```
 
-**Challenge 2: Optimize Existing Pipeline**
-```
+__Challenge 2: Optimize Existing Pipeline__
+
+```text
 Scenario: Provided with a poorly performing pipeline
 Tasks:
 - Identify performance bottlenecks
@@ -431,15 +471,17 @@ Validation:
 - Monitoring dashboard creation
 ```
 
-### **Knowledge Validation**
+### __Knowledge Validation__
 
-**Technical Assessment**:
+__Technical Assessment__:
+
 - Pipeline design best practices
 - Security implementation patterns
 - Performance optimization techniques
 - Troubleshooting and debugging skills
 
-**Business Application**:
+__Business Application__:
+
 - Requirements gathering and analysis
 - Solution design and presentation
 - Cost-benefit analysis
@@ -447,36 +489,39 @@ Validation:
 
 ## 🎉 Success Stories
 
-> **"The ADF tutorial transformed our data integration approach. We went from brittle SSIS packages to robust, cloud-native pipelines that scale automatically."** - *David, Senior Data Engineer*
-
-> **"Learning the advanced orchestration patterns helped me design our company's first self-service data platform. The metadata-driven approach was a game-changer."** - *Sarah, Data Architect*
-
-> **"The CI/CD integration module was exactly what we needed to implement proper DevOps for our analytics pipelines. No more manual deployments!"** - *Michael, DevOps Engineer*
+> __"The ADF tutorial transformed our data integration approach. We went from brittle SSIS packages to robust, cloud-native pipelines that scale automatically."__ - *David, Senior Data Engineer*
+>
+> __"Learning the advanced orchestration patterns helped me design our company's first self-service data platform. The metadata-driven approach was a game-changer."__ - *Sarah, Data Architect*
+>
+> __"The CI/CD integration module was exactly what we needed to implement proper DevOps for our analytics pipelines. No more manual deployments!"__ - *Michael, DevOps Engineer*
 
 ## 📞 Support & Community
 
-### **Learning Resources**
-- **📖 Official Documentation**: [Azure Data Factory Documentation](https://docs.microsoft.com/azure/data-factory/)
-- **🎬 Video Series**: [ADF Tutorial Playlist](https://youtube.com/playlist?list=adf-tutorials)
-- **💬 Community Forum**: [ADF Discussions](https://github.com/your-org/adf-tutorials/discussions)
-- **📧 Direct Support**: adf-tutorial-support@your-org.com
+### __Learning Resources__
 
-### **Expert Office Hours**
-- **Weekly Q&A Sessions**: Wednesdays 2 PM PT
-- **Architecture Reviews**: Monthly deep-dive sessions
-- **Troubleshooting Clinic**: Fridays 10 AM PT
-- **Community Showcase**: Monthly sharing of implementations
+- __📖 Official Documentation__: [Azure Data Factory Documentation](https://docs.microsoft.com/azure/data-factory/)
+- __🎬 Video Series__: [ADF Tutorial Playlist](https://youtube.com/playlist?list=adf-tutorials)
+- __💬 Community Forum__: [ADF Discussions](https://github.com/your-org/adf-tutorials/discussions)
+- __📧 Direct Support__: <adf-tutorial-support@your-org.com>
 
-### **Additional Resources**
-- **Microsoft Learn**: [ADF Learning Path](https://docs.microsoft.com/learn/browse/?products=azure-data-factory)
-- **Azure Architecture Center**: [Data Integration Patterns](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud)
-- **GitHub Samples**: [ADF Template Gallery](https://github.com/Azure/Azure-DataFactory)
+### __Expert Office Hours__
+
+- __Weekly Q&A Sessions__: Wednesdays 2 PM PT
+- __Architecture Reviews__: Monthly deep-dive sessions
+- __Troubleshooting Clinic__: Fridays 10 AM PT
+- __Community Showcase__: Monthly sharing of implementations
+
+### __Additional Resources__
+
+- __Microsoft Learn__: [ADF Learning Path](https://docs.microsoft.com/learn/browse/?products=azure-data-factory)
+- __Azure Architecture Center__: [Data Integration Patterns](https://docs.microsoft.com/azure/architecture/data-guide/scenarios/hybrid-on-premises-and-cloud)
+- __GitHub Samples__: [ADF Template Gallery](https://github.com/Azure/Azure-DataFactory)
 
 ---
 
-**Ready to master data orchestration?**
+__Ready to master data orchestration?__
 
-🚀 **[Start with ADF Fundamentals →](01-fundamentals.md)**
+🚀 __[Start with ADF Fundamentals →](01-fundamentals.md)__
 
 ---
 

@@ -1,24 +1,24 @@
 # 🌊 Azure Stream Analytics Real-Time Pipeline Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../README.md)** | **🌊 Stream Analytics**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 Stream Analytics__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Stream_Analytics-blue)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)
 ![Level](https://img.shields.io/badge/Level-Intermediate-yellow)
 ![Real Time](https://img.shields.io/badge/Focus-Real_Time_Processing-orange)
 
-**Build a complete real-time data processing pipeline using Azure Stream Analytics. Process streaming IoT data, detect anomalies, and trigger alerts while learning advanced query patterns and optimization techniques.**
+__Build a complete real-time data processing pipeline using Azure Stream Analytics. Process streaming IoT data, detect anomalies, and trigger alerts while learning advanced query patterns and optimization techniques.__
 
 ## 🎯 What You'll Build
 
-By completing this tutorial, you'll create a **production-ready real-time analytics solution** featuring:
+By completing this tutorial, you'll create a __production-ready real-time analytics solution__ featuring:
 
-- **📡 IoT Data Ingestion** - Simulate and process sensor data streams
-- **🔍 Real-time Analytics** - Windowing functions, aggregations, and pattern detection
-- **🚨 Anomaly Detection** - Identify outliers and unusual patterns in streaming data
-- **📊 Live Dashboards** - Power BI integration for real-time visualization
-- **⚡ Event-Driven Actions** - Automated alerts and responses to critical events
-- **🔄 Multi-Output Processing** - Route data to different destinations based on conditions
+- __📡 IoT Data Ingestion__ - Simulate and process sensor data streams
+- __🔍 Real-time Analytics__ - Windowing functions, aggregations, and pattern detection
+- __🚨 Anomaly Detection__ - Identify outliers and unusual patterns in streaming data
+- __📊 Live Dashboards__ - Power BI integration for real-time visualization
+- __⚡ Event-Driven Actions__ - Automated alerts and responses to critical events
+- __🔄 Multi-Output Processing__ - Route data to different destinations based on conditions
 
 ## 🏗️ Architecture Overview
 
@@ -49,36 +49,42 @@ graph TD
 
 ## 📚 Tutorial Modules
 
-### **🚀 Module 1: Foundation Setup** *(30 minutes)*
+### __🚀 Module 1: Foundation Setup__ *(30 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [01. Environment Preparation](01-environment-setup.md) | Azure resources, Event Hubs setup | 15 mins |
 | [02. Data Generator Setup](02-data-generator.md) | IoT simulator, sample data creation | 15 mins |
 
-### **🔧 Module 2: Stream Analytics Job Configuration** *(45 minutes)*
+### __🔧 Module 2: Stream Analytics Job Configuration__ *(45 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [03. Creating Stream Analytics Job](03-job-creation.md) | Job setup, input/output configuration | 20 mins |
 | [04. Query Development Basics](04-basic-queries.md) | Stream Analytics Query Language (SAQL) | 25 mins |
 
-### **📊 Module 3: Advanced Analytics Patterns** *(60 minutes)*
+### __📊 Module 3: Advanced Analytics Patterns__ *(60 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [05. Windowing Functions](05-windowing-functions.md) | Tumbling, hopping, sliding windows | 20 mins |
 | [06. Joins and Temporal Operations](06-joins-temporal.md) | Stream-to-stream and reference data joins | 20 mins |
 | [07. Anomaly Detection](07-anomaly-detection.md) | Built-in ML functions, custom detection | 20 mins |
 
-### **⚡ Module 4: Real-Time Dashboards** *(30 minutes)*
+### __⚡ Module 4: Real-Time Dashboards__ *(30 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [08. Power BI Integration](08-powerbi-integration.md) | Direct streaming, real-time reports | 30 mins |
 
-### **🔔 Module 5: Event-Driven Actions** *(30 minutes)*
+### __🔔 Module 5: Event-Driven Actions__ *(30 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [09. Azure Functions Integration](09-functions-integration.md) | Trigger functions, custom processing | 30 mins |
 
-### **🎯 Module 6: Production Optimization** *(45 minutes)*
+### __🎯 Module 6: Production Optimization__ *(45 minutes)*
+
 | Section | Focus | Duration |
 |---------|-------|----------|
 | [10. Performance Tuning](10-performance-tuning.md) | Scaling, optimization, monitoring | 25 mins |
@@ -86,72 +92,82 @@ graph TD
 
 ## 🎮 Interactive Learning Features
 
-### **🧪 Live Data Simulation**
-- **IoT Device Simulator**: Generate realistic sensor data (temperature, humidity, pressure)
-- **Anomaly Injection**: Introduce controlled anomalies to test detection algorithms
-- **Variable Load Testing**: Simulate different data volumes and velocities
-- **Real-time Monitoring**: Watch data flow through the pipeline in real-time
+### __🧪 Live Data Simulation__
 
-### **💻 Query Development Playground**
-- **Interactive Query Editor**: Test Stream Analytics queries with live data
-- **Query Templates**: Pre-built patterns for common scenarios
-- **Performance Profiler**: Analyze query execution and resource utilization
-- **Debugging Tools**: Step-through query execution and data transformation
+- __IoT Device Simulator__: Generate realistic sensor data (temperature, humidity, pressure)
+- __Anomaly Injection__: Introduce controlled anomalies to test detection algorithms
+- __Variable Load Testing__: Simulate different data volumes and velocities
+- __Real-time Monitoring__: Watch data flow through the pipeline in real-time
 
-### **📈 Scenario-Based Learning**
-- **Smart Building**: Monitor HVAC systems and occupancy sensors
-- **Manufacturing**: Track equipment performance and predict failures
-- **Retail**: Analyze customer behavior and inventory in real-time
-- **Financial**: Detect fraud and market anomalies
+### __💻 Query Development Playground__
+
+- __Interactive Query Editor__: Test Stream Analytics queries with live data
+- __Query Templates__: Pre-built patterns for common scenarios
+- __Performance Profiler__: Analyze query execution and resource utilization
+- __Debugging Tools__: Step-through query execution and data transformation
+
+### __📈 Scenario-Based Learning__
+
+- __Smart Building__: Monitor HVAC systems and occupancy sensors
+- __Manufacturing__: Track equipment performance and predict failures
+- __Retail__: Analyze customer behavior and inventory in real-time
+- __Financial__: Detect fraud and market anomalies
 
 ## 📋 Prerequisites
 
-### **Required Knowledge**
-- [ ] **SQL fundamentals** - SELECT, WHERE, GROUP BY, JOIN operations
-- [ ] **Basic Azure concepts** - Resource groups, storage accounts, networking
-- [ ] **JSON data format** - Understanding structure and parsing
-- [ ] **Event streaming concepts** - Basic understanding of real-time data processing
+### __Required Knowledge__
 
-### **Technical Requirements**
-- [ ] **Azure Subscription** with Event Hubs and Stream Analytics enabled
-- [ ] **Power BI account** (free tier sufficient for tutorials)
-- [ ] **Visual Studio Code** with Azure extensions
-- [ ] **Azure CLI** (latest version)
-- [ ] **Python 3.8+** (for data generation scripts)
+- [ ] __SQL fundamentals__ - SELECT, WHERE, GROUP BY, JOIN operations
+- [ ] __Basic Azure concepts__ - Resource groups, storage accounts, networking
+- [ ] __JSON data format__ - Understanding structure and parsing
+- [ ] __Event streaming concepts__ - Basic understanding of real-time data processing
 
-### **Azure Services Used**
-- **Azure Event Hubs** - Data ingestion layer
-- **Azure Stream Analytics** - Real-time processing engine  
-- **Azure SQL Database** - Structured data storage
-- **Azure Blob Storage** - Raw data archival
-- **Power BI** - Real-time visualization
-- **Azure Functions** - Event-driven processing
-- **Azure Logic Apps** - Workflow automation
+### __Technical Requirements__
+
+- [ ] __Azure Subscription__ with Event Hubs and Stream Analytics enabled
+- [ ] __Power BI account__ (free tier sufficient for tutorials)
+- [ ] __Visual Studio Code__ with Azure extensions
+- [ ] __Azure CLI__ (latest version)
+- [ ] __Python 3.8+__ (for data generation scripts)
+
+### __Azure Services Used__
+
+- __Azure Event Hubs__ - Data ingestion layer
+- __Azure Stream Analytics__ - Real-time processing engine  
+- __Azure SQL Database__ - Structured data storage
+- __Azure Blob Storage__ - Raw data archival
+- __Power BI__ - Real-time visualization
+- __Azure Functions__ - Event-driven processing
+- __Azure Logic Apps__ - Workflow automation
 
 ## 💰 Cost Estimation
 
-### **Tutorial Execution Costs**
+### __Tutorial Execution Costs__
+
 | Service | Estimated Cost | Usage Pattern |
 |---------|----------------|---------------|
-| **Event Hubs Standard** | $10-20/month | 1M messages/month |
-| **Stream Analytics** | $75-150/month | 1 Streaming Unit |
-| **SQL Database (Basic)** | $5/month | Small database for results |
-| **Blob Storage** | $2-5/month | Archive storage |
-| **Power BI Pro** | $10/user/month | Real-time dashboards |
-| **Azure Functions** | $1-5/month | Consumption plan |
+| __Event Hubs Standard__ | $10-20/month | 1M messages/month |
+| __Stream Analytics__ | $75-150/month | 1 Streaming Unit |
+| __SQL Database (Basic)__ | $5/month | Small database for results |
+| __Blob Storage__ | $2-5/month | Archive storage |
+| __Power BI Pro__ | $10/user/month | Real-time dashboards |
+| __Azure Functions__ | $1-5/month | Consumption plan |
 
-**Total Estimated Cost**: $100-200/month for production use, $10-30/month for tutorial/development
+__Total Estimated Cost__: $100-200/month for production use, $10-30/month for tutorial/development
 
-### **Cost Optimization Tips**
-- **Use consumption-based pricing** where available
-- **Stop Stream Analytics jobs** when not actively learning
-- **Clean up Event Hub data** regularly to avoid storage costs
-- **Use shared Power BI workspace** for multiple users
+### __Cost Optimization Tips__
+
+- __Use consumption-based pricing__ where available
+- __Stop Stream Analytics jobs__ when not actively learning
+- __Clean up Event Hub data__ regularly to avoid storage costs
+- __Use shared Power BI workspace__ for multiple users
 
 ## 🚀 Quick Start Options
 
-### **🎯 Complete Tutorial Path** *(Recommended)*
+### __🎯 Complete Tutorial Path__ *(Recommended)*
+
 Follow all modules in sequence for comprehensive real-time analytics mastery:
+
 ```powershell
 # Clone tutorial repository and start environment setup
 git clone https://github.com/your-org/stream-analytics-tutorial
@@ -159,48 +175,58 @@ cd stream-analytics-tutorial
 .\scripts\setup-environment.ps1
 ```
 
-### **🎮 Interactive Demo** *(15 minutes)*
+### __🎮 Interactive Demo__ *(15 minutes)*
+
 Quick hands-on experience with pre-configured streaming data:
+
 ```powershell
 # Deploy demo environment with synthetic data
 .\scripts\deploy-demo.ps1 -SubscriptionId "your-sub-id" -ResourceGroupName "stream-demo"
 ```
 
-### **🔧 Specific Learning Paths**
+### __🔧 Specific Learning Paths__
+
 Focus on areas of particular interest:
 
-**Data Engineer Path**:
+__Data Engineer Path__:
+
 - Modules 1-3, 6 (Setup, job configuration, optimization)
 
-**Data Scientist Path**:  
+__Data Scientist Path__:  
+
 - Modules 3-4 (Advanced analytics, anomaly detection, visualization)
 
-**Solutions Architect Path**:
+__Solutions Architect Path__:
+
 - Modules 1, 3, 5-6 (Architecture, patterns, production considerations)
 
 ## 🎯 Learning Objectives
 
-### **By Tutorial Completion, You Will:**
+### __By Tutorial Completion, You Will:__
 
-**🏗️ Architecture & Design**
+__🏗️ Architecture & Design__
+
 - Design scalable real-time analytics architectures
 - Choose appropriate streaming technologies for different scenarios  
 - Implement fault-tolerant and resilient streaming pipelines
 - Plan for high availability and disaster recovery
 
-**💻 Technical Implementation**
+__💻 Technical Implementation__
+
 - Write complex Stream Analytics queries using SAQL
 - Implement various windowing functions for time-based analytics
 - Build anomaly detection systems using built-in ML functions
 - Integrate multiple data sources and output destinations
 
-**📊 Analytics & Insights**
+__📊 Analytics & Insights__
+
 - Develop real-time dashboards and monitoring solutions
 - Implement alerting and automated response systems
 - Analyze streaming data patterns and trends
 - Build predictive models for streaming data
 
-**🔧 Operations & Performance**
+__🔧 Operations & Performance__
+
 - Monitor and optimize Stream Analytics job performance
 - Implement error handling and data quality checks
 - Scale streaming solutions for high-throughput scenarios
@@ -208,7 +234,8 @@ Focus on areas of particular interest:
 
 ## 📖 Real-World Scenarios
 
-### **🏢 Smart Building Management**
+### __🏢 Smart Building Management__
+
 Monitor building sensors to optimize energy usage and occupancy:
 
 ```sql
@@ -226,7 +253,8 @@ GROUP BY BuildingId, FloorNumber, TumblingWindow(minute, 5)
 HAVING COUNT(*) > 10 OR AVG(Temperature) > 75
 ```
 
-### **🏭 Predictive Maintenance**
+### __🏭 Predictive Maintenance__
+
 Detect equipment anomalies before failures occur:
 
 ```sql
@@ -241,7 +269,8 @@ FROM EquipmentTelemetry TIMESTAMP BY Timestamp
 WHERE AnomalyDetection_SpikeAndDip(Vibration, 95, 120, 'spikesanddips') IS NOT NULL
 ```
 
-### **💳 Fraud Detection**
+### __💳 Fraud Detection__
+
 Identify suspicious transaction patterns in real-time:
 
 ```sql
@@ -262,29 +291,33 @@ WHERE t1.Location != t2.Location
 
 ## 💡 Advanced Patterns You'll Master
 
-### **🔄 Complex Event Processing**
-- **Pattern Recognition**: Detect sequences of events over time
-- **Correlation Analysis**: Find relationships between different event streams  
-- **State Management**: Maintain context across multiple events
-- **Temporal Logic**: Handle out-of-order and late-arriving events
+### __🔄 Complex Event Processing__
 
-### **📊 Advanced Analytics Functions**
-- **Machine Learning Integration**: Built-in anomaly detection and classification
-- **Geospatial Operations**: Location-based analytics and geofencing
-- **Array and Record Operations**: Process complex nested data structures
-- **User-Defined Functions**: Extend functionality with custom JavaScript
+- __Pattern Recognition__: Detect sequences of events over time
+- __Correlation Analysis__: Find relationships between different event streams  
+- __State Management__: Maintain context across multiple events
+- __Temporal Logic__: Handle out-of-order and late-arriving events
 
-### **🚀 Performance Optimization**
-- **Parallelization Strategies**: Optimize partition keys for maximum throughput
-- **Memory Management**: Efficient query patterns for large datasets
-- **Latency Minimization**: Techniques for ultra-low latency processing
-- **Cost Optimization**: Balance performance with operational costs
+### __📊 Advanced Analytics Functions__
+
+- __Machine Learning Integration__: Built-in anomaly detection and classification
+- __Geospatial Operations__: Location-based analytics and geofencing
+- __Array and Record Operations__: Process complex nested data structures
+- __User-Defined Functions__: Extend functionality with custom JavaScript
+
+### __🚀 Performance Optimization__
+
+- __Parallelization Strategies__: Optimize partition keys for maximum throughput
+- __Memory Management__: Efficient query patterns for large datasets
+- __Latency Minimization__: Techniques for ultra-low latency processing
+- __Cost Optimization__: Balance performance with operational costs
 
 ## 🔧 Troubleshooting Guide
 
-### **Common Issues & Solutions**
+### __Common Issues & Solutions__
 
-**Data Not Flowing**:
+__Data Not Flowing__:
+
 ```powershell
 # Check Event Hub connectivity
 az eventhubs eventhub show --resource-group "your-rg" --namespace-name "your-namespace" --name "your-eventhub"
@@ -293,7 +326,8 @@ az eventhubs eventhub show --resource-group "your-rg" --namespace-name "your-nam
 az stream-analytics job show --resource-group "your-rg" --name "your-job"
 ```
 
-**Query Errors**:
+__Query Errors__:
+
 ```sql
 -- Test query syntax with sample data
 WITH SampleData AS (
@@ -302,7 +336,8 @@ WITH SampleData AS (
 SELECT * FROM SampleData
 ```
 
-**Performance Issues**:
+__Performance Issues__:
+
 ```powershell
 # Monitor streaming unit utilization
 az stream-analytics job show --resource-group "your-rg" --name "your-job" --query "transformation.streamingUnits"
@@ -310,30 +345,32 @@ az stream-analytics job show --resource-group "your-rg" --name "your-job" --quer
 
 ## 🌟 Success Stories
 
-> **"The real-time anomaly detection tutorial helped us prevent three major equipment failures in our manufacturing plant. The ROI was immediate."** - *James, Operations Manager*
-
-> **"Building the fraud detection pipeline taught me advanced SQL patterns I use daily. The hands-on approach made complex concepts clear."** - *Maria, Data Engineer*  
-
-> **"The Power BI integration was game-changing for our operations team. Real-time dashboards transformed our incident response time."** - *David, IT Director*
+> __"The real-time anomaly detection tutorial helped us prevent three major equipment failures in our manufacturing plant. The ROI was immediate."__ - *James, Operations Manager*
+>
+> __"Building the fraud detection pipeline taught me advanced SQL patterns I use daily. The hands-on approach made complex concepts clear."__ - *Maria, Data Engineer*
+>
+> __"The Power BI integration was game-changing for our operations team. Real-time dashboards transformed our incident response time."__ - *David, IT Director*
 
 ## 📞 Support & Community
 
-### **Getting Help**
-- **📖 Official Documentation**: [Stream Analytics Documentation](https://docs.microsoft.com/azure/stream-analytics/)
-- **💬 Community Forum**: [Microsoft Q&A](https://docs.microsoft.com/answers/topics/azure-stream-analytics.html)
-- **🎬 Video Tutorials**: [YouTube Playlist](https://youtube.com/playlist?list=stream-analytics-tutorials)
-- **📧 Direct Support**: stream-analytics-tutorial@your-org.com
+### __Getting Help__
 
-### **Best Practices Resources**
+- __📖 Official Documentation__: [Stream Analytics Documentation](https://docs.microsoft.com/azure/stream-analytics/)
+- __💬 Community Forum__: [Microsoft Q&A](https://docs.microsoft.com/answers/topics/azure-stream-analytics.html)
+- __🎬 Video Tutorials__: [YouTube Playlist](https://youtube.com/playlist?list=stream-analytics-tutorials)
+- __📧 Direct Support__: <stream-analytics-tutorial@your-org.com>
+
+### __Best Practices Resources__
+
 - [Stream Analytics Best Practices Guide](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-streaming-unit-consumption)
 - [Query Optimization Patterns](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-streaming-unit-consumption)
 - [Production Deployment Guide](https://docs.microsoft.com/azure/stream-analytics/stream-analytics-tools-for-visual-studio)
 
 ---
 
-**Ready to dive into real-time analytics?**
+__Ready to dive into real-time analytics?__
 
-🚀 **[Start with Environment Setup →](01-environment-setup.md)**
+🚀 __[Start with Environment Setup →](01-environment-setup.md)__
 
 ---
 

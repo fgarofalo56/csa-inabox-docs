@@ -1,6 +1,6 @@
 # Azure Machine Learning Integration with Azure Synapse Analytics
 
-[Home](../../../README.md) > [Code Examples](../../README.md) > [Integration](../README.md) > Azure ML Integration
+[Home](../../../README.md) > [Code Examples](../../README.md) > Integration > Azure ML Integration
 
 This guide provides examples and best practices for integrating Azure Synapse Analytics with Azure Machine Learning (Azure ML).
 
@@ -198,23 +198,23 @@ print(service.get_logs())
 
 ## Best Practices for Synapse and Azure ML Integration
 
-1. **Data Preparation**: Use Synapse Spark pools for data preparation and feature engineering tasks that require distributed computing.
+1. __Data Preparation__: Use Synapse Spark pools for data preparation and feature engineering tasks that require distributed computing.
 
-2. **Model Training**: For complex model training, use Azure ML's dedicated compute clusters, which are optimized for machine learning workloads.
+2. __Model Training__: For complex model training, use Azure ML's dedicated compute clusters, which are optimized for machine learning workloads.
 
-3. **Feature Stores**: Implement feature stores using Delta tables in Synapse to ensure consistent features across training and inference.
+3. __Feature Stores__: Implement feature stores using Delta tables in Synapse to ensure consistent features across training and inference.
 
-4. **Pipeline Orchestration**: Use Azure ML pipelines for end-to-end orchestration, with Synapse steps for data processing.
+4. __Pipeline Orchestration__: Use Azure ML pipelines for end-to-end orchestration, with Synapse steps for data processing.
 
-5. **Model Monitoring**: Implement model monitoring using Azure ML and integrate with Azure Monitor for comprehensive observability.
+5. __Model Monitoring__: Implement model monitoring using Azure ML and integrate with Azure Monitor for comprehensive observability.
 
-6. **Security Best Practices**:
+6. __Security Best Practices__:
    - Use managed identities when possible
    - Implement least privilege access
    - Encrypt data at rest and in transit
    - Use private endpoints for service connectivity
 
-7. **Cost Optimization**:
+7. __Cost Optimization__:
    - Auto-scale compute resources based on workload
    - Schedule pipelines during off-peak hours
    - Use serverless SQL pools for ad-hoc data exploration

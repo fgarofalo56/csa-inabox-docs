@@ -1,6 +1,6 @@
 # Comprehensive Serverless SQL Guide for Azure Synapse Analytics
 
-[Home](../../README.md) > [Code Examples](../README.md) > Serverless SQL Guide
+[Home](../../README.md) > Code Examples > Serverless SQL Guide
 
 !!! info "Guide Overview"
     This comprehensive guide provides detailed examples for working with Serverless SQL pools in Azure Synapse Analytics, covering query optimization, external tables, security, and best practices.
@@ -22,6 +22,7 @@
 - 📊 __Performance Patterns__
   
   Common architectural patterns for optimal serverless SQL usage
+
 </div>
 
 ## Table of Contents
@@ -45,6 +46,7 @@
 ![Serverless SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/concepts-azure-synapse-analytics-architecture/synapse-architecture.png)
 
 !!! tip "Key Benefits"
+
     Azure Synapse Serverless SQL pools provide on-demand query processing for data in data lakes with these advantages:
 
     1. **Pay-per-Query**: Only pay for the data processed during query execution
@@ -54,20 +56,21 @@
     5. **Integration with BI Tools**: Connect with PowerBI and other visualization tools
 
 !!! example "Architecture Patterns"
+
     ![Secure Data Lakehouse Pipeline](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-pipeline.svg)
 
-sql
+```sql
 -- Query against Parquet (recommended) - most efficient
 SELECT TOP 100 *
 FROM OPENROWSET(
-    BULK 'https://synapseexampledata.blob.core.windows.net/data/parquet/sales_data/*.parquet',
+    BULK '<https://synapseexampledata.blob.core.windows.net/data/parquet/sales_data/*.parquet>',
     FORMAT = 'PARQUET'
 ) AS [sales];
 
 -- Query against CSV - less efficient
 SELECT TOP 100 *
 FROM OPENROWSET(
-    BULK 'https://synapseexampledata.blob.core.windows.net/data/csv/sales_data/*.csv',
+    BULK '<https://synapseexampledata.blob.core.windows.net/data/csv/sales_data/*.csv>',
     FORMAT = 'CSV',
     PARSER_VERSION = '2.0',
     HEADER_ROW = TRUE
@@ -76,7 +79,7 @@ FROM OPENROWSET(
 -- Query against JSON - least efficient for large datasets
 SELECT TOP 100 *
 FROM OPENROWSET(
-    BULK 'https://synapseexampledata.blob.core.windows.net/data/json/sales_data/*.json',
+    BULK '<https://synapseexampledata.blob.core.windows.net/data/json/sales_data/*.json>',
     FORMAT = 'CSV',
     FIELDTERMINATOR = '0x0b',
     FIELDQUOTE = '0x0b',
@@ -91,6 +94,7 @@ WITH (
     price DECIMAL(10,2),
     order_date DATE
 );
+
 ```
 
 **Performance Comparison:**
@@ -366,11 +370,11 @@ GO
 
 ## Performance Best Practices
 
-1. **Use Parquet Format**: Whenever possible, convert data to Parquet format for optimal query performance.
-2. **Partition Data Appropriately**: Partition by commonly filtered columns but avoid over-partitioning.
-3. **Limit Data Scanning**: Always specify only the columns and rows you need.
-4. **Create Statistics**: Maintain up-to-date statistics on external tables.
-5. **Monitor Query Performance**: Use Azure Monitor and DMVs to track query performance.
+1. __Use Parquet Format__: Whenever possible, convert data to Parquet format for optimal query performance.
+2. __Partition Data Appropriately__: Partition by commonly filtered columns but avoid over-partitioning.
+3. __Limit Data Scanning__: Always specify only the columns and rows you need.
+4. __Create Statistics__: Maintain up-to-date statistics on external tables.
+5. __Monitor Query Performance__: Use Azure Monitor and DMVs to track query performance.
 
 ## Related Topics
 

@@ -1,6 +1,6 @@
 # 📁 Directory Structure Guide
 
-> **🎯 Purpose:** This is the authoritative guide for file and folder placement in this project. Use this for refrance on how you should structure your files. All developers and AI coding agents MUST follow this structure when creating new files or folders.
+> __🎯 Purpose:__ This is the authoritative guide for file and folder placement in this project. Use this for refrance on how you should structure your files. All developers and AI coding agents MUST follow this structure when creating new files or folders.
 
 ---
 
@@ -10,10 +10,10 @@
 
 Before creating or writing ANY file, folder, or directory, you MUST:
 
-1. **CHECK** this guide to determine the correct location
-2. **VERIFY** the path follows the structure below
-3. **ENSURE** no duplicate functionality exists elsewhere
-4. **CONFIRM** the file belongs in this location, not another
+1. __CHECK__ this guide to determine the correct location
+2. __VERIFY__ the path follows the structure below
+3. __ENSURE__ no duplicate functionality exists elsewhere
+4. __CONFIRM__ the file belongs in this location, not another
 
 ### 🔴 Violations Will Be Rejected
 
@@ -60,17 +60,17 @@ Files created in wrong locations MUST be moved immediately. This is NOT optional
 
 ## 🎯 Core Principles
 
-1. **Single Responsibility** - Each directory has ONE clear purpose
-2. **No Ambiguity** - Every file has exactly ONE correct location
-3. **Clean Architecture** - Maintain separation of concerns
-4. **Predictability** - Anyone should know where to find/place files
-5. **Consistency** - Same patterns throughout the project
+1. __Single Responsibility__ - Each directory has ONE clear purpose
+2. __No Ambiguity__ - Every file has exactly ONE correct location
+3. __Clean Architecture__ - Maintain separation of concerns
+4. __Predictability__ - Anyone should know where to find/place files
+5. __Consistency__ - Same patterns throughout the project
 
 ---
 
 ## 📂 Project Root Structure
 
-```
+```text
 rag-researchAgent-Azure/
 │
 ├── 📁 .azure/              # Azure DevOps pipelines and configs
@@ -102,11 +102,11 @@ rag-researchAgent-Azure/
 
 ## 📦 Source Code (`src/`)
 
-**Purpose:** Contains ALL application source code. No exceptions.
+__Purpose:__ Contains ALL application source code. No exceptions.
 
 ### Main Package Structure
 
-```
+```text
 src/
 ├── 📁 azure_research_agent/         # Main Python package
 │   ├── 📄 __init__.py              # Package initialization
@@ -234,9 +234,9 @@ src/
 
 ## 🧪 Tests (`tests/`)
 
-**Purpose:** Contains ALL test files. Tests mirror the source structure.
+__Purpose:__ Contains ALL test files. Tests mirror the source structure.
 
-```
+```text
 tests/
 ├── 📄 __init__.py
 ├── 📄 conftest.py                 # Shared pytest fixtures
@@ -278,11 +278,11 @@ tests/
 
 ## 📚 Documentation (`docs/`)
 
-**Purpose:** ALL project documentation except code comments. MUST maintain strict hierarchy.
+__Purpose:__ ALL project documentation except code comments. MUST maintain strict hierarchy.
 
 ### Mandatory Structure with README Navigation
 
-```
+```text
 docs/
 ├── 📄 README.md                   # Main documentation hub (MANDATORY)
 │
@@ -352,9 +352,9 @@ docs/
 
 ## 🏗️ Infrastructure (`infrastructure/`)
 
-**Purpose:** Infrastructure as Code and deployment configurations.
+__Purpose:__ Infrastructure as Code and deployment configurations.
 
-```
+```text
 infrastructure/
 ├── 📄 README.md
 │
@@ -385,11 +385,11 @@ infrastructure/
 
 ## 🔧 Scripts (`scripts/`)
 
-**Purpose:** Automation and utility scripts. MUST maintain strict hierarchy.
+__Purpose:__ Automation and utility scripts. MUST maintain strict hierarchy.
 
 ### Mandatory Structure
 
-```
+```text
 scripts/
 ├── 📄 README.md                 # Script documentation hub (MANDATORY)
 │
@@ -454,11 +454,11 @@ scripts/
 
 ## ⚙️ Configuration (`config/`)
 
-**Purpose:** Application configuration files (not code). MUST maintain strict hierarchy.
+__Purpose:__ Application configuration files (not code). MUST maintain strict hierarchy.
 
 ### Mandatory Structure
 
-```
+```text
 config/
 ├── 📄 README.md                 # Configuration guide (MANDATORY)
 │
@@ -502,11 +502,11 @@ config/
 
 ## 📖 Examples (`examples/`)
 
-**Purpose:** Reference implementations. NEVER imported by main code. MUST maintain strict hierarchy.
+__Purpose:__ Reference implementations. NEVER imported by main code. MUST maintain strict hierarchy.
 
 ### Mandatory Structure
 
-```
+```text
 examples/
 ├── 📄 README.md                 # Examples overview (MANDATORY)
 │
@@ -573,11 +573,11 @@ examples/
 
 ## 📊 Project Tracking (`project_tracking/`)
 
-**Purpose:** Project management and tracking. MUST maintain strict hierarchy.
+__Purpose:__ Project management and tracking. MUST maintain strict hierarchy.
 
 ### Mandatory Structure
 
-```
+```text
 project_tracking/
 ├── 📄 README.md                 # Project tracking hub (MANDATORY)
 ├── 📄 PROJECT_STATUS.md        # Current overall status
@@ -643,24 +643,28 @@ project_tracking/
 ## 📝 File Naming Conventions
 
 ### Python Files
-- **Modules:** `snake_case.py` (e.g., `azure_agent.py`)
-- **Classes:** Inside modules use `PascalCase` (e.g., `class AzureAgent`)
-- **Tests:** `test_<module_name>.py` (e.g., `test_azure_agent.py`)
-- **Constants:** `UPPER_SNAKE_CASE` in `constants.py`
+
+- __Modules:__ `snake_case.py` (e.g., `azure_agent.py`)
+- __Classes:__ Inside modules use `PascalCase` (e.g., `class AzureAgent`)
+- __Tests:__ `test_<module_name>.py` (e.g., `test_azure_agent.py`)
+- __Constants:__ `UPPER_SNAKE_CASE` in `constants.py`
 
 ### Configuration Files
-- **YAML:** `snake_case.yaml` (e.g., `logging_config.yaml`)
-- **JSON:** `snake_case.json` (e.g., `mcp_servers.json`)
-- **Environment:** `.env`, `.env.example`, `.env.<environment>`
+
+- __YAML:__ `snake_case.yaml` (e.g., `logging_config.yaml`)
+- __JSON:__ `snake_case.json` (e.g., `mcp_servers.json`)
+- __Environment:__ `.env`, `.env.example`, `.env.<environment>`
 
 ### Documentation
-- **Markdown:** `UPPER_SNAKE_CASE.md` for guides (e.g., `SETUP_GUIDE.md`)
-- **Markdown:** `PascalCase.md` for specific docs (e.g., `ApiReference.md`)
+
+- __Markdown:__ `UPPER_SNAKE_CASE.md` for guides (e.g., `SETUP_GUIDE.md`)
+- __Markdown:__ `PascalCase.md` for specific docs (e.g., `ApiReference.md`)
 
 ### Scripts
-- **Python:** `snake_case.py` (e.g., `setup_venv.py`)
-- **Shell:** `snake_case.sh` (e.g., `deploy_azure.sh`)
-- **Batch:** `snake_case.bat` (e.g., `setup_windows.bat`)
+
+- __Python:__ `snake_case.py` (e.g., `setup_venv.py`)
+- __Shell:__ `snake_case.sh` (e.g., `deploy_azure.sh`)
+- __Batch:__ `snake_case.bat` (e.g., `setup_windows.bat`)
 
 ---
 
@@ -668,29 +672,30 @@ project_tracking/
 
 | File Type | Location | Example |
 |-----------|----------|---------|
-| **Python business logic** | `src/azure_research_agent/services/` | `research_service.py` |
-| **API endpoints** | `src/azure_research_agent/api/v1/endpoints/` | `research.py` |
-| **Domain models** | `src/azure_research_agent/domain/` | `research.py` |
-| **Database models** | `src/azure_research_agent/infrastructure/database/` | `models.py` |
-| **External API clients** | `src/azure_research_agent/infrastructure/external_apis/` | `brave_search.py` |
-| **Azure integrations** | `src/azure_research_agent/infrastructure/azure/` | `openai_client.py` |
-| **CLI commands** | `src/azure_research_agent/presentation/cli/` | `commands.py` |
-| **Unit tests** | `tests/unit/<mirror_of_src>` | `test_research_service.py` |
-| **Integration tests** | `tests/integration/` | `test_api_endpoints.py` |
-| **Docker files** | `infrastructure/docker/` | `Dockerfile` |
-| **K8s manifests** | `infrastructure/kubernetes/` | `deployment.yaml` |
-| **Setup scripts** | `scripts/setup/` | `setup_venv.py` |
-| **API documentation** | `docs/api/` | `openapi.json` |
-| **Guides** | `docs/guides/` | `DEVELOPMENT_GUIDE.md` |
-| **Environment config** | Project root | `.env`, `.env.example` |
-| **Python config** | Project root | `pyproject.toml` |
-| **Task tracking** | `project_tracking/tasks/` | `TASK_BOARD.md` |
+| __Python business logic__ | `src/azure_research_agent/services/` | `research_service.py` |
+| __API endpoints__ | `src/azure_research_agent/api/v1/endpoints/` | `research.py` |
+| __Domain models__ | `src/azure_research_agent/domain/` | `research.py` |
+| __Database models__ | `src/azure_research_agent/infrastructure/database/` | `models.py` |
+| __External API clients__ | `src/azure_research_agent/infrastructure/external_apis/` | `brave_search.py` |
+| __Azure integrations__ | `src/azure_research_agent/infrastructure/azure/` | `openai_client.py` |
+| __CLI commands__ | `src/azure_research_agent/presentation/cli/` | `commands.py` |
+| __Unit tests__ | `tests/unit/<mirror_of_src>` | `test_research_service.py` |
+| __Integration tests__ | `tests/integration/` | `test_api_endpoints.py` |
+| __Docker files__ | `infrastructure/docker/` | `Dockerfile` |
+| __K8s manifests__ | `infrastructure/kubernetes/` | `deployment.yaml` |
+| __Setup scripts__ | `scripts/setup/` | `setup_venv.py` |
+| __API documentation__ | `docs/api/` | `openapi.json` |
+| __Guides__ | `docs/guides/` | `DEVELOPMENT_GUIDE.md` |
+| __Environment config__ | Project root | `.env`, `.env.example` |
+| __Python config__ | Project root | `pyproject.toml` |
+| __Task tracking__ | `project_tracking/tasks/` | `TASK_BOARD.md` |
 
 ---
 
 ## ❌ Anti-Patterns - NEVER Do This
 
-### 🚫 NEVER Place Files:
+### 🚫 NEVER Place Files
+
 - ❌ Test files in `src/` directory
 - ❌ Source code in `tests/` directory
 - ❌ Documentation in source code directories (except docstrings)
@@ -702,7 +707,8 @@ project_tracking/
 - ❌ Generated files in version control
 - ❌ Third-party code in `src/`
 
-### 🚫 NEVER Create:
+### 🚫 NEVER Create
+
 - ❌ Ambiguous file names (e.g., `utils.py`, `helpers.py` without context)
 - ❌ Duplicate functionality in different locations
 - ❌ Circular dependencies between layers
@@ -729,7 +735,7 @@ Before creating a new file or folder, verify:
 
 ## 🔄 Keeping This Guide Updated
 
-This guide is the **single source of truth** for directory structure. When structural changes are needed:
+This guide is the __single source of truth__ for directory structure. When structural changes are needed:
 
 1. Update this guide FIRST
 2. Implement the changes
@@ -738,14 +744,14 @@ This guide is the **single source of truth** for directory structure. When struc
 
 ---
 
-**Last Updated:** 2024-12-27  
-**Version:** 2.0.0  
-**Maintainer:** Azure Research Agent Team
+__Last Updated:__ 2024-12-27  
+__Version:__ 2.0.0  
+__Maintainer:__ Azure Research Agent Team
 
 ---
 
 ## 📌 Remember
 
-> **"A place for everything, and everything in its place."**
+> __"A place for everything, and everything in its place."__
 
 When in doubt, refer to this guide. If something isn't covered, it probably shouldn't exist, or this guide needs updating.

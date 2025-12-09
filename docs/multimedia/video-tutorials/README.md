@@ -1,6 +1,6 @@
 # 📹 Video Tutorial Scripts & Production
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 Video Tutorials**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📹 Video Tutorials__
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Videos: 25+](https://img.shields.io/badge/Videos-25+-blue)
@@ -15,9 +15,10 @@ Comprehensive video tutorial scripts and production guidelines for Cloud Scale A
 ### 🏗️ Architecture Overview Series
 
 #### Episode 1: Cloud Scale Analytics Foundation
-**Duration**: 20 minutes  
-**Level**: Beginner  
-**[Full Script](./scripts/architecture/01-foundation.md)** | **[Storyboard](./storyboards/architecture/01-foundation.md)**
+
+__Duration__: 20 minutes  
+__Level__: Beginner  
+__[Full Script](./scripts/architecture/01-foundation.md)__ | __[Storyboard](./storyboards/architecture/01-foundation.md)__
 
 ```yaml
 title: "Cloud Scale Analytics Foundation"
@@ -38,21 +39,24 @@ key_topics:
 ```
 
 #### Episode 2: Data Lake Architecture Deep Dive
-**Duration**: 25 minutes  
-**Level**: Intermediate  
-**[Full Script](./scripts/architecture/02-data-lake.md)** | **[Storyboard](./storyboards/architecture/02-data-lake.md)**
+
+__Duration__: 25 minutes  
+__Level__: Intermediate  
+__[Full Script](./scripts/architecture/02-data-lake.md)__ | __[Storyboard](./storyboards/architecture/02-data-lake.md)__
 
 #### Episode 3: Serverless SQL Patterns
-**Duration**: 30 minutes  
-**Level**: Advanced  
-**[Full Script](./scripts/architecture/03-serverless-sql.md)** | **[Storyboard](./storyboards/architecture/03-serverless-sql.md)**
+
+__Duration__: 30 minutes  
+__Level__: Advanced  
+__[Full Script](./scripts/architecture/03-serverless-sql.md)__ | __[Storyboard](./storyboards/architecture/03-serverless-sql.md)__
 
 ### 🛠️ Implementation Guide Series
 
 #### Tutorial 1: Setting Up Your First Workspace
-**Duration**: 15 minutes  
-**Level**: Beginner  
-**[Full Script](./scripts/implementation/01-workspace-setup.md)**
+
+__Duration__: 15 minutes  
+__Level__: Beginner  
+__[Full Script](./scripts/implementation/01-workspace-setup.md)__
 
 ```markdown
 ## Video Script Excerpt
@@ -79,23 +83,25 @@ NARRATOR: "Before we start, ensure you have the following prerequisites..."
 ### 🔧 Troubleshooting Scenarios
 
 #### Common Issues and Solutions
-**Duration**: 45 minutes (6 segments)  
-**Level**: All levels  
-**[Full Script](./scripts/troubleshooting/common-issues.md)**
 
-1. **Authentication Errors** (7 min)
-2. **Performance Bottlenecks** (8 min)
-3. **Network Connectivity** (7 min)
-4. **Data Format Issues** (8 min)
-5. **Pipeline Failures** (8 min)
-6. **Cost Optimization** (7 min)
+__Duration__: 45 minutes (6 segments)  
+__Level__: All levels  
+__[Full Script](./scripts/troubleshooting/common-issues.md)__
+
+1. __Authentication Errors__ (7 min)
+2. __Performance Bottlenecks__ (8 min)
+3. __Network Connectivity__ (7 min)
+4. __Data Format Issues__ (8 min)
+5. __Pipeline Failures__ (8 min)
+6. __Cost Optimization__ (7 min)
 
 ### 💡 Best Practices Demonstrations
 
 #### Performance Optimization Techniques
-**Duration**: 35 minutes  
-**Level**: Advanced  
-**[Full Script](./scripts/best-practices/performance.md)**
+
+__Duration__: 35 minutes  
+__Level__: Advanced  
+__[Full Script](./scripts/best-practices/performance.md)__
 
 ## 📝 Script Template
 
@@ -195,27 +201,29 @@ By the end of this video, viewers will be able to:
 
 | Aspect | Requirement | Tools |
 |--------|------------|-------|
-| **Resolution** | 1920x1080 (1080p) minimum | OBS Studio, Camtasia |
-| **Frame Rate** | 30fps or 60fps for demos | Adobe Premiere, DaVinci |
-| **Audio** | 48kHz, -3dB peak | Audacity, Adobe Audition |
-| **Format** | MP4 (H.264), WebM fallback | HandBrake, FFmpeg |
-| **Bitrate** | 5-8 Mbps for 1080p | YouTube recommended |
+| __Resolution__ | 1920x1080 (1080p) minimum | OBS Studio, Camtasia |
+| __Frame Rate__ | 30fps or 60fps for demos | Adobe Premiere, DaVinci |
+| __Audio__ | 48kHz, -3dB peak | Audacity, Adobe Audition |
+| __Format__ | MP4 (H.264), WebM fallback | HandBrake, FFmpeg |
+| __Bitrate__ | 5-8 Mbps for 1080p | YouTube recommended |
 
 ### Recording Best Practices
 
 #### Screen Recording
-- **Clean Desktop**: Remove personal items and notifications
-- **High Contrast**: Use high-contrast themes for visibility
-- **Mouse Highlighting**: Enable cursor highlighting
-- **Smooth Movements**: Avoid rapid cursor movements
-- **Zoom Features**: Use zoom for important details
+
+- __Clean Desktop__: Remove personal items and notifications
+- __High Contrast__: Use high-contrast themes for visibility
+- __Mouse Highlighting__: Enable cursor highlighting
+- __Smooth Movements__: Avoid rapid cursor movements
+- __Zoom Features__: Use zoom for important details
 
 #### Narration Guidelines
-- **Clear Speech**: Speak at 140-160 words per minute
-- **Natural Tone**: Conversational but professional
-- **Consistent Volume**: Maintain -6dB to -3dB levels
-- **Pause Effectively**: Allow time for comprehension
-- **Pronunciation Guide**: Technical terms clearly stated
+
+- __Clear Speech__: Speak at 140-160 words per minute
+- __Natural Tone__: Conversational but professional
+- __Consistent Volume__: Maintain -6dB to -3dB levels
+- __Pause Effectively__: Allow time for comprehension
+- __Pronunciation Guide__: Technical terms clearly stated
 
 ### Visual Design Standards
 
@@ -246,11 +254,11 @@ By the end of this video, viewers will be able to:
 
 | Metric | Target | Measurement |
 |--------|--------|-------------|
-| **Completion Rate** | >70% | YouTube Analytics |
-| **Engagement** | >50% average view | Watch time reports |
-| **Click-through** | >5% to resources | Link tracking |
-| **Satisfaction** | >4.5/5 rating | Feedback forms |
-| **Accessibility** | 100% captioned | Auto-validation |
+| __Completion Rate__ | >70% | YouTube Analytics |
+| __Engagement__ | >50% average view | Watch time reports |
+| __Click-through__ | >5% to resources | Link tracking |
+| __Satisfaction__ | >4.5/5 rating | Feedback forms |
+| __Accessibility__ | 100% captioned | Auto-validation |
 
 ## 🎨 Storyboard Templates
 
@@ -287,49 +295,56 @@ SFX: [Sound effects if any]
 ## 🔧 Production Workflow
 
 ### Pre-Production
-1. **Script Writing** (2-3 hours per 10 min video)
-2. **Storyboarding** (1-2 hours)
-3. **Asset Collection** (1-2 hours)
-4. **Environment Setup** (30 min)
+
+1. __Script Writing__ (2-3 hours per 10 min video)
+2. __Storyboarding__ (1-2 hours)
+3. __Asset Collection__ (1-2 hours)
+4. __Environment Setup__ (30 min)
 
 ### Production
-1. **Screen Recording** (2-3x final duration)
-2. **Narration Recording** (2x final duration)
-3. **B-roll Capture** (varies)
-4. **Review & Retakes** (1 hour)
+
+1. __Screen Recording__ (2-3x final duration)
+2. __Narration Recording__ (2x final duration)
+3. __B-roll Capture__ (varies)
+4. __Review & Retakes__ (1 hour)
 
 ### Post-Production
-1. **Video Editing** (4-6 hours per 10 min)
-2. **Audio Mixing** (1-2 hours)
-3. **Graphics & Animations** (2-3 hours)
-4. **Color Correction** (30 min)
-5. **Export & Compression** (30 min)
+
+1. __Video Editing__ (4-6 hours per 10 min)
+2. __Audio Mixing__ (1-2 hours)
+3. __Graphics & Animations__ (2-3 hours)
+4. __Color Correction__ (30 min)
+5. __Export & Compression__ (30 min)
 
 ### Quality Assurance
-1. **Technical Review** (30 min)
-2. **Content Accuracy** (1 hour)
-3. **Accessibility Check** (30 min)
-4. **Final Approval** (30 min)
+
+1. __Technical Review__ (30 min)
+2. __Content Accuracy__ (1 hour)
+3. __Accessibility Check__ (30 min)
+4. __Final Approval__ (30 min)
 
 ## 📚 Resources
 
 ### Production Tools
-- **[OBS Studio](https://obsproject.com/)** - Free screen recording
-- **[DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve)** - Professional editing
-- **[Audacity](https://www.audacityteam.org/)** - Audio editing
-- **[Camtasia](https://www.techsmith.com/camtasia.html)** - All-in-one solution
+
+- __[OBS Studio](https://obsproject.com/)__ - Free screen recording
+- __[DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve)__ - Professional editing
+- __[Audacity](https://www.audacityteam.org/)__ - Audio editing
+- __[Camtasia](https://www.techsmith.com/camtasia.html)__ - All-in-one solution
 
 ### Asset Libraries
-- **[Azure Icons](https://docs.microsoft.com/en-us/azure/architecture/icons/)** - Official Azure icons
-- **[Unsplash](https://unsplash.com/)** - Free stock footage
-- **[Mixkit](https://mixkit.co/)** - Free video assets
-- **[YouTube Audio Library](https://studio.youtube.com/channel/UC/music)** - Royalty-free music
+
+- __[Azure Icons](https://docs.microsoft.com/en-us/azure/architecture/icons/)__ - Official Azure icons
+- __[Unsplash](https://unsplash.com/)__ - Free stock footage
+- __[Mixkit](https://mixkit.co/)__ - Free video assets
+- __[YouTube Audio Library](https://studio.youtube.com/channel/UC/music)__ - Royalty-free music
 
 ### Learning Resources
-- **[Video Production Best Practices](./guides/production-best-practices.md)**
-- **[Accessibility Guidelines](./guides/accessibility.md)**
-- **[Script Writing Tips](./guides/script-writing.md)**
-- **[Equipment Recommendations](./guides/equipment.md)**
+
+- __[Video Production Best Practices](./guides/production-best-practices.md)__
+- __[Accessibility Guidelines](./guides/accessibility.md)__
+- __[Script Writing Tips](./guides/script-writing.md)__
+- __[Equipment Recommendations](./guides/equipment.md)__
 
 ---
 

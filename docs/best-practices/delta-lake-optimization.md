@@ -1,6 +1,6 @@
 # Delta Lake Optimization
 
-[Home](../../README.md) > [Best Practices](../README.md) > Delta Lake Optimization
+[Home](../../README.md) > Best Practices > Delta Lake Optimization
 
 !!! abstract "Overview"
     This guide covers optimization strategies for Delta Lake in Azure Synapse Analytics, including file compaction, Z-ordering, caching, and partition management.
@@ -14,34 +14,34 @@ Optimize your Delta Lake implementation in Azure Synapse Analytics for maximum p
 - 📁 __File Organization__
 
     ---
-    
+
     Optimize file size, compaction, and partition strategies
-    
-    [:octicons-arrow-right-24: File optimization](#file-organization-optimization)
+
+    [→ File optimization](#file-organization-optimization)
 
 - 📊 __Data Indexing__
 
     ---
-    
+
     Implement Z-ordering and bloom filters
-    
-    [:octicons-arrow-right-24: Indexing strategies](#data-indexing)
+
+    [→ Indexing strategies](#data-indexing)
 
 - 💻 __Caching__
 
     ---
-    
+
     Optimize caching strategies for improved performance
-    
-    [:octicons-arrow-right-24: Caching strategies](#caching-strategies)
+
+    [→ Caching strategies](#caching-strategies)
 
 - 🔍 __Query Optimization__
 
     ---
-    
+
     Techniques for optimizing query performance
-    
-    [:octicons-arrow-right-24: Query techniques](#query-optimization)
+
+    [→ Query techniques](#query-optimization)
 
 </div>
 
@@ -69,10 +69,10 @@ deltaTable.optimize().executeCompaction()
 
 Implement these partition management best practices:
 
-1. **Partition by Business Dimensions** - Date, region, product category
-2. **Avoid Over-Partitioning** - Target partition sizes of at least 1GB
-3. **Dynamic Partition Pruning** - Leverage Spark's ability to prune partitions
-4. **Balanced Partitions** - Ensure even data distribution across partitions
+1. __Partition by Business Dimensions__ - Date, region, product category
+2. __Avoid Over-Partitioning__ - Target partition sizes of at least 1GB
+3. __Dynamic Partition Pruning__ - Leverage Spark's ability to prune partitions
+4. __Balanced Partitions__ - Ensure even data distribution across partitions
 
 ```scala
 // Scala example: Writing efficiently partitioned data
@@ -95,8 +95,8 @@ df.write
 !!! example "Monitoring File Sizes"
     ```sql
     -- SQL query to analyze Delta Lake file sizes
-    SELECT 
-      path, 
+    SELECT
+      path,
       partition,
       COUNT(*) as num_files,
       SUM(size_bytes)/1024/1024 as total_size_mb,
@@ -135,9 +135,9 @@ Z-ordering is most effective when:
 
 Delta Lake automatically collects statistics for data skipping:
 
-1. **Min/Max Statistics** - For range queries
-2. **NULL Count** - For optimizing NULL handling
-3. **Bloom Filters** - For membership queries (available in newer versions)
+1. __Min/Max Statistics__ - For range queries
+2. __NULL Count__ - For optimizing NULL handling
+3. __Bloom Filters__ - For membership queries (available in newer versions)
 
 !!! info "Performance Impact"
     Z-ordering can improve query performance by 10-100x when filtering on the z-ordered columns.
@@ -148,7 +148,8 @@ Delta Lake automatically collects statistics for data skipping:
 
 Implement these caching strategies:
 
-1. **Spark Cache Management**:
+1. __Spark Cache Management__:
+
    ```python
    # Cache frequently accessed Delta tables
    spark.read.format("delta").load("/path/to/delta-table").cache()
@@ -161,7 +162,8 @@ Implement these caching strategies:
    df.unpersist()
    ```
 
-2. **Delta Caching**:
+2. __Delta Caching__:
+
    ```python
    # Enable Delta caching
    spark.conf.set("spark.databricks.io.cache.enabled", "true")
@@ -169,7 +171,8 @@ Implement these caching strategies:
    spark.conf.set("spark.databricks.io.cache.maxMetaDataCache", "1g")
    ```
 
-3. **Synapse Serverless Cache**:
+3. __Synapse Serverless Cache__:
+
    ```sql
    -- Create materialized view for faster queries
    CREATE MATERIALIZED VIEW dbo.ProductSalesSummary
@@ -197,26 +200,30 @@ Implement these caching strategies:
 
 Implement these query optimization techniques:
 
-1. **Column Pruning** - Select only needed columns:
+1. __Column Pruning__ - Select only needed columns:
+
    ```python
    # Select only required columns
    df = spark.read.format("delta").load("/path/to/delta-table").select("id", "name", "value")
    ```
 
-2. **Predicate Pushdown** - Filter early in the query:
+2. __Predicate Pushdown__ - Filter early in the query:
+
    ```python
    # Push down predicates to data source
    df = spark.read.format("delta").load("/path/to/delta-table").filter("date > '2023-01-01'")
    ```
 
-3. **Join Optimization**:
+3. __Join Optimization__:
+
    ```python
    # Broadcast small tables for join optimization
    from pyspark.sql.functions import broadcast
    result = large_df.join(broadcast(small_df), "join_key")
    ```
 
-4. **Query Plan Analysis**:
+4. __Query Plan Analysis__:
+
    ```python
    # Analyze query execution plan
    df.explain(True)
@@ -226,19 +233,22 @@ Implement these query optimization techniques:
 
 Delta Lake time travel can impact performance. Optimize with these strategies:
 
-1. **VACUUM Management** - Balance retention needs with storage costs:
+1. __VACUUM Management__ - Balance retention needs with storage costs:
+
    ```sql
    -- Retain 30 days of history (default is 7 days)
    VACUUM delta.`/path/to/delta-table` RETAIN 30 DAYS;
    ```
 
-2. **Optimize History Table** - Manage the size of history metadata:
+2. __Optimize History Table__ - Manage the size of history metadata:
+
    ```python
    # Clean up history older than needed
    deltaTable.vacuum(168) # 168 hours = 7 days
    ```
 
-3. **Checkpoint Management**:
+3. __Checkpoint Management__:
+
    ```python
    # Force a checkpoint for large transaction logs
    spark.conf.set("spark.databricks.delta.checkpoint.writeStatsAsJson", "true")

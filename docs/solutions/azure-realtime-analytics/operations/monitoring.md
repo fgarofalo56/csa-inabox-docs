@@ -1,6 +1,6 @@
 # 📊 Monitoring Setup Guide
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 [Operations](./README.md)** | **📊 Monitoring**
+> __🏠 [Home](../../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🚀 Solution__ | __🔧 [Operations](./README.md)__ | __📊 Monitoring__
 
 ---
 
@@ -83,11 +83,11 @@ graph TB
 
 | Category | Metrics | Source | Frequency |
 |----------|---------|--------|-----------|
-| **Infrastructure** | CPU, Memory, Disk, Network | Azure Monitor | 1 minute |
-| **Application** | Response time, Error rate, Throughput | App Insights | 30 seconds |
-| **Business** | Events processed, Data quality, SLA | Custom metrics | 5 minutes |
-| **Security** | Failed auth, Access violations, Threats | Sentinel | Real-time |
-| **Cost** | Resource consumption, Budget usage | Cost Management | Hourly |
+| __Infrastructure__ | CPU, Memory, Disk, Network | Azure Monitor | 1 minute |
+| __Application__ | Response time, Error rate, Throughput | App Insights | 30 seconds |
+| __Business__ | Events processed, Data quality, SLA | Custom metrics | 5 minutes |
+| __Security__ | Failed auth, Access violations, Threats | Sentinel | Real-time |
+| __Cost__ | Resource consumption, Budget usage | Cost Management | Hourly |
 
 ---
 
@@ -663,6 +663,6 @@ AzureMetrics
 
 ---
 
-**Last Updated:** January 29, 2025  
-**Version:** 1.0.0  
-**Maintainer:** Platform Monitoring Team
+__Last Updated:__ January 29, 2025  
+__Version:__ 1.0.0  
+__Maintainer:__ Platform Monitoring Team

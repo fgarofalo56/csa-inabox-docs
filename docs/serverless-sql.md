@@ -1,6 +1,6 @@
 # Serverless SQL
 
-[Home](../README.md) > Serverless SQL
+Home > Serverless SQL
 
 !!! note "Comprehensive Documentation Available"
     This page has been replaced with a comprehensive Serverless SQL documentation section. Please visit the [Serverless SQL Architecture](architecture/serverless-sql/README.md) for detailed guides on implementing and optimizing Serverless SQL in Azure Synapse Analytics.

@@ -1,25 +1,29 @@
 # Azure Synapse Shared Metadata Architecture
 
-[Home](../../../README.md) > [Architecture](../../README.md) > [Shared Metadata](../README.md) > Shared Metadata Architecture
+[Home](../../../README.md) > [Architecture](../../README.md) > Shared Metadata > Shared Metadata Architecture
 
 ## Overview
+
 The shared metadata architecture in Azure Synapse Analytics enables seamless integration between different compute engines while maintaining a single source of truth for your data. This architecture is crucial for maintaining consistency across your analytics environment and supports the modern data warehouse pattern by allowing different processing engines to collaborate efficiently.
 
 ## Key Components
 
 ### 1. Unified Metadata Layer
+
 - Single metadata store
 - Consistent schema across engines
 - Centralized security
 - Version control
 
 ### 2. Metadata Synchronization
+
 - Automatic synchronization
 - Schema evolution tracking
 - Data lineage
 - Impact analysis
 
 ### 3. Security Integration
+
 - Unified access control
 - Row-level security
 - Column-level security
@@ -29,22 +33,24 @@ The shared metadata architecture in Azure Synapse Analytics enables seamless int
 
 ![Azure Synapse SQL Architecture](https://learn.microsoft.com/en-us/azure/synapse-analytics/media/overview-architecture/sql-architecture.png)
 
-
 ## Best Practices
 
 ### Schema Management
+
 - Use consistent naming conventions
 - Implement proper schema evolution
 - Regularly update statistics
 - Use appropriate data types
 
 ### Security
+
 - Implement proper RBAC
 - Use row-level security
 - Regularly audit changes
 - Use secure connection strings
 
 ### Performance
+
 - Use appropriate partitioning
 - Implement proper indexing
 - Use query hints when needed
@@ -53,6 +59,7 @@ The shared metadata architecture in Azure Synapse Analytics enables seamless int
 ## Code Examples
 
 ### Creating a Table with Shared Metadata
+
 ```sql
 CREATE TABLE my_table
 WITH (
@@ -64,6 +71,7 @@ AS SELECT * FROM source_table
 ```
 
 ### Schema Evolution
+
 ```sql
 -- Add column
 ALTER TABLE my_table ADD COLUMNS (new_column INT)
@@ -76,6 +84,7 @@ ALTER TABLE my_table DROP COLUMN column_name
 ```
 
 ### Security Management
+
 ```sql
 -- Grant permissions
 GRANT SELECT ON my_table TO [user]
@@ -100,10 +109,10 @@ Serverless replicated databases are a key feature of the shared metadata archite
 
 ### Limitations of Serverless Replicated Databases
 
-- **Read-Only Access**: Replicated databases in serverless SQL are read-only due to the asynchronous nature of metadata synchronization from Spark.
-- **Format Restrictions**: Only tables using Parquet, Delta Lake (preview), or CSV formats are synchronized; other formats are not automatically available.
-- **Asynchronous Updates**: Changes in Spark metadata are propagated to SQL with a short delay.
-- **Spark Views**: Spark views require a Spark engine to process and cannot be accessed from SQL engines.
+- __Read-Only Access__: Replicated databases in serverless SQL are read-only due to the asynchronous nature of metadata synchronization from Spark.
+- __Format Restrictions__: Only tables using Parquet, Delta Lake (preview), or CSV formats are synchronized; other formats are not automatically available.
+- __Asynchronous Updates__: Changes in Spark metadata are propagated to SQL with a short delay.
+- __Spark Views__: Spark views require a Spark engine to process and cannot be accessed from SQL engines.
 
 ## Three-Part Naming Support and Limitations
 
@@ -113,7 +122,7 @@ Three-part naming (database.schema.table) is an important feature for cross-data
 
 - Serverless SQL pools support three-part name references and cross-database queries, including the `USE` statement.
 - Queries can reference serverless SQL databases or Lake databases (replicated from Spark) within the same workspace.
-- Cross-workspace queries are **not** supported.
+- Cross-workspace queries are __not__ supported.
 
 ### Three-Part Naming in Spark
 
@@ -151,13 +160,14 @@ SELECT * FROM mydb.dbo.mytable
 
 ### Best Practices for Layered Data Architecture
 
-- **Raw Data Layer**: Minimal processing, typically accessed directly through specific engines without relying on shared metadata.
-- **Silver Layer (Curated)**: Apply three-part naming and schema synchronization here for clean, transformed data.
-- **Gold Layer (Business)**: Fully leverage synchronized metadata for business-ready data models across engines.
+- __Raw Data Layer__: Minimal processing, typically accessed directly through specific engines without relying on shared metadata.
+- __Silver Layer (Curated)__: Apply three-part naming and schema synchronization here for clean, transformed data.
+- __Gold Layer (Business)__: Fully leverage synchronized metadata for business-ready data models across engines.
 
 This layered approach ensures that metadata synchronization complexity is applied where it adds the most value, rather than in raw data layers where direct access patterns may be more efficient.
 
 ## Next Steps
+
 1. [Delta Lakehouse Architecture](../delta-lakehouse/README.md)
 2. [Serverless SQL Architecture](../serverless-sql/README.md)
 3. [Best Practices](../../best-practices/README.md)

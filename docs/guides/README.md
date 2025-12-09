@@ -1,6 +1,6 @@
 # 📖 Development & Operational Guides
 
-> **[← Back to Documentation Hub](../README.md)** | **📖 Guides**
+> __← Back to Documentation Hub__ | __📖 Guides__
 
 ---
 
@@ -8,7 +8,7 @@
 ![Standards: Enforced](https://img.shields.io/badge/Standards-Enforced-0078D4?style=for-the-badge)
 ![Version: 2.0.0](https://img.shields.io/badge/Version-2.0.0-blue?style=for-the-badge)
 
-**Essential guides for developing, contributing to, and maintaining the Azure Research Agent project.**
+__Essential guides for developing, contributing to, and maintaining the Azure Research Agent project.__
 
 ---
 
@@ -18,41 +18,45 @@
 
 | Guide | Description | Audience | Priority |
 |-------|-------------|----------|----------|
-| **[Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md)** | **MANDATORY** - Defines where every file must be placed | 🤖 AI Agents, 👨‍💻 All Developers | 🔴 **CRITICAL** |
-| **[Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)** | Documentation formatting and style standards | 📝 Documentation Writers | 🔴 **CRITICAL** |
-| **[Development Guide](DEVELOPMENT_GUIDE.md)** | Complete development environment setup | 👨‍💻 New Developers | 🟡 HIGH |
-| **[Testing Guide](TESTING_GUIDE.md)** | Writing and running tests effectively | 🧪 QA Engineers, Developers | 🟡 HIGH |
+| __[Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md)__ | __MANDATORY__ - Defines where every file must be placed | 🤖 AI Agents, 👨‍💻 All Developers | 🔴 __CRITICAL__ |
+| __[Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)__ | Documentation formatting and style standards | 📝 Documentation Writers | 🔴 __CRITICAL__ |
+| __[Development Guide](DEVELOPMENT_GUIDE.md)__ | Complete development environment setup | 👨‍💻 New Developers | 🟡 HIGH |
+| __[Testing Guide](TESTING_GUIDE.md)__ | Writing and running tests effectively | 🧪 QA Engineers, Developers | 🟡 HIGH |
 
 ### 🤝 Collaboration Guides
 
 | Guide | Description | Audience | Status |
 |-------|-------------|----------|--------|
-| **[Contributing Guide](CONTRIBUTING_GUIDE.md)** | How to contribute code and docs | 🤝 Contributors | ✅ Available |
-| **[Code Review Guide](CODE_REVIEW_GUIDE.md)** | Standards for reviewing code | 👀 Reviewers | ✅ Available |
+| __[Contributing Guide](CONTRIBUTING_GUIDE.md)__ | How to contribute code and docs | 🤝 Contributors | ✅ Available |
+| __[Code Review Guide](CODE_REVIEW_GUIDE.md)__ | Standards for reviewing code | 👀 Reviewers | ✅ Available |
 
 ---
 
 ## 🎯 Guide by Purpose
 
 ### 🚀 Starting a New Feature
+
 1. Read [Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md) - Know where files go
 2. Follow [Development Guide](DEVELOPMENT_GUIDE.md) - Set up environment
 3. Review [Testing Guide](TESTING_GUIDE.md) - Write tests first
 4. Check [Code Review Guide](CODE_REVIEW_GUIDE.md) - Understand standards
 
 ### 📝 Writing Documentation
-1. **MUST** follow [Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)
+
+1. __MUST__ follow [Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)
 2. Check [Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md) for doc placement
 3. Review [Contributing Guide](CONTRIBUTING_GUIDE.md) for process
 
 ### 🐛 Fixing Bugs
+
 1. Set up with [Development Guide](DEVELOPMENT_GUIDE.md)
 2. Write tests per [Testing Guide](TESTING_GUIDE.md)
 3. Follow [Contributing Guide](CONTRIBUTING_GUIDE.md) for PR process
 
 ### 🤖 AI Agent Development
-1. **MANDATORY**: [Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md)
-2. **MANDATORY**: [Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)
+
+1. __MANDATORY__: [Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md)
+2. __MANDATORY__: [Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)
 3. Review [Code Review Guide](CODE_REVIEW_GUIDE.md)
 
 ---
@@ -62,6 +66,7 @@
 All guides in this directory follow these standards:
 
 ### ✅ Required Elements
+
 - Clear title with emoji
 - Purpose statement
 - Table of contents for long guides
@@ -70,6 +75,7 @@ All guides in this directory follow these standards:
 - Cross-references to related guides
 
 ### 📝 Format Template
+
 ```markdown
 # 📚 Guide Title
 
@@ -94,14 +100,14 @@ Links to other relevant documentation
 
 ## 🚨 Critical Rules for AI Agents
 
-> **⚠️ ATTENTION AI CODING AGENTS:**
-> 
-> The following guides are **MANDATORY** and violations will result in immediate rejection:
-> 
-> 1. **[Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md)** - EVERY file placement must follow this
-> 2. **[Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)** - ALL documentation must follow this
-> 
-> **NO EXCEPTIONS. NO VARIATIONS. STRICT COMPLIANCE REQUIRED.**
+> __⚠️ ATTENTION AI CODING AGENTS:__
+>
+> The following guides are __MANDATORY__ and violations will result in immediate rejection:
+>
+> 1. __[Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md)__ - EVERY file placement must follow this
+> 2. __[Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)__ - ALL documentation must follow this
+>
+> __NO EXCEPTIONS. NO VARIATIONS. STRICT COMPLIANCE REQUIRED.__
 
 ---
 
@@ -109,12 +115,13 @@ Links to other relevant documentation
 
 | Guide Category | Complete | In Progress | Planned | Total |
 |----------------|----------|-------------|---------|-------|
-| **Core Development** | 4 | 0 | 0 | 4 |
-| **Collaboration** | 0 | 0 | 2 | 2 |
-| **Operations** | 0 | 0 | 3 | 3 |
-| **Total** | 4 | 0 | 5 | 9 |
+| __Core Development__ | 4 | 0 | 0 | 4 |
+| __Collaboration__ | 0 | 0 | 2 | 2 |
+| __Operations__ | 0 | 0 | 3 | 3 |
+| __Total__ | 4 | 0 | 5 | 9 |
 
 ### 📅 Upcoming Guides
+
 - Performance Optimization Guide
 - Security Best Practices Guide
 - Monitoring & Logging Guide
@@ -126,6 +133,7 @@ Links to other relevant documentation
 ## 🔄 Maintaining These Guides
 
 ### Update Frequency
+
 | Guide | Review Cycle | Last Updated | Next Review |
 |-------|--------------|--------------|-------------|
 | Directory Structure | Monthly | 2024-12-27 | 2025-01-27 |
@@ -134,6 +142,7 @@ Links to other relevant documentation
 | Testing | Bi-monthly | 2024-12-27 | 2025-02-27 |
 
 ### Contribution Process
+
 1. Identify needed update or new guide
 2. Create issue for discussion
 3. Write/update following [Markdown Style Guide](MARKDOWN_STYLE_GUIDE.md)
@@ -145,16 +154,19 @@ Links to other relevant documentation
 ## 💡 Tips for Using These Guides
 
 ### For New Team Members
+
 - Start with [Development Guide](DEVELOPMENT_GUIDE.md)
 - Read [Directory Structure](DIRECTORY_STRUCTURE_GUIDE.md) before writing any code
 - Bookmark frequently used guides
 
 ### For Experienced Developers
+
 - Use guides as reference, not tutorial
 - Contribute improvements when you find gaps
 - Help maintain guide accuracy
 
 ### For AI Agents
+
 - Parse [Directory Structure Guide](DIRECTORY_STRUCTURE_GUIDE.md) first
 - Store guide rules in context
 - Validate all outputs against guides
@@ -164,16 +176,19 @@ Links to other relevant documentation
 ## 🆘 Need Help?
 
 ### Guide-Specific Questions
+
 - Check the guide's FAQ section
 - Search for related GitHub issues
 - Ask in team discussions
 
 ### Missing Information
+
 - Create an issue describing what's missing
 - Suggest where it should be added
 - Volunteer to write it if possible
 
 ### Incorrect Information
+
 - Report immediately via GitHub issue
 - Include correct information if known
 - Tag as `documentation` and `bug`
@@ -182,14 +197,14 @@ Links to other relevant documentation
 
 <div align="center">
 
-### 📚 **Well-documented code is maintainable code!**
+### 📚 __Well-documented code is maintainable code!__
 
 *Follow the guides, maintain the standards, build better software.*
 
 ---
 
-**Last Updated:** 2024-12-27 | **Version:** 2.0.0 | **Section Owner:** Development Team
+__Last Updated:__ 2024-12-27 | __Version:__ 2.0.0 | __Section Owner:__ Development Team
 
-[⬆ Back to Top](#-development--operational-guides) | [← Back to Docs Hub](../README.md)
+[⬆ Back to Top](#-development--operational-guides) | ← Back to Docs Hub
 
 </div>

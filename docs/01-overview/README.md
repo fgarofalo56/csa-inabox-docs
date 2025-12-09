@@ -1,10 +1,10 @@
 # 🌐 Cloud Scale Analytics Platform Overview
 
-> **🏠 [Home](../../README.md)** | **📖 Cloud Scale Analytics Overview**
+> __🏠 [Home](../../README.md)__ | __📖 Cloud Scale Analytics Overview__
 
-![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
-![Version](https://img.shields.io/badge/Version-2.0-blue?style=flat-square)
-![Complexity](https://img.shields.io/badge/Complexity-Beginner-green?style=flat-square)
+![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
+![Version: 2.0](https://img.shields.io/badge/Version-2.0-blue?style=flat-square)
+![Complexity: Beginner](https://img.shields.io/badge/Complexity-Beginner-green?style=flat-square)
 
 Comprehensive documentation for Azure Cloud Scale Analytics services, architectures, and implementation patterns.
 
@@ -14,11 +14,11 @@ Comprehensive documentation for Azure Cloud Scale Analytics services, architectu
 
 Cloud Scale Analytics (CSA) represents the complete Azure analytics ecosystem, providing a unified approach to:
 
-- **Real-time data processing** and streaming analytics
-- **Batch data processing** and data warehousing
-- **Hybrid architectures** combining batch and stream processing
-- **Advanced analytics** with machine learning integration
-- **Data governance** and compliance across all services
+- __Real-time data processing__ and streaming analytics
+- __Batch data processing__ and data warehousing
+- __Hybrid architectures__ combining batch and stream processing
+- __Advanced analytics__ with machine learning integration
+- __Data governance__ and compliance across all services
 
 ## 🏗️ Platform Architecture
 
@@ -79,72 +79,85 @@ graph TB
 ## 📋 Service Categories
 
 ### 🔄 Streaming Services
+
 Real-time data processing and event-driven architectures
 
 | Service | Purpose | Best For |
 |---------|---------|----------|
-| **Azure Stream Analytics** | Real-time stream processing | IoT analytics, real-time dashboards |
-| **Event Hubs** | Event streaming platform | High-throughput event ingestion |
-| **Event Grid** | Event routing service | Event-driven architectures |
+| __Azure Stream Analytics__ | Real-time stream processing | IoT analytics, real-time dashboards |
+| __Event Hubs__ | Event streaming platform | High-throughput event ingestion |
+| __Event Grid__ | Event routing service | Event-driven architectures |
 
 ### 💾 Analytics Compute Services  
+
 Large-scale data processing and analytics
 
 | Service | Purpose | Best For |
 |---------|---------|----------|
-| **Azure Synapse Analytics** | Enterprise data warehousing | Unified analytics, big data |
-| **Azure Databricks** | Collaborative analytics platform | Data science, ML workflows |
-| **HDInsight** | Managed Hadoop/Spark clusters | Big data processing, legacy migration |
+| __Azure Synapse Analytics__ | Enterprise data warehousing | Unified analytics, big data |
+| __Azure Databricks__ | Collaborative analytics platform | Data science, ML workflows |
+| __HDInsight__ | Managed Hadoop/Spark clusters | Big data processing, legacy migration |
 
 ### 🗃️ Storage Services
+
 Scalable data storage solutions
 
 | Service | Purpose | Best For |
 |---------|---------|----------|
-| **Data Lake Storage Gen2** | Hierarchical data lake | Big data analytics, data archiving |
-| **Cosmos DB** | Globally distributed NoSQL | Multi-model data, low-latency apps |
-| **Azure SQL Database** | Managed relational database | Transactional workloads, reporting |
+| __Data Lake Storage Gen2__ | Hierarchical data lake | Big data analytics, data archiving |
+| __Cosmos DB__ | Globally distributed NoSQL | Multi-model data, low-latency apps |
+| __Azure SQL Database__ | Managed relational database | Transactional workloads, reporting |
 
 ### 🔧 Orchestration Services
+
 Data movement and workflow automation
 
 | Service | Purpose | Best For |
 |---------|---------|----------|
-| **Azure Data Factory** | Data integration service | ETL/ELT pipelines, data movement |
-| **Logic Apps** | Workflow automation | Event-driven workflows, integrations |
+| __Azure Data Factory__ | Data integration service | ETL/ELT pipelines, data movement |
+| __Logic Apps__ | Workflow automation | Event-driven workflows, integrations |
 
 ## 🎯 Navigation Guide
 
 ### 🚀 Getting Started
-- [**Service Catalog**](service-catalog.md) - Complete service overview with capabilities
-- [**Architecture Patterns**](architecture-patterns.md) - High-level design patterns
-- [**Choosing Services**](choosing-services.md) - Decision trees for service selection
-- [**Quick Start Guides**](quick-start-guides/) - Service-specific getting started
+
+- [__Service Catalog__](service-catalog.md) - Complete service overview with capabilities
+- [__Architecture Patterns__](../03-architecture-patterns/README.md) - High-level design patterns
+- [__Service Catalog__](service-catalog.md) - Decision trees for service selection
+- [__Quick Start Guides__](../tutorials/README.md) - Service-specific getting started
 
 ### 📚 Deep Dive Sections
 
 #### 🎯 [Services Documentation](../02-services/README.md)
+
 Detailed documentation for each Azure analytics service
+
 - Analytics Compute (Synapse, Databricks, HDInsight)
 - Streaming Services (Stream Analytics, Event Hubs)
 - Storage Services (Data Lake, Cosmos DB, SQL)
 - Orchestration Services (Data Factory, Logic Apps)
 
 #### 🏗️ [Architecture Patterns](../03-architecture-patterns/README.md)
+
 Proven architectural patterns and reference implementations
+
 - Streaming Architectures (Lambda, Kappa, Event Sourcing)
 - Batch Architectures (Medallion, Data Mesh, Hub-Spoke)
 - Hybrid Architectures (Lambda-Kappa, HTAP, Edge-Cloud)
 - Reference Architectures (Industry-specific solutions)
 
-#### 🛠️ [Implementation Guides](../04-implementation-guides/README.md)
+#### 🛠️ [Implementation Guides](../tutorials/README.md)
+
 Step-by-step implementation guidance
+
 - End-to-end Solutions
 - Integration Scenarios
 - Migration Guides
 
-#### 💡 [Best Practices](../05-best-practices/README.md)
+#### 💡 [Best Practices](../best-practices/README.md)
+
 Proven practices across all services
+
 - Service-specific best practices
 - Cross-cutting concerns (Security, Performance, Cost)
 - Operational Excellence
@@ -153,17 +166,20 @@ Proven practices across all services
 
 ### 🔵 Architecture Complexity Levels
 
-![Complexity](https://img.shields.io/badge/Complexity-Basic-green?style=for-the-badge) **Basic**
+![Complexity: Basic](https://img.shields.io/badge/Complexity-Basic-green?style=for-the-badge) __Basic__
+
 - Single service implementations
 - Straightforward architectures
 - Clear documentation and examples
 
-![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=for-the-badge) **Intermediate** 
+![Complexity: Intermediate](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=for-the-badge) __Intermediate__
+
 - Multi-service integrations
 - Complex data flows
 - Advanced configuration required
 
-![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=for-the-badge) **Advanced**
+![Complexity: Advanced](https://img.shields.io/badge/Complexity-Advanced-red?style=for-the-badge) __Advanced__
+
 - Enterprise-scale implementations
 - Custom solutions and extensions
 - Deep Azure expertise required
@@ -172,37 +188,45 @@ Proven practices across all services
 
 | Documentation Section | Status | Completeness |
 |----------------------|--------|--------------|
-| Services | ![Status](https://img.shields.io/badge/Status-Active-brightgreen) | 95% |
-| Architecture Patterns | ![Status](https://img.shields.io/badge/Status-Active-brightgreen) | 90% |
-| Implementation Guides | ![Status](https://img.shields.io/badge/Status-Development-yellow) | 75% |
-| Best Practices | ![Status](https://img.shields.io/badge/Status-Active-brightgreen) | 85% |
-| Code Examples | ![Status](https://img.shields.io/badge/Status-Development-yellow) | 70% |
+| Services | ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen) | 95% |
+| Architecture Patterns | ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen) | 90% |
+| Implementation Guides | ![Status: Development](https://img.shields.io/badge/Status-Development-yellow) | 75% |
+| Best Practices | ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen) | 85% |
+| Code Examples | ![Status: Development](https://img.shields.io/badge/Status-Development-yellow) | 70% |
 
 ## 🔄 Common Use Cases
 
 ### 📈 Real-time Analytics
+
 Process and analyze streaming data for immediate insights
+
 - IoT device telemetry processing
 - Real-time fraud detection
 - Live dashboard updates
 - Anomaly detection and alerting
 
 ### 🏢 Enterprise Data Warehousing
+
 Modern data warehousing with cloud-scale performance
+
 - Dimensional modeling and star schemas
 - Historical data analysis
 - Business intelligence and reporting
 - Self-service analytics
 
 ### 🔬 Advanced Analytics & ML
+
 Data science and machine learning workflows
+
 - Feature engineering and preparation
 - Model training and deployment
 - MLOps and model lifecycle management
 - Predictive analytics
 
 ### 🌐 Data Integration & Migration
+
 Move and transform data across systems
+
 - Legacy system modernization
 - Multi-cloud data integration
 - Real-time data synchronization
@@ -210,34 +234,37 @@ Move and transform data across systems
 
 ## 🎯 Quick Links
 
-### 🏃‍♂️ **Quick Start**
-- [Azure Synapse Quickstart](quick-start-guides/synapse-quickstart.md)
-- [Stream Analytics Quickstart](quick-start-guides/stream-analytics-quickstart.md)
-- [Databricks Quickstart](quick-start-guides/databricks-quickstart.md)
-- [Data Factory Quickstart](quick-start-guides/data-factory-quickstart.md)
+### 🏃‍♂️ __Quick Start__
 
-### 📖 **Popular Guides**
-- [Medallion Architecture Implementation](../03-architecture-patterns/batch-architectures/medallion-architecture.md)
-- [Real-time Dashboard Architecture](../03-architecture-patterns/streaming-architectures/lambda-architecture.md)
-- [Data Lake Security Best Practices](../05-best-practices/cross-cutting-concerns/security/README.md)
-- [Cost Optimization Strategies](../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
+- [Azure Synapse Tutorials](../tutorials/synapse/README.md)
+- [Stream Analytics Tutorials](../tutorials/stream-analytics/README.md)
+- [Data Factory Tutorials](../tutorials/data-factory/README.md)
+- [All Tutorials](../tutorials/README.md)
 
-### 🛠️ **Implementation Examples**
-- [Customer 360 Solution](../04-implementation-guides/end-to-end-solutions/customer-360/README.md)
-- [Real-time Fraud Detection](../04-implementation-guides/end-to-end-solutions/fraud-detection/README.md)
-- [IoT Analytics Pipeline](../04-implementation-guides/end-to-end-solutions/iot-analytics/README.md)
-- [Modern Data Warehouse](../03-architecture-patterns/reference-architectures/enterprise-data-warehouse.md)
+### 📖 __Popular Guides__
+
+- [Architecture Patterns](../03-architecture-patterns/README.md)
+- [Security Best Practices](../security/best-practices.md)
+- [Cost Optimization](../best-practices/cost-optimization.md)
+- [Performance Optimization](../best-practices/performance.md)
+
+### 🛠️ __Implementation Examples__
+
+- [Real-time Analytics Solution](../solutions/azure-realtime-analytics/README.md)
+- [Code Examples](../code-examples/README.md)
+- [Integration Examples](../code-examples/integration/README.md)
+- [Delta Lake Examples](../code-examples/delta-lake/README.md)
 
 ## 📞 Getting Help
 
-- **📚 Browse Documentation**: Use the navigation above to find specific topics
-- **🔍 Search**: Use the search functionality to find relevant content quickly
-- **💬 Community**: Join discussions and ask questions in our community forums
-- **🐛 Issues**: Report documentation issues or suggest improvements
+- __📚 Browse Documentation__: Use the navigation above to find specific topics
+- __🔍 Search__: Use the search functionality to find relevant content quickly
+- __💬 Community__: Join discussions and ask questions in our community forums
+- __🐛 Issues__: Report documentation issues or suggest improvements
 
 ---
 
-> **💡 Pro Tip**: Start with the [Service Catalog](service-catalog.md) to understand the full scope of Azure analytics services, then dive into specific [Architecture Patterns](../03-architecture-patterns/README.md) that match your use case.
+> __💡 Pro Tip__: Start with the [Service Catalog](service-catalog.md) to understand the full scope of Azure analytics services, then dive into specific [Architecture Patterns](../03-architecture-patterns/README.md) that match your use case.
 
 *Last Updated: 2025-01-28*
 *Version: 2.0*

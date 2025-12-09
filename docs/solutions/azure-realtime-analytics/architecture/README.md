@@ -1,6 +1,6 @@
 # 🏗️ Architecture Documentation
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🏗️ Architecture**
+> __🏠 [Home](../../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🚀 Solution__ | __🏗️ Architecture__
 
 ---
 
@@ -23,12 +23,12 @@ Comprehensive architecture documentation for the Azure Real-Time Analytics platf
 
 ### Architectural Principles
 
-1. **Cloud-Native Design** - Built for Azure with native service integration
-2. **Event-Driven Architecture** - Real-time processing with streaming-first approach
-3. **Microservices Pattern** - Loosely coupled, independently deployable components
-4. **Zero Trust Security** - Comprehensive security with assume-breach mentality
-5. **Infrastructure as Code** - Automated deployment and configuration
-6. **Observability First** - Comprehensive monitoring and alerting
+1. __Cloud-Native Design__ - Built for Azure with native service integration
+2. __Event-Driven Architecture__ - Real-time processing with streaming-first approach
+3. __Microservices Pattern__ - Loosely coupled, independently deployable components
+4. __Zero Trust Security__ - Comprehensive security with assume-breach mentality
+5. __Infrastructure as Code__ - Automated deployment and configuration
+6. __Observability First__ - Comprehensive monitoring and alerting
 
 ### High-Level Architecture
 
@@ -124,11 +124,11 @@ graph TB
 
 | Layer | Purpose | Technologies | SLA |
 |-------|---------|-------------|-----|
-| **Ingestion** | Data collection at scale | Kafka, Event Hubs | 99.99% |
-| **Processing** | Transform and enrich | Databricks, Spark | 99.95% |
-| **Storage** | Persist and organize | Delta Lake, ADLS | 99.99% |
-| **Analytics** | Generate insights | Power BI, ML | 99.9% |
-| **Consumption** | Deliver value | APIs, Apps | 99.95% |
+| __Ingestion__ | Data collection at scale | Kafka, Event Hubs | 99.99% |
+| __Processing__ | Transform and enrich | Databricks, Spark | 99.95% |
+| __Storage__ | Persist and organize | Delta Lake, ADLS | 99.99% |
+| __Analytics__ | Generate insights | Power BI, ML | 99.9% |
+| __Consumption__ | Deliver value | APIs, Apps | 99.95% |
 
 ---
 
@@ -136,7 +136,7 @@ graph TB
 
 ### Azure Databricks
 
-**Purpose:** Unified analytics and processing platform
+__Purpose:__ Unified analytics and processing platform
 
 ```yaml
 Configuration:
@@ -171,7 +171,7 @@ Configuration:
 
 ### Confluent Kafka
 
-**Purpose:** High-throughput streaming platform
+__Purpose:__ High-throughput streaming platform
 
 ```yaml
 Configuration:
@@ -205,7 +205,7 @@ Configuration:
 
 ### Azure Data Lake Storage Gen2
 
-**Purpose:** Scalable data lake storage
+__Purpose:__ Scalable data lake storage
 
 ```yaml
 Configuration:
@@ -236,7 +236,7 @@ Configuration:
 
 ### Power BI
 
-**Purpose:** Business intelligence and visualization
+__Purpose:__ Business intelligence and visualization
 
 ```yaml
 Configuration:
@@ -289,6 +289,7 @@ sequenceDiagram
 ### Data Processing Patterns
 
 #### Bronze Layer Processing
+
 ```python
 # Bronze layer - raw data ingestion
 bronze_stream = (
@@ -308,6 +309,7 @@ bronze_stream = (
 ```
 
 #### Silver Layer Processing
+
 ```python
 # Silver layer - data cleansing and validation
 silver_stream = (
@@ -328,6 +330,7 @@ silver_stream = (
 ```
 
 #### Gold Layer Processing
+
 ```python
 # Gold layer - business aggregations
 gold_stream = (
@@ -357,9 +360,9 @@ gold_stream = (
 
 | Layer | Quality Checks | Action on Failure |
 |-------|---------------|-------------------|
-| **Bronze** | Schema validation | Log and quarantine |
-| **Silver** | Business rules, constraints | Reject and alert |
-| **Gold** | Aggregation accuracy | Reprocess |
+| __Bronze__ | Schema validation | Log and quarantine |
+| __Silver__ | Business rules, constraints | Reject and alert |
+| __Gold__ | Aggregation accuracy | Reprocess |
 
 ---
 
@@ -408,6 +411,7 @@ graph TB
 ### Security Controls
 
 #### Identity & Access Management
+
 ```yaml
 Azure_AD:
   Authentication:
@@ -427,6 +431,7 @@ Service_Principals:
 ```
 
 #### Data Protection
+
 ```yaml
 Encryption:
   At_Rest:
@@ -445,6 +450,7 @@ Encryption:
 ```
 
 #### Network Security
+
 ```yaml
 Network_Isolation:
   - Virtual Networks
@@ -558,11 +564,11 @@ Storage:
 
 | Metric | Target | Current | Headroom |
 |--------|--------|---------|----------|
-| **Ingestion Rate** | 2M events/sec | 1.2M events/sec | 67% |
-| **Processing Latency** | <5 sec | 3.7 sec | 26% |
-| **Storage IOPS** | 100K | 65K | 35% |
-| **Query Response** | <3 sec | 1.8 sec | 40% |
-| **Concurrent Users** | 10,000 | 6,500 | 35% |
+| __Ingestion Rate__ | 2M events/sec | 1.2M events/sec | 67% |
+| __Processing Latency__ | <5 sec | 3.7 sec | 26% |
+| __Storage IOPS__ | 100K | 65K | 35% |
+| __Query Response__ | <3 sec | 1.8 sec | 40% |
+| __Concurrent Users__ | 10,000 | 6,500 | 35% |
 
 ### Capacity Planning
 
@@ -603,6 +609,6 @@ graph LR
 
 ---
 
-**Last Updated:** January 28, 2025  
-**Version:** 2.0.0  
-**Maintainer:** Platform Architecture Team
+__Last Updated:__ January 28, 2025  
+__Version:__ 2.0.0  
+__Maintainer:__ Platform Architecture Team

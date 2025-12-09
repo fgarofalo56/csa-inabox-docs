@@ -1,6 +1,6 @@
 # 🔄 Streaming Services
 
-> **🏠 [Home](../../../README.md)** | **📖 [Overview](../../01-overview/README.md)** | **🛠️ [Services](../README.md)** | **🔄 Streaming Services**
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ Services__ | __🔄 Streaming Services__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Services](https://img.shields.io/badge/Services-3-blue?style=flat-square)
@@ -55,99 +55,114 @@ graph LR
 ## 🚀 Service Cards
 
 ### 📨 Azure Event Hubs
+
 ![Ingestion](https://img.shields.io/badge/Type-Ingestion-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Basic-green?style=flat-square)
 
-**Big data streaming platform and event ingestion service for millions of events per second.**
+__Big data streaming platform and event ingestion service for millions of events per second.__
 
 #### 🔥 Key Strengths
-- **Massive Scale**: Ingest millions of events per second
-- **Kafka Compatible**: Drop-in replacement for Apache Kafka
-- **Auto-scaling**: Automatically adjust to traffic patterns
-- **Global Distribution**: Multi-region event streaming
+
+- __Massive Scale__: Ingest millions of events per second
+- __Kafka Compatible__: Drop-in replacement for Apache Kafka
+- __Auto-scaling__: Automatically adjust to traffic patterns
+- __Global Distribution__: Multi-region event streaming
 
 #### 📊 Core Capabilities
-- **[Event Streaming Basics](azure-event-hubs/event-streaming-basics.md)** - Fundamental concepts
-- **[Kafka Compatibility](azure-event-hubs/kafka-compatibility.md)** - Migration from Kafka
-- **[Capture to Storage](azure-event-hubs/capture-to-storage.md)** - Automatic archival
-- **[Schema Registry](azure-event-hubs/schema-registry.md)** - Schema management
+
+- __[Event Streaming Basics](azure-event-hubs/event-streaming-basics.md)__ - Fundamental concepts
+- __[Kafka Compatibility](azure-event-hubs/kafka-compatibility.md)__ - Migration from Kafka
+- __[Capture to Storage](azure-event-hubs/capture-to-storage.md)__ - Automatic archival
+- __[Schema Registry](azure-event-hubs/schema-registry.md)__ - Schema management
 
 #### 🎯 Best For
+
 - High-volume event ingestion
 - IoT device telemetry
 - Application logging and monitoring
 - Kafka migration scenarios
 
 #### 💰 Pricing Model
-- **Standard**: Throughput Units (TU) + ingress/egress
-- **Dedicated**: Dedicated Capacity Units (CU) for isolation
-- **Premium**: Enhanced performance and security
 
-**[📖 Full Documentation →](azure-event-hubs/README.md)**
+- __Standard__: Throughput Units (TU) + ingress/egress
+- __Dedicated__: Dedicated Capacity Units (CU) for isolation
+- __Premium__: Enhanced performance and security
+
+__[📖 Full Documentation →](azure-event-hubs/README.md)__
 
 ---
 
 ### ⚡ Azure Stream Analytics
+
 ![Processing](https://img.shields.io/badge/Type-Processing-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 
-**Real-time analytics service for streaming data with SQL-based queries.**
+__Real-time analytics service for streaming data with SQL-based queries.__
 
 #### 🔥 Key Strengths
-- **SQL-based**: Familiar SQL syntax for stream processing
-- **Serverless**: No infrastructure management required
-- **Built-in ML**: Anomaly detection and machine learning
-- **Edge Support**: Deploy to IoT Edge devices
+
+- __SQL-based__: Familiar SQL syntax for stream processing
+- __Serverless__: No infrastructure management required
+- __Built-in ML__: Anomaly detection and machine learning
+- __Edge Support__: Deploy to IoT Edge devices
 
 #### 📊 Core Capabilities
-- **[Stream Processing Basics](azure-stream-analytics/stream-processing-basics.md)** - Core concepts
-- **[Windowing Functions](azure-stream-analytics/windowing-functions.md)** - Time-based aggregations
-- **[Anomaly Detection](azure-stream-analytics/anomaly-detection.md)** - Built-in ML features
-- **[Edge Deployments](azure-stream-analytics/edge-deployments.md)** - IoT Edge processing
+
+- __[Stream Processing Basics](azure-stream-analytics/stream-processing-basics.md)__ - Core concepts
+- __[Windowing Functions](azure-stream-analytics/windowing-functions.md)__ - Time-based aggregations
+- __[Anomaly Detection](azure-stream-analytics/anomaly-detection.md)__ - Built-in ML features
+- __[Edge Deployments](azure-stream-analytics/edge-deployments.md)__ - IoT Edge processing
 
 #### 🎯 Best For
+
 - Real-time analytics and dashboards
 - IoT device analytics
 - Fraud detection systems
 - Operational monitoring
 
 #### 💰 Pricing Model
-- **Streaming Units (SU)**: Compute capacity pricing
-- **Edge**: Per device licensing
-- **Pay-as-you-go**: Hourly billing
 
-**[📖 Full Documentation →](azure-stream-analytics/README.md)**
+- __Streaming Units (SU)__: Compute capacity pricing
+- __Edge__: Per device licensing
+- __Pay-as-you-go__: Hourly billing
+
+__[📖 Full Documentation →](azure-stream-analytics/README.md)__
 
 ---
 
 ### 🌐 Azure Event Grid
+
 ![Routing](https://img.shields.io/badge/Type-Routing-lightblue?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Basic-green?style=flat-square)
 
-**Event routing service for building reactive, event-driven applications.**
+__Event routing service for building reactive, event-driven applications.__
 
 #### 🔥 Key Strengths
-- **Serverless**: Pay-per-event pricing model
-- **Rich Filtering**: Content-based event routing
-- **Reliable Delivery**: Built-in retry and dead letter queues
-- **Azure Integration**: Native events from all Azure services
+
+- __Serverless__: Pay-per-event pricing model
+- __Rich Filtering__: Content-based event routing
+- __Reliable Delivery__: Built-in retry and dead letter queues
+- __Azure Integration__: Native events from all Azure services
 
 #### 📊 Core Capabilities
-- **[Event-driven Architecture](azure-event-grid/event-driven-architecture.md)** - Design patterns
-- **[System Topics](azure-event-grid/system-topics.md)** - Built-in Azure events
+
+- __[Event-driven Architecture](azure-event-grid/event-driven-architecture.md)__ - Design patterns
+- __[System Topics](azure-event-grid/system-topics.md)__ - Built-in Azure events
 
 #### 🎯 Best For
+
 - Event-driven application architectures
 - Serverless workflow automation
 - System integration and decoupling
 - Reactive microservices
 
 #### 💰 Pricing Model
-- **Pay-per-operation**: $0.60 per million operations
-- **No minimum fees**: True pay-as-you-use
-- **Advanced features**: Additional costs for premium features
 
-**[📖 Full Documentation →](azure-event-grid/README.md)**
+- __Pay-per-operation__: $0.60 per million operations
+- __No minimum fees__: True pay-as-you-use
+- __Advanced features__: Additional costs for premium features
+
+__[📖 Full Documentation →](azure-event-grid/README.md)__
 
 ---
 
@@ -157,43 +172,51 @@ graph LR
 
 | Feature | Event Hubs | Stream Analytics | Event Grid |
 |---------|------------|-----------------|------------|
-| **Primary Purpose** | Event Ingestion | Stream Processing | Event Routing |
-| **Throughput** | Very High (millions/sec) | Medium (SU-based) | High |
-| **Processing Logic** | ❌ None | ✅ SQL-based | ❌ Routing Only |
-| **Kafka Compatible** | ✅ Yes | ❌ No | ❌ No |
-| **Built-in Analytics** | ❌ No | ✅ Advanced | ❌ No |
-| **Event Filtering** | ❌ Limited | ✅ SQL-based | ✅ Advanced |
-| **Schema Registry** | ✅ Yes | ❌ No | ❌ No |
-| **Serverless Option** | ❌ No | ✅ Yes | ✅ Yes |
-| **Edge Deployment** | ❌ No | ✅ Yes | ❌ No |
-| **Dead Letter Queues** | ❌ No | ❌ No | ✅ Yes |
-| **Cost Model** | TU/CU-based | SU-based | Per-operation |
+| __Primary Purpose__ | Event Ingestion | Stream Processing | Event Routing |
+| __Throughput__ | Very High (millions/sec) | Medium (SU-based) | High |
+| __Processing Logic__ | ❌ None | ✅ SQL-based | ❌ Routing Only |
+| __Kafka Compatible__ | ✅ Yes | ❌ No | ❌ No |
+| __Built-in Analytics__ | ❌ No | ✅ Advanced | ❌ No |
+| __Event Filtering__ | ❌ Limited | ✅ SQL-based | ✅ Advanced |
+| __Schema Registry__ | ✅ Yes | ❌ No | ❌ No |
+| __Serverless Option__ | ❌ No | ✅ Yes | ✅ Yes |
+| __Edge Deployment__ | ❌ No | ✅ Yes | ❌ No |
+| __Dead Letter Queues__ | ❌ No | ❌ No | ✅ Yes |
+| __Cost Model__ | TU/CU-based | SU-based | Per-operation |
 
 ### Use Case Recommendations
 
 #### 📈 Real-time Analytics Dashboard
-**Architecture**: Event Hubs → Stream Analytics → Power BI
-- **Primary**: Stream Analytics for processing
-- **Supporting**: Event Hubs for ingestion
-- **Pattern**: [Lambda Architecture](../../03-architecture-patterns/streaming-architectures/lambda-architecture.md)
+
+__Architecture__: Event Hubs → Stream Analytics → Power BI
+
+- __Primary__: Stream Analytics for processing
+- __Supporting__: Event Hubs for ingestion
+- __Pattern__: [Lambda Architecture](../../03-architecture-patterns/streaming-architectures/lambda-architecture.md)
 
 #### 🏭 IoT Device Monitoring
-**Architecture**: IoT Devices → Event Hubs → Stream Analytics → Alerts
-- **Primary**: Event Hubs for high-volume ingestion
-- **Supporting**: Stream Analytics for real-time analysis
-- **Pattern**: [IoT Analytics Pattern](../../03-architecture-patterns/reference-architectures/iot-analytics.md)
+
+__Architecture__: IoT Devices → Event Hubs → Stream Analytics → Alerts
+
+- __Primary__: Event Hubs for high-volume ingestion
+- __Supporting__: Stream Analytics for real-time analysis
+- __Pattern__: [IoT Analytics Pattern](../../03-architecture-patterns/reference-architectures/iot-analytics.md)
 
 #### 🔗 Event-driven Microservices
-**Architecture**: Services → Event Grid → Functions/Logic Apps
-- **Primary**: Event Grid for service decoupling
-- **Supporting**: Azure Functions for event handling
-- **Pattern**: [Event Sourcing](../../03-architecture-patterns/streaming-architectures/event-sourcing.md)
+
+__Architecture__: Services → Event Grid → Functions/Logic Apps
+
+- __Primary__: Event Grid for service decoupling
+- __Supporting__: Azure Functions for event handling
+- __Pattern__: [Event Sourcing](../../03-architecture-patterns/streaming-architectures/event-sourcing.md)
 
 #### 📊 Stream Processing Pipeline
-**Architecture**: Data Sources → Event Hubs → Stream Analytics → Storage
-- **Primary**: Stream Analytics for transformation
-- **Supporting**: Event Hubs for buffering
-- **Pattern**: [Kappa Architecture](../../03-architecture-patterns/streaming-architectures/kappa-architecture.md)
+
+__Architecture__: Data Sources → Event Hubs → Stream Analytics → Storage
+
+- __Primary__: Stream Analytics for transformation
+- __Supporting__: Event Hubs for buffering
+- __Pattern__: [Kappa Architecture](../../03-architecture-patterns/streaming-architectures/kappa-architecture.md)
 
 ---
 
@@ -254,71 +277,80 @@ graph LR
 
 ## 🚀 Getting Started Recommendations
 
-### 🆕 **New to Streaming**
-1. **Start with**: Azure Stream Analytics
-2. **Why**: SQL-based, serverless, easy to learn
-3. **Next**: Add Event Hubs for higher throughput
-4. **Pattern**: Simple stream processing pipeline
+### 🆕 __New to Streaming__
 
-### 📊 **Analytics-Focused**
-1. **Start with**: Event Hubs + Stream Analytics
-2. **Why**: Purpose-built for analytics workloads
-3. **Next**: Integrate with Power BI and Data Lake
-4. **Pattern**: Real-time analytics dashboard
+1. __Start with__: Azure Stream Analytics
+2. __Why__: SQL-based, serverless, easy to learn
+3. __Next__: Add Event Hubs for higher throughput
+4. __Pattern__: Simple stream processing pipeline
 
-### 🏗️ **Architecture-Focused**
-1. **Start with**: Event Grid
-2. **Why**: Event-driven architecture foundation
-3. **Next**: Add Event Hubs for high-volume scenarios
-4. **Pattern**: Event-driven microservices
+### 📊 __Analytics-Focused__
 
-### 🏭 **IoT-Focused**
-1. **Start with**: Event Hubs + Stream Analytics
-2. **Why**: Optimized for IoT scenarios
-3. **Next**: Add Edge deployments
-4. **Pattern**: IoT analytics pipeline
+1. __Start with__: Event Hubs + Stream Analytics
+2. __Why__: Purpose-built for analytics workloads
+3. __Next__: Integrate with Power BI and Data Lake
+4. __Pattern__: Real-time analytics dashboard
+
+### 🏗️ __Architecture-Focused__
+
+1. __Start with__: Event Grid
+2. __Why__: Event-driven architecture foundation
+3. __Next__: Add Event Hubs for high-volume scenarios
+4. __Pattern__: Event-driven microservices
+
+### 🏭 __IoT-Focused__
+
+1. __Start with__: Event Hubs + Stream Analytics
+2. __Why__: Optimized for IoT scenarios
+3. __Next__: Add Edge deployments
+4. __Pattern__: IoT analytics pipeline
 
 ---
 
 ## 💰 Cost Optimization Strategies
 
 ### Event Hubs Cost Optimization
-- **Right-size throughput units** based on actual usage
-- **Use auto-inflate** to handle traffic spikes efficiently
-- **Consider dedicated clusters** for predictable high-volume workloads
-- **Optimize partition count** based on consumer parallelism
+
+- __Right-size throughput units__ based on actual usage
+- __Use auto-inflate__ to handle traffic spikes efficiently
+- __Consider dedicated clusters__ for predictable high-volume workloads
+- __Optimize partition count__ based on consumer parallelism
 
 ### Stream Analytics Cost Optimization
-- **Use appropriate streaming unit size** for your workload
-- **Implement auto-scaling** to adjust to demand
-- **Optimize query complexity** to reduce SU requirements
-- **Use temporal aggregations** to reduce processing overhead
+
+- __Use appropriate streaming unit size__ for your workload
+- __Implement auto-scaling__ to adjust to demand
+- __Optimize query complexity__ to reduce SU requirements
+- __Use temporal aggregations__ to reduce processing overhead
 
 ### Event Grid Cost Optimization
-- **Implement efficient filtering** to reduce unnecessary operations
-- **Use system topics** instead of custom topics where possible
-- **Optimize event schema** to minimize payload size
-- **Implement proper error handling** to avoid retry costs
 
-**[📖 Detailed Cost Guide →](../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)**
+- __Implement efficient filtering__ to reduce unnecessary operations
+- __Use system topics__ instead of custom topics where possible
+- __Optimize event schema__ to minimize payload size
+- __Implement proper error handling__ to avoid retry costs
+
+__[📖 Detailed Cost Guide →](../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)__
 
 ---
 
 ## 🔒 Security Best Practices
 
 ### Authentication & Authorization
-- **Azure AD Integration**: Use managed identities where possible
-- **Shared Access Signatures**: Implement least-privilege access
-- **RBAC**: Apply role-based access control
-- **Network Security**: Use private endpoints and VNet integration
+
+- __Azure AD Integration__: Use managed identities where possible
+- __Shared Access Signatures__: Implement least-privilege access
+- __RBAC__: Apply role-based access control
+- __Network Security__: Use private endpoints and VNet integration
 
 ### Data Protection
-- **Encryption in Transit**: TLS 1.2 for all connections
-- **Encryption at Rest**: Azure Storage Service Encryption
-- **Key Management**: Azure Key Vault for secret management
-- **Data Masking**: Implement data anonymization where needed
 
-**[📖 Security Guide →](../../05-best-practices/cross-cutting-concerns/security/README.md)**
+- __Encryption in Transit__: TLS 1.2 for all connections
+- __Encryption at Rest__: Azure Storage Service Encryption
+- __Key Management__: Azure Key Vault for secret management
+- __Data Masking__: Implement data anonymization where needed
+
+__[📖 Security Guide →](../../05-best-practices/cross-cutting-concerns/security/README.md)__
 
 ---
 
@@ -327,59 +359,67 @@ graph LR
 ### Key Metrics to Monitor
 
 #### Event Hubs Metrics
-- **Incoming Messages**: Message ingestion rate
-- **Outgoing Messages**: Message consumption rate
-- **Throttled Requests**: Capacity utilization
-- **Capture Backlog**: Archive processing status
+
+- __Incoming Messages__: Message ingestion rate
+- __Outgoing Messages__: Message consumption rate
+- __Throttled Requests__: Capacity utilization
+- __Capture Backlog__: Archive processing status
 
 #### Stream Analytics Metrics
-- **SU Utilization**: Resource consumption
-- **Input/Output Events**: Processing throughput
-- **Watermark Delay**: Processing latency
-- **Runtime Errors**: Processing health
+
+- __SU Utilization__: Resource consumption
+- __Input/Output Events__: Processing throughput
+- __Watermark Delay__: Processing latency
+- __Runtime Errors__: Processing health
 
 #### Event Grid Metrics
-- **Published Events**: Event publication rate
-- **Delivered Events**: Successful delivery rate
-- **Failed Deliveries**: Error rate monitoring
-- **Dead Letter Events**: Failed event tracking
 
-**[📖 Monitoring Guide →](../../09-monitoring/README.md)**
+- __Published Events__: Event publication rate
+- __Delivered Events__: Successful delivery rate
+- __Failed Deliveries__: Error rate monitoring
+- __Dead Letter Events__: Failed event tracking
+
+__[📖 Monitoring Guide →](../../09-monitoring/README.md)__
 
 ---
 
 ## 🔧 Integration Scenarios
 
 ### With Analytics Services
-- **[Synapse Integration](../../04-implementation-guides/integration-scenarios/stream-analytics-synapse.md)**: Real-time to batch processing
-- **[Databricks Integration](../../04-implementation-guides/integration-scenarios/eventhubs-databricks.md)**: Stream processing with ML
-- **[Data Factory Integration](../../04-implementation-guides/integration-scenarios/event-driven-pipelines.md)**: Event-triggered data pipelines
+
+- __[Synapse Integration](../../04-implementation-guides/integration-scenarios/stream-analytics-synapse.md)__: Real-time to batch processing
+- __[Databricks Integration](../../04-implementation-guides/integration-scenarios/eventhubs-databricks.md)__: Stream processing with ML
+- __[Data Factory Integration](../../04-implementation-guides/integration-scenarios/event-driven-pipelines.md)__: Event-triggered data pipelines
 
 ### With Storage Services
-- **[Data Lake Integration](../../04-implementation-guides/integration-scenarios/streaming-to-datalake.md)**: Stream to lake patterns
-- **[Cosmos DB Integration](../../04-implementation-guides/integration-scenarios/stream-analytics-cosmos.md)**: Real-time operational data
-- **[SQL Database Integration](../../04-implementation-guides/integration-scenarios/streaming-to-sql.md)**: Stream to relational patterns
 
-**[📖 All Integration Scenarios →](../../04-implementation-guides/integration-scenarios/README.md)**
+- __[Data Lake Integration](../../04-implementation-guides/integration-scenarios/streaming-to-datalake.md)__: Stream to lake patterns
+- __[Cosmos DB Integration](../../04-implementation-guides/integration-scenarios/stream-analytics-cosmos.md)__: Real-time operational data
+- __[SQL Database Integration](../../04-implementation-guides/integration-scenarios/streaming-to-sql.md)__: Stream to relational patterns
+
+__[📖 All Integration Scenarios →](../../04-implementation-guides/integration-scenarios/README.md)__
 
 ---
 
 ## 📚 Learning Resources
 
-### 🎓 **Getting Started**
-- [**Streaming Concepts**](../../tutorials/beginner/streaming-concepts.md)
-- [**Event Hubs Quick Start**](../../tutorials/beginner/eventhubs-quickstart.md)
-- [**Stream Analytics Tutorial**](../../tutorials/intermediate/stream-analytics-tutorial.md)
+### 🎓 __Getting Started__
 
-### 📖 **Advanced Topics**
-- [**Streaming Architecture Patterns**](../../03-architecture-patterns/streaming-architectures/README.md)
-- [**Performance Optimization**](../../05-best-practices/cross-cutting-concerns/performance/streaming-optimization.md)
-- [**Disaster Recovery**](../../05-best-practices/operational-excellence/streaming-dr.md)
+- [__Streaming Concepts__](../../tutorials/beginner/streaming-concepts.md)
+- [__Event Hubs Quick Start__](../../tutorials/beginner/eventhubs-quickstart.md)
+- [__Stream Analytics Tutorial__](../../tutorials/intermediate/stream-analytics-tutorial.md)
 
-### 🔧 **Code Examples**
-- [**Event Hubs Samples**](../../06-code-examples/by-service/event-hubs/README.md)
-- [**Stream Analytics Samples**](../../06-code-examples/by-service/stream-analytics/README.md)
-- [**Integration Examples**](../../06-code-examples/integration-examples/streaming-pipeline/README.md)
+### 📖 __Advanced Topics__
+
+- [__Streaming Architecture Patterns__](../../03-architecture-patterns/streaming-architectures/README.md)
+- [__Performance Optimization__](../../05-best-practices/cross-cutting-concerns/performance/streaming-optimization.md)
+- [__Disaster Recovery__](../../05-best-practices/operational-excellence/streaming-dr.md)
+
+### 🔧 __Code Examples__
+
+- [__Event Hubs Samples__](../../06-code-examples/by-service/event-hubs/README.md)
+- [__Stream Analytics Samples__](../../06-code-examples/by-service/stream-analytics/README.md)
+- [__Integration Examples__](../../06-code-examples/integration-examples/streaming-pipeline/README.md)
 
 ---
 

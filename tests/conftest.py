@@ -10,7 +10,7 @@ import asyncio
 import aiohttp
 
 # Import the classes we're testing
-from src.csa_docs_tools import (
+from csa_docs_tools import (
     DocumentationBuildTester,
     LinkValidator,
     MarkdownQualityChecker,

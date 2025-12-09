@@ -1,6 +1,6 @@
 # Monitoring Setup Guide
 
-[Home](../../README.md) > [Monitoring](../README.md) > Monitoring Setup
+[Home](../../README.md) > Monitoring > Monitoring Setup
 
 !!! abstract "Overview"
 This guide covers the setup and configuration of monitoring solutions for Azure Synapse Analytics, including Azure Monitor, Log Analytics, and alerting.
@@ -17,7 +17,7 @@ Implement comprehensive monitoring for your Azure Synapse Analytics environment 
 
 Configure base monitoring components and permissions
 
-[:octicons-arrow-right-24: Setup steps](#initial-setup)
+[→ Setup steps](#initial-setup)
 
 - 📈 __Metrics Collection__
 
@@ -25,7 +25,7 @@ Configure base monitoring components and permissions
 
 Configure and collect key performance metrics
 
-[:octicons-arrow-right-24: Metrics configuration](#metrics-collection)
+[→ Metrics configuration](#metrics-collection)
 
 - 🔍 __Log Analytics__
 
@@ -33,7 +33,7 @@ Configure and collect key performance metrics
 
 Centralize and analyze diagnostic logs
 
-[:octicons-arrow-right-24: Log setup](#log-analytics-setup)
+[→ Log setup](#log-analytics-setup)
 
 - 🔔 __Alerting__
 
@@ -41,7 +41,7 @@ Centralize and analyze diagnostic logs
 
 Configure proactive alerts and notifications
 
-[:octicons-arrow-right-24: Alert configuration](#alerting-setup)
+[→ Alert configuration](#alerting-setup)
 
 </div>
 
@@ -65,7 +65,7 @@ az monitor log-analytics workspace create \
   --sku PerGB2018
 ```
 
-2. __Create Action Groups__ for notifications:
+1. __Create Action Groups__ for notifications:
 
 ```bash
 az monitor action-group create \
@@ -75,13 +75,13 @@ az monitor action-group create \
   --email-receiver name=opsTeam email=ops@contoso.com
 ```
 
-3. __Enable Microsoft Insights Provider__:
+1. __Enable Microsoft Insights Provider__:
 
 ```bash
 az provider register --namespace Microsoft.Insights
 ```
 
-4. __Assign Monitoring Contributor Role__:
+1. __Assign Monitoring Contributor Role__:
 
 ```bash
 az role assignment create \
@@ -131,7 +131,7 @@ Set-AzDiagnosticSetting -ResourceId "/subscriptions/{subscription-id}/resourceGr
   -Category SQLSecurityAuditEvents,SynapseRbacOperations,GatewayApiRequests,BuiltinSqlReqsEnded,IntegrationPipelineRuns,IntegrationActivityRuns,IntegrationTriggerRuns
 ```
 
-2. __Log Categories to Enable__:
+1. __Log Categories to Enable__:
 
 | Log Category | Description | Retention |
 |--------------|-------------|-----------|
@@ -143,7 +143,7 @@ Set-AzDiagnosticSetting -ResourceId "/subscriptions/{subscription-id}/resourceGr
 | IntegrationActivityRuns | Activity execution details | 90 days |
 | IntegrationTriggerRuns | Trigger execution details | 90 days |
 
-3. __Create Custom Log Queries__:
+1. __Create Custom Log Queries__:
 
 ```kusto
 // Query for failed pipeline runs

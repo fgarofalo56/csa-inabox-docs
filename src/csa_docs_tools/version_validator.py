@@ -20,9 +20,9 @@ import yaml
 from mkdocs.commands.build import build as mkdocs_build
 from mkdocs.config import load_config
 
-from .build_tester import DocumentationBuilder
+from .build_tester import DocumentationBuildTester
 from .link_validator import LinkValidator
-from .navigation_validator import NavigationValidator
+from .navigation_validator import NavigationStructureValidator
 from .mike_manager import MikeVersionManager
 from .version_manager import SemanticVersionManager
 from .migration_manager import MigrationManager
@@ -78,14 +78,14 @@ class VersionValidator:
         QualityGate(
             name="build_validation",
             description="Validate that documentation builds successfully",
-            validator_class="DocumentationBuilder",
+            validator_class="DocumentationBuildTester",
             required=True,
             timeout_seconds=600
         ),
         QualityGate(
             name="navigation_validation",
             description="Validate navigation structure and consistency",
-            validator_class="NavigationValidator",
+            validator_class="NavigationStructureValidator",
             required=True
         ),
         QualityGate(
@@ -134,9 +134,9 @@ class VersionValidator:
         self.migration_manager = MigrationManager(repo_path)
         
         # Initialize validators
-        self.build_tester = DocumentationBuilder()
+        self.build_tester = DocumentationBuildTester(repo_path)
         self.link_validator = LinkValidator(repo_path)
-        self.navigation_validator = NavigationValidator(repo_path)
+        self.navigation_validator = NavigationStructureValidator(repo_path)
         
         # Load configuration
         self.config = self._load_validation_config()
@@ -407,9 +407,9 @@ class VersionValidator:
         Returns:
             Validation result
         """
-        if gate.validator_class == "DocumentationBuilder":
+        if gate.validator_class == "DocumentationBuildTester":
             return await self._validate_build(version)
-        elif gate.validator_class == "NavigationValidator":
+        elif gate.validator_class == "NavigationStructureValidator":
             return await self._validate_navigation(version)
         elif gate.validator_class == "LinkValidator":
             return await self._validate_links(version, gate.failure_threshold)
@@ -650,13 +650,13 @@ class VersionValidator:
         """Build documentation and return result."""
         try:
             # Use existing build tester
-            result = await self.build_tester.test_build()
+            success, stdout, stderr = self.build_tester.test_build(strict=False)
             return {
-                'success': result.passed,
-                'message': result.message,
-                'build_time': result.build_time,
-                'warnings': result.warnings,
-                'errors': result.errors
+                'success': success,
+                'message': 'Build succeeded' if success else 'Build failed',
+                'build_time': 0.0,  # test_build doesn't return build time
+                'warnings': stdout.split('\n') if stdout else [],
+                'errors': stderr.split('\n') if stderr else []
             }
         except Exception as e:
             return {

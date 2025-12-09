@@ -1,6 +1,6 @@
 # CI/CD for Azure Synapse Analytics
 
-[Home](../../README.md) > [DevOps](../README.md) > CI/CD Pipeline
+[Home](../../README.md) > DevOps > CI/CD Pipeline
 
 This guide provides comprehensive information on implementing continuous integration and continuous deployment (CI/CD) for Azure Synapse Analytics using Azure DevOps. It covers best practices, pipeline setup, and automated testing strategies.
 
@@ -8,22 +8,22 @@ This guide provides comprehensive information on implementing continuous integra
 
 Implementing CI/CD for Azure Synapse Analytics helps teams deliver changes faster, with higher quality and reduced risk. Key benefits include:
 
-- **Consistent deployments** across environments
-- **Automated testing** for data pipelines and analytics code
-- **Version control** for all Synapse artifacts
-- **Reduced manual errors** through automation
-- **Improved collaboration** between data engineering teams
+- __Consistent deployments__ across environments
+- __Automated testing__ for data pipelines and analytics code
+- __Version control__ for all Synapse artifacts
+- __Reduced manual errors__ through automation
+- __Improved collaboration__ between data engineering teams
 
 ### CI/CD Workflow for Synapse
 
 A typical CI/CD workflow for Azure Synapse Analytics includes:
 
-1. **Development** in a dev workspace using Synapse Studio
-2. **Source control** integration with Git repository
-3. **Build and validation** using Azure DevOps pipelines
-4. **Testing** in development/test environments
-5. **Deployment** to QA, staging, and production environments
-6. **Post-deployment validation** and monitoring
+1. __Development__ in a dev workspace using Synapse Studio
+2. __Source control__ integration with Git repository
+3. __Build and validation__ using Azure DevOps pipelines
+4. __Testing__ in development/test environments
+5. __Deployment__ to QA, staging, and production environments
+6. __Post-deployment validation__ and monitoring
 
 ![Secure Data Lakehouse Data Flow](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-dataflow.svg)
 
@@ -34,9 +34,9 @@ A typical CI/CD workflow for Azure Synapse Analytics includes:
 Before implementing CI/CD, set up source control integration:
 
 1. Navigate to your Synapse workspace in Synapse Studio
-2. Click **Manage** in the left navigation
-3. Select **Git configuration**
-4. Click **Configure**
+2. Click __Manage__ in the left navigation
+3. Select __Git configuration__
+4. Click __Configure__
 5. Choose your repository type (Azure DevOps Git or GitHub)
 6. Configure repository settings:
    - Repository name
@@ -50,22 +50,22 @@ Before implementing CI/CD, set up source control integration:
 
 Implement a branch strategy appropriate for your team:
 
-1. **Feature branches**: For developing new features
+1. __Feature branches__: For developing new features
    - Create from `develop` branch
    - Name convention: `feature/<feature-name>`
    - Merge back to `develop` via pull request
 
-2. **Release branches**: For release preparation
+2. __Release branches__: For release preparation
    - Create from `develop` branch
    - Name convention: `release/v1.0.0`
    - Merge to both `main` and `develop`
 
-3. **Hotfix branches**: For critical fixes
+3. __Hotfix branches__: For critical fixes
    - Create from `main` branch
    - Name convention: `hotfix/<fix-name>`
    - Merge to both `main` and `develop`
 
-4. **Environment branches**: For deployment to specific environments
+4. __Environment branches__: For deployment to specific environments
    - Optional approach for environment-specific configurations
    - Name convention: `env/dev`, `env/test`, `env/prod`
 
@@ -75,11 +75,11 @@ Implement a branch strategy appropriate for your team:
 
 Before setting up CI/CD pipelines, ensure you have:
 
-1. **Azure DevOps organization and project** set up
-2. **Azure Synapse workspace** with Git integration configured
-3. **Service principal** with appropriate permissions
-4. **Azure Resource Manager service connection** in Azure DevOps
-5. **Variable groups** for environment-specific settings
+1. __Azure DevOps organization and project__ set up
+2. __Azure Synapse workspace__ with Git integration configured
+3. __Service principal__ with appropriate permissions
+4. __Azure Resource Manager service connection__ in Azure DevOps
+5. __Variable groups__ for environment-specific settings
 
 ### Creating an Azure DevOps Pipeline
 
@@ -174,11 +174,11 @@ stages:
 
 For more comprehensive deployments:
 
-1. **Export ARM templates** from your Synapse workspace:
+1. __Export ARM templates__ from your Synapse workspace:
    - Use the Synapse Studio "Export ARM template" feature
    - Or generate templates with PowerShell/CLI
 
-2. **Deploy using ARM template deployment**:
+2. __Deploy using ARM template deployment__:
 
 ```yaml
 # ARM template deployment step
@@ -235,15 +235,15 @@ For the most reliable deployments, use Microsoft's recommended deployment approa
 
 Manage different environments with these approaches:
 
-1. **Variable groups** in Azure DevOps:
+1. __Variable groups__ in Azure DevOps:
    - Create variable groups for each environment (dev, test, prod)
    - Store environment-specific values like workspace names, storage accounts
 
-2. **Parameters files**:
+2. __Parameters files__:
    - Maintain separate parameter files for each environment
    - Store in source control alongside templates
 
-3. **Configuration transforms**:
+3. __Configuration transforms__:
    - Use pipeline tasks to transform configurations at deployment time
    - Replace tokens with environment-specific values
 
@@ -289,16 +289,16 @@ stages:
 
 Implement checks and approvals for controlled deployment:
 
-1. **Environment approvals**:
+1. __Environment approvals__:
    - Configure approvers for sensitive environments
    - Set up approval timeout and notifications
 
-2. **Branch policies**:
+2. __Branch policies__:
    - Require pull request and code review
    - Enforce build validation
    - Limit merge to protected branches
 
-3. **Deployment gates**:
+3. __Deployment gates__:
    - Azure Monitor alerts
    - REST API checks
    - Work item query verification
@@ -309,12 +309,12 @@ Implement checks and approvals for controlled deployment:
 
 Implement testing for individual components:
 
-1. **Pipeline unit tests**:
+1. __Pipeline unit tests__:
    - Test individual pipeline activities
    - Validate parameter handling
    - Check expected outputs
 
-2. **Notebook unit tests**:
+2. __Notebook unit tests__:
    - Test individual functions and transformations
    - Verify data schema validation
    - Check error handling
@@ -351,12 +351,12 @@ function Test-SynapsePipeline {
 
 Test interactions between components:
 
-1. **Data flow testing**:
+1. __Data flow testing__:
    - Test end-to-end data transformations
    - Validate output against expected results
    - Check performance with sample data
 
-2. **Service integration tests**:
+2. __Service integration tests__:
    - Test connectivity to external systems
    - Validate authentication and permissions
    - Check error handling for service failures
@@ -388,12 +388,12 @@ Test interactions between components:
 
 Validate complete workflows:
 
-1. **Pipeline execution tests**:
+1. __Pipeline execution tests__:
    - Run pipelines with test parameters
    - Verify outputs and side effects
    - Check logging and monitoring
 
-2. **System tests**:
+2. __System tests__:
    - Test full data processing workflows
    - Validate business logic and outcomes
    - Check performance with realistic data volumes
@@ -442,12 +442,12 @@ Validate complete workflows:
 
 Verify successful deployments:
 
-1. **Artifact validation**:
+1. __Artifact validation__:
    - Check if all artifacts are deployed correctly
    - Verify configuration parameters
    - Test basic functionality
 
-2. **Health checks**:
+2. __Health checks__:
    - Run automated health check pipelines
    - Verify connectivity to dependent services
    - Check permissions and access control
@@ -495,12 +495,12 @@ function Test-SynapseDeployment {
 
 Prepare for deployment failures:
 
-1. **Version rollback**:
+1. __Version rollback__:
    - Deploy previous working version from source control
    - Use tagged releases for reliable rollbacks
    - Maintain rollback scripts for each major release
 
-2. **Blue/green deployments**:
+2. __Blue/green deployments__:
    - Deploy to new environment while keeping old one
    - Test new deployment thoroughly
    - Switch over only when validated
@@ -539,12 +539,12 @@ Prepare for deployment failures:
 
 Protect sensitive information:
 
-1. **Azure Key Vault integration**:
+1. __Azure Key Vault integration__:
    - Store secrets in Key Vault
    - Reference secrets in pipelines
    - Rotate credentials regularly
 
-2. **Service connections**:
+2. __Service connections__:
    - Use managed identities where possible
    - Restrict service principal permissions
    - Audit service connection usage
@@ -573,12 +573,12 @@ Protect sensitive information:
 
 Ensure deployments meet compliance requirements:
 
-1. **Policy validation**:
+1. __Policy validation__:
    - Check Azure Policy compliance
    - Validate security configurations
    - Ensure data privacy requirements are met
 
-2. **Security scanning**:
+2. __Security scanning__:
    - Scan ARM templates for security issues
    - Check for sensitive information in code
    - Validate network security settings
@@ -598,17 +598,17 @@ Ensure deployments meet compliance requirements:
 
 Follow these best practices for pipeline organization:
 
-1. **Modular pipeline design**:
+1. __Modular pipeline design__:
    - Break pipelines into reusable templates
    - Use template parameters for flexibility
    - Create component-specific pipelines
 
-2. **Pipeline standardization**:
+2. __Pipeline standardization__:
    - Consistent naming conventions
    - Standardized stage and job patterns
    - Clear documentation for each pipeline
 
-3. **Pipeline optimization**:
+3. __Pipeline optimization__:
    - Parallel jobs for independent tasks
    - Caching for dependencies
    - Selective artifact publishing
@@ -617,17 +617,17 @@ Follow these best practices for pipeline organization:
 
 Manage Synapse artifacts effectively:
 
-1. **Artifact organization**:
+1. __Artifact organization__:
    - Organize by component type
    - Use consistent folder structure
    - Include README documentation
 
-2. **Versioning strategy**:
+2. __Versioning strategy__:
    - Semantic versioning for releases
    - Version tagging in source control
    - Version history documentation
 
-3. **Dependency management**:
+3. __Dependency management__:
    - Track dependencies between artifacts
    - Use parameters for flexible configurations
    - Document integration points
@@ -636,17 +636,17 @@ Manage Synapse artifacts effectively:
 
 Implement monitoring for CI/CD pipelines:
 
-1. **Pipeline analytics**:
+1. __Pipeline analytics__:
    - Track success/failure rates
    - Monitor deployment frequency
    - Measure lead time for changes
 
-2. **Alerting and notifications**:
+2. __Alerting and notifications__:
    - Set up alerts for pipeline failures
    - Notify teams about deployment status
    - Create dashboards for pipeline health
 
-3. **Continuous improvement**:
+3. __Continuous improvement__:
    - Regular review of pipeline metrics
    - Retrospectives after deployment issues
    - Iterative refinement of CI/CD processes
@@ -657,17 +657,17 @@ Implement monitoring for CI/CD pipelines:
 
 Implement GitOps principles:
 
-1. **Git as single source of truth**:
+1. __Git as single source of truth__:
    - All configurations in Git
    - No manual changes to environments
    - Automated synchronization
 
-2. **Pull request-driven workflow**:
+2. __Pull request-driven workflow__:
    - Changes only through pull requests
    - Automated validation on PR
    - Environment state matches repository
 
-3. **Infrastructure as code**:
+3. __Infrastructure as code__:
    - Define all infrastructure in code
    - Include networking, security, compute
    - Version infrastructure alongside application
@@ -676,17 +676,17 @@ Implement GitOps principles:
 
 Implement advanced deployment strategies:
 
-1. **Feature flags**:
+1. __Feature flags__:
    - Control feature availability
    - Test features in production safely
    - Gradual rollout to users
 
-2. **Canary releases**:
+2. __Canary releases__:
    - Deploy to subset of resources
    - Monitor for issues before full deployment
    - Automatic rollback if metrics degrade
 
-3. **A/B testing**:
+3. __A/B testing__:
    - Compare different implementations
    - Data-driven decision making
    - Automated analysis of results

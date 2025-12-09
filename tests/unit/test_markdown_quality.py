@@ -6,7 +6,7 @@ import subprocess
 from pathlib import Path
 from unittest.mock import patch, Mock
 
-from src.csa_docs_tools.markdown_quality import MarkdownQualityChecker, QualityIssue
+from csa_docs_tools.markdown_quality import MarkdownQualityChecker, QualityIssue
 
 
 class TestMarkdownQualityChecker:

@@ -1,7 +1,7 @@
 # Troubleshooting Process Diagram
 
-[Home](../../../README.md) > [Images](../../README.md) > [Troubleshooting](../README.md) > Troubleshooting Process
+[Home](../../../README.md) > [Images](../../README.md) > Troubleshooting > Troubleshooting Process
 
-![Architecture diagram: images-troubleshooting-troubleshooting-process-diagram-1](../diagrams/images-troubleshooting-troubleshooting-process-diagram-1.png)
+![Troubleshooting flowchart for Azure Synapse Analytics showing step-by-step diagnostic process from issue identification to resolution](../diagrams/images-troubleshooting-troubleshooting-process-diagram-1.png)
 
 This diagram represents the standard troubleshooting process for Azure Synapse Analytics issues.

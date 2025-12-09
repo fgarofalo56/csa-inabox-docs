@@ -1,6 +1,6 @@
 # Comprehensive Azure Integration Guide for Synapse Analytics
 
-[Home](../../README.md) > [Code Examples](../README.md) > Integration Guide
+[Home](../../README.md) > Code Examples > Integration Guide
 
 !!! info "Guide Overview"
     This comprehensive guide provides code examples and patterns for integrating Azure Synapse Analytics with other Azure services including Azure Machine Learning, Microsoft Purview, and Azure Data Factory.
@@ -45,6 +45,7 @@
 ![Azure Integration Patterns](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/ai/images/synapse-machine-learning.png)
 
 !!! tip "Integration Best Practices"
+
     When integrating Azure Synapse Analytics with other Azure services, consider the following common patterns:
 
     1. __Linked Services__: Creating and managing linked services between Azure Synapse and other Azure services
@@ -52,22 +53,25 @@
     3. __Data Movement Optimization__: Optimizing data movement between services for performance
     4. __Metadata Synchronization__: Keeping metadata in sync across services
     5. __Monitoring and Alerting__: Setting up comprehensive monitoring across integrated services
-    
+
     ![Secure Data Lakehouse Overview](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-overview.png)
 
-python
+```python
 # PySpark code to configure Azure ML integration in Synapse
+
 from notebookutils import mssparkutils
 
 # Set up Azure ML workspace connection
+
 synapse_workspace_name = "your-synapse-workspace"
 ml_workspace_name = "your-ml-workspace"
 resource_group = "your-resource-group"
 subscription_id = "your-subscription-id"
 
 # Create linked service connection
+
 linked_service_name = "AzureMLService"
-mssparkutils.notebook.run("./setup_linked_service.py", 
+mssparkutils.notebook.run("./setup_linked_service.py",
                          {"workspace_name": ml_workspace_name,
                           "resource_group": resource_group,
                           "subscription_id": subscription_id})
@@ -132,7 +136,7 @@ pipeline = Pipeline(workspace=ws, steps=[data_prep, model_train])
 pipeline_run = pipeline.submit("customer_churn_training")
 ```
 
-### Model Deployment and Scoring
+## Model Deployment and Scoring
 
 Deploy a trained model for batch scoring in Synapse:
 

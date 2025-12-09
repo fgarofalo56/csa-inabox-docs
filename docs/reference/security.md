@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Security Reference
 
-[Home](../../README.md) > [Reference](../README.md) > Security Guide
+[Home](../../README.md) > Reference > Security Guide
 
 ## Overview
 
@@ -21,7 +21,6 @@ This document provides comprehensive security guidance for Azure Synapse Analyti
 ### Connectivity
 
 ![Secure Data Lakehouse Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-architecture.svg)
-
 
 ## Authentication and Authorization
 

@@ -1,6 +1,6 @@
 # Security Implementation Diagrams for Azure Synapse Analytics
 
-[Home](../../README.md) > [Diagrams](../README.md) > Security Diagrams
+[Home](../../README.md) > Diagrams > Security Diagrams
 
 This section provides security implementation diagrams for Azure Synapse Analytics, focusing on security patterns and best practices.
 
@@ -20,7 +20,6 @@ This diagram shows the network isolation architecture for securing Azure Synapse
 
 ![Secure Data Lakehouse Access Control](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-access-control.svg)
 
-
 <!-- Static image fallback for GitHub -->
 ![Secure Data Lakehouse Access Control](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-access-control.svg)
 
@@ -30,7 +29,6 @@ This diagram illustrates the comprehensive data protection model for Azure Synap
 
 <!-- Mermaid diagram for MkDocs rendering -->
 ![Azure Analytics End-to-End Architecture](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/dataplate2e/media/azure-analytics-end-to-end.svg)
-
 
 <!-- Static image fallback for GitHub -->
 ![Secure Data Lakehouse High-Level Design](https://learn.microsoft.com/en-us/azure/architecture/example-scenario/analytics/media/secure-data-lakehouse-high-level-design.svg)

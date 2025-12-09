@@ -1,6 +1,6 @@
 # Workspace Management
 
-[Home](../../README.md) > [Administration](../README.md) > Workspace Management
+[Home](../../README.md) > Administration > Workspace Management
 
 !!! abstract "Overview"
     This guide covers best practices for managing Azure Synapse Analytics workspaces, including governance, access control, and operational tasks.
@@ -14,34 +14,34 @@ Effective management of Azure Synapse Analytics workspaces ensures optimal perfo
 - 👥 __Access Management__
 
     ---
-    
+
     Manage roles, permissions, and access control for workspaces
-    
-    [:octicons-arrow-right-24: Access control](#access-control)
+
+    [→ Access control](#access-control)
 
 - 🏷️ __Resource Tagging__
 
     ---
-    
+
     Implement consistent tagging strategies for governance
-    
-    [:octicons-arrow-right-24: Tagging strategy](#tagging-strategy)
+
+    [→ Tagging strategy](#tagging-strategy)
 
 - 💾 __Backup and Recovery__
 
     ---
-    
+
     Configure backups and disaster recovery procedures
-    
-    [:octicons-arrow-right-24: Backup procedures](#backup-procedures)
+
+    [→ Backup procedures](#backup-procedures)
 
 - 💰 __Cost Management__
 
     ---
-    
+
     Optimize resource usage and control costs
-    
-    [:octicons-arrow-right-24: Cost optimization](#cost-optimization)
+
+    [→ Cost optimization](#cost-optimization)
 
 </div>
 
@@ -52,10 +52,10 @@ Effective management of Azure Synapse Analytics workspaces ensures optimal perfo
 
 Azure Synapse Analytics provides multiple layers of access control:
 
-1. **Azure RBAC** - Controls access to Azure resources and management operations
-2. **Synapse RBAC** - Fine-grained access control within the Synapse workspace
-3. **Data-level security** - Row-level, column-level security in SQL pools
-4. **Managed Identity** - Secure service-to-service authentication
+1. __Azure RBAC__ - Controls access to Azure resources and management operations
+2. __Synapse RBAC__ - Fine-grained access control within the Synapse workspace
+3. __Data-level security__ - Row-level, column-level security in SQL pools
+4. __Managed Identity__ - Secure service-to-service authentication
 
 ```powershell
 # Example: Assign Synapse Contributor role to a user
@@ -86,10 +86,10 @@ Implement consistent resource tagging for better governance and cost management:
 
 Azure Synapse Analytics leverages different backup mechanisms for various components:
 
-- **SQL Pools** - Automatic daily backups with 7-day retention by default
-- **Workspace configuration** - Use CI/CD pipelines to version control settings
-- **Notebooks and scripts** - Store in Git repositories for version control
-- **Pipelines** - Export using ARM templates or through CI/CD processes
+- __SQL Pools__ - Automatic daily backups with 7-day retention by default
+- __Workspace configuration__ - Use CI/CD pipelines to version control settings
+- __Notebooks and scripts__ - Store in Git repositories for version control
+- __Pipelines__ - Export using ARM templates or through CI/CD processes
 
 !!! tip "Best Practice"
     Implement a scheduled export of workspace artifacts to maintain a deployable backup.
@@ -107,21 +107,22 @@ az synapse workspace export --name myworkspace \
 
 Strategies to optimize Synapse workspace costs:
 
-1. **Auto-pause Spark pools** when not in use
-2. **Right-size SQL pools** based on performance requirements
-3. **Schedule pipeline runs** during off-peak hours
-4. **Implement autoscale** for variable workloads
-5. **Use resource tagging** for cost allocation and tracking
+1. __Auto-pause Spark pools__ when not in use
+2. __Right-size SQL pools__ based on performance requirements
+3. __Schedule pipeline runs__ during off-peak hours
+4. __Implement autoscale__ for variable workloads
+5. __Use resource tagging__ for cost allocation and tracking
 
 !!! example "Cost Optimization Example"
+
     ```python
     # Configure auto-pause for Spark pools using Azure Python SDK
     from azure.identity import DefaultAzureCredential
     from azure.mgmt.synapse import SynapseManagementClient
-    
+
     credential = DefaultAzureCredential()
     synapse_client = SynapseManagementClient(credential, subscription_id)
-    
+
     # Set auto-pause delay to 15 minutes
     spark_pool_update = {
         "auto_pause": {
@@ -129,7 +130,7 @@ Strategies to optimize Synapse workspace costs:
             "enabled": True
         }
     }
-    
+
     synapse_client.big_data_pools.update(
         resource_group_name="myResourceGroup",
         workspace_name="myWorkspace",
