@@ -35,7 +35,7 @@ jobs:
           fetch-depth: 0  # Fetch all history for proper link checking
         
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'  # Using more recent Python
           cache: 'pip'  # Enable pip caching
@@ -88,7 +88,7 @@ jobs:
           
       - name: Upload link check report
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: link-check-report
           path: |
@@ -97,7 +97,7 @@ jobs:
           
       - name: Create or update issue on broken links
         if: steps.run_checker.outputs.checker_exit_code != '0'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
