@@ -98,7 +98,7 @@ jobs:
       
       - name: Upload coverage to Codecov
         if: always()
-        uses: codecov/codecov-action@v3
+        uses: codecov/codecov-action@v5
         with:
           file: coverage-${{ matrix.test-type }}.xml
           flags: ${{ matrix.test-type }}
