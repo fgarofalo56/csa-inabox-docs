@@ -536,7 +536,7 @@ Use this checklist to ensure comprehensive security compliance:
 
 - [Security Best Practices](../best-practices/security.md)
 - [Data Governance Implementation](../best-practices/data-governance.md)
-- [Network Security Configuration](../architecture/network-security.md)
+- Network Security Configuration
 - [Monitoring and Logging Guide](../monitoring/logging-monitoring-guide.md)
 
 ## External Resources

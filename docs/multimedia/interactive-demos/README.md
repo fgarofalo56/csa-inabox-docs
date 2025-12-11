@@ -10,13 +10,182 @@
 
 Interactive demonstrations and hands-on code playgrounds that allow users to experiment with Cloud Scale Analytics configurations, explore architecture patterns, and test implementations in a safe, sandboxed environment.
 
-## 🚀 Featured Interactive Demos
+## 🚀 Available Interactive Demos
 
-### 🏗️ Architecture Builder
+### 🏢 Workspace & Environment
 
-__[Launch Architecture Builder](./demos/architecture-builder/index.html)__
+#### [Synapse Workspace Tour](synapse-workspace-tour.md)
 
-An interactive drag-and-drop tool for designing Azure Synapse architectures.
+Interactive walkthrough of Azure Synapse Analytics workspace components and features. Learn workspace navigation, service integration, and management capabilities.
+
+**Duration:** 20 minutes | **Complexity:** Basic | **Prerequisites:** Azure account
+
+---
+
+### 💻 Development Environments
+
+#### [Spark Notebook Sandbox](spark-notebook-sandbox.md)
+
+Hands-on interactive Spark notebook environment for learning PySpark, Scala, and Delta Lake operations.
+
+**Duration:** 30 minutes | **Complexity:** Intermediate | **Prerequisites:** Basic Python knowledge
+
+#### [SQL Query Playground](sql-query-playground.md)
+
+Interactive SQL query environment for practicing Synapse SQL, performance tuning, and query optimization.
+
+**Duration:** 25 minutes | **Complexity:** Intermediate | **Prerequisites:** Basic SQL knowledge
+
+---
+
+### 🔄 Pipeline & Data Flow
+
+#### [Pipeline Builder Demo](pipeline-builder-demo.md)
+
+Visual drag-and-drop pipeline builder for creating ETL/ELT workflows with Azure Data Factory integration.
+
+**Duration:** 35 minutes | **Complexity:** Intermediate | **Prerequisites:** ETL/ELT concepts
+
+#### [Data Flow Designer](data-flow-designer.md)
+
+Interactive designer for creating data transformation flows with visual mapping and code generation.
+
+**Duration:** 30 minutes | **Complexity:** Intermediate | **Prerequisites:** Data transformation knowledge
+
+---
+
+### 💰 Planning & Optimization
+
+#### [Cost Calculator](cost-calculator.md)
+
+Comprehensive cost estimation tool for Azure Synapse Analytics services with real-time pricing.
+
+**Duration:** 20 minutes | **Complexity:** Basic | **Prerequisites:** Basic Azure knowledge
+
+#### [Resource Planner](resource-planner.md)
+
+Interactive capacity planning calculator for optimizing Spark pools, SQL pools, and storage resources.
+
+**Duration:** 30 minutes | **Complexity:** Intermediate | **Prerequisites:** Capacity planning basics
+
+---
+
+### 🏗️ Architecture & Design
+
+#### [Architecture Explorer](architecture-explorer.md)
+
+Interactive architecture diagram explorer with drill-down capabilities and design pattern examples.
+
+**Duration:** 25 minutes | **Complexity:** Intermediate | **Prerequisites:** Cloud architecture basics
+
+#### [Schema Designer](schema-designer.md)
+
+Visual database schema design tool with data modeling, relationships, and validation features.
+
+**Duration:** 20 minutes | **Complexity:** Basic | **Prerequisites:** Database concepts
+
+---
+
+### 🔒 Security & Configuration
+
+#### [Security Configuration Wizard](security-configuration.md)
+
+Step-by-step security setup wizard covering authentication, authorization, and network security.
+
+**Duration:** 30 minutes | **Complexity:** Advanced | **Prerequisites:** Security concepts
+
+---
+
+### 📊 Monitoring & Optimization
+
+#### [Monitoring Dashboard Builder](monitoring-dashboard-builder.md)
+
+Interactive dashboard builder for creating custom monitoring views and alerts.
+
+**Duration:** 25 minutes | **Complexity:** Intermediate | **Prerequisites:** Monitoring basics
+
+#### [Query Optimizer](query-optimizer.md)
+
+Interactive query optimization demo with performance analysis and tuning recommendations.
+
+**Duration:** 30 minutes | **Complexity:** Advanced | **Prerequisites:** SQL performance tuning
+
+---
+
+### 🔍 Data Governance
+
+#### [Data Lineage Explorer](data-lineage-explorer.md)
+
+Visual data lineage tracking tool showing data flow from source to destination with transformations.
+
+**Duration:** 25 minutes | **Complexity:** Intermediate | **Prerequisites:** Data governance concepts
+
+---
+
+### 🚀 Migration & Assessment
+
+#### [Migration Assessment Wizard](migration-assessment.md)
+
+Comprehensive migration assessment tool for planning Azure Synapse Analytics migrations.
+
+**Duration:** 45 minutes | **Complexity:** Advanced | **Prerequisites:** Migration planning experience
+
+---
+
+## 🎯 Demo Categories
+
+### By Complexity Level
+
+**Basic (Beginner-Friendly)**
+- [Synapse Workspace Tour](synapse-workspace-tour.md)
+- [Cost Calculator](cost-calculator.md)
+- [Schema Designer](schema-designer.md)
+
+**Intermediate (Some Experience Required)**
+- [Spark Notebook Sandbox](spark-notebook-sandbox.md)
+- [SQL Query Playground](sql-query-playground.md)
+- [Pipeline Builder Demo](pipeline-builder-demo.md)
+- [Data Flow Designer](data-flow-designer.md)
+- [Resource Planner](resource-planner.md)
+- [Architecture Explorer](architecture-explorer.md)
+- [Monitoring Dashboard Builder](monitoring-dashboard-builder.md)
+- [Data Lineage Explorer](data-lineage-explorer.md)
+
+**Advanced (Expert Level)**
+- [Security Configuration Wizard](security-configuration.md)
+- [Query Optimizer](query-optimizer.md)
+- [Migration Assessment Wizard](migration-assessment.md)
+
+### By Use Case
+
+**Learning & Education**
+- Synapse Workspace Tour
+- Spark Notebook Sandbox
+- SQL Query Playground
+
+**Development & Implementation**
+- Pipeline Builder Demo
+- Data Flow Designer
+- Schema Designer
+- Architecture Explorer
+
+**Planning & Optimization**
+- Cost Calculator
+- Resource Planner
+- Query Optimizer
+
+**Security & Governance**
+- Security Configuration Wizard
+- Data Lineage Explorer
+
+**Migration & Modernization**
+- Migration Assessment Wizard
+
+---
+
+## 🏗️ Technical Architecture
+
+### Interactive Demo Framework
 
 ```javascript
 // Architecture Builder Configuration

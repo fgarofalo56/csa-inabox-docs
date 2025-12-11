@@ -285,14 +285,14 @@ graph TD
 ### 🔧 __Implementation Guides__
 
 - [__Data Lake Setup__](../../04-implementation-guides/integration-scenarios/README.md)
-- [__Security Configuration__](../../05-best-practices/cross-cutting-concerns/security/README.md)
-- [__Performance Optimization__](../../05-best-practices/cross-cutting-concerns/performance/README.md)
+- [__Best Practices Guide__](../../05-best-practices/README.md)
+- [__Architecture Patterns__](../../03-architecture-patterns/README.md)
 
 ### 📊 __Sample Implementations__
 
-- [__Modern Data Warehouse__](../../03-architecture-patterns/reference-architectures/enterprise-data-warehouse.md)
-- [__ML Pipeline Architecture__](../../03-architecture-patterns/reference-architectures/ml-pipeline.md)
-- [__Real-time Analytics__](../../03-architecture-patterns/streaming-architectures/README.md)
+- [__Batch Architectures__](../../03-architecture-patterns/batch-architectures/README.md)
+- [__Streaming Architectures__](../../03-architecture-patterns/streaming-architectures/README.md)
+- [__Real-time Analytics__](../../solutions/azure-realtime-analytics/README.md)
 
 ---
 

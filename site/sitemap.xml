@@ -2,697 +2,3312 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/VISUAL-STYLE-GUIDE/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/delta-lake-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/faq/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/serverless-sql-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/serverless-sql/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/shared-metadata/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/01-overview/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/01-overview/architecture-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/01-overview/choosing-services/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/01-overview/service-catalog/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/02-services/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/01-overview/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-databricks/workspace-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-databricks/delta-live-tables/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-databricks/mlflow-integration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-databricks/unity-catalog/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-hdinsight/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-hdinsight/cluster-types/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-hdinsight/migration-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/data-explorer-pools/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/dedicated-sql/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/dedicated-sql/sizing/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/pipelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/pipelines/lineage-tracking/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/shared-metadata/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/spark-pools/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/spark-pools/configuration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/spark-pools/performance-tuning/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/spark-pools/delta-lakehouse/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/spark-pools/delta-lakehouse/cross-region-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/spark-pools/delta-lakehouse/multi-tenant-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/spark-pools/delta-lakehouse/schema-evolution/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/sql-pools/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/sql-pools/dedicated-sql/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/analytics-compute/azure-synapse/sql-pools/serverless-sql/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/data-governance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/data-governance/azure-purview/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/data-governance/azure-purview/lineage/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/orchestration-services/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/orchestration-services/azure-data-factory/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/orchestration-services/azure-data-factory/ci-cd-pipelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/orchestration-services/azure-data-factory/pipeline-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/orchestration-services/azure-data-factory/data-flows/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/orchestration-services/azure-data-factory/integration-runtime/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/orchestration-services/azure-logic-apps/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/orchestration-services/azure-logic-apps/workflow-automation/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-cosmos-db/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-cosmos-db/analytical-store/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-cosmos-db/api-selection/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-cosmos-db/change-feed/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-cosmos-db/partitioning-strategies/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-data-lake-gen2/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-data-lake-gen2/access-control/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-data-lake-gen2/data-lifecycle/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-data-lake-gen2/hierarchical-namespace/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-data-lake-gen2/performance-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-sql-database/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-sql-database/elastic-pools/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/storage-services/azure-sql-database/hyperscale/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-event-grid/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-event-grid/event-driven-architecture/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-event-grid/system-topics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-event-hubs/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-event-hubs/capture-to-storage/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-event-hubs/event-streaming-basics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-event-hubs/kafka-compatibility/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-event-hubs/schema-registry/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-stream-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-stream-analytics/anomaly-detection/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-stream-analytics/edge-deployments/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-stream-analytics/stream-processing-basics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/02-services/streaming-services/azure-stream-analytics/windowing-functions/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/batch-architectures/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/batch-architectures/data-lake-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/batch-architectures/data-mesh/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/batch-architectures/data-warehouse-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/batch-architectures/hub-spoke-model/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/batch-architectures/medallion-architecture/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/data-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/data-patterns/cqrs/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/data-patterns/event-sourcing/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/governance-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/hybrid-architectures/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/hybrid-architectures/global-data-distribution/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/hybrid-architectures/htap-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/hybrid-architectures/lambda-kappa-hybrid/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/hybrid-architectures/polyglot-persistence/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/integration-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/integration-patterns/hybrid-connectivity/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/integration-patterns/saga-pattern/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/ml-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/ml-patterns/model-deployment/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/reference-architectures/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/reference-architectures/enterprise-data-warehouse/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/reference-architectures/financial-services/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/reference-architectures/healthcare-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/reference-architectures/iot-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/reference-architectures/ml-pipeline/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/reference-architectures/retail-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/streaming-architectures/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/streaming-architectures/cqrs-pattern/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/streaming-architectures/event-sourcing/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/streaming-architectures/kappa-architecture/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/streaming-architectures/lambda-architecture/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/03-architecture-patterns/streaming-architectures/time-series-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/databricks/delta-sharing-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/databricks/feature-engineering/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/databricks/feature-store-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/databricks/mlops-pipeline/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/databricks/model-monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/databricks/row-level-security/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/databricks/unity-catalog-external-locations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/capture-data-factory/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/capture-databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/capture-synapse-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/data-mesh-integration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/event-driven-pipelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/eventgrid-eventhubs/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/eventgrid-functions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/eventgrid-logicapps/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/eventhub-databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/eventhub-functions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/eventhub-stream-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/eventhubs-databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/ml-realtime-scoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/purview-synapse/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/stream-analytics-cosmos/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/stream-analytics-eventgrid/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/stream-analytics-functions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/stream-analytics-synapse/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/streaming-to-datalake/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/streaming-to-sql/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/04-implementation-guides/integration-scenarios/synapse-databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/storage-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/cost-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/cost-optimization/capture-cost/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/cost-optimization/databricks-costs/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/data-governance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/data-governance/retention-policies/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/development/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/development/stream-analytics-queries/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/event-handling/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/event-handling/event-grid-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/governance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/governance/metadata-governance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/networking/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/networking/databricks-networking/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/performance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/performance/streaming-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/performance/synapse-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/security/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/storage/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/cross-cutting-concerns/storage/capture-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/alert-strategies/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/disaster-recovery/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/edge-offline-handling/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/eventgrid-reliability/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/eventhub-dr/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/reliability/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/operational-excellence/streaming-dr/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/databricks/delta-lake/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/databricks/mlops/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/hdinsight/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/storage/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/synapse/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/synapse/data-explorer-best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/synapse/dedicated-sql-best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/synapse/spark-best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/05-best-practices/service-specific/synapse/spark-performance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/06-code-examples/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/06-code-examples/by-service/event-hubs/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/06-code-examples/by-service/stream-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/06-code-examples/by-service/synapse/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/06-code-examples/integration-examples/streaming-pipeline/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/06-devops/databricks-cicd/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/common-errors/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/performance-issues/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/security-troubleshooting/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/cosmosdb/partitioning/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/cosmosdb/query-performance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/cosmosdb/ru-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/databricks/memory-issues/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/hdinsight/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/storage/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/synapse/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/synapse/connectivity/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/synapse/query-performance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/07-troubleshooting/service-troubleshooting/synapse/scaling/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/08-solutions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/09-monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/09-monitoring/service-monitoring/databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/09-monitoring/service-monitoring/databricks/dlt-monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/09-monitoring/service-monitoring/hdinsight/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/09-monitoring/service-monitoring/storage/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/09-monitoring/service-monitoring/synapse/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/09-monitoring/service-monitoring/synapse/dedicated-monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/administration/usage-reporting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/administration/workspace-management/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/delta-lakehouse-overview/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/private-link-architecture/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/delta-lakehouse/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/delta-lakehouse/detailed-architecture/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/architecture/feature-store/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/serverless-sql/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/serverless-sql/detailed-architecture/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/serverless-sql/serverless-overview/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/shared-metadata/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/shared-metadata/shared-metadata-examples/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/shared-metadata/shared-metadata-visuals/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/architecture/shared-metadata/shared-metadata/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/cost-optimization/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/data-governance/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/delta-lake-optimization/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/implementation-patterns/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/network-security/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/performance-optimization/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/performance/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/pipeline-optimization/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/security/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/serverless-sql-best-practices/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/spark-performance/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/best-practices/sql-performance/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake-guide/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/emerging-patterns/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/integration-guide/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/serverless-sql-guide/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake/cdc/change-data-capture/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake/ingestion/auto-loader/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/delta-lake/optimization/table-optimization/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/integration/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/integration/azure-data-factory/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/integration/azure-ml/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/integration/azure-purview/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/serverless-sql/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/code-examples/serverless-sql/query-optimization/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/code-labs/pyspark-fundamentals/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/devops/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/devops/automated-testing/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/devops/pipeline-ci-cd/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/devops/security-best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/architecture-diagrams/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/data-governance-diagrams/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/delta-lakehouse-architecture-description/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/delta-lakehouse-architecture/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/process-flowcharts/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/security-diagrams/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/serverless-sql-architecture-description/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/serverless-sql-architecture/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/diagrams/shared-metadata-architecture-description/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/docs/faq/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/docs/architecture/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/docs/security/compliance-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/CODE_REVIEW_GUIDE/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/CONTRIBUTING/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/CONTRIBUTING_GUIDE/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/DEVELOPMENT_GUIDE/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/DIRECTORY_STRUCTURE_GUIDE/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/MARKDOWN_STYLE_GUIDE/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/TESTING_GUIDE/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/analytics-setup/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/brand-guidelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/deployment-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/documentation-review-process/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/localization-guide/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/migration-v3/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/presentation-skills/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/guides/quick-start-wizard/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/technical-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/docs/api-reference/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/docs/authentication/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/docs/best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/docs/examples/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/docs/sdks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/docs/user-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/tutorials/data-loading/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/tutorials/first-pipeline/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/guides/tutorials/spark-basics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/i18n/TRANSLATION_STATUS/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/i18n/installation/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/images/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/images/troubleshooting-process/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/images/architecture/serverless-sql-architecture/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/images/architecture/shared-metadata-architecture/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/images/diagrams/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/images/troubleshooting/troubleshooting-process/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/integration/azure-ml/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/monitoring/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/monitoring/deployment-monitoring/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/monitoring/logging-monitoring-guide/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/monitoring/monitoring-setup/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/monitoring/security-monitoring/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/monitoring/spark-monitoring/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/monitoring/sql-monitoring/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/monitoring/guides/monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/CONTRIBUTING/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/MULTIMEDIA_INDEX/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/animation-guidelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/architecture-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/css-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/data-flow-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/hover-effects/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/interactive-diagrams/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/loading-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/lottie-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/micro-interactions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/performance-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/process-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/scroll-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/svg-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/transition-animations/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/guides/accessibility/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/guides/animation-guidelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/guides/export-settings/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/guides/performance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/storyboards/etl-pipeline/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/storyboards/stream-processing/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/animations/templates/storyboards/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/accessibility-audio/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/audio-branding/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/audio-transcripts/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/background-music/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/distribution-channels/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/editing-guidelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/narration-guidelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/podcast-scripts/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/recording-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/sound-effects/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/transcription-process/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/guides/accessibility/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/guides/production-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/music/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/podcast-episodes/best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/podcast-episodes/cloud-architecture/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/podcast-episodes/data-engineering/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/podcast-episodes/industry-trends/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/podcast-episodes/synapse-101/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/audio-content/sound-effects/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/brand/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/brand/assets/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/architecture-explorer/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/cost-calculator/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/data-flow-designer/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/data-lineage-explorer/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/migration-assessment/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/monitoring-dashboard-builder/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/pipeline-builder-demo/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/query-optimizer/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/resource-planner/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/schema-designer/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/security-configuration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/spark-notebook-sandbox/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/sql-query-playground/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/synapse-workspace-tour/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/api/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/components/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/guides/accessibility/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/guides/demo-development/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/interactive-demos/guides/performance/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/best-practices-deck/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/conference-talks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/cost-benefit-analysis/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/customer-success/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/executive-overview/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/industry-solutions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/migration-planning/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/partner-enablement/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/roadmap-presentation/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/sales-enablement/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/security-compliance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/technical-deep-dive/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/training-decks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/workshop-materials/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/guides/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/guides/accessibility/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/guides/best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/guides/brand-guidelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/guides/customization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/guides/export-settings/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/animations/charts/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/animations/objects/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/animations/text/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/animations/transitions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/backgrounds/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/charts/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/diagrams/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/icons/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/presentations/resources/layouts/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/accessibility-standards/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/asset-management/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/audio-production-workflow/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/brand-guidelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/collaboration-tools/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/distribution/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/equipment-requirements/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/graphics-production/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/localization-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/performance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/publishing-workflow/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/quality-assurance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/review-approval-process/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/software-tools/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/version-control/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/production-guide/video-production-workflow/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/requests/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/stock/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/templates/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/templates/documentation-template/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/templates/tutorial-template/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/templates/executive/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/templates/sales/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/templates/technical/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/templates/training/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/tools/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/tools/config-generator/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/tools/image-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/tools/accessibility/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/advanced-features/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/ci-cd-pipelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/data-factory-pipelines/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/delta-lake-essentials/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/disaster-recovery/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/event-hubs-streaming/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/iot-hub-integration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/monitoring-dashboards/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/performance-tuning/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/power-bi-reporting/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/security-best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/serverless-sql-mastery/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/spark-pools-deep-dive/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/stream-analytics-intro/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/synapse-fundamentals/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/guides/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/guides/accessibility/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/guides/equipment/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/guides/production-best-practices/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/guides/script-writing/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/guides/templates/review-checklist/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/guides/templates/script-template/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/guides/templates/shot-list/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/scripts/architecture/01-foundation/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/scripts/architecture/02-data-lake/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/scripts/architecture/03-serverless-sql/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/scripts/best-practices/performance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/scripts/implementation/01-workspace-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/scripts/troubleshooting/common-issues/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/storyboards/architecture/01-foundation/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/storyboards/architecture/02-data-lake/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/multimedia/video-tutorials/storyboards/architecture/03-serverless-sql/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/performance/benchmarks-guide/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/reference/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/reference/azure-regions/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/reference/glossary/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/kql-reference/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/reference/regional-compliance/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/reference/security-checklist/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/reference/security/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/reference/spark-configuration/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/cosmosdb/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/cosmosdb/global-distribution/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/security-checklist/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/storage/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/storage/custom-domains/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/storage/geo-replication/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/reference/synapse/custom-connectors/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/resources/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/resources/case-studies/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/resources/competitive-analysis/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/resources/executive-faq/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/resources/market-research/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/security/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/security/best-practices/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/security/compliance-guide/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/serverless-sql/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/shared-metadata/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/solutions/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/architecture/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/architecture/components/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/architecture/data-flow/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/architecture/network/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/architecture/security/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/azure-openai/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/batch-processing/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/data-quality/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/databricks-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/deployment/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/identity-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/kafka-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/mlflow/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/network-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/power-bi/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/security-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/storage-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/implementation/stream-processing/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/dashboards/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/disaster-recovery/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/incident-management/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/log-analysis/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/maintenance/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/monitoring/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/performance/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/security-monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/azure-realtime-analytics/operations/troubleshooting/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/change-feed-processor/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/data-governance/lineage/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/logic-apps-integration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/ml-pipeline/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/solutions/real-time-dashboards/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/stream-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/synapse/01-environment-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/authentication-troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/connectivity-troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/delta-lake-troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/guided-troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/performance-issues/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/pipeline-troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/security-troubleshooting/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/serverless-sql-troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/troubleshooting/spark-troubleshooting/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/interactive-data-pipeline/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/advanced/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/advanced/hadoop-migration-workshop/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/advanced/hdinsight-hbase/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/advanced/hdinsight-kafka-streaming/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/advanced/hdinsight-kafka/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/adls-gen2-quickstart/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/cosmosdb-quickstart/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/databricks-notebooks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/databricks-quickstart/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/delta-lake-basics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/eventhubs-quickstart/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/hdinsight-hadoop/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/hdinsight-quickstart/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/streaming-concepts/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/beginner/synapse-quickstart/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/certification-prep/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/certification-prep/data-engineer-path/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/certification-prep/dp-203-guide/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/certification-prep/platform-admin-path/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/advanced-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/bicep-deployment/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/cicd-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/compliance-lab/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/data-security-lab/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/delta-lake-deep-dive/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/ml-pipeline-lab/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/powershell-automation/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/pyspark-fundamentals/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/sql-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/code-labs/streaming-analytics/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/01-fundamentals/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/02-environment-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/03-integration-runtime/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/04-linked-services/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/05-multi-source-integration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/06-secure-connectivity/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/07-basic-activities/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/08-advanced-orchestration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/09-transformation-patterns/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/10-error-handling/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/11-mapping-data-flows/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/12-wrangling-data-flows/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/13-triggers/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/14-dependency-management/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/15-monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/16-optimization/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/17-cicd/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/data-factory/18-environment-mgmt/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/integration/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/integration/cross-region/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/integration/data-lakehouse/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/integration/hybrid/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/integration/ml-pipeline/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/integration/power-bi/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/intermediate/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/intermediate/hdinsight-spark/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/intermediate/ml-databricks/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/intermediate/spark-pool-tutorial/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/intermediate/spark-sql-tutorial/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/intermediate/sql-pool-tutorial/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/intermediate/stream-analytics-tutorial/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/data-analyst-path/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/data-engineer-path/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/platform-admin-path/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/architect/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/assessment/role-quiz/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/certification/data-engineer-path/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/certification/platform-admin-path/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/data-engineer/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/data-scientist/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/devops/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/learning-paths/transitions/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/01-environment-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/02-data-generators/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/03-job-creation/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/04-basic-queries/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/05-windowing-functions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/06-temporal-joins/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/07-anomaly-detection/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/08-power-bi-integration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/09-azure-functions/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/10-performance-tuning/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/stream-analytics/11-error-handling/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/01-environment-setup/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/02-workspace-basics/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/03-data-lake-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/04-batch-ingestion/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/05-streaming-ingestion/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/06-spark-pools/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/07-pyspark-processing/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/08-delta-lake/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/09-serverless-sql/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/10-dedicated-sql/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/11-power-bi-integration/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/12-security/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/13-monitoring/</loc>
+         <lastmod>2025-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://microsoft.github.io/csa-inabox-docs/tutorials/synapse/14-cicd-setup/</loc>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/versioning/INTEGRATION_TEST_RESULTS/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://microsoft.github.io/csa-inabox-docs/versioning/QUICK_START_GUIDE/</loc>
-         <lastmod>2025-12-09</lastmod>
+         <lastmod>2025-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

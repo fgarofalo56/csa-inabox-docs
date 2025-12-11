@@ -331,9 +331,9 @@ __Best For__: Business process automation, system integrations, event-driven wor
 | Use Case | Primary Service | Supporting Services | Architecture Pattern |
 |----------|----------------|-------------------|---------------------|
 | __Real-time Analytics__ | Stream Analytics | Event Hubs, Cosmos DB | [Lambda Architecture](../03-architecture-patterns/streaming-architectures/lambda-architecture.md) |
-| __Enterprise Data Warehouse__ | Synapse Dedicated SQL | Data Lake Gen2, Data Factory | [Modern Data Warehouse](../03-architecture-patterns/batch-architectures/hub-spoke-model.md) |
-| __Data Science & ML__ | Databricks | Data Lake Gen2, MLflow | [ML Pipeline Architecture](../03-architecture-patterns/reference-architectures/ml-pipeline.md) |
-| __IoT Analytics__ | Stream Analytics + Event Hubs | Data Lake Gen2, Cosmos DB | [IoT Analytics Architecture](../03-architecture-patterns/reference-architectures/iot-analytics.md) |
+| __Enterprise Data Warehouse__ | Synapse Dedicated SQL | Data Lake Gen2, Data Factory | [Batch Architectures](../03-architecture-patterns/batch-architectures/README.md) |
+| __Data Science & ML__ | Databricks | Data Lake Gen2, MLflow | [Architecture Patterns](../03-architecture-patterns/README.md) |
+| __IoT Analytics__ | Stream Analytics + Event Hubs | Data Lake Gen2, Cosmos DB | [Streaming Architectures](../03-architecture-patterns/streaming-architectures/README.md) |
 | __Data Lake Implementation__ | Data Lake Gen2 + Synapse | Data Factory, Purview | [Medallion Architecture](../03-architecture-patterns/batch-architectures/medallion-architecture.md) |
 
 ### By Data Volume & Complexity

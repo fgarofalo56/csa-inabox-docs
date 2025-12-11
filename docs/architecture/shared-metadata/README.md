@@ -8,7 +8,7 @@ Azure Synapse Analytics provides a powerful shared metadata architecture that en
 
 - [Shared Metadata Architecture Overview](./shared-metadata.md) - Comprehensive guide to the shared metadata architecture, including key components, security model, and best practices.
 - [Visual Guides and Diagrams](./shared-metadata-visuals.md) - Visual representations of serverless replicated databases, three-part naming concepts, and layered data architecture.
-- [Code Examples](./shared-metadata-examples.md) - Detailed code samples for implementing shared metadata patterns in Azure Synapse Analytics.
+- [Code Examples](./shared-metadata-examples.md) - Detailed code samples for implementing shared metadata patterns.
 
 ## Key Features
 
@@ -59,6 +59,6 @@ customer_df = spark.read.synapsesql("sales_gold.customer_summary")
 
 ## Related Resources
 
-- [Best Practices for Metadata Management](../../best-practices/data-governance.md#metadata-management)
+- [Best Practices for Metadata Management](../../best-practices/data-governance.md)
 - [Integration Guide](../../code-examples/integration-guide.md)
-- [Reference Documentation](../../reference/#metadata)
+- [Reference Documentation](../../reference/README.md)

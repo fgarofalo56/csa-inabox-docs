@@ -89,6 +89,6 @@ run = experiment.submit(estimator)
 
 ## Related Resources
 
-- [Integration Guide](../integration-guide.md) - Comprehensive integration guide
+- [Integration Guide](../../integration-guide.md) - Comprehensive integration guide
 - [Best Practices for Integration](../../best-practices/implementation-patterns.md) - Best practices
 - [Security Guidelines for Integration](../../best-practices/security.md) - Security considerations

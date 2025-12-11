@@ -200,7 +200,7 @@ __Architecture__: IoT Devices → Event Hubs → Stream Analytics → Alerts
 
 - __Primary__: Event Hubs for high-volume ingestion
 - __Supporting__: Stream Analytics for real-time analysis
-- __Pattern__: [IoT Analytics Pattern](../../03-architecture-patterns/reference-architectures/iot-analytics.md)
+- __Pattern__: [Streaming Architectures](../../03-architecture-patterns/streaming-architectures/README.md)
 
 #### 🔗 Event-driven Microservices
 
@@ -208,7 +208,7 @@ __Architecture__: Services → Event Grid → Functions/Logic Apps
 
 - __Primary__: Event Grid for service decoupling
 - __Supporting__: Azure Functions for event handling
-- __Pattern__: [Event Sourcing](../../03-architecture-patterns/streaming-architectures/event-sourcing.md)
+- __Pattern__: [Streaming Architectures](../../03-architecture-patterns/streaming-architectures/README.md)
 
 #### 📊 Stream Processing Pipeline
 
@@ -216,7 +216,7 @@ __Architecture__: Data Sources → Event Hubs → Stream Analytics → Storage
 
 - __Primary__: Stream Analytics for transformation
 - __Supporting__: Event Hubs for buffering
-- __Pattern__: [Kappa Architecture](../../03-architecture-patterns/streaming-architectures/kappa-architecture.md)
+- __Pattern__: [Streaming Architectures](../../03-architecture-patterns/streaming-architectures/README.md)
 
 ---
 
@@ -387,15 +387,15 @@ __[📖 Monitoring Guide →](../../09-monitoring/README.md)__
 
 ### With Analytics Services
 
-- __[Synapse Integration](../../04-implementation-guides/integration-scenarios/stream-analytics-synapse.md)__: Real-time to batch processing
-- __[Databricks Integration](../../04-implementation-guides/integration-scenarios/eventhubs-databricks.md)__: Stream processing with ML
-- __[Data Factory Integration](../../04-implementation-guides/integration-scenarios/event-driven-pipelines.md)__: Event-triggered data pipelines
+- __[Integration Scenarios](../../04-implementation-guides/integration-scenarios/README.md)__: Real-time to batch processing
+- __[Streaming Architectures](../../03-architecture-patterns/streaming-architectures/README.md)__: Stream processing patterns
+- __[Real-time Analytics](../../solutions/azure-realtime-analytics/README.md)__: Complete solutions
 
 ### With Storage Services
 
-- __[Data Lake Integration](../../04-implementation-guides/integration-scenarios/streaming-to-datalake.md)__: Stream to lake patterns
-- __[Cosmos DB Integration](../../04-implementation-guides/integration-scenarios/stream-analytics-cosmos.md)__: Real-time operational data
-- __[SQL Database Integration](../../04-implementation-guides/integration-scenarios/streaming-to-sql.md)__: Stream to relational patterns
+- __[Storage Services Guide](../storage-services/README.md)__: Integration with storage
+- __[Integration Scenarios](../../04-implementation-guides/integration-scenarios/README.md)__: Implementation guides
+- __[Best Practices](../../05-best-practices/README.md)__: Optimization guidance
 
 __[📖 All Integration Scenarios →](../../04-implementation-guides/integration-scenarios/README.md)__
 
@@ -405,21 +405,21 @@ __[📖 All Integration Scenarios →](../../04-implementation-guides/integratio
 
 ### 🎓 __Getting Started__
 
-- [__Streaming Concepts__](../../tutorials/beginner/streaming-concepts.md)
-- [__Event Hubs Quick Start__](../../tutorials/beginner/eventhubs-quickstart.md)
-- [__Stream Analytics Tutorial__](../../tutorials/intermediate/stream-analytics-tutorial.md)
+- [__Stream Analytics Tutorials__](../../tutorials/stream-analytics/README.md)
+- [__Synapse Tutorials__](../../tutorials/synapse/README.md)
+- [__Code Labs__](../../tutorials/code-labs/README.md)
 
 ### 📖 __Advanced Topics__
 
 - [__Streaming Architecture Patterns__](../../03-architecture-patterns/streaming-architectures/README.md)
-- [__Performance Optimization__](../../05-best-practices/cross-cutting-concerns/performance/streaming-optimization.md)
-- [__Disaster Recovery__](../../05-best-practices/operational-excellence/streaming-dr.md)
+- [__Best Practices__](../../05-best-practices/README.md)
+- [__Real-time Analytics Solutions__](../../solutions/azure-realtime-analytics/README.md)
 
 ### 🔧 __Code Examples__
 
-- [__Event Hubs Samples__](../../06-code-examples/by-service/event-hubs/README.md)
-- [__Stream Analytics Samples__](../../06-code-examples/by-service/stream-analytics/README.md)
-- [__Integration Examples__](../../06-code-examples/integration-examples/streaming-pipeline/README.md)
+- [__Code Examples Guide__](../../06-code-examples/README.md)
+- [__Integration Examples__](../../tutorials/integration/README.md)
+- [__Learning Paths__](../../tutorials/learning-paths/README.md)
 
 ---
 

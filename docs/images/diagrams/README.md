@@ -36,9 +36,12 @@ GitHub doesn't natively render Mermaid diagrams, so both the diagram code and st
 
 ```markdown
 <!-- Mermaid diagram for MkDocs rendering -->
-![Example diagram showing Mermaid integration pattern with MkDocs and GitHub fallback rendering](images-diagrams-README-diagram-1.png)
+\```mermaid
+graph TD
+    A[Start] --> B[Process]
+    B --> C[End]
+\```
 
 <!-- Static image fallback for GitHub -->
-![Example static image fallback for GitHub when Mermaid diagrams are not rendered](../images/diagrams/filename.png)
-
+![Diagram Example](filename.png)
 ```

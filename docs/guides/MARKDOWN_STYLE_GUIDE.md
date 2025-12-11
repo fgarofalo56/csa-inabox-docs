@@ -596,7 +596,7 @@ For HTML embedding when markdown isn't sufficient:
 ### __Image Captions__
 
 ```markdown
-![Architecture Diagram](../images/diagrams/architecture.png)
+![Architecture Diagram](../../images/diagrams/example.png)
 *Figure 1: System architecture showing component interactions*
 ```
 
@@ -611,8 +611,8 @@ For HTML embedding when markdown isn't sufficient:
 
 ### __Internal Links__
 
-- Use relative paths: `[API Guide](../api/guide.md)`
-- Link to specific sections: `[Configuration](../setup.md#configuration)`
+- Use relative paths for navigation between docs
+- Link to specific sections using anchors
 - Verify links with tools before committing
 - Use descriptive anchor text
 

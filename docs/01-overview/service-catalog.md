@@ -127,7 +127,7 @@ __Best For__:
 
 __Pricing__: Streaming Units (SU) hourly billing
 
-__Documentation__: [Stream Analytics Guide](../02-services/streaming-services/azure-stream-analytics/README.md)
+__Documentation__: [Streaming Services Guide](../02-services/streaming-services/README.md)
 
 ---
 
@@ -177,7 +177,7 @@ __Best For__:
 
 __Pricing__: Pay-per-operation model
 
-__Documentation__: [Event Grid Guide](../02-services/streaming-services/azure-event-grid/README.md)
+__Documentation__: [Streaming Services Guide](../02-services/streaming-services/README.md)
 
 ---
 
@@ -229,7 +229,7 @@ __Best For__:
 
 __Pricing__: Request Units (RU/s) or serverless
 
-__Documentation__: [Cosmos DB Guide](../02-services/storage-services/azure-cosmos-db/README.md)
+__Documentation__: [Storage Services Guide](../02-services/storage-services/README.md)
 
 ---
 
@@ -254,7 +254,7 @@ __Best For__:
 
 __Pricing__: vCore-based or DTU-based models
 
-__Documentation__: [Azure SQL Guide](../02-services/storage-services/azure-sql-database/README.md)
+__Documentation__: [Storage Services Guide](../02-services/storage-services/README.md)
 
 ---
 
@@ -306,7 +306,7 @@ __Best For__:
 
 __Pricing__: Pay-per-action execution
 
-__Documentation__: [Logic Apps Guide](../02-services/orchestration-services/azure-logic-apps/README.md)
+__Documentation__: [Orchestration Services Guide](../02-services/orchestration-services/README.md)
 
 ---
 
@@ -413,7 +413,7 @@ __Storage__: Data Lake Gen2, Cosmos DB
 
 ### 🚀 Quick Starts
 
-- [__Get Started Guide__](../01-overview/README.md#quick-links)
+- [__Get Started Guide__](README.md)
 - [__Architecture Patterns__](architecture-patterns.md)
 - [__Service Decision Tree__](choosing-services.md)
 
@@ -427,7 +427,7 @@ __Storage__: Data Lake Gen2, Cosmos DB
 
 - [__Code Examples__](../06-code-examples/README.md)
 - [__Tutorials__](../tutorials/README.md)
-- [__Reference Architectures__](../03-architecture-patterns/reference-architectures/README.md)
+- [__Architecture Patterns__](../03-architecture-patterns/README.md)
 
 ---
 

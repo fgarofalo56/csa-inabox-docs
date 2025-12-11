@@ -696,7 +696,7 @@ elseif ($avgDWUUsage -gt 80) {
 
 - [Performance Optimization Best Practices](../best-practices/performance.md)
 - [Monitoring and Logging Guide](../monitoring/logging-monitoring-guide.md)
-- [Troubleshooting Performance Issues](../troubleshooting/performance-issues.md)
+- [Troubleshooting Guide](../troubleshooting/README.md)
 - [Cost Optimization Strategies](../best-practices/cost-optimization.md)
 
 ## External Resources

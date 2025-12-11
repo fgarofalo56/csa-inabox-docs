@@ -307,7 +307,8 @@ FROM
 
 ## Learn More
 
-- [Query Optimization](../code-examples/serverless-sql-guide.md#query-optimization) - Best practices for query performance
-- [External Tables](../code-examples/serverless-sql-guide.md#external-tables) - Working with metadata objects
-- [Security Implementation](../code-examples/serverless-sql-guide.md#security) - Security best practices
-- [Performance Patterns](../code-examples/serverless-sql-guide.md#performance-patterns) - Common patterns for optimization
+- [Serverless SQL Guide](../code-examples/serverless-sql-guide.md) - Comprehensive guide to serverless SQL
+- Query Optimization - Best practices for query performance
+- External Tables - Working with metadata objects
+- Security Implementation - Security best practices
+- Performance Patterns - Common patterns for optimization

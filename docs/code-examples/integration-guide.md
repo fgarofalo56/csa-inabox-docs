@@ -571,6 +571,6 @@ monitor_client.activity_log_alerts.create_or_update(
 
 ## Related Topics
 
-- [Delta Lake with Azure ML](../delta-lake-guide.md#integrating-delta-lake-with-azure-ml)
-- [Serverless SQL Security](../serverless-sql-guide.md#security-and-access-control)
-- [Enterprise Integration Architecture](../../architecture/integration/README.md)
+- Delta Lake with Azure ML
+- [Serverless SQL Security](serverless-sql-guide.md)
+- Enterprise Integration Architecture

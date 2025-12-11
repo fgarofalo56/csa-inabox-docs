@@ -70,9 +70,9 @@ Need help? Ask in [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox
 
 | Contribution Type | Description | Skill Level | Issue Template |
 |------------------|-------------|-------------|----------------|
-| __Report Bugs__ 🐛 | Report issues and problems | Beginner | [Bug Report](../../.github/ISSUE_TEMPLATE/bug-report.md) |
-| __Suggest Features__ 💡 | Propose new features or improvements | Beginner | [Feature Request](../../.github/ISSUE_TEMPLATE/feature_request.md) |
-| __Request Docs__ 📋 | Request new or improved documentation | Beginner | [Documentation Request](../../.github/ISSUE_TEMPLATE/documentation-request.md) |
+| __Report Bugs__ 🐛 | Report issues and problems | Beginner | [Bug Report](https://github.com/your-org/csa-inabox-docs/issues/new?template=bug-report.md) |
+| __Suggest Features__ 💡 | Propose new features or improvements | Beginner | [Feature Request](https://github.com/your-org/csa-inabox-docs/issues/new?template=feature_request.md) |
+| __Request Docs__ 📋 | Request new or improved documentation | Beginner | [Documentation Request](https://github.com/your-org/csa-inabox-docs/issues/new?template=documentation-request.md) |
 | __Fix Typos__ ✏️ | Correct spelling and grammar | Beginner | Direct PR |
 | __Improve Docs__ 📚 | Enhance existing documentation | Intermediate | Direct PR |
 | __Add Examples__ 📝 | Create new examples and tutorials | Intermediate | Direct PR |
@@ -501,7 +501,7 @@ __Commit Messages:__
 
 ### Hall of Fame
 
-We celebrate our top contributors! Outstanding contributors are featured in our [Hall of Fame](../../README.md#-contributors) section.
+We celebrate our top contributors! Outstanding contributors are featured in our Hall of Fame section.
 
 __Recognition Categories:__
 
@@ -512,7 +512,7 @@ __Recognition Categories:__
 
 ### Attribution
 
-- Contributors are listed in [CONTRIBUTORS.md](../../CONTRIBUTORS.md)
+- Contributors are recognized in the project
 - Significant contributions mentioned in release notes
 - Annual contributor spotlight blog posts
 - Featured in README.md Contributors section

@@ -378,6 +378,6 @@ GO
 
 ## Related Topics
 
-- [Delta Lake with Serverless SQL](../delta-lake-guide.md#querying-delta-lake-with-serverless-sql)
-- [Integration with Azure ML](../integration/azure-ml.md)
-- [Serverless SQL Architecture](../../architecture/serverless-sql/README.md)
+- Delta Lake with Serverless SQL
+- [Integration with Azure ML](integration/azure-ml.md)
+- Serverless SQL Architecture

@@ -441,5 +441,5 @@ spark.sql(f"DESCRIBE HISTORY delta.`{delta_table_path}`").show(truncate=False)
 ## Related Topics
 
 - [Serverless SQL with Delta Lake](../serverless-sql/README.md)
-- [Integration with Azure ML](../integration/azure-ml.md)
+- [Integration with Azure ML](integration/azure-ml.md)
 - [Delta Lake Architecture Overview](../../architecture/delta-lakehouse/README.md)

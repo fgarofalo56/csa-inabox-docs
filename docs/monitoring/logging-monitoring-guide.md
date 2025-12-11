@@ -478,7 +478,7 @@ For environments with on-premises components:
 
 - [Troubleshooting with Logs](../troubleshooting/README.md)
 - [Performance Optimization](../best-practices/performance.md)
-- [Security Monitoring](../best-practices/security.md#monitoring)
+- [Security Monitoring](../best-practices/security.md)
 - [Cost Management](../best-practices/cost-optimization.md)
 
 ## External Resources

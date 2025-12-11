@@ -847,10 +847,10 @@ Use this checklist to ensure comprehensive security implementation:
 ## Related Topics
 
 - [Security Compliance Guide](compliance-guide.md)
-- [Network Security Configuration](../architecture/network-security.md)
-- [Data Protection Best Practices](../best-practices/data-protection.md)
+- Network Security Configuration
+- Data Protection Best Practices
 - [Monitoring and Logging Guide](../monitoring/logging-monitoring-guide.md)
-- [DevOps Security Best Practices](../devops/security-best-practices.md)
+- DevOps Security Best Practices
 
 ## External Resources
 

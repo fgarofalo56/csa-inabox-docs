@@ -311,7 +311,6 @@ def example():
 
 ## Links
 
-- [Internal link](../other-doc.md)
 - [External link](https://azure.microsoft.com)
 \```
 

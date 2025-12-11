@@ -461,4 +461,188 @@ df.write \
 ```python
 # Implement CDC pattern with Delta merge
 def upsert_data(source_df, target_path, key_columns):
-    target_table = DeltaTable.forPath(spark, target_path)\n    \n    target_table.alias(\"target\").merge(\n        source_df.alias(\"source\"),\n        \" AND \".join([f\"target.{col} = source.{col}\" for col in key_columns])\n    ).whenMatchedUpdateAll() \\\n     .whenNotMatchedInsertAll() \\\n     .execute()\n\n# Apply CDC updates\nupsert_data(new_orders_df, \"/silver/sales/orders\", [\"order_id\"])\n```\n\n### 3. Data Quality Validation\n```python\n# Implement data quality checks\ndef validate_data_quality(df, table_name):\n    quality_checks = {\n        \"row_count\": df.count(),\n        \"null_count\": df.select([count(when(col(c).isNull(), c)).alias(c) for c in df.columns]).collect()[0].asDict(),\n        \"duplicate_count\": df.count() - df.dropDuplicates().count()\n    }\n    \n    # Log quality metrics\n    print(f\"Data quality report for {table_name}: {quality_checks}\")\n    \n    # Raise alerts if quality thresholds are exceeded\n    if quality_checks[\"duplicate_count\"] > 1000:\n        raise ValueError(f\"High duplicate count in {table_name}\")\n    \n    return quality_checks\n\n# Validate before writing to Silver\nquality_report = validate_data_quality(silver_df, \"orders_cleaned\")\n```\n\n### 4. Lifecycle Management\n```sql\n-- Set retention policies for data lifecycle management\nALTER TABLE delta.`/bronze/sales_system/orders`\nSET TBLPROPERTIES (\n    'delta.logRetentionDuration' = 'interval 30 days',\n    'delta.deletedFileRetentionDuration' = 'interval 7 days'\n);\n\n-- Archive old partitions\nDELETE FROM delta.`/bronze/sales_system/orders`\nWHERE processing_date < current_date() - interval 90 days;\n\n-- Optimize and vacuum regularly\nOPTIMIZE delta.`/bronze/sales_system/orders`;\nVACUUM delta.`/bronze/sales_system/orders` RETAIN 7 HOURS;\n```\n\n---\n\n## 📊 Monitoring & Observability\n\n### Delta Table Health Monitoring\n```python\n# Monitor Delta table health metrics\ndef get_table_health(table_path):\n    dt = DeltaTable.forPath(spark, table_path)\n    history = dt.history()\n    \n    metrics = {\n        \"last_update\": history.select(\"timestamp\").first()[\"timestamp\"],\n        \"version_count\": history.count(),\n        \"file_count\": spark.read.format(\"delta\").load(table_path).rdd.getNumPartitions(),\n        \"total_size_bytes\": spark.sql(f\"DESCRIBE DETAIL delta.`{table_path}`\").select(\"sizeInBytes\").first()[\"sizeInBytes\"]\n    }\n    \n    return metrics\n\n# Monitor all critical tables\ncritical_tables = [\n    \"/gold/sales_marts/daily_sales_summary\",\n    \"/gold/customer_marts/customer_lifetime_value\"\n]\n\nfor table in critical_tables:\n    health = get_table_health(table)\n    print(f\"Table {table} health: {health}\")\n```\n\n### Performance Monitoring\n```sql\n-- Query Delta table statistics\nDESCRIBE HISTORY delta.`/gold/sales_marts/daily_sales_summary`;\n\n-- Analyze table performance\nDESCRIBE DETAIL delta.`/gold/sales_marts/daily_sales_summary`;\n\n-- Check optimization recommendations\nANALYZE TABLE delta.`/gold/sales_marts/daily_sales_summary` COMPUTE STATISTICS;\n```\n\n---\n\n## 🔗 Integration Patterns\n\n### Power BI Integration\n```python\n# Optimize Gold tables for Power BI consumption\ngold_df.write \\\n    .format(\"delta\") \\\n    .option(\"optimizeWrite\", \"true\") \\\n    .option(\"autoCompact\", \"true\") \\\n    .partitionBy(\"report_date\") \\\n    .save(\"/gold/powerbi/sales_dashboard\")\n\n# Create SQL view for Power BI\nspark.sql(\"\"\"\n    CREATE OR REPLACE VIEW powerbi.sales_summary AS\n    SELECT \n        report_date,\n        product_category,\n        SUM(total_sales) as total_sales,\n        AVG(avg_order_value) as avg_order_value\n    FROM delta.`/gold/powerbi/sales_dashboard`\n    WHERE report_date >= current_date() - interval 90 days\n    GROUP BY report_date, product_category\n\"\"\")\n```\n\n### Machine Learning Integration\n```python\n# Prepare feature tables for ML\nfrom pyspark.ml.feature import VectorAssembler, StandardScaler\n\n# Create ML-ready features from Gold layer\nfeatures_df = spark.read.format(\"delta\").load(\"/gold/ml_features/customer_features\")\n\n# Feature engineering pipeline\nassembler = VectorAssembler(\n    inputCols=[\"total_purchases\", \"avg_order_value\", \"days_since_last_purchase\"],\n    outputCol=\"features_raw\"\n)\n\nscaler = StandardScaler(\n    inputCol=\"features_raw\",\n    outputCol=\"features\",\n    withStd=True,\n    withMean=True\n)\n\n# Save processed features for ML training\nml_ready_df = scaler.fit(assembler.transform(features_df)).transform(assembler.transform(features_df))\n\nml_ready_df.write \\\n    .format(\"delta\") \\\n    .mode(\"overwrite\") \\\n    .save(\"/gold/ml_ready/customer_features_scaled\")\n```\n\n---\n\n## 📚 Next Steps\n\n### 🚀 **Implementation Guides**\n- [**Medallion Architecture Setup**](../../../../03-architecture-patterns/batch-architectures/medallion-architecture.md)\n- [**Delta Lake Performance Tuning**](../../../../05-best-practices/cross-cutting-concerns/performance/delta-lake-optimization.md)\n- [**Streaming Integration Patterns**](../../../../03-architecture-patterns/hybrid-architectures/lambda-kappa-hybrid.md)\n\n### 📖 **Advanced Topics**\n- [**Schema Evolution Strategies**](schema-evolution.md)\n- [**Multi-tenant Delta Architecture**](multi-tenant-patterns.md)\n- [**Cross-Region Replication**](cross-region-setup.md)\n\n### 🔧 **Operational Guides**\n- [**Monitoring & Alerting**](../../../../09-monitoring/service-monitoring/synapse/delta-monitoring.md)\n- [**Backup & Recovery**](../../../../05-best-practices/operational-excellence/disaster-recovery.md)\n- [**Cost Optimization**](../../../../05-best-practices/cross-cutting-concerns/cost-optimization/delta-cost-optimization.md)\n\n---\n\n*Last Updated: 2025-01-28*  \n*Architecture Pattern: Medallion*  \n*Implementation Status: Production Ready*"
+    target_table = DeltaTable.forPath(spark, target_path)
+
+    target_table.alias("target").merge(
+        source_df.alias("source"),
+        " AND ".join([f"target.{col} = source.{col}" for col in key_columns])
+    ).whenMatchedUpdateAll() \
+     .whenNotMatchedInsertAll() \
+     .execute()
+
+# Apply CDC updates
+upsert_data(new_orders_df, "/silver/sales/orders", ["order_id"])
+```
+
+### 3. Data Quality Validation
+
+```python
+# Implement data quality checks
+def validate_data_quality(df, table_name):
+    quality_checks = {
+        "row_count": df.count(),
+        "null_count": df.select([count(when(col(c).isNull(), c)).alias(c) for c in df.columns]).collect()[0].asDict(),
+        "duplicate_count": df.count() - df.dropDuplicates().count()
+    }
+
+    # Log quality metrics
+    print(f"Data quality report for {table_name}: {quality_checks}")
+
+    # Raise alerts if quality thresholds are exceeded
+    if quality_checks["duplicate_count"] > 1000:
+        raise ValueError(f"High duplicate count in {table_name}")
+
+    return quality_checks
+
+# Validate before writing to Silver
+quality_report = validate_data_quality(silver_df, "orders_cleaned")
+```
+
+### 4. Lifecycle Management
+
+```sql
+-- Set retention policies for data lifecycle management
+ALTER TABLE delta.`/bronze/sales_system/orders`
+SET TBLPROPERTIES (
+    'delta.logRetentionDuration' = 'interval 30 days',
+    'delta.deletedFileRetentionDuration' = 'interval 7 days'
+);
+
+-- Archive old partitions
+DELETE FROM delta.`/bronze/sales_system/orders`
+WHERE processing_date < current_date() - interval 90 days;
+
+-- Optimize and vacuum regularly
+OPTIMIZE delta.`/bronze/sales_system/orders`;
+VACUUM delta.`/bronze/sales_system/orders` RETAIN 7 HOURS;
+```
+
+---
+
+## 📊 Monitoring & Observability
+
+### Delta Table Health Monitoring
+
+```python
+# Monitor Delta table health metrics
+def get_table_health(table_path):
+    dt = DeltaTable.forPath(spark, table_path)
+    history = dt.history()
+
+    metrics = {
+        "last_update": history.select("timestamp").first()["timestamp"],
+        "version_count": history.count(),
+        "file_count": spark.read.format("delta").load(table_path).rdd.getNumPartitions(),
+        "total_size_bytes": spark.sql(f"DESCRIBE DETAIL delta.`{table_path}`").select("sizeInBytes").first()["sizeInBytes"]
+    }
+
+    return metrics
+
+# Monitor all critical tables
+critical_tables = [
+    "/gold/sales_marts/daily_sales_summary",
+    "/gold/customer_marts/customer_lifetime_value"
+]
+
+for table in critical_tables:
+    health = get_table_health(table)
+    print(f"Table {table} health: {health}")
+```
+
+### Performance Monitoring
+
+```sql
+-- Query Delta table statistics
+DESCRIBE HISTORY delta.`/gold/sales_marts/daily_sales_summary`;
+
+-- Analyze table performance
+DESCRIBE DETAIL delta.`/gold/sales_marts/daily_sales_summary`;
+
+-- Check optimization recommendations
+ANALYZE TABLE delta.`/gold/sales_marts/daily_sales_summary` COMPUTE STATISTICS;
+```
+
+---
+
+## 🔗 Integration Patterns
+
+### Power BI Integration
+
+```python
+# Optimize Gold tables for Power BI consumption
+gold_df.write \
+    .format("delta") \
+    .option("optimizeWrite", "true") \
+    .option("autoCompact", "true") \
+    .partitionBy("report_date") \
+    .save("/gold/powerbi/sales_dashboard")
+
+# Create SQL view for Power BI
+spark.sql("""
+    CREATE OR REPLACE VIEW powerbi.sales_summary AS
+    SELECT
+        report_date,
+        product_category,
+        SUM(total_sales) as total_sales,
+        AVG(avg_order_value) as avg_order_value
+    FROM delta.`/gold/powerbi/sales_dashboard`
+    WHERE report_date >= current_date() - interval 90 days
+    GROUP BY report_date, product_category
+""")
+```
+
+### Machine Learning Integration
+
+```python
+# Prepare feature tables for ML
+from pyspark.ml.feature import VectorAssembler, StandardScaler
+
+# Create ML-ready features from Gold layer
+features_df = spark.read.format("delta").load("/gold/ml_features/customer_features")
+
+# Feature engineering pipeline
+assembler = VectorAssembler(
+    inputCols=["total_purchases", "avg_order_value", "days_since_last_purchase"],
+    outputCol="features_raw"
+)
+
+scaler = StandardScaler(
+    inputCol="features_raw",
+    outputCol="features",
+    withStd=True,
+    withMean=True
+)
+
+# Save processed features for ML training
+ml_ready_df = scaler.fit(assembler.transform(features_df)).transform(assembler.transform(features_df))
+
+ml_ready_df.write \
+    .format("delta") \
+    .mode("overwrite") \
+    .save("/gold/ml_ready/customer_features_scaled")
+```
+
+---
+
+## 📚 Next Steps
+
+### 🚀 Implementation Guides
+- **Medallion Architecture Setup** - See [Batch Architectures](../../../../../03-architecture-patterns/batch-architectures/README.md)
+- **Delta Lake Performance Tuning** - See [Best Practices](../../../../../05-best-practices/README.md)
+- **Streaming Integration Patterns** - See [Hybrid Architectures](../../../../../03-architecture-patterns/hybrid-architectures/README.md)
+
+### 📖 Advanced Topics
+- [Schema Evolution Strategies](schema-evolution.md)
+- [Multi-tenant Delta Architecture](multi-tenant-patterns.md)
+- [Cross-Region Replication](cross-region-setup.md)
+
+### 🔧 Operational Guides
+- **Monitoring & Alerting** - See [Monitoring Guide](../../../../../09-monitoring/README.md)
+- **Backup & Recovery** - See [Best Practices](../../../../../05-best-practices/README.md)
+- **Cost Optimization** - See [Best Practices](../../../../../05-best-practices/README.md)
+
+---
+
+*Last Updated: 2025-01-28*
+*Architecture Pattern: Medallion*
+*Implementation Status: Production Ready*"

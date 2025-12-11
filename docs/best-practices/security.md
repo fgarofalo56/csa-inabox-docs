@@ -917,7 +917,7 @@ function Test-SynapseSecurityPosture {
 |---------------|-------------|------|
 | 📚 __Official Documentation__ | Microsoft's comprehensive security guidance | [![Security Docs](https://img.shields.io/badge/Microsoft-Security_Docs-blue)](https://learn.microsoft.com/en-us/azure/synapse-analytics/security/overview) |
 | 📋 __Security Checklist__ | Detailed security implementation checklist | [Security Checklist](../reference/security-checklist.md) |
-| 🔧 __Troubleshooting__ | Security issue resolution procedures | [Security Troubleshooting](../troubleshooting/security-troubleshooting.md) |
+| 🔧 __Troubleshooting__ | Security issue resolution procedures | [Troubleshooting Guide](../troubleshooting/README.md) |
 
 ---
 
@@ -925,4 +925,4 @@ function Test-SynapseSecurityPosture {
 > Security is not a one-time implementation but an ongoing process of continuous improvement. Regular reviews, updates, and adaptations to emerging threats ensure your Azure Synapse Analytics environment remains secure and compliant.
 >
 > 🚀 __Next Steps__
-> Ready to implement these security controls? Start with our [security implementation checklist](../reference/security-checklist.md) and [security troubleshooting guide](../troubleshooting/security-troubleshooting.md).
+> Ready to implement these security controls? Start with our [security implementation checklist](../reference/security-checklist.md) and [troubleshooting guide](../troubleshooting/README.md).

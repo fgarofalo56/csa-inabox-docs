@@ -6,8 +6,8 @@ Serverless SQL architecture in Azure Synapse Analytics allows you to query data 
 
 ## Documentation
 
-- [Serverless SQL Overview](./serverless-overview.md) - Introduction to Serverless SQL capabilities
-- [Detailed Architecture](./detailed-architecture.md) - Comprehensive technical architecture of Serverless SQL implementation
+- Serverless SQL Overview - Introduction to Serverless SQL capabilities
+- Detailed Architecture - Comprehensive technical architecture of Serverless SQL implementation
 
 ## Key Features
 
@@ -50,7 +50,7 @@ For best performance with Serverless SQL:
 
 ## Related Resources
 
-- [Best Practices for Serverless SQL](../../best-practices/#serverless-sql)
+- [Best Practices for Serverless SQL](../../best-practices/README.md)
 - [Serverless SQL Guide](../../code-examples/serverless-sql-guide.md)
 - [Performance Optimization](../../best-practices/performance.md)
 - [Cost Management](../../best-practices/cost-optimization.md)

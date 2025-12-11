@@ -264,14 +264,14 @@ Design scalable, secure, and cost-effective analytics solutions.
 __Foundation:__
 
 1. ✅ Architecture fundamentals
-   - [Architecture Overview](../architecture/README.md)
-   - [Decision Framework](../architecture/README.md#architecture-decision-framework)
+   - Architecture Overview
+   - Decision Framework
    - Design principles
 
 2. ✅ Reference architectures
-   - [Delta Lakehouse](../architecture/delta-lakehouse/README.md)
-   - [Serverless SQL](../architecture/serverless-sql/README.md)
-   - [Shared Metadata](../architecture/shared-metadata/README.md)
+   - Delta Lakehouse patterns
+   - Serverless SQL architectures
+   - Shared Metadata approaches
 
 __Week 2-4: Core Patterns__
 

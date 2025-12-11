@@ -96,6 +96,36 @@ nav:
       - Serverless SQL Best Practices: best-practices/serverless-sql-best-practices.md
       - Spark Performance: best-practices/spark-performance.md
       - SQL Performance: best-practices/sql-performance.md
+      - Service-Specific:
+          - Databricks:
+              - Overview: 05-best-practices/service-specific/databricks/README.md
+              - Delta Lake: 05-best-practices/service-specific/databricks/delta-lake.md
+              - MLOps: 05-best-practices/service-specific/databricks/mlops.md
+          - HDInsight:
+              - Overview: 05-best-practices/service-specific/hdinsight/README.md
+          - Storage:
+              - Overview: 05-best-practices/service-specific/storage/README.md
+          - Synapse:
+              - Spark Best Practices: 05-best-practices/service-specific/synapse/spark-best-practices.md
+              - Spark Performance: 05-best-practices/service-specific/synapse/spark-performance.md
+              - Dedicated SQL: 05-best-practices/service-specific/synapse/dedicated-sql-best-practices.md
+              - Data Explorer: 05-best-practices/service-specific/synapse/data-explorer-best-practices.md
+      - Cross-Cutting Concerns:
+          - Overview: 05-best-practices/cross-cutting-concerns/README.md
+          - Data Governance: 05-best-practices/cross-cutting-concerns/data-governance/retention-policies.md
+          - Development: 05-best-practices/cross-cutting-concerns/development/stream-analytics-queries.md
+          - Event Handling: 05-best-practices/cross-cutting-concerns/event-handling/event-grid-patterns.md
+          - Governance: 05-best-practices/cross-cutting-concerns/governance/metadata-governance.md
+          - Networking: 05-best-practices/cross-cutting-concerns/networking/databricks-networking.md
+          - Storage: 05-best-practices/cross-cutting-concerns/storage/capture-optimization.md
+      - Operational Excellence:
+          - Overview: 05-best-practices/operational-excellence/README.md
+          - Alert Strategies: 05-best-practices/operational-excellence/alert-strategies.md
+          - Edge Offline Handling: 05-best-practices/operational-excellence/edge-offline-handling.md
+          - Event Grid Reliability: 05-best-practices/operational-excellence/eventgrid-reliability.md
+          - Event Hubs DR: 05-best-practices/operational-excellence/eventhub-dr.md
+          - Monitoring: 05-best-practices/operational-excellence/monitoring.md
+          - Reliability: 05-best-practices/operational-excellence/reliability.md
   - Security:
       - Overview: security/README.md
       - Best Practices: security/best-practices.md
@@ -161,6 +191,13 @@ nav:
           - Security Monitoring: monitoring/security-monitoring.md
           - Spark Monitoring: monitoring/spark-monitoring.md
           - SQL Monitoring: monitoring/sql-monitoring.md
+          - Service Monitoring:
+              - Databricks:
+                  - Overview: 09-monitoring/service-monitoring/databricks/README.md
+                  - DLT Monitoring: 09-monitoring/service-monitoring/databricks/dlt-monitoring.md
+              - HDInsight: 09-monitoring/service-monitoring/hdinsight/README.md
+              - Storage: 09-monitoring/service-monitoring/storage/README.md
+              - Synapse Dedicated: 09-monitoring/service-monitoring/synapse/dedicated-monitoring.md
       - DevOps:
           - Automated Testing: devops/automated-testing.md
           - Pipeline CI/CD: devops/pipeline-ci-cd.md
@@ -170,6 +207,25 @@ nav:
           - Data Governance Diagrams: diagrams/data-governance-diagrams.md
           - Process Flowcharts: diagrams/process-flowcharts.md
           - Security Diagrams: diagrams/security-diagrams.md
+  - Multimedia:
+      - Overview: multimedia/README.md
+      - Interactive Demos: multimedia/interactive-demos/README.md
+      - Video Tutorials:
+          - Overview: multimedia/video-tutorials/README.md
+          - Synapse Fundamentals: multimedia/video-tutorials/synapse-fundamentals.md
+          - Advanced Features: multimedia/video-tutorials/advanced-features.md
+          - CI/CD Pipelines: multimedia/video-tutorials/ci-cd-pipelines.md
+          - Disaster Recovery: multimedia/video-tutorials/disaster-recovery.md
+          - Monitoring Dashboards: multimedia/video-tutorials/monitoring-dashboards.md
+          - Performance Tuning: multimedia/video-tutorials/performance-tuning.md
+          - Power BI Reporting: multimedia/video-tutorials/power-bi-reporting.md
+      - Animations: multimedia/animations/README.md
+      - Audio Content: multimedia/audio-content/README.md
+      - Presentations: multimedia/presentations/README.md
+      - Templates: multimedia/templates/README.md
+      - Production Guide: multimedia/production-guide/README.md
+      - Tools: multimedia/tools/README.md
+      - Contributing: multimedia/CONTRIBUTING.md
   - Legacy Documentation:
       - Architecture (Legacy): architecture/README.md
       - Serverless SQL (Legacy): serverless-sql/README.md

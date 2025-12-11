@@ -97,7 +97,8 @@ category: "Code Examples"
 | 4️⃣ | __Test & Validate__ | Ensure all examples are tested and validated |
 | 5️⃣ | __Update Index__ | Update index files to include links to your new example |
 
-> 📝 __Contribution Process__  
+> 📝 __Contribution Process__
+> Follow our standard contribution guidelines to add new code examples.
 > If you'd like to contribute code examples to this collection, please see our [contribution guidelines](../../README.md#-contributing).
 
 ---

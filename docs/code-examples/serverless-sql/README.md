@@ -85,7 +85,7 @@ ORDER BY RegionalSales DESC;
 
 ## Related Resources
 
-- [Serverless SQL Guide](../serverless-sql-guide.md) - Comprehensive guide to Serverless SQL
+- [Serverless SQL Guide](../../serverless-sql-guide.md) - Comprehensive guide to Serverless SQL
 - [Serverless SQL Architecture](../../architecture/serverless-sql/README.md) - Reference architecture
 - [Performance Best Practices](../../best-practices/performance.md) - Performance optimization tips
 - [Azure Synapse Analytics Documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/)
