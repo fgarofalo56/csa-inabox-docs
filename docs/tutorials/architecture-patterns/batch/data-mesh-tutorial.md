@@ -1,0 +1,17 @@
+# 🕸️ Data Mesh - Complete Tutorial
+
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🕸️ Data Mesh**
+
+![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
+![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
+![Duration](https://img.shields.io/badge/Duration-4--5_hours-blue?style=flat-square)
+
+> **📝 Note**: This tutorial is in development. Use [Medallion Architecture](medallion-architecture-tutorial.md) as a complete reference.
+
+## 🎯 Overview
+
+Domain-oriented decentralized data architecture with Azure Synapse, Data Factory, and Purview.
+
+---
+
+**Status**: Planned • **Last Updated**: 2025-12-12
