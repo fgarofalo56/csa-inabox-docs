@@ -90,8 +90,8 @@ Continue your learning journey:
 ## 🔗 Related Resources
 
 - [Azure Documentation](https://learn.microsoft.com/en-us/azure/)
-- [Best Practices](../../05-best-practices/README.md)
-- [Troubleshooting Guide](../../07-troubleshooting/README.md)
+- [Best Practices](../../../05-best-practices/README.md)
+- [Troubleshooting Guide](../../../07-troubleshooting/README.md)
 
 ---
 

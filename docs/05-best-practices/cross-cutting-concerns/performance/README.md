@@ -67,7 +67,7 @@ Additional resources and references:
 
 - [Azure Documentation](https://learn.microsoft.com/en-us/azure/)
 - [Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
-- [Best Practices](../../05-best-practices/README.md)
+- [Best Practices](../../../05-best-practices/README.md)
 
 ---
 
