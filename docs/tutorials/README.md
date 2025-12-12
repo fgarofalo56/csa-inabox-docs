@@ -8,6 +8,29 @@
 
 **Comprehensive hands-on learning resources for Azure Cloud Scale Analytics services. From beginner concepts to advanced integration patterns, build real-world expertise through practical exercises and interactive tutorials.**
 
+---
+
+## 🆕 NEW: Complete Architecture Pattern Tutorials
+
+### **Production-Ready Walkthrough Tutorials**
+
+**[🏗️ Architecture Pattern Tutorials](architecture-patterns/README.md)** - Complete implementations with deployment scripts, notebooks, and sample data!
+
+**Featured Complete Tutorials**:
+- **[🏛️ Medallion Architecture](architecture-patterns/batch/medallion-architecture-tutorial.md)** - Full lakehouse with Bronze/Silver/Gold layers
+- **[🌊 Lambda Architecture](architecture-patterns/streaming/lambda-architecture-tutorial.md)** - Batch + streaming combined
+- **[🔄 Kappa Architecture](architecture-patterns/streaming/kappa-architecture-tutorial.md)** - Stream-first processing
+
+Each tutorial includes:
+- ✅ **Complete Azure Bicep IaC** templates
+- ✅ **Interactive Jupyter notebooks**
+- ✅ **Sample data generators**
+- ✅ **Step-by-step deployment** (2-5 hours)
+- ✅ **Security & monitoring** setup
+- ✅ **Beginner-friendly** instructions
+
+---
+
 ## 🎯 Learning Objectives
 
 After completing these tutorials, you will be able to:

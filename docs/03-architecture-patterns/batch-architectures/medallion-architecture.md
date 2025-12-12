@@ -54,12 +54,26 @@ Recommended best practices:
 
 ## 📝 Examples
 
-Practical examples and code samples:
+### 🎓 Complete Tutorial
 
-- Quick start examples
-- Common use cases
-- Integration patterns
-- Advanced scenarios
+Want to build this architecture hands-on? Follow our comprehensive tutorial:
+
+**[🏛️ Medallion Architecture - Complete Walkthrough Tutorial](../../tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md)**
+
+This tutorial includes:
+- ✅ **Step-by-step deployment guide** (2-3 hours)
+- ✅ **Azure Bicep templates** for infrastructure as code
+- ✅ **Interactive Jupyter notebooks** with examples
+- ✅ **Sample data** for testing and validation
+- ✅ **Monitoring and security** configuration
+- ✅ **Cost optimization** guidance
+
+### Practical Examples
+
+- Quick start examples for Bronze, Silver, Gold layers
+- Common use cases and data quality patterns
+- Integration patterns with other Azure services
+- Advanced scenarios for enterprise scale
 
 ## 🔗 Related Resources
 

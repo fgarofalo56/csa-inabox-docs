@@ -136,6 +136,8 @@ graph TB
 
 **Services**: Synapse Spark + Data Lake Gen2 + Delta Lake
 
+**🎓 [Complete Tutorial Available](../tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md)** - Hands-on walkthrough with IaC, notebooks, and sample data
+
 ---
 
 ### 🕸️ [Data Mesh](batch-architectures/data-mesh.md)
