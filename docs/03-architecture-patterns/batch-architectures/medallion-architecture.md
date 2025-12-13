@@ -54,12 +54,27 @@ Recommended best practices:
 
 ## 📝 Examples
 
-Practical examples and code samples:
+### 🎓 Complete Tutorial
 
-- Quick start examples
-- Common use cases
-- Integration patterns
-- Advanced scenarios
+Want to build this architecture hands-on? Follow our comprehensive tutorial:
+
+__[🏛️ Medallion Architecture - Complete Walkthrough Tutorial](../../tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md)__
+
+This tutorial includes:
+
+- ✅ __Step-by-step deployment guide__ (2-3 hours)
+- ✅ __Azure Bicep templates__ for infrastructure as code
+- ✅ __Interactive Jupyter notebooks__ with examples
+- ✅ __Sample data__ for testing and validation
+- ✅ __Monitoring and security__ configuration
+- ✅ __Cost optimization__ guidance
+
+### Practical Examples
+
+- Quick start examples for Bronze, Silver, Gold layers
+- Common use cases and data quality patterns
+- Integration patterns with other Azure services
+- Advanced scenarios for enterprise scale
 
 ## 🔗 Related Resources
 
@@ -71,6 +86,6 @@ Additional resources and references:
 
 ---
 
-**Last Updated:** 2025-12-12  
-**Status:** Active Development  
-**Maintainer:** Azure Cloud Scale Analytics Team
+__Last Updated:__ 2025-12-12  
+__Status:__ Active Development  
+__Maintainer:__ Azure Cloud Scale Analytics Team

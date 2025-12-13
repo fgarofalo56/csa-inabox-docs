@@ -41,4 +41,4 @@ Review the specific pattern documentation for implementation details.
 
 ---
 
-**Last Updated:** 2025-12-12
+__Last Updated:__ 2025-12-12

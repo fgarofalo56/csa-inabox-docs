@@ -84,3 +84,11 @@ bld/
 *.temp
 
 /net-commander
+
+# Tutorial deployment files - DO NOT COMMIT SENSITIVE DATA
+**/infrastructure/tutorials/**/.deployment-config.env
+**/infrastructure/tutorials/**/.sql_password.txt
+**/infrastructure/tutorials/**/deployment-output.json
+**/infrastructure/tutorials/**/*.tfstate
+**/infrastructure/tutorials/**/*.tfstate.backup
+

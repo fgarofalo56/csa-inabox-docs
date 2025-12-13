@@ -1,6 +1,6 @@
 # 🏗️ Cloud Scale Analytics Architecture Patterns
 
-> **🏠 [Home](../../README.md)** | **📖 [Overview](../01-overview/README.md)** | **🏗️ Architecture Patterns**
+> __🏠 [Home](../../README.md)__ | __📖 [Overview](../01-overview/README.md)__ | __🏗️ Architecture Patterns__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Patterns](https://img.shields.io/badge/Patterns-20+-blue?style=flat-square)
@@ -52,224 +52,250 @@ graph TB
 ## 🔄 Streaming Architecture Patterns
 
 ### ⚡ [Lambda Architecture](streaming-architectures/lambda-architecture.md)
+
 ![Real-time](https://img.shields.io/badge/Type-Real%20time-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 
-**Handles both batch and stream processing for comprehensive analytics.**
+__Handles both batch and stream processing for comprehensive analytics.__
 
-**Key Components**:
-- **Batch Layer**: Historical data processing with high accuracy
-- **Speed Layer**: Real-time stream processing for low latency
-- **Serving Layer**: Unified query interface for both layers
+__Key Components__:
 
-**Best For**: IoT analytics, real-time dashboards, fraud detection
+- __Batch Layer__: Historical data processing with high accuracy
+- __Speed Layer__: Real-time stream processing for low latency
+- __Serving Layer__: Unified query interface for both layers
 
-**Services**: Stream Analytics + Synapse + Event Hubs + Data Lake
+__Best For__: IoT analytics, real-time dashboards, fraud detection
+
+__Services__: Stream Analytics + Synapse + Event Hubs + Data Lake
 
 ---
 
 ### 🌊 [Kappa Architecture](streaming-architectures/kappa-architecture.md)
+
 ![Stream-First](https://img.shields.io/badge/Type-Stream%20First-green?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 
-**Stream-first architecture that processes all data as infinite streams.**
+__Stream-first architecture that processes all data as infinite streams.__
 
-**Key Components**:
-- **Stream Processing Layer**: Single processing paradigm
-- **Storage Layer**: Immutable event log
-- **Serving Layer**: Stream-derived views
+__Key Components__:
 
-**Best For**: Event-driven systems, continuous processing, time-series analytics
+- __Stream Processing Layer__: Single processing paradigm
+- __Storage Layer__: Immutable event log
+- __Serving Layer__: Stream-derived views
 
-**Services**: Event Hubs + Stream Analytics + Cosmos DB
+__Best For__: Event-driven systems, continuous processing, time-series analytics
+
+__Services__: Event Hubs + Stream Analytics + Cosmos DB
 
 ---
 
 ### 📊 [Event Sourcing](streaming-architectures/event-sourcing.md)
+
 ![Event-Driven](https://img.shields.io/badge/Type-Event%20Driven-lightblue?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 
-**Store all changes as immutable events for complete audit trails.**
+__Store all changes as immutable events for complete audit trails.__
 
-**Key Components**:
-- **Event Store**: Immutable event log
-- **Event Processors**: State reconstruction from events
-- **Read Models**: Materialized views for queries
+__Key Components__:
 
-**Best For**: Financial systems, audit requirements, temporal data analysis
+- __Event Store__: Immutable event log
+- __Event Processors__: State reconstruction from events
+- __Read Models__: Materialized views for queries
 
-**Services**: Event Hubs + Cosmos DB + Azure Functions
+__Best For__: Financial systems, audit requirements, temporal data analysis
+
+__Services__: Event Hubs + Cosmos DB + Azure Functions
 
 ---
 
 ### 🔀 [CQRS Pattern](streaming-architectures/cqrs-pattern.md)
+
 ![Command-Query](https://img.shields.io/badge/Type-Command%20Query-purple?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 
-**Separate read and write models for optimized performance.**
+__Separate read and write models for optimized performance.__
 
-**Key Components**:
-- **Command Side**: Write operations optimization
-- **Query Side**: Read operations optimization  
-- **Event Bus**: Communication between sides
+__Key Components__:
 
-**Best For**: High-performance applications, complex business logic, scalable reads
+- __Command Side__: Write operations optimization
+- __Query Side__: Read operations optimization  
+- __Event Bus__: Communication between sides
 
-**Services**: Cosmos DB + Synapse + Event Grid
+__Best For__: High-performance applications, complex business logic, scalable reads
+
+__Services__: Cosmos DB + Synapse + Event Grid
 
 ---
 
 ## 📊 Batch Architecture Patterns
 
 ### 🏛️ [Medallion Architecture](batch-architectures/medallion-architecture.md)
+
 ![Data Quality](https://img.shields.io/badge/Focus-Data%20Quality-gold?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 
-**Multi-layered approach to data refinement from raw to business-ready.**
+__Multi-layered approach to data refinement from raw to business-ready.__
 
-**Key Layers**:
-- **Bronze Layer**: Raw data ingestion
-- **Silver Layer**: Cleaned and conformed data
-- **Gold Layer**: Business-ready aggregates
+__Key Layers__:
 
-**Best For**: Data lakes, data quality focus, gradual data refinement
+- __Bronze Layer__: Raw data ingestion
+- __Silver Layer__: Cleaned and conformed data
+- __Gold Layer__: Business-ready aggregates
 
-**Services**: Synapse Spark + Data Lake Gen2 + Delta Lake
+__Best For__: Data lakes, data quality focus, gradual data refinement
+
+__Services__: Synapse Spark + Data Lake Gen2 + Delta Lake
+
+__🎓 [Complete Tutorial Available](../tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md)__ - Hands-on walkthrough with IaC, notebooks, and sample data
 
 ---
 
 ### 🕸️ [Data Mesh](batch-architectures/data-mesh.md)
+
 ![Decentralized](https://img.shields.io/badge/Approach-Decentralized-darkblue?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 
-**Domain-oriented decentralized data ownership and architecture.**
+__Domain-oriented decentralized data ownership and architecture.__
 
-**Key Principles**:
-- **Domain Ownership**: Business domains own their data
-- **Data as a Product**: Product thinking for data assets
-- **Self-serve Platform**: Shared infrastructure and tools
-- **Federated Governance**: Distributed governance model
+__Key Principles__:
 
-**Best For**: Large enterprises, multiple business units, data democratization
+- __Domain Ownership__: Business domains own their data
+- __Data as a Product__: Product thinking for data assets
+- __Self-serve Platform__: Shared infrastructure and tools
+- __Federated Governance__: Distributed governance model
 
-**Services**: Synapse + Data Factory + Purview + Power Platform
+__Best For__: Large enterprises, multiple business units, data democratization
+
+__Services__: Synapse + Data Factory + Purview + Power Platform
 
 ---
 
 ### 🌟 [Hub and Spoke Model](batch-architectures/hub-spoke-model.md)
+
 ![Centralized](https://img.shields.io/badge/Approach-Centralized-darkgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 
-**Centralized data warehouse with departmental data marts.**
+__Centralized data warehouse with departmental data marts.__
 
-**Key Components**:
-- **Central Hub**: Enterprise data warehouse
-- **Spokes**: Departmental data marts
-- **Integration Layer**: ETL/ELT processes
+__Key Components__:
 
-**Best For**: Traditional enterprises, centralized governance, established BI teams
+- __Central Hub__: Enterprise data warehouse
+- __Spokes__: Departmental data marts
+- __Integration Layer__: ETL/ELT processes
 
-**Services**: Synapse Dedicated SQL + Data Factory + Analysis Services
+__Best For__: Traditional enterprises, centralized governance, established BI teams
+
+__Services__: Synapse Dedicated SQL + Data Factory + Analysis Services
 
 ---
 
 ## 🔄 Hybrid Architecture Patterns
 
 ### ⚡🌊 [Lambda-Kappa Hybrid](hybrid-architectures/lambda-kappa-hybrid.md)
+
 ![Flexible](https://img.shields.io/badge/Approach-Flexible-orange?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 
-**Combines strengths of both Lambda and Kappa architectures.**
+__Combines strengths of both Lambda and Kappa architectures.__
 
-**Key Features**:
-- **Flexible Processing**: Choose batch or stream based on use case
-- **Unified Storage**: Common data lake foundation
-- **Multiple Compute Engines**: Optimized for different workloads
+__Key Features__:
 
-**Best For**: Mixed workload requirements, phased modernization
+- __Flexible Processing__: Choose batch or stream based on use case
+- __Unified Storage__: Common data lake foundation
+- __Multiple Compute Engines__: Optimized for different workloads
 
-**Services**: Synapse (all engines) + Event Hubs + Data Lake Gen2
+__Best For__: Mixed workload requirements, phased modernization
+
+__Services__: Synapse (all engines) + Event Hubs + Data Lake Gen2
 
 ---
 
 ### 🗄️ [Polyglot Persistence](hybrid-architectures/polyglot-persistence.md)
+
 ![Multi-Database](https://img.shields.io/badge/Storage-Multi%20Database-teal?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 
-**Use different databases optimized for specific data patterns.**
+__Use different databases optimized for specific data patterns.__
 
-**Key Components**:
-- **Relational Stores**: ACID transactions, structured data
-- **Document Stores**: Semi-structured, flexible schema
-- **Graph Databases**: Relationship-heavy data
-- **Time-series Stores**: High-frequency temporal data
+__Key Components__:
 
-**Best For**: Diverse data types, performance optimization, microservices
+- __Relational Stores__: ACID transactions, structured data
+- __Document Stores__: Semi-structured, flexible schema
+- __Graph Databases__: Relationship-heavy data
+- __Time-series Stores__: High-frequency temporal data
 
-**Services**: Azure SQL + Cosmos DB + Data Explorer + Synapse
+__Best For__: Diverse data types, performance optimization, microservices
+
+__Services__: Azure SQL + Cosmos DB + Data Explorer + Synapse
 
 ---
 
 ### 🔄 [HTAP Patterns](hybrid-architectures/htap-patterns.md)
+
 ![Hybrid Transaction](https://img.shields.io/badge/Type-HTAP-purple?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 
-**Hybrid Transactional/Analytical Processing for real-time insights.**
+__Hybrid Transactional/Analytical Processing for real-time insights.__
 
-**Key Features**:
-- **Unified Platform**: Same system for transactions and analytics
-- **Real-time Analytics**: No ETL delay
-- **Operational Intelligence**: Live business insights
+__Key Features__:
 
-**Best For**: Real-time business intelligence, operational analytics
+- __Unified Platform__: Same system for transactions and analytics
+- __Real-time Analytics__: No ETL delay
+- __Operational Intelligence__: Live business insights
 
-**Services**: Cosmos DB + Synapse Link + Power BI
+__Best For__: Real-time business intelligence, operational analytics
+
+__Services__: Cosmos DB + Synapse Link + Power BI
 
 ---
 
 ## 🌐 Reference Architectures
 
 ### 🏭 [IoT Analytics](reference-architectures/iot-analytics.md)
+
 ![IoT](https://img.shields.io/badge/Domain-IoT-lightgreen?style=flat-square)
 
-**Complete IoT data pipeline from device to insights.**
+__Complete IoT data pipeline from device to insights.__
 
-**Architecture Flow**: IoT Devices → Event Hubs → Stream Analytics → Data Lake → Synapse → Power BI
+__Architecture Flow__: IoT Devices → Event Hubs → Stream Analytics → Data Lake → Synapse → Power BI
 
-**Key Patterns**: Lambda Architecture, Time-series optimization, Edge computing
+__Key Patterns__: Lambda Architecture, Time-series optimization, Edge computing
 
 ---
 
 ### 🛒 [Retail Analytics](reference-architectures/retail-analytics.md)
+
 ![Retail](https://img.shields.io/badge/Domain-Retail-blue?style=flat-square)
 
-**Customer 360, inventory optimization, and demand forecasting.**
+__Customer 360, inventory optimization, and demand forecasting.__
 
-**Architecture Flow**: POS Systems → Data Factory → Data Lake → Synapse → ML Models → Applications
+__Architecture Flow__: POS Systems → Data Factory → Data Lake → Synapse → ML Models → Applications
 
-**Key Patterns**: Medallion Architecture, Customer 360, Real-time personalization
+__Key Patterns__: Medallion Architecture, Customer 360, Real-time personalization
 
 ---
 
 ### 🏦 [Financial Services](reference-architectures/financial-services.md)
+
 ![FinServ](https://img.shields.io/badge/Domain-FinServ-darkblue?style=flat-square)
 
-**Risk management, compliance, and fraud detection.**
+__Risk management, compliance, and fraud detection.__
 
-**Architecture Flow**: Trading Systems → Event Hubs → Stream Analytics → Risk Engine → Compliance Reports
+__Architecture Flow__: Trading Systems → Event Hubs → Stream Analytics → Risk Engine → Compliance Reports
 
-**Key Patterns**: Event Sourcing, Real-time risk, Regulatory compliance
+__Key Patterns__: Event Sourcing, Real-time risk, Regulatory compliance
 
 ---
 
 ### 🏥 [Healthcare Analytics](reference-architectures/healthcare-analytics.md)
+
 ![Healthcare](https://img.shields.io/badge/Domain-Healthcare-red?style=flat-square)
 
-**Patient analytics, clinical insights, and operational optimization.**
+__Patient analytics, clinical insights, and operational optimization.__
 
-**Architecture Flow**: EHR Systems → Data Factory → FHIR Data Lake → Analytics → Clinical Dashboards
+__Architecture Flow__: EHR Systems → Data Factory → FHIR Data Lake → Analytics → Clinical Dashboards
 
-**Key Patterns**: FHIR compliance, Privacy protection, Clinical workflows
+__Key Patterns__: FHIR compliance, Privacy protection, Clinical workflows
 
 ---
 
@@ -278,40 +304,46 @@ graph TB
 ### By Use Case
 
 | Use Case | Recommended Pattern | Key Services | Complexity |
-|----------|-------------------|-------------|-----------|
-| **Real-time Dashboards** | Lambda Architecture | Stream Analytics, Event Hubs, Synapse | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
-| **Data Lake Analytics** | Medallion Architecture | Synapse Spark, Data Lake Gen2, Delta Lake | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
-| **Enterprise Data Warehouse** | Hub & Spoke | Synapse Dedicated SQL, Data Factory | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
-| **Event-Driven Systems** | Event Sourcing + CQRS | Event Hubs, Cosmos DB, Functions | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
-| **IoT Analytics** | Lambda + Time-series | Stream Analytics, Data Explorer, Event Hubs | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
-| **Multi-Domain Enterprise** | Data Mesh | Multiple Synapse, Data Factory, Purview | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| ---------- | ------------------- | ------------- | ----------- |
+| __Real-time Dashboards__ | Lambda Architecture | Stream Analytics, Event Hubs, Synapse | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| __Data Lake Analytics__ | Medallion Architecture | Synapse Spark, Data Lake Gen2, Delta Lake | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| __Enterprise Data Warehouse__ | Hub & Spoke | Synapse Dedicated SQL, Data Factory | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow) |
+| __Event-Driven Systems__ | Event Sourcing + CQRS | Event Hubs, Cosmos DB, Functions | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| __IoT Analytics__ | Lambda + Time-series | Stream Analytics, Data Explorer, Event Hubs | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
+| __Multi-Domain Enterprise__ | Data Mesh | Multiple Synapse, Data Factory, Purview | ![Advanced](https://img.shields.io/badge/-Advanced-red) |
 
 ### By Data Characteristics
 
 | Data Type | Volume | Latency | Pattern |
-|-----------|---------|---------|---------|
-| **Streaming Events** | High | Low | Kappa Architecture |
-| **Mixed Batch + Stream** | High | Mixed | Lambda Architecture |
-| **Enterprise Data** | Medium | High | Hub & Spoke |
-| **Domain-specific** | Medium | Mixed | Data Mesh |
-| **Time-series** | High | Low | HTAP + Time-series |
+| ----------- | --------- | --------- | --------- |
+| __Streaming Events__ | High | Low | Kappa Architecture |
+| __Mixed Batch + Stream__ | High | Mixed | Lambda Architecture |
+| __Enterprise Data__ | Medium | High | Hub & Spoke |
+| __Domain-specific__ | Medium | Mixed | Data Mesh |
+| __Time-series__ | High | Low | HTAP + Time-series |
 
 ### By Organizational Maturity
 
-#### 🌱 **Starting Out**
-**Recommended**: Medallion Architecture with Synapse
+#### 🌱 __Starting Out__
+
+__Recommended__: Medallion Architecture with Synapse
+
 - Clear data quality progression
 - Familiar SQL-based processing
 - Scalable foundation
 
-#### 🔧 **Intermediate**
-**Recommended**: Lambda Architecture or Hub & Spoke
+#### 🔧 __Intermediate__
+
+__Recommended__: Lambda Architecture or Hub & Spoke
+
 - Proven enterprise patterns
 - Balance of complexity and capability
 - Good tooling support
 
-#### 🚀 **Advanced**
-**Recommended**: Data Mesh or Custom Hybrid
+#### 🚀 __Advanced__
+
+__Recommended__: Data Mesh or Custom Hybrid
+
 - Domain-driven architecture
 - Advanced governance patterns
 - Innovation-focused
@@ -321,22 +353,25 @@ graph TB
 ## 📊 Implementation Roadmap
 
 ### Phase 1: Foundation (Months 1-3)
-1. **Choose Core Pattern** based on primary use case
-2. **Set up Data Lake** with proper security and governance
-3. **Implement Basic Pipeline** with one compute engine
-4. **Establish Monitoring** and basic data quality checks
+
+1. __Choose Core Pattern__ based on primary use case
+2. __Set up Data Lake__ with proper security and governance
+3. __Implement Basic Pipeline__ with one compute engine
+4. __Establish Monitoring__ and basic data quality checks
 
 ### Phase 2: Expansion (Months 4-6)
-1. **Add Second Compute Engine** (if hybrid pattern)
-2. **Implement Advanced Features** (streaming, ML, etc.)
-3. **Enhance Security** with advanced features
-4. **Scale to Production** workloads
+
+1. __Add Second Compute Engine__ (if hybrid pattern)
+2. __Implement Advanced Features__ (streaming, ML, etc.)
+3. __Enhance Security__ with advanced features
+4. __Scale to Production__ workloads
 
 ### Phase 3: Optimization (Months 7-12)
-1. **Performance Tuning** based on usage patterns
-2. **Advanced Governance** with full data lineage
-3. **Multi-Environment** setup (dev/test/prod)
-4. **Disaster Recovery** and business continuity
+
+1. __Performance Tuning__ based on usage patterns
+2. __Advanced Governance__ with full data lineage
+3. __Multi-Environment__ setup (dev/test/prod)
+4. __Disaster Recovery__ and business continuity
 
 ---
 
@@ -380,22 +415,25 @@ graph TB
 
 ## 📚 Additional Resources
 
-### 🎓 **Learning Path**
-1. Start with [**Service Overview**](../02-services/README.md) to understand capabilities
-2. Choose your pattern based on [**Selection Guide**](#pattern-selection-guide)
-3. Follow [**Implementation Guides**](../04-implementation-guides/README.md) for step-by-step setup
-4. Apply [**Best Practices**](../05-best-practices/README.md) for production readiness
+### 🎓 __Learning Path__
 
-### 🔧 **Implementation Support**
-- [**Code Examples**](../06-code-examples/README.md) - Sample implementations
-- [**Troubleshooting**](../07-troubleshooting/README.md) - Common issues and solutions
-- [**Monitoring**](../09-monitoring/README.md) - Observability patterns
-- [**Security**](../10-security/README.md) - Security patterns and practices
+1. Start with [__Service Overview__](../02-services/README.md) to understand capabilities
+2. Choose your pattern based on [__Selection Guide__](#pattern-selection-guide)
+3. Follow [__Implementation Guides__](../04-implementation-guides/README.md) for step-by-step setup
+4. Apply [__Best Practices__](../05-best-practices/README.md) for production readiness
 
-### 📖 **Reference Materials**
-- [**Configuration Reference**](../08-reference/README.md) - Detailed configuration options
-- [**API Documentation**](../08-reference/api-references/README.md) - Service API references
-- [**Limits and Quotas**](../08-reference/limits-quotas/README.md) - Service limitations
+### 🔧 __Implementation Support__
+
+- [__Code Examples__](../06-code-examples/README.md) - Sample implementations
+- [__Troubleshooting__](../07-troubleshooting/README.md) - Common issues and solutions
+- [__Monitoring__](../09-monitoring/README.md) - Observability patterns
+- [__Security__](../10-security/README.md) - Security patterns and practices
+
+### 📖 __Reference Materials__
+
+- [__Configuration Reference__](../08-reference/README.md) - Detailed configuration options
+- [__API Documentation__](../08-reference/api-references/README.md) - Service API references
+- [__Limits and Quotas__](../08-reference/limits-quotas/README.md) - Service limitations
 
 ---
 
