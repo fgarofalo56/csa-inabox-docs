@@ -59,16 +59,23 @@ csa-inabox-docs/
 
 ### Code and Examples
 
-```markdown
-## Example Format
+Use triple backticks with language identifier for all code blocks:
 
-Use triple backticks with language identifier:
+- Python: ` ```python ... ``` `
+- SQL: ` ```sql ... ``` `
+- Bash: ` ```bash ... ``` `
+- YAML: ` ```yaml ... ``` `
+- JSON: ` ```json ... ``` `
+
+Example Python code block:
 
 ```python
 # Python code example
 def example_function():
     return "Hello, World!"
 ```
+
+Example SQL code block:
 
 ```sql
 -- SQL example
