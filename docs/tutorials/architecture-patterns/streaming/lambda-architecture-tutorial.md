@@ -1,12 +1,12 @@
 # 🌊 Lambda Architecture - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🌊 Lambda Architecture**
+> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🏗️ [Architecture Tutorials](../README.md)__ | __🌊 Lambda Architecture__
 
 ![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-blue?style=flat-square)
 
-> **📝 Note**: This tutorial is currently in development. Check back soon!
+> __📝 Note__: This tutorial is currently in development. Check back soon!
 
 ## 🎯 Coming Soon
 
@@ -14,12 +14,12 @@ This tutorial will provide a complete walkthrough for implementing the Lambda Ar
 
 ### What You'll Learn
 
-- **Lambda Architecture** fundamentals and design principles
-- **Batch Layer** implementation with Azure Synapse Spark
-- **Speed Layer** implementation with Stream Analytics
-- **Serving Layer** with Azure SQL and Synapse Serverless
-- **Data reconciliation** between batch and streaming paths
-- **End-to-end data pipeline** from ingestion to visualization
+- __Lambda Architecture__ fundamentals and design principles
+- __Batch Layer__ implementation with Azure Synapse Spark
+- __Speed Layer__ implementation with Stream Analytics
+- __Serving Layer__ with Azure SQL and Synapse Serverless
+- __Data reconciliation__ between batch and streaming paths
+- __End-to-end data pipeline__ from ingestion to visualization
 
 ### What You'll Build
 
@@ -46,25 +46,25 @@ graph LR
 
 ### Tutorial Contents (Planned)
 
-- ✅ **Complete tutorial documentation** with step-by-step instructions
-- ✅ **Azure Bicep IaC templates** for automated deployment
-- ✅ **Jupyter notebooks** for interactive learning
-- ✅ **Sample IoT/streaming data** generators
-- ✅ **Monitoring and alerting** configuration
-- ✅ **Performance tuning** guidance
+- ✅ __Complete tutorial documentation__ with step-by-step instructions
+- ✅ __Azure Bicep IaC templates__ for automated deployment
+- ✅ __Jupyter notebooks__ for interactive learning
+- ✅ __Sample IoT/streaming data__ generators
+- ✅ __Monitoring and alerting__ configuration
+- ✅ __Performance tuning__ guidance
 
 ### Architecture Components
 
 | Component | Azure Service | Purpose |
-|-----------|---------------|---------|
-| **Data Ingestion** | Event Hubs | Streaming data collection |
-| **Batch Processing** | Synapse Spark | Historical data processing |
-| **Stream Processing** | Stream Analytics | Real-time processing |
-| **Batch Storage** | Data Lake Gen2 | Batch views storage |
-| **Speed Storage** | Cosmos DB | Real-time views storage |
-| **Serving Layer** | Synapse SQL Serverless | Unified query interface |
-| **Orchestration** | Data Factory | Batch job scheduling |
-| **Visualization** | Power BI | Analytics dashboards |
+| ----------- | --------------- | --------- |
+| __Data Ingestion__ | Event Hubs | Streaming data collection |
+| __Batch Processing__ | Synapse Spark | Historical data processing |
+| __Stream Processing__ | Stream Analytics | Real-time processing |
+| __Batch Storage__ | Data Lake Gen2 | Batch views storage |
+| __Speed Storage__ | Cosmos DB | Real-time views storage |
+| __Serving Layer__ | Synapse SQL Serverless | Unified query interface |
+| __Orchestration__ | Data Factory | Batch job scheduling |
+| __Visualization__ | Power BI | Analytics dashboards |
 
 ### Prerequisites
 
@@ -77,7 +77,7 @@ Before starting this tutorial:
 
 ### Estimated Costs
 
-**Tutorial Completion**: $15-25  
+__Tutorial Completion__: $15-25  
 **Monthly Production**: $200-500 (varies by data volume)
 
 ---
@@ -109,12 +109,12 @@ While this tutorial is in development, explore these resources:
 
 Want to be notified when this tutorial is available?
 
-- ⭐ **Star this repository** to get notifications
-- 👀 **Watch releases** for tutorial updates
-- 📬 **Follow the project** for announcements
+- ⭐ __Star this repository__ to get notifications
+- 👀 __Watch releases__ for tutorial updates
+- 📬 __Follow the project__ for announcements
 
 ---
 
-**Status**: In Development  
-**Expected Release**: Q1 2025  
-**Last Updated**: 2025-12-12
+__Status__: In Development  
+__Expected Release__: Q1 2025  
+__Last Updated__: 2025-12-12

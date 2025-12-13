@@ -1,6 +1,6 @@
 # 🏗️ Architecture Pattern Tutorials
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../README.md)** | **🏗️ Architecture Pattern Tutorials**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ Architecture Pattern Tutorials__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Tutorials](https://img.shields.io/badge/Tutorials-14-blue?style=flat-square)
@@ -14,12 +14,12 @@ Complete, hands-on walkthrough tutorials for implementing Azure Cloud Scale Anal
 
 These tutorials provide complete, production-ready implementations of the architecture patterns documented in the [Architecture Patterns](../../03-architecture-patterns/README.md) section. Each tutorial is designed to be:
 
-- **🎓 Beginner-Friendly**: Assumes no prior Azure experience
-- **🚀 Deployable**: Includes complete Infrastructure as Code (IaC)
-- **💻 Interactive**: Polyglot notebooks for hands-on learning
-- **📊 Data-Driven**: Realistic sample data included
-- **🔒 Production-Ready**: Follows security and best practices
-- **📖 Comprehensive**: Prerequisites, setup, deployment, and validation
+- __🎓 Beginner-Friendly__: Assumes no prior Azure experience
+- __🚀 Deployable__: Includes complete Infrastructure as Code (IaC)
+- __💻 Interactive__: Polyglot notebooks for hands-on learning
+- __📊 Data-Driven__: Realistic sample data included
+- __🔒 Production-Ready__: Follows security and best practices
+- __📖 Comprehensive__: Prerequisites, setup, deployment, and validation
 
 ---
 
@@ -30,7 +30,7 @@ These tutorials provide complete, production-ready implementations of the archit
 Real-time data processing patterns for event-driven analytics.
 
 | Pattern | Complexity | Duration | Key Services |
-|---------|------------|----------|--------------|
+| --------- | ------------ | ---------- | -------------- |
 | [🌊 Lambda Architecture](streaming/lambda-architecture-tutorial.md) | ![Advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) | 3-4 hours | Event Hubs, Stream Analytics, Synapse, Data Lake |
 | [🔄 Kappa Architecture](streaming/kappa-architecture-tutorial.md) | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow?style=flat-square) | 2-3 hours | Event Hubs, Stream Analytics, Cosmos DB |
 | [📊 Event Sourcing](streaming/event-sourcing-tutorial.md) | ![Advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) | 3-4 hours | Event Hubs, Cosmos DB, Azure Functions |
@@ -41,7 +41,7 @@ Real-time data processing patterns for event-driven analytics.
 Large-scale batch data processing and warehouse patterns.
 
 | Pattern | Complexity | Duration | Key Services |
-|---------|------------|----------|--------------|
+| --------- | ------------ | ---------- | -------------- |
 | [🏛️ Medallion Architecture](batch/medallion-architecture-tutorial.md) | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow?style=flat-square) | 2-3 hours | Synapse Spark, Data Lake Gen2, Delta Lake |
 | [🕸️ Data Mesh](batch/data-mesh-tutorial.md) | ![Advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) | 4-5 hours | Synapse, Data Factory, Purview, Power Platform |
 | [🌟 Hub & Spoke Model](batch/hub-spoke-tutorial.md) | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow?style=flat-square) | 2-3 hours | Synapse Dedicated SQL, Data Factory, Analysis Services |
@@ -51,7 +51,7 @@ Large-scale batch data processing and warehouse patterns.
 Combined streaming and batch processing patterns.
 
 | Pattern | Complexity | Duration | Key Services |
-|---------|------------|----------|--------------|
+| --------- | ------------ | ---------- | -------------- |
 | [⚡🌊 Lambda-Kappa Hybrid](hybrid/lambda-kappa-hybrid-tutorial.md) | ![Advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) | 4-5 hours | Synapse (all engines), Event Hubs, Data Lake |
 | [🗄️ Polyglot Persistence](hybrid/polyglot-persistence-tutorial.md) | ![Advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) | 3-4 hours | Azure SQL, Cosmos DB, Data Explorer, Synapse |
 | [🔄 HTAP Patterns](hybrid/htap-patterns-tutorial.md) | ![Advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) | 3-4 hours | Cosmos DB, Synapse Link, Power BI |
@@ -61,7 +61,7 @@ Combined streaming and batch processing patterns.
 Industry-specific complete implementations.
 
 | Pattern | Complexity | Duration | Key Services |
-|---------|------------|----------|--------------|
+| --------- | ------------ | ---------- | -------------- |
 | [🏭 IoT Analytics](reference/iot-analytics-tutorial.md) | ![Advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) | 4-5 hours | IoT Hub, Event Hubs, Stream Analytics, Data Lake, Synapse |
 | [🛒 Retail Analytics](reference/retail-analytics-tutorial.md) | ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow?style=flat-square) | 3-4 hours | Data Factory, Data Lake, Synapse, ML, Power BI |
 | [🏦 Financial Services](reference/financial-services-tutorial.md) | ![Advanced](https://img.shields.io/badge/-Advanced-red?style=flat-square) | 4-5 hours | Event Hubs, Stream Analytics, Risk Engine, Compliance |
@@ -89,27 +89,27 @@ graph LR
     style E fill:#f8bbd0
 ```
 
-**Week 1-2**: [Prerequisites & Setup](PREREQUISITES.md) + [Medallion Architecture](batch/medallion-architecture-tutorial.md)
+__Week 1-2__: [Prerequisites & Setup](PREREQUISITES.md) + [Medallion Architecture](batch/medallion-architecture-tutorial.md)
 
-**Week 3-4**: [Hub & Spoke Model](batch/hub-spoke-tutorial.md) + Start streaming with [Kappa Architecture](streaming/kappa-architecture-tutorial.md)
+__Week 3-4__: [Hub & Spoke Model](batch/hub-spoke-tutorial.md) + Start streaming with [Kappa Architecture](streaming/kappa-architecture-tutorial.md)
 
-**Week 5-6**: [Lambda Architecture](streaming/lambda-architecture-tutorial.md) + Choose your industry [Reference Architecture](reference/)
+__Week 5-6__: [Lambda Architecture](streaming/lambda-architecture-tutorial.md) + Choose your industry [Reference Architecture](reference/)
 
 ### 🔧 Intermediate Path
 
 Already familiar with Azure? Focus on advanced patterns:
 
-1. **Hybrid Patterns**: Start with [Lambda-Kappa Hybrid](hybrid/lambda-kappa-hybrid-tutorial.md)
-2. **Advanced Streaming**: Explore [Event Sourcing](streaming/event-sourcing-tutorial.md) and [CQRS](streaming/cqrs-pattern-tutorial.md)
-3. **Enterprise Scale**: Implement [Data Mesh](batch/data-mesh-tutorial.md)
+1. __Hybrid Patterns__: Start with [Lambda-Kappa Hybrid](hybrid/lambda-kappa-hybrid-tutorial.md)
+2. __Advanced Streaming__: Explore [Event Sourcing](streaming/event-sourcing-tutorial.md) and [CQRS](streaming/cqrs-pattern-tutorial.md)
+3. __Enterprise Scale__: Implement [Data Mesh](batch/data-mesh-tutorial.md)
 
 ### 🚀 Advanced Path
 
 Building production systems? Deep dive into:
 
-1. **Multi-Database**: [Polyglot Persistence](hybrid/polyglot-persistence-tutorial.md)
-2. **Real-Time Analytics**: [HTAP Patterns](hybrid/htap-patterns-tutorial.md)
-3. **Industry Solutions**: Choose your domain-specific [Reference Architecture](reference/)
+1. __Multi-Database__: [Polyglot Persistence](hybrid/polyglot-persistence-tutorial.md)
+2. __Real-Time Analytics__: [HTAP Patterns](hybrid/htap-patterns-tutorial.md)
+3. __Industry Solutions__: Choose your domain-specific [Reference Architecture](reference/)
 
 ---
 
@@ -119,23 +119,23 @@ Before starting any tutorial, ensure you have:
 
 ### 🔑 Required Access
 
-- [ ] **Azure Subscription** with Owner or Contributor role
-- [ ] **Azure CLI** installed and configured
-- [ ] **Git** installed for version control
+- [ ] __Azure Subscription__ with Owner or Contributor role
+- [ ] __Azure CLI__ installed and configured
+- [ ] __Git__ installed for version control
 
 ### 💻 Development Environment
 
-- [ ] **VS Code** with recommended extensions (see [Setup Guide](PREREQUISITES.md#vs-code-setup))
-- [ ] **Python 3.8+** for running notebooks
-- [ ] **Azure PowerShell** or **Azure CLI** for deployments
+- [ ] __VS Code__ with recommended extensions (see [Setup Guide](PREREQUISITES.md#vs-code-setup))
+- [ ] __Python 3.8+__ for running notebooks
+- [ ] __Azure PowerShell__ or __Azure CLI__ for deployments
 
 ### 📦 Optional Tools
 
-- [ ] **Azure Storage Explorer** for data visualization
-- [ ] **Postman** for API testing
-- [ ] **Power BI Desktop** for report development
+- [ ] __Azure Storage Explorer__ for data visualization
+- [ ] __Postman__ for API testing
+- [ ] __Power BI Desktop__ for report development
 
-> 💡 **Tip**: See the complete [Prerequisites and Setup Guide](PREREQUISITES.md) for detailed installation instructions.
+> 💡 __Tip__: See the complete [Prerequisites and Setup Guide](PREREQUISITES.md) for detailed installation instructions.
 
 ---
 
@@ -143,16 +143,16 @@ Before starting any tutorial, ensure you have:
 
 ### Quick Start (5 minutes)
 
-1. **Choose a tutorial** from the tables above based on your experience level
-2. **Review prerequisites** in the [Prerequisites Guide](PREREQUISITES.md)
-3. **Clone the repository** and navigate to the tutorial
-4. **Follow the tutorial** step-by-step
+1. __Choose a tutorial__ from the tables above based on your experience level
+2. __Review prerequisites__ in the [Prerequisites Guide](PREREQUISITES.md)
+3. __Clone the repository__ and navigate to the tutorial
+4. __Follow the tutorial__ step-by-step
 
 ### Tutorial Structure
 
 Each tutorial follows a consistent structure:
 
-```
+```text
 📁 tutorial-name/
 ├── 📄 README.md                    # Complete walkthrough guide
 ├── 📁 infrastructure/              # Azure deployment scripts
@@ -178,24 +178,24 @@ Each tutorial follows a consistent structure:
 
 Each tutorial provides:
 
-- **Architecture Understanding**: Deep dive into the pattern's design principles
-- **Azure Services**: Hands-on experience with relevant Azure services
-- **Infrastructure as Code**: Deploy using Bicep templates
-- **Data Engineering**: Process sample data through the pipeline
-- **Monitoring & Operations**: Set up observability and alerts
-- **Security Best Practices**: Implement production-grade security
-- **Cost Optimization**: Understand and optimize Azure costs
+- __Architecture Understanding__: Deep dive into the pattern's design principles
+- __Azure Services__: Hands-on experience with relevant Azure services
+- __Infrastructure as Code__: Deploy using Bicep templates
+- __Data Engineering__: Process sample data through the pipeline
+- __Monitoring & Operations__: Set up observability and alerts
+- __Security Best Practices__: Implement production-grade security
+- __Cost Optimization__: Understand and optimize Azure costs
 
 ### 🛠️ What You'll Build
 
 By completing a tutorial, you'll have:
 
-- ✅ **Fully deployed Azure infrastructure**
-- ✅ **Working data pipeline** processing sample data
-- ✅ **Monitoring and alerts** configured
-- ✅ **Security** best practices implemented
-- ✅ **Documentation** of your implementation
-- ✅ **Reusable code** for your own projects
+- ✅ __Fully deployed Azure infrastructure__
+- ✅ __Working data pipeline__ processing sample data
+- ✅ __Monitoring and alerts__ configured
+- ✅ __Security__ best practices implemented
+- ✅ __Documentation__ of your implementation
+- ✅ __Reusable code__ for your own projects
 
 ---
 
@@ -203,13 +203,13 @@ By completing a tutorial, you'll have:
 
 ### Icons and Badges
 
-- 🎯 **Objectives**: Learning goals for the section
-- 📋 **Prerequisites**: Required before proceeding
-- 💻 **Code**: Commands or code to execute
-- 💡 **Tip**: Helpful information or pro tips
-- ⚠️ **Warning**: Important information to avoid issues
-- 🔒 **Security**: Security-related information
-- 💰 **Cost**: Cost considerations
+- 🎯 __Objectives__: Learning goals for the section
+- 📋 __Prerequisites__: Required before proceeding
+- 💻 __Code__: Commands or code to execute
+- 💡 __Tip__: Helpful information or pro tips
+- ⚠️ __Warning__: Important information to avoid issues
+- 🔒 __Security__: Security-related information
+- 💰 __Cost__: Cost considerations
 
 ### Complexity Levels
 
@@ -223,10 +223,10 @@ By completing a tutorial, you'll have:
 
 All tutorials include:
 
-- **Deployment validation scripts** to verify resources
-- **Data validation** to confirm pipeline functionality
-- **Performance testing** guidelines
-- **Cleanup scripts** to remove resources
+- __Deployment validation scripts__ to verify resources
+- __Data validation__ to confirm pipeline functionality
+- __Performance testing__ guidelines
+- __Cleanup scripts__ to remove resources
 
 ---
 
@@ -234,11 +234,11 @@ All tutorials include:
 
 Each tutorial includes:
 
-- **Estimated costs** for running the tutorial
-- **Cost optimization tips** for production
-- **Cleanup instructions** to avoid ongoing charges
+- __Estimated costs__ for running the tutorial
+- __Cost optimization tips__ for production
+- __Cleanup instructions__ to avoid ongoing charges
 
-> ⚠️ **Important**: Remember to clean up Azure resources after completing tutorials to avoid unnecessary charges.
+> ⚠️ __Important__: Remember to clean up Azure resources after completing tutorials to avoid unnecessary charges.
 
 ---
 
@@ -279,22 +279,22 @@ Want to contribute a new tutorial or improve existing ones?
 
 ### 📞 Support Channels
 
-- **Issues**: Open an [issue on GitHub](https://github.com/fgarofalo56/csa-inabox-docs/issues)
-- **Discussions**: Join [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
-- **Azure Support**: [Azure Support Plans](https://azure.microsoft.com/en-us/support/plans/)
+- __Issues__: Open an [issue on GitHub](https://github.com/fgarofalo56/csa-inabox-docs/issues)
+- __Discussions__: Join [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
+- __Azure Support__: [Azure Support Plans](https://azure.microsoft.com/en-us/support/plans/)
 
 ### ❓ FAQ
 
-**Q: Do I need an Azure subscription to follow these tutorials?**
+__Q: Do I need an Azure subscription to follow these tutorials?__
 A: Yes, an active Azure subscription is required. You can start with a [free account](https://azure.microsoft.com/en-us/free/).
 
-**Q: Will following these tutorials incur costs?**
+__Q: Will following these tutorials incur costs?__
 A: Yes, Azure resources do incur costs. Each tutorial includes cost estimates and cleanup instructions.
 
-**Q: Can I use these patterns in production?**
+__Q: Can I use these patterns in production?__
 A: Yes! These tutorials follow production best practices. However, always review security and compliance requirements for your specific use case.
 
-**Q: What if I get stuck?**
+__Q: What if I get stuck?__
 A: Check the troubleshooting section in each tutorial, review the FAQ, or open an issue on GitHub.
 
 ---
@@ -322,10 +322,10 @@ A: Check the troubleshooting section in each tutorial, review the FAQ, or open a
 
 ---
 
-**Last Updated**: 2025-12-12  
-**Status**: Active Development  
-**Maintainer**: Cloud Scale Analytics Team
+__Last Updated__: 2025-12-12  
+__Status__: Active Development  
+__Maintainer__: Cloud Scale Analytics Team
 
 ---
 
-> 💡 **Ready to start?** Choose a tutorial from the tables above and begin your Azure Cloud Scale Analytics journey!
+> 💡 __Ready to start?__ Choose a tutorial from the tables above and begin your Azure Cloud Scale Analytics journey!

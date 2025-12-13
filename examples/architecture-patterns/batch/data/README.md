@@ -4,7 +4,7 @@ This directory contains sample datasets for the Medallion Architecture tutorial.
 
 ## 📁 Structure
 
-```
+```text
 data/
 ├── bronze/          # Raw data as received from source systems
 │   ├── sales/       # Sales transaction data
@@ -18,7 +18,7 @@ data/
 
 ### Sales Data (Bronze)
 
-**File**: `bronze/sales/sales_2024.csv`
+__File__: `bronze/sales/sales_2024.csv`
 
 Sample e-commerce sales transactions:
 
@@ -28,7 +28,8 @@ TXN001,CUST001,PROD123,2024-01-15T10:30:00Z,99.99,1,USD
 TXN002,CUST002,PROD456,2024-01-15T11:45:00Z,149.50,2,USD
 ```
 
-**Characteristics**:
+__Characteristics__:
+
 - 10,000 sample transactions
 - Date range: Jan 2024 - Dec 2024
 - Includes some data quality issues for demonstration
@@ -36,7 +37,7 @@ TXN002,CUST002,PROD456,2024-01-15T11:45:00Z,149.50,2,USD
 
 ### Customer Data (Bronze)
 
-**File**: `bronze/customers/customers.json`
+__File__: `bronze/customers/customers.json`
 
 Customer master data with demographics:
 
@@ -52,19 +53,20 @@ Customer master data with demographics:
 }
 ```
 
-**Characteristics**:
+__Characteristics__:
+
 - 5,000 customer records
 - Includes email, segment, location
 - Some duplicate records for quality testing
 
 ### Product Data (Bronze)
 
-**File**: `bronze/products/products.parquet`
+__File__: `bronze/products/products.parquet`
 
 Product catalog with pricing and categories:
 
 | Column | Type | Description |
-|--------|------|-------------|
+| -------- | ------ | ------------- |
 | product_id | string | Unique product identifier |
 | product_name | string | Product display name |
 | category | string | Product category |
@@ -73,7 +75,8 @@ Product catalog with pricing and categories:
 | cost | decimal | Cost of goods |
 | supplier_id | string | Supplier identifier |
 
-**Characteristics**:
+__Characteristics__:
+
 - 1,000 products across 20 categories
 - Parquet format for efficient storage
 - ~500KB file size
@@ -95,26 +98,27 @@ python scripts/generate_sample_data.py --sales 50000 --customers 10000
 The sample data intentionally includes common quality issues:
 
 | Issue Type | Count | Example |
-|------------|-------|---------|
-| **Duplicates** | ~2% | Same transaction_id multiple times |
-| **Missing Values** | ~1% | NULL customer_email |
-| **Invalid Data** | ~0.5% | Negative amounts, future dates |
-| **Format Issues** | ~1% | Inconsistent date formats |
-| **Outliers** | ~0.5% | Extremely high amounts |
+| ------------ | ------- | --------- |
+| __Duplicates__ | ~2% | Same transaction_id multiple times |
+| __Missing Values__ | ~1% | NULL customer_email |
+| __Invalid Data__ | ~0.5% | Negative amounts, future dates |
+| __Format Issues__ | ~1% | Inconsistent date formats |
+| __Outliers__ | ~0.5% | Extremely high amounts |
 
 These issues are resolved in the Silver layer processing.
 
 ## 💾 Data Sizes
 
 | Layer | Records | Size | Format |
-|-------|---------|------|--------|
-| **Bronze** | 16,000 | ~2MB | CSV, JSON, Parquet |
-| **Silver** | 15,600 | ~1.5MB | Delta Lake |
-| **Gold** | Aggregated | ~500KB | Delta Lake |
+| ------- | --------- | ------ | -------- |
+| __Bronze__ | 16,000 | ~2MB | CSV, JSON, Parquet |
+| __Silver__ | 15,600 | ~1.5MB | Delta Lake |
+| __Gold__ | Aggregated | ~500KB | Delta Lake |
 
 ## 🔒 Data Privacy
 
-All sample data is **synthetic** and generated specifically for this tutorial:
+All sample data is __synthetic__ and generated specifically for this tutorial:
+
 - No real customer information
 - No real transaction data
 - No PII (Personally Identifiable Information)
@@ -122,14 +126,14 @@ All sample data is **synthetic** and generated specifically for this tutorial:
 
 ## 📚 Usage in Tutorial
 
-1. **Bronze Layer**: Upload raw data to Data Lake
-2. **Silver Layer**: Process with Spark notebooks
-3. **Gold Layer**: Create aggregates and dimensions
-4. **Validation**: Query through Synapse SQL
+1. __Bronze Layer__: Upload raw data to Data Lake
+2. __Silver Layer__: Process with Spark notebooks
+3. __Gold Layer__: Create aggregates and dimensions
+4. __Validation__: Query through Synapse SQL
 
 See the [Medallion Architecture Tutorial](../../../../docs/tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md) for complete instructions.
 
 ---
 
-**Last Updated**: 2025-12-12  
-**Data Version**: 1.0.0
+__Last Updated__: 2025-12-12  
+__Data Version__: 1.0.0

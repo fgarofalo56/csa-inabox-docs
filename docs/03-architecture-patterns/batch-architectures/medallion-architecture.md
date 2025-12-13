@@ -58,15 +58,16 @@ Recommended best practices:
 
 Want to build this architecture hands-on? Follow our comprehensive tutorial:
 
-**[🏛️ Medallion Architecture - Complete Walkthrough Tutorial](../../tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md)**
+__[🏛️ Medallion Architecture - Complete Walkthrough Tutorial](../../tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md)__
 
 This tutorial includes:
-- ✅ **Step-by-step deployment guide** (2-3 hours)
-- ✅ **Azure Bicep templates** for infrastructure as code
-- ✅ **Interactive Jupyter notebooks** with examples
-- ✅ **Sample data** for testing and validation
-- ✅ **Monitoring and security** configuration
-- ✅ **Cost optimization** guidance
+
+- ✅ __Step-by-step deployment guide__ (2-3 hours)
+- ✅ __Azure Bicep templates__ for infrastructure as code
+- ✅ __Interactive Jupyter notebooks__ with examples
+- ✅ __Sample data__ for testing and validation
+- ✅ __Monitoring and security__ configuration
+- ✅ __Cost optimization__ guidance
 
 ### Practical Examples
 
@@ -85,6 +86,6 @@ Additional resources and references:
 
 ---
 
-**Last Updated:** 2025-12-12  
-**Status:** Active Development  
-**Maintainer:** Azure Cloud Scale Analytics Team
+__Last Updated:__ 2025-12-12  
+__Status:__ Active Development  
+__Maintainer:__ Azure Cloud Scale Analytics Team

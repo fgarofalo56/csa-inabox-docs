@@ -1,6 +1,6 @@
 # 🏛️ Medallion Architecture - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🏛️ Medallion Architecture**
+> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🏗️ [Architecture Tutorials](../README.md)__ | __🏛️ Medallion Architecture__
 
 ![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -39,27 +39,27 @@ graph LR
 
 By completing this tutorial, you will:
 
-- ✅ **Understand** the Medallion Architecture pattern and its benefits
-- ✅ **Deploy** Azure Synapse Analytics workspace with Spark pools
-- ✅ **Configure** Data Lake Gen2 with proper folder structure
-- ✅ **Implement** Bronze, Silver, and Gold data layers
-- ✅ **Process** data through quality stages using Delta Lake
-- ✅ **Query** data using Synapse SQL Serverless
-- ✅ **Monitor** data pipelines and quality metrics
-- ✅ **Secure** data access with proper RBAC and encryption
+- ✅ __Understand__ the Medallion Architecture pattern and its benefits
+- ✅ __Deploy__ Azure Synapse Analytics workspace with Spark pools
+- ✅ __Configure__ Data Lake Gen2 with proper folder structure
+- ✅ __Implement__ Bronze, Silver, and Gold data layers
+- ✅ __Process__ data through quality stages using Delta Lake
+- ✅ __Query__ data using Synapse SQL Serverless
+- ✅ __Monitor__ data pipelines and quality metrics
+- ✅ __Secure__ data access with proper RBAC and encryption
 
 ### Architecture Components
 
 | Component | Purpose | Azure Service |
-|-----------|---------|---------------|
-| **Data Ingestion** | Load raw data | Azure Data Factory |
-| **Bronze Layer** | Raw data storage | Data Lake Gen2 + Delta Lake |
-| **Silver Layer** | Cleaned data | Data Lake Gen2 + Delta Lake |
-| **Gold Layer** | Business aggregates | Data Lake Gen2 + Delta Lake |
-| **Processing Engine** | Transform data | Synapse Spark Pools |
-| **Query Engine** | Ad-hoc queries | Synapse SQL Serverless |
-| **Orchestration** | Pipeline management | Synapse Pipelines |
-| **Monitoring** | Observability | Azure Monitor + Log Analytics |
+| ----------- | --------- | --------------- |
+| __Data Ingestion__ | Load raw data | Azure Data Factory |
+| __Bronze Layer__ | Raw data storage | Data Lake Gen2 + Delta Lake |
+| __Silver Layer__ | Cleaned data | Data Lake Gen2 + Delta Lake |
+| __Gold Layer__ | Business aggregates | Data Lake Gen2 + Delta Lake |
+| __Processing Engine__ | Transform data | Synapse Spark Pools |
+| __Query Engine__ | Ad-hoc queries | Synapse SQL Serverless |
+| __Orchestration__ | Pipeline management | Synapse Pipelines |
+| __Monitoring__ | Observability | Azure Monitor + Log Analytics |
 
 ---
 
@@ -67,14 +67,14 @@ By completing this tutorial, you will:
 
 Before starting this tutorial, ensure you have completed the [Prerequisites Guide](../PREREQUISITES.md) and have:
 
-- [ ] **Azure Subscription** with Contributor access
-- [ ] **Azure CLI** installed and configured
-- [ ] **VS Code** with Azure extensions
-- [ ] **Python 3.8+** environment set up
-- [ ] **Jupyter** notebook environment ready
-- [ ] **Git** repository cloned locally
+- [ ] __Azure Subscription__ with Contributor access
+- [ ] __Azure CLI__ installed and configured
+- [ ] __VS Code__ with Azure extensions
+- [ ] __Python 3.8+__ environment set up
+- [ ] __Jupyter__ notebook environment ready
+- [ ] __Git__ repository cloned locally
 
-**Estimated Cost**: $10-20 for completing this tutorial (remember to clean up resources after)
+__Estimated Cost__: $10-20 for completing this tutorial (remember to clean up resources after)
 
 ---
 
@@ -101,16 +101,18 @@ The Medallion Architecture is a data design pattern that organizes data in a lak
 
 #### 🥉 Bronze Layer (Raw)
 
-**Purpose**: Preserve raw data exactly as received from source systems.
+__Purpose__: Preserve raw data exactly as received from source systems.
 
-**Characteristics**:
+__Characteristics__:
+
 - Immutable raw data
 - Original format and structure
 - Minimal transformations
 - Audit trail preservation
 - Schema-on-read approach
 
-**Use Cases**:
+__Use Cases__:
+
 - Data lineage and auditing
 - Reprocessing with new logic
 - Debugging data quality issues
@@ -118,16 +120,18 @@ The Medallion Architecture is a data design pattern that organizes data in a lak
 
 #### 🥈 Silver Layer (Refined)
 
-**Purpose**: Cleaned, validated, and enriched data ready for analytics.
+__Purpose__: Cleaned, validated, and enriched data ready for analytics.
 
-**Characteristics**:
+__Characteristics__:
+
 - Data quality rules applied
 - Deduplication and cleansing
 - Schema validation
 - Type conversions
 - Business key enrichment
 
-**Use Cases**:
+__Use Cases__:
+
 - Data science and ML features
 - Departmental analytics
 - Data exploration
@@ -135,16 +139,18 @@ The Medallion Architecture is a data design pattern that organizes data in a lak
 
 #### 🥇 Gold Layer (Curated)
 
-**Purpose**: Business-level aggregates optimized for consumption.
+__Purpose__: Business-level aggregates optimized for consumption.
 
-**Characteristics**:
+__Characteristics__:
+
 - Denormalized structures
 - Pre-aggregated metrics
 - Dimension conforming
 - Star/snowflake schemas
 - Performance optimized
 
-**Use Cases**:
+__Use Cases__:
+
 - BI dashboards and reports
 - Executive KPIs
 - Application integration
@@ -153,13 +159,13 @@ The Medallion Architecture is a data design pattern that organizes data in a lak
 ### Key Benefits
 
 | Benefit | Description |
-|---------|-------------|
-| **Data Quality** | Progressive improvement through layers |
-| **Flexibility** | Reprocess data without affecting sources |
-| **Performance** | Query optimized curated data |
-| **Governance** | Clear lineage and ownership |
-| **Scalability** | Handle petabyte-scale data |
-| **Cost Effective** | Optimize storage and compute separately |
+| --------- | ------------- |
+| __Data Quality__ | Progressive improvement through layers |
+| __Flexibility__ | Reprocess data without affecting sources |
+| __Performance__ | Query optimized curated data |
+| __Governance__ | Clear lineage and ownership |
+| __Scalability__ | Handle petabyte-scale data |
+| __Cost Effective__ | Optimize storage and compute separately |
 
 ---
 
@@ -225,12 +231,13 @@ az group show --name $RESOURCE_GROUP_NAME --output table
 
 The Infrastructure as Code (IaC) approach for repeatable deployments.
 
-**Step 1: Review the Bicep Template**
+__Step 1: Review the Bicep Template__
 
 The complete Bicep template is located at:
 `infrastructure/tutorials/batch/medallion-architecture/main.bicep`
 
 Key resources deployed:
+
 - Azure Data Lake Gen2 storage account
 - Azure Synapse Analytics workspace
 - Apache Spark pool (auto-scaling)
@@ -238,7 +245,7 @@ Key resources deployed:
 - Log Analytics workspace
 - Azure Key Vault for secrets
 
-**Step 2: Deploy Infrastructure**
+__Step 2: Deploy Infrastructure__
 
 ```bash
 # Navigate to infrastructure directory
@@ -269,7 +276,7 @@ az deployment group list \
   --output table
 ```
 
-**Deployment Time**: 10-15 minutes
+__Deployment Time__: 10-15 minutes
 
 ### Option B: Deploy Using Azure CLI
 
@@ -405,7 +412,8 @@ az storage blob upload-batch \
 Open and run the Jupyter notebook:
 `examples/architecture-patterns/batch/notebooks/01-bronze-layer.ipynb`
 
-**Key Concepts Demonstrated**:
+__Key Concepts Demonstrated__:
+
 - Read raw CSV/JSON/Parquet files
 - Write to Delta Lake format
 - Preserve original structure
@@ -420,7 +428,7 @@ Open and run the Jupyter notebook:
 
 The Silver layer applies data quality rules and standardization.
 
-**Notebook**: `examples/architecture-patterns/batch/notebooks/02-silver-layer.ipynb`
+__Notebook__: `examples/architecture-patterns/batch/notebooks/02-silver-layer.ipynb`
 
 ### Key Transformations
 
@@ -496,7 +504,7 @@ print(f"Quality Score: {quality_metrics['quality_score']:.2f}%")
 
 Create business-ready aggregates and star schema.
 
-**Notebook**: `examples/architecture-patterns/batch/notebooks/03-gold-layer.ipynb`
+__Notebook__: `examples/architecture-patterns/batch/notebooks/03-gold-layer.ipynb`
 
 ### Create Fact Tables
 
@@ -594,16 +602,16 @@ ORDER BY transaction_date DESC;
 
 ### Power BI Integration
 
-**Notebook**: `examples/architecture-patterns/batch/notebooks/04-powerbi-integration.ipynb`
+__Notebook__: `examples/architecture-patterns/batch/notebooks/04-powerbi-integration.ipynb`
 
 Connect Power BI Desktop to Synapse SQL Serverless:
 
-1. **Open Power BI Desktop**
-2. **Get Data** → **Azure** → **Azure Synapse Analytics SQL**
-3. **Server**: `{synapse-workspace}.sql.azuresynapse.net`
-4. **Database**: `MedallionGold`
-5. **Select** views: `vw_sales_daily`, `vw_customer_metrics`
-6. **Load** data and create visualizations
+1. __Open Power BI Desktop__
+2. __Get Data__ → __Azure__ → __Azure Synapse Analytics SQL__
+3. __Server__: `{synapse-workspace}.sql.azuresynapse.net`
+4. __Database__: `MedallionGold`
+5. __Select__ views: `vw_sales_daily`, `vw_customer_metrics`
+6. __Load__ data and create visualizations
 
 ---
 
@@ -648,7 +656,7 @@ az monitor metrics alert create \
 
 ### Monitor Notebook
 
-**Notebook**: `examples/architecture-patterns/batch/notebooks/05-monitoring.ipynb`
+__Notebook__: `examples/architecture-patterns/batch/notebooks/05-monitoring.ipynb`
 
 Query logs and metrics:
 
@@ -663,8 +671,8 @@ client = LogsQueryClient(credential)
 # Query pipeline metrics
 query = """
 SynapsePipelineRuns
-| where TimeGenerated > ago(24h)
-| summarize 
+| where TimeGenerated > ago(24h) |
+| summarize |
     TotalRuns = count(),
     SuccessfulRuns = countif(Status == 'Succeeded'),
     FailedRuns = countif(Status == 'Failed')
@@ -729,7 +737,7 @@ spark.sql("""
 
 ### Delete Resources
 
-**⚠️ Warning**: This will permanently delete all resources and data.
+__⚠️ Warning__: This will permanently delete all resources and data.
 
 ```bash
 # Delete resource group and all resources
@@ -759,12 +767,12 @@ az consumption usage list \
 
 For production deployments:
 
-1. **Auto-pause Spark pools** when not in use
-2. **Use Azure Synapse Serverless** for ad-hoc queries
-3. **Implement data lifecycle policies** (hot/cool/archive tiers)
-4. **Right-size compute resources** based on workload
-5. **Use Reserved Capacity** for predictable workloads
-6. **Enable Azure Hybrid Benefit** if applicable
+1. __Auto-pause Spark pools__ when not in use
+2. __Use Azure Synapse Serverless__ for ad-hoc queries
+3. __Implement data lifecycle policies__ (hot/cool/archive tiers)
+4. __Right-size compute resources__ based on workload
+5. __Use Reserved Capacity__ for predictable workloads
+6. __Enable Azure Hybrid Benefit__ if applicable
 
 ---
 
@@ -779,9 +787,9 @@ For production deployments:
 
 ### Sample Code
 
-- **Notebooks**: `examples/architecture-patterns/batch/notebooks/`
-- **Infrastructure**: `infrastructure/tutorials/batch/medallion-architecture/`
-- **Sample Data**: `examples/architecture-patterns/batch/data/`
+- __Notebooks__: `examples/architecture-patterns/batch/notebooks/`
+- __Infrastructure__: `infrastructure/tutorials/batch/medallion-architecture/`
+- __Sample Data__: `examples/architecture-patterns/batch/data/`
 
 ### Next Steps
 
@@ -791,22 +799,22 @@ For production deployments:
 
 ---
 
-## 🎉 Congratulations!
+## 🎉 Congratulations
 
 You've successfully built a production-ready Medallion Architecture on Azure! You now have:
 
-- ✅ **Three-tier data lakehouse** with Bronze, Silver, and Gold layers
-- ✅ **Data quality** progressive improvement pipeline
-- ✅ **Scalable processing** using Synapse Spark
-- ✅ **Ad-hoc querying** with SQL Serverless
-- ✅ **Monitoring and alerting** configured
-- ✅ **Security best practices** implemented
+- ✅ __Three-tier data lakehouse__ with Bronze, Silver, and Gold layers
+- ✅ __Data quality__ progressive improvement pipeline
+- ✅ __Scalable processing__ using Synapse Spark
+- ✅ __Ad-hoc querying__ with SQL Serverless
+- ✅ __Monitoring and alerting__ configured
+- ✅ __Security best practices__ implemented
 
-**Share your success!** Tweet your completed architecture diagram with #AzureSynapseAnalytics #MedallionArchitecture
+__Share your success!__ Tweet your completed architecture diagram with #AzureSynapseAnalytics #MedallionArchitecture
 
 ---
 
-**Last Updated**: 2025-12-12  
-**Tutorial Version**: 1.0  
-**Estimated Completion Time**: 2-3 hours  
-**Difficulty**: ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow?style=flat-square)
+__Last Updated__: 2025-12-12  
+__Tutorial Version__: 1.0  
+__Estimated Completion Time__: 2-3 hours  
+__Difficulty__: ![Intermediate](https://img.shields.io/badge/-Intermediate-yellow?style=flat-square)

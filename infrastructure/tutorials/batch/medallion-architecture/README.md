@@ -1,6 +1,6 @@
 # 🏗️ Medallion Architecture Infrastructure
 
-> **Infrastructure as Code (IaC)** for deploying the Medallion Architecture pattern on Azure
+> __Infrastructure as Code (IaC)__ for deploying the Medallion Architecture pattern on Azure
 
 ![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)
 ![IaC](https://img.shields.io/badge/IaC-Bicep-blue?style=flat-square)
@@ -28,23 +28,23 @@ source .deployment-config.env
 ## 📦 Resources Deployed
 
 | Resource | Purpose | Estimated Cost/Month |
-|----------|---------|---------------------|
-| **Azure Synapse Workspace** | Analytics platform | ~$0 (serverless) |
-| **Spark Pool** | Data processing | ~$0.30/hour (auto-pause enabled) |
-| **Data Lake Gen2** | Data storage | ~$0.02/GB |
-| **Key Vault** | Secrets management | ~$0.03/10,000 operations |
-| **Log Analytics** | Monitoring | ~$2.30/GB ingested |
+| ---------- | --------- | --------------------- |
+| __Azure Synapse Workspace__ | Analytics platform | ~$0 (serverless) |
+| __Spark Pool__ | Data processing | ~$0.30/hour (auto-pause enabled) |
+| __Data Lake Gen2__ | Data storage | ~$0.02/GB |
+| __Key Vault__ | Secrets management | ~$0.03/10,000 operations |
+| __Log Analytics__ | Monitoring | ~$2.30/GB ingested |
 
-**Total Estimated Cost**: $10-20 for tutorial completion (remember to cleanup after!)
+__Total Estimated Cost__: $10-20 for tutorial completion (remember to cleanup after!)
 
 ## 🔒 Security Features
 
-- **Managed Identity**: System-assigned identity for Synapse
-- **RBAC**: Principle of least privilege
-- **Encryption**: At rest and in transit
-- **Private Endpoints**: Optional (not enabled by default for tutorial)
-- **Key Vault Integration**: Secrets management
-- **Soft Delete**: 7-day retention for accidental deletions
+- __Managed Identity__: System-assigned identity for Synapse
+- __RBAC__: Principle of least privilege
+- __Encryption__: At rest and in transit
+- __Private Endpoints__: Optional (not enabled by default for tutorial)
+- __Key Vault Integration__: Secrets management
+- __Soft Delete__: 7-day retention for accidental deletions
 
 ## 🎯 Customization
 
@@ -104,7 +104,7 @@ az synapse spark pool show \
 
 ## 🧹 Cleanup
 
-**⚠️ Warning**: This deletes ALL resources and data.
+__⚠️ Warning__: This deletes ALL resources and data.
 
 ```bash
 az group delete \
@@ -121,5 +121,5 @@ az group delete \
 
 ---
 
-**Last Updated**: 2025-12-12  
-**Version**: 1.0.0
+__Last Updated__: 2025-12-12  
+__Version__: 1.0.0

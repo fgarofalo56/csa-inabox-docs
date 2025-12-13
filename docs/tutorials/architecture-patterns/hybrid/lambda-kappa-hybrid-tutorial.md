@@ -1,12 +1,12 @@
 # ⚡🌊 Lambda-Kappa Hybrid - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **⚡🌊 Hybrid**
+> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🏗️ [Architecture Tutorials](../README.md)__ | __⚡🌊 Hybrid__
 
 ![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-4--5_hours-blue?style=flat-square)
 
-> **📝 Note**: This tutorial is in development. Use [Medallion Architecture](../batch/medallion-architecture-tutorial.md) as a complete reference.
+> __📝 Note__: This tutorial is in development. Use [Medallion Architecture](../batch/medallion-architecture-tutorial.md) as a complete reference.
 
 ## 🎯 Overview
 
@@ -14,4 +14,4 @@ Flexible architecture combining Lambda and Kappa patterns with Azure Synapse (al
 
 ---
 
-**Status**: Planned • **Last Updated**: 2025-12-12
+__Status__: Planned • __Last Updated__: 2025-12-12

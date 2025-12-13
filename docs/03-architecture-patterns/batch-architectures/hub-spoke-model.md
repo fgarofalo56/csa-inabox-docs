@@ -71,6 +71,6 @@ Additional resources and references:
 
 ---
 
-**Last Updated:** 2025-12-12  
-**Status:** Active Development  
-**Maintainer:** Azure Cloud Scale Analytics Team
+__Last Updated:__ 2025-12-12  
+__Status:__ Active Development  
+__Maintainer:__ Azure Cloud Scale Analytics Team

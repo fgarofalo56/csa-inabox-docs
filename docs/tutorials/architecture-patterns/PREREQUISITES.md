@@ -1,6 +1,6 @@
 # 📋 Prerequisites and Setup Guide
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../README.md)** | **🏗️ [Architecture Tutorials](README.md)** | **📋 Prerequisites**
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ [Architecture Tutorials](README.md)__ | __📋 Prerequisites__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Level](https://img.shields.io/badge/Level-Beginner-green?style=flat-square)
@@ -14,13 +14,13 @@ Complete setup guide for running Azure Cloud Scale Analytics architecture patter
 
 Before starting any architecture pattern tutorial, you need to set up your development environment and Azure account. This guide walks you through:
 
-- **Azure subscription setup**
-- **Development tools installation**
-- **IDE configuration** (VS Code)
-- **Azure CLI setup and authentication**
-- **Sample data and repository setup**
+- __Azure subscription setup__
+- __Development tools installation__
+- __IDE configuration__ (VS Code)
+- __Azure CLI setup and authentication__
+- __Sample data and repository setup__
 
-**Estimated Time**: 30-60 minutes (depending on your starting point)
+__Estimated Time__: 30-60 minutes (depending on your starting point)
 
 ---
 
@@ -44,13 +44,13 @@ Before starting any architecture pattern tutorial, you need to set up your devel
 
 If you don't have an Azure subscription, create one:
 
-1. **Free Account** (Recommended for beginners):
+1. __Free Account__ (Recommended for beginners):
    - Visit [Azure Free Account](https://azure.microsoft.com/en-us/free/)
    - Get $200 credit for 30 days
    - 12 months of popular free services
    - Always-free services
 
-2. **Pay-As-You-Go**:
+2. __Pay-As-You-Go__:
    - Visit [Azure Portal](https://portal.azure.com)
    - Sign up for pay-as-you-go subscription
    - Only pay for what you use
@@ -60,12 +60,12 @@ If you don't have an Azure subscription, create one:
 Ensure you have the appropriate role in your Azure subscription:
 
 | Role | Required For | Permissions |
-|------|--------------|-------------|
-| **Owner** | ✅ Recommended | Full access to all resources |
-| **Contributor** | ✅ Minimum | Manage all resources (except access) |
-| **Reader** | ❌ Insufficient | Read-only access |
+| ------ | -------------- | ------------- |
+| __Owner__ | ✅ Recommended | Full access to all resources |
+| __Contributor__ | ✅ Minimum | Manage all resources (except access) |
+| __Reader__ | ❌ Insufficient | Read-only access |
 
-**To check your role:**
+__To check your role:__
 
 ```bash
 # Login to Azure
@@ -91,7 +91,7 @@ export AZURE_SUBSCRIPTION_ID=$(az account show --query id --output tsv)
 export AZURE_TENANT_ID=$(az account show --query tenantId --output tsv)
 ```
 
-> 💡 **Tip**: Save these IDs in a secure note for easy reference during tutorials.
+> 💡 __Tip__: Save these IDs in a secure note for easy reference during tutorials.
 
 ---
 
@@ -100,11 +100,11 @@ export AZURE_TENANT_ID=$(az account show --query tenantId --output tsv)
 ### Required Software
 
 | Tool | Version | Purpose | Download Link |
-|------|---------|---------|---------------|
-| **Azure CLI** | 2.50+ | Deploy and manage Azure resources | [Download](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) |
-| **Python** | 3.8+ | Run notebooks and scripts | [Download](https://www.python.org/downloads/) |
-| **Git** | Latest | Version control and clone repository | [Download](https://git-scm.com/downloads) |
-| **VS Code** | Latest | Primary IDE | [Download](https://code.visualstudio.com/) |
+| ------ | --------- | --------- | --------------- |
+| __Azure CLI__ | 2.50+ | Deploy and manage Azure resources | [Download](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) |
+| __Python__ | 3.8+ | Run notebooks and scripts | [Download](https://www.python.org/downloads/) |
+| __Git__ | Latest | Version control and clone repository | [Download](https://git-scm.com/downloads) |
+| __VS Code__ | Latest | Primary IDE | [Download](https://code.visualstudio.com/) |
 
 ### Installation Instructions
 
@@ -186,14 +186,14 @@ ext install redhat.vscode-yaml
 ### Recommended Extensions
 
 | Extension | Purpose |
-|-----------|---------|
-| **Python** | Python language support |
-| **Jupyter** | Run polyglot notebooks |
-| **Azure Account** | Azure authentication |
-| **Azure Resources** | Manage Azure resources |
-| **Azure Functions** | Azure Functions development |
-| **Bicep** | IaC template authoring |
-| **YAML** | YAML file support |
+| ----------- | --------- |
+| __Python__ | Python language support |
+| __Jupyter__ | Run polyglot notebooks |
+| __Azure Account__ | Azure authentication |
+| __Azure Resources__ | Manage Azure resources |
+| __Azure Functions__ | Azure Functions development |
+| __Bicep__ | IaC template authoring |
+| __YAML__ | YAML file support |
 
 ### VS Code Settings
 
@@ -372,11 +372,12 @@ git config --global credential.helper cache
 
 ### Azure Storage Explorer
 
-**Purpose**: Browse and manage Azure storage accounts visually.
+__Purpose__: Browse and manage Azure storage accounts visually.
 
-**Download**: [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)
+__Download__: [Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/)
 
-**Key Features**:
+__Key Features__:
+
 - Browse blobs, tables, queues
 - Upload/download data
 - Manage access policies
@@ -384,33 +385,36 @@ git config --global credential.helper cache
 
 ### Postman
 
-**Purpose**: Test REST APIs and HTTP requests.
+__Purpose__: Test REST APIs and HTTP requests.
 
-**Download**: [Postman](https://www.postman.com/downloads/)
+__Download__: [Postman](https://www.postman.com/downloads/)
 
-**Use Cases**:
+__Use Cases__:
+
 - Test Azure REST APIs
 - Debug API responses
 - Share API collections
 
 ### Power BI Desktop
 
-**Purpose**: Create data visualizations and reports.
+__Purpose__: Create data visualizations and reports.
 
-**Download**: [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
+__Download__: [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/)
 
-**Use Cases**:
+__Use Cases__:
+
 - Connect to Azure data sources
 - Build dashboards
 - Test analytics queries
 
 ### Azure Data Studio
 
-**Purpose**: Query and manage Azure databases.
+__Purpose__: Query and manage Azure databases.
 
-**Download**: [Azure Data Studio](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio)
+__Download__: [Azure Data Studio](https://learn.microsoft.com/en-us/sql/azure-data-studio/download-azure-data-studio)
 
-**Use Cases**:
+__Use Cases__:
+
 - Query Azure SQL databases
 - Manage Synapse dedicated pools
 - Run T-SQL scripts
@@ -484,9 +488,10 @@ az group delete --name rg-test-setup --yes --no-wait
 
 ### Azure CLI Issues
 
-**Problem**: `az: command not found`
+__Problem__: `az: command not found`
 
-**Solution**:
+__Solution__:
+
 ```bash
 # Windows: Add to PATH
 # C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin
@@ -498,9 +503,10 @@ brew reinstall azure-cli
 which az
 ```
 
-**Problem**: `az login` fails
+__Problem__: `az login` fails
 
-**Solution**:
+__Solution__:
+
 ```bash
 # Clear Azure CLI cache
 az account clear
@@ -514,9 +520,10 @@ az configure --list-defaults
 
 ### Python Issues
 
-**Problem**: `python: command not found`
+__Problem__: `python: command not found`
 
-**Solution**:
+__Solution__:
+
 ```bash
 # Try python3 instead
 python3 --version
@@ -525,9 +532,10 @@ python3 --version
 alias python=python3
 ```
 
-**Problem**: Virtual environment not activating
+__Problem__: Virtual environment not activating
 
-**Solution**:
+__Solution__:
+
 ```bash
 # Windows PowerShell: Enable script execution
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -539,9 +547,10 @@ python3 -m venv .venv
 
 ### Jupyter Issues
 
-**Problem**: Kernel not found
+__Problem__: Kernel not found
 
-**Solution**:
+__Solution__:
+
 ```bash
 # Reinstall kernel
 python -m ipykernel install --user --name=azure-tutorials
@@ -551,9 +560,10 @@ jupyter notebook stop
 jupyter notebook
 ```
 
-**Problem**: Azure SDK import errors
+__Problem__: Azure SDK import errors
 
-**Solution**:
+__Solution__:
+
 ```bash
 # Ensure virtual environment is activated
 source .venv/bin/activate  # macOS/Linux
@@ -565,9 +575,10 @@ pip install --upgrade azure-identity azure-mgmt-resource
 
 ### VS Code Issues
 
-**Problem**: Extensions not installing
+__Problem__: Extensions not installing
 
-**Solution**:
+__Solution__:
+
 ```bash
 # Clear extension cache
 rm -rf ~/.vscode/extensions
@@ -576,9 +587,10 @@ rm -rf ~/.vscode/extensions
 code --install-extension ms-python.python
 ```
 
-**Problem**: Azure account sign-in fails
+__Problem__: Azure account sign-in fails
 
-**Solution**:
+__Solution__:
+
 1. Open VS Code
 2. Press `F1` or `Ctrl+Shift+P`
 3. Type "Azure: Sign Out"
@@ -614,11 +626,11 @@ code --install-extension ms-python.python
 
 Once you've completed this setup guide:
 
-1. ✅ **Verify all tools** are installed and working
-2. ✅ **Test Azure CLI** login and access
-3. ✅ **Configure VS Code** with extensions
-4. ✅ **Create Python environment** for notebooks
-5. ✅ **Choose your first tutorial** from the [Architecture Patterns](README.md)
+1. ✅ __Verify all tools__ are installed and working
+2. ✅ __Test Azure CLI__ login and access
+3. ✅ __Configure VS Code__ with extensions
+4. ✅ __Create Python environment__ for notebooks
+5. ✅ __Choose your first tutorial__ from the [Architecture Patterns](README.md)
 
 ### Recommended First Tutorials
 
@@ -630,10 +642,10 @@ For beginners, start with:
 
 ---
 
-**Last Updated**: 2025-12-12  
-**Estimated Completion Time**: 30-60 minutes  
-**Difficulty**: ![Beginner](https://img.shields.io/badge/-Beginner-green?style=flat-square)
+__Last Updated__: 2025-12-12  
+__Estimated Completion Time__: 30-60 minutes  
+__Difficulty__: ![Beginner](https://img.shields.io/badge/-Beginner-green?style=flat-square)
 
 ---
 
-> 🎉 **Congratulations!** You're now ready to start building Azure Cloud Scale Analytics solutions. Choose a tutorial and begin your journey!
+> 🎉 __Congratulations!__ You're now ready to start building Azure Cloud Scale Analytics solutions. Choose a tutorial and begin your journey!
