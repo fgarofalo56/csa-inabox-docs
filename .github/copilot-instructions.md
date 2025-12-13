@@ -299,12 +299,13 @@ git push origin branch-name           # Push to remote
 
 ### Documentation Ports
 
-- __Docs Server__: 3838 (optional, via serve-docs.py)
-- __MkDocs Dev Server__: 8000 (default)
-- __UI__: 3737
-- __Server API__: 8181
-- __MCP Server__: 8056
-- __Agents__: 8052
+- __MkDocs Dev Server__: 8000 (default for both `mkdocs serve` and `serve-docs.py`)
+- __UI__: 3737 (from general Azure agent architecture)
+- __Server API__: 8181 (from general Azure agent architecture)
+- __MCP Server__: 8056 (from general Azure agent architecture)
+- __Agents__: 8052 (from general Azure agent architecture)
+
+Note: This documentation project primarily uses MkDocs on port 8000. Other ports listed are from the general Azure AI agent architecture referenced in CLAUDE.md.
 
 ## Resources
 
