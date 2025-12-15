@@ -719,8 +719,8 @@ _Solutions:_
 ## Related Topics
 
 - [Delta Lake Performance Optimization](../best-practices/delta-lake-optimization.md)
-- [Security Configuration for Delta Lake](../best-practices/security.md#delta-lake)
-- [Monitoring Delta Lake Operations](../monitoring/monitoring-setup.md#delta-lake)
+- [Security Configuration for Delta Lake](../best-practices/security.md)
+- [Monitoring Delta Lake Operations](../monitoring/monitoring-setup.md)
 - [Data Governance with Delta Lake](../best-practices/data-governance.md)
 
 ## External Resources

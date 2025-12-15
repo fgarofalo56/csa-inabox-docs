@@ -465,7 +465,7 @@ After completing this path:
 
 ---
 
-__Ready to start?__ Begin with [Phase 1: Data Analytics Foundation](#-phase-1-data-analytics-foundation-2-3-weeks)
+__Ready to start?__ Begin with [Phase 1: Data Analytics Foundation](#phase-1-data-analytics-foundation-2-3-weeks)
 
 ---
 

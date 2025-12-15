@@ -923,9 +923,9 @@ _Solutions:_
 
 ## Related Topics
 
-- [Pipeline Monitoring and Alerting](../monitoring/monitoring-setup.md#pipelines)
+- [Pipeline Monitoring and Alerting](../monitoring/monitoring-setup.md)
 - [Pipeline Performance Optimization](../best-practices/pipeline-optimization.md)
-- [Pipeline Security Best Practices](../best-practices/security.md#pipelines)
+- [Pipeline Security Best Practices](../best-practices/security.md)
 - [DevOps Integration for Pipelines](../devops/pipeline-ci-cd.md)
 
 ## External Resources

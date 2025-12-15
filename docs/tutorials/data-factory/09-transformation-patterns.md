@@ -12,9 +12,6 @@ __Master common data transformation patterns including cleansing, enrichment, ag
 
 - [Transformation Approaches](#transformation-approaches)
 - [Mapping Data Flows](#mapping-data-flows)
-- [SQL-Based Transformations](#sql-based-transformations)
-- [Databricks Integration](#databricks-integration)
-- [Common Patterns](#common-patterns)
 - [Next Steps](#next-steps)
 
 ## 🎯 Transformation Approaches

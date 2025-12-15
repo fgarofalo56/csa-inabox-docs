@@ -11,16 +11,16 @@ Comprehensive guide to common error codes, messages, and resolution procedures f
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Error Code Categories](#-error-code-categories)
-- [Authentication Errors](#-authentication-errors)
-- [Authorization Errors](#-authorization-errors)
-- [Resource Errors](#-resource-errors)
-- [Network Errors](#-network-errors)
-- [Data Access Errors](#-data-access-errors)
-- [Query Errors](#-query-errors)
-- [Pipeline Errors](#-pipeline-errors)
-- [Error Resolution Matrix](#-error-resolution-matrix)
+- [Overview](#overview)
+- [Error Code Categories](#error-code-categories)
+- [Authentication Errors](#authentication-errors)
+- [Authorization Errors](#authorization-errors)
+- [Resource Errors](#resource-errors)
+- [Network Errors](#network-errors)
+- [Data Access Errors](#data-access-errors)
+- [Query Errors](#query-errors)
+- [Pipeline Errors](#pipeline-errors)
+- [Error Resolution Matrix](#error-resolution-matrix)
 
 ---
 

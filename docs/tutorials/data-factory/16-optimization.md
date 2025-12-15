@@ -12,9 +12,6 @@ __Optimize Azure Data Factory pipelines for maximum performance and cost efficie
 
 - [Copy Activity Optimization](#copy-activity-optimization)
 - [Data Flow Optimization](#data-flow-optimization)
-- [Integration Runtime Tuning](#integration-runtime-tuning)
-- [Cost Optimization](#cost-optimization)
-- [Best Practices](#best-practices)
 - [Next Steps](#next-steps)
 
 ## 🚀 Copy Activity Optimization

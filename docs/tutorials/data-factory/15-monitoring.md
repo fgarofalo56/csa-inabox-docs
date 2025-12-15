@@ -14,7 +14,6 @@ __Implement comprehensive monitoring and alerting for Azure Data Factory pipelin
 - [Pipeline Monitoring](#pipeline-monitoring)
 - [Azure Monitor Integration](#azure-monitor-integration)
 - [Custom Alerts](#custom-alerts)
-- [Dashboard Creation](#dashboard-creation)
 - [Next Steps](#next-steps)
 
 ## 📊 Monitoring Overview

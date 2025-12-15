@@ -12,16 +12,16 @@ Combines the strengths of both Lambda and Kappa architectures to provide flexibl
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Architecture Components](#-architecture-components)
-- [Azure Service Mapping](#-azure-service-mapping)
-- [Implementation Patterns](#-implementation-patterns)
-- [Use Cases](#-use-cases)
-- [Best Practices](#-best-practices)
-- [Performance Optimization](#-performance-optimization)
-- [Monitoring and Operations](#-monitoring-and-operations)
-- [Migration Strategy](#-migration-strategy)
-- [Related Patterns](#-related-patterns)
+- [Overview](#overview)
+- [Architecture Components](#architecture-components)
+- [Azure Service Mapping](#azure-service-mapping)
+- [Implementation Patterns](#implementation-patterns)
+- [Use Cases](#use-cases)
+- [Best Practices](#best-practices)
+- [Performance Optimization](#performance-optimization)
+- [Monitoring and Operations](#monitoring-and-operations)
+- [Migration Strategy](#migration-strategy)
+- [Related Patterns](#related-patterns)
 
 ---
 

@@ -427,7 +427,7 @@ SynapseBuiltinSqlPoolRequestsEnded
 
 - [Network Security Configuration for Synapse](../best-practices/network-security.md)
 - [Private Link Configuration Guide](../architecture/private-link-architecture.md)
-- [Authentication Best Practices](../best-practices/security.md#authentication)
+- [Authentication Best Practices](../best-practices/security.md#authentication-controls)
 - [Monitoring and Logging Setup](../monitoring/monitoring-setup.md)
 
 ## External Resources

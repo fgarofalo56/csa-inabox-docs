@@ -463,7 +463,7 @@ After completing this path:
 
 ---
 
-__Ready to start?__ Begin with [Phase 1: Architectural Foundation](#-phase-1-architectural-foundation-2-3-weeks)
+__Ready to start?__ Begin with [Phase 1: Architectural Foundation](#phase-1-architectural-foundation-2-3-weeks)
 
 ---
 

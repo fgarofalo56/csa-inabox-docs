@@ -12,9 +12,6 @@ __Leverage Power Query integration in Azure Data Factory for self-service data p
 
 - [Wrangling Overview](#wrangling-overview)
 - [Power Query Integration](#power-query-integration)
-- [Common Transformations](#common-transformations)
-- [Parameterization](#parameterization)
-- [Best Practices](#best-practices)
 - [Next Steps](#next-steps)
 
 ## 🎯 Wrangling Overview

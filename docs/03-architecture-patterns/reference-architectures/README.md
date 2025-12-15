@@ -12,12 +12,12 @@ Industry-specific reference architectures combining Azure Cloud Scale Analytics 
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Architecture Index](#-architecture-index)
-- [Selection Guide](#-selection-guide)
-- [Common Components](#-common-components)
-- [Compliance Frameworks](#-compliance-frameworks)
-- [Getting Started](#-getting-started)
+- [Overview](#overview)
+- [Architecture Index](#architecture-index)
+- [Selection Guide](#selection-guide)
+- [Common Components](#common-components)
+- [Compliance Frameworks](#compliance-frameworks)
+- [Getting Started](#getting-started)
 
 ---
 

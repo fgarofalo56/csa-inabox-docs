@@ -13,8 +13,6 @@ __Implement continuous integration and deployment for Azure Data Factory using A
 - [Git Integration](#git-integration)
 - [ARM Template Deployment](#arm-template-deployment)
 - [Azure DevOps Pipeline](#azure-devops-pipeline)
-- [Automated Testing](#automated-testing)
-- [Best Practices](#best-practices)
 - [Next Steps](#next-steps)
 
 ## 🔄 Git Integration

@@ -12,16 +12,16 @@ Enable real-time analytics on operational data without the complexity and latenc
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Architecture Components](#-architecture-components)
-- [Azure Service Mapping](#-azure-service-mapping)
-- [Implementation Patterns](#-implementation-patterns)
-- [Use Cases](#-use-cases)
-- [Performance Optimization](#-performance-optimization)
-- [Best Practices](#-best-practices)
-- [Monitoring and Operations](#-monitoring-and-operations)
-- [Cost Optimization](#-cost-optimization)
-- [Related Patterns](#-related-patterns)
+- [Overview](#overview)
+- [Architecture Components](#architecture-components)
+- [Azure Service Mapping](#azure-service-mapping)
+- [Implementation Patterns](#implementation-patterns)
+- [Use Cases](#use-cases)
+- [Performance Optimization](#performance-optimization)
+- [Best Practices](#best-practices)
+- [Monitoring and Operations](#monitoring-and-operations)
+- [Cost Optimization](#cost-optimization)
+- [Related Patterns](#related-patterns)
 
 ---
 

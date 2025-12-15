@@ -538,7 +538,7 @@ After completing this path:
 
 ---
 
-__Ready to start?__ Begin with [Phase 1: DevOps Foundation](#-phase-1-devops-foundation-2-3-weeks)
+__Ready to start?__ Begin with [Phase 1: DevOps Foundation](#phase-1-devops-foundation-2-3-weeks)
 
 ---
 

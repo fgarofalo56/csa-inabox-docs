@@ -17,14 +17,14 @@ This guide covers proven pipeline patterns for various data integration scenario
 
 ## 📋 Table of Contents
 
-- [Basic Copy Pattern](#-basic-copy-pattern)
-- [Incremental Copy Pattern](#-incremental-copy-pattern)
-- [Parent-Child Pattern](#-parent-child-pattern)
-- [Iterative Pattern](#-iterative-pattern)
-- [Conditional Branching Pattern](#-conditional-branching-pattern)
-- [Error Handling Pattern](#-error-handling-pattern)
-- [CDC Pattern](#-cdc-pattern-change-data-capture)
-- [Orchestration Pattern](#-orchestration-pattern)
+- [Basic Copy Pattern](#basic-copy-pattern)
+- [Incremental Copy Pattern](#incremental-copy-pattern)
+- [Parent-Child Pattern](#parent-child-pattern)
+- [Iterative Pattern](#iterative-pattern)
+- [Conditional Branching Pattern](#conditional-branching-pattern)
+- [Error Handling Pattern](#error-handling-pattern)
+- [CDC Pattern](#cdc-pattern-change-data-capture)
+- [Orchestration Pattern](#orchestration-pattern)
 
 ---
 

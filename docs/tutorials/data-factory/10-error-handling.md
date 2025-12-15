@@ -11,10 +11,7 @@ __Implement robust error handling, retry policies, and failure recovery mechanis
 ## 📋 Table of Contents
 
 - [Error Handling Strategies](#error-handling-strategies)
-- [Activity Dependencies](#activity-dependencies)
 - [Retry Policies](#retry-policies)
-- [Error Logging](#error-logging)
-- [Best Practices](#best-practices)
 - [Next Steps](#next-steps)
 
 ## 🎯 Error Handling Strategies

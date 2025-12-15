@@ -17,9 +17,6 @@ Comprehensive answers to common executive and business questions about Azure Clo
 - [Risk & Security](#risk--security)
 - [Implementation & Timeline](#implementation--timeline)
 - [Competitive Positioning](#competitive-positioning)
-- [Organizational Impact](#organizational-impact)
-- [Technology & Architecture](#technology--architecture)
-- [Compliance & Governance](#compliance--governance)
 
 ---
 

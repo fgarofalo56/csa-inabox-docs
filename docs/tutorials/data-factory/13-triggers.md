@@ -14,7 +14,6 @@ __Master pipeline scheduling with schedule triggers, tumbling window triggers, a
 - [Schedule Trigger](#schedule-trigger)
 - [Tumbling Window Trigger](#tumbling-window-trigger)
 - [Event-Based Trigger](#event-based-trigger)
-- [Trigger Management](#trigger-management)
 - [Next Steps](#next-steps)
 
 ## 🎯 Trigger Types

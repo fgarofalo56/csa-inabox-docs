@@ -15,7 +15,6 @@ __Master complex orchestration patterns including conditional logic, loops, para
 - [Until Activity](#until-activity)
 - [Execute Pipeline Activity](#execute-pipeline-activity)
 - [Web Activity](#web-activity)
-- [Advanced Patterns](#advanced-patterns)
 - [Next Steps](#next-steps)
 
 ## 🔀 If Condition Activity

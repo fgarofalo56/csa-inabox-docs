@@ -736,7 +736,7 @@ This learning path aligns with **DP-203: Azure Data Engineer Associate**
 
 **Begin your data engineering journey today:**
 
-1. **[Verify Prerequisites](#-prerequisites)** - Ensure you have required skills
+1. **[Verify Prerequisites](#prerequisites)** - Ensure you have required skills
 2. **[Set Up Environment](#module-11-azure-synapse-analytics-environment-setup-1-week)** - Start Module 1.1
 3. **[Join Community](https://your-platform.com/community)** - Connect with peers
 

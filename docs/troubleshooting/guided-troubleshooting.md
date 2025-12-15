@@ -122,7 +122,7 @@ __Solutions:__
 - Assign required roles: `Storage Blob Data Contributor`, `Synapse Contributor`
 - Wait up to 5 minutes for role propagation
 
-📚 __Related:__ [Security Best Practices](../best-practices/security.md)
+📚 __Related:__ [Security Best Practices](../best-practices/security.md#azure-active-directory-integration)
 
 #### Step 2C: Service Principal
 

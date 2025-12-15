@@ -13,8 +13,6 @@ __Manage complex pipeline dependencies, activity chaining, and conditional execu
 - [Activity Dependencies](#activity-dependencies)
 - [Dependency Conditions](#dependency-conditions)
 - [Parallel Execution](#parallel-execution)
-- [Trigger Dependencies](#trigger-dependencies)
-- [Best Practices](#best-practices)
 - [Next Steps](#next-steps)
 
 ## 🔗 Activity Dependencies

@@ -416,7 +416,7 @@ graph TB
 ### 🎓 __Learning Path__
 
 1. Start with [__Service Overview__](../02-services/README.md) to understand capabilities
-2. Choose your pattern based on [__Selection Guide__](#-pattern-selection-guide)
+2. Choose your pattern based on [__Selection Guide__](#pattern-selection-guide)
 3. Follow [__Implementation Guides__](../tutorials/README.md) for step-by-step setup
 4. Apply [__Best Practices__](../best-practices/README.md) for production readiness
 

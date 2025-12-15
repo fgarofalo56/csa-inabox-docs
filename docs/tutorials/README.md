@@ -117,7 +117,7 @@ __Take our 5-minute assessment to get personalized recommendations:__
 - __Skills Gap Analysis__: Identify learning priorities
 - __Time Commitment__: Find the right pace for you
 
-__[🎯 Take Assessment Quiz →](learning-paths/README.md#-getting-started)__
+__[🎯 Take Assessment Quiz →](learning-paths/README.md)__
 
 ## 🎮 Interactive Learning Features
 

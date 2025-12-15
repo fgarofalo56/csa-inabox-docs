@@ -205,6 +205,6 @@ Links to other relevant documentation
 
 __Last Updated:__ 2024-12-27 | __Version:__ 2.0.0 | __Section Owner:__ Development Team
 
-[⬆ Back to Top](#-development--operational-guides) | ← Back to Docs Hub
+[⬆ Back to Top](#development--operational-guides) | ← Back to Docs Hub
 
 </div>

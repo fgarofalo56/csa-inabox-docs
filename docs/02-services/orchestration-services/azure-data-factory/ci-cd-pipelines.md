@@ -17,12 +17,12 @@ CI/CD for Azure Data Factory enables version control, automated testing, and con
 
 ## 📋 Table of Contents
 
-- [Git Integration](#-git-integration)
-- [ARM Template Generation](#-arm-template-generation)
-- [Environment Configuration](#-environment-configuration)
-- [Azure DevOps Integration](#-azure-devops-integration)
-- [GitHub Actions Integration](#-github-actions-integration)
-- [Best Practices](#-best-practices)
+- [Git Integration](#git-integration)
+- [ARM Template Generation](#arm-template-generation)
+- [Environment Configuration](#environment-configuration)
+- [Azure DevOps Integration](#azure-devops-integration)
+- [GitHub Actions Integration](#github-actions-integration)
+- [Best Practices](#best-practices)
 
 ---
 

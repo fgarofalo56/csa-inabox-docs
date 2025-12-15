@@ -16,7 +16,7 @@ Choose your role to get a personalized learning path:
 - [🏗️ Solution Architect](#solution-architect-path) - Design analytics solutions
 - [⚙️ System Administrator](#system-administrator-path) - Manage and monitor infrastructure
 - [💼 Business User](#business-user-path) - Consume reports and dashboards
-- [🎓 Student/Learner](#student-learner-path) - Learn Azure analytics technologies
+- [🎓 Student/Learner](#studentlearner-path) - Learn Azure analytics technologies
 
 ---
 

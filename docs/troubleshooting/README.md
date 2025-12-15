@@ -129,7 +129,7 @@ graph TD
 | Tool | Purpose | Key Features | Access Link |
 |------|---------|--------------|-------------|
 | 📊 __Logging and Monitoring__ | Comprehensive guide for monitoring your Synapse workspace | Logs, metrics, workbooks | [![Monitoring Guide](https://img.shields.io/badge/📊-Monitoring_Guide-blue)](../monitoring/logging-monitoring-guide.md) |
-| 🔔 __Alerts Configuration__ | Set up proactive alerts and diagnostic settings | Real-time notifications, thresholds | [![Alert Setup](https://img.shields.io/badge/🔔-Alert_Setup-orange)](../monitoring/logging-monitoring-guide.md#setting-up-diagnostic-settings) |
+| 🔔 __Alerts Configuration__ | Set up proactive alerts and diagnostic settings | Real-time notifications, thresholds | [![Alert Setup](https://img.shields.io/badge/🔔-Alert_Setup-orange)](../monitoring/logging-monitoring-guide.md#configuring-diagnostic-settings) |
 
 ### 📋 Sample Kusto Queries
 
@@ -155,7 +155,7 @@ SynapseIntegrationPipelineRuns
 | 📚 __Official Troubleshooting Guide__ | Microsoft Docs | Comprehensive official troubleshooting documentation | [![Official Guide](https://img.shields.io/badge/Microsoft-Docs-blue)](https://docs.microsoft.com/en-us/azure/synapse-analytics/troubleshoot/troubleshoot-synapse-analytics) |
 | 💬 __Azure Synapse Community Forum__ | Community Support | Community discussions and solutions | [![Community](https://img.shields.io/badge/Tech-Community-green)](https://techcommunity.microsoft.com/t5/azure-synapse-analytics/bd-p/AzureSynapseAnalytics) |
 | ❓ __Stack Overflow__ | Q&A Platform | Developer community questions and answers | [![Stack Overflow](https://img.shields.io/badge/Stack-Overflow-orange)](https://stackoverflow.com/questions/tagged/azure-synapse) |
-| 🔔 __Custom Alerts Setup__ | Monitoring Guide | Creating custom alerts for proactive monitoring | [![Custom Alerts](https://img.shields.io/badge/Custom-Alerts-red)](../monitoring/logging-monitoring-guide.md#creating-custom-alerts) |
+| 🔔 __Custom Alerts Setup__ | Monitoring Guide | Creating custom alerts for proactive monitoring | [![Custom Alerts](https://img.shields.io/badge/Custom-Alerts-red)](../monitoring/logging-monitoring-guide.md#setting-up-alerts) |
 
 ---
 

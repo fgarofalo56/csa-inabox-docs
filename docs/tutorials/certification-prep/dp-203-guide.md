@@ -89,7 +89,7 @@ __Study Resources:__
 
 | Topic | Documentation Link | Priority |
 |-------|-------------------|----------|
-| Data Modeling | [Learning Path - Module 1.4](data-engineer-path.md#module-14-data-modeling-fundamentals-12-hours) | ⭐⭐⭐ |
+| Data Modeling | [Learning Path - Module 1.4](../learning-paths/data-engineer-path.md#module-14-data-modeling-fundamentals-12-hours) | ⭐⭐⭐ |
 | Architecture Patterns | [Patterns](../../../03-architecture-patterns/README.md) | ⭐⭐⭐ |
 
 __Practice Scenario:__
@@ -129,7 +129,7 @@ __Study Resources:__
 | Topic | Documentation Link | Priority |
 |-------|-------------------|----------|
 | PySpark Fundamentals | [Code Lab](../../code-labs/pyspark-fundamentals.md) | ⭐⭐⭐ |
-| Data Pipeline Development | [Learning Path - Module 2.3](data-engineer-path.md#module-23-data-pipeline-development-20-hours) | ⭐⭐⭐ |
+| Data Pipeline Development | [Learning Path - Module 2.3](../learning-paths/data-engineer-path.md#module-23-data-pipeline-development-20-hours) | ⭐⭐⭐ |
 | Azure Data Factory | [Integration Guide](../../../code-examples/integration/azure-data-factory.md) | ⭐⭐⭐ |
 | Stream Analytics | [Solutions](../../../solutions/azure-realtime-analytics/README.md) | ⭐⭐ |
 
@@ -344,7 +344,7 @@ __Study Resources:__
 |-------|-------------------|----------|
 | Security Best Practices | [Guide](../../../best-practices/security.md) | ⭐⭐⭐ |
 | Network Security | [Architecture](../../../best-practices/network-security.md) | ⭐⭐⭐ |
-| Platform Admin Security | [Learning Path](platform-admin-path.md#module-11-identity-and-access-management-16-hours) | ⭐⭐⭐ |
+| Platform Admin Security | [Learning Path](../learning-paths/platform-admin-path.md#module-11-identity-and-access-management-16-hours) | ⭐⭐⭐ |
 
 __Critical Security Concepts:__
 

@@ -139,7 +139,7 @@ Templates are versioned for tracking:
 ### Getting Help
 
 **Questions?**
-- [Template FAQ](../README.md#faq)
+- [Template Library](../README.md)
 - [Community Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
 - [Issue Tracker](https://github.com/fgarofalo56/csa-inabox-docs/issues)
 

@@ -12,14 +12,14 @@ Complete IoT analytics solution from device connectivity through real-time proce
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Architecture](#-architecture)
-- [Azure Services](#-azure-services)
-- [Implementation](#-implementation)
-- [Use Cases](#-use-cases)
-- [Security & Compliance](#-security--compliance)
-- [Deployment](#-deployment)
-- [Monitoring](#-monitoring)
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Azure Services](#azure-services)
+- [Implementation](#implementation)
+- [Use Cases](#use-cases)
+- [Security & Compliance](#security--compliance)
+- [Deployment](#deployment)
+- [Monitoring](#monitoring)
 
 ---
 

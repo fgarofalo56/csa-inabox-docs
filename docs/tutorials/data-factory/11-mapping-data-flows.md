@@ -12,9 +12,6 @@ __Master visual data transformation using Mapping Data Flows for complex ETL log
 
 - [Data Flow Basics](#data-flow-basics)
 - [Transformation Types](#transformation-types)
-- [Performance Optimization](#performance-optimization)
-- [Debugging](#debugging)
-- [Best Practices](#best-practices)
 - [Next Steps](#next-steps)
 
 ## 🎯 Data Flow Basics

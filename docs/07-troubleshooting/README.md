@@ -11,13 +11,13 @@ Comprehensive troubleshooting guides for Cloud Scale Analytics in-a-box, coverin
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [Troubleshooting Framework](#-troubleshooting-framework)
-- [Service-Specific Guides](#-service-specific-guides)
-- [Common Issues](#-common-issues)
-- [Diagnostic Tools](#-diagnostic-tools)
-- [Support Escalation](#-support-escalation)
-- [Related Resources](#-related-resources)
+- [Overview](#overview)
+- [Troubleshooting Framework](#troubleshooting-framework)
+- [Service-Specific Guides](#service-specific-guides)
+- [Common Issues](#common-issues)
+- [Diagnostic Tools](#diagnostic-tools)
+- [Support Escalation](#support-escalation)
+- [Related Resources](#related-resources)
 
 ---
 
@@ -29,7 +29,7 @@ This section provides systematic troubleshooting guidance for all Cloud Scale An
 
 | Category | Description | Guide |
 |----------|-------------|-------|
-| 🔥 **Service Issues** | Component-specific troubleshooting | [Service Guides](#-service-specific-guides) |
+| 🔥 **Service Issues** | Component-specific troubleshooting | [Service Guides](#service-specific-guides) |
 | ⚠️ **Common Errors** | Frequently encountered problems | [Common Errors](common-errors.md) |
 | 🔒 **Security Issues** | Authentication and authorization | [Security Guide](security-troubleshooting.md) |
 | ⚡ **Performance** | Performance degradation issues | [Performance Guide](performance-issues.md) |
