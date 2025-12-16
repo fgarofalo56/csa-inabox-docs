@@ -225,7 +225,7 @@ curl https://<workspace-name>.dev.azuresynapse.net
 
 __Results:__
 
-- ✅ __Success__ → Go to [Step 2](#step-2-verify-authentication-1)
+- ✅ __Success__ → Go to [Step 2A: Azure AD Authentication](#step-2a-azure-ad-authentication)
 - ❌ __DNS Failed__ → Go to [DNS Issues](#dns-issues)
 - ❌ __Port Blocked__ → Go to [Firewall Issues](#firewall-issues)
 - ❌ __HTTPS Failed__ → Go to [Certificate Issues](#certificate-issues)

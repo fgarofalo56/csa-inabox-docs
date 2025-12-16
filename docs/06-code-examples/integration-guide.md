@@ -24,11 +24,8 @@
 ## Table of Contents
 
 - [Common Integration Patterns](#common-integration-patterns)
-- [Azure Machine Learning Integration](#azure-machine-learning-integration)
-  - [Azure ML Prerequisites](#azure-ml-prerequisites)
-  - [Azure ML Linked Service Setup](#azure-ml-linked-service-setup)
-  - [Training ML Models with Synapse Data](#training-ml-models-with-synapse-data)
-  - [Model Deployment and Scoring](#model-deployment-and-scoring)
+- [Training ML Models with Synapse Data](#training-ml-models-with-synapse-data)
+- [Model Deployment and Scoring](#model-deployment-and-scoring)
 - [Microsoft Purview Integration](#microsoft-purview-integration)
   - [Purview Prerequisites](#purview-prerequisites)
   - [Setting Up Purview with Synapse](#setting-up-purview-with-synapse)

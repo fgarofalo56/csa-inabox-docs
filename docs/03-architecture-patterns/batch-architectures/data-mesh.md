@@ -20,8 +20,6 @@ Domain-oriented decentralized data architecture that treats data as a product, e
 - [Self-Serve Platform](#self-serve-platform)
 - [Federated Governance](#federated-governance)
 - [Azure Service Mapping](#azure-service-mapping)
-- [Implementation Roadmap](#implementation-roadmap)
-- [Code Examples](#code-examples)
 - [Best Practices](#best-practices)
 - [Common Challenges](#common-challenges)
 

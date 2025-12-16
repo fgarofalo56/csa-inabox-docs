@@ -22,7 +22,6 @@ category: "Best Practices - Performance"
 
 - [Overview](#overview)
 - [Performance Framework](#performance-framework)
-- [Baseline and Benchmarking](#baseline-and-benchmarking)
 - [General Optimization Strategies](#general-optimization-strategies)
 - [Service-Specific Guidance](#service-specific-guidance)
 - [Performance Monitoring](#performance-monitoring)

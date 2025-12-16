@@ -17,12 +17,7 @@ Centralized data warehouse (hub) with specialized departmental data marts (spoke
 - [Hub Design](#hub-design)
 - [Spoke Design](#spoke-design)
 - [Network Topology](#network-topology)
-- [Data Flow Patterns](#data-flow-patterns)
 - [Azure Service Mapping](#azure-service-mapping)
-- [Implementation Guide](#implementation-guide)
-- [Code Examples](#code-examples)
-- [Performance Optimization](#performance-optimization)
-- [Security and Governance](#security-and-governance)
 - [Best Practices](#best-practices)
 - [Migration Strategies](#migration-strategies)
 

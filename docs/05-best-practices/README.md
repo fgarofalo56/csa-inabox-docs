@@ -71,8 +71,7 @@ Strategies and techniques to optimize Total Cost of Ownership (TCO).
 
 **Quick Links:**
 - [Cost Optimization Guide](./cross-cutting-concerns/cost-optimization/README.md)
-- [Azure Cost Management Integration](./cross-cutting-concerns/cost-optimization/README.md#cost-management-integration)
-- [Cost Allocation Strategies](./cross-cutting-concerns/cost-optimization/README.md#cost-allocation)
+- [Cost Monitoring and Governance](./cross-cutting-concerns/cost-optimization/README.md#cost-monitoring-and-governance)
 
 ### ⚡ Performance Optimization
 
@@ -88,9 +87,9 @@ Practices for optimizing query performance, data processing, and resource utiliz
 | Caching Strategies | Result caching and data caching | 60-90% for repeated queries |
 
 **Quick Links:**
-- [Performance Baseline Guide](./cross-cutting-concerns/performance/README.md#performance-baseline)
-- [Synapse SQL Optimization](./cross-cutting-concerns/performance/synapse-optimization.md#sql-optimization)
-- [Spark Performance Tuning](./cross-cutting-concerns/performance/synapse-optimization.md#spark-optimization)
+- [Performance Framework](./cross-cutting-concerns/performance/README.md#performance-framework)
+- [Synapse SQL Optimization](./cross-cutting-concerns/performance/synapse-optimization.md#dedicated-sql-pool-optimization)
+- [Spark Performance Tuning](./cross-cutting-concerns/performance/synapse-optimization.md#spark-pool-optimization)
 - [Streaming Performance](./cross-cutting-concerns/performance/streaming-optimization.md)
 
 ### 🔒 Security Best Practices
@@ -126,8 +125,8 @@ Practices focused on reliable operations, disaster recovery, and business contin
 | Data Replication | Geo-redundant storage, cross-region sync | 99.99% durability |
 
 **Quick Links:**
-- [DR Strategy Guide](./operational-excellence/disaster-recovery.md#dr-strategy)
-- [Backup Configuration](./operational-excellence/disaster-recovery.md#backup-configuration)
+- [DR Strategy Guide](./operational-excellence/disaster-recovery.md#dr-strategy-overview)
+- [Backup Strategies](./operational-excellence/disaster-recovery.md#backup-strategies)
 - [Failover Procedures](./operational-excellence/disaster-recovery.md#failover-procedures)
 
 ### 🌊 Streaming Disaster Recovery
@@ -140,9 +139,9 @@ Practices focused on reliable operations, disaster recovery, and business contin
 | State Management | Stateful processing recovery | Consistent state |
 
 **Quick Links:**
-- [Streaming DR Architecture](./operational-excellence/streaming-dr.md#architecture)
-- [Event Hub Geo-DR](./operational-excellence/streaming-dr.md#event-hub-dr)
-- [Stream Analytics HA](./operational-excellence/streaming-dr.md#stream-analytics-ha)
+- [Streaming DR Architecture](./operational-excellence/streaming-dr.md#streaming-dr-architecture)
+- [Event Hub Geo-DR](./operational-excellence/streaming-dr.md#event-hubs-geo-dr)
+- [Stream Analytics HA](./operational-excellence/streaming-dr.md#stream-analytics-high-availability)
 
 ## Service-Specific Best Practices
 

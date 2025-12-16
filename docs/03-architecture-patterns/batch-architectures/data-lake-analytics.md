@@ -14,15 +14,9 @@ Comprehensive data lake architecture pattern with organized zones (raw, curated,
 
 - [Overview](#overview)
 - [Data Lake Zones](#data-lake-zones)
-- [Storage Architecture](#storage-architecture)
 - [Multi-Engine Analytics](#multi-engine-analytics)
-- [Ingestion Patterns](#ingestion-patterns)
-- [Processing Patterns](#processing-patterns)
 - [Governance Framework](#governance-framework)
 - [Azure Service Mapping](#azure-service-mapping)
-- [Code Examples](#code-examples)
-- [Performance Optimization](#performance-optimization)
-- [Security and Compliance](#security-and-compliance)
 - [Best Practices](#best-practices)
 - [Cost Optimization](#cost-optimization)
 

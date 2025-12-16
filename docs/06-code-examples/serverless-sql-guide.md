@@ -28,11 +28,9 @@
 ## Table of Contents
 
 - [Introduction to Serverless SQL](#introduction-to-serverless-sql)
-- [Query Optimization Techniques](#query-optimization-techniques)
-  - [File Format Selection](#file-format-selection)
-  - [Column Pruning](#column-pruning)
-  - [Predicate Pushdown](#predicate-pushdown)
-  - [Partition Elimination](#partition-elimination)
+- [Column Pruning](#column-pruning)
+- [Predicate Pushdown](#predicate-pushdown)
+- [Partition Elimination](#partition-elimination)
 - [External Tables Management](#external-tables-management)
   - [Creating External Tables](#creating-external-tables)
   - [Maintaining Statistics](#maintaining-statistics)

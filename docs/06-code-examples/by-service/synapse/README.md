@@ -16,7 +16,6 @@ Comprehensive code examples for Azure Synapse Analytics covering Spark pools, SQ
 - [Prerequisites](#prerequisites)
 - [PySpark Examples](#pyspark-examples)
 - [T-SQL Examples](#t-sql-examples)
-- [Spark SQL Examples](#spark-sql-examples)
 - [Performance Optimization](#performance-optimization)
 - [Best Practices](#best-practices)
 

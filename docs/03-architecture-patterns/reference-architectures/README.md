@@ -469,9 +469,9 @@ az deployment group create \
 
 ### Architecture Patterns
 
-- [Streaming Patterns](../README.md#-streaming-architecture-patterns)
-- [Batch Patterns](../README.md#-batch-architecture-patterns)
-- [Hybrid Patterns](../README.md#-hybrid-architecture-patterns)
+- [Streaming Patterns](../README.md#streaming-architecture-patterns)
+- [Batch Patterns](../README.md#batch-architecture-patterns)
+- [Hybrid Patterns](../README.md#hybrid-architecture-patterns)
 
 ### Compliance Resources
 

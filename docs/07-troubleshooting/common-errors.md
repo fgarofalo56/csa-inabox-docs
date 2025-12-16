@@ -797,7 +797,7 @@ SynapseIntegrationPipelineRuns
 | **Service-Specific Troubleshooting** | [Synapse Guide](service-troubleshooting/synapse/README.md) |
 | **Security Troubleshooting** | [Security Guide](security-troubleshooting.md) |
 | **Performance Issues** | [Performance Guide](performance-issues.md) |
-| **Support Escalation** | [Main Guide](README.md#-support-escalation) |
+| **Support Escalation** | [Main Guide](README.md#support-escalation) |
 
 ---
 

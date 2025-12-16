@@ -20,8 +20,6 @@ Use different database technologies optimized for specific data patterns and acc
 - [Data Synchronization](#data-synchronization)
 - [Use Cases](#use-cases)
 - [Best Practices](#best-practices)
-- [Consistency Models](#consistency-models)
-- [Migration Strategy](#migration-strategy)
 - [Related Patterns](#related-patterns)
 
 ---

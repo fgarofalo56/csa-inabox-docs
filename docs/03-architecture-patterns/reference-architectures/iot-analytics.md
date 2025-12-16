@@ -17,7 +17,7 @@ Complete IoT analytics solution from device connectivity through real-time proce
 - [Azure Services](#azure-services)
 - [Implementation](#implementation)
 - [Use Cases](#use-cases)
-- [Security & Compliance](#security--compliance)
+- [Security & Compliance](#security-compliance)
 - [Deployment](#deployment)
 - [Monitoring](#monitoring)
 
@@ -611,7 +611,7 @@ __Results__:
 
 ---
 
-## 🔒 Security & Compliance
+## 🔒 Security Compliance
 
 ### Security Architecture
 

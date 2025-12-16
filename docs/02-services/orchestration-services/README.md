@@ -247,7 +247,7 @@ graph TD
 1. __Start with__: Azure Logic Apps for simple automation
 2. __Why__: Easier learning curve, visual designer, quick results
 3. __Next Steps__: Progress to Data Factory for data-intensive workloads
-4. __Resources__: [Logic Apps Quick Start](azure-logic-apps/workflow-automation.md)
+4. __Resources__: [Logic Apps Quick Start](azure-logic-apps/README.md#quick-start-guide)
 
 ### 📊 Data Engineering Focus
 
@@ -341,7 +341,7 @@ __Services__: Azure Data Factory + Azure Synapse Analytics
 4. Load into dedicated SQL pool
 5. Refresh Power BI datasets
 
-__[Implementation Guide →](azure-data-factory/pipeline-patterns.md#data-warehouse-refresh)__
+__[Implementation Guide →](azure-data-factory/pipeline-patterns.md)__
 
 ### Scenario 2: Real-time Order Processing
 
@@ -353,7 +353,7 @@ __Services__: Azure Logic Apps + Azure Functions + Cosmos DB
 4. Send confirmation email
 5. Trigger fulfillment workflow
 
-__[Implementation Guide →](azure-logic-apps/workflow-automation.md#order-processing)__
+__[Implementation Guide →](azure-logic-apps/workflow-automation.md#business-process-automation)__
 
 ### Scenario 3: File-based Integration
 
@@ -365,7 +365,7 @@ __Services__: Azure Data Factory + Blob Storage + Event Grid
 4. Load into destination system
 5. Archive processed files
 
-__[Implementation Guide →](azure-data-factory/pipeline-patterns.md#file-based-ingestion)__
+__[Implementation Guide →](azure-data-factory/pipeline-patterns.md)__
 
 ### Scenario 4: Multi-System Synchronization
 
@@ -377,7 +377,7 @@ __Services__: Azure Logic Apps + Custom Connectors
 4. Handle conflicts and errors
 5. Log synchronization status
 
-__[Implementation Guide →](azure-logic-apps/workflow-automation.md#system-synchronization)__
+__[Implementation Guide →](azure-logic-apps/workflow-automation.md#system-integration-patterns)__
 
 ---
 

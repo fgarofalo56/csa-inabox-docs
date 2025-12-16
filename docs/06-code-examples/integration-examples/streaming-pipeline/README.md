@@ -44,7 +44,6 @@ graph LR
 - [Architecture Components](#architecture-components)
 - [Setup Instructions](#setup-instructions)
 - [Event Producer](#event-producer)
-- [Stream Processing](#stream-processing)
 - [Data Storage](#data-storage)
 - [Monitoring and Alerts](#monitoring-and-alerts)
 - [Complete Example](#complete-example)

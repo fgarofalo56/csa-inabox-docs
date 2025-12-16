@@ -168,7 +168,7 @@ __[📖 CI/CD Guide →](ci-cd-pipelines.md)__
 Ingest data from various sources into your data lake or warehouse.
 
 __Architecture__: Source Systems → ADF → Data Lake/Synapse
-__Pattern__: [Incremental Copy Pattern](pipeline-patterns.md#incremental-copy)
+__Pattern__: [Incremental Copy Pattern](pipeline-patterns.md)
 
 ```json
 {
@@ -217,14 +217,14 @@ __Pattern__: [Medallion Architecture](../../../03-architecture-patterns/batch-ar
 Hybrid cloud and on-premises data integration.
 
 __Architecture__: On-premises → Self-hosted IR → Cloud Services
-__Pattern__: [Hybrid Integration](integration-runtime/README.md#self-hosted-ir)
+__Pattern__: [Hybrid Integration](integration-runtime/README.md)
 
 ### 🔁 Real-time Data Sync
 
 Near real-time data synchronization across systems.
 
 __Architecture__: Source DB → ADF → Target DB
-__Pattern__: [Change Data Capture](pipeline-patterns.md#cdc-pattern)
+__Pattern__: [Change Data Capture](pipeline-patterns.md)
 
 ---
 

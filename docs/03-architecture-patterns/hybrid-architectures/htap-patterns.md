@@ -19,7 +19,6 @@ Enable real-time analytics on operational data without the complexity and latenc
 - [Use Cases](#use-cases)
 - [Performance Optimization](#performance-optimization)
 - [Best Practices](#best-practices)
-- [Monitoring and Operations](#monitoring-and-operations)
 - [Cost Optimization](#cost-optimization)
 - [Related Patterns](#related-patterns)
 

@@ -249,14 +249,14 @@ graph TD
 1. __Start with__: Azure Synapse Analytics Serverless SQL Pools
 2. __Why__: No infrastructure to manage, familiar SQL syntax
 3. __Next Steps__: Explore Spark Pools for advanced processing
-4. __Resources__: [Synapse Quick Start](azure-synapse/README.md#quick-start)
+4. __Resources__: [Synapse Quick Start](azure-synapse/README.md#quick-start-guide)
 
 ### 🧪 Data Science Team
 
 1. __Start with__: Azure Databricks Community Edition trial
 2. __Why__: Full-featured ML environment with collaboration
 3. __Next Steps__: Set up Unity Catalog for governance
-4. __Resources__: [Databricks Quick Start](azure-databricks/README.md#quick-start)
+4. __Resources__: [Databricks Quick Start](azure-databricks/README.md#quick-start-guide)
 
 ### 🏢 Existing Hadoop Investment
 
