@@ -299,8 +299,8 @@ This tutorial collection is continuously updated with:
   - [Delta Lake Examples](../code-examples/delta-lake-guide.md)
   - [Serverless SQL Examples](../code-examples/serverless-sql-guide.md)
   - [Integration Examples](../code-examples/integration-guide.md)
-- 🎯 [Solutions](../solutions/README.md) - Complete solution patterns
-  - [Real-time Analytics](../solutions/azure-realtime-analytics/README.md)
+- 🎯 [Solutions](../08-solutions/README.md) - Complete solution patterns
+  - [Real-time Analytics](../08-solutions/azure-realtime-analytics/README.md)
 
 ### Support Resources
 
@@ -318,7 +318,7 @@ This tutorial collection is continuously updated with:
 
 - 🔧 __Data Engineer__: [Environment Setup](synapse/01-environment-setup.md) → [Delta Lake](code-labs/pyspark-fundamentals.md) → [CI/CD](../devops/pipeline-ci-cd.md)
 - 📊 __Data Analyst__: [Serverless SQL](../code-examples/serverless-sql-guide.md) → [Query Optimization](../code-examples/serverless-sql/query-optimization.md) → [Best Practices](../best-practices/serverless-sql-best-practices.md)
-- 🏗️ __Architect__: [Architecture Overview](../architecture/README.md) → [Reference Architectures](../architecture/delta-lakehouse/README.md) → [Solutions](../solutions/README.md)
+- 🏗️ __Architect__: [Architecture Overview](../architecture/README.md) → [Reference Architectures](../architecture/delta-lakehouse/README.md) → [Solutions](../08-solutions/README.md)
 - ⚙️ __Administrator__: [Environment Setup](synapse/01-environment-setup.md) → [Monitoring](../monitoring/README.md) → [Security](../best-practices/security.md)
 
 ---

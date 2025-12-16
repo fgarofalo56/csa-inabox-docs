@@ -1,6 +1,6 @@
 # 🎯 Service Selection Guide
 
-> __🏠 [Home](../../README.md)__ | __📖 [Overview](README.md)__ | __🎯 Choosing Services__
+> __🏠 [Home](../README.md)__ | __📖 [Overview](README.md)__ | __🎯 Choosing Services__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Services](https://img.shields.io/badge/Services-15+-blue?style=flat-square)
@@ -570,18 +570,18 @@ flowchart TD
 
 - [Service Catalog](service-catalog.md) - Complete service overview
 - [Architecture Patterns](architecture-patterns.md) - Pattern selection guidance
-- [Best Practices](../best-practices/README.md) - Service-specific best practices
+- [Best Practices](../05-best-practices/README.md) - Service-specific best practices
 
 ### Implementation Guides
 
 - [Getting Started Tutorials](../tutorials/README.md)
-- [Code Examples](../code-examples/README.md)
+- [Code Examples](../06-code-examples/README.md)
 - [Reference Architectures](../03-architecture-patterns/reference-architectures/)
 
 ### Cost Management
 
-- [Cost Optimization Guide](../best-practices/cost-optimization.md)
-- [Performance Optimization](../best-practices/performance-optimization.md)
+- [Cost Optimization Guide](../05-best-practices/cost-optimization.md)
+- [Performance Optimization](../05-best-practices/performance-optimization.md)
 
 ---
 

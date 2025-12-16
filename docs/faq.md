@@ -203,7 +203,7 @@
 | ⚡ __Query Optimization__ | 40-60% | ![Medium](https://img.shields.io/badge/Complexity-Medium-yellow) | Optimize queries and indexing |
 | 📅 __Scheduled Workloads__ | 15-30% | ![Easy](https://img.shields.io/badge/Complexity-Easy-green) | Run jobs during off-peak hours |
 
-__See Also__: [Cost Optimization Guide](./best-practices/cost-optimization.md)
+__See Also__: [Cost Optimization Guide](./05-best-practices/README.md)
 
 ---
 
@@ -220,7 +220,7 @@ __See Also__: [Cost Optimization Guide](./best-practices/cost-optimization.md)
 | ⚙️ __Tune Executor Memory__ | ![Medium](https://img.shields.io/badge/Gain-Medium-yellow) | Memory-intensive operations |
 | 🔗 __Broadcast Small Tables__ | ![High](https://img.shields.io/badge/Gain-High-darkgreen) | Joins with small dimension tables |
 
-__See Also__: [Spark Performance Guide](./best-practices/spark-performance.md)
+__See Also__: [Spark Performance Guide](./05-best-practices/README.md)
 
 ---
 
@@ -237,7 +237,7 @@ __See Also__: [Spark Performance Guide](./best-practices/spark-performance.md)
 | 4️⃣ | __Optimize Joins__ | Query rewrite | Reduce shuffle operations |
 | 5️⃣ | __Update Statistics__ | ANALYZE TABLE | Improve query planning |
 
-__See Also__: [SQL Performance Troubleshooting](./troubleshooting/serverless-sql-troubleshooting.md)
+__See Also__: [SQL Performance Troubleshooting](./07-troubleshooting/README.md)
 
 ---
 
@@ -265,7 +265,7 @@ ON dbo.SalesData
 WITH (STATE = ON);
 ```
 
-__See Also__: [Security Best Practices](./best-practices/security.md)
+__See Also__: [Security Best Practices](./05-best-practices/README.md)
 
 ---
 
@@ -281,7 +281,7 @@ __See Also__: [Security Best Practices](./best-practices/security.md)
 | __SQL Permissions__ | Database level | Table/Column/Row | Data access control |
 | __Storage Permissions__ | Storage account level | Container/Folder/File | Data lake access |
 
-__See Also__: [Security Architecture](./architecture/private-link-architecture.md)
+__See Also__: [Security Architecture](./03-architecture-patterns/README.md)
 
 ---
 
@@ -298,7 +298,7 @@ __See Also__: [Security Architecture](./architecture/private-link-architecture.m
 | __DirectQuery__ | ![Good](https://img.shields.io/badge/Perf-Good-green) | Live connection to SQL pools | ![Easy](https://img.shields.io/badge/Complexity-Easy-green) |
 | __Import Mode__ | ![Excellent](https://img.shields.io/badge/Perf-Excellent-darkgreen) | Static/scheduled refreshes | ![Easy](https://img.shields.io/badge/Complexity-Easy-green) |
 
-__See Also__: [Power BI Integration Guide](./code-examples/integration/azure-ml.md)
+__See Also__: [Power BI Integration Guide](./06-code-examples/README.md)
 
 ---
 
@@ -314,7 +314,7 @@ __See Also__: [Power BI Integration Guide](./code-examples/integration/azure-ml.
 | __AutoML__ | Automated model training | Simplify ML development |
 | __Model Registry__ | Version and deploy models | Production ML lifecycle |
 
-__See Also__: [Azure ML Integration Examples](./code-examples/integration/azure-ml.md)
+__See Also__: [Azure ML Integration Examples](./06-code-examples/README.md)
 
 ---
 
@@ -349,7 +349,7 @@ __See Also__: [Migration Guide](./solutions/azure-realtime-analytics/implementat
 | __Functions__ | ![90%](https://img.shields.io/badge/Support-90%25-green) | Some limitations |
 | __Cursors__ | ![Limited](https://img.shields.io/badge/Support-Limited-yellow) | Use set-based operations instead |
 
-__See Also__: [Serverless SQL Best Practices](./best-practices/serverless-sql-best-practices.md)
+__See Also__: [Serverless SQL Best Practices](./05-best-practices/README.md)
 
 ---
 
@@ -375,7 +375,7 @@ ALTER TABLE my_table SET TBLPROPERTIES (
 );
 ```
 
-__See Also__: [Delta Lake Best Practices](./best-practices/delta-lake-optimization.md)
+__See Also__: [Delta Lake Best Practices](./05-best-practices/README.md)
 
 ---
 
@@ -396,7 +396,7 @@ __Avoid__:
 - Small partitions (<100MB)
 - Low-cardinality columns (2-3 values)
 
-__See Also__: [Performance Optimization Guide](./best-practices/performance-optimization.md)
+__See Also__: [Performance Optimization Guide](./05-best-practices/README.md)
 
 ---
 
@@ -422,10 +422,10 @@ __See Also__: [Performance Optimization Guide](./best-practices/performance-opti
 
 | Resource Type | Description | Link |
 |--------------|-------------|------|
-| 📚 __Troubleshooting__ | Comprehensive troubleshooting guides | [Troubleshooting Hub](./troubleshooting/README.md) |
-| 💻 __Code Examples__ | Working code samples and patterns | [Code Examples](./code-examples/README.md) |
-| 🏗️ __Architecture__ | Reference architectures and patterns | [Architecture Guides](./architecture/README.md) |
-| ✅ __Best Practices__ | Production-ready best practices | [Best Practices](./best-practices/README.md) |
+| 📚 __Troubleshooting__ | Comprehensive troubleshooting guides | [Troubleshooting Hub](./07-troubleshooting/README.md) |
+| 💻 __Code Examples__ | Working code samples and patterns | [Code Examples](./06-code-examples/README.md) |
+| 🏗️ __Architecture__ | Reference architectures and patterns | [Architecture Guides](./03-architecture-patterns/README.md) |
+| ✅ __Best Practices__ | Production-ready best practices | [Best Practices](./05-best-practices/README.md) |
 | 🎓 __Tutorials__ | Step-by-step learning paths | [Tutorials](./tutorials/README.md) |
 
 ---
@@ -435,7 +435,7 @@ __See Also__: [Performance Optimization Guide](./best-practices/performance-opti
 > If you can't find the answer you're looking for:
 >
 > 1. __Search the Documentation__: Use the search feature to find specific topics
-> 2. __Check Troubleshooting Guides__: Review component-specific guides in [troubleshooting](./troubleshooting/README.md)
+> 2. __Check Troubleshooting Guides__: Review component-specific guides in [troubleshooting](./07-troubleshooting/README.md)
 > 3. __Community Forums__: Visit [Azure Synapse Community](https://techcommunity.microsoft.com/t5/azure-synapse-analytics/bd-p/AzureSynapseAnalytics)
 > 4. __Microsoft Support__: Contact [Azure Support](https://azure.microsoft.com/support/create-ticket/) for technical issues
 > 5. __Contribute__: Help improve this FAQ by [submitting suggestions](./guides/CONTRIBUTING_GUIDE.md)

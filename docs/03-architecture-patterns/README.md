@@ -430,7 +430,7 @@ graph TB
 ### 📖 __Reference Materials__
 
 - [__Configuration Reference__](../reference/README.md) - Detailed configuration options
-- [__Solutions__](../solutions/README.md) - Industry-specific reference architectures
+- [__Solutions__](../08-solutions/README.md) - Industry-specific reference architectures
 - [__Diagrams__](../diagrams/README.md) - Architecture diagrams and visuals
 
 ---

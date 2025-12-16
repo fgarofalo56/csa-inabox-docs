@@ -1,6 +1,6 @@
 # 💾 Analytics Compute Services
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ Services__ | __💾 Analytics Compute__
+> __🏠 [Home](../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ Services__ | __💾 Analytics Compute__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Services](https://img.shields.io/badge/Services-3-blue?style=flat-square)
@@ -292,7 +292,7 @@ graph TD
 
 - [__Batch Architectures__](../../03-architecture-patterns/batch-architectures/README.md)
 - [__Streaming Architectures__](../../03-architecture-patterns/streaming-architectures/README.md)
-- [__Real-time Analytics__](../../solutions/azure-realtime-analytics/README.md)
+- [__Real-time Analytics__](../../08-solutions/azure-realtime-analytics/README.md)
 
 ---
 

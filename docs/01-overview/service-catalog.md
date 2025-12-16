@@ -1,6 +1,6 @@
 # 📖 Azure Cloud Scale Analytics Service Catalog
 
-> __🏠 [Home](../../README.md)__ | __📖 [Overview](README.md)__ | __📋 Service Catalog__
+> __🏠 [Home](../README.md)__ | __📖 [Overview](README.md)__ | __📋 Service Catalog__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Coverage](https://img.shields.io/badge/Services-15+-blue?style=flat-square)

@@ -374,7 +374,7 @@ stream.window(
 
 - [Event Hubs Quickstart](eventhubs-quickstart.md) - Hands-on with Event Hubs
 - [Stream Analytics Tutorial](../stream-analytics/README.md) - Build streaming queries
-- [Real-Time Analytics Solution](../../solutions/azure-realtime-analytics/README.md) - End-to-end architecture
+- [Real-Time Analytics Solution](../../08-solutions/azure-realtime-analytics/README.md) - End-to-end architecture
 
 ---
 

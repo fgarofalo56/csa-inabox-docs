@@ -1,6 +1,6 @@
 # 🛠️ Azure Analytics Services Documentation
 
-> __🏠 [Home](../../README.md)__ | __📖 [Overview](../01-overview/README.md)__ | __🛠️ Services__
+> __🏠 [Home](../README.md)__ | __📖 [Overview](../01-overview/README.md)__ | __🛠️ Services__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Services](https://img.shields.io/badge/Services-15+-blue?style=flat-square)
@@ -382,17 +382,17 @@ Leverage these for enterprise-scale implementations:
 ### 📖 __By Documentation Type__
 
 - [__Architecture Patterns__](../03-architecture-patterns/README.md) - How to combine services
-- [__Implementation Guides__](../tutorials/README.md) - Step-by-step tutorials
-- [__Best Practices__](../best-practices/README.md) - Service-specific guidance
-- [__Code Examples__](../code-examples/README.md) - Sample implementations
-- [__Troubleshooting__](../troubleshooting/README.md) - Problem resolution
+- [__Implementation Guides__](../04-implementation-guides/README.md) - Step-by-step tutorials
+- [__Best Practices__](../05-best-practices/README.md) - Service-specific guidance
+- [__Code Examples__](../06-code-examples/README.md) - Sample implementations
+- [__Troubleshooting__](../07-troubleshooting/README.md) - Problem resolution
 
 ### 🎯 __By Use Case__
 
-- [__Real-time Analytics__](../solutions/azure-realtime-analytics/README.md)
-- [__Integration Patterns__](../tutorials/integration/README.md)
-- [__Code Labs__](../tutorials/code-labs/README.md)
-- [__Learning Paths__](../tutorials/learning-paths/README.md)
+- [__Real-time Analytics__](../08-solutions/azure-realtime-analytics/README.md)
+- [__Integration Patterns__](../04-implementation-guides/integration-scenarios/README.md)
+- [__Code Labs__](../04-implementation-guides/README.md)
+- [__Learning Paths__](../04-implementation-guides/README.md)
 
 ---
 

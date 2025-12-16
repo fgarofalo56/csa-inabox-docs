@@ -1,6 +1,6 @@
 # 🔭 Azure Analytics Services Overview
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../01-overview/README.md)__ | __🛠️ [Services](../README.md)__ | __🔭 Overview__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../01-overview/README.md)__ | __🛠️ [Services](../README.md)__ | __🔭 Overview__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Services](https://img.shields.io/badge/Services-15+-blue?style=flat-square)

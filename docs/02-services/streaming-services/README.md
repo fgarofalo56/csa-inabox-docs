@@ -1,6 +1,6 @@
 # 🔄 Streaming Services
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ Services__ | __🔄 Streaming Services__
+> __🏠 [Home](../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ Services__ | __🔄 Streaming Services__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Services](https://img.shields.io/badge/Services-3-blue?style=flat-square)
@@ -389,7 +389,7 @@ __[📖 Monitoring Guide →](../../09-monitoring/README.md)__
 
 - __[Integration Scenarios](../../04-implementation-guides/integration-scenarios/README.md)__: Real-time to batch processing
 - __[Streaming Architectures](../../03-architecture-patterns/streaming-architectures/README.md)__: Stream processing patterns
-- __[Real-time Analytics](../../solutions/azure-realtime-analytics/README.md)__: Complete solutions
+- __[Real-time Analytics](../../08-solutions/azure-realtime-analytics/README.md)__: Complete solutions
 
 ### With Storage Services
 
@@ -405,21 +405,21 @@ __[📖 All Integration Scenarios →](../../04-implementation-guides/integratio
 
 ### 🎓 __Getting Started__
 
-- [__Stream Analytics Tutorials__](../../tutorials/stream-analytics/README.md)
-- [__Synapse Tutorials__](../../tutorials/synapse/README.md)
-- [__Code Labs__](../../tutorials/code-labs/README.md)
+- [__Stream Analytics Tutorials__](../../04-implementation-guides/README.md)
+- [__Synapse Tutorials__](../../04-implementation-guides/README.md)
+- [__Code Labs__](../../04-implementation-guides/README.md)
 
 ### 📖 __Advanced Topics__
 
 - [__Streaming Architecture Patterns__](../../03-architecture-patterns/streaming-architectures/README.md)
 - [__Best Practices__](../../05-best-practices/README.md)
-- [__Real-time Analytics Solutions__](../../solutions/azure-realtime-analytics/README.md)
+- [__Real-time Analytics Solutions__](../../08-solutions/azure-realtime-analytics/README.md)
 
 ### 🔧 __Code Examples__
 
 - [__Code Examples Guide__](../../06-code-examples/README.md)
-- [__Integration Examples__](../../tutorials/integration/README.md)
-- [__Learning Paths__](../../tutorials/learning-paths/README.md)
+- [__Integration Examples__](../../04-implementation-guides/integration-scenarios/README.md)
+- [__Learning Paths__](../../04-implementation-guides/README.md)
 
 ---
 

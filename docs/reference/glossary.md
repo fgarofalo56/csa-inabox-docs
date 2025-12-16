@@ -288,7 +288,7 @@ __Related:__ [Shared Metadata](../architecture/shared-metadata/README.md)
 
 Real-time data processing path for immediate insights. Contrasts with cold path (batch processing).
 
-__Related:__ [Real-time Analytics](../solutions/azure-realtime-analytics/README.md)
+__Related:__ [Real-time Analytics](../08-solutions/azure-realtime-analytics/README.md)
 
 ---
 
@@ -595,7 +595,7 @@ __Related:__ [Architecture Overview](../architecture/README.md)
 
 Continuous processing of data in real-time as it arrives.
 
-__Related:__ [Real-time Analytics](../solutions/azure-realtime-analytics/README.md)
+__Related:__ [Real-time Analytics](../08-solutions/azure-realtime-analytics/README.md)
 
 ### Synapse Studio
 

@@ -1,6 +1,6 @@
 # 🧪 Azure Databricks
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🧪 Azure Databricks**
+> **🏠 [Home](../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🧪 Azure Databricks**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Tier](https://img.shields.io/badge/Tier-Data%20Science-orange?style=flat-square)
@@ -465,7 +465,7 @@ Retries: 2
 - Implement data masking for PII
 - Regular security scans and compliance checks
 
-**[📖 Detailed Security Guide →](../../../05-best-practices/cross-cutting-concerns/security/databricks-security.md)**
+**[📖 Detailed Security Guide →](../../../05-best-practices/README.md)**
 
 ### ⚡ Performance Optimization
 
@@ -500,7 +500,7 @@ spark.sql("""
 """)
 ```
 
-**[📖 Performance Tuning Guide →](../../../05-best-practices/cross-cutting-concerns/performance/databricks-optimization.md)**
+**[📖 Performance Tuning Guide →](../../../05-best-practices/README.md)**
 
 ### 📊 Monitoring & Observability
 
@@ -534,7 +534,7 @@ diagnostic_settings = {
 }
 ```
 
-**[📖 Monitoring Guide →](../../../09-monitoring/service-monitoring/databricks/README.md)**
+**[📖 Monitoring Guide →](../../../09-monitoring/README.md)**
 
 ---
 
@@ -603,7 +603,7 @@ spark.sql("""
 df = spark.read.format("delta").table("dbx_shared.sales")
 ```
 
-**[📖 Integration Examples →](../../../04-implementation-guides/integration-scenarios/databricks-integrations.md)**
+**[📖 Integration Examples →](../../../04-implementation-guides/integration-scenarios/README.md)**
 
 ---
 
@@ -611,24 +611,24 @@ df = spark.read.format("delta").table("dbx_shared.sales")
 
 ### 🎓 Getting Started
 
-- [**Databricks Quick Start**](../../../tutorials/beginner/databricks-quickstart.md)
-- [**Delta Lake Fundamentals**](../../../tutorials/beginner/delta-lake-basics.md)
-- [**Spark SQL Tutorial**](../../../tutorials/intermediate/spark-sql-tutorial.md)
-- [**Machine Learning with Databricks**](../../../tutorials/intermediate/ml-databricks.md)
+- [**Databricks Quick Start**](../../../04-implementation-guides/README.md)
+- [**Delta Lake Fundamentals**](../../../04-implementation-guides/README.md)
+- [**Spark SQL Tutorial**](../../../04-implementation-guides/README.md)
+- [**Machine Learning with Databricks**](../../../04-implementation-guides/README.md)
 
 ### 📖 Deep Dive Guides
 
 - [**Architecture Patterns**](../../../03-architecture-patterns/README.md)
-- [**Best Practices**](../../../05-best-practices/service-specific/databricks/README.md)
-- [**Code Examples**](../../../06-code-examples/by-service/databricks/README.md)
+- [**Best Practices**](../../../05-best-practices/README.md)
+- [**Code Examples**](../../../06-code-examples/README.md)
 - [**Real-World Solutions**](../../../08-solutions/README.md)
 
 ### 🔧 Advanced Topics
 
-- [**Delta Live Tables Advanced**](delta-live-tables/README.md#advanced-patterns)
-- [**Unity Catalog Architecture**](unity-catalog/README.md#architecture)
-- [**MLOps with MLflow**](mlflow-integration/README.md#mlops-workflows)
-- [**Performance Tuning**](../../../05-best-practices/cross-cutting-concerns/performance/spark-optimization.md)
+- [**Delta Live Tables Advanced**](delta-live-tables/README.md)
+- [**Unity Catalog Architecture**](unity-catalog/README.md)
+- [**MLOps with MLflow**](mlflow-integration/README.md)
+- [**Performance Tuning**](../../../05-best-practices/README.md)
 
 ---
 
@@ -637,19 +637,19 @@ df = spark.read.format("delta").table("dbx_shared.sales")
 ### 🔍 Common Issues
 
 **Cluster Startup Issues**:
-- [**Cluster Won't Start**](../../../07-troubleshooting/service-troubleshooting/databricks/cluster-startup.md)
-- [**Node Provisioning Errors**](../../../07-troubleshooting/service-troubleshooting/databricks/node-provisioning.md)
-- [**Networking Problems**](../../../07-troubleshooting/service-troubleshooting/databricks/networking.md)
+- [**Cluster Won't Start**](../../../07-troubleshooting/README.md)
+- [**Node Provisioning Errors**](../../../07-troubleshooting/README.md)
+- [**Networking Problems**](../../../07-troubleshooting/README.md)
 
 **Performance Problems**:
-- [**Slow Queries**](../../../07-troubleshooting/service-troubleshooting/databricks/query-performance.md)
-- [**Out of Memory Errors**](../../../07-troubleshooting/service-troubleshooting/databricks/memory-issues.md)
-- [**Shuffle Performance**](../../../07-troubleshooting/service-troubleshooting/databricks/shuffle-optimization.md)
+- [**Slow Queries**](../../../07-troubleshooting/README.md)
+- [**Out of Memory Errors**](../../../07-troubleshooting/README.md)
+- [**Shuffle Performance**](../../../07-troubleshooting/README.md)
 
 **Data Issues**:
-- [**Delta Lake Problems**](../../../07-troubleshooting/service-troubleshooting/databricks/delta-issues.md)
-- [**Data Quality Issues**](../../../07-troubleshooting/service-troubleshooting/databricks/data-quality.md)
-- [**Schema Evolution**](../../../07-troubleshooting/service-troubleshooting/databricks/schema-evolution.md)
+- [**Delta Lake Problems**](../../../07-troubleshooting/README.md)
+- [**Data Quality Issues**](../../../07-troubleshooting/README.md)
+- [**Schema Evolution**](../../../07-troubleshooting/README.md)
 
 ### 📞 Getting Help
 
@@ -659,7 +659,7 @@ df = spark.read.format("delta").table("dbx_shared.sales")
 - **Documentation**: Microsoft Learn and Databricks official docs
 - **GitHub Issues**: Report documentation or sample issues
 
-**[📖 Complete Troubleshooting Guide →](../../../07-troubleshooting/service-troubleshooting/databricks/README.md)**
+**[📖 Complete Troubleshooting Guide →](../../../07-troubleshooting/README.md)**
 
 ---
 
@@ -669,7 +669,7 @@ df = spark.read.format("delta").table("dbx_shared.sales")
 
 1. **[Complete Workspace Setup](workspace-setup.md)** - Get your environment ready
 2. **[Try Delta Lake](delta-live-tables/README.md)** - Learn modern data engineering
-3. **[Explore Notebooks](../../../tutorials/beginner/databricks-notebooks.md)** - Hands-on coding
+3. **[Explore Notebooks](../../../04-implementation-guides/README.md)** - Hands-on coding
 
 ### 🏢 For Teams
 
@@ -679,8 +679,8 @@ df = spark.read.format("delta").table("dbx_shared.sales")
 
 ### 🔧 For Advanced Users
 
-1. **[Optimize Performance](../../../05-best-practices/cross-cutting-concerns/performance/databricks-optimization.md)** - Tune for production
-2. **[Implement CI/CD](../../../06-devops/databricks-cicd.md)** - Automate deployments
+1. **[Optimize Performance](../../../05-best-practices/README.md)** - Tune for production
+2. **[Implement CI/CD](../../../05-best-practices/README.md)** - Automate deployments
 3. **[Build Solutions](../../../08-solutions/README.md)** - Enterprise patterns
 
 ---

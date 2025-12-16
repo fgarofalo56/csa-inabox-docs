@@ -1,6 +1,6 @@
 # 🔧 Orchestration Services
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ Services__ | __🔧 Orchestration Services__
+> __🏠 [Home](../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ Services__ | __🔧 Orchestration Services__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Services](https://img.shields.io/badge/Services-2-blue?style=flat-square)
@@ -445,9 +445,9 @@ __[Implementation Guide →](azure-logic-apps/workflow-automation.md#system-inte
 
 ### 📊 Reference Implementations
 
-- [ETL Pipeline Examples](../../code-examples/integration/azure-data-factory.md)
-- [Logic Apps Connectors Guide](../../code-examples/integration-guide.md)
-- [Best Practices Guide](../../best-practices/pipeline-optimization.md)
+- [ETL Pipeline Examples](../../06-code-examples/README.md)
+- [Logic Apps Connectors Guide](../../06-code-examples/README.md)
+- [Best Practices Guide](../../05-best-practices/README.md)
 
 ---
 

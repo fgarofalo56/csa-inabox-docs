@@ -717,9 +717,9 @@ az network private-endpoint create \
 
 ## 📚 Next Steps
 
-- **[Add Logic Apps for complex orchestration](../../solutions/logic-apps-integration/README.md)**
+- **[Add Logic Apps for complex orchestration](../../08-solutions/logic-apps-integration/README.md)**
 - **[Implement data quality validation](../../best-practices/data-quality.md)**
-- **[Build data lineage tracking](../../solutions/data-governance/lineage.md)**
+- **[Build data lineage tracking](../../08-solutions/data-governance/lineage.md)**
 
 ---
 

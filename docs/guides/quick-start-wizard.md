@@ -124,7 +124,7 @@ __Month 5-6: Production Readiness__
 __Next Steps:__
 
 - Move to [Advanced Track](#advanced-track-data-engineer)
-- Explore [Real-time Analytics Solutions](../solutions/azure-realtime-analytics/README.md)
+- Explore [Real-time Analytics Solutions](../08-solutions/azure-realtime-analytics/README.md)
 
 #### 🔴 Advanced Track (1+ years experience) {#advanced-track-data-engineer}
 
@@ -290,7 +290,7 @@ __Week 2-4: Core Patterns__
 __Solution Design:__
 
 1. ✅ End-to-end architectures
-   - [Real-time Analytics Solution](../solutions/azure-realtime-analytics/README.md)
+   - [Real-time Analytics Solution](../08-solutions/azure-realtime-analytics/README.md)
    - Batch and streaming
    - Hybrid scenarios
 
@@ -506,7 +506,7 @@ Use this to track your progress:
 |-----------|------------|--------------|-------------|
 | __Data Engineer__ | [Environment Setup](../tutorials/synapse/01-environment-setup.md) | [Delta Lake Guide](../code-examples/delta-lake-guide.md) | [Architecture Patterns](../architecture/README.md) |
 | __Data Analyst__ | [Serverless SQL Guide](../code-examples/serverless-sql-guide.md) | [Query Optimization](../code-examples/serverless-sql/query-optimization.md) | [Best Practices](../best-practices/README.md) |
-| __Architect__ | [Architecture Overview](../architecture/README.md) | [Reference Architectures](../architecture/delta-lakehouse/README.md) | [Solutions](../solutions/README.md) |
+| __Architect__ | [Architecture Overview](../architecture/README.md) | [Reference Architectures](../architecture/delta-lakehouse/README.md) | [Solutions](../08-solutions/README.md) |
 | __Admin__ | [Environment Setup](../tutorials/synapse/01-environment-setup.md) | [Monitoring Setup](../monitoring/monitoring-setup.md) | [Security Best Practices](../best-practices/security.md) |
 
 ---
@@ -534,7 +534,7 @@ Use this to track your progress:
 
 ### Month 6+ (Advanced)
 
-- [ ] [Solutions](../solutions/README.md)
+- [ ] [Solutions](../08-solutions/README.md)
 - [ ] [DevOps Practices](../devops/pipeline-ci-cd.md)
 - [ ] [Contributing Guide](./CONTRIBUTING_GUIDE.md)
 

@@ -1,6 +1,6 @@
 # 🏗️ Architecture Patterns Overview
 
-> __🏠 [Home](../../README.md)__ | __📖 [Overview](README.md)__ | __🏗️ Architecture Patterns__
+> __🏠 [Home](../README.md)__ | __📖 [Overview](README.md)__ | __🏗️ Architecture Patterns__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -507,8 +507,8 @@ __Key Services__:
 
 ### Implementation Guides
 
-- [Lambda Architecture Implementation](../solutions/azure-realtime-analytics/README.md)
-- [Best Practices](../best-practices/README.md)
+- [Lambda Architecture Implementation](../08-solutions/azure-realtime-analytics/README.md)
+- [Best Practices](../05-best-practices/README.md)
 - [Synapse Tutorials](../tutorials/synapse/README.md)
 
 ### Diagrams and Visuals

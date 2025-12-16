@@ -550,7 +550,7 @@ balanced_df = parsed_df.repartition(16, "deviceId")
 ## 📚 Next Steps
 
 - **[Integrate with Synapse for analytics](stream-analytics-synapse.md)**
-- **[Add ML model training pipeline](../../solutions/ml-pipeline/README.md)**
+- **[Add ML model training pipeline](../../08-solutions/ml-pipeline/README.md)**
 - **[Implement data quality checks](../../best-practices/data-quality.md)**
 
 ---

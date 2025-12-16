@@ -1,6 +1,6 @@
 # 🔐 Data Governance Services
 
-> __🏠 [Home](../../../README.md)__ | __🛠️ [Services](../README.md)__ | __🔐 Data Governance__
+> __🏠 [Home](../../README.md)__ | __🛠️ [Services](../README.md)__ | __🔐 Data Governance__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Services](https://img.shields.io/badge/Services-3-blue?style=flat-square)

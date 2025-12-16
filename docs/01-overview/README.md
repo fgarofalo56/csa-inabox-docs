@@ -1,6 +1,6 @@
 # 🌐 Cloud Scale Analytics Platform Overview
 
-> __🏠 [Home](../../README.md)__ | __📖 Cloud Scale Analytics Overview__
+> __🏠 [Home](../README.md)__ | __📖 Cloud Scale Analytics Overview__
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Version: 2.0](https://img.shields.io/badge/Version-2.0-blue?style=flat-square)
@@ -154,7 +154,7 @@ Step-by-step implementation guidance
 - Integration Scenarios
 - Migration Guides
 
-#### 💡 [Best Practices](../best-practices/README.md)
+#### 💡 [Best Practices](../05-best-practices/README.md)
 
 Proven practices across all services
 
@@ -245,15 +245,15 @@ Move and transform data across systems
 
 - [Architecture Patterns](../03-architecture-patterns/README.md)
 - [Security Best Practices](../security/best-practices.md)
-- [Cost Optimization](../best-practices/cost-optimization.md)
-- [Performance Optimization](../best-practices/performance.md)
+- [Cost Optimization](../05-best-practices/cost-optimization.md)
+- [Performance Optimization](../05-best-practices/performance.md)
 
 ### 🛠️ __Implementation Examples__
 
-- [Real-time Analytics Solution](../solutions/azure-realtime-analytics/README.md)
-- [Code Examples](../code-examples/README.md)
-- [Integration Examples](../code-examples/integration/README.md)
-- [Delta Lake Examples](../code-examples/delta-lake/README.md)
+- [Real-time Analytics Solution](../08-solutions/azure-realtime-analytics/README.md)
+- [Code Examples](../06-code-examples/README.md)
+- [Integration Examples](../06-code-examples/integration/README.md)
+- [Delta Lake Examples](../06-code-examples/delta-lake/README.md)
 
 ## 📞 Getting Help
 

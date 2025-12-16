@@ -131,7 +131,7 @@ __Study Resources:__
 | PySpark Fundamentals | [Code Lab](../../code-labs/pyspark-fundamentals.md) | ⭐⭐⭐ |
 | Data Pipeline Development | [Learning Path - Module 2.3](../learning-paths/data-engineer-path.md#module-23-data-pipeline-development-20-hours) | ⭐⭐⭐ |
 | Azure Data Factory | [Integration Guide](../../../code-examples/integration/azure-data-factory.md) | ⭐⭐⭐ |
-| Stream Analytics | [Solutions](../../../solutions/azure-realtime-analytics/README.md) | ⭐⭐ |
+| Stream Analytics | [Solutions](../../../08-solutions/azure-realtime-analytics/README.md) | ⭐⭐ |
 
 __Key Concepts to Master:__
 
@@ -268,7 +268,7 @@ __Study Resources:__
 
 | Topic | Documentation Link | Priority |
 |-------|-------------------|----------|
-| Real-time Analytics | [Solutions Guide](../../../solutions/azure-realtime-analytics/README.md) | ⭐⭐⭐ |
+| Real-time Analytics | [Solutions Guide](../../../08-solutions/azure-realtime-analytics/README.md) | ⭐⭐⭐ |
 | Stream Analytics | [Tutorial](../../stream-analytics/README.md) | ⭐⭐⭐ |
 
 __Key Streaming Concepts:__

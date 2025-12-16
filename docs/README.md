@@ -21,10 +21,10 @@ status: "Active"
 
 ---
 
-[🏗️ __Architecture__](architecture/README.md) •
-[💻 __Code Examples__](code-examples/README.md) •
-[📋 __Best Practices__](best-practices/README.md) •
-[🔧 __Troubleshooting__](troubleshooting/README.md)
+[🏗️ __Architecture__](03-architecture-patterns/README.md) •
+[💻 __Code Examples__](06-code-examples/README.md) •
+[📋 __Best Practices__](05-best-practices/README.md) •
+[🔧 __Troubleshooting__](07-troubleshooting/README.md)
 
 </div>
 
@@ -61,12 +61,12 @@ Azure Synapse Analytics is an enterprise analytics service that accelerates time
 
 | Section | Icon | Description | Quick Access |
 |---------|------|-------------|--------------|
-| 🏗️ __[Architecture](architecture/README.md)__ | ![Architecture](https://img.shields.io/badge/🏗️-Architecture-blue) | Detailed architectural patterns and implementation guides | [![View](https://img.shields.io/badge/View-→-blue)](#) |
-| 💡 __[Best Practices](best-practices/README.md)__ | ![Best Practices](https://img.shields.io/badge/💡-Best_Practices-green) | Recommendations for performance, security, cost optimization, and governance | [![View](https://img.shields.io/badge/View-→-green)](#) |
-| 💻 __[Code Examples](code-examples/README.md)__ | ![Code Examples](https://img.shields.io/badge/💻-Code_Examples-orange) | Sample code and implementation templates | [![View](https://img.shields.io/badge/View-→-orange)](#) |
+| 🏗️ __[Architecture](03-architecture-patterns/README.md)__ | ![Architecture](https://img.shields.io/badge/🏗️-Architecture-blue) | Detailed architectural patterns and implementation guides | [![View](https://img.shields.io/badge/View-→-blue)](#) |
+| 💡 __[Best Practices](05-best-practices/README.md)__ | ![Best Practices](https://img.shields.io/badge/💡-Best_Practices-green) | Recommendations for performance, security, cost optimization, and governance | [![View](https://img.shields.io/badge/View-→-green)](#) |
+| 💻 __[Code Examples](06-code-examples/README.md)__ | ![Code Examples](https://img.shields.io/badge/💻-Code_Examples-orange) | Sample code and implementation templates | [![View](https://img.shields.io/badge/View-→-orange)](#) |
 | 📚 __[Reference](reference/README.md)__ | ![Reference](https://img.shields.io/badge/📚-Reference-purple) | API references and technical specifications | [![View](https://img.shields.io/badge/View-→-purple)](#) |
 | ❓ __[FAQ](faq.md)__ | ![FAQ](https://img.shields.io/badge/❓-FAQ-yellow) | Frequently asked questions | [![View](https://img.shields.io/badge/View-→-yellow)](#) |
-| 🔧 __[Troubleshooting](troubleshooting/README.md)__ | ![Troubleshooting](https://img.shields.io/badge/🔧-Troubleshooting-red) | Common issues and solutions | [![View](https://img.shields.io/badge/View-→-red)](#) |
+| 🔧 __[Troubleshooting](07-troubleshooting/README.md)__ | ![Troubleshooting](https://img.shields.io/badge/🔧-Troubleshooting-red) | Common issues and solutions | [![View](https://img.shields.io/badge/View-→-red)](#) |
 
 ---
 
@@ -79,11 +79,11 @@ Azure Synapse Analytics is an enterprise analytics service that accelerates time
 
 | Resource | Type | Description |
 |:--------:|:----:|:------------|
-| 🏞️ __[Delta Lakehouse Overview](architecture/delta-lakehouse/README.md)__ | Architecture | Complete architectural guidance for Delta Lakehouse |
-| ☁️ __[Serverless SQL Guide](architecture/serverless-sql/README.md)__ | Architecture | On-demand SQL querying patterns |
-| 🔗 __[Shared Metadata Documentation](architecture/shared-metadata/README.md)__ | Architecture | Cross-engine metadata sharing |
-| ⚡ __[Performance Best Practices](best-practices/performance.md)__ | Best Practices | Optimization techniques and tuning |
-| 🔒 __[Security Guidelines](best-practices/security.md)__ | Security | Comprehensive security framework |
+| 🏞️ __[Delta Lakehouse Overview](03-architecture-patterns/service-architectures/delta-lakehouse-overview.md)__ | Architecture | Complete architectural guidance for Delta Lakehouse |
+| ☁️ __[Serverless SQL Guide](03-architecture-patterns/service-architectures/serverless-sql/serverless-overview.md)__ | Architecture | On-demand SQL querying patterns |
+| 🔗 __[Shared Metadata Documentation](03-architecture-patterns/service-architectures/shared-metadata/shared-metadata.md)__ | Architecture | Cross-engine metadata sharing |
+| ⚡ __[Performance Best Practices](05-best-practices/README.md)__ | Best Practices | Optimization techniques and tuning |
+| 🔒 __[Security Guidelines](05-best-practices/README.md)__ | Security | Comprehensive security framework |
 
 </div>
 

@@ -249,7 +249,7 @@ These tutorials prepare you for:
 
 ### __Migration**
 
-- [Migration Strategies](../../solutions/README.md)
+- [Migration Strategies](../../08-solutions/README.md)
 - [Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/)
 
 ## ❓ Common Questions

@@ -1,6 +1,6 @@
 # 🗃️ Azure Storage Services
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ [Services](../README.md)__ | __🗃️ Storage Services__
+> __🏠 [Home](../../README.md)__ | __📖 [Overview](../../01-overview/README.md)__ | __🛠️ [Services](../README.md)__ | __🗃️ Storage Services__
 
 ![Services](https://img.shields.io/badge/Services-3-blue?style=flat-square)
 ![Coverage](https://img.shields.io/badge/Coverage-Complete-brightgreen?style=flat-square)

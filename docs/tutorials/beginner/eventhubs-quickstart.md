@@ -434,7 +434,7 @@ __Throttling Errors__
 
 - [Streaming Concepts](streaming-concepts.md) - Understand streaming fundamentals
 - [Stream Analytics Tutorial](../stream-analytics/README.md) - Process events in real-time
-- [Real-Time Analytics Solution](../../solutions/azure-realtime-analytics/README.md)
+- [Real-Time Analytics Solution](../../08-solutions/azure-realtime-analytics/README.md)
 
 ### __Related Learning Paths__
 

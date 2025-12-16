@@ -791,7 +791,7 @@ END;
 ## 📚 Next Steps
 
 - **[Build event-driven pipelines](event-driven-pipelines.md)**
-- **[Integrate with Power BI for dashboards](../../solutions/real-time-dashboards/README.md)**
+- **[Integrate with Power BI for dashboards](../../08-solutions/real-time-dashboards/README.md)**
 - **[Add Cosmos DB for global distribution](stream-analytics-cosmos.md)**
 
 ---
