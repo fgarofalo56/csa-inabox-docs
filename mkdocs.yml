@@ -83,19 +83,7 @@ nav:
       - Code Labs: tutorials/code-labs/README.md
       - Learning Paths: tutorials/learning-paths/README.md
   - Best Practices:
-      - Overview: best-practices/README.md
-      - Cost Optimization: best-practices/cost-optimization.md
-      - Data Governance: best-practices/data-governance.md
-      - Delta Lake Optimization: best-practices/delta-lake-optimization.md
-      - Implementation Patterns: best-practices/implementation-patterns.md
-      - Network Security: best-practices/network-security.md
-      - Performance: best-practices/performance.md
-      - Performance Optimization: best-practices/performance-optimization.md
-      - Pipeline Optimization: best-practices/pipeline-optimization.md
-      - Security: best-practices/security.md
-      - Serverless SQL Best Practices: best-practices/serverless-sql-best-practices.md
-      - Spark Performance: best-practices/spark-performance.md
-      - SQL Performance: best-practices/sql-performance.md
+      - Overview: 05-best-practices/README.md
       - Service-Specific:
           - Databricks:
               - Overview: 05-best-practices/service-specific/databricks/README.md
@@ -106,26 +94,32 @@ nav:
           - Storage:
               - Overview: 05-best-practices/service-specific/storage/README.md
           - Synapse:
+              - Overview: 05-best-practices/service-specific/synapse/README.md
               - Spark Best Practices: 05-best-practices/service-specific/synapse/spark-best-practices.md
               - Spark Performance: 05-best-practices/service-specific/synapse/spark-performance.md
               - Dedicated SQL: 05-best-practices/service-specific/synapse/dedicated-sql-best-practices.md
               - Data Explorer: 05-best-practices/service-specific/synapse/data-explorer-best-practices.md
       - Cross-Cutting Concerns:
           - Overview: 05-best-practices/cross-cutting-concerns/README.md
-          - Data Governance: 05-best-practices/cross-cutting-concerns/data-governance/retention-policies.md
-          - Development: 05-best-practices/cross-cutting-concerns/development/stream-analytics-queries.md
-          - Event Handling: 05-best-practices/cross-cutting-concerns/event-handling/event-grid-patterns.md
-          - Governance: 05-best-practices/cross-cutting-concerns/governance/metadata-governance.md
-          - Networking: 05-best-practices/cross-cutting-concerns/networking/databricks-networking.md
-          - Storage: 05-best-practices/cross-cutting-concerns/storage/capture-optimization.md
+          - Cost Optimization: 05-best-practices/cross-cutting-concerns/cost-optimization/README.md
+          - Data Governance: 05-best-practices/cross-cutting-concerns/data-governance/README.md
+          - Development: 05-best-practices/cross-cutting-concerns/development/README.md
+          - Event Handling: 05-best-practices/cross-cutting-concerns/event-handling/README.md
+          - Governance: 05-best-practices/cross-cutting-concerns/governance/README.md
+          - Networking: 05-best-practices/cross-cutting-concerns/networking/README.md
+          - Performance: 05-best-practices/cross-cutting-concerns/performance/README.md
+          - Security: 05-best-practices/cross-cutting-concerns/security/README.md
+          - Storage: 05-best-practices/cross-cutting-concerns/storage/README.md
       - Operational Excellence:
           - Overview: 05-best-practices/operational-excellence/README.md
           - Alert Strategies: 05-best-practices/operational-excellence/alert-strategies.md
+          - Disaster Recovery: 05-best-practices/operational-excellence/disaster-recovery.md
           - Edge Offline Handling: 05-best-practices/operational-excellence/edge-offline-handling.md
           - Event Grid Reliability: 05-best-practices/operational-excellence/eventgrid-reliability.md
           - Event Hubs DR: 05-best-practices/operational-excellence/eventhub-dr.md
           - Monitoring: 05-best-practices/operational-excellence/monitoring.md
           - Reliability: 05-best-practices/operational-excellence/reliability.md
+          - Streaming DR: 05-best-practices/operational-excellence/streaming-dr.md
   - Security:
       - Overview: security/README.md
       - Best Practices: security/best-practices.md
@@ -138,29 +132,57 @@ nav:
       - Regional Compliance: reference/regional-compliance.md
       - Azure Regions: reference/azure-regions.md
   - Troubleshooting:
-      - Overview: troubleshooting/README.md
-      - Guided Troubleshooting: troubleshooting/guided-troubleshooting.md
-      - Authentication: troubleshooting/authentication-troubleshooting.md
-      - Connectivity: troubleshooting/connectivity-troubleshooting.md
-      - Delta Lake: troubleshooting/delta-lake-troubleshooting.md
-      - Pipelines: troubleshooting/pipeline-troubleshooting.md
-      - Serverless SQL: troubleshooting/serverless-sql-troubleshooting.md
-      - Spark: troubleshooting/spark-troubleshooting.md
+      - Overview: 07-troubleshooting/README.md
+      - Guided Troubleshooting: 07-troubleshooting/guided-troubleshooting.md
+      - Common Errors: 07-troubleshooting/common-errors.md
+      - Authentication: 07-troubleshooting/authentication-troubleshooting.md
+      - Connectivity: 07-troubleshooting/connectivity-troubleshooting.md
+      - Delta Lake: 07-troubleshooting/delta-lake-troubleshooting.md
+      - Performance Issues: 07-troubleshooting/performance-issues.md
+      - Pipelines: 07-troubleshooting/pipeline-troubleshooting.md
+      - Security: 07-troubleshooting/security-troubleshooting.md
+      - Serverless SQL: 07-troubleshooting/serverless-sql-troubleshooting.md
+      - Spark: 07-troubleshooting/spark-troubleshooting.md
+      - Service Troubleshooting:
+          - Databricks:
+              - Overview: 07-troubleshooting/service-troubleshooting/databricks/README.md
+              - Memory Issues: 07-troubleshooting/service-troubleshooting/databricks/memory-issues.md
+          - Synapse:
+              - Overview: 07-troubleshooting/service-troubleshooting/synapse/README.md
+              - Connectivity: 07-troubleshooting/service-troubleshooting/synapse/connectivity.md
+              - Query Performance: 07-troubleshooting/service-troubleshooting/synapse/query-performance.md
+              - Scaling: 07-troubleshooting/service-troubleshooting/synapse/scaling.md
+          - CosmosDB:
+              - Partitioning: 07-troubleshooting/service-troubleshooting/cosmosdb/partitioning.md
+              - Query Performance: 07-troubleshooting/service-troubleshooting/cosmosdb/query-performance.md
+              - RU Optimization: 07-troubleshooting/service-troubleshooting/cosmosdb/ru-optimization.md
+          - HDInsight: 07-troubleshooting/service-troubleshooting/hdinsight/README.md
+          - Storage: 07-troubleshooting/service-troubleshooting/storage/README.md
   - Code Examples:
-      - Overview: code-examples/README.md
+      - Overview: 06-code-examples/README.md
+      - Delta Lake Guide: 06-code-examples/delta-lake-guide.md
+      - Serverless SQL Guide: 06-code-examples/serverless-sql-guide.md
+      - Integration Guide: 06-code-examples/integration-guide.md
+      - Emerging Patterns: 06-code-examples/emerging-patterns.md
       - Delta Lake:
-          - Overview: code-examples/delta-lake/README.md
-          - CDC: code-examples/delta-lake/cdc/change-data-capture.md
-          - Auto Loader: code-examples/delta-lake/ingestion/auto-loader.md
-          - Table Optimization: code-examples/delta-lake/optimization/table-optimization.md
+          - Overview: 06-code-examples/delta-lake/README.md
+          - CDC: 06-code-examples/delta-lake/cdc/change-data-capture.md
+          - Auto Loader: 06-code-examples/delta-lake/ingestion/auto-loader.md
+          - Table Optimization: 06-code-examples/delta-lake/optimization/table-optimization.md
       - Serverless SQL:
-          - Overview: code-examples/serverless-sql/README.md
-          - Query Optimization: code-examples/serverless-sql/query-optimization.md
+          - Overview: 06-code-examples/serverless-sql/README.md
+          - Query Optimization: 06-code-examples/serverless-sql/query-optimization.md
       - Integration:
-          - Overview: code-examples/integration/README.md
-          - Azure Data Factory: code-examples/integration/azure-data-factory.md
-          - Azure ML: code-examples/integration/azure-ml.md
-          - Azure Purview: code-examples/integration/azure-purview.md
+          - Overview: 06-code-examples/integration/README.md
+          - Azure Data Factory: 06-code-examples/integration/azure-data-factory.md
+          - Azure ML: 06-code-examples/integration/azure-ml.md
+          - Azure Purview: 06-code-examples/integration/azure-purview.md
+      - By Service:
+          - Event Hubs: 06-code-examples/by-service/event-hubs/README.md
+          - Stream Analytics: 06-code-examples/by-service/stream-analytics/README.md
+          - Synapse: 06-code-examples/by-service/synapse/README.md
+      - Integration Examples:
+          - Streaming Pipeline: 06-code-examples/integration-examples/streaming-pipeline/README.md
   - Solutions:
       - Overview: solutions/README.md
       - Azure Real-time Analytics:
@@ -185,22 +207,26 @@ nav:
           - Workspace Management: administration/workspace-management.md
           - Usage Reporting: administration/usage-reporting.md
       - Monitoring:
-          - Overview: monitoring/README.md
-          - Deployment Monitoring: monitoring/deployment-monitoring.md
-          - Logging & Monitoring Guide: monitoring/logging-monitoring-guide.md
-          - Security Monitoring: monitoring/security-monitoring.md
-          - Spark Monitoring: monitoring/spark-monitoring.md
-          - SQL Monitoring: monitoring/sql-monitoring.md
+          - Overview: 09-monitoring/README.md
+          - Deployment Monitoring: 09-monitoring/deployment-monitoring.md
+          - Logging & Monitoring Guide: 09-monitoring/logging-monitoring-guide.md
+          - Monitoring Setup: 09-monitoring/monitoring-setup.md
+          - Security Monitoring: 09-monitoring/security-monitoring.md
+          - Spark Monitoring: 09-monitoring/spark-monitoring.md
+          - SQL Monitoring: 09-monitoring/sql-monitoring.md
           - Service Monitoring:
               - Databricks:
                   - Overview: 09-monitoring/service-monitoring/databricks/README.md
                   - DLT Monitoring: 09-monitoring/service-monitoring/databricks/dlt-monitoring.md
               - HDInsight: 09-monitoring/service-monitoring/hdinsight/README.md
               - Storage: 09-monitoring/service-monitoring/storage/README.md
-              - Synapse Dedicated: 09-monitoring/service-monitoring/synapse/dedicated-monitoring.md
+              - Synapse: 09-monitoring/service-monitoring/synapse/README.md
       - DevOps:
-          - Automated Testing: devops/automated-testing.md
-          - Pipeline CI/CD: devops/pipeline-ci-cd.md
+          - Overview: 10-devops/devops-overview.md
+          - Automated Testing: 10-devops/automated-testing.md
+          - Databricks CI/CD: 10-devops/databricks-cicd.md
+          - Pipeline CI/CD: 10-devops/pipeline-ci-cd.md
+          - Security Best Practices: 10-devops/security-best-practices.md
       - Diagrams:
           - Overview: diagrams/README.md
           - Architecture Diagrams: diagrams/architecture-diagrams.md
@@ -226,10 +252,18 @@ nav:
       - Production Guide: multimedia/production-guide/README.md
       - Tools: multimedia/tools/README.md
       - Contributing: multimedia/CONTRIBUTING.md
-  - Legacy Documentation:
-      - Architecture (Legacy): architecture/README.md
-      - Serverless SQL (Legacy): serverless-sql/README.md
-      - Shared Metadata (Legacy): shared-metadata/README.md
+  - Service Architectures:
+      - Delta Lakehouse:
+          - Overview: 03-architecture-patterns/service-architectures/delta-lakehouse/README.md
+          - Detailed Architecture: 03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md
+      - Serverless SQL:
+          - Overview: 03-architecture-patterns/service-architectures/serverless-sql/README.md
+          - Detailed Architecture: 03-architecture-patterns/service-architectures/serverless-sql/detailed-architecture.md
+      - Shared Metadata:
+          - Overview: 03-architecture-patterns/service-architectures/shared-metadata/README.md
+          - Examples: 03-architecture-patterns/service-architectures/shared-metadata/shared-metadata-examples.md
+      - Feature Store: 03-architecture-patterns/service-architectures/feature-store/README.md
+      - Private Link: 03-architecture-patterns/service-architectures/private-link-architecture.md
 
 extra:
   social:

@@ -40,6 +40,7 @@ ENV/
 _build/
 _static/
 _templates/
+site/
 
 # Local configuration files
 *.env.local
