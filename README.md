@@ -111,22 +111,22 @@ This project uses `mike` for documentation versioning. The versioning tool scrip
 
 ```bash
 # Create a new version
-python project-planning/tools/version-docs.py create <version> [--alias <alias>] [--title <title>]
+python project_tracking/tools/version-docs.py create <version> [--alias <alias>] [--title <title>]
 
 # Add an alias to an existing version
-python project-planning/tools/version-docs.py alias <version> <alias>
+python project_tracking/tools/version-docs.py alias <version> <alias>
 
 # List all versions
-python project-planning/tools/version-docs.py list
+python project_tracking/tools/version-docs.py list
 
 # Delete a version
-python project-planning/tools/version-docs.py delete <version>
+python project_tracking/tools/version-docs.py delete <version>
 ```
 
 Example:
 
 ```bash
-python project-planning/tools/version-docs.py create 1.0.0 --alias latest --title "Version 1.0.0"
+python project_tracking/tools/version-docs.py create 1.0.0 --alias latest --title "Version 1.0.0"
 ```
 
 ---
@@ -328,9 +328,9 @@ GitHub Actions automatically validates:
 
 | Document | Purpose | Link |
 |:---------|:--------|:-----|
-| 📅 **Planning** | Project roadmap | [View](./project-planning/PLANNING.md) |
-| ✅ **Tasks** | Current work items | [View](./project-planning/TASK.md) |
-| 📜 **Changelog** | Version history | [View](./project-planning/CHANGELOG.md) |
+| 📅 **Planning** | Project roadmap | [View](./project_tracking/planning/PLANNING.md) |
+| ✅ **Tasks** | Current work items | [View](./project_tracking/planning/TASK.md) |
+| 📜 **Changelog** | Version history | [View](./project_tracking/planning/CHANGELOG.md) |
 | 🤖 **AI Context** | Development context | [View](./.ai-context) |
 
 </div>
@@ -411,10 +411,11 @@ Azure Synapse Analytics Documentation
 ├── README.md
 ├── mkdocs.yml
 ├── requirements.txt
-└── project-planning/
-    ├── CHANGELOG.md
-    ├── PLANNING.md
-    ├── TASK.md
+└── project_tracking/
+    ├── planning/
+    │   ├── CHANGELOG.md
+    │   ├── PLANNING.md
+    │   └── TASK.md
     └── tools/
         ├── serve-docs.py
         └── version-docs.py
@@ -443,7 +444,7 @@ Azure Synapse Analytics Documentation
 
 > **Track updates and improvements**
 
-📖 View detailed version history: [**CHANGELOG**](./project-planning/CHANGELOG.md)
+📖 View detailed version history: [**CHANGELOG**](./project_tracking/planning/CHANGELOG.md)
 
 ---
 

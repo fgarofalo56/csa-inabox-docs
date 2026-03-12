@@ -32,7 +32,7 @@
 
 ### 🖼️ Query Architecture
 
-![Serverless SQL Architecture](./serverless-sql-architecture.png)
+![Serverless SQL Architecture](./serverless-sql-architecture.svg)
 
 > 💰 **Cost-Effective Querying**  
 > The diagram illustrates the serverless SQL query architecture in Azure Synapse Analytics, showcasing the pay-per-query model and distributed processing capabilities.
