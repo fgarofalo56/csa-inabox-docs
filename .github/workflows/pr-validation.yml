@@ -135,7 +135,7 @@ jobs:
           mkdocs build --clean --strict
 
       - name: Upload preview artifacts
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: pr-preview-${{ github.event.pull_request.number }}
           path: ./site

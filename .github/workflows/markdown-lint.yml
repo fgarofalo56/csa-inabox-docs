@@ -67,7 +67,7 @@ jobs:
           cat markdown-lint-report/summary.md
       
       - name: Upload lint results
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: markdown-lint-results
           path: markdown-lint-report
