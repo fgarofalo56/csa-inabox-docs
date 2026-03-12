@@ -128,7 +128,7 @@ Track engagement and effectiveness:
 
 ## 🤝 Contributing
 
-We welcome contributions! See our [contribution guide](./CONTRIBUTING.md) for:
+We welcome contributions! See our [contribution guide](../../CONTRIBUTING.md) for:
 
 - Content submission guidelines
 - Quality standards checklist

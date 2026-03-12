@@ -40,6 +40,6 @@ GitHub doesn't natively render Mermaid diagrams, so both the diagram code and st
 ![Architecture diagram: images-diagrams-README-diagram-1](images-diagrams-README-diagram-1.png)
 
 <!-- Static image fallback for GitHub -->
-![Description of the diagram](../images/diagrams/filename.png)
+![Description of the diagram](../diagrams/images-diagrams-README-diagram-1.png)
 
 ```

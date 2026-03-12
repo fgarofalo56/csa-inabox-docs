@@ -569,4 +569,4 @@ monitor_client.activity_log_alerts.create_or_update(
 
 - [Delta Lake with Azure ML](../delta-lake-guide.md#integrating-delta-lake-with-azure-ml)
 - [Serverless SQL Security](../serverless-sql-guide.md#security-and-access-control)
-- [Enterprise Integration Architecture](../../architecture/integration/README.md)
+- [Enterprise Integration Architecture](../architecture/integration/README.md)
