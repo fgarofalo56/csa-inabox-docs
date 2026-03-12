@@ -514,7 +514,7 @@ jobs:
           ls -la ../*.{tar.gz,zip}
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ needs.validate.outputs.version }}
           name: "Azure CSA Documentation ${{ needs.validate.outputs.version }}"
