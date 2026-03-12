@@ -132,8 +132,8 @@ __Updated Files__:
 
 ### For Beginners
 
-1. __Start Here__: [Prerequisites Guide](docs/tutorials/architecture-patterns/PREREQUISITES.md)
-2. __First Tutorial__: [Medallion Architecture](docs/tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md)
+1. __Start Here__: [Prerequisites Guide](./PREREQUISITES.md)
+2. __First Tutorial__: [Medallion Architecture](./batch/medallion-architecture-tutorial.md)
 3. __Deploy__: Use the automated Bicep scripts
 4. __Learn__: Follow step-by-step instructions
 5. __Experiment__: Modify and extend with sample data
@@ -259,24 +259,24 @@ All remaining 13 tutorials have stub pages with:
 
 ### Main Documentation
 
-- [Architecture Patterns Overview](docs/03-architecture-patterns/README.md)
-- [Tutorial Index](docs/tutorials/architecture-patterns/README.md)
-- [Prerequisites Guide](docs/tutorials/architecture-patterns/PREREQUISITES.md)
+- [Architecture Patterns Overview](../../03-architecture-patterns/README.md)
+- [Tutorial Index](./README.md)
+- [Prerequisites Guide](./PREREQUISITES.md)
 
 ### Complete Tutorial
 
-- [Medallion Architecture Tutorial](docs/tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md)
+- [Medallion Architecture Tutorial](./batch/medallion-architecture-tutorial.md)
 
 ### Infrastructure
 
-- [Bicep Templates](infrastructure/tutorials/batch/medallion-architecture/)
-- [Sample Data](examples/architecture-patterns/batch/data/)
+- [Bicep Templates](../../../infrastructure/tutorials/batch/medallion-architecture/)
+- [Sample Data](../../../examples/architecture-patterns/batch/data/)
 
 ### Contributing
 
-- [Tutorial Template](docs/tutorials/architecture-patterns/TUTORIAL_TEMPLATE.md)
-- [Markdown Style Guide](docs/guides/MARKDOWN_STYLE_GUIDE.md)
-- [Directory Structure Guide](docs/guides/DIRECTORY_STRUCTURE_GUIDE.md)
+- [Tutorial Template](./TUTORIAL_TEMPLATE.md)
+- [Markdown Style Guide](../../guides/MARKDOWN_STYLE_GUIDE.md)
+- [Directory Structure Guide](../../guides/DIRECTORY_STRUCTURE_GUIDE.md)
 
 ---
 
@@ -309,4 +309,4 @@ __Next Phase__: Community contributions to complete remaining tutorials
 
 ---
 
-> 💡 __Ready to start?__ Follow the [Prerequisites Guide](docs/tutorials/architecture-patterns/PREREQUISITES.md) and deploy your first Azure architecture pattern!
+> 💡 __Ready to start?__ Follow the [Prerequisites Guide](./PREREQUISITES.md) and deploy your first Azure architecture pattern!

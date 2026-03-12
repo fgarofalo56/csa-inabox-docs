@@ -40,11 +40,15 @@ REFERENCE_DEF_PATTERN = re.compile(r'^\[(?P<key>[^\]]+)\]:\s*(?P<url>.*?)$', re.
 SKIP_EXTENSIONS = {
     '.exe', '.bin', '.dll', '.so', '.dylib',
     '.jpg', '.jpeg', '.png', '.gif', '.svg', '.ico',
-    '.pdf', '.zip', '.tar', '.gz', '.rar'
+    '.pdf', '.zip', '.tar', '.gz', '.rar',
+    '.mp3', '.mp4', '.wav', '.ogg', '.flac',
+    '.pptx', '.ppt', '.xlsx', '.xls', '.docx', '.doc',
+    '.aep', '.ai', '.psd', '.fig', '.sketch',
+    '.json', '.yaml', '.yml', '.html', '.htm', '.css', '.js'
 }
 
 # Skip certain directories
-SKIP_DIRS = {'.git', '.github', 'node_modules', 'venv', '__pycache__'}
+SKIP_DIRS = {'.git', '.github', 'node_modules', 'venv', '__pycache__', 'site', 'examples'}
 
 # Headers for HTTP requests
 HEADERS = {
@@ -84,11 +88,23 @@ class LinkChecker:
         logger.info(f"Found {len(markdown_files)} markdown files")
         return markdown_files
     
+    def _strip_code_blocks(self, content: str) -> str:
+        """Remove content inside code fences and inline code to avoid false positives."""
+        # Remove fenced code blocks (``` ... ``` and ~~~ ... ~~~)
+        content = re.sub(r'```[\s\S]*?```', '', content)
+        content = re.sub(r'~~~[\s\S]*?~~~', '', content)
+        # Remove inline code (`...`)
+        content = re.sub(r'`[^`\n]+`', '', content)
+        return content
+
     def extract_links(self, file_path: Path) -> Dict[str, List[str]]:
         """Extract all links from a markdown file."""
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
-        
+
+        # Strip code blocks to avoid false positives from code examples
+        content = self._strip_code_blocks(content)
+
         # Extract inline links
         inline_links = MARKDOWN_LINK_PATTERN.findall(content)
         
@@ -105,7 +121,9 @@ class LinkChecker:
         # Process inline links
         for text, url in inline_links:
             url = url.split(' ')[0]  # Remove title if present
-            if self._is_external_link(url):
+            if self._is_non_file_link(url):
+                pass  # Skip mailto:, tel:, anchor-only links
+            elif self._is_external_link(url):
                 links["external"].append(url)
             else:
                 links["internal"].append(url)
@@ -115,7 +133,9 @@ class LinkChecker:
             ref_key = ref if ref else text
             if ref_key in ref_defs:
                 url = ref_defs[ref_key]
-                if self._is_external_link(url):
+                if self._is_non_file_link(url):
+                    pass  # Skip non-file links
+                elif self._is_external_link(url):
                     links["external"].append(url)
                 else:
                     links["internal"].append(url)
@@ -125,6 +145,10 @@ class LinkChecker:
     def _is_external_link(self, url: str) -> bool:
         """Check if a URL is external (starts with http:// or https://)."""
         return url.startswith(('http://', 'https://'))
+
+    def _is_non_file_link(self, url: str) -> bool:
+        """Check if a URL is a non-file link (mailto:, tel:, etc.) that should be skipped."""
+        return url.startswith(('mailto:', 'tel:', 'ftp:', '#'))
     
     def verify_internal_link(self, file_path: Path, link: str) -> bool:
         """
@@ -160,6 +184,10 @@ class LinkChecker:
             target_path = Path(str(target_path).split('#')[0])
         if '?' in link:
             target_path = Path(str(target_path).split('?')[0])
+
+        # Skip links to non-documentation file types (binary files, media, etc.)
+        if target_path.suffix.lower() in SKIP_EXTENSIONS:
+            return True
             
         # Check if the target exists
         if target_path.exists():
