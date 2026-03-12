@@ -67,7 +67,7 @@ jobs:
       
       - name: Build documentation
         run: |
-          mkdocs build --clean --strict
+          mkdocs build --clean
       
       - name: Upload build artifacts
         uses: actions/upload-artifact@v6

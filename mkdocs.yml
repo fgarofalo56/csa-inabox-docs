@@ -1,7 +1,7 @@
 site_name: Cloud Scale Analytics Documentation  
 site_description: Comprehensive documentation for Azure Cloud Scale Analytics services, architecture patterns, and implementation guidance
 site_author: Microsoft CSA Team
-site_url: https://microsoft.github.io/csa-inabox-docs
+site_url: https://fgarofalo56.github.io/csa-inabox-docs
 
 repo_name: fgarofalo56/csa-inabox-docs
 repo_url: https://github.com/fgarofalo56/csa-inabox-docs
@@ -26,8 +26,8 @@ theme:
     - search.suggest
   icon:
     repo: fontawesome/brands/github
-  logo: assets/images/Azure-Synapse-Analytics.png
-  favicon: assets/images/favicon.ico
+  logo: assets/images/Azure-Synapse-Analytics.svg
+  favicon: assets/images/favicon.svg
   custom_dir: docs/overrides
 
 plugins:
@@ -265,6 +265,12 @@ nav:
       - Feature Store: 03-architecture-patterns/service-architectures/feature-store/README.md
       - Private Link: 03-architecture-patterns/service-architectures/private-link-architecture.md
 
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/extra.js
+
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -274,10 +280,6 @@ extra:
   version:
     provider: mike
     default: latest
-  css:
-    - assets/stylesheets/extra.css
-  javascript:
-    - assets/javascripts/extra.js
   # Internationalization configuration (prepared for future translations)
   # Language selector will be enabled when translations are available
   alternate:
