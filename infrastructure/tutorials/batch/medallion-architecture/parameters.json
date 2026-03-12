@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "synapseWorkspaceName": {
+      "value": "synapse-medallion-demo"
+    },
+    "storageAccountName": {
+      "value": "samedallion01"
+    },
+    "location": {
+      "value": "eastus"
+    },
+    "sqlAdministratorLogin": {
+      "value": "sqladmin"
+    },
+    "sparkPoolName": {
+      "value": "sparkpool01"
+    },
+    "sparkPoolNodeSize": {
+      "value": "Small"
+    },
+    "sparkPoolMinNodeCount": {
+      "value": 3
+    },
+    "sparkPoolMaxNodeCount": {
+      "value": 10
+    }
+  }
+}
