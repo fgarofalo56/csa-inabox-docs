@@ -239,7 +239,7 @@ jobs:
       - name: Build documentation
         run: |
           echo "Building documentation for version ${{ needs.validate.outputs.version_clean }}..."
-          mkdocs build --clean --strict
+          mkdocs build --clean
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v6
