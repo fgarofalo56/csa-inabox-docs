@@ -1,6 +1,6 @@
 # 📷 Stock Assets & Licensed Content
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📷 Stock Assets**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📷 Stock Assets**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Library](https://img.shields.io/badge/Type-Library-blue)

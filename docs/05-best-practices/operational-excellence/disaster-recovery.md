@@ -9,7 +9,7 @@ category: "Best Practices - Operations"
 
 # Disaster Recovery for Analytics Workloads
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **💡 [Best Practices](../README.md)** | **🛡️ Disaster Recovery**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **💡 [Best Practices](../README.md)** | **🛡️ Disaster Recovery**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)

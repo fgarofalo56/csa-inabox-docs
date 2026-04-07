@@ -1,6 +1,6 @@
 # 🔧 Troubleshooting - CSA in-a-Box
 
-> **🏠 [Home](../../README.md)** | **📖 [Documentation](../README.md)** | **🔧 Troubleshooting**
+> **🏠 [Home](../README.md)** | **📖 [Documentation](../README.md)** | **🔧 Troubleshooting**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Documentation](https://img.shields.io/badge/Docs-Complete-blue)

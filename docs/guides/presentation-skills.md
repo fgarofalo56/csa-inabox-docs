@@ -1,6 +1,6 @@
 # 🎤 Presentation Skills Guide
 
-> **🏠 [Home](../../README.md)** | **📚 Documentation** | **📖 [Guides](./README.md)** | **🎤 Presentation Skills**
+> **🏠 [Home](../README.md)** | **📚 Documentation** | **📖 [Guides](./README.md)** | **🎤 Presentation Skills**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)

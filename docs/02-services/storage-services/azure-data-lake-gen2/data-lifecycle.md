@@ -1,6 +1,6 @@
 # ♻️ Data Lifecycle Management in ADLS Gen2
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🏞️ [ADLS Gen2](README.md)__ | __♻️ Data Lifecycle__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🏞️ [ADLS Gen2](README.md)__ | __♻️ Data Lifecycle__
 
 ![Cost](https://img.shields.io/badge/Cost-Optimized-orange?style=flat-square)
 ![Automation](https://img.shields.io/badge/Automation-Enabled-green?style=flat-square)
@@ -607,7 +607,7 @@ tag_blobs_for_lifecycle(
 - [Hierarchical Namespace](hierarchical-namespace.md)
 - [Access Control](access-control.md)
 - [Performance Optimization](performance-optimization.md)
-- [Cost Optimization Best Practices](../../../05-best-practices/cross-cutting-concerns/cost-optimization/storage-optimization.md)
+- [Cost Optimization Best Practices](../../../05-best-practices/cross-cutting-concerns/storage-optimization.md)
 
 ---
 

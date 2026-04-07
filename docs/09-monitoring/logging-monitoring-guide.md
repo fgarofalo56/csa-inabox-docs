@@ -1,6 +1,6 @@
 # Logging and Monitoring in Azure Synapse Analytics
 
-[Home](../../README.md) > Monitoring > Logging and Monitoring Guide
+[Home](../README.md) > Monitoring > Logging and Monitoring Guide
 
 This guide provides comprehensive information on setting up logging, monitoring, and alerting for Azure Synapse Analytics workspaces and their components, helping you maintain operational visibility and quickly respond to issues.
 
@@ -476,10 +476,10 @@ For environments with on-premises components:
 
 ## Related Topics
 
-- [Troubleshooting with Logs](../troubleshooting/README.md)
-- [Performance Optimization](../best-practices/performance.md)
-- [Security Monitoring](../best-practices/security.md)
-- [Cost Management](../best-practices/cost-optimization.md)
+- [Troubleshooting with Logs](../07-troubleshooting/README.md)
+- [Performance Optimization](../multimedia/video-tutorials/scripts/best-practices/performance.md)
+- [Security Monitoring](../reference/security.md)
+- [Cost Management](../05-best-practices/README.md)
 
 ## External Resources
 

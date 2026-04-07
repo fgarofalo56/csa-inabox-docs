@@ -42,7 +42,7 @@ This document provides comprehensive guidance on pipeline optimization.
 ## Related Resources
 
 - [Azure Synapse Analytics Documentation](https://docs.microsoft.com/azure/synapse-analytics/)
-- [Best Practices Overview](../best-practices/README.md)
+- [Best Practices Overview](../storage/README.md)
 
 ## Next Steps
 

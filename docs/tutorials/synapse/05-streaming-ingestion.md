@@ -1,6 +1,6 @@
 # ⚡ Tutorial 5: Real-time Streaming Ingestion
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ [Synapse Series](README.md)__ | __⚡ Streaming Ingestion__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ [Synapse Series](README.md)__ | __⚡ Streaming Ingestion__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-05_Streaming_Ingestion-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)

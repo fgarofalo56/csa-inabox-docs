@@ -1,6 +1,6 @@
 # 📦 Event Hub Capture to Storage
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 [Event Hubs](README.md)__ | __📦 Capture to Storage__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 [Event Hubs](README.md)__ | __📦 Capture to Storage__
 
 ![Feature](https://img.shields.io/badge/Feature-Auto%20Capture-brightgreen?style=flat-square)
 ![Storage](https://img.shields.io/badge/Storage-ADLS%20Gen2%20%7C%20Blob-blue?style=flat-square)

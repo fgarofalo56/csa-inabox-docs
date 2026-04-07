@@ -1,6 +1,6 @@
 # Deployment Guide
 
-> **Home [Home](../../README.md)** | **Documentation** | **Guides [Guides](./README.md)**
+> **Home [Home](../README.md)** | **Documentation** | **Guides [Guides](./README.md)**
 
 ---
 

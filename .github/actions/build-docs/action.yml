@@ -1,0 +1,47 @@
+name: 'Build Documentation'
+description: 'Build MkDocs documentation and optionally upload artifacts'
+
+inputs:
+  clean:
+    description: 'Run mkdocs build with --clean flag'
+    required: false
+    default: 'true'
+  verbose:
+    description: 'Enable verbose output'
+    required: false
+    default: 'false'
+  upload-artifact:
+    description: 'Upload built site as artifact'
+    required: false
+    default: 'false'
+  artifact-name:
+    description: 'Name for the uploaded artifact'
+    required: false
+    default: 'documentation-site'
+  retention-days:
+    description: 'Artifact retention in days'
+    required: false
+    default: '7'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Build documentation
+      shell: bash
+      run: |
+        BUILD_ARGS=""
+        if [ "${{ inputs.clean }}" = "true" ]; then
+          BUILD_ARGS="$BUILD_ARGS --clean"
+        fi
+        if [ "${{ inputs.verbose }}" = "true" ]; then
+          BUILD_ARGS="$BUILD_ARGS --verbose"
+        fi
+        mkdocs build $BUILD_ARGS
+
+    - name: Upload build artifacts
+      if: inputs.upload-artifact == 'true'
+      uses: actions/upload-artifact@v7
+      with:
+        name: ${{ inputs.artifact-name }}
+        path: ./site
+        retention-days: ${{ inputs.retention-days }}

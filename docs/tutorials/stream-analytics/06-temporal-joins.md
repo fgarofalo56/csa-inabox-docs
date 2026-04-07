@@ -1,6 +1,6 @@
 # 🔗 Tutorial 6: Joins and Temporal Operations
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __🔗 Joins & Temporal__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __🔗 Joins & Temporal__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-06_Joins_Temporal-blue)
 ![Duration](https://img.shields.io/badge/Duration-35_minutes-green)

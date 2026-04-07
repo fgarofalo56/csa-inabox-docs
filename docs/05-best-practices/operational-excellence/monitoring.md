@@ -1,6 +1,6 @@
 # Monitoring Best Practices
 
-> **[Home](../../../README.md)** | **[Best Practices](../README.md)** | **[Operational Excellence](README.md)** | **Monitoring**
+> **[Home](../../README.md)** | **[Best Practices](../README.md)** | **[Operational Excellence](README.md)** | **Monitoring**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Category](https://img.shields.io/badge/Category-Operations-orange?style=flat-square)
@@ -305,8 +305,8 @@ SynapseIntegrationPipelineRuns
 ## Related Documentation
 
 - [Alert Strategies](alert-strategies.md)
-- [Synapse Monitoring](../../../09-monitoring/service-monitoring/synapse/README.md)
-- [Databricks Monitoring](../../../09-monitoring/service-monitoring/databricks/README.md)
+- [Synapse Monitoring](../../09-monitoring/service-monitoring/synapse/README.md)
+- [Databricks Monitoring](../../09-monitoring/service-monitoring/databricks/README.md)
 
 ---
 

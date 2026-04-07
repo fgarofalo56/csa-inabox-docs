@@ -1,6 +1,6 @@
 # 🔄 Change Feed in Azure Cosmos DB
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🌌 [Cosmos DB](README.md)__ | __🔄 Change Feed__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🌌 [Cosmos DB](README.md)__ | __🔄 Change Feed__
 
 ![Real-time](https://img.shields.io/badge/Type-Real%20time-brightgreen?style=flat-square)
 

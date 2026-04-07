@@ -1,6 +1,6 @@
 # 🔄 Hybrid Cloud Integration Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🔗 [Integration](README.md)** | **🔄 Hybrid**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🔗 [Integration](README.md)** | **🔄 Hybrid**
 
 ![Level](https://img.shields.io/badge/Level-Advanced-red)
 ![Duration](https://img.shields.io/badge/Duration-4--5_hours-green)

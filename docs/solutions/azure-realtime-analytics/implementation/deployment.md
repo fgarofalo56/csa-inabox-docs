@@ -1,6 +1,6 @@
 # 🚀 Deployment Guide
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 [Implementation](./README.md)** | **🚀 Deployment**
+> **🏠 [Home](../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 [Implementation](./README.md)** | **🚀 Deployment**
 
 ---
 
@@ -76,7 +76,7 @@ az ad sp create-for-rbac \
 
 ```bash
 # Clone the infrastructure repository
-git clone https://github.com/your-org/azure-realtime-analytics-infra.git
+git clone https://github.com/fgarofalo56/csa-inabox-docs.git
 cd azure-realtime-analytics-infra
 
 # Initialize git submodules if any

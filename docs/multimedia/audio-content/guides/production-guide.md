@@ -1,6 +1,6 @@
 # 🎬 Audio Production Guide
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **🎬 Production Guide**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **🎬 Production Guide**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Guidelines](https://img.shields.io/badge/Type-Guidelines-blue)
@@ -381,7 +381,7 @@ For more information, visit [resource]. Thanks for listening!"
 
 ### Audio Processing Chain
 
-```markdown
+````markdown
 ## Standard Processing Order
 
 **1. Noise Reduction** (if needed):
@@ -451,7 +451,7 @@ compression_settings:
 - Alternative: -14 LUFS (streaming)
 - Measure: Integrated loudness
 - Tools: Loudness Meter plugin
-```
+````
 
 ### Processing Tools & Plugins
 
@@ -560,7 +560,7 @@ compression_settings:
 
 ### Export Specifications
 
-```markdown
+````markdown
 ## Output Formats
 
 **Master Archive**:
@@ -611,6 +611,7 @@ sample_rate: 48 kHz
 loudness: -16 LUFS
 format_preference: M4A for better quality at lower bitrate
 ```
+````
 
 ### File Naming Conventions
 

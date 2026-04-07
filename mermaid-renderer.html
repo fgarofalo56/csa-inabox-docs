@@ -1,4 +1,4 @@
-=!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -95,7 +95,10 @@
             margin-right: 10px;
         }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"
+            integrity="sha384-PLACEHOLDER_REPLACE_WITH_ACTUAL_SRI_HASH"
+            crossorigin="anonymous"></script>
+    <!-- NOTE: Generate real SRI hash via: curl -s https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js | openssl dgst -sha384 -binary | openssl base64 -A -->
 </head>
 
 <body>
@@ -130,17 +133,17 @@
                 <option value="serverless-sql-query-flow">Serverless SQL Query Flow</option>
                 <option value="serverless-sql-troubleshooting">Serverless SQL Troubleshooting</option>
             </select>
-            <button id="loadDiagramBtn">Load Diagram</button>
+            <button type="button" id="loadDiagramBtn">Load Diagram</button>
         </div>
 
         <h2>Mermaid Code</h2>
         <textarea id="input" placeholder="Enter Mermaid code here..."></textarea>
 
         <div id="controls">
-            <button id="renderBtn">Render Diagram</button>
-            <button id="downloadPngBtn">Download as PNG</button>
-            <button id="downloadSvgBtn">Download as SVG</button>
-            <span id="status"></span>
+            <button type="button" id="renderBtn">Render Diagram</button>
+            <button type="button" id="downloadPngBtn">Download as PNG</button>
+            <button type="button" id="downloadSvgBtn">Download as SVG</button>
+            <span id="status" role="status" aria-live="polite"></span>
         </div>
 
         <h2>Output</h2>
@@ -468,11 +471,16 @@
             }
 
             const outputDiv = document.getElementById('output');
-            outputDiv.innerHTML = `<div class="mermaid">${input}</div>`;
+            // Clear previous content safely
+            outputDiv.textContent = '';
+            const mermaidDiv = document.createElement('div');
+            mermaidDiv.className = 'mermaid';
+            mermaidDiv.textContent = input;
+            outputDiv.appendChild(mermaidDiv);
 
             try {
                 document.getElementById('status').textContent = "Rendering...";
-                mermaid.run({ nodes: [outputDiv.querySelector('.mermaid')] })
+                mermaid.run({ nodes: [mermaidDiv] })
                     .then(() => {
                         document.getElementById('status').textContent = "Rendered successfully!";
                     })
@@ -516,7 +524,10 @@
                 document.getElementById('status').textContent = "PNG downloaded";
             };
 
-            img.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(svgData)));
+            // Use modern base64 encoding (avoids deprecated unescape)
+            const svgBytes = new TextEncoder().encode(svgData);
+            const base64 = btoa(String.fromCharCode(...svgBytes));
+            img.src = 'data:image/svg+xml;base64,' + base64;
         }
 
         function downloadAsSvg() {

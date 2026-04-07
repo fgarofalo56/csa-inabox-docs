@@ -1,6 +1,6 @@
 # 🏛️ Medallion Architecture - Complete Tutorial
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🏗️ [Architecture Tutorials](../README.md)__ | __🏛️ Medallion Architecture__
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🏗️ [Architecture Tutorials](../README.md)__ | __🏛️ Medallion Architecture__
 
 ![Status](https://img.shields.io/badge/Status-Production_Ready-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)

@@ -1,6 +1,6 @@
 # 🔊 Sound Effects Library
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🔊 Sound Effects**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🔊 Sound Effects**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Library Size: 200+ Effects](https://img.shields.io/badge/Effects-200+-blue)
@@ -301,8 +301,6 @@ Sound: "Effect Name" by Username
 Source: Freesound.org
 License: CC BY 3.0 (or specific license)
 Modified: [Yes/No]
-```
-```
 
 ## 🎯 Use Case Examples
 

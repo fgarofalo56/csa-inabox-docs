@@ -1,6 +1,6 @@
 # ⏰ Tutorial 5: Windowing Functions
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __⏰ Windowing Functions__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __⏰ Windowing Functions__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-05_Windowing_Functions-blue)
 ![Duration](https://img.shields.io/badge/Duration-40_minutes-green)

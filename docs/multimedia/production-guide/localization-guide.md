@@ -1,6 +1,6 @@
 # Localization Guide
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **🌐 Localization**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **🌐 Localization**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: Process](https://img.shields.io/badge/Type-Process-blue)

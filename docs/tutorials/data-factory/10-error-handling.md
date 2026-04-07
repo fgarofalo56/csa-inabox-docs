@@ -1,6 +1,6 @@
 # 🛡️ Error Handling & Retry Logic
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Error Handling__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Error Handling__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Error_Handling-blue)
 ![Duration](https://img.shields.io/badge/Duration-15_minutes-green)

@@ -1,6 +1,6 @@
 # 📻 Episode: Industry Trends in Cloud Analytics
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Industry Trends**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Industry Trends**
 
 ![Episode: 005](https://img.shields.io/badge/Episode-005-blue)
 ![Duration: 32 min](https://img.shields.io/badge/Duration-32min-green)

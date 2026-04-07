@@ -68,26 +68,267 @@ nav:
               - Overview: 02-services/analytics-compute/azure-synapse/README.md
               - Spark Pools:
                   - Overview: 02-services/analytics-compute/azure-synapse/spark-pools/README.md
+                  - Configuration: 02-services/analytics-compute/azure-synapse/spark-pools/configuration.md
+                  - Performance Tuning: 02-services/analytics-compute/azure-synapse/spark-pools/performance-tuning.md
                   - Delta Lakehouse: 02-services/analytics-compute/azure-synapse/spark-pools/delta-lakehouse/README.md
+              - Dedicated SQL:
+                  - Overview: 02-services/analytics-compute/azure-synapse/dedicated-sql/README.md
+                  - Sizing: 02-services/analytics-compute/azure-synapse/dedicated-sql/sizing.md
+              - SQL Pools:
+                  - Overview: 02-services/analytics-compute/azure-synapse/sql-pools/README.md
+                  - Serverless SQL: 02-services/analytics-compute/azure-synapse/sql-pools/serverless-sql/README.md
+              - Data Explorer Pools: 02-services/analytics-compute/azure-synapse/data-explorer-pools/README.md
+              - Pipelines:
+                  - Overview: 02-services/analytics-compute/azure-synapse/pipelines/README.md
+                  - Lineage Tracking: 02-services/analytics-compute/azure-synapse/pipelines/lineage-tracking.md
+              - Shared Metadata: 02-services/analytics-compute/azure-synapse/shared-metadata/README.md
+          - Azure Databricks:
+              - Overview: 02-services/analytics-compute/azure-databricks/README.md
+              - Workspace Setup: 02-services/analytics-compute/azure-databricks/workspace-setup.md
+              - Delta Live Tables: 02-services/analytics-compute/azure-databricks/delta-live-tables/README.md
+              - MLflow Integration: 02-services/analytics-compute/azure-databricks/mlflow-integration/README.md
+              - Unity Catalog: 02-services/analytics-compute/azure-databricks/unity-catalog/README.md
+          - Azure HDInsight:
+              - Overview: 02-services/analytics-compute/azure-hdinsight/README.md
+              - Cluster Types: 02-services/analytics-compute/azure-hdinsight/cluster-types.md
+              - Migration Guide: 02-services/analytics-compute/azure-hdinsight/migration-guide.md
       - Streaming Services:
           - Overview: 02-services/streaming-services/README.md
+          - Azure Event Hubs:
+              - Overview: 02-services/streaming-services/azure-event-hubs/README.md
+              - Event Streaming Basics: 02-services/streaming-services/azure-event-hubs/event-streaming-basics.md
+              - Kafka Compatibility: 02-services/streaming-services/azure-event-hubs/kafka-compatibility.md
+              - Capture to Storage: 02-services/streaming-services/azure-event-hubs/capture-to-storage.md
+              - Schema Registry: 02-services/streaming-services/azure-event-hubs/schema-registry.md
+          - Azure Stream Analytics:
+              - Overview: 02-services/streaming-services/azure-stream-analytics/README.md
+              - Stream Processing Basics: 02-services/streaming-services/azure-stream-analytics/stream-processing-basics.md
+              - Windowing Functions: 02-services/streaming-services/azure-stream-analytics/windowing-functions.md
+              - Anomaly Detection: 02-services/streaming-services/azure-stream-analytics/anomaly-detection.md
+              - Edge Deployments: 02-services/streaming-services/azure-stream-analytics/edge-deployments.md
+          - Azure Event Grid:
+              - Overview: 02-services/streaming-services/azure-event-grid/README.md
+              - Event-Driven Architecture: 02-services/streaming-services/azure-event-grid/event-driven-architecture.md
+              - System Topics: 02-services/streaming-services/azure-event-grid/system-topics.md
+      - Storage Services:
+          - Overview: 02-services/storage-services/README.md
+          - Azure Data Lake Gen2:
+              - Overview: 02-services/storage-services/azure-data-lake-gen2/README.md
+              - Access Control: 02-services/storage-services/azure-data-lake-gen2/access-control.md
+              - Hierarchical Namespace: 02-services/storage-services/azure-data-lake-gen2/hierarchical-namespace.md
+              - Performance Optimization: 02-services/storage-services/azure-data-lake-gen2/performance-optimization.md
+          - Azure Cosmos DB:
+              - Overview: 02-services/storage-services/azure-cosmos-db/README.md
+              - API Selection: 02-services/storage-services/azure-cosmos-db/api-selection.md
+              - Partitioning Strategies: 02-services/storage-services/azure-cosmos-db/partitioning-strategies.md
+              - Change Feed: 02-services/storage-services/azure-cosmos-db/change-feed.md
+          - Azure SQL Database:
+              - Overview: 02-services/storage-services/azure-sql-database/README.md
+              - Elastic Pools: 02-services/storage-services/azure-sql-database/elastic-pools.md
+              - Hyperscale: 02-services/storage-services/azure-sql-database/hyperscale.md
+      - Orchestration Services:
+          - Overview: 02-services/orchestration-services/README.md
+          - Azure Data Factory:
+              - Overview: 02-services/orchestration-services/azure-data-factory/README.md
+              - Pipeline Patterns: 02-services/orchestration-services/azure-data-factory/pipeline-patterns.md
+              - CI/CD Pipelines: 02-services/orchestration-services/azure-data-factory/ci-cd-pipelines.md
+              - Data Flows: 02-services/orchestration-services/azure-data-factory/data-flows/README.md
+              - Integration Runtime: 02-services/orchestration-services/azure-data-factory/integration-runtime/README.md
+          - Azure Logic Apps:
+              - Overview: 02-services/orchestration-services/azure-logic-apps/README.md
+              - Workflow Automation: 02-services/orchestration-services/azure-logic-apps/workflow-automation.md
+      - Data Governance:
+          - Overview: 02-services/data-governance/README.md
+          - Azure Purview:
+              - Overview: 02-services/data-governance/azure-purview/README.md
+              - Lineage: 02-services/data-governance/azure-purview/lineage.md
   - Architecture Patterns:
       - Overview: 03-architecture-patterns/README.md
+      - Batch Architectures:
+          - Overview: 03-architecture-patterns/batch-architectures/README.md
+          - Medallion Architecture: 03-architecture-patterns/batch-architectures/medallion-architecture.md
+          - Data Mesh: 03-architecture-patterns/batch-architectures/data-mesh.md
+          - Data Warehouse Patterns: 03-architecture-patterns/batch-architectures/data-warehouse-patterns.md
+          - Data Lake Analytics: 03-architecture-patterns/batch-architectures/data-lake-analytics.md
+          - Hub-Spoke Model: 03-architecture-patterns/batch-architectures/hub-spoke-model.md
+      - Streaming Architectures:
+          - Overview: 03-architecture-patterns/streaming-architectures/README.md
+          - Lambda Architecture: 03-architecture-patterns/streaming-architectures/lambda-architecture.md
+          - Kappa Architecture: 03-architecture-patterns/streaming-architectures/kappa-architecture.md
+          - CQRS Pattern: 03-architecture-patterns/streaming-architectures/cqrs-pattern.md
+          - Event Sourcing: 03-architecture-patterns/streaming-architectures/event-sourcing.md
+          - Time Series Analytics: 03-architecture-patterns/streaming-architectures/time-series-analytics.md
+      - Hybrid Architectures:
+          - Overview: 03-architecture-patterns/hybrid-architectures/README.md
+          - Lambda Architecture: 03-architecture-patterns/hybrid-architectures/lambda-architecture.md
+          - Kappa Architecture: 03-architecture-patterns/hybrid-architectures/kappa-architecture.md
+          - Lambda-Kappa Hybrid: 03-architecture-patterns/hybrid-architectures/lambda-kappa-hybrid.md
+          - HTAP Patterns: 03-architecture-patterns/hybrid-architectures/htap-patterns.md
+          - Polyglot Persistence: 03-architecture-patterns/hybrid-architectures/polyglot-persistence.md
+      - Data Patterns:
+          - Overview: 03-architecture-patterns/data-patterns/README.md
+          - CQRS: 03-architecture-patterns/data-patterns/cqrs.md
+          - Event Sourcing: 03-architecture-patterns/data-patterns/event-sourcing.md
+      - Integration Patterns:
+          - Overview: 03-architecture-patterns/integration-patterns/README.md
+          - Hybrid Connectivity: 03-architecture-patterns/integration-patterns/hybrid-connectivity.md
+          - Saga Pattern: 03-architecture-patterns/integration-patterns/saga-pattern.md
+      - ML Patterns:
+          - Overview: 03-architecture-patterns/ml-patterns/README.md
+          - Model Deployment: 03-architecture-patterns/ml-patterns/model-deployment.md
+      - Reference Architectures:
+          - Overview: 03-architecture-patterns/reference-architectures/README.md
+          - Enterprise Data Warehouse: 03-architecture-patterns/reference-architectures/enterprise-data-warehouse.md
+          - Financial Services: 03-architecture-patterns/reference-architectures/financial-services.md
+          - Healthcare Analytics: 03-architecture-patterns/reference-architectures/healthcare-analytics.md
+          - IoT Analytics: 03-architecture-patterns/reference-architectures/iot-analytics.md
+          - ML Pipeline: 03-architecture-patterns/reference-architectures/ml-pipeline.md
+          - Retail Analytics: 03-architecture-patterns/reference-architectures/retail-analytics.md
+      - Service Architectures:
+          - Overview: 03-architecture-patterns/service-architectures/README.md
+          - Delta Lakehouse:
+              - Overview: 03-architecture-patterns/service-architectures/delta-lakehouse/README.md
+              - Detailed Architecture: 03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md
+          - Serverless SQL:
+              - Overview: 03-architecture-patterns/service-architectures/serverless-sql/README.md
+              - Detailed Architecture: 03-architecture-patterns/service-architectures/serverless-sql/detailed-architecture.md
+          - Shared Metadata:
+              - Overview: 03-architecture-patterns/service-architectures/shared-metadata/README.md
+              - Examples: 03-architecture-patterns/service-architectures/shared-metadata/shared-metadata-examples.md
+          - Feature Store: 03-architecture-patterns/service-architectures/feature-store/README.md
+          - Private Link: 03-architecture-patterns/service-architectures/private-link-architecture.md
+      - Governance Patterns: 03-architecture-patterns/governance-patterns/README.md
+  - Implementation Guides:
+      - Overview: 04-implementation-guides/README.md
+      - Databricks:
+          - Overview: 04-implementation-guides/databricks/README.md
+          - Delta Sharing Setup: 04-implementation-guides/databricks/delta-sharing-setup.md
+          - Feature Store Setup: 04-implementation-guides/databricks/feature-store-setup.md
+          - MLOps Pipeline: 04-implementation-guides/databricks/mlops-pipeline.md
+          - Row-Level Security: 04-implementation-guides/databricks/row-level-security.md
+          - Unity Catalog External Locations: 04-implementation-guides/databricks/unity-catalog-external-locations.md
+      - End-to-End Solutions:
+          - Overview: 04-implementation-guides/end-to-end-solutions/README.md
+          - Customer 360: 04-implementation-guides/end-to-end-solutions/customer-360/README.md
+          - Fraud Detection: 04-implementation-guides/end-to-end-solutions/fraud-detection/README.md
+          - IoT Analytics: 04-implementation-guides/end-to-end-solutions/iot-analytics/README.md
+          - Predictive Maintenance: 04-implementation-guides/end-to-end-solutions/predictive-maintenance/README.md
+          - Real-Time Dashboard: 04-implementation-guides/end-to-end-solutions/real-time-dashboard/README.md
+      - Integration Scenarios:
+          - Overview: 04-implementation-guides/integration-scenarios/README.md
+          - Event-Driven Pipelines: 04-implementation-guides/integration-scenarios/event-driven-pipelines.md
+          - Data Mesh Integration: 04-implementation-guides/integration-scenarios/data-mesh-integration.md
+          - ML Real-time Scoring: 04-implementation-guides/integration-scenarios/ml-realtime-scoring.md
+          - Streaming to Data Lake: 04-implementation-guides/integration-scenarios/streaming-to-datalake.md
+          - Streaming to SQL: 04-implementation-guides/integration-scenarios/streaming-to-sql.md
+          - Event Hubs to Databricks: 04-implementation-guides/integration-scenarios/eventhub-databricks.md
+          - Event Hubs to Stream Analytics: 04-implementation-guides/integration-scenarios/eventhub-stream-analytics.md
+          - Stream Analytics to Cosmos: 04-implementation-guides/integration-scenarios/stream-analytics-cosmos.md
+          - Stream Analytics to Synapse: 04-implementation-guides/integration-scenarios/stream-analytics-synapse.md
+          - Purview to Synapse: 04-implementation-guides/integration-scenarios/purview-synapse.md
+          - Synapse to Databricks: 04-implementation-guides/integration-scenarios/synapse-databricks.md
+      - Migration Guides: 04-implementation-guides/migration-guides/README.md
   - Tutorials:
       - Overview: tutorials/README.md
       - Interactive Data Pipeline: tutorials/interactive-data-pipeline.md
-      - Synapse Tutorials: tutorials/synapse/README.md
-      - Stream Analytics: tutorials/stream-analytics/README.md
-      - Data Factory: tutorials/data-factory/README.md
-      - Integration: tutorials/integration/README.md
-      - Code Labs: tutorials/code-labs/README.md
-      - Learning Paths: tutorials/learning-paths/README.md
+      - Beginner:
+          - Overview: tutorials/beginner/README.md
+          - Synapse Quickstart: tutorials/beginner/synapse-quickstart.md
+          - Databricks Quickstart: tutorials/beginner/databricks-quickstart.md
+          - HDInsight Quickstart: tutorials/beginner/hdinsight-quickstart.md
+          - ADLS Gen2 Quickstart: tutorials/beginner/adls-gen2-quickstart.md
+          - CosmosDB Quickstart: tutorials/beginner/cosmosdb-quickstart.md
+          - Event Hubs Quickstart: tutorials/beginner/eventhubs-quickstart.md
+          - Delta Lake Basics: tutorials/beginner/delta-lake-basics.md
+          - Streaming Concepts: tutorials/beginner/streaming-concepts.md
+      - Intermediate:
+          - Overview: tutorials/intermediate/README.md
+          - Spark Pool Tutorial: tutorials/intermediate/spark-pool-tutorial.md
+          - Stream Analytics Tutorial: tutorials/intermediate/stream-analytics-tutorial.md
+          - HDInsight Spark: tutorials/intermediate/hdinsight-spark.md
+          - ML with Databricks: tutorials/intermediate/ml-databricks.md
+      - Advanced:
+          - Overview: tutorials/advanced/README.md
+          - Hadoop Migration Workshop: tutorials/advanced/hadoop-migration-workshop.md
+          - HDInsight HBase: tutorials/advanced/hdinsight-hbase.md
+          - HDInsight Kafka: tutorials/advanced/hdinsight-kafka.md
+          - HDInsight Kafka Streaming: tutorials/advanced/hdinsight-kafka-streaming.md
+      - Synapse Tutorials:
+          - Overview: tutorials/synapse/README.md
+          - Getting Started: tutorials/synapse/01-getting-started.md
+          - Spark Pools: tutorials/synapse/06-spark-pools.md
+          - Delta Lake: tutorials/synapse/08-delta-lake.md
+          - Serverless SQL: tutorials/synapse/09-serverless-sql.md
+          - Security: tutorials/synapse/12-security.md
+          - CI/CD Setup: tutorials/synapse/14-cicd-setup.md
+      - Stream Analytics:
+          - Overview: tutorials/stream-analytics/README.md
+          - Environment Setup: tutorials/stream-analytics/01-environment-setup.md
+          - Basic Queries: tutorials/stream-analytics/04-basic-queries.md
+          - Windowing Functions: tutorials/stream-analytics/05-windowing-functions.md
+          - Anomaly Detection: tutorials/stream-analytics/07-anomaly-detection.md
+          - Performance Tuning: tutorials/stream-analytics/10-performance-tuning.md
+      - Data Factory:
+          - Overview: tutorials/data-factory/README.md
+          - Fundamentals: tutorials/data-factory/01-fundamentals.md
+          - Integration Runtime: tutorials/data-factory/03-integration-runtime.md
+          - Mapping Data Flows: tutorials/data-factory/11-mapping-data-flows.md
+          - Monitoring: tutorials/data-factory/15-monitoring.md
+          - CI/CD: tutorials/data-factory/17-cicd.md
+      - Integration:
+          - Overview: tutorials/integration/README.md
+          - Data Lakehouse: tutorials/integration/data-lakehouse.md
+          - ML Pipeline: tutorials/integration/ml-pipeline.md
+          - Hybrid: tutorials/integration/hybrid.md
+          - Cross-Region: tutorials/integration/cross-region.md
+          - Power BI: tutorials/integration/power-bi/README.md
+      - Code Labs:
+          - Overview: tutorials/code-labs/README.md
+          - PySpark Fundamentals: tutorials/code-labs/pyspark-fundamentals.md
+          - Delta Lake Deep Dive: tutorials/code-labs/delta-lake-deep-dive.md
+          - Streaming Analytics: tutorials/code-labs/streaming-analytics.md
+          - SQL Optimization: tutorials/code-labs/sql-optimization.md
+          - ML Pipeline Lab: tutorials/code-labs/ml-pipeline-lab.md
+          - Bicep Deployment: tutorials/code-labs/bicep-deployment.md
+      - Learning Paths:
+          - Overview: tutorials/learning-paths/README.md
+          - Data Engineer Path: tutorials/learning-paths/data-engineer-path.md
+          - Data Analyst Path: tutorials/learning-paths/data-analyst-path.md
+          - Platform Admin Path: tutorials/learning-paths/platform-admin-path.md
+          - Architect: tutorials/learning-paths/architect/README.md
+          - Data Engineer: tutorials/learning-paths/data-engineer/README.md
+          - Data Scientist: tutorials/learning-paths/data-scientist/README.md
+          - DevOps: tutorials/learning-paths/devops/README.md
+      - Certification Prep:
+          - Overview: tutorials/certification-prep/README.md
+          - DP-203 Guide: tutorials/certification-prep/dp-203-guide.md
+          - Data Engineer Path: tutorials/certification-prep/data-engineer-path.md
+          - Platform Admin Path: tutorials/certification-prep/platform-admin-path.md
+      - Architecture Patterns:
+          - Overview: tutorials/architecture-patterns/README.md
+          - Batch Patterns:
+              - Medallion Architecture: tutorials/architecture-patterns/batch/medallion-architecture-tutorial.md
+              - Hub-Spoke: tutorials/architecture-patterns/batch/hub-spoke-tutorial.md
+              - Data Mesh: tutorials/architecture-patterns/batch/data-mesh-tutorial.md
+          - Streaming Patterns:
+              - Lambda Architecture: tutorials/architecture-patterns/streaming/lambda-architecture-tutorial.md
+              - Kappa Architecture: tutorials/architecture-patterns/streaming/kappa-architecture-tutorial.md
+              - Event Sourcing: tutorials/architecture-patterns/streaming/event-sourcing-tutorial.md
+          - Hybrid Patterns:
+              - Lambda-Kappa Hybrid: tutorials/architecture-patterns/hybrid/lambda-kappa-hybrid-tutorial.md
+              - HTAP Patterns: tutorials/architecture-patterns/hybrid/htap-patterns-tutorial.md
+          - Reference Implementations:
+              - Financial Services: tutorials/architecture-patterns/reference/financial-services-tutorial.md
+              - Healthcare Analytics: tutorials/architecture-patterns/reference/healthcare-analytics-tutorial.md
+              - IoT Analytics: tutorials/architecture-patterns/reference/iot-analytics-tutorial.md
+      - Power BI: tutorials/power-bi/README.md
   - Best Practices:
       - Overview: 05-best-practices/README.md
       - Service-Specific:
           - Databricks:
               - Overview: 05-best-practices/service-specific/databricks/README.md
               - Delta Lake: 05-best-practices/service-specific/databricks/delta-lake.md
+              - Delta Lake Optimization: 05-best-practices/service-specific/databricks/delta-lake-optimization.md
               - MLOps: 05-best-practices/service-specific/databricks/mlops.md
           - HDInsight:
               - Overview: 05-best-practices/service-specific/hdinsight/README.md
@@ -98,18 +339,40 @@ nav:
               - Spark Best Practices: 05-best-practices/service-specific/synapse/spark-best-practices.md
               - Spark Performance: 05-best-practices/service-specific/synapse/spark-performance.md
               - Dedicated SQL: 05-best-practices/service-specific/synapse/dedicated-sql-best-practices.md
+              - Serverless SQL: 05-best-practices/service-specific/synapse/serverless-sql-best-practices.md
+              - SQL Performance: 05-best-practices/service-specific/synapse/sql-performance.md
               - Data Explorer: 05-best-practices/service-specific/synapse/data-explorer-best-practices.md
       - Cross-Cutting Concerns:
           - Overview: 05-best-practices/cross-cutting-concerns/README.md
-          - Cost Optimization: 05-best-practices/cross-cutting-concerns/cost-optimization/README.md
-          - Data Governance: 05-best-practices/cross-cutting-concerns/data-governance/README.md
-          - Development: 05-best-practices/cross-cutting-concerns/development/README.md
-          - Event Handling: 05-best-practices/cross-cutting-concerns/event-handling/README.md
-          - Governance: 05-best-practices/cross-cutting-concerns/governance/README.md
-          - Networking: 05-best-practices/cross-cutting-concerns/networking/README.md
-          - Performance: 05-best-practices/cross-cutting-concerns/performance/README.md
-          - Security: 05-best-practices/cross-cutting-concerns/security/README.md
-          - Storage: 05-best-practices/cross-cutting-concerns/storage/README.md
+          - Cost Optimization:
+              - Overview: 05-best-practices/cross-cutting-concerns/cost-optimization/README.md
+              - Capture Cost: 05-best-practices/cross-cutting-concerns/cost-optimization/capture-cost.md
+              - Databricks Costs: 05-best-practices/cross-cutting-concerns/cost-optimization/databricks-costs.md
+          - Data Governance:
+              - Overview: 05-best-practices/cross-cutting-concerns/data-governance/README.md
+              - Retention Policies: 05-best-practices/cross-cutting-concerns/data-governance/retention-policies.md
+          - Development:
+              - Overview: 05-best-practices/cross-cutting-concerns/development/README.md
+              - Pipeline Optimization: 05-best-practices/cross-cutting-concerns/development/pipeline-optimization.md
+          - Event Handling:
+              - Overview: 05-best-practices/cross-cutting-concerns/event-handling/README.md
+              - Event Grid Patterns: 05-best-practices/cross-cutting-concerns/event-handling/event-grid-patterns.md
+          - Governance:
+              - Overview: 05-best-practices/cross-cutting-concerns/governance/README.md
+              - Metadata Governance: 05-best-practices/cross-cutting-concerns/governance/metadata-governance.md
+          - Networking:
+              - Overview: 05-best-practices/cross-cutting-concerns/networking/README.md
+              - Network Security: 05-best-practices/cross-cutting-concerns/networking/network-security.md
+          - Performance:
+              - Overview: 05-best-practices/cross-cutting-concerns/performance/README.md
+              - Streaming Optimization: 05-best-practices/cross-cutting-concerns/performance/streaming-optimization.md
+              - Synapse Optimization: 05-best-practices/cross-cutting-concerns/performance/synapse-optimization.md
+          - Security:
+              - Overview: 05-best-practices/cross-cutting-concerns/security/README.md
+              - Security Overview: 05-best-practices/cross-cutting-concerns/security/security-overview.md
+          - Storage:
+              - Overview: 05-best-practices/cross-cutting-concerns/storage/README.md
+              - Capture Optimization: 05-best-practices/cross-cutting-concerns/storage/capture-optimization.md
       - Operational Excellence:
           - Overview: 05-best-practices/operational-excellence/README.md
           - Alert Strategies: 05-best-practices/operational-excellence/alert-strategies.md
@@ -153,6 +416,7 @@ nav:
               - Query Performance: 07-troubleshooting/service-troubleshooting/synapse/query-performance.md
               - Scaling: 07-troubleshooting/service-troubleshooting/synapse/scaling.md
           - CosmosDB:
+              - Overview: 07-troubleshooting/service-troubleshooting/cosmosdb/README.md
               - Partitioning: 07-troubleshooting/service-troubleshooting/cosmosdb/partitioning.md
               - Query Performance: 07-troubleshooting/service-troubleshooting/cosmosdb/query-performance.md
               - RU Optimization: 07-troubleshooting/service-troubleshooting/cosmosdb/ru-optimization.md
@@ -166,9 +430,15 @@ nav:
       - Emerging Patterns: 06-code-examples/emerging-patterns.md
       - Delta Lake:
           - Overview: 06-code-examples/delta-lake/README.md
-          - CDC: 06-code-examples/delta-lake/cdc/change-data-capture.md
-          - Auto Loader: 06-code-examples/delta-lake/ingestion/auto-loader.md
-          - Table Optimization: 06-code-examples/delta-lake/optimization/table-optimization.md
+          - CDC:
+              - Overview: 06-code-examples/delta-lake/cdc/README.md
+              - Change Data Capture: 06-code-examples/delta-lake/cdc/change-data-capture.md
+          - Ingestion:
+              - Overview: 06-code-examples/delta-lake/ingestion/README.md
+              - Auto Loader: 06-code-examples/delta-lake/ingestion/auto-loader.md
+          - Optimization:
+              - Overview: 06-code-examples/delta-lake/optimization/README.md
+              - Table Optimization: 06-code-examples/delta-lake/optimization/table-optimization.md
       - Serverless SQL:
           - Overview: 06-code-examples/serverless-sql/README.md
           - Query Optimization: 06-code-examples/serverless-sql/query-optimization.md
@@ -184,23 +454,76 @@ nav:
       - Integration Examples:
           - Streaming Pipeline: 06-code-examples/integration-examples/streaming-pipeline/README.md
   - Solutions:
-      - Overview: solutions/README.md
+      - Overview: 08-solutions/README.md
       - Azure Real-time Analytics:
-          - Overview: solutions/azure-realtime-analytics/README.md
-          - Architecture: solutions/azure-realtime-analytics/architecture/README.md
-          - Implementation: solutions/azure-realtime-analytics/implementation/README.md
-          - Operations: solutions/azure-realtime-analytics/operations/README.md
+          - Overview: 08-solutions/azure-realtime-analytics/README.md
+          - Architecture:
+              - Overview: 08-solutions/azure-realtime-analytics/architecture/README.md
+              - Components: 08-solutions/azure-realtime-analytics/architecture/components.md
+              - Data Flow: 08-solutions/azure-realtime-analytics/architecture/data-flow.md
+              - Network: 08-solutions/azure-realtime-analytics/architecture/network.md
+              - Security: 08-solutions/azure-realtime-analytics/architecture/security.md
+          - Implementation:
+              - Overview: 08-solutions/azure-realtime-analytics/implementation/README.md
+              - Deployment: 08-solutions/azure-realtime-analytics/implementation/deployment.md
+              - Kafka Setup: 08-solutions/azure-realtime-analytics/implementation/kafka-setup.md
+              - Databricks Setup: 08-solutions/azure-realtime-analytics/implementation/databricks-setup.md
+              - Stream Processing: 08-solutions/azure-realtime-analytics/implementation/stream-processing.md
+              - Security Setup: 08-solutions/azure-realtime-analytics/implementation/security-setup.md
+          - Operations:
+              - Overview: 08-solutions/azure-realtime-analytics/operations/README.md
+              - Monitoring: 08-solutions/azure-realtime-analytics/operations/monitoring.md
+              - Disaster Recovery: 08-solutions/azure-realtime-analytics/operations/disaster-recovery.md
+              - Troubleshooting: 08-solutions/azure-realtime-analytics/operations/troubleshooting.md
+      - Change Feed Processor: 08-solutions/change-feed-processor/README.md
+      - Data Governance: 08-solutions/data-governance/lineage.md
+      - Logic Apps Integration: 08-solutions/logic-apps-integration/README.md
+      - ML Pipeline: 08-solutions/ml-pipeline/README.md
+      - Real-Time Dashboards: 08-solutions/real-time-dashboards/README.md
   - Guides:
       - Overview: guides/README.md
       - Quick Start Wizard: guides/quick-start-wizard.md
-      - Contributing Guide: guides/CONTRIBUTING_GUIDE.md
-      - Development Guide: guides/DEVELOPMENT_GUIDE.md
-      - Directory Structure Guide: guides/DIRECTORY_STRUCTURE_GUIDE.md
-      - Markdown Style Guide: guides/MARKDOWN_STYLE_GUIDE.md
-      - Testing Guide: guides/TESTING_GUIDE.md
-      - Code Review Guide: guides/CODE_REVIEW_GUIDE.md
-      - Localization Guide: guides/localization-guide.md
-      - Analytics Setup Guide: guides/analytics-setup.md
+      - Getting Started:
+          - Project Setup: guides/PROJECT_SETUP.md
+          - Development Setup: guides/DEVELOPMENT_SETUP.md
+          - Technical Setup: guides/technical-setup.md
+          - Azure Integration: guides/AZURE_INTEGRATION.md
+      - Development:
+          - Development Guide: guides/DEVELOPMENT_GUIDE.md
+          - Code Style Guide: guides/CODE_STYLE_GUIDE.md
+          - Code Review Guide: guides/CODE_REVIEW_GUIDE.md
+          - Testing Guide: guides/TESTING_GUIDE.md
+          - Pre-Commit Hooks: guides/PRECOMMIT_HOOKS.md
+      - Documentation:
+          - Contributing Guide: guides/CONTRIBUTING_GUIDE.md
+          - Markdown Style Guide: guides/MARKDOWN_STYLE_GUIDE.md
+          - Content Standards: guides/CONTENT_STANDARDS.md
+          - Directory Structure Guide: guides/DIRECTORY_STRUCTURE_GUIDE.md
+          - Documentation Review Process: guides/documentation-review-process.md
+      - Deployment & Operations:
+          - Deployment Guide: guides/DEPLOYMENT_GUIDE.md
+          - MkDocs Deployment: guides/MKDOCS_DEPLOYMENT.md
+          - CI/CD Guide: guides/CICD_GUIDE.md
+          - Release Management: guides/RELEASE_MANAGEMENT.md
+          - Monitoring: guides/MONITORING_GUIDE.md
+          - System Admin Guide: guides/SYSTEM_ADMIN_GUIDE.md
+          - Performance Optimization: guides/PERFORMANCE_OPTIMIZATION.md
+          - Troubleshooting: guides/TROUBLESHOOTING.md
+      - Specialized Guides:
+          - Localization Guide: guides/localization-guide.md
+          - Accessibility Guide: guides/ACCESSIBILITY_GUIDE.md
+          - Analytics Setup Guide: guides/analytics-setup.md
+          - API Documentation: guides/API_DOCUMENTATION.md
+          - Brand Guidelines: guides/brand-guidelines.md
+          - Migration v3: guides/migration-v3.md
+      - Tutorials:
+          - Data Loading: guides/tutorials/data-loading.md
+          - First Pipeline: guides/tutorials/first-pipeline.md
+          - Spark Basics: guides/tutorials/spark-basics.md
+      - Developer Docs:
+          - API Reference: guides/docs/api-reference.md
+          - Authentication: guides/docs/authentication.md
+          - SDKs: guides/docs/sdks.md
   - Additional Resources:
       - FAQ: faq.md
       - Administration:
@@ -235,6 +558,7 @@ nav:
           - Security Diagrams: diagrams/security-diagrams.md
   - Multimedia:
       - Overview: multimedia/README.md
+      - Multimedia Index: multimedia/MULTIMEDIA_INDEX.md
       - Interactive Demos: multimedia/interactive-demos/README.md
       - Video Tutorials:
           - Overview: multimedia/video-tutorials/README.md
@@ -250,20 +574,9 @@ nav:
       - Presentations: multimedia/presentations/README.md
       - Templates: multimedia/templates/README.md
       - Production Guide: multimedia/production-guide/README.md
+      - Analytics: multimedia/analytics/README.md
       - Tools: multimedia/tools/README.md
       - Contributing: multimedia/CONTRIBUTING.md
-  - Service Architectures:
-      - Delta Lakehouse:
-          - Overview: 03-architecture-patterns/service-architectures/delta-lakehouse/README.md
-          - Detailed Architecture: 03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md
-      - Serverless SQL:
-          - Overview: 03-architecture-patterns/service-architectures/serverless-sql/README.md
-          - Detailed Architecture: 03-architecture-patterns/service-architectures/serverless-sql/detailed-architecture.md
-      - Shared Metadata:
-          - Overview: 03-architecture-patterns/service-architectures/shared-metadata/README.md
-          - Examples: 03-architecture-patterns/service-architectures/shared-metadata/shared-metadata-examples.md
-      - Feature Store: 03-architecture-patterns/service-architectures/feature-store/README.md
-      - Private Link: 03-architecture-patterns/service-architectures/private-link-architecture.md
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -306,8 +619,8 @@ extra:
     #   link: /zh-cn/
     #   lang: zh-CN
   analytics:
-    provider: google
-    property: G-XXXXXXXXXX
+    # provider: google
+    # property: G-XXXXXXXXXX  # TODO: Replace with actual Google Analytics property ID
     feedback:
       title: Was this page helpful?
       ratings:

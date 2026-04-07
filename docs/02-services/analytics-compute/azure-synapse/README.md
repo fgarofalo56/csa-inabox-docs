@@ -1,6 +1,6 @@
 # 🎯 Azure Synapse Analytics
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __💾 Analytics Compute__ | __🎯 Azure Synapse__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __💾 Analytics Compute__ | __🎯 Azure Synapse__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Tier](https://img.shields.io/badge/Tier-Enterprise-purple?style=flat-square)
@@ -142,7 +142,7 @@ __[📖 Detailed Guide →](spark-pools/README.md)__
 
 ---
 
-### 📊 [Data Explorer Pools](data-explorer-pools/)
+### 📊 [Data Explorer Pools](data-explorer-pools/README.md)
 
 ![Time Series](https://img.shields.io/badge/Specialty-Time%20Series-orange?style=flat-square)
 

@@ -1,6 +1,6 @@
 # 🤖 Machine Learning on Databricks
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔥 Intermediate__ | __🤖 ML__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔥 Intermediate__ | __🤖 ML__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Level](https://img.shields.io/badge/Level-Intermediate-yellow)

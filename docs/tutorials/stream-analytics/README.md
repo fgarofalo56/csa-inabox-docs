@@ -1,6 +1,6 @@
 # 🌊 Azure Stream Analytics Real-Time Pipeline Tutorial
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 Stream Analytics__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 Stream Analytics__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Stream_Analytics-blue)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)
@@ -170,7 +170,7 @@ Follow all modules in sequence for comprehensive real-time analytics mastery:
 
 ```powershell
 # Clone tutorial repository and start environment setup
-git clone https://github.com/your-org/stream-analytics-tutorial
+git clone https://github.com/fgarofalo56/csa-inabox-docs
 cd stream-analytics-tutorial
 .\scripts\setup-environment.ps1
 ```
@@ -358,7 +358,7 @@ az stream-analytics job show --resource-group "your-rg" --name "your-job" --quer
 - __📖 Official Documentation__: [Stream Analytics Documentation](https://docs.microsoft.com/azure/stream-analytics/)
 - __💬 Community Forum__: [Microsoft Q&A](https://docs.microsoft.com/answers/topics/azure-stream-analytics.html)
 - __🎬 Video Tutorials__: [YouTube Playlist](https://youtube.com/playlist?list=stream-analytics-tutorials)
-- __📧 Direct Support__: <stream-analytics-tutorial@your-org.com>
+- __📧 Direct Support__: <stream-analytics-tutorial@example.com>
 
 ### __Best Practices Resources__
 

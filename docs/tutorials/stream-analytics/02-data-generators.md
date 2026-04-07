@@ -1,6 +1,6 @@
 # 🎲 Tutorial 2: Data Generators and Simulators
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🌊 [Stream Analytics Series](README.md)** | **🎲 Data Generators**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🌊 [Stream Analytics Series](README.md)** | **🎲 Data Generators**
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-02_Data_Generators-blue)
 ![Duration](https://img.shields.io/badge/Duration-20_minutes-green)

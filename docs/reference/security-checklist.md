@@ -1,6 +1,6 @@
 # Azure Synapse Analytics Security Checklist
 
-[Home](../../README.md) > Reference > Security Checklist
+[Home](../README.md) > Reference > Security Checklist
 
 This checklist provides a comprehensive set of security measures and best practices for securing your Azure Synapse Analytics environment.
 
@@ -198,4 +198,4 @@ This checklist provides a comprehensive set of security measures and best practi
 
 - [Microsoft Security Best Practices](https://learn.microsoft.com/en-us/security/benchmark/azure/baselines/synapse-analytics-security-baseline)
 
-- [Synapse Analytics Security Best Practices](../best-practices/security.md)
+- [Synapse Analytics Security Best Practices](security.md)

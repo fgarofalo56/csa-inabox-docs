@@ -1,6 +1,6 @@
 # 🔄 MLOps Pipeline Implementation
 
-> __🏠 [Home](../../../README.md)__ | __📘 [Implementation](../README.md)__ | __🧪 [Databricks](README.md)__ | __🔄 MLOps Pipeline__
+> __🏠 [Home](../../README.md)__ | __📘 [Implementation](../README.md)__ | __🧪 [Databricks](README.md)__ | __🔄 MLOps Pipeline__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)

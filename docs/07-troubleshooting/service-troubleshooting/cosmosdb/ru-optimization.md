@@ -1,6 +1,6 @@
 # Azure Cosmos DB RU Optimization
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[🌐 Cosmos DB](README.md)** | **👤 RU Optimization**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[🌐 Cosmos DB](README.md)** | **👤 RU Optimization**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)
 

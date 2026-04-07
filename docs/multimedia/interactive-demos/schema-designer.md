@@ -1,6 +1,6 @@
 # 🗂️ Interactive Schema Designer
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Schema Designer**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Schema Designer**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -145,8 +145,8 @@ const schemaValidator = {
 
 ## 📚 Additional Resources
 
-- [Table Design Guide](../../best-practices/performance-optimization.md)
-- [Distribution Strategies](../../architecture/README.md)
+- [Table Design Guide](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Distribution Strategies](../../solutions/azure-realtime-analytics/architecture/README.md)
 
 ## 💬 Feedback
 

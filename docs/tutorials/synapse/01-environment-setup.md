@@ -1,6 +1,6 @@
 # 🚀 Tutorial 1: Environment Setup and Prerequisites
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ [Synapse Series](README.md)__ | __🚀 Environment Setup__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ [Synapse Series](README.md)__ | __🚀 Environment Setup__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-01_Environment_Setup-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)
@@ -779,9 +779,9 @@ foreach ($dir in $assetDirs) {
 
 # Download sample datasets (placeholder URLs - replace with actual assets)
 $sampleData = @{
-    'customer-data.csv' = 'https://raw.githubusercontent.com/your-org/synapse-tutorials/main/data/customers.csv'
-    'transaction-data.json' = 'https://raw.githubusercontent.com/your-org/synapse-tutorials/main/data/transactions.json'
-    'product-catalog.parquet' = 'https://raw.githubusercontent.com/your-org/synapse-tutorials/main/data/products.parquet'
+    'customer-data.csv' = 'https://raw.githubusercontent.com/fgarofalo56/csa-inabox-docs/main/data/customers.csv'
+    'transaction-data.json' = 'https://raw.githubusercontent.com/fgarofalo56/csa-inabox-docs/main/data/transactions.json'
+    'product-catalog.parquet' = 'https://raw.githubusercontent.com/fgarofalo56/csa-inabox-docs/main/data/products.parquet'
 }
 
 foreach ($dataset in $sampleData.GetEnumerator()) {

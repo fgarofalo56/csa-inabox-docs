@@ -1,6 +1,6 @@
 # Azure Storage Custom Domains Reference
 
-[Home](../../../README.md) > [Reference](../README.md) > [Storage](README.md) > Custom Domains
+[Home](../../README.md) > [Reference](../README.md) > [Storage](README.md) > Custom Domains
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Documentation](https://img.shields.io/badge/Documentation-Complete-blue)

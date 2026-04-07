@@ -1,6 +1,6 @@
 # Interactive Diagram Specifications
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **🎮 Interactive Diagrams**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **🎮 Interactive Diagrams**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: JavaScript/SVG](https://img.shields.io/badge/Type-JavaScript%2FSVG-blue)

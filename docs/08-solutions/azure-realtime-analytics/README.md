@@ -1,6 +1,6 @@
 # 🚀 Azure Real-Time Analytics Solution
 
-> __🏠 [Home](../../../README.md)__ | __📚 [Documentation](../../README.md)__ | __🏗️ Solutions__
+> __🏠 [Home](../../README.md)__ | __📚 [Documentation](../../README.md)__ | __🏗️ Solutions__
 
 ---
 
@@ -187,7 +187,7 @@ graph TB
 
 ```bash
 # Clone repository
-git clone https://github.com/your-org/azure-realtime-analytics.git
+git clone https://github.com/fgarofalo56/csa-inabox-docs.git
 cd azure-realtime-analytics
 
 # Deploy infrastructure

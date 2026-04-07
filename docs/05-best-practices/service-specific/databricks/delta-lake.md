@@ -9,7 +9,7 @@ category: "Best Practices - Service Specific"
 
 # Delta Lake Best Practices
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **🔷 [Databricks](./README.md)** | **Delta Lake**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **🔷 [Databricks](./README.md)** | **Delta Lake**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)
@@ -814,7 +814,7 @@ print(f"Number of Files: {detail.numFiles}")
 - [Databricks Cost Optimization](../../cross-cutting-concerns/cost-optimization/databricks-costs.md)
 - [Databricks Best Practices](./README.md)
 - [Delta Lake Documentation](https://docs.delta.io/)
-- [Performance Optimization](../../cross-cutting-concerns/performance/databricks-optimization.md)
+- [Performance Optimization](../../cross-cutting-concerns/performance/README.md)
 
 ---
 

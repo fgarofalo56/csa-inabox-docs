@@ -1,6 +1,6 @@
 # Security Guide
 
-> __[Home](../../README.md)__ | __Security Documentation__
+> __[Home](../README.md)__ | __Security Documentation__
 
 Comprehensive security documentation for Azure Cloud Scale Analytics implementations.
 

@@ -1,6 +1,6 @@
 # 📐 Dedicated SQL Pool Sizing Guide
 
-> __🏠 [Home](../../../../../README.md)__ | __🛠️ [Services](../../../README.md)__ | __📊 [Synapse](../README.md)__ | __📐 Sizing__
+> __🏠 [Home](../../../../README.md)__ | __🛠️ [Services](../../../README.md)__ | __📊 [Synapse](../README.md)__ | __📐 Sizing__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -283,7 +283,7 @@ WHERE snapshot_time > DATEADD(hour, -1, GETDATE());
 
 - [Dedicated SQL Pool Overview](README.md)
 - [Performance Optimization](../../../../05-best-practices/service-specific/synapse/dedicated-sql-best-practices.md)
-- [Cost Management](../../../../05-best-practices/cross-cutting-concerns/cost-optimization/dedicated-sql-costs.md)
+- [Cost Management](../../../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
 - [Troubleshooting](../../../../07-troubleshooting/service-troubleshooting/synapse/README.md)
 
 ---

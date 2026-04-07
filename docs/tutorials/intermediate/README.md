@@ -1,6 +1,6 @@
 # 📚 Intermediate Tutorials
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **📚 Intermediate**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **📚 Intermediate**
 
 ![Level](https://img.shields.io/badge/Level-Intermediate-orange)
 ![Format](https://img.shields.io/badge/Format-Tutorials-blue)

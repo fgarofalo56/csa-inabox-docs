@@ -1,6 +1,6 @@
 # 🤖 ML Model Deployment Patterns
 
-> __🏠 [Home](../../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __🤖 ML Patterns__ | __Model Deployment__
+> __🏠 [Home](../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __🤖 ML Patterns__ | __Model Deployment__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)

@@ -1,6 +1,6 @@
 # ⚡ Query Optimizer Interactive Demo
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Query Optimizer**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Query Optimizer**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -246,8 +246,8 @@ const performanceIssues = {
 
 ## 📚 Additional Resources
 
-- [Query Performance Guide](../../best-practices/sql-performance.md)
-- [Execution Plan Analysis](../../troubleshooting/README.md)
+- [Query Performance Guide](../../05-best-practices/service-specific/synapse/sql-performance.md)
+- [Execution Plan Analysis](../../07-troubleshooting/README.md)
 
 ## 💬 Feedback
 

@@ -1,6 +1,6 @@
 # 🖼️ Image Optimization Tool
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🛠️ [Tools](README.md)** | **🖼️ Image Optimization**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🛠️ [Tools](README.md)** | **🖼️ Image Optimization**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Optimization](https://img.shields.io/badge/Type-Optimization-blue)

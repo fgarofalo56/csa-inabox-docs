@@ -1,6 +1,6 @@
 # Animation Performance Optimization
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **⚡ Performance**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **⚡ Performance**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: Optimization](https://img.shields.io/badge/Type-Optimization-blue)

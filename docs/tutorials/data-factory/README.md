@@ -1,6 +1,6 @@
 # 🔄 Azure Data Factory Orchestration Tutorial
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🔄 Data Factory__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🔄 Data Factory__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Data_Factory_Orchestration-blue)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)
@@ -225,7 +225,7 @@ Follow all modules sequentially for comprehensive ADF mastery:
 
 ```powershell
 # Clone tutorial resources and start setup
-git clone https://github.com/your-org/adf-tutorial
+git clone https://github.com/fgarofalo56/csa-inabox-docs
 cd adf-tutorial
 .\scripts\setup-environment.ps1 -SubscriptionId "your-sub-id"
 ```
@@ -501,8 +501,8 @@ __Business Application__:
 
 - __📖 Official Documentation__: [Azure Data Factory Documentation](https://docs.microsoft.com/azure/data-factory/)
 - __🎬 Video Series__: [ADF Tutorial Playlist](https://youtube.com/playlist?list=adf-tutorials)
-- __💬 Community Forum__: [ADF Discussions](https://github.com/your-org/adf-tutorials/discussions)
-- __📧 Direct Support__: <adf-tutorial-support@your-org.com>
+- __💬 Community Forum__: [ADF Discussions](https://github.com/fgarofalo56/csa-inabox-docss/discussions)
+- __📧 Direct Support__: <adf-tutorial-support@example.com>
 
 ### __Expert Office Hours__
 

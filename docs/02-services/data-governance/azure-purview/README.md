@@ -1,6 +1,6 @@
 # 🔍 Azure Purview
 
-> __🏠 [Home](../../../../README.md)__ | __🛠️ [Services](../../README.md)__ | __🔐 [Data Governance](../README.md)__ | __🔍 Purview__
+> __🏠 [Home](../../../README.md)__ | __🛠️ [Services](../../README.md)__ | __🔐 [Data Governance](../README.md)__ | __🔍 Purview__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -27,8 +27,8 @@ Azure Purview (now Microsoft Purview) provides comprehensive data governance cap
 | Topic | Description |
 |-------|-------------|
 | [Data Lineage](lineage.md) | End-to-end lineage tracking |
-| [Classification Guide](classifications.md) | Sensitive data detection |
-| [Integration Setup](integration.md) | Connect data sources |
+| [Classification Guide](README.md) | Sensitive data detection |
+| [Integration Setup](README.md) | Connect data sources |
 
 ---
 

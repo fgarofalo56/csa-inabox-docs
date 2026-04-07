@@ -9,7 +9,7 @@ category: "Best Practices - Performance"
 
 # Performance Optimization Overview
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **⚡ Performance**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **⚡ Performance**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)

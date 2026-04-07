@@ -1,6 +1,6 @@
 # ⚡ Spark Basics Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **🎓 [Tutorials](./README.md)** | **⚡ Spark Basics**
+> **🏠 [Home](../../tutorials/README.md)** | **📚 Documentation** | **📖 [Guides](../../tutorials/README.md)** | **🎓 [Tutorials](../../tutorials/README.md)** | **⚡ Spark Basics**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
@@ -742,7 +742,7 @@ You've completed Spark basics! Continue learning:
 
 1. ✅ **[Data Loading Tutorial](./data-loading.md)** - Advanced loading patterns
 2. ✅ **[First Pipeline Tutorial](./first-pipeline.md)** - Build complete pipelines
-3. ✅ **[Delta Lake Deep Dive](../../code-examples/delta-lake/README.md)** - Advanced Delta features
+3. ✅ **[Delta Lake Deep Dive](../../06-code-examples/delta-lake/README.md)** - Advanced Delta features
 
 ### Additional Resources
 

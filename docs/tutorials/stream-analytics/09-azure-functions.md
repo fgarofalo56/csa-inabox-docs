@@ -1,6 +1,6 @@
 # ⚡ Tutorial 9: Azure Functions Integration
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __⚡ Functions__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __⚡ Functions__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-09_Functions_Integration-blue)
 ![Duration](https://img.shields.io/badge/Duration-35_minutes-green)

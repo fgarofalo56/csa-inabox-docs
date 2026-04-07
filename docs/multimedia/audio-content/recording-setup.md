@@ -1,6 +1,6 @@
 # 🎙️ Recording Equipment & Studio Setup Guide
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🎙️ Recording Setup**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🎙️ Recording Setup**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Technical Guide](https://img.shields.io/badge/Type-Technical-blue)

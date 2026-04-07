@@ -1,6 +1,6 @@
 # Azure Storage Geo-Replication Reference
 
-[Home](../../../README.md) > [Reference](../README.md) > [Storage](README.md) > Geo-Replication
+[Home](../../README.md) > [Reference](../README.md) > [Storage](README.md) > Geo-Replication
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Documentation](https://img.shields.io/badge/Documentation-Complete-blue)

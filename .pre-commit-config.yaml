@@ -10,7 +10,7 @@ repos:
         args: [--markdown-linebreak-ext=md]
       - id: end-of-file-fixer
       - id: check-yaml
-        args: [--unsafe]  # Allow custom YAML tags
+        args: [--allow-multiple-documents]  # Safe alternative to --unsafe
       - id: check-json
       - id: check-toml
       - id: check-xml
@@ -72,18 +72,9 @@ repos:
   # Documentation quality checks
   - repo: local
     hooks:
-      - id: test-documentation-build
-        name: Test MkDocs Build
-        entry: mkdocs
-        args: [build, --strict]
-        language: python
-        files: ^(mkdocs\.yml|docs/.*)$
-        pass_filenames: false
-        additional_dependencies:
-          - mkdocs==1.5.3
-          - mkdocs-material==9.4.6
-          - mkdocs-minify-plugin==0.7.1
-          - pymdown-extensions==10.3
+      # NOTE: mkdocs build is intentionally NOT run as a pre-commit hook.
+      # It is too slow for pre-commit (~30-60s) and belongs in CI.
+      # Run `mkdocs build --strict` manually or let CI handle it.
 
       - id: markdown-quality-check
         name: Markdown Quality Check

@@ -1,6 +1,6 @@
 # Change Feed Processor Solution
 
-> __[Home](../../../README.md)__ | __[Solutions](../../08-solutions/README.md)__ | __Change Feed Processor__
+> __[Home](../../README.md)__ | __[Solutions](../../08-solutions/README.md)__ | __Change Feed Processor__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)

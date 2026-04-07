@@ -1,6 +1,6 @@
 # 🎯 Advanced Analytics with Azure Synapse Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🎯 Advanced Analytics**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🎯 Advanced Analytics**
 
 ![Lab](https://img.shields.io/badge/Lab-Advanced_Analytics-blue)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)

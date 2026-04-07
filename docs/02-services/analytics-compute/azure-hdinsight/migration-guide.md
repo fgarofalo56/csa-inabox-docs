@@ -1,6 +1,6 @@
 # 🔄 HDInsight Migration Guide
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🐘 [Azure HDInsight](README.md)** | **🔄 Migration Guide**
+> **🏠 [Home](../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🐘 [Azure HDInsight](README.md)** | **🔄 Migration Guide**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -1527,7 +1527,7 @@ print(f"\nSpeedup: {speedup:.2f}x")
 
 - **[Migration Workshop](../../../tutorials/advanced/hadoop-migration-workshop.md)** - Hands-on migration training
 - **[Best Practices](../../../05-best-practices/service-specific/hdinsight/README.md)** - HDInsight optimization
-- **[Code Examples](../../../06-code-examples/by-service/hdinsight/README.md)** - Migration code samples
+- **[Code Examples](../../../05-best-practices/service-specific/hdinsight/README.md)** - Migration code samples
 
 ---
 

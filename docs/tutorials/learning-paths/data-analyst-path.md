@@ -1,6 +1,6 @@
 # 📈 Data Analyst Learning Path
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🛤️ [Learning Paths](README.md)__ | __📈 Data Analyst__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🛤️ [Learning Paths](README.md)__ | __📈 Data Analyst__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Duration](https://img.shields.io/badge/Duration-8--10_weeks-blue)
@@ -102,8 +102,8 @@ ORDER BY OrderYear, OrderMonth;
 
 __Resources:__
 
-- [SQL Performance Optimization](../../../best-practices/sql-performance.md)
-- [Serverless SQL Best Practices](../../../best-practices/serverless-sql-best-practices.md)
+- [SQL Performance Optimization](../../05-best-practices/service-specific/synapse/sql-performance.md)
+- [Serverless SQL Best Practices](../../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
 
 __Assessment Questions:__
 
@@ -132,8 +132,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Serverless SQL Architecture](../../../architecture/serverless-sql/README.md)
-- [Serverless SQL Query Optimization](../../../code-examples/serverless-sql/query-optimization.md)
+- [Serverless SQL Architecture](../../03-architecture-patterns/service-architectures/serverless-sql/README.md)
+- [Serverless SQL Query Optimization](../../06-code-examples/serverless-sql/query-optimization.md)
 
 __Assessment Questions:__
 
@@ -232,7 +232,7 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Power BI Integration Guide](../../../tutorials/README.md)
+- [Power BI Integration Guide](../README.md)
 
 __Assessment Questions:__
 
@@ -615,7 +615,7 @@ __Practice Resources:__
 
 __Ready to become a Data Analyst?__
 
-🚀 __[Start Phase 1 - Module 1.1 →](#phase-1-sql--analytics-foundation-3-4-weeks)__
+🚀 __[Start Phase 1 - Module 1.1 →](#phase-1-sql-analytics-foundation-3-4-weeks)__
 📋 __[Download SQL Cheat Sheet (PDF)](#)__
 🎯 __[Join Power BI Study Group →](#)__
 

@@ -1,6 +1,6 @@
 # 🔄 Data Transformation Patterns
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Transformation Patterns__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Transformation Patterns__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Data_Transformation-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)
@@ -90,7 +90,7 @@ Visual data transformation designer.
 ## 📚 Additional Resources
 
 - [Data Flow Documentation](https://docs.microsoft.com/azure/data-factory/concepts-data-flow-overview)
-- [Transformation Patterns](../../best-practices/pipeline-optimization.md)
+- [Transformation Patterns](../../05-best-practices/cross-cutting-concerns/development/pipeline-optimization.md)
 
 ## 🚀 Next Steps
 

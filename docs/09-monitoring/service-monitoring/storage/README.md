@@ -283,9 +283,9 @@ StorageBlobLogs
 
 ## Related Documentation
 
-- [Data Lake Architecture](../../../architecture/delta-lakehouse/README.md)
-- [Cost Optimization](../../../best-practices/cost-optimization/README.md)
-- [Security Best Practices](../../../best-practices/security/README.md)
+- [Data Lake Architecture](../../../03-architecture-patterns/service-architectures/delta-lakehouse/README.md)
+- [Cost Optimization](../../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
+- [Security Best Practices](../../../05-best-practices/cross-cutting-concerns/security/README.md)
 
 ---
 

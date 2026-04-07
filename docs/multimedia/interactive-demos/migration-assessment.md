@@ -1,6 +1,6 @@
 # 🚀 Migration Assessment Wizard - Interactive Tool
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Migration Assessment**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Migration Assessment**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive Demo](https://img.shields.io/badge/Type-Interactive%20Demo-purple)
@@ -1046,10 +1046,10 @@ After completing this demo, you should understand:
 
 ### Documentation
 
-- [Migration Best Practices](../../best-practices/migration-strategies.md)
-- [Synapse Migration Guide](../../tutorials/migration/synapse-migration.md)
-- [Cost Optimization](../../best-practices/cost-optimization.md)
-- [Security Planning](../../best-practices/security.md)
+- [Migration Best Practices](../../05-best-practices/README.md)
+- [Synapse Migration Guide](../../tutorials/README.md)
+- [Cost Optimization](../../05-best-practices/README.md)
+- [Security Planning](../../reference/security.md)
 
 ### Tools
 
@@ -1091,7 +1091,7 @@ Help us improve the Migration Assessment Wizard!
 ---
 
 **Next Steps:**
-- Review [Migration Best Practices](../../best-practices/migration-strategies.md)
+- Review [Migration Best Practices](../../05-best-practices/README.md)
 - Try [Resource Planner](resource-planner.md) for post-migration sizing
 - Explore [Cost Calculator](cost-calculator.md) for detailed cost analysis
 

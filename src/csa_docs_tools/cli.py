@@ -4,6 +4,7 @@ import argparse
 import asyncio
 import json
 import sys
+import traceback
 from pathlib import Path
 from typing import Dict, Any, Optional
 import logging
@@ -11,12 +12,11 @@ import logging
 from . import (
     DocumentationBuildTester,
     LinkValidator,
-    MarkdownQualityChecker, 
+    MarkdownQualityChecker,
     ImageReferenceValidator,
     NavigationStructureValidator
 )
 
-logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
@@ -158,7 +158,7 @@ async def run_all_validations(args) -> Dict[str, Any]:
     try:
         # Build validation
         if not args.quiet:
-            print("🔧 Testing documentation build...")
+            logger.info("Testing documentation build...")
         
         build_tester = DocumentationBuildTester(docs_root)
         build_stats = build_tester.get_build_statistics()
@@ -171,14 +171,15 @@ async def run_all_validations(args) -> Dict[str, Any]:
             return results
             
     except Exception as e:
+        logger.debug("Build validation error", exc_info=True)
         results['build'] = {'status': 'error', 'message': str(e)}
         if args.fail_fast:
             return results
-    
+
     try:
         # Quality validation
         if not args.quiet:
-            print("📝 Checking markdown quality...")
+            logger.info("Checking markdown quality...")
             
         quality_checker = MarkdownQualityChecker(docs_root)
         quality_results = quality_checker.check_all_files()
@@ -189,14 +190,15 @@ async def run_all_validations(args) -> Dict[str, Any]:
         }
         
     except Exception as e:
+        logger.debug("Quality validation error", exc_info=True)
         results['quality'] = {'status': 'error', 'message': str(e)}
         if args.fail_fast:
             return results
-    
+
     try:
         # Image validation
         if not args.quiet:
-            print("🖼️  Validating images...")
+            logger.info("Validating images...")
             
         image_validator = ImageReferenceValidator(docs_root)
         image_results = image_validator.validate_all_images()
@@ -207,14 +209,15 @@ async def run_all_validations(args) -> Dict[str, Any]:
         }
         
     except Exception as e:
+        logger.debug("Image validation error", exc_info=True)
         results['images'] = {'status': 'error', 'message': str(e)}
         if args.fail_fast:
             return results
-    
+
     try:
         # Navigation validation
         if not args.quiet:
-            print("🧭 Validating navigation structure...")
+            logger.info("Validating navigation structure...")
             
         nav_validator = NavigationStructureValidator(docs_root)
         nav_results = nav_validator.validate_all_navigation()
@@ -225,14 +228,15 @@ async def run_all_validations(args) -> Dict[str, Any]:
         }
         
     except Exception as e:
+        logger.debug("Navigation validation error", exc_info=True)
         results['navigation'] = {'status': 'error', 'message': str(e)}
         if args.fail_fast:
             return results
-    
+
     try:
         # Link validation (internal only by default for speed)
         if not args.quiet:
-            print("🔗 Validating links...")
+            logger.info("Validating links...")
             
         async with LinkValidator(docs_root) as link_validator:
             link_results = await link_validator.validate_all_links(check_external=False)
@@ -243,6 +247,7 @@ async def run_all_validations(args) -> Dict[str, Any]:
             }
             
     except Exception as e:
+        logger.debug("Link validation error", exc_info=True)
         results['links'] = {'status': 'error', 'message': str(e)}
     
     return results
@@ -275,9 +280,10 @@ def run_build_test(args) -> Dict[str, Any]:
 def run_quality_check(args) -> Dict[str, Any]:
     """Run markdown quality checking."""
     quality_checker = MarkdownQualityChecker(args.docs_root)
-    
-    # Check all files
-    results = quality_checker.check_all_files()
+
+    # Check all files (use_markdownlint controls whether CLI markdownlint is invoked)
+    use_markdownlint = getattr(args, 'markdownlint', False)
+    results = quality_checker.check_all_files(use_markdownlint=use_markdownlint)
     report = quality_checker.generate_quality_report(results)
     
     # Check minimum score
@@ -448,19 +454,22 @@ async def main() -> int:
     """Main CLI entry point."""
     parser = setup_parser()
     args = parser.parse_args()
-    
+
+    # Configure logging here (not at import time)
     if args.verbose:
-        logging.getLogger().setLevel(logging.DEBUG)
+        logging.basicConfig(level=logging.DEBUG, format='%(levelname)s:%(name)s:%(message)s')
     elif args.quiet:
-        logging.getLogger().setLevel(logging.WARNING)
+        logging.basicConfig(level=logging.WARNING, format='%(levelname)s:%(message)s')
+    else:
+        logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(message)s')
     
     if not args.command:
         parser.print_help()
         return 1
     
     # Validate docs root
-    if not args.docs_root.exists():
-        print(f"Error: Documentation root not found: {args.docs_root}")
+    if not args.docs_root.exists() or not args.docs_root.is_dir():
+        print(f"Error: Documentation root not found or is not a directory: {args.docs_root}")
         return 1
     
     try:
@@ -503,7 +512,6 @@ async def main() -> int:
     except Exception as e:
         print(f"Error: {e}")
         if args.verbose:
-            import traceback
             traceback.print_exc()
         return 1
 

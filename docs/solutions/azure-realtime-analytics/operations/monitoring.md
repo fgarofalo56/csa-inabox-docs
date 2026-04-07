@@ -1,6 +1,6 @@
 # 📊 Monitoring Setup Guide
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 [Operations](./README.md)** | **📊 Monitoring**
+> **🏠 [Home](../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 [Operations](./README.md)** | **📊 Monitoring**
 
 ---
 

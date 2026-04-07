@@ -15,7 +15,11 @@ DOCS_DIR = ROOT_DIR / "docs"
 
 
 def check_link_exists(file_path: Path, link: str) -> bool:
-    """Check if a relative link target exists."""
+    """Check if a relative link target exists.
+
+    Includes path traversal protection: resolved path must stay within DOCS_DIR
+    or ROOT_DIR to prevent writes/reads outside the project boundary.
+    """
     file_dir = file_path.parent
 
     # Split anchor from path
@@ -23,7 +27,15 @@ def check_link_exists(file_path: Path, link: str) -> bool:
     if not link_path:  # Just an anchor
         return True
 
-    target_path = (file_dir / link_path).resolve()
+    target_path = (file_dir / link_path).resolve(strict=False)
+
+    # Path traversal protection: ensure target stays within project root
+    try:
+        target_path.relative_to(ROOT_DIR)
+    except ValueError:
+        # Resolved path escapes the project root — block it
+        return False
+
     return target_path.exists()
 
 

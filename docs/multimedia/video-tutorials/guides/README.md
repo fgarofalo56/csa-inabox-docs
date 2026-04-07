@@ -1,6 +1,6 @@
 # Video Tutorial Production Guides
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Production Guides**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Production Guides**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Guides: 4](https://img.shields.io/badge/Guides-4-blue)
@@ -243,7 +243,7 @@ See [Accessibility Guidelines](./accessibility.md#wcag-21-compliance) for full r
 - **Scripts**: AI can help with outlines and drafts, but human review is essential for quality
 - **Transcripts**: AI transcription works well for clear audio, less so for technical jargon
 
-See relevant sections in [Accessibility Guidelines](./accessibility.md#caption-services) and [Script Writing](./script-writing.md#script-development).
+See relevant sections in [Accessibility Guidelines](./accessibility.md#caption-services) and [Script Writing](./script-writing.md#content-development).
 
 ## Standards & Compliance
 
@@ -288,7 +288,7 @@ Before publishing, verify:
 - **[Multimedia Production Guide](../../production-guide/README.md)** - Overall multimedia strategy
 - **[Animation Guidelines](../../animations/animation-guidelines.md)** - Animated content standards
 - **[Interactive Demos](../../interactive-demos/README.md)** - Interactive tutorial alternatives
-- **[Visual Style Guide](../../../VISUAL-STYLE-GUIDE.md)** - Brand and design standards
+- **[Visual Style Guide](../../../guides/VISUAL-STYLE-GUIDE.md)** - Brand and design standards
 
 ### Community & Support
 

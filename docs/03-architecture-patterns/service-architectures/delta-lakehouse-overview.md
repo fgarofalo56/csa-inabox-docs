@@ -173,12 +173,12 @@
 
 | Next Topic | Description | Complexity | Quick Access |
 |------------|-------------|------------|-------------|
-| ☁️ __[Serverless SQL Architecture](../serverless-sql/README.md)__ | Cost-effective querying patterns | ![Intermediate](https://img.shields.io/badge/Level-Intermediate-orange) | [![Guide](https://img.shields.io/badge/☁️-SQL_Guide-blue)](#) |
-| 🔗 __[Shared Metadata Architecture](../shared-metadata/README.md)__ | Cross-engine metadata patterns | ![Advanced](https://img.shields.io/badge/Level-Advanced-red) | [![Guide](https://img.shields.io/badge/🔗-Metadata_Guide-purple)](#) |
-| 🎆 __[Best Practices](../best-practices/README.md)__ | Implementation excellence | ![Practical](https://img.shields.io/badge/Type-Practical-green) | [![Guide](https://img.shields.io/badge/🎆-Best_Practices-green)](#) |
-| 💻 __[Code Examples](../code-examples/README.md)__ | Hands-on implementation | ![Hands_On](https://img.shields.io/badge/Type-Hands_On-yellow) | [![Examples](https://img.shields.io/badge/💻-Code_Examples-orange)](#) |
+| ☁️ __[Serverless SQL Architecture](serverless-sql/README.md)__ | Cost-effective querying patterns | ![Intermediate](https://img.shields.io/badge/Level-Intermediate-orange) | [![Guide](https://img.shields.io/badge/☁️-SQL_Guide-blue)](#) |
+| 🔗 __[Shared Metadata Architecture](shared-metadata/README.md)__ | Cross-engine metadata patterns | ![Advanced](https://img.shields.io/badge/Level-Advanced-red) | [![Guide](https://img.shields.io/badge/🔗-Metadata_Guide-purple)](#) |
+| 🎆 __[Best Practices](../data-patterns/README.md)__ | Implementation excellence | ![Practical](https://img.shields.io/badge/Type-Practical-green) | [![Guide](https://img.shields.io/badge/🎆-Best_Practices-green)](#) |
+| 💻 __[Code Examples](../data-patterns/README.md)__ | Hands-on implementation | ![Hands_On](https://img.shields.io/badge/Type-Hands_On-yellow) | [![Examples](https://img.shields.io/badge/💻-Code_Examples-orange)](#) |
 
 ---
 
 > 🌟 __Delta Lakehouse Success__  
-> You now have a comprehensive understanding of Delta Lakehouse architecture. Ready to implement? Start with our [Delta Lake code examples](../code-examples/delta-lake-guide.md) for practical implementation guidance.
+> You now have a comprehensive understanding of Delta Lakehouse architecture. Ready to implement? Start with our [Delta Lake code examples](../../06-code-examples/delta-lake-guide.md) for practical implementation guidance.

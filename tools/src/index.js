@@ -21,5 +21,6 @@ export { DocumentationFixService } from './services/DocumentationFixService.js';
 // Presentation
 export { DocumentationToolsCLI } from './presentation/DocumentationToolsCLI.js';
 
-// Types (if using TypeScript)
-export * from './types/index.d.ts';
+// Note: TypeScript type declarations (.d.ts) are not exported at runtime.
+// If consuming this package from TypeScript, add a separate "types" field
+// in package.json pointing to a generated declaration file.

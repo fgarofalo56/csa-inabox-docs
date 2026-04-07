@@ -1,6 +1,6 @@
 # Stream Analytics Query Development
 
-> **[Home](../../../../README.md)** | **[Best Practices](../../README.md)** | **[Cross-Cutting](../README.md)** | **Stream Analytics Queries**
+> **[Home](../../../README.md)** | **[Best Practices](../../README.md)** | **[Cross-Cutting](../README.md)** | **Stream Analytics Queries**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Category](https://img.shields.io/badge/Category-Development-blue?style=flat-square)
@@ -245,9 +245,9 @@ GROUP BY DeviceId
 
 ## Related Documentation
 
-- [Stream Analytics Overview](../../../../02-services/streaming-services/azure-stream-analytics/README.md)
+- [Stream Analytics Overview](../../../02-services/streaming-services/azure-stream-analytics/README.md)
 - [Event Hubs Integration](../event-handling/event-grid-patterns.md)
-- [Real-time Architecture](../../../../03-architecture-patterns/streaming-architectures/README.md)
+- [Real-time Architecture](../../../03-architecture-patterns/streaming-architectures/README.md)
 
 ---
 

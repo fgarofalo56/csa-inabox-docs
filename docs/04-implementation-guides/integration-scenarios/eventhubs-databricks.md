@@ -1,6 +1,6 @@
 # ⚡ Event Hubs with Databricks - Structured Streaming
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __⚡ Event Hubs with Databricks__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __⚡ Event Hubs with Databricks__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-60min-blue?style=flat-square)
@@ -551,7 +551,7 @@ balanced_df = parsed_df.repartition(16, "deviceId")
 
 - **[Integrate with Synapse for analytics](stream-analytics-synapse.md)**
 - **[Add ML model training pipeline](../../08-solutions/ml-pipeline/README.md)**
-- **[Implement data quality checks](../../best-practices/data-quality.md)**
+- **[Implement data quality checks](../../solutions/azure-realtime-analytics/implementation/data-quality.md)**
 
 ---
 

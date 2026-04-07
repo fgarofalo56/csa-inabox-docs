@@ -1,6 +1,6 @@
 # Cross-Cutting Concerns
 
-> **[Home](../../../README.md)** | **[Best Practices](../README.md)** | **Cross-Cutting Concerns**
+> **[Home](../../README.md)** | **[Best Practices](../README.md)** | **Cross-Cutting Concerns**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Category](https://img.shields.io/badge/Category-Best%20Practices-blue?style=flat-square)
@@ -57,8 +57,8 @@ Cross-cutting concerns are aspects of the platform that affect multiple componen
 ## Related Documentation
 
 - [Operational Excellence](../operational-excellence/README.md)
-- [Service-Specific Best Practices](../service-specific/README.md)
-- [Architecture Patterns](../../../03-architecture-patterns/README.md)
+- [Service-Specific Best Practices](../service-specific/storage/README.md)
+- [Architecture Patterns](../../03-architecture-patterns/README.md)
 
 ---
 

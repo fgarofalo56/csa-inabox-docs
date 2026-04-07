@@ -1,6 +1,6 @@
 # 🎯 SQL Query Interactive Playground
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 SQL Playground**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 SQL Playground**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -820,9 +820,9 @@ GROUP BY CustomerID;
 ## 📚 Additional Resources
 
 - [T-SQL Reference](https://docs.microsoft.com/sql/t-sql/)
-- [Synapse SQL Best Practices](../../best-practices/sql-performance.md)
-- [Query Optimization Guide](../../best-practices/performance-optimization.md)
-- [Serverless SQL Pool Guide](../../architecture/serverless-sql/README.md)
+- [Synapse SQL Best Practices](../../05-best-practices/service-specific/synapse/sql-performance.md)
+- [Query Optimization Guide](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Serverless SQL Pool Guide](../../03-architecture-patterns/service-architectures/serverless-sql/README.md)
 
 ## 💬 Feedback
 

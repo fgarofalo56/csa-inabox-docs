@@ -415,17 +415,22 @@ class TestNavigationStructureValidator:
         """Test index files check with missing index files."""
         docs_dir = tmp_path / "docs"
         docs_dir.mkdir()
-        
+
+        # Create mkdocs.yml so the validator can initialize
+        mkdocs_config = {"site_name": "Test", "docs_dir": "docs"}
+        with open(tmp_path / "mkdocs.yml", 'w') as f:
+            yaml.dump(mkdocs_config, f)
+
         # Create directory without index file but with multiple pages
         section_dir = docs_dir / "section"
         section_dir.mkdir()
         (section_dir / "page1.md").write_text("# Page 1")
         (section_dir / "page2.md").write_text("# Page 2")
         (section_dir / "page3.md").write_text("# Page 3")
-        
+
         validator = NavigationStructureValidator(tmp_path)
         issues = validator.check_index_files()
-        
+
         missing_index_issues = [issue for issue in issues if issue.issue_type == 'missing_index']
         assert len(missing_index_issues) >= 1
 

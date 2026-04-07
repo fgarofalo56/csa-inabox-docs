@@ -1,6 +1,6 @@
 # 📻 Episode: Synapse 101 - Introduction to Azure Synapse Analytics
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Synapse 101**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Synapse 101**
 
 ![Episode: 001](https://img.shields.io/badge/Episode-001-blue)
 ![Duration: 25 min](https://img.shields.io/badge/Duration-25min-green)

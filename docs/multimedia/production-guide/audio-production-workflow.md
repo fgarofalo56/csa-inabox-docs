@@ -1,6 +1,6 @@
 # Audio Production Workflow
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **🎧 Audio Production**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **🎧 Audio Production**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: Workflow](https://img.shields.io/badge/Type-Workflow-blue)

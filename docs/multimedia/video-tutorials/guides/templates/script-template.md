@@ -1,6 +1,6 @@
 # Video Script Template
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Guides** | **Script Template**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Guides** | **Script Template**
 
 ![Type: Template](https://img.shields.io/badge/Type-Template-blue)
 ![Version: 1.0](https://img.shields.io/badge/Version-1.0-green)

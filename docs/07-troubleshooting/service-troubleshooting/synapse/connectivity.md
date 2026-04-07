@@ -1,6 +1,6 @@
 # Azure Synapse Connectivity Troubleshooting
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[⚡ Synapse](README.md)** | **👤 Connectivity**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[⚡ Synapse](README.md)** | **👤 Connectivity**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)
 

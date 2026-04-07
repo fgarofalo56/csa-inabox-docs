@@ -1,6 +1,6 @@
 # Databricks Workspace Setup
 
-> __🏠 [Home](../../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🏗️ [Solutions](../../README.md)__ | __⚡ [Real-Time Analytics](../README.md)__ | __⚙️ [Implementation](README.md)__ | __⚙️ Databricks Setup__
+> __🏠 [Home](../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🏗️ [Solutions](../../README.md)__ | __⚡ [Real-Time Analytics](../README.md)__ | __⚙️ [Implementation](README.md)__ | __⚙️ Databricks Setup__
 
 ---
 

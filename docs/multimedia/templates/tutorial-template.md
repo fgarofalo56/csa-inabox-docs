@@ -11,7 +11,7 @@ TUTORIAL TEMPLATE INSTRUCTIONS:
 7. Remove all <!-- COMMENTS --> before publishing
 -->
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../../tutorials/README.md)** | **👤 [Tutorial Title]**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../../tutorials/README.md)** | **👤 [Tutorial Title]**
 
 ![Type: Tutorial](https://img.shields.io/badge/Type-Tutorial-blue)
 ![Difficulty: [Beginner/Intermediate/Advanced]](https://img.shields.io/badge/Difficulty-[Level]-[green/yellow/red])
@@ -69,8 +69,8 @@ Before starting, you should be familiar with:
 
 **Recommended Tutorials** (if new to these topics):
 
-- [Prerequisite Tutorial 1](../prerequisite-tutorial-1.md)
-- [Prerequisite Tutorial 2](../prerequisite-tutorial-2.md)
+- [Prerequisite Tutorial 1](../README.md)
+- [Prerequisite Tutorial 2](../README.md)
 
 ### Required Tools
 
@@ -94,9 +94,9 @@ Ensure you have the following installed and configured:
 
 Download the tutorial resources:
 
-- [Sample Dataset](../resources/sample-data.zip)
-- [Starter Code](../resources/starter-code.zip)
-- [Configuration Files](../resources/config-files.zip)
+- *Resource: sample-data.zip (coming soon)*
+- *Resource: starter-code.zip (coming soon)*
+- *Resource: config-files.zip (coming soon)*
 
 ## 🗺️ Tutorial Roadmap
 
@@ -417,8 +417,8 @@ Now that you've completed this tutorial, you can:
 1. **Extend**: [Suggestion for extending the solution]
 2. **Optimize**: [Suggestion for optimization]
 3. **Learn More**: Try these related tutorials:
-   - [Related Tutorial 1](../related-tutorial-1.md)
-   - [Related Tutorial 2](../related-tutorial-2.md)
+   - [Related Tutorial 1](../README.md)
+   - [Related Tutorial 2](../README.md)
 
 ## 🔧 Troubleshooting
 
@@ -466,8 +466,8 @@ az role assignment create \
 ### Documentation
 
 - [Official Documentation](https://docs.microsoft.com/)
-- [API Reference](../reference/api-reference.md)
-- [Best Practices Guide](../../best-practices/README.md)
+- [API Reference](../../guides/docs/api-reference.md)
+- [Best Practices Guide](../../05-best-practices/README.md)
 
 ### Code Samples
 
@@ -476,7 +476,7 @@ az role assignment create \
 
 ### Video Walkthrough
 
-- [Tutorial Video](../multimedia/video-tutorials/tutorial-name.md)
+- [Tutorial Video](../README.md)
 
 ### Community
 

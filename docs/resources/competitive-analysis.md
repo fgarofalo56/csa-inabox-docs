@@ -1,6 +1,6 @@
 # 🔍 Cloud Analytics Platform Competitive Analysis
 
-> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__ | __🔍 Competitive Analysis__
+> __🏠 [Home](../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__ | __🔍 Competitive Analysis__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Platforms](https://img.shields.io/badge/Platforms-5-blue?style=flat-square)
@@ -873,7 +873,7 @@ __Reasons__:
 
 ### Cost & ROI
 
-- [__Cost Optimization Best Practices__](../05-best-practices/cost-optimization.md)
+- [__Cost Optimization Best Practices__](../05-best-practices/README.md)
 - [__Azure Pricing Calculator__](https://azure.microsoft.com/pricing/calculator/)
 
 ---

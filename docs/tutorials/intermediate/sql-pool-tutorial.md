@@ -1,6 +1,6 @@
 # 💾 Intermediate SQL Pool Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **📚 [Intermediate](README.md)** | **💾 SQL Pool**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **📚 [Intermediate](README.md)** | **💾 SQL Pool**
 
 ![Level](https://img.shields.io/badge/Level-Intermediate-orange)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)

@@ -1,6 +1,6 @@
 # 🗄️ Polyglot Persistence Architecture
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🔄 Hybrid Architectures__ | __🗄️ Polyglot Persistence__
+> __🏠 [Home](../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🔄 Hybrid Architectures__ | __🗄️ Polyglot Persistence__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -971,7 +971,7 @@ class DistributedTransactionCoordinator:
 
 - [Azure SQL Database Best Practices](https://docs.microsoft.com/azure/sql-database/)
 - [Cosmos DB Multi-Model Guide](https://docs.microsoft.com/azure/cosmos-db/)
-- [Data Synchronization Patterns](../../best-practices/README.md)
+- [Data Synchronization Patterns](../../05-best-practices/README.md)
 
 ### Reference Architectures
 

@@ -1,6 +1,6 @@
 # KQL (Kusto Query Language) Reference
 
-[Home](../../README.md) > [Reference](README.md) > KQL Reference
+[Home](../README.md) > [Reference](README.md) > KQL Reference
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Documentation](https://img.shields.io/badge/Documentation-Complete-blue)

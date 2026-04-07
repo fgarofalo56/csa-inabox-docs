@@ -1,6 +1,6 @@
 # 🔥 Intermediate Spark Pool Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **📚 [Intermediate](README.md)** | **🔥 Spark Pool**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **📚 [Intermediate](README.md)** | **🔥 Spark Pool**
 
 ![Level](https://img.shields.io/badge/Level-Intermediate-orange)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)

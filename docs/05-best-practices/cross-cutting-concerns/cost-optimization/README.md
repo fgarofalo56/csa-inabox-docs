@@ -9,7 +9,7 @@ category: "Best Practices - Cost"
 
 # Cost Optimization Best Practices
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **💲 Cost Optimization**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **💲 Cost Optimization**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)

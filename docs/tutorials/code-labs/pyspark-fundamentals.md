@@ -1,6 +1,6 @@
 # 🐍 PySpark Data Processing Fundamentals Lab
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __💻 [Code Labs](README.md)__ | __🐍 PySpark Fundamentals__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __💻 [Code Labs](README.md)__ | __🐍 PySpark Fundamentals__
 
 ![Lab](https://img.shields.io/badge/Lab-PySpark_Fundamentals-blue)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)
@@ -50,7 +50,7 @@ pyspark
 
 ### __Option C: GitHub Codespaces__
 
-1. Open [PySpark Lab Repository](https://github.com/your-org/pyspark-lab)
+1. Open [PySpark Lab Repository](https://github.com/fgarofalo56/csa-inabox-docs)
 2. Click "Code" → "Create codespace"  
 3. Environment automatically configured!
 
@@ -875,7 +875,7 @@ You've completed the PySpark Fundamentals Lab! Here's what you've accomplished:
 ### __Community & Support__
 
 - __Stack Overflow__: Tag questions with `pyspark` and `azure-synapse`
-- __GitHub Discussions__: [Lab Repository Discussions](https://github.com/your-org/pyspark-lab/discussions)
+- __GitHub Discussions__: [Lab Repository Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
 - __Office Hours__: Weekly Q&A sessions (Wednesdays 3 PM PT)
 
 ---

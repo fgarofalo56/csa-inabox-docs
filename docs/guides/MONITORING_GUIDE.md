@@ -1,6 +1,6 @@
 # MONITORING GUIDE
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **MONITORING GUIDE**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **MONITORING GUIDE**
 
 ## Overview
 

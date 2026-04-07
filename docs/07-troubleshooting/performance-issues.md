@@ -1,6 +1,6 @@
 # General Performance Troubleshooting - CSA in-a-Box
 
-> **[🏠 Home](../../README.md)** | **[📖 Documentation](../README.md)** | **[🔧 Troubleshooting](README.md)** | **👤 Performance Issues**
+> **[🏠 Home](../README.md)** | **[📖 Documentation](../README.md)** | **[🔧 Troubleshooting](README.md)** | **👤 Performance Issues**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)
 
@@ -699,9 +699,9 @@ SynapseSqlPoolExecRequests
 | Resource | Description |
 |----------|-------------|
 | [Synapse Query Performance](service-troubleshooting/synapse/query-performance.md) | Synapse-specific query optimization |
-| [Databricks Performance](service-troubleshooting/databricks/query-performance.md) | Databricks query and job optimization |
-| [Best Practices: Performance](../best-practices/performance-optimization.md) | General performance best practices |
-| [Monitoring Setup](../monitoring/monitoring-setup.md) | Configure comprehensive monitoring |
+| [Databricks Performance](service-troubleshooting/synapse/query-performance.md) | Databricks query and job optimization |
+| [Best Practices: Performance](../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md) | General performance best practices |
+| [Monitoring Setup](../09-monitoring/monitoring-setup.md) | Configure comprehensive monitoring |
 
 ### External Resources
 

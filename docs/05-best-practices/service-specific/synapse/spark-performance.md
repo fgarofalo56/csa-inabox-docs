@@ -210,7 +210,7 @@ EXPLAIN COST SELECT * FROM table WHERE col = 'value';
 ## Related Documentation
 
 - [Spark Best Practices](spark-best-practices.md)
-- [Spark Troubleshooting](../../../troubleshooting/spark-troubleshooting.md)
+- [Spark Troubleshooting](../../../07-troubleshooting/spark-troubleshooting.md)
 - [Spark Pool Configuration](../../../02-services/analytics-compute/azure-synapse/spark-pools/README.md)
 
 ---

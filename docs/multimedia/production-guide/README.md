@@ -1,6 +1,6 @@
 # 🎬 Multimedia Production Guide
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📎 Production Guide__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📎 Production Guide__
 
 ![Status: Standards](https://img.shields.io/badge/Status-Standards-brightgreen)
 ![Version: 2.0](https://img.shields.io/badge/Version-2.0-blue)
@@ -853,8 +853,8 @@ const analyticsDashboard = {
 - [Brand Guidelines](../brand/README.md)
 - [Template Library](../templates/README.md)
 - [Accessibility Toolkit](../tools/accessibility/README.md)
-- [Performance Optimization](./guides/performance.md)
-- [Distribution Strategy](./guides/distribution.md)
+- Performance Optimization
+- Distribution Strategy
 
 ---
 

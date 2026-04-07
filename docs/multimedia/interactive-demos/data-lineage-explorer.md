@@ -1,6 +1,6 @@
 # 🔍 Data Lineage Explorer - Interactive Visualization Demo
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Data Lineage Explorer**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Data Lineage Explorer**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive Demo](https://img.shields.io/badge/Type-Interactive%20Demo-purple)
@@ -571,20 +571,20 @@ After completing this demo, you should understand:
 
 - [Azure Purview Data Lineage](../../02-services/data-governance/azure-purview/lineage.md)
 - [Synapse Pipeline Lineage](../../02-services/analytics-compute/azure-synapse/pipelines/lineage-tracking.md)
-- [Data Governance Best Practices](../../best-practices/data-governance.md)
-- [Metadata Management Guide](../../architecture/shared-metadata/shared-metadata.md)
+- [Data Governance Best Practices](../../05-best-practices/README.md)
+- [Metadata Management Guide](../../03-architecture-patterns/service-architectures/shared-metadata/shared-metadata.md)
 
 ### Tutorials
 
-- [Setting Up Azure Purview for Lineage](../../tutorials/purview/lineage-setup.md)
-- [Building Lineage-Aware Pipelines](../../tutorials/synapse/lineage-integration.md)
-- [Data Quality with Lineage](../../tutorials/data-quality/lineage-driven-quality.md)
+- [Setting Up Azure Purview for Lineage](../../tutorials/README.md)
+- [Building Lineage-Aware Pipelines](../../tutorials/synapse/README.md)
+- [Data Quality with Lineage](../../tutorials/README.md)
 
 ### Code Examples
 
-- [Purview Lineage API Examples](../../code-examples/integration/azure-purview.md)
-- [Custom Lineage Collection](../../code-examples/data-governance/custom-lineage.md)
-- [Lineage Visualization Components](../../code-examples/visualizations/lineage-graphs.md)
+- [Purview Lineage API Examples](../../06-code-examples/integration/azure-purview.md)
+- [Custom Lineage Collection](../../06-code-examples/README.md)
+- [Lineage Visualization Components](../../06-code-examples/README.md)
 
 ## ❓ FAQ
 

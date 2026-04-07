@@ -1,6 +1,6 @@
 # Storage Best Practices
 
-> **[Home](../../../../README.md)** | **[Best Practices](../../README.md)** | **[Cross-Cutting](../README.md)** | **Storage**
+> **[Home](../../../README.md)** | **[Best Practices](../../README.md)** | **[Cross-Cutting](../README.md)** | **Storage**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Category](https://img.shields.io/badge/Category-Storage-green?style=flat-square)

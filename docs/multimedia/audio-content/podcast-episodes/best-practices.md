@@ -1,6 +1,6 @@
 # 📻 Episode: Azure Synapse Implementation Best Practices
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Best Practices**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Best Practices**
 
 ![Episode: 004](https://img.shields.io/badge/Episode-004-blue)
 ![Duration: 26 min](https://img.shields.io/badge/Duration-26min-green)

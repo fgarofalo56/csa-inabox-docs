@@ -1,6 +1,6 @@
 # Azure Storage Troubleshooting Guide
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **👤 Azure Storage**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **👤 Azure Storage**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Service](https://img.shields.io/badge/Service-Storage-lightblue)
 

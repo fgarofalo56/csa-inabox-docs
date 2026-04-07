@@ -1,6 +1,6 @@
 # Video Script: IoT Hub Integration with Synapse Analytics
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 IoT Hub Integration**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 IoT Hub Integration**
 
 ![Duration: 27 minutes](https://img.shields.io/badge/Duration-27%20minutes-blue)
 ![Level: Intermediate](https://img.shields.io/badge/Level-Intermediate-orange)

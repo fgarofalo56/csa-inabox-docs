@@ -150,6 +150,21 @@ class LinkChecker:
         """Check if a URL is a non-file link (mailto:, tel:, etc.) that should be skipped."""
         return url.startswith(('mailto:', 'tel:', 'ftp:', '#'))
     
+    def _is_path_safe(self, resolved_path: Path) -> bool:
+        """Check that a resolved path stays within the project root (path traversal protection).
+
+        Args:
+            resolved_path: The resolved (absolute) path to check
+
+        Returns:
+            True if the path is inside self.root_dir, False otherwise
+        """
+        try:
+            resolved_path.resolve(strict=False).relative_to(self.root_dir)
+            return True
+        except ValueError:
+            return False
+
     def verify_internal_link(self, file_path: Path, link: str) -> bool:
         """
         Verify if an internal link is valid.
@@ -177,7 +192,12 @@ class LinkChecker:
             target_path = self.root_dir / link[1:]
         else:
             # Relative path from current file
-            target_path = (base_dir / link).resolve()
+            target_path = (base_dir / link).resolve(strict=False)
+
+        # Path traversal protection: ensure target stays within project root
+        if not self._is_path_safe(target_path):
+            logger.warning(f"Path traversal blocked: {link} in {file_path} resolves outside project root")
+            return True  # Treat as valid to avoid false positives, but log warning
         
         # Extract any anchor or query parameter
         if '#' in link:

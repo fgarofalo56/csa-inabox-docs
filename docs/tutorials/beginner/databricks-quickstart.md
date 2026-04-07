@@ -1,6 +1,6 @@
 # 🔥 Azure Databricks Quickstart
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__ | __🔥 Databricks__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__ | __🔥 Databricks__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Level](https://img.shields.io/badge/Level-Beginner-green)

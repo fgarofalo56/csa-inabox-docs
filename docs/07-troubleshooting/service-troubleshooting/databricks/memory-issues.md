@@ -1,6 +1,6 @@
 # Azure Databricks Memory Issues Troubleshooting
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[⚡ Databricks](README.md)** | **👤 Memory Issues**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[⚡ Databricks](README.md)** | **👤 Memory Issues**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)
 
@@ -244,8 +244,8 @@ def setup_memory_monitoring():
 
 | Resource | Description |
 |----------|-------------|
-| [Query Performance](query-performance.md) | Query optimization techniques |
-| [Shuffle Optimization](shuffle-optimization.md) | Reduce shuffle memory usage |
+| [Query Performance](../synapse/README.md) | Query optimization techniques |
+| [Shuffle Optimization](README.md) | Reduce shuffle memory usage |
 | [Databricks Performance Guide](https://docs.databricks.com/optimizations/index.html) | Official documentation |
 
 ---

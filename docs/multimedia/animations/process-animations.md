@@ -1,6 +1,6 @@
 # Process Flow Animations
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **🔄 Process Animations**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **🔄 Process Animations**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: Lottie/SVG](https://img.shields.io/badge/Type-Lottie%2FSVG-blue)

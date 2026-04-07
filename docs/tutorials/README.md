@@ -1,6 +1,6 @@
 # 🎓 Interactive Learning Tutorials
 
-> __🏠 [Home](../../README.md)__ | __📖 Documentation__ | __🎓 Tutorials__
+> __🏠 [Home](../README.md)__ | __📖 Documentation__ | __🎓 Tutorials__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Learning Path](https://img.shields.io/badge/Learning-Interactive-blue)
@@ -160,7 +160,7 @@ Before starting any tutorial, ensure you have:
 1. __Clone the Tutorial Repository__
 
    ```bash
-   git clone https://github.com/your-org/csa-tutorials.git
+   git clone https://github.com/fgarofalo56/csa-inabox-docs.git
    cd csa-tutorials
    ```
 
@@ -243,9 +243,9 @@ Each tutorial follows a consistent format:
 ### __Support Channels__
 
 - __📚 Documentation__: Complete reference materials in docs
-- __💬 Community Forum__: [GitHub Discussions](https://github.com/your-org/csa-tutorials/discussions)
-- __🐛 Issue Tracking__: [GitHub Issues](https://github.com/your-org/csa-tutorials/issues)
-- __📧 Direct Support__: <tutorials-support@your-org.com>
+- __💬 Community Forum__: [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
+- __🐛 Issue Tracking__: [GitHub Issues](https://github.com/fgarofalo56/csa-inabox-docs/issues)
+- __📧 Direct Support__: <tutorials-support@example.com>
 
 ### __Community Guidelines__
 
@@ -284,42 +284,42 @@ This tutorial collection is continuously updated with:
 
 ### Reference Materials
 
-- 🏗️ [Architecture Patterns](../architecture/README.md) - Design principles and patterns
-  - [Delta Lakehouse](../architecture/delta-lakehouse/README.md)
-  - [Serverless SQL](../architecture/serverless-sql/README.md)
-  - [Shared Metadata](../architecture/shared-metadata/README.md)
-- 📋 [Best Practices](../best-practices/README.md) - Implementation guidance
-  - [Performance Optimization](../best-practices/performance-optimization.md)
-  - [Security Best Practices](../best-practices/security.md)
-  - [Cost Optimization](../best-practices/cost-optimization.md)
+- 🏗️ [Architecture Patterns](../solutions/azure-realtime-analytics/architecture/README.md) - Design principles and patterns
+  - [Delta Lakehouse](../03-architecture-patterns/service-architectures/delta-lakehouse/README.md)
+  - [Serverless SQL](../03-architecture-patterns/service-architectures/serverless-sql/README.md)
+  - [Shared Metadata](../03-architecture-patterns/service-architectures/shared-metadata/README.md)
+- 📋 [Best Practices](../05-best-practices/README.md) - Implementation guidance
+  - [Performance Optimization](../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+  - [Security Best Practices](../reference/security.md)
+  - [Cost Optimization](../05-best-practices/README.md)
 
 ### Hands-On Learning
 
-- 💻 [Code Examples](../code-examples/README.md) - Working code samples
-  - [Delta Lake Examples](../code-examples/delta-lake-guide.md)
-  - [Serverless SQL Examples](../code-examples/serverless-sql-guide.md)
-  - [Integration Examples](../code-examples/integration-guide.md)
+- 💻 [Code Examples](../06-code-examples/README.md) - Working code samples
+  - [Delta Lake Examples](../06-code-examples/delta-lake-guide.md)
+  - [Serverless SQL Examples](../06-code-examples/serverless-sql-guide.md)
+  - [Integration Examples](../06-code-examples/integration-guide.md)
 - 🎯 [Solutions](../08-solutions/README.md) - Complete solution patterns
   - [Real-time Analytics](../08-solutions/azure-realtime-analytics/README.md)
 
 ### Support Resources
 
-- 🔧 [Guided Troubleshooting](../troubleshooting/guided-troubleshooting.md) - Interactive problem resolution
-- 📊 [Monitoring Setup](../monitoring/README.md) - Observability implementation
+- 🔧 [Guided Troubleshooting](../07-troubleshooting/guided-troubleshooting.md) - Interactive problem resolution
+- 📊 [Monitoring Setup](../09-monitoring/README.md) - Observability implementation
 - ❓ [FAQ](../faq.md) - Frequently asked questions
 
 ### Development Practices
 
-- 🚀 [DevOps Integration](../devops/pipeline-ci-cd.md) - CI/CD practices
+- 🚀 [DevOps Integration](../10-devops/pipeline-ci-cd.md) - CI/CD practices
 - ✅ [Testing Guide](../guides/TESTING_GUIDE.md) - Testing strategies
 - 📝 [Contributing Guide](../guides/CONTRIBUTING_GUIDE.md) - Contribute to documentation
 
 ### Learning Paths by Role
 
-- 🔧 __Data Engineer__: [Environment Setup](synapse/01-environment-setup.md) → [Delta Lake](code-labs/pyspark-fundamentals.md) → [CI/CD](../devops/pipeline-ci-cd.md)
-- 📊 __Data Analyst__: [Serverless SQL](../code-examples/serverless-sql-guide.md) → [Query Optimization](../code-examples/serverless-sql/query-optimization.md) → [Best Practices](../best-practices/serverless-sql-best-practices.md)
-- 🏗️ __Architect__: [Architecture Overview](../architecture/README.md) → [Reference Architectures](../architecture/delta-lakehouse/README.md) → [Solutions](../08-solutions/README.md)
-- ⚙️ __Administrator__: [Environment Setup](synapse/01-environment-setup.md) → [Monitoring](../monitoring/README.md) → [Security](../best-practices/security.md)
+- 🔧 __Data Engineer__: [Environment Setup](synapse/01-environment-setup.md) → [Delta Lake](code-labs/pyspark-fundamentals.md) → [CI/CD](../10-devops/pipeline-ci-cd.md)
+- 📊 __Data Analyst__: [Serverless SQL](../06-code-examples/serverless-sql-guide.md) → [Query Optimization](../06-code-examples/serverless-sql/query-optimization.md) → [Best Practices](../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
+- 🏗️ __Architect__: [Architecture Overview](../solutions/azure-realtime-analytics/architecture/README.md) → [Reference Architectures](../03-architecture-patterns/service-architectures/delta-lakehouse/README.md) → [Solutions](../08-solutions/README.md)
+- ⚙️ __Administrator__: [Environment Setup](synapse/01-environment-setup.md) → [Monitoring](../09-monitoring/README.md) → [Security](../reference/security.md)
 
 ---
 

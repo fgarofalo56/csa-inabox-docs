@@ -1,6 +1,6 @@
 # ⚙️ DevOps Engineer Learning Path
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🛤️ [Learning Paths](../README.md)__ | __⚙️ DevOps Engineer__
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🛤️ [Learning Paths](../README.md)__ | __⚙️ DevOps Engineer__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Duration](https://img.shields.io/badge/Duration-10--12_weeks-blue)
@@ -241,8 +241,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [DevOps CI/CD Guide](../../../devops/pipeline-ci-cd.md)
-- [Automated Testing Guide](../../../devops/automated-testing.md)
+- [DevOps CI/CD Guide](../../../10-devops/pipeline-ci-cd.md)
+- [Automated Testing Guide](../../../10-devops/automated-testing.md)
 
 __Sample GitHub Actions Workflow:__
 
@@ -296,9 +296,9 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Monitoring Setup Guide](../../../monitoring/README.md)
-- [Spark Monitoring](../../../monitoring/spark-monitoring.md)
-- [SQL Monitoring](../../../monitoring/sql-monitoring.md)
+- [Monitoring Setup Guide](../../../09-monitoring/README.md)
+- [Spark Monitoring](../../../09-monitoring/spark-monitoring.md)
+- [SQL Monitoring](../../../09-monitoring/sql-monitoring.md)
 
 ### __Module 3.2: Alerting and Incident Response__ (10 hours)
 
@@ -341,7 +341,7 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Best Practices: Cost Optimization](../../../best-practices/cost-optimization.md)
+- [Best Practices: Cost Optimization](../../../05-best-practices/README.md)
 
 ## 📚 Phase 4: Advanced DevOps Practices (3-4 weeks)
 
@@ -381,8 +381,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Security Best Practices](../../../best-practices/security.md)
-- [Network Security](../../../best-practices/network-security.md)
+- [Security Best Practices](../../../reference/security.md)
+- [Network Security](../../../05-best-practices/cross-cutting-concerns/networking/network-security.md)
 
 ### __Module 4.3: Cost Optimization and FinOps__ (10 hours)
 
@@ -532,7 +532,7 @@ After completing this path:
 ## 📞 Getting Help
 
 - __Technical Questions__: [Azure DevOps Documentation](https://learn.microsoft.com/azure/devops/)
-- __Community Forum__: [GitHub Discussions](https://github.com/your-org/csa-tutorials/discussions)
+- __Community Forum__: [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
 - __Office Hours__: Weekly DevOps Q&A sessions
 - __Support__: Azure DevOps technical support
 

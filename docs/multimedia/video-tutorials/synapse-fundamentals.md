@@ -1,6 +1,6 @@
 # Video Script: Azure Synapse Analytics Fundamentals
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Synapse Fundamentals**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Synapse Fundamentals**
 
 ![Duration: 25 minutes](https://img.shields.io/badge/Duration-25%20minutes-blue)
 ![Level: Beginner](https://img.shields.io/badge/Level-Beginner-brightgreen)

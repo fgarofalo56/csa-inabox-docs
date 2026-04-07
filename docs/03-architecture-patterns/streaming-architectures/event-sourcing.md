@@ -1,6 +1,6 @@
 # Event Sourcing Architecture Pattern
 
-> **🏠 [Home](../../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ [Streaming Architectures](README.md)** | **Event Sourcing**
+> **🏠 [Home](../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ [Streaming Architectures](README.md)** | **Event Sourcing**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -1337,7 +1337,7 @@ az functionapp start --name func-projector
 
 - [CQRS Pattern Guide](cqrs-pattern.md) - Complementary pattern for read/write separation
 - [Lambda Architecture](lambda-architecture.md) - Batch and stream processing
-- [Best Practices](../../best-practices/README.md) - General best practices
+- [Best Practices](../../05-best-practices/README.md) - General best practices
 
 ### Azure Services
 

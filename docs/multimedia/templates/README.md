@@ -1,6 +1,6 @@
 # 📝 Multimedia Templates Library
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📝 Templates__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📝 Templates__
 
 ![Status: Resources](https://img.shields.io/badge/Status-Resources-brightgreen)
 ![Templates: 50+](https://img.shields.io/badge/Templates-50+-blue)
@@ -15,8 +15,6 @@ Ready-to-use templates for all multimedia content types. These templates ensure 
 ### 📹 Video Templates
 
 #### Tutorial Video Script Template
-
-__[Download Template](./video/tutorial-script-template.md)__
 
 ```markdown
 # Video Script: [Tutorial Title]
@@ -64,8 +62,6 @@ and [learning objective 3]."
 
 #### Screen Recording Checklist
 
-__[Download Checklist](./video/screen-recording-checklist.md)__
-
 ```markdown
 # Screen Recording Preparation Checklist
 
@@ -103,7 +99,7 @@ __[Download Checklist](./video/screen-recording-checklist.md)__
 
 #### Code Playground Template
 
-__[Download Template](./interactive/code-playground-template.html)__
+*Template: code-playground-template.html (coming soon)*
 
 ```html
 <!DOCTYPE html>
@@ -403,7 +399,7 @@ Request units: 10.2 RU`;
 
 #### Lottie Animation Configuration
 
-__[Download Template](./animation/lottie-config-template.json)__
+*Template: lottie-config-template.json (coming soon)*
 
 ```json
 {
@@ -498,7 +494,7 @@ __[Download Template](./animation/lottie-config-template.json)__
 
 #### Slide Deck Structure
 
-__[Download Template](./presentation/slide-deck-template.yaml)__
+*Template: slide-deck-template.yaml (coming soon)*
 
 ```yaml
 presentation:
@@ -650,8 +646,6 @@ presentation:
 
 #### Podcast Episode Script
 
-__[Download Template](./audio/podcast-script-template.md)__
-
 ```markdown
 # Podcast Episode Script
 
@@ -775,8 +769,6 @@ when we explore [next episode topic].
 ## 🛠️ Production Checklists
 
 ### Master Production Checklist
-
-__[Download Checklist](./checklists/master-production-checklist.md)__
 
 ```markdown
 # Master Multimedia Production Checklist
@@ -919,11 +911,11 @@ const quizTemplate = {
 
 ## 📚 Additional Resources
 
-- [Template Customization Guide](./guides/customization.md)
+- Template Customization Guide
 - [Brand Assets](../brand/assets/README.md)
 - [Stock Media Library](../stock/README.md)
 - [Production Tools](../tools/README.md)
-- [Example Projects](../examples/README.md)
+- Example Projects
 
 ---
 

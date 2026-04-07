@@ -436,4 +436,4 @@ Using Serverless SQL as a data virtualization layer:
 
 ## Reference Implementation
 
-For detailed code samples and implementation patterns for Serverless SQL in Azure Synapse Analytics, refer to the [code examples section](../../code-examples/README.md) of this documentation.
+For detailed code samples and implementation patterns for Serverless SQL in Azure Synapse Analytics, refer to the [code examples section](../../data-patterns/README.md) of this documentation.

@@ -9,7 +9,7 @@ category: "Best Practices - Operations"
 
 # Disaster Recovery for Streaming Workloads
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **💡 [Best Practices](../README.md)** | **🌊 Streaming DR**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **💡 [Best Practices](../README.md)** | **🌊 Streaming DR**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)

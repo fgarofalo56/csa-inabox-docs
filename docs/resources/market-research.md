@@ -1,6 +1,6 @@
 # 📈 Cloud Analytics Market Research & Trends
 
-> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__ | __📈 Market Research__
+> __🏠 [Home](../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__ | __📈 Market Research__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Research Date](https://img.shields.io/badge/Research-2025--01-blue?style=flat-square)
@@ -16,11 +16,10 @@ Comprehensive market research on cloud analytics trends, Azure positioning, indu
 - [Industry Trends](#industry-trends)
 - [Technology Evolution](#technology-evolution)
 - [Azure Market Position](#azure-market-position)
-- [Buyer Behavior & Decision Criteria](#buyer-behavior--decision-criteria)
+- [Buyer Behavior & Decision Criteria](#buyer-behavior-decision-criteria)
 - [Industry Adoption Patterns](#industry-adoption-patterns)
-- [Competitive Landscape](#competitive-landscape)
 - [Future Outlook 2025-2030](#future-outlook-2025-2030)
-- [Investment & M&A Activity](#investment--ma-activity)
+- [Investment & M&A Activity](#investment-ma-activity)
 - [Recommendations](#recommendations)
 
 ---

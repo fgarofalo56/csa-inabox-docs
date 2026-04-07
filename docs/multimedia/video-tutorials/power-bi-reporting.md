@@ -1,6 +1,6 @@
 # Video Script: Power BI Reporting with Azure Synapse
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Power BI Reporting**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Power BI Reporting**
 
 ![Duration: 22 minutes](https://img.shields.io/badge/Duration-22%20minutes-blue)
 ![Level: Intermediate](https://img.shields.io/badge/Level-Intermediate-yellow)

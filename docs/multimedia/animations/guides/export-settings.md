@@ -1,6 +1,6 @@
 # Animation Export Settings Guide
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎨 [Animations](../README.md)** | **📦 Export Settings**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎨 [Animations](../README.md)** | **📦 Export Settings**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: Technical Guide](https://img.shields.io/badge/Type-Technical%20Guide-blue)

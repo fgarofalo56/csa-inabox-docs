@@ -1,6 +1,6 @@
 # 🎙️ Narration & Voice-Over Guidelines
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🎙️ Narration Guidelines**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🎙️ Narration Guidelines**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Guidelines](https://img.shields.io/badge/Type-Guidelines-blue)
@@ -430,7 +430,6 @@ For visual tutorials with audio narration:
 - [Podcast Scripts](./podcast-scripts.md)
 - [Recording Setup Guide](./recording-setup.md)
 - [Audio Editing Guidelines](./editing-guidelines.md)
-- [Voice-Over Scripts](./voice-over-scripts/)
 - [Audio Transcripts](./audio-transcripts.md)
 
 ## 💬 Feedback & Support

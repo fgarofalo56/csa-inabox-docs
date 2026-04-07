@@ -1,6 +1,6 @@
 # Hub and Spoke Architecture Model
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🏗️ [Architecture Patterns](../README.md)** | **Hub and Spoke Model**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🏗️ [Architecture Patterns](../README.md)** | **Hub and Spoke Model**
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -969,7 +969,7 @@ Phase 3: Additional Spokes (Months 7-12)
 **Related Documentation**:
 - [Medallion Architecture](medallion-architecture.md)
 - [Synapse Dedicated SQL Pools](../../02-services/analytics-compute/azure-synapse/README.md)
-- [Performance Optimization](../../best-practices/performance-optimization.md)
+- [Performance Optimization](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
 
 ---
 

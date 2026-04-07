@@ -1,6 +1,6 @@
 # 🌊 Intermediate Stream Analytics Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **📚 [Intermediate](README.md)** | **🌊 Stream Analytics**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **📚 [Intermediate](README.md)** | **🌊 Stream Analytics**
 
 ![Level](https://img.shields.io/badge/Level-Intermediate-orange)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)

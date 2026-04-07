@@ -1,6 +1,6 @@
 # Security Monitoring
 
-[Home](../../README.md) > Monitoring > Security Monitoring
+[Home](../README.md) > Monitoring > Security Monitoring
 
 !!! abstract "Overview"
 This guide covers security monitoring approaches for Azure Synapse Analytics, including threat detection, audit logging, and compliance monitoring.

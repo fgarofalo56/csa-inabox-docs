@@ -1,6 +1,6 @@
 # Troubleshooting Delta Lake Issues in Azure Synapse Analytics
 
-[Home](../../README.md) > Troubleshooting > Delta Lake Troubleshooting
+[Home](../README.md) > Troubleshooting > Delta Lake Troubleshooting
 
 This guide covers common issues encountered when working with Delta Lake in Azure Synapse Analytics, providing diagnostic approaches and solutions for both SQL and Spark interfaces.
 
@@ -718,10 +718,10 @@ _Solutions:_
 
 ## Related Topics
 
-- [Delta Lake Performance Optimization](../best-practices/delta-lake-optimization.md)
-- [Security Configuration for Delta Lake](../best-practices/security.md)
-- [Monitoring Delta Lake Operations](../monitoring/monitoring-setup.md)
-- [Data Governance with Delta Lake](../best-practices/data-governance.md)
+- [Delta Lake Performance Optimization](../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
+- [Security Configuration for Delta Lake](../reference/security.md)
+- [Monitoring Delta Lake Operations](../09-monitoring/monitoring-setup.md)
+- [Data Governance with Delta Lake](../05-best-practices/README.md)
 
 ## External Resources
 

@@ -1,6 +1,6 @@
 # 📈 Time Series Analytics Patterns
 
-> __🏠 [Home](../../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __⚡ Streaming Architectures__ | __Time Series__
+> __🏠 [Home](../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __⚡ Streaming Architectures__ | __Time Series__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -189,7 +189,7 @@ SensorReadings
 
 - [Stream Analytics](../../02-services/streaming-services/azure-stream-analytics/README.md)
 - [Azure Data Explorer](../../02-services/analytics-compute/azure-synapse/data-explorer-pools/README.md)
-- [IoT Hub Integration](../../04-implementation-guides/iot/README.md)
+- [IoT Hub Integration](../../04-implementation-guides/end-to-end-solutions/iot-analytics/README.md)
 
 ---
 

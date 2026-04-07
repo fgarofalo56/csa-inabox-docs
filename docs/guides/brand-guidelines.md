@@ -1,6 +1,6 @@
 # 🎨 Brand Guidelines - CSA in-a-Box
 
-> **🏠 [Home](../../README.md)** | **📚 Documentation** | **📖 [Guides](./README.md)** | **🎨 Brand Guidelines**
+> **🏠 [Home](../README.md)** | **📚 Documentation** | **📖 [Guides](./README.md)** | **🎨 Brand Guidelines**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
@@ -108,8 +108,6 @@ Based on Azure branding and modern data analytics aesthetics:
 ```python
 # Code background: #F5F5F5
 connection_string = "DefaultEndpointsProtocol=https;..."
-```
-```
 
 ---
 
@@ -366,7 +364,7 @@ All documentation should follow this header format:
 ```markdown
 # 🎯 Document Title - CSA in-a-Box
 
-> **🏠 [Home](../../README.md)** | **📚 Documentation** | **📖 [Section](./README.md)** | **👤 Current Page**
+> **🏠 [Home](../README.md)** | **📚 Documentation** | **📖 [Section](./README.md)** | **👤 Current Page**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)

@@ -1,6 +1,6 @@
 # Azure Cosmos DB Partition Troubleshooting
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[🌐 Cosmos DB](README.md)** | **👤 Partitioning**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[🌐 Cosmos DB](README.md)** | **👤 Partitioning**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)
 
@@ -636,7 +636,7 @@ def insert_with_synthetic_key(container, document):
 |----------|-------------|
 | [RU Optimization](ru-optimization.md) | Request Unit optimization strategies |
 | [Query Performance](query-performance.md) | Query optimization techniques |
-| [Cosmos DB Best Practices](../../../best-practices/cosmosdb-optimization.md) | General best practices |
+| [Cosmos DB Best Practices](../../../05-best-practices/README.md) | General best practices |
 
 ### External Resources
 

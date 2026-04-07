@@ -1,6 +1,6 @@
 # 🔒 Security Configuration Wizard
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Security Wizard**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Security Wizard**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -247,8 +247,8 @@ WHERE pr.name = 'user@contoso.com';
 
 ## 📚 Additional Resources
 
-- [Security Best Practices](../../best-practices/security.md)
-- [Network Security Guide](../../best-practices/network-security.md)
+- [Security Best Practices](../../reference/security.md)
+- [Network Security Guide](../../05-best-practices/cross-cutting-concerns/networking/network-security.md)
 - [Compliance Reference](../../reference/security.md)
 
 ## 💬 Feedback

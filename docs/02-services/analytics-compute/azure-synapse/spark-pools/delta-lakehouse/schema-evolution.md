@@ -1,6 +1,6 @@
 # 🔄 Schema Evolution Strategies - Delta Lake
 
-> __🏠 [Home](../../../../../../README.md)__ | __📖 [Overview](../../../../../01-overview/README.md)__ | __🛠️ [Services](../../../../README.md)__ | __💾 [Analytics Compute](../../../README.md)__ | __🎯 [Synapse](../../README.md)__ | __🔥 [Spark Pools](../README.md)__ | __🏛️ [Delta Lakehouse](README.md)__ | __🔄 Schema Evolution__
+> __🏠 [Home](../../../../../README.md)__ | __📖 [Overview](../../../../../01-overview/README.md)__ | __🛠️ [Services](../../../../README.md)__ | __💾 [Analytics Compute](../../../README.md)__ | __🎯 [Synapse](../../README.md)__ | __🔥 [Spark Pools](../README.md)__ | __🏛️ [Delta Lakehouse](README.md)__ | __🔄 Schema Evolution__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)

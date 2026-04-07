@@ -1,6 +1,6 @@
 # Data Lake Analytics Architecture Pattern
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🏗️ [Architecture Patterns](../README.md)** | **Data Lake Analytics**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🏗️ [Architecture Patterns](../README.md)** | **Data Lake Analytics**
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -994,9 +994,9 @@ spark_config = {
 
 **Related Documentation**:
 - [Medallion Architecture](medallion-architecture.md)
-- [Delta Lake Optimization](../../best-practices/delta-lake-optimization.md)
-- [Cost Optimization](../../best-practices/cost-optimization.md)
-- [Security Best Practices](../../best-practices/security.md)
+- [Delta Lake Optimization](../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
+- [Cost Optimization](../../05-best-practices/README.md)
+- [Security Best Practices](../../reference/security.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # 📋 Multimedia Content Index - CSA-in-a-Box
 
-> **🏠 [Home](../../README.md)** | **📖 [Documentation](../README.md)** | **🎬 Multimedia Index**
+> **🏠 [Home](../README.md)** | **📖 [Documentation](../README.md)** | **🎬 Multimedia Index**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Content: Complete](https://img.shields.io/badge/Content-Complete-blue)
@@ -48,33 +48,33 @@ Comprehensive index of all multimedia content, presentations, and templates crea
 |----------|---------|------------|--------|------|
 | **Documentation Page** | Standard documentation | Basic | ✅ Complete | [View](./templates/documentation-template.md) |
 | **Tutorial** | Step-by-step guides | Intermediate | ✅ Complete | [View](./templates/tutorial-template.md) |
-| API Documentation | API/SDK reference | Advanced | 📝 Planned | [TBD](./templates/api-documentation-template.md) |
-| Troubleshooting Guide | Problem resolution | Intermediate | 📝 Planned | [TBD](./templates/troubleshooting-template.md) |
+| API Documentation | API/SDK reference | Advanced | 📝 Planned | [TBD](templates/README.md) |
+| Troubleshooting Guide | Problem resolution | Intermediate | 📝 Planned | [TBD](templates/README.md) |
 
 ### Architecture Templates
 
 | Template | Purpose | Complexity | Status | Link |
 |----------|---------|------------|--------|------|
-| Architecture Diagram | System design docs | Advanced | 📝 Planned | [TBD](./templates/architecture-diagram-template.md) |
-| Design Document | Technical designs | Advanced | 📝 Planned | [TBD](./templates/design-document-template.md) |
+| Architecture Diagram | System design docs | Advanced | 📝 Planned | [TBD](templates/README.md) |
+| Design Document | Technical designs | Advanced | 📝 Planned | [TBD](templates/README.md) |
 
 ### Operations Templates
 
 | Template | Purpose | Complexity | Status | Link |
 |----------|---------|------------|--------|------|
-| Runbook | Operational procedures | Intermediate | 📝 Planned | [TBD](./templates/runbook-template.md) |
-| Deployment Checklist | Deployment validation | Intermediate | 📝 Planned | [TBD](./templates/deployment-checklist-template.md) |
-| Incident Report | Post-incident analysis | Basic | 📝 Planned | [TBD](./templates/incident-report-template.md) |
+| Runbook | Operational procedures | Intermediate | 📝 Planned | [TBD](templates/README.md) |
+| Deployment Checklist | Deployment validation | Intermediate | 📝 Planned | [TBD](templates/README.md) |
+| Incident Report | Post-incident analysis | Basic | 📝 Planned | [TBD](templates/README.md) |
 
 ### Project Management Templates
 
 | Template | Purpose | Complexity | Status | Link |
 |----------|---------|------------|--------|------|
-| Project Charter | Project initiation | Intermediate | 📝 Planned | [TBD](./templates/project-charter-template.md) |
-| Change Request | Change management | Basic | 📝 Planned | [TBD](./templates/change-request-template.md) |
-| Test Plan | Testing strategy | Advanced | 📝 Planned | [TBD](./templates/test-plan-template.md) |
-| Release Notes | Version documentation | Basic | 📝 Planned | [TBD](./templates/release-notes-template.md) |
-| Meeting Notes | Meeting documentation | Basic | 📝 Planned | [TBD](./templates/meeting-notes-template.md) |
+| Project Charter | Project initiation | Intermediate | 📝 Planned | [TBD](templates/README.md) |
+| Change Request | Change management | Basic | 📝 Planned | [TBD](templates/README.md) |
+| Test Plan | Testing strategy | Advanced | 📝 Planned | [TBD](templates/README.md) |
+| Release Notes | Version documentation | Basic | 📝 Planned | [TBD](templates/README.md) |
+| Meeting Notes | Meeting documentation | Basic | 📝 Planned | [TBD](templates/README.md) |
 
 ## 📈 Content Statistics
 
@@ -190,11 +190,11 @@ Comprehensive index of all multimedia content, presentations, and templates crea
 
 ### By Type
 
-- **Presentations**: [presentations/](./presentations/)
-- **Templates**: [templates/](./templates/)
-- **Videos**: [video-tutorials/](./video-tutorials/)
-- **Interactive Demos**: [interactive-demos/](./interactive-demos/)
-- **Animations**: [animations/](./animations/)
+- **Presentations**: [presentations/](./presentations/README.md)
+- **Templates**: [templates/](./templates/README.md)
+- **Videos**: [video-tutorials/](./video-tutorials/README.md)
+- **Interactive Demos**: [interactive-demos/](./interactive-demos/README.md)
+- **Animations**: [animations/](./animations/README.md)
 
 ### By Complexity
 

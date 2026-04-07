@@ -6,15 +6,28 @@ __description__ = "Testing infrastructure for Azure Synapse Analytics documentat
 
 # Main modules
 from .build_tester import DocumentationBuildTester
-from .link_validator import LinkValidator  
+from .link_validator import LinkValidator
 from .markdown_quality import MarkdownQualityChecker
 from .image_validator import ImageReferenceValidator
 from .navigation_validator import NavigationStructureValidator
+from .version_manager import SemanticVersionManager, VersionInfo, VersionType
+from .release_manager import ReleaseManager
+from .mike_manager import MikeVersionManager
+from .markdown_parser import MarkdownParser, ParsedDocument
+from .mermaid_renderer import MermaidRenderer as MermaidDiagramRenderer
 
 __all__ = [
     "DocumentationBuildTester",
-    "LinkValidator", 
+    "LinkValidator",
     "MarkdownQualityChecker",
     "ImageReferenceValidator",
-    "NavigationStructureValidator"
+    "NavigationStructureValidator",
+    "SemanticVersionManager",
+    "VersionInfo",
+    "VersionType",
+    "ReleaseManager",
+    "MikeVersionManager",
+    "MarkdownParser",
+    "ParsedDocument",
+    "MermaidDiagramRenderer",
 ]

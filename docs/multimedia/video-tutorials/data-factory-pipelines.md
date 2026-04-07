@@ -1,6 +1,6 @@
 # Video Script: Azure Data Factory Pipeline Creation
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Data Factory Pipelines**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Data Factory Pipelines**
 
 ![Duration: 30 minutes](https://img.shields.io/badge/Duration-30%20minutes-blue)
 ![Level: Intermediate](https://img.shields.io/badge/Level-Intermediate-orange)

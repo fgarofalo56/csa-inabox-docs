@@ -1,6 +1,6 @@
 # 🗄️ Unity Catalog
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Overview](../../../../01-overview/README.md)** | **🛠️ [Services](../../../README.md)** | **💾 Analytics Compute** | **🧪 [Azure Databricks](../README.md)** | **🗄️ Unity Catalog**
+> **🏠 [Home](../../../../README.md)** | **📖 [Overview](../../../../01-overview/README.md)** | **🛠️ [Services](../../../README.md)** | **💾 Analytics Compute** | **🧪 [Azure Databricks](../README.md)** | **🗄️ Unity Catalog**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Feature](https://img.shields.io/badge/Feature-Data%20Governance-purple?style=flat-square)
@@ -864,7 +864,7 @@ spark.sql("""
 
 - [**Azure Databricks Overview**](../README.md)
 - [**Delta Live Tables**](../delta-live-tables/README.md)
-- [**Security Best Practices**](../../../../05-best-practices/cross-cutting-concerns/security/unity-catalog-security.md)
+- [**Security Best Practices**](../../../../05-best-practices/cross-cutting-concerns/security/README.md)
 - [**Data Governance Patterns**](../../../../03-architecture-patterns/governance-patterns/README.md)
 
 ---

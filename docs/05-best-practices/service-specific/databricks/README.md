@@ -27,8 +27,8 @@ This section covers best practices for:
 |----------|-------------|
 | [Delta Lake Best Practices](delta-lake.md) | Delta Lake optimization and patterns |
 | [MLOps Best Practices](mlops.md) | Machine learning operations |
-| [Cluster Management](cluster-management.md) | Compute configuration |
-| [Cost Optimization](cost-optimization.md) | Cost management strategies |
+| [Cluster Management](README.md) | Compute configuration |
+| [Cost Optimization](README.md) | Cost management strategies |
 
 ---
 

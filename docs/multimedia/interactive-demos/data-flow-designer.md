@@ -1,6 +1,6 @@
 # 🗺️ Data Flow Interactive Designer
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Data Flow Designer**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Data Flow Designer**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -292,9 +292,9 @@ const performanceAnalysis = {
 
 ## 📚 Additional Resources
 
-- [Data Flow Transformations Reference](../../code-examples/integration-guide.md)
-- [Performance Tuning Guide](../../best-practices/performance-optimization.md)
-- [ETL Best Practices](../../best-practices/README.md)
+- [Data Flow Transformations Reference](../../06-code-examples/integration-guide.md)
+- [Performance Tuning Guide](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [ETL Best Practices](../../05-best-practices/README.md)
 
 ## 💬 Feedback
 

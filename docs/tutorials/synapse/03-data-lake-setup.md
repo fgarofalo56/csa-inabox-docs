@@ -1,6 +1,6 @@
 # 📦 Tutorial 3: Data Lake Setup and Configuration
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ [Synapse Series](README.md)__ | __📦 Data Lake Setup__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ [Synapse Series](README.md)__ | __📦 Data Lake Setup__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-03_Data_Lake_Setup-blue)
 ![Duration](https://img.shields.io/badge/Duration-20_minutes-green)

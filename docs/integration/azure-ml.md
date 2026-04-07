@@ -1,6 +1,6 @@
 # Azure Machine Learning Integration Guide
 
-> **Home [Home](../../README.md)** | **Documentation** | **Integration**
+> **Home [Home](../README.md)** | **Documentation** | **Integration**
 
 ---
 

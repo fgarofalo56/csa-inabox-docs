@@ -9,7 +9,7 @@ category: "Best Practices - Performance"
 
 # Synapse-Specific Performance Optimization
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **⚡ [Performance](./README.md)** | **🔷 Synapse**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **⚡ [Performance](./README.md)** | **🔷 Synapse**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)

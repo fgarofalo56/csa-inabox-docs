@@ -1,6 +1,6 @@
 # AZURE INTEGRATION
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **AZURE INTEGRATION**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **AZURE INTEGRATION**
 
 ## Overview
 

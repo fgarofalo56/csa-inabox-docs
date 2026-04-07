@@ -1,6 +1,6 @@
 # Loading and Progress Animations
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **⏳ Loading Animations**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **⏳ Loading Animations**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: CSS/SVG](https://img.shields.io/badge/Type-CSS%2FSVG-blue)

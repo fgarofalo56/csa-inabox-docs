@@ -1,6 +1,6 @@
 # 🤖 MLflow Integration
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Overview](../../../../01-overview/README.md)** | **🛠️ [Services](../../../README.md)** | **💾 Analytics Compute** | **🧪 [Azure Databricks](../README.md)** | **🤖 MLflow Integration**
+> **🏠 [Home](../../../../README.md)** | **📖 [Overview](../../../../01-overview/README.md)** | **🛠️ [Services](../../../README.md)** | **💾 Analytics Compute** | **🧪 [Azure Databricks](../README.md)** | **🤖 MLflow Integration**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Feature](https://img.shields.io/badge/Feature-MLOps-green?style=flat-square)

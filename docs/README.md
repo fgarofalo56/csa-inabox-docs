@@ -138,9 +138,9 @@ If you'd like to contribute to this documentation, please see our [contribution 
 <details>
 <summary>🔍 Click to expand additional topics</summary>
 
-- ☁️ [__Serverless SQL Overview__](serverless-sql.md)
-- 🔗 [__Shared Metadata Overview__](shared-metadata.md)
-- 🔧 [__Troubleshooting Overview__](troubleshooting.md)
+- ☁️ [__Serverless SQL Overview__](03-architecture-patterns/service-architectures/serverless-sql/serverless-overview.md)
+- 🔗 [__Shared Metadata Overview__](03-architecture-patterns/service-architectures/shared-metadata/shared-metadata.md)
+- 🔧 [__Troubleshooting Overview__](07-troubleshooting/README.md)
 - 🧪 [__Interactive Data Pipeline Tutorial__](tutorials/interactive-data-pipeline.md)
 - 📊 [__Performance Benchmarks__](performance/benchmarks-guide.md)
 - 🔒 [__Security Best Practices__](security/best-practices.md)

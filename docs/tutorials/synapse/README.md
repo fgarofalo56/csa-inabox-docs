@@ -1,6 +1,6 @@
 # 🏗️ Azure Synapse Analytics Complete Tutorial Series
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ Synapse Analytics__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ Synapse Analytics__
 
 ![Tutorial Series](https://img.shields.io/badge/Tutorial-Complete_Series-success)
 ![Duration](https://img.shields.io/badge/Duration-4--6_hours-blue)
@@ -139,7 +139,7 @@ Before starting the tutorials, run this validation script to ensure your environ
 
 ```powershell
 # Download and run the setup validation script
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/your-org/synapse-tutorials/main/scripts/validate-setup.ps1" -OutFile "validate-setup.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/fgarofalo56/csa-inabox-docs/main/scripts/validate-setup.ps1" -OutFile "validate-setup.ps1"
 .\validate-setup.ps1
 ```
 
@@ -239,9 +239,9 @@ Focus on particular aspects that interest you:
 ### __Getting Help__
 
 - __📖 Tutorial documentation__: Comprehensive troubleshooting in each tutorial
-- __💬 Community forum__: [Synapse Tutorials Discussions](https://github.com/your-org/synapse-tutorials/discussions)
+- __💬 Community forum__: [Synapse Tutorials Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
 - __🎬 Video walkthroughs__: [Tutorial playlist](https://youtube.com/playlist?list=synapse-tutorials)
-- __📧 Direct support__: <synapse-tutorials@your-org.com>
+- __📧 Direct support__: <synapse-tutorials@example.com>
 
 ### __Contributing Back__
 

@@ -1,6 +1,6 @@
 # 📊 Tutorial 8: Power BI Integration
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __📊 Power BI__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __📊 Power BI__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-08_Power_BI_Integration-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)

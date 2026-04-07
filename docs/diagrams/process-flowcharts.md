@@ -1,6 +1,6 @@
 # Process Flowcharts for Azure Synapse Analytics
 
-[Home](../../README.md) > Diagrams > Process Flowcharts
+[Home](../README.md) > Diagrams > Process Flowcharts
 
 This section provides flowcharts for common processes related to Azure Synapse Analytics, including troubleshooting, optimization, and implementation workflows.
 

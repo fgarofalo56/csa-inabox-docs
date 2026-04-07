@@ -1,6 +1,6 @@
 # DEPLOYMENT GUIDE
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **DEPLOYMENT GUIDE**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **DEPLOYMENT GUIDE**
 
 ## Overview
 

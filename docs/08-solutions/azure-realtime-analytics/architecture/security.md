@@ -1,6 +1,6 @@
 # Security Architecture
 
-> __🏠 [Home](../../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🏗️ [Solutions](../../README.md)__ | __⚡ [Real-Time Analytics](../README.md)__ | __🏛️ [Architecture](README.md)__ | __🔒 Security__
+> __🏠 [Home](../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🏗️ [Solutions](../../README.md)__ | __⚡ [Real-Time Analytics](../README.md)__ | __🏛️ [Architecture](README.md)__ | __🔒 Security__
 
 ---
 

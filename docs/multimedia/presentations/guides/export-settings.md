@@ -1,6 +1,6 @@
 # 📤 Export Settings Guide - CSA-in-a-Box Presentations
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **📋 [Guides](README.md)** | **👤 Export Settings**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **📋 [Guides](README.md)** | **👤 Export Settings**
 
 ![Type: Guide](https://img.shields.io/badge/Type-Guide-blue)
 ![Audience: Technical](https://img.shields.io/badge/Audience-Technical-orange)

@@ -1,6 +1,6 @@
 # 📊 Stream Analytics to Synapse - Lambda Architecture
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __📊 Stream Analytics to Synapse__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __📊 Stream Analytics to Synapse__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-60min-blue?style=flat-square)
@@ -566,7 +566,7 @@ ALTER DATABASE DWPool RESUME;
 
 - **[Build Power BI dashboards](../../08-solutions/real-time-dashboards/README.md)**
 - **[Implement ML on historical data](../../08-solutions/ml-pipeline/README.md)**
-- **[Add data governance with Purview](../../best-practices/data-governance.md)**
+- **[Add data governance with Purview](../../05-best-practices/README.md)**
 
 ---
 

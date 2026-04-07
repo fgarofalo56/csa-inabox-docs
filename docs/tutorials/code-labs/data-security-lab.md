@@ -1,6 +1,6 @@
 # 🔐 Data Security and Encryption Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🔐 Data Security**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🔐 Data Security**
 
 ![Lab](https://img.shields.io/badge/Lab-Data_Security-blue)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)

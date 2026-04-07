@@ -1,6 +1,6 @@
 # Batch Processing Setup
 
-> __🏠 [Home](../../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🏗️ [Solutions](../../README.md)__ | __⚡ [Real-Time Analytics](../README.md)__ | __⚙️ [Implementation](README.md)__ | __📦 Batch Processing__
+> __🏠 [Home](../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🏗️ [Solutions](../../README.md)__ | __⚡ [Real-Time Analytics](../README.md)__ | __⚙️ [Implementation](README.md)__ | __📦 Batch Processing__
 
 ---
 

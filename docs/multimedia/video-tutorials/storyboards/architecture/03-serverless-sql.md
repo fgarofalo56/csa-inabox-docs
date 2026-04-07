@@ -1,6 +1,6 @@
 # Serverless SQL Architecture Storyboard
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Storyboards** | **Serverless SQL**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Storyboards** | **Serverless SQL**
 
 ![Status: Planning](https://img.shields.io/badge/Status-Planning-blue)
 ![Type: Storyboard](https://img.shields.io/badge/Type-Storyboard-purple)
@@ -140,7 +140,7 @@ Delta:   [███_____________] 95 MB
 ## Related Content
 
 - [Foundation Storyboard](01-foundation.md)
-- [Serverless SQL Script](../scripts/architecture/03-serverless-sql.md)
+- [Serverless SQL Script](03-serverless-sql.md)
 
 ---
 

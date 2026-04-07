@@ -1,6 +1,6 @@
 # API DOCUMENTATION
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **API DOCUMENTATION**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **API DOCUMENTATION**
 
 ## Overview
 

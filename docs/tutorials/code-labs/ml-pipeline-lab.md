@@ -1,6 +1,6 @@
 # 🤖 ML Pipeline with Azure ML Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🤖 ML Pipeline**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🤖 ML Pipeline**
 
 ![Lab](https://img.shields.io/badge/Lab-ML_Pipeline-blue)
 ![Duration](https://img.shields.io/badge/Duration-4--5_hours-green)

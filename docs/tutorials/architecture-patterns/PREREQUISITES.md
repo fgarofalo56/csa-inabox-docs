@@ -1,6 +1,6 @@
 # 📋 Prerequisites and Setup Guide
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ [Architecture Tutorials](README.md)__ | __📋 Prerequisites__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ [Architecture Tutorials](README.md)__ | __📋 Prerequisites__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Level](https://img.shields.io/badge/Level-Beginner-green?style=flat-square)

@@ -1,6 +1,6 @@
 # 📨 Streaming to Data Lake - Event Hubs Capture
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __📨 Streaming to Data Lake__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __📨 Streaming to Data Lake__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Basic-green?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-30min-blue?style=flat-square)
@@ -833,7 +833,7 @@ az storage account management-policy create \
 
 - **[Process captured data with Databricks](eventhubs-databricks.md)**
 - **[Build Lambda architecture with Synapse](stream-analytics-synapse.md)**
-- **[Implement data governance with Purview](../../best-practices/data-governance.md)**
+- **[Implement data governance with Purview](../../05-best-practices/README.md)**
 
 ### Learn More
 

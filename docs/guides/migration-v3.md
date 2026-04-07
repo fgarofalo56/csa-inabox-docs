@@ -1,6 +1,6 @@
 # 🚀 Migration Guide to Version 3.0
 
-> **🏠 [Home](../../README.md)** | **📚 Documentation** | **📖 [Guides](./README.md)** | **🔄 V3 Migration**
+> **🏠 [Home](../README.md)** | **📚 Documentation** | **📖 [Guides](./README.md)** | **🔄 V3 Migration**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-3.0.0-blue)

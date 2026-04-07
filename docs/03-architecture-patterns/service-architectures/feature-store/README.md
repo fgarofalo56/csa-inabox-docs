@@ -253,9 +253,9 @@ def detect_feature_drift(reference_df, current_df, features):
 
 ## Related Documentation
 
-- [MLOps Best Practices](../../best-practices/ml-operations/README.md)
-- [ML on Databricks](../../tutorials/intermediate/ml-databricks.md)
-- [Delta Lake Guide](../../delta-lake-guide.md)
+- [MLOps Best Practices](../../ml-patterns/README.md)
+- [ML on Databricks](../../../README.md)
+- [Delta Lake Guide](../../../06-code-examples/delta-lake-guide.md)
 
 ---
 

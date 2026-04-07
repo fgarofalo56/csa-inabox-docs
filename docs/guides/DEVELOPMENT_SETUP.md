@@ -1,6 +1,6 @@
 # DEVELOPMENT SETUP
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **DEVELOPMENT SETUP**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **DEVELOPMENT SETUP**
 
 ## Overview
 

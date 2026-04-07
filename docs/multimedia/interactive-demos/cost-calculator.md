@@ -1,6 +1,6 @@
 # 💰 Interactive Cost Calculator
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Cost Calculator**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Cost Calculator**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -461,7 +461,7 @@ const troubleshootHighCosts = {
 ## 📚 Additional Resources
 
 - [Azure Synapse Pricing](https://azure.microsoft.com/pricing/details/synapse-analytics/)
-- [Cost Optimization Guide](../../best-practices/cost-optimization.md)
+- [Cost Optimization Guide](../../05-best-practices/README.md)
 - [Resource Planning](./resource-planner.md)
 
 ## 💬 Feedback

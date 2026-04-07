@@ -1,6 +1,6 @@
 # 🎮 Interactive Demos & Code Playgrounds
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎮 Interactive Demos__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎮 Interactive Demos__
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Demos: 15+](https://img.shields.io/badge/Demos-15+-blue)
@@ -212,7 +212,7 @@ const architectureBuilder = {
 
 ### 💰 Cost Calculator Tool
 
-__[Open Cost Calculator](./demos/cost-calculator/index.html)__
+*Demo: cost-calculator/index.html (coming soon)*
 
 Interactive calculator for estimating Azure Synapse Analytics costs.
 
@@ -295,7 +295,7 @@ Interactive calculator for estimating Azure Synapse Analytics costs.
 
 ### 🎯 Query Optimizer Playground
 
-__[Try Query Optimizer](./demos/query-optimizer/index.html)__
+*Demo: query-optimizer/index.html (coming soon)*
 
 Interactive SQL query optimization tool with real-time performance analysis.
 
@@ -349,13 +349,13 @@ class QueryOptimizer {
 
 ### 🔄 Pipeline Designer
 
-__[Open Pipeline Designer](./demos/pipeline-designer/index.html)__
+*Demo: pipeline-designer/index.html (coming soon)*
 
 Visual pipeline designer for Azure Data Factory workflows.
 
 ### 📊 Data Flow Simulator
 
-__[Launch Data Flow Simulator](./demos/data-flow-simulator/index.html)__
+*Demo: data-flow-simulator/index.html (coming soon)*
 
 Simulate and visualize data flows through your architecture.
 
@@ -523,7 +523,7 @@ graph TD
 
 ### Implementation Wizard
 
-__[Launch Implementation Wizard](./demos/implementation-wizard/index.html)__
+*Demo: implementation-wizard/index.html (coming soon)*
 
 Step-by-step guided setup for common scenarios:
 
@@ -611,7 +611,7 @@ class PerformanceCalculator {
 
 ### Resource Sizing Calculator
 
-__[Open Resource Calculator](./demos/resource-calculator/index.html)__
+*Demo: resource-calculator/index.html (coming soon)*
 
 Calculate optimal resource allocation based on workload characteristics.
 

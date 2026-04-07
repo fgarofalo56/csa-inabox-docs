@@ -1,6 +1,6 @@
 # Workspace Setup Implementation Script
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Workspace Setup**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Workspace Setup**
 
 ![Status: Draft](https://img.shields.io/badge/Status-Draft-yellow)
 ![Duration: 12 minutes](https://img.shields.io/badge/Duration-12%20minutes-blue)

@@ -299,4 +299,4 @@ OPTIMIZE delta_table
 
 ## Reference Implementation
 
-For a detailed reference implementation of Delta Lakehouse in Azure Synapse Analytics, refer to the [code examples section](../../code-examples/README.md) of this documentation.
+For a detailed reference implementation of Delta Lakehouse in Azure Synapse Analytics, refer to the [code examples section](../../data-patterns/README.md) of this documentation.

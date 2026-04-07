@@ -9,7 +9,7 @@ category: "Best Practices"
 
 # Best Practices for Cloud Scale Analytics
 
-> **🏠 [Home](../../README.md)** | **📖 [Documentation](../README.md)** | **💡 Best Practices**
+> **🏠 [Home](../README.md)** | **📖 [Documentation](../README.md)** | **💡 Best Practices**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)

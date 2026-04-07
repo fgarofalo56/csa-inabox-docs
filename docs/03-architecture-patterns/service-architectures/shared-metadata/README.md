@@ -59,6 +59,6 @@ customer_df = spark.read.synapsesql("sales_gold.customer_summary")
 
 ## Related Resources
 
-- [Best Practices for Metadata Management](../../best-practices/data-governance.md)
-- [Integration Guide](../../code-examples/integration-guide.md)
-- [Reference Documentation](../../reference/README.md)
+- [Best Practices for Metadata Management](../../README.md)
+- [Integration Guide](../../../06-code-examples/integration-guide.md)
+- [Reference Documentation](../../../README.md)

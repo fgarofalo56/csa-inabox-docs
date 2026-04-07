@@ -1,6 +1,6 @@
 # 🧪 Wrangling Data Flows
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Wrangling Data Flows__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Wrangling Data Flows__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Wrangling_Data_Flows-blue)
 ![Duration](https://img.shields.io/badge/Duration-20_minutes-green)

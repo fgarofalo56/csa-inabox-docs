@@ -1,6 +1,6 @@
 # PROJECT SETUP
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **PROJECT SETUP**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **PROJECT SETUP**
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Common Issues Troubleshooting Script
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Common Issues**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Common Issues**
 
 ![Status: Draft](https://img.shields.io/badge/Status-Draft-yellow)
 ![Duration: 18 minutes](https://img.shields.io/badge/Duration-18%20minutes-blue)

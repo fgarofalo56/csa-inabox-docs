@@ -1,6 +1,6 @@
 # 📊 Cost-Benefit Analysis - CSA-in-a-Box
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 [Presentations](README.md)** | **👤 Cost-Benefit Analysis**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 [Presentations](README.md)** | **👤 Cost-Benefit Analysis**
 
 ![Type: Financial](https://img.shields.io/badge/Type-Financial-blue)
 ![Duration: 30 min](https://img.shields.io/badge/Duration-30%20min-green)
@@ -116,9 +116,9 @@ This presentation covers:
 - [Presentation Guides](guides/README.md)
 
 ### Templates
-- PowerPoint template: [Download](../templates/)
-- PDF handout template: [Download](../templates/)
-- Speaker notes template: [Download](../templates/)
+- PowerPoint template: [Download](../templates/README.md)
+- PDF handout template: [Download](../templates/README.md)
+- Speaker notes template: [Download](../templates/README.md)
 
 ## 💬 Feedback
 

@@ -1,6 +1,6 @@
 # 🎨 Mapping Data Flows
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Mapping Data Flows__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Mapping Data Flows__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Mapping_Data_Flows-blue)
 ![Duration](https://img.shields.io/badge/Duration-25_minutes-green)

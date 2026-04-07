@@ -1,6 +1,6 @@
 # ⚠️ Common Errors - CSA in-a-Box
 
-> **🏠 [Home](../../README.md)** | **📖 [Documentation](../README.md)** | **🔧 [Troubleshooting](README.md)** | **⚠️ Common Errors**
+> **🏠 [Home](../README.md)** | **📖 [Documentation](../README.md)** | **🔧 [Troubleshooting](README.md)** | **⚠️ Common Errors**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)

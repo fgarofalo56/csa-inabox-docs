@@ -1,6 +1,6 @@
 # Medallion Architecture - Lakehouse Pattern
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🏗️ [Architecture Patterns](../README.md)** | **Medallion Architecture**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🏗️ [Architecture Patterns](../README.md)** | **Medallion Architecture**
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -799,9 +799,9 @@ FROM delta.`/path/to/table/_delta_log`;
 ---
 
 **Related Documentation**:
-- [Delta Lake Guide](../../code-examples/delta-lake-guide.md)
-- [Performance Optimization](../../best-practices/performance-optimization.md)
-- [Data Quality Patterns](../../best-practices/data-governance.md)
+- [Delta Lake Guide](../../06-code-examples/delta-lake-guide.md)
+- [Performance Optimization](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Data Quality Patterns](../../05-best-practices/README.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # 🚀 Development Guide
 
-> __🏠 [Home](../../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
+> __🏠 [Home](../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
 
 ---
 
@@ -313,6 +313,7 @@ def example():
 
 - [External link](https://azure.microsoft.com)
 \```
+```
 
 ### Shell Script Standards
 

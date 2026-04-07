@@ -1,6 +1,6 @@
 # 🔗 Pipeline Dependency Management
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Dependency Management__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Dependency Management__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Dependency_Management-blue)
 ![Duration](https://img.shields.io/badge/Duration-10_minutes-green)

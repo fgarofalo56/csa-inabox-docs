@@ -1,6 +1,6 @@
 # 📥 Tutorial 4: Batch Data Ingestion
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ [Synapse Series](README.md)__ | __📥 Batch Ingestion__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ [Synapse Series](README.md)__ | __📥 Batch Ingestion__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-04_Batch_Ingestion-blue)
 ![Duration](https://img.shields.io/badge/Duration-40_minutes-green)

@@ -1,6 +1,6 @@
 # 🗄️ Dedicated SQL Pool
 
-> __🏠 [Home](../../../../../README.md)__ | __🛠️ [Services](../../../README.md)__ | __📊 [Synapse](../README.md)__ | __🗄️ Dedicated SQL__
+> __🏠 [Home](../../../../README.md)__ | __🛠️ [Services](../../../README.md)__ | __📊 [Synapse](../README.md)__ | __🗄️ Dedicated SQL__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -30,7 +30,7 @@ Dedicated SQL Pool (formerly Azure SQL Data Warehouse) provides a massively para
 |-------|-------------|
 | [Sizing Guide](sizing.md) | DWU selection and capacity planning |
 | [Performance Tuning](../../../../05-best-practices/service-specific/synapse/dedicated-sql-best-practices.md) | Query optimization techniques |
-| [Cost Management](../../../../05-best-practices/cross-cutting-concerns/cost-optimization/dedicated-sql-costs.md) | Cost optimization strategies |
+| [Cost Management](../../../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md) | Cost optimization strategies |
 | [Troubleshooting](../../../../07-troubleshooting/service-troubleshooting/synapse/README.md) | Common issues and solutions |
 
 ---

@@ -180,7 +180,7 @@ def example_function():
 
 ### 🎯 Standard Flow Diagram
 
-![Example Mermaid flow diagram showing standard documentation workflow with color-coded nodes and directional flows](images/diagrams/.-VISUAL-STYLE-GUIDE-diagram-1.png)
+<!-- Diagram: Example Mermaid flow diagram showing standard documentation workflow with color-coded nodes and directional flows (image to be added) -->
 
 ---
 

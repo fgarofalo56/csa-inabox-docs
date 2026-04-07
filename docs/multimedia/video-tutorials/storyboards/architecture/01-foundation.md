@@ -1,6 +1,6 @@
 # Architecture Foundation Storyboard
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Storyboards** | **Foundation**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Storyboards** | **Foundation**
 
 ![Status: Planning](https://img.shields.io/badge/Status-Planning-blue)
 ![Type: Storyboard](https://img.shields.io/badge/Type-Storyboard-purple)

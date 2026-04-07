@@ -1,6 +1,6 @@
 # 🏞️ Data Lakehouse Integration Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🔗 [Integration](README.md)** | **🏞️ Lakehouse**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🔗 [Integration](README.md)** | **🏞️ Lakehouse**
 
 ![Level](https://img.shields.io/badge/Level-Intermediate-orange)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)

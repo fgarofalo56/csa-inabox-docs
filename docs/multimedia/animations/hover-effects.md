@@ -1,6 +1,6 @@
 # Hover State Animations
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **👆 Hover Effects**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **👆 Hover Effects**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: CSS](https://img.shields.io/badge/Type-CSS-blue)

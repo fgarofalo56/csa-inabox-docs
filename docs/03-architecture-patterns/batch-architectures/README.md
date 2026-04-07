@@ -1,6 +1,6 @@
 # 📦 Batch Architecture Patterns
 
-> __🏠 [Home](../../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __📦 Batch Architectures__
+> __🏠 [Home](../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __📦 Batch Architectures__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Patterns](https://img.shields.io/badge/Patterns-5+-blue?style=flat-square)

@@ -1,6 +1,6 @@
 # Event Grid Patterns
 
-> **[Home](../../../../README.md)** | **[Best Practices](../../README.md)** | **[Cross-Cutting](../README.md)** | **Event Grid Patterns**
+> **[Home](../../../README.md)** | **[Best Practices](../../README.md)** | **[Cross-Cutting](../README.md)** | **Event Grid Patterns**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Category](https://img.shields.io/badge/Category-Event%20Handling-orange?style=flat-square)
@@ -268,9 +268,9 @@ resource privateEndpoint 'Microsoft.Network/privateEndpoints@2022-01-01' = {
 
 ## Related Documentation
 
-- [Event Grid Overview](../../../../02-services/streaming-services/azure-event-grid/README.md)
+- [Event Grid Overview](../../../02-services/streaming-services/azure-event-grid/README.md)
 - [Event Grid Reliability](../../operational-excellence/eventgrid-reliability.md)
-- [Streaming Architectures](../../../../03-architecture-patterns/streaming-architectures/README.md)
+- [Streaming Architectures](../../../03-architecture-patterns/streaming-architectures/README.md)
 
 ---
 

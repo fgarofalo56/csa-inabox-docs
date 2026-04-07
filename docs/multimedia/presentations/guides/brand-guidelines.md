@@ -1,6 +1,6 @@
 # 🎨 Brand Guidelines - CSA-in-a-Box Presentations
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **📋 [Guides](README.md)** | **👤 Brand Guidelines**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **📋 [Guides](README.md)** | **👤 Brand Guidelines**
 
 ![Type: Guide](https://img.shields.io/badge/Type-Guide-blue)
 ![Audience: Designers](https://img.shields.io/badge/Audience-Designers-purple)

@@ -1,6 +1,6 @@
 # CSS Animation Library
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **💅 CSS Animations**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **💅 CSS Animations**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: CSS3](https://img.shields.io/badge/Type-CSS3-blue)

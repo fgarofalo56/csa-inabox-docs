@@ -1,6 +1,6 @@
 # 🚀 CI/CD Integration
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __CI/CD__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __CI/CD__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-CI_CD_Integration-blue)
 ![Duration](https://img.shields.io/badge/Duration-20_minutes-green)
@@ -105,7 +105,7 @@ stages:
 ## 📚 Additional Resources
 
 - [ADF CI/CD Documentation](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment)
-- [DevOps Guide](../../devops/pipeline-ci-cd.md)
+- [DevOps Guide](../../10-devops/pipeline-ci-cd.md)
 
 ## 🚀 Next Steps
 

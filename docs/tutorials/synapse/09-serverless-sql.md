@@ -799,5 +799,5 @@ Take a slow query and optimize it using partition elimination and column project
 ## Next Steps
 
 - Continue to [Tutorial 10: Dedicated SQL Pools](10-dedicated-sql.md)
-- Explore [Serverless SQL Best Practices](../../best-practices/serverless-sql-best-practices.md)
-- Review [Serverless SQL Troubleshooting](../../troubleshooting/serverless-sql-troubleshooting.md)
+- Explore [Serverless SQL Best Practices](../../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
+- Review [Serverless SQL Troubleshooting](../../07-troubleshooting/serverless-sql-troubleshooting.md)

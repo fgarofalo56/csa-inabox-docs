@@ -787,5 +787,5 @@ Take an unoptimized Delta table and:
 ## Next Steps
 
 - Continue to [Tutorial 9: Serverless SQL Queries](09-serverless-sql.md)
-- Explore [Delta Lake Best Practices](../../best-practices/delta-lake-optimization.md)
-- Review [Delta Lake Troubleshooting](../../troubleshooting/delta-lake-troubleshooting.md)
+- Explore [Delta Lake Best Practices](../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
+- Review [Delta Lake Troubleshooting](../../07-troubleshooting/delta-lake-troubleshooting.md)

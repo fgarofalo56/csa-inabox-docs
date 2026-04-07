@@ -1,6 +1,6 @@
 # 🧩 Interactive Demo Components
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎮 [Interactive Demos](../README.md)** | **🧩 Components**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎮 [Interactive Demos](../README.md)** | **🧩 Components**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Component Library](https://img.shields.io/badge/Type-Component_Library-blue)

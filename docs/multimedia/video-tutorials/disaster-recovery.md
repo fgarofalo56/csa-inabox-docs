@@ -1,6 +1,6 @@
 # Video Script: Disaster Recovery for Azure Synapse
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Disaster Recovery**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Disaster Recovery**
 
 ![Duration: 28 minutes](https://img.shields.io/badge/Duration-28%20minutes-blue)
 ![Level: Advanced](https://img.shields.io/badge/Level-Advanced-red)

@@ -1,6 +1,6 @@
 # 🚀 First Pipeline Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **🎓 [Tutorials](./README.md)** | **🚀 First Pipeline**
+> **🏠 [Home](../../tutorials/README.md)** | **📚 Documentation** | **📖 [Guides](../../tutorials/README.md)** | **🎓 [Tutorials](../../tutorials/README.md)** | **🚀 First Pipeline**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
@@ -603,7 +603,7 @@ Congratulations! You've built your first complete pipeline. Continue learning:
 
 1. ✅ **[Spark Basics Tutorial](./spark-basics.md)** - Deep dive into PySpark
 2. ✅ **[Data Loading Tutorial](./data-loading.md)** - Advanced loading patterns
-3. ✅ **[Delta Lake Guide](../../code-examples/delta-lake/README.md)** - Delta Lake features
+3. ✅ **[Delta Lake Guide](../../06-code-examples/delta-lake/README.md)** - Delta Lake features
 
 ---
 

@@ -1,6 +1,6 @@
 # 💾 Azure Data Lake Storage Gen2 Quickstart
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__ | __💾 ADLS Gen2__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__ | __💾 ADLS Gen2__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Level](https://img.shields.io/badge/Level-Beginner-green)

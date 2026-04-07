@@ -1,6 +1,6 @@
 # 🔐 Access Control in ADLS Gen2
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🏞️ [ADLS Gen2](README.md)__ | __🔐 Access Control__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🏞️ [ADLS Gen2](README.md)__ | __🔐 Access Control__
 
 ![Security](https://img.shields.io/badge/Security-Enterprise%20Grade-blue?style=flat-square)
 ![Compliance](https://img.shields.io/badge/Compliance-POSIX-green?style=flat-square)
@@ -573,7 +573,7 @@ def enable_diagnostic_logging():
 - [Hierarchical Namespace Overview](hierarchical-namespace.md)
 - [Performance Optimization](performance-optimization.md)
 - [Data Lifecycle Management](data-lifecycle.md)
-- [Security Best Practices](../../../05-best-practices/cross-cutting-concerns/security/storage-security.md)
+- [Security Best Practices](../../../05-best-practices/cross-cutting-concerns/security/README.md)
 
 ---
 

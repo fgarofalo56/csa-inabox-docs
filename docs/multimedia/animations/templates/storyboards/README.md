@@ -1,6 +1,6 @@
 # Animation Storyboard Templates
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **🎨 [Animations](../../README.md)** | **Templates** | **Storyboards**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **🎨 [Animations](../../README.md)** | **Templates** | **Storyboards**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Templates](https://img.shields.io/badge/Type-Templates-blue)

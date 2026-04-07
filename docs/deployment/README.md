@@ -1,6 +1,6 @@
 # 🚀 Deployment Documentation
 
-> **🏠 [Home](../../README.md)** | **📖 [Documentation](../README.md)** | **🚀 Deployment**
+> **🏠 [Home](../README.md)** | **📖 [Documentation](../README.md)** | **🚀 Deployment**
 
 ## Overview
 
@@ -14,5 +14,5 @@ This section covers deployment processes and configurations for the Cloud Scale 
 
 ## Related Resources
 
-- [Configuration](../../config/README.md)
-- [Scripts - Deployment](../../scripts/deployment/README.md)
+- [Configuration](../images/README.md)
+- [Scripts - Deployment](README.md)

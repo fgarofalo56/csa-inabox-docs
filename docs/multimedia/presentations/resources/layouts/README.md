@@ -1,6 +1,6 @@
 # 📚 Layouts Resources - CSA-in-a-Box
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📊 [Presentations](../../README.md)** | **📦 Resources** | **👤 Layouts**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📊 [Presentations](../../README.md)** | **📦 Resources** | **👤 Layouts**
 
 ![Type: Resources](https://img.shields.io/badge/Type-Resources-blue)
 ![Category: ](https://img.shields.io/badge/Category--green)

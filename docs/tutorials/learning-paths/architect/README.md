@@ -1,6 +1,6 @@
 # 🏗️ Solution Architect Learning Path
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🛤️ [Learning Paths](../README.md)__ | __🏗️ Solution Architect__
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🛤️ [Learning Paths](../README.md)__ | __🏗️ Solution Architect__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Duration](https://img.shields.io/badge/Duration-12--14_weeks-blue)
@@ -119,8 +119,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Delta Lakehouse Architecture](../../../architecture/delta-lakehouse/README.md)
-- [Medallion Architecture Pattern](../../../architecture/delta-lakehouse/detailed-architecture.md)
+- [Delta Lakehouse Architecture](../../../03-architecture-patterns/service-architectures/delta-lakehouse/README.md)
+- [Medallion Architecture Pattern](../../../03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md)
 - [Data Mesh on Azure](https://learn.microsoft.com/azure/architecture/example-scenario/data/data-mesh-scenario)
 
 __Assessment:__
@@ -146,9 +146,9 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Private Link Architecture](../../../architecture/private-link-architecture.md)
-- [Security Best Practices](../../../best-practices/security.md)
-- [Network Security](../../../best-practices/network-security.md)
+- [Private Link Architecture](../../../03-architecture-patterns/service-architectures/private-link-architecture.md)
+- [Security Best Practices](../../../reference/security.md)
+- [Network Security](../../../05-best-practices/cross-cutting-concerns/networking/network-security.md)
 
 __Assessment:__
 
@@ -176,8 +176,8 @@ __Hands-on Projects:__
 
 __Resources:__
 
-- [Auto Loader Pattern](../../../code-examples/delta-lake/ingestion/auto-loader.md)
-- [Change Data Capture](../../../code-examples/delta-lake/cdc/change-data-capture.md)
+- [Auto Loader Pattern](../../../06-code-examples/delta-lake/ingestion/auto-loader.md)
+- [Change Data Capture](../../../06-code-examples/delta-lake/cdc/change-data-capture.md)
 
 ### __Module 2.2: Processing Patterns__ (12 hours)
 
@@ -196,8 +196,8 @@ __Hands-on Projects:__
 
 __Resources:__
 
-- [Delta Lake Optimization](../../../best-practices/delta-lake-optimization.md)
-- [Table Optimization](../../../code-examples/delta-lake/optimization/table-optimization.md)
+- [Delta Lake Optimization](../../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
+- [Table Optimization](../../../06-code-examples/delta-lake/optimization/table-optimization.md)
 
 ### __Module 2.3: Serving Patterns__ (10 hours)
 
@@ -216,8 +216,8 @@ __Hands-on Projects:__
 
 __Resources:__
 
-- [Serverless SQL Architecture](../../../architecture/serverless-sql/README.md)
-- [Query Optimization](../../../code-examples/serverless-sql/query-optimization.md)
+- [Serverless SQL Architecture](../../../03-architecture-patterns/service-architectures/serverless-sql/README.md)
+- [Query Optimization](../../../06-code-examples/serverless-sql/query-optimization.md)
 
 ## 📚 Phase 3: Enterprise Architecture (3-4 weeks)
 
@@ -255,7 +255,7 @@ __Hands-on Projects:__
 
 __Resources:__
 
-- [Best Practices: Cost Optimization](../../../best-practices/cost-optimization.md)
+- [Best Practices: Cost Optimization](../../../05-best-practices/README.md)
 
 ### __Module 3.3: Performance Architecture__ (12 hours)
 
@@ -274,8 +274,8 @@ __Hands-on Projects:__
 
 __Resources:__
 
-- [Performance Optimization](../../../best-practices/performance-optimization.md)
-- [Spark Performance](../../../best-practices/spark-performance.md)
+- [Performance Optimization](../../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Spark Performance](../../../05-best-practices/service-specific/synapse/spark-performance.md)
 
 ## 📚 Phase 4: Advanced Topics (3-4 weeks)
 
@@ -313,7 +313,7 @@ __Hands-on Projects:__
 
 __Resources:__
 
-- [Azure ML Integration](../../../code-examples/integration/azure-ml.md)
+- [Azure ML Integration](../../../06-code-examples/integration/azure-ml.md)
 
 ### __Module 4.3: Data Mesh and Decentralized Architectures__ (10 hours)
 
@@ -457,7 +457,7 @@ After completing this path:
 ## 📞 Getting Help
 
 - __Architecture Reviews__: Schedule peer review sessions
-- __Community Forum__: [GitHub Discussions](https://github.com/your-org/csa-tutorials/discussions)
+- __Community Forum__: [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
 - __Office Hours__: Weekly architect Q&A sessions
 - __Mentorship__: Connect with experienced Azure architects
 

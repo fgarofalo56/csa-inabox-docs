@@ -1,6 +1,6 @@
 # 🏢 Dedicated SQL Pool - Azure Synapse Analytics
 
-> __🏠 [Home](../../../../../../README.md)__ | __📖 [Overview](../../../../../01-overview/README.md)__ | __🛠️ [Services](../../../../README.md)__ | __💾 [Analytics Compute](../../../README.md)__ | __🎯 [Synapse](../../README.md)__ | __🗄️ [SQL Pools](../README.md)__ | __🏢 Dedicated SQL__
+> __🏠 [Home](../../../../../README.md)__ | __📖 [Overview](../../../../../01-overview/README.md)__ | __🛠️ [Services](../../../../README.md)__ | __💾 [Analytics Compute](../../../README.md)__ | __🎯 [Synapse](../../README.md)__ | __🗄️ [SQL Pools](../README.md)__ | __🏢 Dedicated SQL__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Pricing](https://img.shields.io/badge/Pricing-Reserved%20Capacity-purple?style=flat-square)
@@ -747,19 +747,19 @@ DROP TABLE IF EXISTS staging.temp_data;
 ### 🎓 __Tutorials & Guides__
 
 - [__Dedicated SQL Pool Best Practices__](../../../../../05-best-practices/service-specific/synapse/dedicated-sql-best-practices.md)
-- [__Performance Tuning Guide__](../../../../../05-best-practices/cross-cutting-concerns/performance/dedicated-sql-optimization.md)
+- [__Performance Tuning Guide__](../../../../../05-best-practices/cross-cutting-concerns/performance/README.md)
 - [__Data Warehouse Patterns__](../../../../../03-architecture-patterns/batch-architectures/data-warehouse-patterns.md)
 
 ### 📖 __Code Examples__
 
-- [__Dedicated SQL Examples__](../../../../../06-code-examples/by-service/synapse/dedicated-sql-examples.md)
-- [__Data Loading Patterns__](../../../../../06-code-examples/by-service/synapse/data-loading-patterns.md)
-- [__Query Optimization Examples__](../../../../../06-code-examples/by-service/synapse/query-optimization.md)
+- [__Dedicated SQL Examples__](../../../../../06-code-examples/by-service/synapse/README.md)
+- [__Data Loading Patterns__](../../../../../06-code-examples/by-service/synapse/README.md)
+- [__Query Optimization Examples__](../../../../../06-code-examples/serverless-sql/query-optimization.md)
 
 ### 🔧 __Operational Guides__
 
-- [__Cost Management__](../../../../../05-best-practices/cross-cutting-concerns/cost-optimization/dedicated-sql-costs.md)
-- [__Security Configuration__](../../../../../05-best-practices/cross-cutting-concerns/security/dedicated-sql-security.md)
+- [__Cost Management__](../../../../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
+- [__Security Configuration__](../../../../../05-best-practices/cross-cutting-concerns/security/README.md)
 - [__Monitoring & Alerting__](../../../../../09-monitoring/service-monitoring/synapse/dedicated-monitoring.md)
 
 ---

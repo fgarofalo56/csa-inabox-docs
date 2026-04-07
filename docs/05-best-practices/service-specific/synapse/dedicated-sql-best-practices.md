@@ -219,7 +219,7 @@ WHERE STATS_DATE(object_id, stats_id) < DATEADD(day, -7, GETDATE());
 ## Related Documentation
 
 - [Dedicated SQL Monitoring](../../../09-monitoring/service-monitoring/synapse/dedicated-monitoring.md)
-- [SQL Performance Guide](../../../best-practices/sql-performance/README.md)
+- [SQL Performance Guide](../../cross-cutting-concerns/performance/README.md)
 - [Synapse Overview](../../../02-services/analytics-compute/azure-synapse/README.md)
 
 ---

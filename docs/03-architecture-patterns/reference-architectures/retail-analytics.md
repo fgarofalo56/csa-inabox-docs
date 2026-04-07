@@ -1270,8 +1270,8 @@ echo "Deployment complete!"
 
 ### Internal Documentation
 - [Delta Lakehouse Architecture](../../02-services/analytics-compute/azure-synapse/spark-pools/delta-lakehouse/README.md)
-- [Serverless SQL Best Practices](../../best-practices/serverless-sql-best-practices/README.md)
-- [Performance Optimization Guide](../../best-practices/performance-optimization/README.md)
+- [Serverless SQL Best Practices](../../06-code-examples/serverless-sql/README.md)
+- [Performance Optimization Guide](../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
 
 ### External References
 - [Azure Retail Analytics](https://docs.microsoft.com/azure/architecture/industries/retail/)
@@ -1285,4 +1285,4 @@ echo "Deployment complete!"
 1. Review the [IoT Analytics Reference Architecture](./iot-analytics.md)
 2. Explore [Financial Services Architecture](./financial-services.md)
 3. Learn about [ML Pipeline Architecture](./ml-pipeline.md)
-4. Implement [Cost Optimization Strategies](../../best-practices/cost-optimization/README.md)
+4. Implement [Cost Optimization Strategies](../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)

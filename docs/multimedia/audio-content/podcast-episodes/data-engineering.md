@@ -1,6 +1,6 @@
 # 📻 Episode: Data Engineering Best Practices with Azure Synapse
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Data Engineering**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Data Engineering**
 
 ![Episode: 002](https://img.shields.io/badge/Episode-002-blue)
 ![Duration: 28 min](https://img.shields.io/badge/Duration-28min-green)

@@ -1,6 +1,6 @@
 # 🌐 Reference Architectures by Industry
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🌐 Reference Architectures__
+> __🏠 [Home](../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🌐 Reference Architectures__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Industries](https://img.shields.io/badge/Industries-6+-blue?style=flat-square)
@@ -464,7 +464,7 @@ az deployment group create \
 ### Implementation Guides
 
 - [Deployment Guide](../../tutorials/README.md)
-- [Best Practices](../../best-practices/README.md)
+- [Best Practices](../../05-best-practices/README.md)
 - [Security Guide](../../security/README.md)
 
 ### Architecture Patterns

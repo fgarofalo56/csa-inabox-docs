@@ -1,6 +1,6 @@
 # Serverless SQL Pool Architecture Diagram
 
-[🏠 Home](../../README.md) > [📊 Diagrams](README.md) > Serverless SQL Architecture
+[🏠 Home](../README.md) > [📊 Diagrams](README.md) > Serverless SQL Architecture
 
 ## Overview
 
@@ -710,11 +710,11 @@ graph TB
 
 ## Reference Links
 
-- [Serverless SQL Overview](../architecture/serverless-sql/serverless-overview.md)
-- [Detailed Architecture](../architecture/serverless-sql/detailed-architecture.md)
-- [Best Practices](../best-practices/serverless-sql-best-practices.md)
-- [Code Examples](../code-examples/serverless-sql/README.md)
-- [Performance Optimization](../best-practices/sql-performance.md)
+- [Serverless SQL Overview](../03-architecture-patterns/service-architectures/serverless-sql/serverless-overview.md)
+- [Detailed Architecture](../03-architecture-patterns/service-architectures/serverless-sql/detailed-architecture.md)
+- [Best Practices](../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
+- [Code Examples](../06-code-examples/serverless-sql/README.md)
+- [Performance Optimization](../05-best-practices/service-specific/synapse/sql-performance.md)
 
 ---
 

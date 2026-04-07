@@ -1,6 +1,6 @@
 # 🔄 Kafka Compatibility
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 [Event Hubs](README.md)__ | __🔄 Kafka Compatibility__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 [Event Hubs](README.md)__ | __🔄 Kafka Compatibility__
 
 ![Compatibility](https://img.shields.io/badge/Kafka-Compatible-brightgreen?style=flat-square)
 ![Protocol](https://img.shields.io/badge/Protocol-1.0%20%7C%202.0%20%7C%203.0-blue?style=flat-square)
@@ -567,9 +567,9 @@ if __name__ == "__main__":
 
 ### Best Practices
 
-- [__Migration Strategies__](../../../05-best-practices/migration/kafka-to-eventhubs.md)
-- [__Performance Tuning__](../../../05-best-practices/cross-cutting-concerns/performance/kafka-eventhubs-optimization.md)
-- [__Security Hardening__](../../../05-best-practices/cross-cutting-concerns/security/kafka-security.md)
+- [__Migration Strategies__](../../../05-best-practices/README.md)
+- [__Performance Tuning__](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
+- [__Security Hardening__](../../../05-best-practices/cross-cutting-concerns/security/README.md)
 
 ### External Resources
 

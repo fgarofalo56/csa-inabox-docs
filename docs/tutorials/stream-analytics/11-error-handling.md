@@ -1,6 +1,6 @@
 # 🛡️ Tutorial 11: Error Handling and Resilience
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __🛡️ Error Handling__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __🛡️ Error Handling__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-11_Error_Handling-blue)
 ![Duration](https://img.shields.io/badge/Duration-35_minutes-green)

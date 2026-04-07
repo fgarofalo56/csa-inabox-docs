@@ -1,6 +1,6 @@
 # ⚡ Performance Optimization for Interactive Demos
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎮 [Interactive Demos](../README.md)** | **⚡ Performance**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎮 [Interactive Demos](../README.md)** | **⚡ Performance**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Guide](https://img.shields.io/badge/Type-Guide-blue)

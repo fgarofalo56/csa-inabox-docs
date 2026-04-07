@@ -1,6 +1,6 @@
 # 📝 Transcription Process & Workflow
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **📝 Transcription Process**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **📝 Transcription Process**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Accuracy: 99%+](https://img.shields.io/badge/Accuracy-99%25+-success)

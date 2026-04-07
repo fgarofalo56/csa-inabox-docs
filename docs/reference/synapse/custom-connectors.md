@@ -1,6 +1,6 @@
 # Custom Connectors for Azure Synapse Analytics
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Reference [Reference](../README.md)** | **Synapse**
+> **Home [Home](../../README.md)** | **Documentation** | **Reference [Reference](../README.md)** | **Synapse**
 
 ---
 
@@ -663,7 +663,7 @@ public void ValidateSchema(TableSchema expected, TableSchema actual)
 
 - [Azure Synapse Connectors SDK](https://docs.microsoft.com/azure/synapse-analytics/)
 - [Custom Connector Development Guide](https://docs.microsoft.com/)
-- [Authentication Best Practices](../../best-practices/security.md)
+- [Authentication Best Practices](../security.md)
 
 ---
 

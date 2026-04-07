@@ -1,6 +1,6 @@
 # 🌊 Kafka Streaming on HDInsight
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🚀 Advanced__ | __🌊 Kafka__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🚀 Advanced__ | __🌊 Kafka__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Level](https://img.shields.io/badge/Level-Advanced-red)

@@ -1,6 +1,6 @@
 # 🎯 End-to-End Solutions
 
-> **🏠 [Home](../../../README.md)** | **📖 [Implementation Guides](../README.md)** | **🎯 End-to-End Solutions**
+> **🏠 [Home](../../README.md)** | **📖 [Implementation Guides](../README.md)** | **🎯 End-to-End Solutions**
 
 ## Overview
 

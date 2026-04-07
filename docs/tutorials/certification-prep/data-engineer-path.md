@@ -1,6 +1,6 @@
 # 📜 DP-203: Azure Data Engineer Associate - Certification Study Guide
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎓 [Certification Prep](README.md)__ | __📜 DP-203__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎓 [Certification Prep](README.md)__ | __📜 DP-203__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Exam](https://img.shields.io/badge/Exam-DP--203-blue)
@@ -53,8 +53,8 @@ The exam covers the following domain areas:
 
 __Study Resources:__
 
-- [Delta Lakehouse Architecture](../../architecture/delta-lakehouse/README.md)
-- [Delta Lake Optimization](../../best-practices/delta-lake-optimization.md)
+- [Delta Lakehouse Architecture](../../03-architecture-patterns/service-architectures/delta-lakehouse/README.md)
+- [Delta Lake Optimization](../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
 
 ---
 
@@ -86,7 +86,7 @@ __Study Resources:__
 - [PySpark Fundamentals](../code-labs/pyspark-fundamentals.md)
 - [Stream Analytics Tutorial](../stream-analytics/README.md)
 - [Data Factory Tutorial](../data-factory/README.md)
-- [Change Data Capture](../../code-examples/delta-lake/cdc/change-data-capture.md)
+- [Change Data Capture](../../06-code-examples/delta-lake/cdc/change-data-capture.md)
 
 ---
 
@@ -115,9 +115,9 @@ __Study Resources:__
 
 __Study Resources:__
 
-- [Security Best Practices](../../best-practices/security.md)
-- [Network Security](../../best-practices/network-security.md)
-- [Private Link Architecture](../../architecture/private-link-architecture.md)
+- [Security Best Practices](../../reference/security.md)
+- [Network Security](../../05-best-practices/cross-cutting-concerns/networking/network-security.md)
+- [Private Link Architecture](../../03-architecture-patterns/service-architectures/private-link-architecture.md)
 
 ---
 
@@ -146,10 +146,10 @@ __Study Resources:__
 
 __Study Resources:__
 
-- [Monitoring Setup](../../monitoring/README.md)
-- [Performance Optimization](../../best-practices/performance-optimization.md)
-- [Cost Optimization](../../best-practices/cost-optimization.md)
-- [Spark Performance](../../best-practices/spark-performance.md)
+- [Monitoring Setup](../../09-monitoring/README.md)
+- [Performance Optimization](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Cost Optimization](../../05-best-practices/README.md)
+- [Spark Performance](../../05-best-practices/service-specific/synapse/spark-performance.md)
 
 ---
 
@@ -182,7 +182,7 @@ __Study Hours__: 15-20 hours
 
 __Resources:__
 
-- [Delta Lakehouse Detailed Architecture](../../architecture/delta-lakehouse/detailed-architecture.md)
+- [Delta Lakehouse Detailed Architecture](../../03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md)
 
 #### Week 3: Security Fundamentals
 
@@ -247,8 +247,8 @@ __Study Hours__: 20-25 hours
 
 __Resources:__
 
-- [Change Data Capture](../../code-examples/delta-lake/cdc/change-data-capture.md)
-- [Table Optimization](../../code-examples/delta-lake/optimization/table-optimization.md)
+- [Change Data Capture](../../06-code-examples/delta-lake/cdc/change-data-capture.md)
+- [Table Optimization](../../06-code-examples/delta-lake/optimization/table-optimization.md)
 
 ---
 
@@ -265,8 +265,8 @@ __Study Hours__: 20-25 hours
 
 __Resources:__
 
-- [Spark Performance](../../best-practices/spark-performance.md)
-- [SQL Performance](../../best-practices/sql-performance.md)
+- [Spark Performance](../../05-best-practices/service-specific/synapse/spark-performance.md)
+- [SQL Performance](../../05-best-practices/service-specific/synapse/sql-performance.md)
 
 #### Week 9: Monitoring and Troubleshooting
 
@@ -279,8 +279,8 @@ __Study Hours__: 15-20 hours
 
 __Resources:__
 
-- [Monitoring Setup](../../monitoring/README.md)
-- [Spark Monitoring](../../monitoring/spark-monitoring.md)
+- [Monitoring Setup](../../09-monitoring/README.md)
+- [Spark Monitoring](../../09-monitoring/spark-monitoring.md)
 
 #### Week 10: Integration and Advanced Scenarios
 
@@ -293,8 +293,8 @@ __Study Hours__: 20-25 hours
 
 __Resources:__
 
-- [Azure ML Integration](../../code-examples/integration/azure-ml.md)
-- [Azure Purview Integration](../../code-examples/integration/azure-purview.md)
+- [Azure ML Integration](../../06-code-examples/integration/azure-ml.md)
+- [Azure Purview Integration](../../06-code-examples/integration/azure-purview.md)
 
 ---
 
@@ -540,7 +540,7 @@ Before scheduling your exam, ensure you can:
 
 - Microsoft Q&A forums
 - Stack Overflow [azure-synapse] tag
-- [GitHub Discussions](https://github.com/your-org/csa-tutorials/discussions)
+- [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
 
 ---
 

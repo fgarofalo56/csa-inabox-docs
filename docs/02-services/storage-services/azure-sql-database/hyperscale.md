@@ -1,6 +1,6 @@
 # 🚀 Hyperscale Tier - Azure SQL Database
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🗄️ [Azure SQL](README.md)__ | __🚀 Hyperscale__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🗄️ [Azure SQL](README.md)__ | __🚀 Hyperscale__
 
 ![Tier](https://img.shields.io/badge/Tier-Hyperscale-purple?style=flat-square)
 

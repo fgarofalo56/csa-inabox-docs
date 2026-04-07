@@ -1,6 +1,6 @@
 # 🔄 Migration Guides
 
-> **🏠 [Home](../../../README.md)** | **📖 [Implementation Guides](../README.md)** | **🔄 Migration Guides**
+> **🏠 [Home](../../README.md)** | **📖 [Implementation Guides](../README.md)** | **🔄 Migration Guides**
 
 ## Overview
 

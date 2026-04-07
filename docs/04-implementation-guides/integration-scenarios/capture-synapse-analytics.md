@@ -1,6 +1,6 @@
 # Change Data Capture with Synapse Analytics
 
-> __[Home](../../../README.md)__ | __[Implementation](../README.md)__ | __[Integration](README.md)__ | __Synapse CDC__
+> __[Home](../../README.md)__ | __[Implementation](../README.md)__ | __[Integration](README.md)__ | __Synapse CDC__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -270,7 +270,7 @@ FOR SYSTEM_TIME BETWEEN '2024-01-01' AND '2024-01-31';
 
 - [Data Factory CDC](capture-data-factory.md)
 - [Databricks CDC](capture-databricks.md)
-- [Synapse Best Practices](../../05-best-practices/service-specific/synapse-analytics.md)
+- [Synapse Best Practices](../../05-best-practices/README.md)
 
 ---
 

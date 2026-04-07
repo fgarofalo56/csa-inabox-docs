@@ -1,6 +1,6 @@
 # 📑 Training Templates - CSA-in-a-Box
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📋 [Templates](../README.md)** | **👤 Training**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📋 [Templates](../README.md)** | **👤 Training**
 
 ![Type: Templates](https://img.shields.io/badge/Type-Templates-blue)
 ![Category: Training](https://img.shields.io/badge/Category-Training-purple)

@@ -1,6 +1,6 @@
 # Performance Optimization for Multimedia Content
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **⚡ Performance**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **⚡ Performance**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Guide](https://img.shields.io/badge/Type-Guide-blue)
@@ -1364,7 +1364,7 @@ new MultimediaPerformanceMonitor();
 - [Video Encoding Guide](video-production-workflow.md)
 - [Image Optimization Tools](../tools/image-optimization.md)
 - [CDN Configuration](distribution.md)
-- [Analytics Setup](../../monitoring/monitoring-setup.md)
+- [Analytics Setup](../../09-monitoring/monitoring-setup.md)
 - [Azure CDN Best Practices](https://docs.microsoft.com/azure/cdn/cdn-best-practices)
 
 ---

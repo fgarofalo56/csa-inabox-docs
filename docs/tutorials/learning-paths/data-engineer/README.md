@@ -1,6 +1,6 @@
 # = Data Engineer Learning Path
 
-> **< [Home](../../../../README.md)** | **= [Documentation](../../../README.md)** | **< [Tutorials](../../README.md)** | **= [Learning Paths](../README.md)** | **= Data Engineer Path**
+> **< [Home](../../../README.md)** | **= [Documentation](../../../README.md)** | **< [Tutorials](../../README.md)** | **= [Learning Paths](../README.md)** | **= Data Engineer Path**
 
 ![Path Type](https://img.shields.io/badge/Path-Data_Engineer-success)
 ![Duration](https://img.shields.io/badge/Duration-10--12_weeks-blue)
@@ -121,7 +121,7 @@ graph TD
 **Resources:**
 
 - [PySpark Fundamentals Code Lab](../../code-labs/pyspark-fundamentals.md)
-- [Spark Performance Best Practices](../../../best-practices/spark-performance.md)
+- [Spark Performance Best Practices](../../../05-best-practices/service-specific/synapse/spark-performance.md)
 
 **Time Estimate:** 20 hours
 
@@ -159,8 +159,8 @@ graph TD
 
 **Resources:**
 
-- [Delta Lake Guide](../../../code-examples/delta-lake-guide.md)
-- [Table Optimization](../../../code-examples/delta-lake/optimization/table-optimization.md)
+- [Delta Lake Guide](../../../06-code-examples/delta-lake-guide.md)
+- [Table Optimization](../../../06-code-examples/delta-lake/optimization/table-optimization.md)
 
 **Time Estimate:** 10 hours
 
@@ -202,8 +202,8 @@ graph TD
 
 **Resources:**
 
-- [Delta Lakehouse Architecture](../../../architecture/delta-lakehouse/README.md)
-- [Detailed Architecture](../../../architecture/delta-lakehouse/detailed-architecture.md)
+- [Delta Lakehouse Architecture](../../../03-architecture-patterns/service-architectures/delta-lakehouse/README.md)
+- [Detailed Architecture](../../../03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md)
 
 **Time Estimate:** 25 hours
 
@@ -237,8 +237,8 @@ graph TD
 
 **Resources:**
 
-- [Auto Loader Pattern](../../../code-examples/delta-lake/ingestion/auto-loader.md)
-- [Change Data Capture](../../../code-examples/delta-lake/cdc/change-data-capture.md)
+- [Auto Loader Pattern](../../../06-code-examples/delta-lake/ingestion/auto-loader.md)
+- [Change Data Capture](../../../06-code-examples/delta-lake/cdc/change-data-capture.md)
 
 **Time Estimate:** 25 hours
 
@@ -271,7 +271,7 @@ graph TD
 
 **Resources:**
 
-- [Delta Lake Optimization](../../../best-practices/delta-lake-optimization.md)
+- [Delta Lake Optimization](../../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
 
 **Time Estimate:** 20 hours
 
@@ -309,8 +309,8 @@ graph TD
 
 **Resources:**
 
-- [Performance Optimization](../../../best-practices/performance-optimization.md)
-- [Spark Performance](../../../best-practices/spark-performance.md)
+- [Performance Optimization](../../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Spark Performance](../../../05-best-practices/service-specific/synapse/spark-performance.md)
 
 **Time Estimate:** 18 hours
 
@@ -349,8 +349,8 @@ graph TD
 **Resources:**
 
 - [Data Factory Tutorial](../../data-factory/README.md)
-- [Azure Data Factory Integration](../../../code-examples/integration/azure-data-factory.md)
-- [Pipeline Optimization](../../../best-practices/pipeline-optimization.md)
+- [Azure Data Factory Integration](../../../06-code-examples/integration/azure-data-factory.md)
+- [Pipeline Optimization](../../../05-best-practices/cross-cutting-concerns/development/pipeline-optimization.md)
 
 **Time Estimate:** 18 hours
 
@@ -384,8 +384,8 @@ graph TD
 
 **Resources:**
 
-- [DevOps Integration](../../../devops/pipeline-ci-cd.md)
-- [Automated Testing](../../../devops/automated-testing.md)
+- [DevOps Integration](../../../10-devops/pipeline-ci-cd.md)
+- [Automated Testing](../../../10-devops/automated-testing.md)
 
 **Time Estimate:** 12 hours
 
@@ -459,9 +459,9 @@ graph TD
 
 **Resources:**
 
-- [Monitoring Setup](../../../monitoring/README.md)
-- [Spark Monitoring](../../../monitoring/spark-monitoring.md)
-- [Azure Purview Integration](../../../code-examples/integration/azure-purview.md)
+- [Monitoring Setup](../../../09-monitoring/README.md)
+- [Spark Monitoring](../../../09-monitoring/spark-monitoring.md)
+- [Azure Purview Integration](../../../06-code-examples/integration/azure-purview.md)
 
 **Time Estimate:** 18 hours
 
@@ -495,7 +495,7 @@ graph TD
 
 **Resources:**
 
-- [Cost Optimization](../../../best-practices/cost-optimization.md)
+- [Cost Optimization](../../../05-best-practices/README.md)
 
 **Time Estimate:** 10 hours
 
@@ -684,7 +684,7 @@ This learning path aligns with **DP-203: Azure Data Engineer Associate**
 
 ### Learning Resources
 
-- **Discussion Forum**: [GitHub Discussions](https://github.com/your-org/csa-tutorials/discussions)
+- **Discussion Forum**: [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
 - **Office Hours**: Weekly live Q&A sessions
 - **Study Groups**: Join cohort-based learning groups
 - **Slack Community**: Real-time chat with peers and mentors
@@ -716,19 +716,19 @@ This learning path aligns with **DP-203: Azure Data Engineer Associate**
 ### Tutorials and Guides
 
 - [Synapse Quickstart](../../beginner/synapse-quickstart.md)
-- [Serverless SQL Guide](../../../code-examples/serverless-sql-guide.md)
-- [Integration Patterns](../../../code-examples/integration-guide.md)
+- [Serverless SQL Guide](../../../06-code-examples/serverless-sql-guide.md)
+- [Integration Patterns](../../../06-code-examples/integration-guide.md)
 
 ### Best Practices
 
-- [Security Best Practices](../../../best-practices/security.md)
-- [Network Security](../../../best-practices/network-security.md)
-- [SQL Performance](../../../best-practices/sql-performance.md)
+- [Security Best Practices](../../../reference/security.md)
+- [Network Security](../../../05-best-practices/cross-cutting-concerns/networking/network-security.md)
+- [SQL Performance](../../../05-best-practices/service-specific/synapse/sql-performance.md)
 
 ### Architecture Patterns
 
-- [Shared Metadata](../../../architecture/shared-metadata/shared-metadata.md)
-- [Private Link Architecture](../../../architecture/private-link-architecture.md)
+- [Shared Metadata](../../../03-architecture-patterns/service-architectures/shared-metadata/shared-metadata.md)
+- [Private Link Architecture](../../../03-architecture-patterns/service-architectures/private-link-architecture.md)
 
 ---
 

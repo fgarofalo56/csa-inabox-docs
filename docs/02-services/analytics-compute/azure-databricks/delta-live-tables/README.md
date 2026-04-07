@@ -1,6 +1,6 @@
 # 🌊 Delta Live Tables
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Overview](../../../../01-overview/README.md)** | **🛠️ [Services](../../../README.md)** | **💾 Analytics Compute** | **🧪 [Azure Databricks](../README.md)** | **🌊 Delta Live Tables**
+> **🏠 [Home](../../../../README.md)** | **📖 [Overview](../../../../01-overview/README.md)** | **🛠️ [Services](../../../README.md)** | **💾 Analytics Compute** | **🧪 [Azure Databricks](../README.md)** | **🌊 Delta Live Tables**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Feature](https://img.shields.io/badge/Feature-Declarative%20ETL-blue?style=flat-square)
@@ -862,7 +862,7 @@ ORDER BY avg_duration_ms DESC;
 - [**Azure Databricks Overview**](../README.md)
 - [**Delta Lake Best Practices**](../../../../05-best-practices/service-specific/databricks/delta-lake.md)
 - [**Pipeline Monitoring**](../../../../09-monitoring/service-monitoring/databricks/dlt-monitoring.md)
-- [**Cost Optimization**](../../../../05-best-practices/cross-cutting-concerns/cost-optimization/dlt-costs.md)
+- [**Cost Optimization**](../../../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
 
 ---
 
@@ -870,7 +870,7 @@ ORDER BY avg_duration_ms DESC;
 
 1. **[Set Up Unity Catalog](../unity-catalog/README.md)** - Add governance to pipelines
 2. **[Implement Monitoring](../../../../09-monitoring/service-monitoring/databricks/README.md)** - Track pipeline health
-3. **[Optimize Performance](../../../../05-best-practices/cross-cutting-concerns/performance/databricks-optimization.md)** - Tune for production
+3. **[Optimize Performance](../../../../05-best-practices/cross-cutting-concerns/performance/README.md)** - Tune for production
 
 ---
 

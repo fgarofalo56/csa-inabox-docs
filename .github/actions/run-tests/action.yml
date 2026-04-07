@@ -1,0 +1,55 @@
+name: 'Run Tests'
+description: 'Run pytest with coverage and optional JUnit/XML output'
+
+inputs:
+  test-type:
+    description: 'Test directory to run (unit, integration, or all)'
+    required: false
+    default: 'unit'
+  coverage-fail-under:
+    description: 'Minimum coverage percentage required'
+    required: false
+    default: '70'
+  extra-args:
+    description: 'Extra arguments to pass to pytest'
+    required: false
+    default: ''
+  upload-coverage:
+    description: 'Upload coverage as artifact'
+    required: false
+    default: 'false'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Determine test path
+      shell: bash
+      id: testpath
+      run: |
+        if [ "${{ inputs.test-type }}" = "all" ]; then
+          echo "path=tests/" >> $GITHUB_OUTPUT
+        else
+          echo "path=tests/${{ inputs.test-type }}/" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Run tests
+      shell: bash
+      run: |
+        pytest ${{ steps.testpath.outputs.path }} \
+          --cov=src/csa_docs_tools \
+          --cov-branch \
+          --cov-report=xml:coverage-${{ inputs.test-type }}.xml \
+          --cov-report=term-missing \
+          --junitxml=junit-${{ inputs.test-type }}.xml \
+          --cov-fail-under=${{ inputs.coverage-fail-under }} \
+          -v -o "addopts=" \
+          ${{ inputs.extra-args }}
+
+    - name: Upload test results
+      if: always() && inputs.upload-coverage == 'true'
+      uses: actions/upload-artifact@v7
+      with:
+        name: test-results-${{ inputs.test-type }}
+        path: |
+          junit-${{ inputs.test-type }}.xml
+          coverage-${{ inputs.test-type }}.xml

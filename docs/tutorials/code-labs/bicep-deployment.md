@@ -1,6 +1,6 @@
 # 🏗️ Infrastructure as Code with Bicep Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🏗️ Bicep IaC**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🏗️ Bicep IaC**
 
 ![Lab](https://img.shields.io/badge/Lab-Bicep_IaC-blue)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)

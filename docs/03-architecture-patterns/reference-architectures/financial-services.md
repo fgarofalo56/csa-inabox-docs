@@ -1108,9 +1108,9 @@ resource sentinel 'Microsoft.SecurityInsights/onboardingStates@2021-10-01' = {
 ## Related Resources
 
 ### Internal Documentation
-- [Data Governance Guide](../../best-practices/data-governance/README.md)
-- [Security Best Practices](../../best-practices/security/README.md)
-- [Network Security Patterns](../../best-practices/network-security/README.md)
+- [Data Governance Guide](../../05-best-practices/cross-cutting-concerns/data-governance/README.md)
+- [Security Best Practices](../../05-best-practices/cross-cutting-concerns/security/README.md)
+- [Network Security Patterns](../../05-best-practices/cross-cutting-concerns/security/README.md)
 
 ### External References
 - [Azure Financial Services Compliance](https://docs.microsoft.com/azure/compliance/offerings/)

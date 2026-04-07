@@ -1,8 +1,9 @@
 const fs = require('fs');
 const path = require('path');
-const { exec } = require('child_process');
+const { execFile } = require('child_process');
 const util = require('util');
-const execPromise = util.promisify(exec);
+const execFilePromise = util.promisify(execFile);
+const os = require('os');
 
 // Directory containing placeholder .md files
 const placeholdersDir = path.join(__dirname, 'docs', 'images', 'diagrams');
@@ -29,14 +30,20 @@ function extractMermaidCode(filePath) {
 
 // Function to generate a PNG from Mermaid code using the CLI
 async function generatePNG(mermaidCode, outputPath) {
-  // Create a temporary file for the Mermaid code
-  const tempFile = path.join(__dirname, 'temp-diagram.mmd');
+  // Create a temporary file in OS temp directory (not repo root)
+  const tempDir = path.join(__dirname, 'temp');
+  if (!fs.existsSync(tempDir)) {
+    fs.mkdirSync(tempDir, { recursive: true });
+  }
+  const tempFile = path.join(tempDir, `diagram-${Date.now()}.mmd`);
   fs.writeFileSync(tempFile, mermaidCode);
-  
+
   try {
-    // Run the Mermaid CLI command
+    // Use execFile with argument array to avoid shell injection
     console.log(`Generating: ${outputPath}`);
-    await execPromise(`npx @mermaid-js/mermaid-cli -i "${tempFile}" -o "${outputPath}"`);
+    await execFilePromise('npx', [
+      '@mermaid-js/mermaid-cli', '-i', tempFile, '-o', outputPath
+    ]);
     console.log(`Successfully generated: ${outputPath}`);
     return true;
   } catch (error) {

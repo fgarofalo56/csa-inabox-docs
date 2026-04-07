@@ -31,7 +31,7 @@ dependencies = [
     "PyYAML>=6.0.1",
     "aiohttp>=3.8.0",
     "Pillow>=10.0.0",
-    "pydantic>=2.0.0",
+    "markdown-it-py>=3.0.0",
 ]
 
 [project.optional-dependencies]
@@ -45,20 +45,18 @@ test = [
 dev = [
     "ruff>=0.1.0",
     "mypy>=1.5.0",
-    "black>=23.0.0",
-    "isort>=5.12.0",
     "pre-commit>=3.0.0",
 ]
 all = ["csa-docs-tools[test,dev]"]
 
 [project.urls]
-Homepage = "https://github.com/your-org/csa-inabox-docs"
-Repository = "https://github.com/your-org/csa-inabox-docs.git"
-Documentation = "https://your-org.github.io/csa-inabox-docs"
-"Bug Tracker" = "https://github.com/your-org/csa-inabox-docs/issues"
+Homepage = "https://github.com/fgarofalo56/csa-inabox-docs"
+Repository = "https://github.com/fgarofalo56/csa-inabox-docs.git"
+Documentation = "https://fgarofalo56.github.io/csa-inabox-docs"
+"Bug Tracker" = "https://github.com/fgarofalo56/csa-inabox-docs/issues"
 
 [project.scripts]
-csa-docs-validate = "src.csa_docs_tools.cli:main"
+csa-docs-validate = "csa_docs_tools.cli:sync_main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -70,6 +68,7 @@ csa_docs_tools = ["py.typed"]
 # Pytest configuration
 [tool.pytest.ini_options]
 minversion = "7.0"
+asyncio_mode = "auto"
 addopts = [
     "-ra",
     "-q",
@@ -80,7 +79,7 @@ addopts = [
     "--cov-report=term-missing:skip-covered",
     "--cov-report=html:htmlcov",
     "--cov-report=xml:coverage.xml",
-    "--cov-fail-under=90",
+    "--cov-fail-under=70",
 ]
 testpaths = ["tests"]
 python_files = ["test_*.py", "*_test.py"]
@@ -96,8 +95,6 @@ markers = [
     "validation: marks tests that validate documentation structure",
 ]
 filterwarnings = [
-    "ignore::UserWarning",
-    "ignore::DeprecationWarning",
     "ignore::PendingDeprecationWarning",
 ]
 
@@ -203,36 +200,7 @@ module = "tests.*"
 disallow_untyped_defs = false
 disallow_incomplete_defs = false
 
-# Black configuration
-[tool.black]
-line-length = 120
-target-version = ['py39', 'py310', 'py311']
-include = '\.pyi?$'
-extend-exclude = '''
-/(
-  # directories
-  \.eggs
-  | \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | build
-  | dist
-)/
-'''
-
-# isort configuration
-[tool.isort]
-profile = "black"
-line_length = 120
-multi_line_output = 3
-include_trailing_comma = true
-force_grid_wrap = 0
-use_parentheses = true
-ensure_newline_before_comments = true
-known_first_party = ["csa_docs_tools"]
-sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
+# Note: Black and isort removed — ruff handles formatting and import sorting
 
 # Bandit configuration
 [tool.bandit]

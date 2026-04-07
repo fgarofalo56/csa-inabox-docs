@@ -1,6 +1,6 @@
 # 📊 Tutorial 4: Basic Query Development
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __📊 Basic Queries__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __📊 Basic Queries__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-04_Basic_Queries-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)

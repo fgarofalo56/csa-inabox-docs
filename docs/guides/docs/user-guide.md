@@ -1,6 +1,6 @@
 # User Guide Template
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Guides [Guides](../README.md)** | **Templates**
+> **Home [Home](../../README.md)** | **Documentation** | **Guides [Guides](../README.md)** | **Templates**
 
 ---
 
@@ -396,8 +396,8 @@ A: Follow these steps:
 
 ### Documentation
 
-- [Related Guide 1](../path/to/guide1.md)
-- [Related Guide 2](../path/to/guide2.md)
+- [Related Guide 1](../README.md)
+- [Related Guide 2](../README.md)
 - [API Reference](./api-reference.md)
 
 ### External Links

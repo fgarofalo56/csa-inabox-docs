@@ -1,6 +1,6 @@
 # TROUBLESHOOTING
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **TROUBLESHOOTING**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **TROUBLESHOOTING**
 
 ## Overview
 

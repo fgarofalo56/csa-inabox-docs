@@ -1,6 +1,6 @@
 # 📚 Objects Resources - CSA-in-a-Box
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📊 [Presentations](../../README.md)** | **📦 Resources** | **👤 Objects**
+> **🏠 [Home](../../../../../resources/README.md)** | **📖 [Documentation](../../../../../resources/README.md)** | **🎬 [Multimedia](../../../../../resources/README.md)** | **📊 [Presentations](../../../../../resources/README.md)** | **📦 Resources** | **👤 Objects**
 
 ![Type: Resources](https://img.shields.io/badge/Type-Resources-blue)
 ![Category: Animations](https://img.shields.io/badge/Category-Animations-green)
@@ -59,15 +59,15 @@ resources/animations/objects/
 
 ### Guidelines
 
-- [Brand Guidelines](../../guides/brand-guidelines.md)
-- [Accessibility Guide](../../guides/accessibility.md)
-- [Best Practices](../../guides/best-practices.md)
+- [Brand Guidelines](../../../../README.md)
+- [Accessibility Guide](../../../../README.md)
+- [Best Practices](../../../../README.md)
 
 ### Related Resources
 
 - [Other Resource Categories](../README.md)
-- [Presentation Templates](../../../templates/README.md)
-- [Multimedia Index](../../../MULTIMEDIA_INDEX.md)
+- [Presentation Templates](../../../../README.md)
+- [Multimedia Index](../../../../README.md)
 
 ## 💡 Tips and Best Practices
 

@@ -1,6 +1,6 @@
 # 🔗 Delta Sharing Setup Guide
 
-> __🏠 [Home](../../../README.md)__ | __📘 [Implementation](../README.md)__ | __🧪 [Databricks](README.md)__ | __🔗 Delta Sharing__
+> __🏠 [Home](../../README.md)__ | __📘 [Implementation](../README.md)__ | __🧪 [Databricks](README.md)__ | __🔗 Delta Sharing__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)

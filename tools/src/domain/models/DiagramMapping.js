@@ -91,8 +91,7 @@ export class DiagramMapping {
    * @returns {string|null} - Diagram name or null if not identified
    */
   identifyDiagram(content, filePath, context = '') {
-    const path = require('path');
-    const fileName = path.basename(filePath, '.md');
+    const fileName = filePath.split('/').pop()?.replace('.md', '') || filePath.split('\\').pop()?.replace('.md', '') || '';
     const fullContent = (content + ' ' + filePath + ' ' + context).toLowerCase();
 
     // Direct filename matches
@@ -154,10 +153,22 @@ export class DiagramMapping {
    * @returns {string} - Relative path to image
    */
   getRelativeImagePath(currentFilePath, imageName, baseDir) {
-    const path = require('path');
-    const currentDir = path.dirname(currentFilePath);
-    const imagesDir = path.join(baseDir, 'docs', 'images', 'diagrams');
-    const relativePath = path.relative(currentDir, imagesDir);
-    return path.join(relativePath, `${imageName}.png`).replace(/\\/g, '/');
+    // Use dynamic import-compatible approach for path module in ESM
+    const pathParts = currentFilePath.replace(/\\/g, '/').split('/');
+    pathParts.pop(); // Remove filename to get directory
+    const currentDir = pathParts.join('/');
+    const imagesDir = [baseDir, 'docs', 'images', 'diagrams'].join('/').replace(/\\/g, '/');
+
+    // Calculate relative path from currentDir to imagesDir
+    const fromParts = currentDir.split('/').filter(Boolean);
+    const toParts = imagesDir.split('/').filter(Boolean);
+    let commonLength = 0;
+    while (commonLength < fromParts.length && commonLength < toParts.length && fromParts[commonLength] === toParts[commonLength]) {
+      commonLength++;
+    }
+    const upCount = fromParts.length - commonLength;
+    const downParts = toParts.slice(commonLength);
+    const relativePath = [...Array(upCount).fill('..'), ...downParts, `${imageName}.png`].join('/');
+    return relativePath;
   }
 }

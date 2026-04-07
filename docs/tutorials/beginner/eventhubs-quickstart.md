@@ -1,6 +1,6 @@
 # ⚡ Azure Event Hubs Quickstart
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__ | __⚡ Event Hubs__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__ | __⚡ Event Hubs__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Level](https://img.shields.io/badge/Level-Beginner-green)
@@ -439,7 +439,7 @@ __Throttling Errors__
 ### __Related Learning Paths__
 
 - [Data Engineer Path](../learning-paths/data-engineer-path.md)
-- [Streaming Architecture Patterns](../../architecture/README.md)
+- [Streaming Architecture Patterns](../../solutions/azure-realtime-analytics/architecture/README.md)
 
 ## 🧹 Cleanup
 

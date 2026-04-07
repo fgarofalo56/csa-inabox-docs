@@ -1,6 +1,6 @@
 # 🔄 HTAP (Hybrid Transactional/Analytical Processing) Patterns
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🔄 Hybrid Architectures__ | __🔄 HTAP Patterns__
+> __🏠 [Home](../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🔄 Hybrid Architectures__ | __🔄 HTAP Patterns__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -856,7 +856,7 @@ customer_360_df.cache()
 
 - [Azure Synapse Link for Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/synapse-link)
 - [Cosmos DB Analytical Store](https://docs.microsoft.com/azure/cosmos-db/analytical-store-introduction)
-- [Synapse Analytics Best Practices](../../best-practices/performance-optimization.md)
+- [Synapse Analytics Best Practices](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
 
 ### Reference Architectures
 

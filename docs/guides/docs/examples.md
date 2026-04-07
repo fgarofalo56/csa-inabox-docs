@@ -1,6 +1,6 @@
 # Documentation Examples
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Guides [Guides](../README.md)** | **Templates**
+> **Home [Home](../../README.md)** | **Documentation** | **Guides [Guides](../README.md)** | **Templates**
 
 ---
 
@@ -23,7 +23,7 @@ This guide provides practical examples and templates for creating high-quality d
 
 ### Title: Getting Started with Azure Synapse Analytics
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Getting Started**
+> **Home [Home](../../README.md)** | **Documentation** | **Getting Started**
 
 #### Overview
 
@@ -88,7 +88,7 @@ FROM OPENROWSET(
 
 ### Title: Building a Real-Time Analytics Pipeline
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Tutorials**
+> **Home [Home](../../README.md)** | **Documentation** | **Tutorials**
 
 #### What You'll Learn
 
@@ -235,7 +235,7 @@ You've successfully built a real-time analytics pipeline! You learned how to:
 
 ### Title: How to Optimize Synapse SQL Pool Performance
 
-> **Home [Home](../../../README.md)** | **Documentation** | **How-To Guides**
+> **Home [Home](../../README.md)** | **Documentation** | **How-To Guides**
 
 #### Problem
 
@@ -333,7 +333,7 @@ GROUP BY p.Category;
 
 ### Title: Understanding Synapse Spark Pools
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Concepts**
+> **Home [Home](../../README.md)** | **Documentation** | **Concepts**
 
 #### Introduction
 
@@ -391,7 +391,7 @@ Configuration:
 
 ### Title: Synapse T-SQL Syntax Reference
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Reference**
+> **Home [Home](../../README.md)** | **Documentation** | **Reference**
 
 #### CREATE TABLE
 
@@ -457,7 +457,7 @@ WITH
 
 ### Title: Troubleshooting Synapse Connection Issues
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Troubleshooting**
+> **Home [Home](../../README.md)** | **Documentation** | **Troubleshooting**
 
 #### Problem: Cannot Connect to Synapse Workspace
 

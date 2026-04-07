@@ -1,6 +1,6 @@
 # 📊 Monitoring Dashboard Builder
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Dashboard Builder**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Dashboard Builder**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -137,8 +137,8 @@ const alertRules = {
 
 ## 📚 Additional Resources
 
-- [Monitoring Guide](../../monitoring/README.md)
-- [Performance Optimization](../../best-practices/performance-optimization.md)
+- [Monitoring Guide](../../09-monitoring/README.md)
+- [Performance Optimization](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
 
 ## 💬 Feedback
 

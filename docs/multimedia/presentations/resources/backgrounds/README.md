@@ -1,6 +1,6 @@
 # 📚 Backgrounds Resources - CSA-in-a-Box
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📊 [Presentations](../../README.md)** | **📦 Resources** | **👤 Backgrounds**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📊 [Presentations](../../README.md)** | **📦 Resources** | **👤 Backgrounds**
 
 ![Type: Resources](https://img.shields.io/badge/Type-Resources-blue)
 ![Category: ](https://img.shields.io/badge/Category--green)

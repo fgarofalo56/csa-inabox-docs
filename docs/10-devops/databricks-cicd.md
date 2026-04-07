@@ -1,6 +1,6 @@
 # Databricks CI/CD
 
-> **[Home](../README.md)** | **[DevOps](../devops/README.md)** | **Databricks CI/CD**
+> **[Home](../README.md)** | **[DevOps](../tutorials/learning-paths/devops/README.md)** | **Databricks CI/CD**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-Azure%20Databricks-orange?style=flat-square)
@@ -410,9 +410,9 @@ databricks/
 
 ## Related Documentation
 
-- [Databricks Best Practices](../best-practices/databricks/README.md)
-- [MLOps Guide](../best-practices/ml-operations/README.md)
-- [DevOps Overview](../devops/README.md)
+- [Databricks Best Practices](../05-best-practices/service-specific/databricks/README.md)
+- [MLOps Guide](../05-best-practices/operational-excellence/README.md)
+- [DevOps Overview](../tutorials/learning-paths/devops/README.md)
 
 ---
 

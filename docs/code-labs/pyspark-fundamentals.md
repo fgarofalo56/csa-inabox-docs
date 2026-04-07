@@ -1,6 +1,6 @@
 # PySpark Fundamentals Lab
 
-> **[Home](../README.md)** | **[Code Labs](README.md)** | **PySpark Fundamentals**
+> **[Home](./README.md)** | **[Code Labs](./README.md)** | **PySpark Fundamentals**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Level](https://img.shields.io/badge/Level-Beginner-green?style=flat-square)
@@ -365,7 +365,7 @@ summary.write \
 ## Related Documentation
 
 - [Spark SQL Tutorial](../tutorials/intermediate/spark-sql-tutorial.md)
-- [Spark Performance Tuning](../best-practices/spark-performance/README.md)
+- [Spark Performance Tuning](./README.md)
 - [Delta Lake Guide](../delta-lake-guide.md)
 
 ---

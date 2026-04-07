@@ -1,6 +1,6 @@
 # 🏗️ Architecture Documentation
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🏗️ Architecture**
+> **🏠 [Home](../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🏗️ Architecture**
 
 ---
 

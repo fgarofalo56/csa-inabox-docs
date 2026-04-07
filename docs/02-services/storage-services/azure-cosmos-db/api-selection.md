@@ -1,6 +1,6 @@
 # 🔌 API Selection Guide for Azure Cosmos DB
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🌌 [Cosmos DB](README.md)__ | __🔌 API Selection__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🌌 [Cosmos DB](README.md)__ | __🔌 API Selection__
 
 ![Multi-Model](https://img.shields.io/badge/APIs-5%20Supported-blue?style=flat-square)
 

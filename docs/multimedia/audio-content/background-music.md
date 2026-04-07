@@ -1,6 +1,6 @@
 # 🎵 Background Music & Audio Assets
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🎵 Background Music**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🎵 Background Music**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Library Size: 100+ Tracks](https://img.shields.io/badge/Tracks-100+-blue)
@@ -303,8 +303,6 @@ Commissioned for Cloud Scale Analytics
 **Licensed Library Music** (Optional):
 ```
 Music licensed from [Epidemic Sound/Artlist]
-```
-```
 
 ### License Restrictions
 

@@ -1,6 +1,6 @@
 # Video Production Best Practices
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Production Best Practices**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Production Best Practices**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Updated: 2025](https://img.shields.io/badge/Updated-2025-blue)
@@ -826,7 +826,6 @@ Layout Example:
 - **[Script Template](./templates/script-template.md)** - Standard script format
 - **[Shot List Template](./templates/shot-list.md)** - Production planning
 - **[Review Checklist](./templates/review-checklist.md)** - Quality assurance
-- **[Thumbnail Templates](./templates/thumbnail-psd)** - Photoshop templates
 
 ### Communities
 

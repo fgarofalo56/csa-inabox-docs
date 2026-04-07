@@ -1,6 +1,6 @@
 # 🛠️ Interactive Demo Development Guide
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎮 [Interactive Demos](../README.md)** | **🛠️ Development**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎮 [Interactive Demos](../README.md)** | **🛠️ Development**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Guide](https://img.shields.io/badge/Type-Guide-blue)

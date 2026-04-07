@@ -9,7 +9,7 @@ category: "Best Practices - Services"
 
 # Synapse-Specific Best Practices
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **🔷 Synapse**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **🔷 Synapse**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)

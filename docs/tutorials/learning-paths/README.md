@@ -1,6 +1,6 @@
 # 🛤️ Progressive Learning Paths
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🛤️ Learning Paths__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🛤️ Learning Paths__
 
 ![Learning Paths](https://img.shields.io/badge/Learning-Role_Based_Paths-blue)
 ![Progressive](https://img.shields.io/badge/Format-Progressive_Skills-green)

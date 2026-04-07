@@ -1,6 +1,6 @@
 # 🏗️ Cloud Scale Analytics Solutions
 
-> **🏠 [Home](../../README.md)** | **📚 [Documentation](../README.md)** | **🏗️ Solutions**
+> **🏠 [Home](../README.md)** | **📚 [Documentation](../README.md)** | **🏗️ Solutions**
 
 ---
 

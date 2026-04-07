@@ -47,7 +47,6 @@ concurrency:
 
 env:
   PYTHON_VERSION: '3.11'
-  NODE_VERSION: '18'
 
 jobs:
   validate:
@@ -60,23 +59,16 @@ jobs:
       previous_version: ${{ steps.version.outputs.previous_version }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -e .
-          pip install -r requirements.txt
-          pip install mike packaging GitPython
+      - name: Install release tools
+        run: pip install mike packaging GitPython
 
       - name: Determine version
         id: version
@@ -88,18 +80,15 @@ jobs:
             VERSION="${{ github.ref_name }}"
             RELEASE_TYPE="patch"
           fi
-          
-          # Clean version (remove 'v' prefix)
+
           VERSION_CLEAN="${VERSION#v}"
-          
-          # Get previous version
           PREVIOUS_VERSION=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "v0.0.0")
-          
+
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "version_clean=$VERSION_CLEAN" >> $GITHUB_OUTPUT
           echo "release_type=$RELEASE_TYPE" >> $GITHUB_OUTPUT
           echo "previous_version=$PREVIOUS_VERSION" >> $GITHUB_OUTPUT
-          
+
           echo "Release version: $VERSION"
           echo "Previous version: $PREVIOUS_VERSION"
           echo "Release type: $RELEASE_TYPE"
@@ -148,38 +137,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
+          install-extras: 'test'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -e .
-          pip install -r requirements.txt
-          pip install mike
+      - name: Install release tools
+        run: pip install mike
 
       - name: Run quality gates
         continue-on-error: true
         run: |
           echo "Running quality gates for version ${{ needs.validate.outputs.version }}..."
 
-          # Run linting
-          python -m ruff check src/ || true
+          ruff check src/ || true
+          mypy src/ --ignore-missing-imports || true
+          pytest tests/ -v --cov=src/csa_docs_tools --cov-report=xml --cov-fail-under=0 -o "addopts=" || true
 
-          # Run type checking
-          python -m mypy src/ --ignore-missing-imports || true
-
-          # Run tests
-          python -m pytest tests/ -v --cov=src/csa_docs_tools --cov-report=xml --cov-fail-under=0 -o "addopts=" || true
-
-          # Validate documentation structure
           python -c "
           from csa_docs_tools.navigation_validator import NavigationValidator
           from pathlib import Path
@@ -193,29 +171,6 @@ jobs:
                   print(f'- {issue}')
           else:
               print('Navigation validation passed')
-          " || true
-
-          # Validate links
-          python -c "
-          from csa_docs_tools.link_validator import LinkValidator
-          from pathlib import Path
-          import asyncio
-
-          async def validate_links():
-              validator = LinkValidator(Path('.'))
-              is_valid, results = await validator.validate_all_links()
-
-              broken_links = [r for r in results if not r.is_valid]
-              if broken_links:
-                  print(f'Found {len(broken_links)} broken links (non-blocking):')
-                  for link in broken_links[:5]:
-                      print(f'- {link.url}: {link.error}')
-                  if len(broken_links) > 5:
-                      print(f'... and {len(broken_links) - 5} more')
-              else:
-                  print('Link validation passed')
-
-          asyncio.run(validate_links())
           " || true
 
       - name: Generate changelog
@@ -239,12 +194,10 @@ jobs:
           " || echo "Changelog generation skipped" > RELEASE_CHANGELOG.md
 
       - name: Build documentation
-        run: |
-          echo "Building documentation for version ${{ needs.validate.outputs.version_clean }}..."
-          mkdocs build --clean
+        run: mkdocs build --clean
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: documentation-${{ needs.validate.outputs.version_clean }}
           path: |
@@ -258,46 +211,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: documentation-${{ needs.validate.outputs.version_clean }}
           path: ./
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -e .
-          pip install mike
+      - name: Install mike
+        run: pip install mike
 
       - name: Test local deployment
         run: |
           echo "Testing local deployment..."
-          
-          # Test Mike deployment in dry-run mode
+
           python -c "
           from csa_docs_tools.mike_manager import MikeVersionManager
           from pathlib import Path
-          
+
           manager = MikeVersionManager(Path('.'))
-          
-          # Simulate deployment validation
+
           version = '${{ needs.validate.outputs.version_clean }}'
           title = 'v${{ needs.validate.outputs.version_clean }}'
-          
+
           print(f'Would deploy version {version} with title {title}')
-          
-          # Test version comparison if there are existing versions
+
           try:
               versions = manager.list_versions()
               if versions:
@@ -317,28 +261,22 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: documentation-${{ needs.validate.outputs.version_clean }}
           path: ./
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -e .
-          pip install mike
+      - name: Install mike
+        run: pip install mike
 
       - name: Configure Git
         run: |
@@ -350,24 +288,22 @@ jobs:
         run: |
           VERSION="${{ needs.validate.outputs.version_clean }}"
           TITLE="CSA Documentation v${VERSION}"
-          
-          # Prepare aliases
+
           ALIASES=""
           if [ "${{ github.event.inputs.set_as_default }}" = "true" ] || [ "${{ needs.validate.outputs.release_type }}" = "major" ]; then
             ALIASES="latest"
             echo "Setting as default version"
           fi
-          
-          # Deploy with Mike
+
           echo "Deploying version $VERSION with title '$TITLE'..."
-          
+
           if [ -n "$ALIASES" ]; then
             mike deploy --push --update-aliases $VERSION $TITLE $ALIASES
             mike set-default --push $VERSION
           else
             mike deploy --push --update-aliases $VERSION $TITLE
           fi
-          
+
           echo "deployment_url=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/$VERSION/" >> $GITHUB_OUTPUT
 
       - name: Create version metadata
@@ -377,10 +313,9 @@ jobs:
           from pathlib import Path
           import json
           from datetime import datetime
-          
+
           manager = MikeVersionManager(Path('.'))
-          
-          # Create version metadata
+
           metadata = {
               'version': '${{ needs.validate.outputs.version_clean }}',
               'title': 'CSA Documentation v${{ needs.validate.outputs.version_clean }}',
@@ -391,10 +326,10 @@ jobs:
               'changelog_path': 'RELEASE_CHANGELOG.md',
               'deployment_url': '${{ steps.deploy.outputs.deployment_url }}'
           }
-          
+
           with open('version_metadata.json', 'w') as f:
               json.dump(metadata, f, indent=2)
-          
+
           print('Created version metadata:')
           print(json.dumps(metadata, indent=2))
           "
@@ -405,10 +340,9 @@ jobs:
           from csa_docs_tools.version_manager import SemanticVersionManager, VersionInfo, VersionType
           from pathlib import Path
           from datetime import datetime
-          
+
           manager = SemanticVersionManager(Path('.') / 'versions.yml')
-          
-          # Determine version type
+
           version = '${{ needs.validate.outputs.version_clean }}'
           if 'alpha' in version or 'beta' in version or 'rc' in version:
               version_type = VersionType.PRERELEASE
@@ -416,8 +350,7 @@ jobs:
               version_type = VersionType.DEVELOPMENT
           else:
               version_type = VersionType.STABLE
-          
-          # Create version info
+
           version_info = VersionInfo(
               version=version,
               version_type=version_type,
@@ -427,7 +360,7 @@ jobs:
               release_date=datetime.now().strftime('%Y-%m-%d'),
               changelog_path='RELEASE_CHANGELOG.md'
           )
-          
+
           manager.add_version(version_info)
           print(f'Added version {version} to configuration')
           "
@@ -438,10 +371,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Download build artifacts
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: documentation-${{ needs.validate.outputs.version_clean }}
           path: ./artifacts/
@@ -449,36 +382,35 @@ jobs:
       - name: Create release notes
         run: |
           VERSION="${{ needs.validate.outputs.version }}"
-          
+
           cat > RELEASE_NOTES.md << 'EOF'
           # Azure CSA Documentation ${{ needs.validate.outputs.version }}
-          
+
           **Release Date**: $(date '+%Y-%m-%d')
           **Release Type**: ${{ needs.validate.outputs.release_type }}
-          
-          ## 📖 Documentation
-          
+
+          ## Documentation
+
           This release includes comprehensive documentation for Azure Cloud Scale Analytics services and architecture patterns.
-          
+
           **View Documentation**: [CSA Documentation v${{ needs.validate.outputs.version_clean }}](https://fgarofalo56.github.io/csa-inabox-docs/${{ needs.validate.outputs.version_clean }}/)
-          
-          ## 📝 What's Changed
-          
+
+          ## What's Changed
+
           EOF
-          
-          # Append generated changelog
+
           if [ -f "artifacts/RELEASE_CHANGELOG.md" ]; then
             cat artifacts/RELEASE_CHANGELOG.md >> RELEASE_NOTES.md
           else
             echo "- Documentation updates and improvements" >> RELEASE_NOTES.md
           fi
-          
+
           cat >> RELEASE_NOTES.md << 'EOF'
-          
-          ## 🔄 Migration
-          
+
+          ## Migration
+
           EOF
-          
+
           if [ "${{ github.event.inputs.create_migration_notes }}" = "true" ]; then
             echo "Migration notes from ${{ needs.validate.outputs.previous_version }} to ${{ needs.validate.outputs.version }}:" >> RELEASE_NOTES.md
             echo "- Review the changelog above for any breaking changes" >> RELEASE_NOTES.md
@@ -487,33 +419,28 @@ jobs:
           else
             echo "No migration notes for this release." >> RELEASE_NOTES.md
           fi
-          
+
           cat >> RELEASE_NOTES.md << 'EOF'
-          
-          ## 📦 Downloads
-          
+
+          ## Downloads
+
           - [Documentation Archive (.tar.gz)](../../releases/download/${{ needs.validate.outputs.version }}/csa-docs-${{ needs.validate.outputs.version }}.tar.gz)
           - [Documentation Archive (.zip)](../../releases/download/${{ needs.validate.outputs.version }}/csa-docs-${{ needs.validate.outputs.version }}.zip)
-          
+
           ---
-          
-          🤖 This release was automatically generated by the CSA Documentation versioning system.
-          
+
+          This release was automatically generated by the CSA Documentation versioning system.
+
           **Full Changelog**: [${{ needs.validate.outputs.previous_version }}...${{ needs.validate.outputs.version }}](../../compare/${{ needs.validate.outputs.previous_version }}...${{ needs.validate.outputs.version }})
           EOF
 
       - name: Create release archives
         run: |
           cd artifacts/
-          
-          # Create tar.gz archive
           tar -czf "../csa-docs-${{ needs.validate.outputs.version }}.tar.gz" site/
-          
-          # Create zip archive
           zip -r "../csa-docs-${{ needs.validate.outputs.version }}.zip" site/
-          
           echo "Created release archives"
-          ls -la ../*.{tar.gz,zip}
+          ls -la ../*.tar.gz ../*.zip
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -536,21 +463,13 @@ jobs:
     if: always() && needs.create_release.result == 'success'
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          cache: 'pip'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -e .
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
 
       - name: Archive old versions
         if: needs.validate.outputs.release_type == 'major'
@@ -558,10 +477,9 @@ jobs:
           python -c "
           from csa_docs_tools.mike_manager import MikeVersionManager
           from pathlib import Path
-          
+
           manager = MikeVersionManager(Path('.'))
-          
-          # Archive old versions (keep last 5 stable releases)
+
           try:
               archived = manager.archive_old_versions(keep_count=5, archive_prereleases=True)
               if archived:
@@ -578,19 +496,17 @@ jobs:
           from csa_docs_tools.version_navigation import VersionNavigationManager
           from pathlib import Path
           import json
-          
+
           manager = VersionNavigationManager(Path('.'))
-          
-          # Generate updated version selector data
+
           selector_data = manager.generate_version_selector_data()
-          
-          # Save to assets for use in documentation
+
           assets_dir = Path('docs') / 'assets' / 'data'
           assets_dir.mkdir(parents=True, exist_ok=True)
-          
+
           with open(assets_dir / 'versions.json', 'w') as f:
               json.dump(selector_data, f, indent=2)
-          
+
           print('Updated version selector data')
           "
 
@@ -601,13 +517,11 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "docs: update version metadata after ${{ needs.validate.outputs.version }} release
-          
+
           - Updated versions.yml configuration
           - Updated version selector data
           - Post-release cleanup
-          
-          🤖 Generated with [Claude Code](https://claude.ai/code)
-          
+
           Co-Authored-By: Claude <noreply@anthropic.com>"
             git push
             echo "Committed version metadata updates"

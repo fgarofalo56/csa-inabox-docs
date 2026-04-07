@@ -1,6 +1,6 @@
 # Asset Management Guide
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **📦 Asset Management**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **📦 Asset Management**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 

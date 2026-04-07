@@ -170,5 +170,5 @@ This layered approach ensures that metadata synchronization complexity is applie
 
 1. [Delta Lakehouse Architecture](../delta-lakehouse/README.md)
 2. [Serverless SQL Architecture](../serverless-sql/README.md)
-3. [Best Practices](../../best-practices/README.md)
-4. [Code Examples](../../code-examples/README.md)
+3. [Best Practices](../../data-patterns/README.md)
+4. [Code Examples](../../data-patterns/README.md)

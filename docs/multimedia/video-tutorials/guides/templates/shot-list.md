@@ -1,6 +1,6 @@
 # Video Shot List Template
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Guides** | **Shot List**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Guides** | **Shot List**
 
 ![Type: Template](https://img.shields.io/badge/Type-Template-blue)
 ![Version: 1.0](https://img.shields.io/badge/Version-1.0-green)

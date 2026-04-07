@@ -1,6 +1,6 @@
 # < Edge Deployments
 
-> __< [Home](../../../../README.md)__ | __= [Overview](../../../01-overview/README.md)__ | __= [Services](../../README.md)__ | __= [Streaming Services](../README.md)__ | __ [Stream Analytics](README.md)__ | __< Edge Deployments__
+> __< [Home](../../../README.md)__ | __= [Overview](../../../01-overview/README.md)__ | __= [Services](../../README.md)__ | __= [Streaming Services](../README.md)__ | __ [Stream Analytics](README.md)__ | __< Edge Deployments__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
 ![Type](https://img.shields.io/badge/Type-IoT%20Edge-blue?style=flat-square)
@@ -633,13 +633,13 @@ public class EdgeDataEncryption
 
 ### Integration Guides
 
-- [__IoT Hub Integration__](../../../04-implementation-guides/integration-scenarios/iothub-stream-analytics.md)
-- [__Edge Module Development__](../../../04-implementation-guides/integration-scenarios/iot-edge-modules.md)
+- [__IoT Hub Integration__](../../../04-implementation-guides/integration-scenarios/README.md)
+- [__Edge Module Development__](../../../04-implementation-guides/integration-scenarios/README.md)
 
 ### Best Practices
 
-- [__Edge Security__](../../../05-best-practices/cross-cutting-concerns/security/iot-edge-security.md)
-- [__Edge Performance__](../../../05-best-practices/cross-cutting-concerns/performance/edge-optimization.md)
+- [__Edge Security__](../../../05-best-practices/cross-cutting-concerns/security/README.md)
+- [__Edge Performance__](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
 - [__Offline Scenarios__](../../../05-best-practices/operational-excellence/edge-offline-handling.md)
 
 ---

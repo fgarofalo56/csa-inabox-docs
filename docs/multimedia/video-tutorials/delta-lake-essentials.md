@@ -1,6 +1,6 @@
 # Video Script: Delta Lake Essentials
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Delta Lake Essentials**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Delta Lake Essentials**
 
 ![Duration: 28 minutes](https://img.shields.io/badge/Duration-28%20minutes-blue)
 ![Level: Intermediate](https://img.shields.io/badge/Level-Intermediate-yellow)

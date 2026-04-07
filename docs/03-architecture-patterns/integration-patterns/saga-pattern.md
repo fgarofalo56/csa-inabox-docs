@@ -1,6 +1,6 @@
 # 🔄 Saga Pattern
 
-> __🏠 [Home](../../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __🔗 Integration Patterns__ | __Saga Pattern__
+> __🏠 [Home](../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __🔗 Integration Patterns__ | __Saga Pattern__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -202,7 +202,7 @@ async def with_timeout(activity_func, payload, timeout_seconds=300):
 
 - [Event Sourcing](../data-patterns/event-sourcing.md)
 - [Event Hubs](../../02-services/streaming-services/azure-event-hubs/README.md)
-- [Durable Functions](../../02-services/orchestration-services/azure-functions/README.md)
+- [Durable Functions](../../02-services/orchestration-services/azure-data-factory/README.md)
 
 ---
 

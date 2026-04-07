@@ -27,33 +27,33 @@ This section covers DevOps practices for analytics workloads:
 
 | Document | Description |
 |----------|-------------|
-| [Synapse CI/CD](../devops/pipeline-ci-cd/README.md) | Synapse workspace deployment |
-| [Databricks CI/CD](../06-devops/databricks-cicd.md) | Databricks deployment automation |
-| [ADF CI/CD](adf-cicd.md) | Data Factory pipeline deployment |
+| [Synapse CI/CD](../08-solutions/ml-pipeline/README.md) | Synapse workspace deployment |
+| [Databricks CI/CD](databricks-cicd.md) | Databricks deployment automation |
+| [ADF CI/CD](README.md) | Data Factory pipeline deployment |
 
 ### Infrastructure as Code
 
 | Document | Description |
 |----------|-------------|
-| [Bicep Templates](bicep-templates.md) | Azure Bicep for analytics |
-| [Terraform Modules](terraform-modules.md) | Terraform for multi-cloud |
-| [ARM Templates](arm-templates.md) | Legacy ARM template reference |
+| [Bicep Templates](README.md) | Azure Bicep for analytics |
+| [Terraform Modules](README.md) | Terraform for multi-cloud |
+| [ARM Templates](README.md) | Legacy ARM template reference |
 
 ### Testing
 
 | Document | Description |
 |----------|-------------|
-| [Data Quality Testing](../devops/automated-testing/README.md) | Automated data quality checks |
-| [Pipeline Testing](pipeline-testing.md) | Unit and integration tests |
-| [Performance Testing](performance-testing.md) | Load and stress testing |
+| [Data Quality Testing](README.md) | Automated data quality checks |
+| [Pipeline Testing](README.md) | Unit and integration tests |
+| [Performance Testing](README.md) | Load and stress testing |
 
 ### Security
 
 | Document | Description |
 |----------|-------------|
 | [Security Best Practices](security-best-practices.md) | DevSecOps for analytics |
-| [Secret Management](secret-management.md) | Key Vault integration |
-| [Compliance Automation](compliance-automation.md) | Automated compliance checks |
+| [Secret Management](README.md) | Key Vault integration |
+| [Compliance Automation](README.md) | Automated compliance checks |
 
 ---
 
@@ -160,8 +160,8 @@ jobs:
 
 ## Related Documentation
 
-- [Monitoring Setup](../monitoring/README.md)
-- [Security Best Practices](../best-practices/security/README.md)
+- [Monitoring Setup](../09-monitoring/README.md)
+- [Security Best Practices](../05-best-practices/cross-cutting-concerns/security/README.md)
 - [Implementation Guides](../04-implementation-guides/README.md)
 
 ---

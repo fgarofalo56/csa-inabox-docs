@@ -9,6 +9,9 @@ on:
     # Run tests weekly on Sundays at 6 AM UTC
     - cron: '0 6 * * 0'
 
+permissions:
+  contents: read
+
 env:
   PYTHON_VERSION: '3.11'
   NODE_VERSION: '18'
@@ -18,206 +21,123 @@ jobs:
     name: Test Documentation Quality
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    
+
     strategy:
       fail-fast: false
       matrix:
         test-type: [unit, integration]
-        
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      
-      - name: Set up Python
-        uses: actions/setup-python@v6
+
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
+          install-extras: 'test'
+
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
-      
-      - name: Cache Python dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-      
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            libmagic1 \
-            libffi-dev \
-            libssl-dev
-      
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip setuptools wheel
-          pip install -r requirements.txt
-          pip install -r requirements-test.txt
-          pip install -e .
-      
-      - name: Install Node.js dependencies for markdownlint
-        run: |
-          npm install -g markdownlint-cli
-      
-      - name: Verify installation
-        run: |
-          python --version
-          pip --version
-          markdownlint --version
-          mkdocs --version
-      
+
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+
       - name: Run unit tests
         if: matrix.test-type == 'unit'
-        continue-on-error: true
-        run: |
-          pytest tests/unit/ \
-            --cov=src/csa_docs_tools \
-            --cov-branch \
-            --cov-report=xml:coverage-unit.xml \
-            --cov-report=term-missing \
-            --junitxml=junit-unit.xml \
-            --cov-fail-under=0 \
-            -v -o "addopts="
+        uses: ./.github/actions/run-tests
+        with:
+          test-type: 'unit'
+          coverage-fail-under: '70'
+          upload-coverage: 'true'
 
       - name: Run integration tests
         if: matrix.test-type == 'integration'
-        continue-on-error: true
-        run: |
-          pytest tests/integration/ \
-            --cov=src/csa_docs_tools \
-            --cov-branch \
-            --cov-report=xml:coverage-integration.xml \
-            --cov-report=term-missing \
-            --junitxml=junit-integration.xml \
-            --cov-fail-under=0 \
-            -v -o "addopts=" \
-            -m "not network"
-      
+        uses: ./.github/actions/run-tests
+        with:
+          test-type: 'integration'
+          coverage-fail-under: '0'
+          extra-args: '-m "not network"'
+          upload-coverage: 'true'
+
       - name: Upload coverage to Codecov
         if: always()
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v6
         with:
           file: coverage-${{ matrix.test-type }}.xml
           flags: ${{ matrix.test-type }}
           name: codecov-${{ matrix.test-type }}
           fail_ci_if_error: false
-      
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v6
-        with:
-          name: test-results-${{ matrix.test-type }}
-          path: |
-            junit-${{ matrix.test-type }}.xml
-            htmlcov/
-            coverage-${{ matrix.test-type }}.xml
-  
+
   lint-and-format:
     name: Lint and Format Check
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-      
-      - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/checkout@v6
+
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install ruff mypy black isort
-          pip install -r requirements.txt
-          pip install -r requirements-test.txt
-          pip install -e .
+          install-extras: 'test,dev'
 
       - name: Run ruff linting
-        continue-on-error: true
-        run: |
-          ruff check src/ tests/
+        run: ruff check src/ tests/
 
       - name: Run ruff formatting check
-        continue-on-error: true
-        run: |
-          ruff format --check src/ tests/
+        run: ruff format --check src/ tests/
 
       - name: Run mypy type checking
         continue-on-error: true
-        run: |
-          mypy src/csa_docs_tools/ --ignore-missing-imports --no-strict-optional
+        run: mypy src/csa_docs_tools/ --ignore-missing-imports --no-strict-optional
 
       - name: Check import sorting
-        continue-on-error: true
         run: |
+          pip install isort
           isort --check-only --diff src/ tests/
 
   test-documentation-build:
     name: Test MkDocs Build
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-      
-      - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/checkout@v6
+
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
+
+      - name: Build and upload documentation
+        uses: ./.github/actions/build-docs
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
-      - name: Install MkDocs dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      
-      - name: Test MkDocs configuration
-        run: |
-          mkdocs build --verbose
-      
-      - name: Upload built site
-        if: success()
-        uses: actions/upload-artifact@v6
-        with:
-          name: mkdocs-site
-          path: site/
-          retention-days: 7
+          verbose: 'true'
+          upload-artifact: 'true'
+          artifact-name: mkdocs-site
 
   test-link-validation:
     name: Link Validation
     runs-on: ubuntu-latest
     timeout-minutes: 25
-    if: github.event_name != 'schedule'  # Skip on scheduled runs to avoid rate limiting
-    
+    if: github.event_name != 'schedule'
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-      
-      - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/checkout@v6
+
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install -r requirements-test.txt
-      
+          install-extras: 'test'
+
       - name: Run internal link validation
         continue-on-error: true
         run: |
-          pip install -e . || true
           python -c "
           import asyncio
           from csa_docs_tools import LinkValidator
@@ -235,62 +155,35 @@ jobs:
 
           asyncio.run(validate())
           " || true
-      
-      - name: Run external link validation (sample)
-        if: github.event_name == 'schedule'
-        continue-on-error: true
-        run: |
-          pip install -e . || true
-          python -c "
-          import asyncio
-          from csa_docs_tools import LinkValidator
-          from pathlib import Path
-
-          async def validate():
-              async with LinkValidator(Path('.')) as validator:
-                  results = await validator.validate_all_links(check_external=True)
-                  report = validator.generate_report(results)
-                  print(f'All links: {report[\"valid_links\"]}/{report[\"total_links\"]} valid')
-                  print(f'Success rate: {report[\"success_rate\"]:.1f}%')
-
-          asyncio.run(validate())
-          " || true
 
   markdown-quality:
     name: Markdown Quality Check
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-      
-      - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/checkout@v6
+
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
+          install-extras: 'test'
+
       - name: Set up Node.js
         uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
-      
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install -r requirements-test.txt
-          npm install -g markdownlint-cli
-      
+
       - name: Run markdownlint
         continue-on-error: true
         run: |
+          npm install -g markdownlint-cli
           markdownlint docs/**/*.md --config .markdownlint.json || true
 
       - name: Run Python markdown quality checks
         continue-on-error: true
         run: |
-          pip install -e . || true
           python -c "
           from csa_docs_tools import MarkdownQualityChecker
           from pathlib import Path
@@ -309,26 +202,19 @@ jobs:
     name: Image Validation
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-      
-      - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/checkout@v6
+
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install -r requirements-test.txt
-      
+          install-extras: 'test'
+
       - name: Run image validation
         continue-on-error: true
         run: |
-          pip install -e . || true
           python -c "
           from csa_docs_tools import ImageReferenceValidator
           from pathlib import Path
@@ -342,40 +228,32 @@ jobs:
           print(f'  Image issues: {report[\"total_image_issues\"]}')
           print(f'  Unused images: {report[\"unused_images\"]}')
           print(f'  Health score: {report[\"image_health_score\"]:.1f}/100')
-
-          # Report unused images but don't fail
-          if report['unused_images'] > 0:
-              print(f'Found {report[\"unused_images\"]} unused images')
           " || true
 
   security-scan:
     name: Security Scan
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-      
-      - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/checkout@v6
+
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
         with:
-          python-version: ${{ env.PYTHON_VERSION }}
-      
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install safety bandit
-          pip install -r requirements.txt
-          pip install -r requirements-test.txt
-      
+          install-extras: 'test'
+
       - name: Run safety check
+        continue-on-error: true
         run: |
+          pip install safety
           safety check --json || true
-      
+
       - name: Run bandit security linter
         run: |
-          bandit -r src/ -f json || true
+          pip install bandit
+          bandit -r src/ -f json -ll
 
   generate-report:
     name: Generate Test Report
@@ -383,14 +261,14 @@ jobs:
     needs: [test-documentation, test-documentation-build, markdown-quality, image-validation]
     if: always()
     timeout-minutes: 10
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
-      
+        uses: actions/checkout@v6
+
       - name: Download all artifacts
-        uses: actions/download-artifact@v7
-      
+        uses: actions/download-artifact@v8
+
       - name: Generate combined report
         run: |
           echo "# Documentation Test Report" > test-report.md
@@ -398,24 +276,15 @@ jobs:
           echo "Generated on: $(date)" >> test-report.md
           echo "Commit: ${{ github.sha }}" >> test-report.md
           echo "" >> test-report.md
-          
+
           echo "## Job Status" >> test-report.md
           echo "- Unit Tests: ${{ needs.test-documentation.result }}" >> test-report.md
           echo "- MkDocs Build: ${{ needs.test-documentation-build.result }}" >> test-report.md
           echo "- Markdown Quality: ${{ needs.markdown-quality.result }}" >> test-report.md
           echo "- Image Validation: ${{ needs.image-validation.result }}" >> test-report.md
-          echo "" >> test-report.md
-          
-          if [ -f "test-results-unit/junit-unit.xml" ]; then
-              echo "## Unit Test Results Available" >> test-report.md
-          fi
-          
-          if [ -f "test-results-integration/junit-integration.xml" ]; then
-              echo "## Integration Test Results Available" >> test-report.md
-          fi
-      
+
       - name: Upload combined report
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: documentation-test-report
           path: test-report.md
@@ -427,10 +296,9 @@ jobs:
     needs: [test-documentation, test-documentation-build, markdown-quality, image-validation]
     if: failure() && github.event_name == 'push'
     timeout-minutes: 5
-    
+
     steps:
       - name: Notify failure
         run: |
           echo "Documentation tests failed on push to ${{ github.ref }}"
           echo "Please check the workflow logs and fix any issues."
-          # Add notification logic here (Slack, email, etc.) if needed

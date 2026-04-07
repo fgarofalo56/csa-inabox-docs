@@ -1,6 +1,6 @@
 # 🏗️ Azure Databricks Workspace Setup
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🧪 [Azure Databricks](README.md)** | **🏗️ Workspace Setup**
+> **🏠 [Home](../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🧪 [Azure Databricks](README.md)** | **🏗️ Workspace Setup**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Difficulty](https://img.shields.io/badge/Difficulty-Intermediate-yellow?style=flat-square)
@@ -906,7 +906,7 @@ GROUP BY cluster_id;
 1. **[Configure Unity Catalog](unity-catalog/README.md)** - Set up centralized governance
 2. **[Create Delta Live Tables Pipeline](delta-live-tables/README.md)** - Build ETL workflows
 3. **[Set Up MLflow](mlflow-integration/README.md)** - Enable ML lifecycle management
-4. **[Implement Security](../../../05-best-practices/cross-cutting-concerns/security/databricks-security.md)** - Harden your deployment
+4. **[Implement Security](../../../05-best-practices/cross-cutting-concerns/security/README.md)** - Harden your deployment
 
 ---
 
@@ -914,7 +914,7 @@ GROUP BY cluster_id;
 
 - [**Azure Databricks Documentation**](https://docs.microsoft.com/azure/databricks/)
 - [**Networking Best Practices**](../../../05-best-practices/cross-cutting-concerns/networking/databricks-networking.md)
-- [**Security Hardening Guide**](../../../05-best-practices/cross-cutting-concerns/security/databricks-security.md)
+- [**Security Hardening Guide**](../../../05-best-practices/cross-cutting-concerns/security/README.md)
 - [**Cost Optimization**](../../../05-best-practices/cross-cutting-concerns/cost-optimization/databricks-costs.md)
 
 ---

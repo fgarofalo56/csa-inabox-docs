@@ -1,6 +1,6 @@
 # Lambda Architecture Pattern
 
-> **🏠 [Home](../../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ [Streaming Architectures](README.md)** | **Lambda Architecture**
+> **🏠 [Home](../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ [Streaming Architectures](README.md)** | **Lambda Architecture**
 
 ![Real-time](https://img.shields.io/badge/Type-Hybrid%20Processing-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)

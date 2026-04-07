@@ -1,6 +1,6 @@
 # 🔒 Row-Level Security Implementation
 
-> __🏠 [Home](../../../README.md)__ | __📘 [Implementation](../README.md)__ | __🧪 [Databricks](README.md)__ | __🔒 Row-Level Security__
+> __🏠 [Home](../../README.md)__ | __📘 [Implementation](../README.md)__ | __🧪 [Databricks](README.md)__ | __🔒 Row-Level Security__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -84,7 +84,7 @@ SELECT region, COUNT(*) FROM sales.orders GROUP BY region;
 
 - [Unity Catalog External Locations](unity-catalog-external-locations.md)
 - [Delta Sharing Setup](delta-sharing-setup.md)
-- [Security Best Practices](../../05-best-practices/cross-cutting-concerns/security/databricks-security.md)
+- [Security Best Practices](../../05-best-practices/cross-cutting-concerns/security/README.md)
 
 ---
 

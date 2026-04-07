@@ -1,6 +1,6 @@
 # 🛠️ Multimedia Tools & Utilities
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🛠️ Tools**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🛠️ Tools**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Tools: 15+](https://img.shields.io/badge/Tools-15+-blue)

@@ -1,6 +1,6 @@
 # 📡 Audio Distribution Channels
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **📡 Distribution**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **📡 Distribution**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Channels: 10+](https://img.shields.io/badge/Channels-10+-blue)

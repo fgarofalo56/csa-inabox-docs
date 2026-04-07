@@ -174,13 +174,14 @@ from reports.generator import ReportGenerator, ReportType
 
 app = FastAPI(title="CSA Docs Monitoring API", version="1.0.0")
 
-# CORS configuration
+# CORS configuration - restrict to known origins from environment
+ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS", "http://localhost:3838,http://localhost:8056").split(",")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type", "Authorization"],
 )
 
 # Initialize components

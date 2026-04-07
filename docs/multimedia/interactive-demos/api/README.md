@@ -1,6 +1,6 @@
 # 🔌 Interactive Demo APIs
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎮 [Interactive Demos](../README.md)** | **🔌 API Reference**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎮 [Interactive Demos](../README.md)** | **🔌 API Reference**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: API](https://img.shields.io/badge/Type-API-blue)
@@ -545,7 +545,7 @@ describe('Interactive Demo', () => {
 - [Interactive Demos Index](../README.md)
 - [Component Library](../components/README.md)
 - [Development Guide](../../production-guide/README.md)
-- [Examples](../../../code-examples/README.md)
+- [Examples](../../../06-code-examples/README.md)
 
 ## 📦 Installation
 

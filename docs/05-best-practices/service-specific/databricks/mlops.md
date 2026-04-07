@@ -252,7 +252,7 @@ def log_inference(request, prediction, model_version):
 ## Related Documentation
 
 - [ML on Databricks Tutorial](../../../tutorials/intermediate/ml-databricks.md)
-- [Feature Store Architecture](../../../architecture/feature-store/README.md)
+- [Feature Store Architecture](../../../03-architecture-patterns/service-architectures/feature-store/README.md)
 - [Delta Lake Best Practices](delta-lake.md)
 
 ---

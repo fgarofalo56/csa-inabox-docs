@@ -1,6 +1,6 @@
 # Azure HDInsight Troubleshooting Guide
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **👤 Azure HDInsight**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **👤 Azure HDInsight**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Service](https://img.shields.io/badge/Service-HDInsight-blue)
 

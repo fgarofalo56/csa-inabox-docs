@@ -245,8 +245,8 @@ Move and transform data across systems
 
 - [Architecture Patterns](../03-architecture-patterns/README.md)
 - [Security Best Practices](../security/best-practices.md)
-- [Cost Optimization](../05-best-practices/cost-optimization.md)
-- [Performance Optimization](../05-best-practices/performance.md)
+- [Cost Optimization](../05-best-practices/README.md)
+- [Performance Optimization](../multimedia/video-tutorials/scripts/best-practices/performance.md)
 
 ### 🛠️ __Implementation Examples__
 

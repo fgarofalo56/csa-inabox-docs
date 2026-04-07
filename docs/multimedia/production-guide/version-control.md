@@ -1,6 +1,6 @@
 # 🔄 Version Control Guide
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Version: 1.0](https://img.shields.io/badge/Version-1.0-blue)

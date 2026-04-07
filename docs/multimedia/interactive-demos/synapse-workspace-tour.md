@@ -1,6 +1,6 @@
 # 🏢 Synapse Workspace Interactive Tour
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Workspace Tour**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Workspace Tour**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -629,8 +629,8 @@ const savedProgress = JSON.parse(
 **Alternative Formats:**
 
 - **Video Walkthrough:** [Watch on YouTube](https://youtube.com/placeholder)
-- **PDF Guide:** [Download Static Guide](./assets/workspace-tour-guide.pdf)
-- **Slides:** [View Presentation](./assets/workspace-tour-slides.pptx)
+- **PDF Guide:** *workspace-tour-guide.pdf (coming soon)*
+- **Slides:** *workspace-tour-slides.pptx (coming soon)*
 
 ### Code Samples Repository
 
@@ -652,8 +652,8 @@ npm start
 
 ### Related Documentation
 
-- [Synapse Workspace Concepts](../../architecture/README.md)
-- [Security Best Practices](../../best-practices/security.md)
+- [Synapse Workspace Concepts](../../solutions/azure-realtime-analytics/architecture/README.md)
+- [Security Best Practices](../../reference/security.md)
 - [Workspace Management Guide](../../administration/workspace-management.md)
 
 ### Microsoft Documentation

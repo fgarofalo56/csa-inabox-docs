@@ -1,6 +1,6 @@
 # 👀 Code Review Guide
 
-> __🏠 [Home](../../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
+> __🏠 [Home](../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
 
 ---
 
@@ -191,7 +191,7 @@ Use clear prefixes to categorize feedback:
 
 #### Good Feedback Examples
 
-```markdown
+````markdown
 **MUST:** This SQL query is vulnerable to injection attacks.
 Consider using parameterized queries:
 ```python
@@ -212,9 +212,7 @@ __NIT:__ Variable name `d` isn't very descriptive. Maybe `document` or `doc_data
 __QUESTION:__ What happens if `response.json()` fails? Should we handle that exception?
 
 __PRAISE:__ Great use of the builder pattern here! This makes the API much more intuitive to use.
-
-```text
-```
+````
 
 #### Poor Feedback Examples
 

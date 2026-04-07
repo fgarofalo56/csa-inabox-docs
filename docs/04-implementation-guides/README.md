@@ -1,6 +1,6 @@
 # 🚀 Implementation Guides
 
-> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../README.md)__ | __🚀 Implementation Guides__
+> __🏠 [Home](../README.md)__ | __📖 [Documentation](../README.md)__ | __🚀 Implementation Guides__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Guides](https://img.shields.io/badge/Guides-8-blue?style=flat-square)
@@ -356,7 +356,7 @@ Apply best practices and set up monitoring for production readiness.
 - **Synapse**: Pause when not in use, optimize DWU allocation
 - **Storage**: Use lifecycle management, choose appropriate tiers
 
-**[📖 Detailed Cost Guide →](../best-practices/cost-optimization.md)**
+**[📖 Detailed Cost Guide →](../05-best-practices/README.md)**
 
 ---
 
@@ -378,7 +378,7 @@ Apply best practices and set up monitoring for production readiness.
 - **Azure Advisor**: Optimization recommendations
 - **Cost Management**: Budget tracking and alerts
 
-**[📖 Monitoring Guide →](../monitoring/README.md)**
+**[📖 Monitoring Guide →](../09-monitoring/README.md)**
 
 ---
 
@@ -416,7 +416,7 @@ Apply best practices and set up monitoring for production readiness.
 - Check for throttling in metrics
 - Analyze diagnostic logs
 
-**[📖 Full Troubleshooting Guide →](../troubleshooting/README.md)**
+**[📖 Full Troubleshooting Guide →](../07-troubleshooting/README.md)**
 
 ---
 
@@ -438,7 +438,7 @@ Apply best practices and set up monitoring for production readiness.
 
 - [Azure Samples on GitHub](https://github.com/Azure-Samples)
 - [Azure Quickstart Templates](https://github.com/Azure/azure-quickstart-templates)
-- [CSA Code Examples](../code-examples/README.md)
+- [CSA Code Examples](../06-code-examples/README.md)
 
 ---
 

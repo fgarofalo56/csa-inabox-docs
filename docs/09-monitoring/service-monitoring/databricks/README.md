@@ -205,8 +205,8 @@ DatabricksJobs
 ## Related Documentation
 
 - [Delta Live Tables Monitoring](dlt-monitoring.md)
-- [Spark Performance Tuning](../../../best-practices/spark-performance/README.md)
-- [Azure Monitor Integration](../../monitoring-setup/README.md)
+- [Spark Performance Tuning](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
+- [Azure Monitor Integration](../storage/README.md)
 
 ---
 

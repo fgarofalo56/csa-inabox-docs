@@ -1,6 +1,6 @@
 # Serverless SQL Architecture Video Script
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Serverless SQL**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Serverless SQL**
 
 ![Status: Draft](https://img.shields.io/badge/Status-Draft-yellow)
 ![Duration: 16 minutes](https://img.shields.io/badge/Duration-16%20minutes-blue)

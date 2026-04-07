@@ -1,6 +1,6 @@
 # 🔬 Data Scientist Learning Path
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🛤️ [Learning Paths](../README.md)__ | __🔬 Data Scientist__
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🛤️ [Learning Paths](../README.md)__ | __🔬 Data Scientist__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Duration](https://img.shields.io/badge/Duration-8--10_weeks-blue)
@@ -143,8 +143,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Delta Lake Guide](../../../code-examples/delta-lake-guide.md)
-- [Table Optimization](../../../code-examples/delta-lake/optimization/table-optimization.md)
+- [Delta Lake Guide](../../../06-code-examples/delta-lake-guide.md)
+- [Table Optimization](../../../06-code-examples/delta-lake/optimization/table-optimization.md)
 
 __Assessment:__
 
@@ -195,7 +195,7 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Azure ML Integration](../../../code-examples/integration/azure-ml.md)
+- [Azure ML Integration](../../../06-code-examples/integration/azure-ml.md)
 
 ### __Module 2.3: Advanced ML Techniques__ (14 hours)
 
@@ -284,7 +284,7 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Monitoring Setup](../../../monitoring/README.md)
+- [Monitoring Setup](../../../09-monitoring/README.md)
 
 ## 📚 Phase 4: MLOps and Production (2-3 weeks)
 
@@ -459,7 +459,7 @@ After completing this path:
 ## 📞 Getting Help
 
 - __Technical Questions__: [Stack Overflow Azure ML tag](https://stackoverflow.com/questions/tagged/azure-machine-learning)
-- __Community Forum__: [GitHub Discussions](https://github.com/your-org/csa-tutorials/discussions)
+- __Community Forum__: [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
 - __Office Hours__: Weekly data science Q&A sessions
 - __Study Groups__: Join peer learning cohorts
 

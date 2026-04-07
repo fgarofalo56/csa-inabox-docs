@@ -1,6 +1,6 @@
 # 📊 Presentation Templates & Materials
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📊 Presentations__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📊 Presentations__
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Templates: 20+](https://img.shields.io/badge/Templates-20+-blue)
@@ -19,7 +19,7 @@ Professional presentation templates and materials designed for various audiences
 __Duration__: 15 minutes  
 __Slides__: 20  
 __Audience__: C-Level, Decision Makers  
-__[Download PPTX](./templates/executive/csa-overview.pptx)__ | __[View PDF](./templates/executive/csa-overview.pdf)__
+*Download: csa-overview.pptx (coming soon)* | *View: csa-overview.pdf (coming soon)*
 
 ```yaml
 presentation:
@@ -81,7 +81,7 @@ presentation:
 __Duration__: 20 minutes  
 __Slides__: 25  
 __Audience__: Board Members, Stakeholders  
-__[Download PPTX](./templates/executive/digital-transformation.pptx)__
+*Download: digital-transformation.pptx (coming soon)*
 
 ### 🔧 Technical Deep-Dives
 
@@ -90,7 +90,7 @@ __[Download PPTX](./templates/executive/digital-transformation.pptx)__
 __Duration__: 60 minutes  
 __Slides__: 80  
 __Audience__: Architects, Engineers  
-__[Download PPTX](./templates/technical/synapse-architecture.pptx)__
+*Download: synapse-architecture.pptx (coming soon)*
 
 ```markdown
 ## Slide Deck Structure
@@ -137,7 +137,7 @@ __[Download PPTX](./templates/technical/synapse-architecture.pptx)__
 __Duration__: 90 minutes  
 __Slides__: 120  
 __Audience__: DBAs, Performance Engineers  
-__[Download PPTX](./templates/technical/performance-optimization.pptx)__
+*Download: performance-optimization.pptx (coming soon)*
 
 ### 🎓 Training Materials
 
@@ -146,7 +146,7 @@ __[Download PPTX](./templates/technical/performance-optimization.pptx)__
 __Duration__: 4 hours (Half-day workshop)  
 __Slides__: 150  
 __Labs__: 6 hands-on exercises  
-__[Download Course Pack](./templates/training/fundamentals-pack.zip)__
+*Download: fundamentals-pack.zip (coming soon)*
 
 ```javascript
 // Training Module Structure
@@ -220,7 +220,7 @@ const trainingModules = {
 __Duration__: 30 minutes  
 __Slides__: 35  
 __Audience__: Technical Evaluators  
-__[Download PPTX](./templates/demo/poc-presentation.pptx)__
+*Download: poc-presentation.pptx (coming soon)*
 
 ### Demo Script Example
 
@@ -651,17 +651,17 @@ class SynapsePresentation:
 
 ### Icons and Graphics
 
-- [Azure Architecture Icons](./resources/icons/azure/README.md)
+- Azure Architecture Icons
 - [Data Flow Diagrams](./resources/diagrams/README.md)
 - [Background Templates](./resources/backgrounds/README.md)
 - [Chart Templates](./resources/charts/README.md)
 
 ### Stock Images
 
-- [Technology Images](./resources/images/technology/README.md)
-- [Team Photos](./resources/images/team/README.md)
-- [Office Environments](./resources/images/office/README.md)
-- [Abstract Backgrounds](./resources/images/abstract/README.md)
+- Technology Images
+- Team Photos
+- Office Environments
+- Abstract Backgrounds
 
 ### Animations and Transitions
 

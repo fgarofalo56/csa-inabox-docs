@@ -1,7 +1,7 @@
 # <
  Stream Processing Basics
 
-> __< [Home](../../../../README.md)__ | __= [Overview](../../../01-overview/README.md)__ | __= [Services](../../README.md)__ | __= [Streaming Services](../README.md)__ | __ [Stream Analytics](README.md)__ | __<
+> __< [Home](../../../README.md)__ | __= [Overview](../../../01-overview/README.md)__ | __= [Services](../../README.md)__ | __= [Streaming Services](../README.md)__ | __ [Stream Analytics](README.md)__ | __<
  Stream Processing Basics__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Beginner-green?style=flat-square)
@@ -530,7 +530,8 @@ WHERE
 
 ---
 
-## = Debugging and Testing
+## =
+ Debugging and Testing
 
 ### Test Queries with Sample Data
 
@@ -686,14 +687,14 @@ az stream-analytics input create \
 ### Integration Guides
 
 - [__Event Hubs Integration__](../../../04-implementation-guides/integration-scenarios/eventhub-stream-analytics.md)
-- [__Power BI Integration__](../../../04-implementation-guides/integration-scenarios/stream-analytics-powerbi.md)
+- [__Power BI Integration__](../../../04-implementation-guides/integration-scenarios/README.md)
 - [__Cosmos DB Integration__](../../../04-implementation-guides/integration-scenarios/stream-analytics-cosmos.md)
 
 ### Best Practices
 
-- [__Query Optimization__](../../../05-best-practices/cross-cutting-concerns/performance/stream-analytics-optimization.md)
-- [__Error Handling__](../../../05-best-practices/operational-excellence/stream-analytics-errors.md)
-- [__Cost Management__](../../../05-best-practices/cross-cutting-concerns/cost-optimization/stream-analytics-cost.md)
+- [__Query Optimization__](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
+- [__Error Handling__](../../../05-best-practices/operational-excellence/README.md)
+- [__Cost Management__](../../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
 
 ---
 

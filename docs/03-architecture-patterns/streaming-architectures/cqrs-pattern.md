@@ -1,6 +1,6 @@
 # CQRS (Command Query Responsibility Segregation) Pattern
 
-> **🏠 [Home](../../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ [Streaming Architectures](README.md)** | **CQRS Pattern**
+> **🏠 [Home](../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ [Streaming Architectures](README.md)** | **CQRS Pattern**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -1494,7 +1494,7 @@ class MonitoredCommandHandler:
 
 - [Event Sourcing Pattern](event-sourcing.md) - Complementary pattern
 - [Lambda Architecture](lambda-architecture.md) - Batch and stream processing
-- [Best Practices](../../best-practices/README.md) - General best practices
+- [Best Practices](../../05-best-practices/README.md) - General best practices
 
 ### Azure Services
 

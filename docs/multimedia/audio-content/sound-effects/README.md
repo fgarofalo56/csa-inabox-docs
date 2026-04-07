@@ -1,6 +1,6 @@
 # Sound Effects Library
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎵 [Audio Content](../README.md)** | **Sound Effects**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎵 [Audio Content](../README.md)** | **Sound Effects**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: SFX Library](https://img.shields.io/badge/Type-SFX-blue)
@@ -355,7 +355,7 @@ sound-effects/
 ## Related Resources
 
 - [Background Music Library](../music/README.md)
-- [Audio Production Workflow](../audio-production-workflow.md)
+- [Audio Production Workflow](../../production-guide/audio-production-workflow.md)
 - [Video Tutorials](../../video-tutorials/README.md)
 - [Animation Guidelines](../../animations/animation-guidelines.md)
 

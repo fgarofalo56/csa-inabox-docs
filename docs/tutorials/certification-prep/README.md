@@ -1,6 +1,6 @@
 # 🎓 Certification Preparation Resources
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __📜 Certification Prep__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __📜 Certification Prep__
 
 ![Certifications](https://img.shields.io/badge/Certifications-Azure_Data-blue)
 ![Preparation](https://img.shields.io/badge/Status-Complete_Guides-brightgreen)

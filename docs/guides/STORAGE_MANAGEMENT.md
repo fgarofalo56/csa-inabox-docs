@@ -1,6 +1,6 @@
 # STORAGE MANAGEMENT
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **STORAGE MANAGEMENT**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **STORAGE MANAGEMENT**
 
 ## Overview
 

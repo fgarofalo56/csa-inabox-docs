@@ -1,6 +1,6 @@
 # 🔧 Operations Documentation
 
-> __🏠 [Home](../../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🚀 Solution__ | __🔧 Operations__
+> __🏠 [Home](../../../README.md)__ | __📚 [Documentation](../../../README.md)__ | __🚀 Solution__ | __🔧 Operations__
 
 ---
 

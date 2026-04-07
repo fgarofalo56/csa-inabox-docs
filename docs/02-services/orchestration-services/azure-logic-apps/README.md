@@ -1,6 +1,6 @@
 # ⚡ Azure Logic Apps
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔧 Orchestration Services__ | __⚡ Azure Logic Apps__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔧 Orchestration Services__ | __⚡ Azure Logic Apps__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Type](https://img.shields.io/badge/Type-Workflow-green?style=flat-square)

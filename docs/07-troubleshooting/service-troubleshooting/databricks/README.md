@@ -1,6 +1,6 @@
 # Azure Databricks Troubleshooting Guide
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **👤 Azure Databricks**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **👤 Azure Databricks**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Service](https://img.shields.io/badge/Service-Databricks-orange)
 
@@ -11,14 +11,14 @@ Comprehensive troubleshooting guide for Azure Databricks including cluster issue
 | Issue Category | Description | Guide |
 |:---------------|:------------|:------|
 | 🚀 **Cluster Issues** | Startup failures, node provisioning | [Cluster Startup](cluster-startup.md) |
-| 🔢 **Node Provisioning** | Node allocation, autoscaling | [Node Provisioning](node-provisioning.md) |
+| 🔢 **Node Provisioning** | Node allocation, autoscaling | [Cluster Startup](cluster-startup.md) |
 | 🧠 **Memory Issues** | OOM errors, memory pressure | [Memory Issues](memory-issues.md) |
-| 📊 **Query Performance** | Slow queries, optimization | [Query Performance](query-performance.md) |
-| 🔄 **Shuffle Optimization** | Shuffle operations, spills | [Shuffle Optimization](shuffle-optimization.md) |
-| 🏗️ **Delta Lake Issues** | Delta table problems, transactions | [Delta Issues](delta-issues.md) |
-| 📐 **Schema Evolution** | Schema changes, compatibility | [Schema Evolution](schema-evolution.md) |
+| 📊 **Query Performance** | Slow queries, optimization | [Query Performance](../synapse/README.md) |
+| 🔄 **Shuffle Optimization** | Shuffle operations, spills | [Shuffle Optimization](README.md) |
+| 🏗️ **Delta Lake Issues** | Delta table problems, transactions | [Delta Issues](README.md) |
+| 📐 **Schema Evolution** | Schema changes, compatibility | [Schema Evolution](../../../02-services/analytics-compute/azure-synapse/spark-pools/delta-lakehouse/README.md) |
 | 🌐 **Networking** | Connectivity, VNet integration | [Networking](networking.md) |
-| ✅ **Data Quality** | Data validation, corruption | [Data Quality](data-quality.md) |
+| ✅ **Data Quality** | Data validation, corruption | [Data Quality](../../../08-solutions/azure-realtime-analytics/implementation/README.md) |
 
 ## Common Error Categories
 

@@ -1,6 +1,6 @@
 # 🔗 Shared Metadata Architecture Description
 
-> __🏠 [Home](../../README.md)__ | __📊 [Diagrams](README.md)__ | __🔗 Shared Metadata Architecture__
+> __🏠 [Home](../README.md)__ | __📊 [Diagrams](README.md)__ | __🔗 Shared Metadata Architecture__
 
 ![Status](https://img.shields.io/badge/Status-Reference-blue?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -848,21 +848,21 @@ FROM monitoring.data_quality_metrics;
 
 ### Architecture Documentation
 
-- [Shared Metadata Overview](../architecture/shared-metadata/shared-metadata.md)
-- [Shared Metadata Visuals](../architecture/shared-metadata/shared-metadata-visuals.md)
+- [Shared Metadata Overview](../03-architecture-patterns/service-architectures/shared-metadata/shared-metadata.md)
+- [Shared Metadata Visuals](../03-architecture-patterns/service-architectures/shared-metadata/shared-metadata-visuals.md)
 - [Architecture Patterns](../03-architecture-patterns/README.md)
 
 ### Implementation Guides
 
-- [Delta Lake Guide](../code-examples/delta-lake-guide.md)
-- [Serverless SQL Guide](../code-examples/serverless-sql-guide.md)
-- [Integration Guide](../code-examples/integration-guide.md)
+- [Delta Lake Guide](../06-code-examples/delta-lake-guide.md)
+- [Serverless SQL Guide](../06-code-examples/serverless-sql-guide.md)
+- [Integration Guide](../06-code-examples/integration-guide.md)
 
 ### Best Practices
 
-- [Performance Optimization](../best-practices/performance-optimization.md)
-- [Data Governance](../best-practices/data-governance.md)
-- [Security Best Practices](../best-practices/security.md)
+- [Performance Optimization](../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Data Governance](../05-best-practices/README.md)
+- [Security Best Practices](../reference/security.md)
 
 ---
 

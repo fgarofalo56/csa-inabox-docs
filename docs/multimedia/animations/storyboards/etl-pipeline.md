@@ -1,6 +1,6 @@
 # ETL Pipeline Animation Storyboard
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎨 [Animations](../README.md)** | **Storyboards** | **ETL Pipeline**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎨 [Animations](../README.md)** | **Storyboards** | **ETL Pipeline**
 
 ![Status: Planning](https://img.shields.io/badge/Status-Planning-blue)
 ![Type: Animation](https://img.shields.io/badge/Type-Animation-purple)

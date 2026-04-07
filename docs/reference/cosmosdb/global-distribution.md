@@ -1,6 +1,6 @@
 # Azure Cosmos DB Global Distribution Reference
 
-[Home](../../../README.md) > [Reference](../README.md) > [Cosmos DB](README.md) > Global Distribution
+[Home](../../README.md) > [Reference](../README.md) > [Cosmos DB](README.md) > Global Distribution
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Documentation](https://img.shields.io/badge/Documentation-Complete-blue)
@@ -823,7 +823,7 @@ AzureActivity
 - [Multi-Region Writes](https://docs.microsoft.com/azure/cosmos-db/how-to-multi-master)
 - [Conflict Resolution](https://docs.microsoft.com/azure/cosmos-db/conflict-resolution-policies)
 - [Azure Regions Reference](../azure-regions.md)
-- [Cost Optimization Best Practices](../../best-practices/cost-optimization.md)
+- [Cost Optimization Best Practices](../../05-best-practices/README.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # 🚀 Implementation Guides
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🚀 Implementation**
+> **🏠 [Home](../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🚀 Implementation**
 
 ---
 
@@ -15,7 +15,7 @@ Comprehensive implementation guides for deploying and configuring the Azure Real
 - [Stream Processing](#stream-processing)
 - [Power BI Integration](#power-bi-integration)
 - [MLflow Configuration](#mlflow-configuration)
-- [Security Setup](#security-setup)
+- [Security Setup](./security-setup.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # ⚡🌊 Lambda-Kappa Hybrid Architecture
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🔄 Hybrid Architectures__ | __⚡🌊 Lambda-Kappa Hybrid__
+> __🏠 [Home](../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🔄 Hybrid Architectures__ | __⚡🌊 Lambda-Kappa Hybrid__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -911,8 +911,8 @@ def add_stream_processing(stream_config):
 ### Implementation Guides
 
 - [Azure Synapse Analytics Documentation](https://docs.microsoft.com/azure/synapse-analytics/)
-- [Delta Lake Best Practices](../../best-practices/delta-lake-optimization.md)
-- [Stream Analytics Patterns](../../code-examples/serverless-sql-guide.md)
+- [Delta Lake Best Practices](../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
+- [Stream Analytics Patterns](../../06-code-examples/serverless-sql-guide.md)
 
 ### Reference Architectures
 

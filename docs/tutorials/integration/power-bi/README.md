@@ -1,6 +1,6 @@
 # = Power BI Integration with Azure Synapse Analytics
 
-> **< [Home](../../../../README.md)** | **= [Documentation](../../../README.md)** | **< [Tutorials](../../README.md)** | **= [Integration](../README.md)** | **= Power BI**
+> **< [Home](../../../README.md)** | **= [Documentation](../../../README.md)** | **< [Tutorials](../../README.md)** | **= [Integration](../README.md)** | **= Power BI**
 
 ![Integration](https://img.shields.io/badge/Integration-Power_BI-yellow)
 ![Services](https://img.shields.io/badge/Services-Synapse%20%2B%20Power%20BI-blue)

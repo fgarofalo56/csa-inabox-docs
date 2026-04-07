@@ -1,6 +1,6 @@
 # = Azure Synapse Analytics Quickstart
 
-> __< [Home](../../../README.md)__ | __= [Documentation](../../README.md)__ | __< [Tutorials](../README.md)__ | __< Beginner__ | __= Synapse__
+> __< [Home](../../README.md)__ | __= [Documentation](../../README.md)__ | __< [Tutorials](../README.md)__ | __< Beginner__ | __= Synapse__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Level](https://img.shields.io/badge/Level-Beginner-green)
@@ -25,7 +25,8 @@ After completing this quickstart, you will be able to:
 - [ ] __Azure Portal access__ - [portal.azure.com](https://portal.azure.com)
 - [ ] __5-10 minutes__ to complete setup
 
-## = What is Azure Synapse Analytics?
+## =
+ What is Azure Synapse Analytics?
 
 Azure Synapse is a unified analytics platform that brings together:
 
@@ -129,7 +130,8 @@ order_id,product,category,amount,order_date,customer_id
    - Choose `sales_data.csv`
    - Click "Upload"
 
-## = Step 3: Query Data with Serverless SQL
+## =
+ Step 3: Query Data with Serverless SQL
 
 Serverless SQL Pool lets you query data directly in storage without loading it first.
 
@@ -382,7 +384,7 @@ __Query Returns No Results__
 
 - [Synapse Complete Tutorial](../synapse/README.md) - Deep dive into all features
 - [Data Engineer Learning Path](../learning-paths/data-engineer-path.md)
-- [Serverless SQL Best Practices](../../best-practices/serverless-sql-best-practices.md)
+- [Serverless SQL Best Practices](../../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
 
 ## > Cleanup
 

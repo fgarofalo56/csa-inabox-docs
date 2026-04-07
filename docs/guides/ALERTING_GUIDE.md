@@ -1,6 +1,6 @@
 # ALERTING GUIDE
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **ALERTING GUIDE**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **ALERTING GUIDE**
 
 ## Overview
 

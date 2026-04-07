@@ -1,6 +1,6 @@
 # 🔄 Multi-Service Integration Scenarios
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🔄 Integration Scenarios__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🔄 Integration Scenarios__
 
 ![Integration](https://img.shields.io/badge/Tutorial-Multi_Service_Integration-blue)
 ![Advanced](https://img.shields.io/badge/Level-Advanced-red)

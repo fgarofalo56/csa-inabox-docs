@@ -1,6 +1,6 @@
 # ML Pipeline Solution
 
-> __[Home](../../../README.md)__ | __[Solutions](../../08-solutions/README.md)__ | __ML Pipeline__
+> __[Home](../../README.md)__ | __[Solutions](../../08-solutions/README.md)__ | __ML Pipeline__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)

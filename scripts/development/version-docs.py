@@ -16,11 +16,38 @@ import subprocess
 import sys
 
 
+import re
+
+
+# Pattern to validate version/alias strings (prevents shell injection)
+SAFE_NAME_PATTERN = re.compile(r'^[a-zA-Z0-9._-]+$')
+
+
+def _validate_name(value: str, label: str) -> None:
+    """Validate that a version/alias name contains only safe characters.
+
+    Args:
+        value: The value to validate
+        label: Human-readable label for error messages
+
+    Raises:
+        ValueError: If the value contains unsafe characters
+    """
+    if not SAFE_NAME_PATTERN.match(value):
+        raise ValueError(
+            f"Invalid {label}: '{value}'. "
+            f"Only alphanumeric characters, dots, hyphens, and underscores are allowed."
+        )
+
+
 def run_command(command):
-    """Run a shell command and return the output."""
+    """Run a shell command and return the output.
+
+    Uses list-based subprocess invocation to prevent shell injection.
+    """
     try:
         result = subprocess.run(
-            command, check=True, shell=True, text=True, 
+            command, check=True, text=True,
             stdout=subprocess.PIPE, stderr=subprocess.PIPE
         )
         return result.stdout.strip()
@@ -31,19 +58,21 @@ def run_command(command):
 
 def create_version(version, alias=None, title=None, ignore=False, rebase=False):
     """Create a new documentation version."""
-    cmd = f"mike deploy {version}"
-    
+    _validate_name(version, "version")
+    cmd = ["mike", "deploy", version]
+
     if alias:
-        cmd += f" {alias}"
-    
+        _validate_name(alias, "alias")
+        cmd.append(alias)
+
     if title:
-        cmd += f" --title \"{title}\""
-        
+        cmd.extend(["--title", title])
+
     if ignore:
-        cmd += f" --ignore"
-        
+        cmd.append("--ignore")
+
     if rebase:
-        cmd += f" --rebase"
+        cmd.append("--rebase")
     
     print(f"Creating version {version}...")
     result = run_command(cmd)
@@ -53,7 +82,9 @@ def create_version(version, alias=None, title=None, ignore=False, rebase=False):
 
 def add_alias(version, alias):
     """Add an alias to an existing version."""
-    cmd = f"mike alias {version} {alias}"
+    _validate_name(version, "version")
+    _validate_name(alias, "alias")
+    cmd = ["mike", "alias", version, alias]
     
     print(f"Adding alias '{alias}' to version {version}...")
     result = run_command(cmd)
@@ -63,7 +94,8 @@ def add_alias(version, alias):
 
 def delete_version(version):
     """Delete a documentation version."""
-    cmd = f"mike delete {version}"
+    _validate_name(version, "version")
+    cmd = ["mike", "delete", version]
     
     print(f"Deleting version {version}...")
     result = run_command(cmd)
@@ -73,7 +105,7 @@ def delete_version(version):
 
 def list_versions():
     """List all documentation versions."""
-    cmd = "mike list"
+    cmd = ["mike", "list"]
     
     print("Listing all documentation versions...")
     result = run_command(cmd)

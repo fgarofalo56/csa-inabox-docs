@@ -1,6 +1,6 @@
 # 🔗 Shared Metadata Store - Azure Synapse Analytics
 
-> __🏠 [Home](../../../../../README.md)__ | __📖 [Overview](../../../../01-overview/README.md)__ | __🛠️ [Services](../../../README.md)__ | __💾 [Analytics Compute](../../README.md)__ | __🎯 [Synapse](../README.md)__ | __🔗 Shared Metadata__
+> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../../01-overview/README.md)__ | __🛠️ [Services](../../../README.md)__ | __💾 [Analytics Compute](../../README.md)__ | __🎯 [Synapse](../README.md)__ | __🔗 Shared Metadata__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Feature](https://img.shields.io/badge/Feature-Unified%20Catalog-lightblue?style=flat-square)
@@ -216,7 +216,7 @@ spark.sql("""
 ### 🎓 __Implementation Guides__
 
 - [__Delta Lake Metadata__](../spark-pools/delta-lakehouse/README.md)
-- [__Security Best Practices__](../../../../05-best-practices/cross-cutting-concerns/security/metadata-security.md)
+- [__Security Best Practices__](../../../../05-best-practices/cross-cutting-concerns/security/README.md)
 - [__Data Governance__](../../../../05-best-practices/cross-cutting-concerns/governance/metadata-governance.md)
 
 ---

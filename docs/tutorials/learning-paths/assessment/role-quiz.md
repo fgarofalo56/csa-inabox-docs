@@ -1,6 +1,6 @@
 # 🎯 Role Assessment Quiz
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🛤️ [Learning Paths](../README.md)__ | __🎯 Assessment__
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __🎓 [Tutorials](../../README.md)__ | __🛤️ [Learning Paths](../README.md)__ | __🎯 Assessment__
 
 ![Status](https://img.shields.io/badge/Status-Interactive-brightgreen)
 ![Duration](https://img.shields.io/badge/Duration-5--10_minutes-blue)
@@ -243,7 +243,7 @@ __Your Path:__
 
 __First Steps:__
 
-- Review [Data Engineer Learning Path](../../data-engineer-path.md)
+- Review [Data Engineer Learning Path](../data-engineer-path.md)
 - Start with [PySpark Fundamentals](../../code-labs/pyspark-fundamentals.md)
 - Build first data pipeline project
 
@@ -448,7 +448,7 @@ Set monthly milestones:
 ### Immediate Actions
 
 1. __Join Community__
-   - [GitHub Discussions](https://github.com/your-org/csa-tutorials/discussions)
+   - [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
    - Azure data community Slack/Discord
    - LinkedIn groups for your target role
 

@@ -4,11 +4,11 @@
 
 ## Serverless Replicated Database Synchronization
 
-![Sequence diagram showing serverless replicated database synchronization process between Spark pools and serverless SQL pools in Azure Synapse](../../images/diagrams/architecture-shared-metadata-shared-metadata-visuals-diagram-1.png)
+<!-- Diagram: Sequence diagram showing serverless replicated database synchronization process between Spark pools and serverless SQL pools in Azure Synapse (image to be added) -->
 
 ## Three-Part Naming Limitations and Workarounds
 
-![Architecture diagram illustrating three-part naming limitations in Azure Synapse and recommended workarounds for cross-database queries](../../images/diagrams/architecture-shared-metadata-shared-metadata-visuals-diagram-2.png)
+<!-- Diagram: Architecture diagram illustrating three-part naming limitations in Azure Synapse and recommended workarounds for cross-database queries (image to be added) -->
 
 ## Layered Data Architecture with Shared Metadata
 

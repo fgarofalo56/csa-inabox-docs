@@ -1,6 +1,6 @@
 # 📊 Workshop Materials - CSA-in-a-Box
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 [Presentations](README.md)** | **👤 Workshop Materials**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 [Presentations](README.md)** | **👤 Workshop Materials**
 
 ![Type: Workshop](https://img.shields.io/badge/Type-Workshop-blue)
 ![Duration: 4-8 hours](https://img.shields.io/badge/Duration-4-8%20hours-green)
@@ -116,9 +116,9 @@ This presentation covers:
 - [Presentation Guides](guides/README.md)
 
 ### Templates
-- PowerPoint template: [Download](../templates/)
-- PDF handout template: [Download](../templates/)
-- Speaker notes template: [Download](../templates/)
+- PowerPoint template: [Download](../templates/README.md)
+- PDF handout template: [Download](../templates/README.md)
+- Speaker notes template: [Download](../templates/README.md)
 
 ## 💬 Feedback
 

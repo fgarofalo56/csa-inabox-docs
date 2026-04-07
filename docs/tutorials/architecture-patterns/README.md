@@ -1,6 +1,6 @@
 # 🏗️ Architecture Pattern Tutorials
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ Architecture Pattern Tutorials__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ Architecture Pattern Tutorials__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Tutorials](https://img.shields.io/badge/Tutorials-14-blue?style=flat-square)
@@ -93,7 +93,7 @@ __Week 1-2__: [Prerequisites & Setup](PREREQUISITES.md) + [Medallion Architectur
 
 __Week 3-4__: [Hub & Spoke Model](batch/hub-spoke-tutorial.md) + Start streaming with [Kappa Architecture](streaming/kappa-architecture-tutorial.md)
 
-__Week 5-6__: [Lambda Architecture](streaming/lambda-architecture-tutorial.md) + Choose your industry [Reference Architecture](reference/)
+__Week 5-6__: [Lambda Architecture](streaming/lambda-architecture-tutorial.md) + Choose your industry [Reference Architecture](reference/README.md)
 
 ### 🔧 Intermediate Path
 
@@ -109,7 +109,7 @@ Building production systems? Deep dive into:
 
 1. __Multi-Database__: [Polyglot Persistence](hybrid/polyglot-persistence-tutorial.md)
 2. __Real-Time Analytics__: [HTAP Patterns](hybrid/htap-patterns-tutorial.md)
-3. __Industry Solutions__: Choose your domain-specific [Reference Architecture](reference/)
+3. __Industry Solutions__: Choose your domain-specific [Reference Architecture](reference/README.md)
 
 ---
 
@@ -246,8 +246,8 @@ Each tutorial includes:
 
 Want to contribute a new tutorial or improve existing ones?
 
-1. Review the [Contributing Guide](../../../docs/guides/CONTRIBUTING_GUIDE.md)
-2. Follow the [Markdown Style Guide](../../../docs/guides/MARKDOWN_STYLE_GUIDE.md)
+1. Review the [Contributing Guide](../../guides/CONTRIBUTING_GUIDE.md)
+2. Follow the [Markdown Style Guide](../../guides/MARKDOWN_STYLE_GUIDE.md)
 3. Use the [Tutorial Template](TUTORIAL_TEMPLATE.md)
 4. Submit a pull request
 

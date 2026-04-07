@@ -1,6 +1,6 @@
 # 🤖 ML Pipeline Integration Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🔗 [Integration](README.md)** | **🤖 ML Pipeline**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🔗 [Integration](README.md)** | **🤖 ML Pipeline**
 
 ![Level](https://img.shields.io/badge/Level-Advanced-red)
 ![Duration](https://img.shields.io/badge/Duration-4--5_hours-green)

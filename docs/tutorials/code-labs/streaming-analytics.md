@@ -1,6 +1,6 @@
 # 🌊 Real-Time Streaming Analytics Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🌊 Streaming Analytics**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🌊 Streaming Analytics**
 
 ![Lab](https://img.shields.io/badge/Lab-Streaming_Analytics-blue)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)

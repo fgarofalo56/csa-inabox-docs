@@ -1,6 +1,6 @@
 # 📊 Data Explorer Pools - Azure Synapse Analytics
 
-> __🏠 [Home](../../../../../README.md)__ | __📖 [Overview](../../../../01-overview/README.md)__ | __🛠️ [Services](../../../README.md)__ | __💾 [Analytics Compute](../../README.md)__ | __🎯 [Synapse](../README.md)__ | __📊 Data Explorer Pools__
+> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../../01-overview/README.md)__ | __🛠️ [Services](../../../README.md)__ | __💾 [Analytics Compute](../../README.md)__ | __🎯 [Synapse](../README.md)__ | __📊 Data Explorer Pools__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Specialty](https://img.shields.io/badge/Specialty-Time%20Series-orange?style=flat-square)

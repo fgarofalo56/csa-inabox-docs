@@ -1,6 +1,6 @@
 # 💡 Best Practices Guide
 
-> **🏠 [Home](../../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **📋 [Docs](./README.md)** | **💡 Best Practices**
+> **🏠 [Home](../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **📋 [Docs](../README.md)** | **💡 Best Practices**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)

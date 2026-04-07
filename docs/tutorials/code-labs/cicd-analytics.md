@@ -1,6 +1,6 @@
 # 🚀 CI/CD for Analytics Pipelines Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../README.md)** | **💻 [Code Labs](README.md)** | **🚀 CI/CD Analytics**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 [Tutorials](../README.md)** | **💻 [Code Labs](README.md)** | **🚀 CI/CD Analytics**
 
 ![Lab](https://img.shields.io/badge/Lab-CI/CD_Analytics-purple)
 ![Duration](https://img.shields.io/badge/Duration-4--5_hours-orange)
@@ -54,7 +54,7 @@ By completing this lab, you will be able to:
 az extension add --name azure-devops
 
 # Set default organization
-az devops configure --defaults organization=https://dev.azure.com/your-org project=AnalyticsPlatform
+az devops configure --defaults organization=https://dev.azure.com/your-azure-org project=AnalyticsPlatform
 
 # Create service connection for Azure
 az devops service-endpoint azurerm create \
@@ -1157,7 +1157,7 @@ Implement a complete CI/CD solution with:
 
 ## 📚 Additional Resources
 
-- [Azure Synapse CI/CD Best Practices](../../devops/pipeline-ci-cd.md)
+- [Azure Synapse CI/CD Best Practices](../../10-devops/pipeline-ci-cd.md)
 - [GitHub Actions for Azure](https://docs.microsoft.com/azure/developer/github/github-actions)
 - [Azure DevOps for Data Platforms](https://docs.microsoft.com/azure/devops/)
 - [Great Expectations Documentation](https://docs.greatexpectations.io/)

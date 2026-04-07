@@ -1,6 +1,6 @@
 # Lambda Architecture
 
-> **🏠 [Home](../../../README.md)** | **📖 [Architecture Patterns](../../README.md)** | **🔀 [Hybrid Architectures](./README.md)** | **Lambda Architecture**
+> **🏠 [Home](../../README.md)** | **📖 [Architecture Patterns](../../README.md)** | **🔀 [Hybrid Architectures](./README.md)** | **Lambda Architecture**
 
 ## Overview
 

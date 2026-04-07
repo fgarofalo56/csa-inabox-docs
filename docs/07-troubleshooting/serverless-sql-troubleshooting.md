@@ -1,6 +1,6 @@
 # Troubleshooting Serverless SQL Pool in Azure Synapse Analytics
 
-[Home](../../README.md) > Troubleshooting > Serverless SQL Troubleshooting
+[Home](../README.md) > Troubleshooting > Serverless SQL Troubleshooting
 
 This guide provides solutions for common issues encountered when working with Serverless SQL Pools in Azure Synapse Analytics, including query performance problems, error patterns, and optimization techniques.
 
@@ -562,13 +562,13 @@ Use these diagnostic queries to identify Serverless SQL Pool issues:
 
 ## Related Topics
 
-- [Serverless SQL Pool Best Practices](../best-practices/serverless-sql-best-practices.md)
+- [Serverless SQL Pool Best Practices](../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
 
-- [Monitoring Azure Synapse SQL Pools](../monitoring/sql-monitoring.md)
+- [Monitoring Azure Synapse SQL Pools](../09-monitoring/sql-monitoring.md)
 
-- [Performance Optimization for SQL Queries](../best-practices/sql-performance.md)
+- [Performance Optimization for SQL Queries](../05-best-practices/service-specific/synapse/sql-performance.md)
 
-- [Security Configuration for Serverless SQL](../best-practices/security.md)
+- [Security Configuration for Serverless SQL](../reference/security.md)
 
 ## External Resources
 

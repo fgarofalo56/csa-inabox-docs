@@ -1,6 +1,6 @@
 # 📊 Azure Synapse Analytics Code Examples
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __💻 [Code Examples](../../README.md)__ | __📊 Synapse Analytics__
+> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../../README.md)__ | __💻 [Code Examples](../../README.md)__ | __📊 Synapse Analytics__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Beginner_to_Advanced-blue?style=flat-square)

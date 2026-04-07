@@ -1,6 +1,6 @@
 # PRECOMMIT HOOKS
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **PRECOMMIT HOOKS**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **PRECOMMIT HOOKS**
 
 ## Overview
 

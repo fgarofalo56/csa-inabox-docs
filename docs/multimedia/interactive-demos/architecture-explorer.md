@@ -1,6 +1,6 @@
 # 🏗️ Interactive Architecture Explorer
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Architecture Explorer**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Architecture Explorer**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -287,9 +287,9 @@ const architectureDecisionTree = {
 
 ## 📚 Additional Resources
 
-- [Architecture Patterns](../../architecture/README.md)
+- [Architecture Patterns](../../solutions/azure-realtime-analytics/architecture/README.md)
 - [Component Reference](../../02-services/README.md)
-- [Best Practices](../../best-practices/README.md)
+- [Best Practices](../../05-best-practices/README.md)
 
 ## 💬 Feedback
 

@@ -62,9 +62,9 @@ This repository contains comprehensive technical documentation for the complete 
 
 ```yaml
 Required Software:
-  - Python: 3.8+
+  - Python: 3.11+
   - Git: Latest version
-  - Node.js: 14+ (for markdown linting)
+  - Node.js: 18+ (for markdown linting and documentation tools)
 ```
 
 #### 📦 Installation

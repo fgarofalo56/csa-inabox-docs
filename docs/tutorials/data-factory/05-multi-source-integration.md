@@ -1,6 +1,6 @@
 # 🔄 Multi-Source Data Integration
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Multi-Source Integration__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Multi-Source Integration__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Multi_Source_Integration-blue)
 ![Duration](https://img.shields.io/badge/Duration-25_minutes-green)
@@ -431,7 +431,7 @@ graph TB
     "type": "Dynamics",
     "typeProperties": {
       "deploymentType": "Online",
-      "organizationName": "your-org",
+      "organizationName": "your-azure-org",
       "authenticationType": "Office365",
       "username": "user@example.com",
       "password": {

@@ -233,7 +233,7 @@ __Use code blocks for:__
 
 ### __API Documentation__
 
-```markdown
+````markdown
 ### `generate_presentation(markdown_path, **kwargs)`
 
 Generate presentation from markdown file.
@@ -262,11 +262,8 @@ output = await generator.generate(
     theme="academic",
     max_slides=25,
     output_path="custom_output.pptx"
-)
 ```
-
-```text
-```
+````
 
 ### __Configuration Examples__
 
@@ -443,7 +440,7 @@ __Icon Consistency Rules:__
 
 __Required Spacing:__
 
-```markdown
+````markdown
 # 🚀 Title
 
 ![Badge](url) ![Badge](url)
@@ -462,7 +459,7 @@ Content with proper spacing around elements.
 ```code blocks with blank lines above and below```
 
 More content continues...
-```
+````
 
 #### 🔍 Accessibility Guidelines
 
@@ -906,7 +903,7 @@ docs: update: API reference for v2.0 endpoints
 
 ### __README Template__
 
-```markdown
+````markdown
 # 🚀 Project Name
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
@@ -959,9 +956,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 - Credit to contributors
 - Third-party libraries used
-
-```text
-```
+````
 
 ### __Document Header Template__
 
@@ -979,7 +974,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 </div>
 
 ---
-\```
+```
 
 ### __Section Header Template__
 
@@ -1172,7 +1167,7 @@ For outdated documentation:
 
 ### __Good Documentation Structure__
 
-```markdown
+````markdown
 # Agent Configuration Guide
 
 This guide explains how to configure agents for optimal performance.
@@ -1209,9 +1204,7 @@ __Solution:__ Check API key configuration in `.env` file
 
 - [Deploy agents to production](deployment-guide.md)
 - [Monitor agent performance](monitoring.md)
-
-```text
-```
+````
 
 ### __Poor Documentation Example__
 

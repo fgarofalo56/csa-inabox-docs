@@ -9,7 +9,7 @@ INSTRUCTIONS FOR USE:
 5. Validate with markdownlint before committing
 -->
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **[Current Section](../README.md)** | **👤 [Document Title]**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **[Current Section](../README.md)** | **👤 [Document Title]**
 
 <!-- Update badges as appropriate -->
 ![Status: [Active/Draft/Deprecated]](https://img.shields.io/badge/Status-[Active/Draft/Deprecated]-[green/yellow/red])
@@ -276,9 +276,9 @@ Categorize links logically
 
 ### Documentation
 
-- [Related Guide 1](../guides/related-guide-1.md)
-- [Related Guide 2](../guides/related-guide-2.md)
-- [API Reference](../reference/api-reference.md)
+- [Related Guide 1](../README.md)
+- [Related Guide 2](../README.md)
+- [API Reference](../../guides/docs/api-reference.md)
 
 ### External Resources
 
@@ -288,12 +288,12 @@ Categorize links logically
 
 ### Video Tutorials
 
-- [Tutorial Title](../multimedia/video-tutorials/tutorial-name.md)
-- [Deep Dive Session](../multimedia/video-tutorials/deep-dive.md)
+- [Tutorial Title](../README.md)
+- [Deep Dive Session](../README.md)
 
 ### Tools & Templates
 
-- [Related Template](./related-template.md)
+- [Related Template](README.md)
 - [Configuration Generator](../tools/config-generator.md)
 
 ## 📝 Quick Reference

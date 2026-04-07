@@ -1,6 +1,6 @@
 # 💰 Elastic Pools - Azure SQL Database
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🗄️ [Azure SQL](README.md)__ | __💰 Elastic Pools__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🗄️ [Azure SQL](README.md)__ | __💰 Elastic Pools__
 
 ![Cost](https://img.shields.io/badge/Cost-Optimized-orange?style=flat-square)
 

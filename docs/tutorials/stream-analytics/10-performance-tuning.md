@@ -1,6 +1,6 @@
 # ⚡ Tutorial 10: Performance Tuning and Optimization
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __⚡ Performance Tuning__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __⚡ Performance Tuning__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-10_Performance_Tuning-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)

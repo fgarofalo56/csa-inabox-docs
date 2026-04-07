@@ -1,6 +1,6 @@
 # 📹 Video Tutorial Scripts & Production
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📹 Video Tutorials__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __📹 Video Tutorials__
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Videos: 25+](https://img.shields.io/badge/Videos-25+-blue)

@@ -1,6 +1,6 @@
 # Video Script: CI/CD Pipelines for Azure Synapse
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **CI/CD Pipelines**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **CI/CD Pipelines**
 
 ![Duration: 35 minutes](https://img.shields.io/badge/Duration-35%20minutes-blue)
 ![Level: Advanced](https://img.shields.io/badge/Level-Advanced-red)

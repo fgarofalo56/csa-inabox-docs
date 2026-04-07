@@ -1,6 +1,6 @@
 # Video Script: Spark Pools Deep Dive
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Spark Pools Deep Dive**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Spark Pools Deep Dive**
 
 ![Duration: 35 minutes](https://img.shields.io/badge/Duration-35%20minutes-blue)
 ![Level: Intermediate](https://img.shields.io/badge/Level-Intermediate-yellow)
@@ -114,7 +114,7 @@ Spark Pool Configuration:
     Enabled: true
     Delay: 15 minutes
   Spark Version: 3.4
-  ```
+```
 
 **NARRATOR**:
 "I'm choosing Medium nodes for a good balance of cost and performance. The autoscale range of 3-20 nodes allows the pool to grow with workload demand while maintaining a minimum for baseline performance."

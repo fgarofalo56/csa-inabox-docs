@@ -1,6 +1,6 @@
 # Reliability Patterns
 
-> **[Home](../../../README.md)** | **[Best Practices](../README.md)** | **[Operational Excellence](README.md)** | **Reliability**
+> **[Home](../../README.md)** | **[Best Practices](../README.md)** | **[Operational Excellence](README.md)** | **Reliability**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Category](https://img.shields.io/badge/Category-Operations-orange?style=flat-square)

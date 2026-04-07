@@ -1114,8 +1114,8 @@ GROUP BY patient_id;
 ## Related Resources
 
 ### Internal Documentation
-- [Security Best Practices](../../best-practices/security/README.md)
-- [Data Governance Guide](../../best-practices/data-governance/README.md)
+- [Security Best Practices](../../05-best-practices/cross-cutting-concerns/security/README.md)
+- [Data Governance Guide](../../05-best-practices/cross-cutting-concerns/data-governance/README.md)
 - [Compliance Checklist](../../reference/security-checklist/README.md)
 
 ### External References

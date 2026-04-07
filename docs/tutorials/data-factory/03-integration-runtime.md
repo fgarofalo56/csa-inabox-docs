@@ -1,6 +1,6 @@
 # ⚡ Integration Runtime Configuration
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Integration Runtime__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Integration Runtime__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Integration_Runtime-blue)
 ![Duration](https://img.shields.io/badge/Duration-10_minutes-green)

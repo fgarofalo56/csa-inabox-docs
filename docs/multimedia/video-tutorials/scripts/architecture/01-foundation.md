@@ -1,6 +1,6 @@
 # Architecture Foundation Video Script
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Architecture Foundation**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Architecture Foundation**
 
 ![Status: Draft](https://img.shields.io/badge/Status-Draft-yellow)
 ![Duration: 15 minutes](https://img.shields.io/badge/Duration-15%20minutes-blue)

@@ -1,6 +1,6 @@
 # 📋 Schema Registry
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 [Event Hubs](README.md)__ | __📋 Schema Registry__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 [Event Hubs](README.md)__ | __📋 Schema Registry__
 
 ![Feature](https://img.shields.io/badge/Feature-Schema%20Registry-brightgreen?style=flat-square)
 ![Format](https://img.shields.io/badge/Format-Avro-blue?style=flat-square)

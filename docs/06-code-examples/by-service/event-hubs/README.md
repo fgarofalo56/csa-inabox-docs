@@ -1,6 +1,6 @@
 # Azure Event Hubs Code Examples
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💻 [Code Examples](../../README.md)** | **📨 Event Hubs**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💻 [Code Examples](../../README.md)** | **📨 Event Hubs**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Languages](https://img.shields.io/badge/Languages-Python%20%7C%20C%23%20%7C%20Java-blue)

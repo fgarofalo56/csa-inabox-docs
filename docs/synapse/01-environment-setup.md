@@ -1,6 +1,6 @@
 # Synapse Environment Setup
 
-> **[Home](../README.md)** | **[Synapse](README.md)** | **Environment Setup**
+> **[Home](../tutorials/synapse/README.md)** | **[Synapse](../tutorials/synapse/README.md)** | **Environment Setup**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Level](https://img.shields.io/badge/Level-Beginner-green?style=flat-square)
@@ -127,17 +127,17 @@ az synapse workspace show \
 
 ## Next Steps
 
-- [Create your first notebook](02-first-notebook.md)
-- [Set up data connections](03-data-connections.md)
-- [Create a pipeline](04-first-pipeline.md)
+- [Create your first notebook](../tutorials/synapse/02-workspace-basics.md)
+- [Set up data connections](../tutorials/synapse/03-data-lake-setup.md)
+- [Create a pipeline](../tutorials/synapse/04-batch-ingestion.md)
 
 ---
 
 ## Related Documentation
 
-- [Synapse Overview](../02-services/analytics-compute/azure-synapse/README.md)
-- [Spark Pool Configuration](../02-services/analytics-compute/azure-synapse/spark-pools/README.md)
-- [Best Practices](../best-practices/README.md)
+- [Synapse Overview](../tutorials/synapse/README.md)
+- [Spark Pool Configuration](../tutorials/synapse/README.md)
+- [Best Practices](../best-practices/../tutorials/synapse/README.md)
 
 ---
 

@@ -9,7 +9,7 @@ category: "Best Practices - Cost"
 
 # Azure Storage Cost Optimization
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **💡 [Best Practices](../README.md)** | **💲 [Cost Optimization](./cost-optimization/README.md)** | **Storage**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **💡 [Best Practices](../README.md)** | **💲 [Cost Optimization](./cost-optimization/README.md)** | **Storage**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)
@@ -726,8 +726,8 @@ by bin(TimeGenerated, 1d), MetricName
 ## Related Resources
 
 - [Cost Optimization Overview](./cost-optimization/README.md)
-- [Delta Lake Optimization](../performance/delta-lake-optimization.md)
-- [Storage Performance](../performance/storage-performance.md)
+- [Delta Lake Optimization](../../02-services/05-best-practices/cross-cutting-concerns/performance/delta-lake-optimization.md)
+- [Storage Performance](../README.md)
 - [Azure Storage Pricing](https://azure.microsoft.com/pricing/details/storage/)
 
 ---

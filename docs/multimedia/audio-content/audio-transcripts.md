@@ -1,6 +1,6 @@
 # 📄 Audio Transcript Templates & Standards
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **📄 Transcripts**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **📄 Transcripts**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Format: Text](https://img.shields.io/badge/Format-Text-blue)
@@ -81,8 +81,6 @@ Review Status: Human-reviewed
 Download Formats: .txt | .docx | .pdf | .srt
 
 Contact for corrections: transcripts@cloudscaleanalytics.com
-```
-```
 
 ### Clean Read Transcript
 
@@ -127,8 +125,6 @@ big data analytics. It gives you the freedom to query data on
 your terms, using either serverless or dedicated resources at scale.
 
 [Continues...]
-```
-```
 
 ### Summary Transcript
 
@@ -204,8 +200,6 @@ MAIN TAKEAWAYS:
 ---
 
 Full transcript: [Link to complete verbatim version]
-```
-```
 
 ## 📝 Formatting Standards
 
@@ -251,8 +245,6 @@ ALEX: Great question. Let me address that.
 ALEX: Who here has used Azure Synapse?
 [Multiple audience members respond affirmatively]
 ALEX: Excellent. Let's build on that experience.
-```
-```
 
 ### Non-Speech Elements
 
@@ -339,8 +331,6 @@ Or:
 
 ALEX: What if we [OVERLAPPING] tried a different approach?
 SARAH: [OVERLAPPING] I was just going to suggest that!
-```
-```
 
 ### Timestamps
 
@@ -386,8 +376,6 @@ HOST: Sarah, let's start with the basics...
 
 [08:20]
 GUEST: Let me share three examples...
-```
-```
 
 ## 🎨 Text Formatting
 
@@ -433,8 +421,6 @@ Use numerals: 11, 27, 100, 1,000
 Percentages: 50% or fifty percent (both acceptable)
 Money: $1,000 or one thousand dollars
 Ranges: 5-10, 100-200
-```
-```
 
 ### Punctuation Guidelines
 
@@ -643,8 +629,6 @@ discussing Azure Synapse Analytics.
 00:00:10,000 --> 00:00:15,000
 Joining me is Sarah Johnson,
 Product Lead at Microsoft.
-```
-```
 
 ### Metadata Standards
 

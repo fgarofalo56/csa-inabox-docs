@@ -576,12 +576,12 @@ flowchart TD
 
 - [Getting Started Tutorials](../tutorials/README.md)
 - [Code Examples](../06-code-examples/README.md)
-- [Reference Architectures](../03-architecture-patterns/reference-architectures/)
+- [Reference Architectures](../03-architecture-patterns/reference-architectures/README.md)
 
 ### Cost Management
 
-- [Cost Optimization Guide](../05-best-practices/cost-optimization.md)
-- [Performance Optimization](../05-best-practices/performance-optimization.md)
+- [Cost Optimization Guide](../05-best-practices/README.md)
+- [Performance Optimization](../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
 
 ---
 

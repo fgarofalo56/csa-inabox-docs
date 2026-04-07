@@ -1,6 +1,6 @@
 # 🔀 Azure Data Factory Pipeline Patterns
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔧 [Orchestration](../README.md)__ | __🏗️ [ADF](README.md)__ | __🔀 Pipeline Patterns__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔧 [Orchestration](../README.md)__ | __🏗️ [ADF](README.md)__ | __🔀 Pipeline Patterns__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 ![Type](https://img.shields.io/badge/Type-Design%20Patterns-blue?style=flat-square)
@@ -905,7 +905,7 @@ graph TB
 - [Data Flows Guide](data-flows/README.md)
 - [Integration Runtime](integration-runtime/README.md)
 - [CI/CD for Pipelines](ci-cd-pipelines.md)
-- [Best Practices](../../../best-practices/README.md)
+- [Best Practices](../../../05-best-practices/README.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # Video Script: Monitoring Dashboards for Azure Synapse
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Monitoring Dashboards**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Monitoring Dashboards**
 
 ![Duration: 25 minutes](https://img.shields.io/badge/Duration-25%20minutes-blue)
 ![Level: Intermediate](https://img.shields.io/badge/Level-Intermediate-yellow)

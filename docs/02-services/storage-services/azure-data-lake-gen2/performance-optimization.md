@@ -1,6 +1,6 @@
 # ⚡ Performance Optimization in ADLS Gen2
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🏞️ [ADLS Gen2](README.md)__ | __⚡ Performance__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🏞️ [ADLS Gen2](README.md)__ | __⚡ Performance__
 
 ![Throughput](https://img.shields.io/badge/Throughput-High-brightgreen?style=flat-square)
 ![Optimization](https://img.shields.io/badge/Status-Optimized-blue?style=flat-square)
@@ -507,7 +507,7 @@ monitor_storage_performance()
 - [Hierarchical Namespace](hierarchical-namespace.md)
 - [Access Control](access-control.md)
 - [Data Lifecycle Management](data-lifecycle.md)
-- [Performance Best Practices](../../../05-best-practices/cross-cutting-concerns/performance/storage-performance.md)
+- [Performance Best Practices](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
 
 ---
 

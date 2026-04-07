@@ -1,6 +1,6 @@
 # 🔥 Tutorial 6: Spark Pool Configuration
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ [Synapse Series](README.md)__ | __🔥 Spark Pools__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🏗️ [Synapse Series](README.md)__ | __🔥 Spark Pools__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-06_Spark_Pools-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)

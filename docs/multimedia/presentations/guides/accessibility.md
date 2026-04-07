@@ -1,6 +1,6 @@
 # ♿ Presentation Accessibility Guide - CSA-in-a-Box
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **📋 [Guides](README.md)** | **👤 Accessibility**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **📋 [Guides](README.md)** | **👤 Accessibility**
 
 ![Type: Guide](https://img.shields.io/badge/Type-Guide-blue)
 ![Audience: All](https://img.shields.io/badge/Audience-All-green)

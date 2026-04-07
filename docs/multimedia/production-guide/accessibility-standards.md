@@ -1,6 +1,6 @@
 # Accessibility Standards
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **♿ Accessibility**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)** | **♿ Accessibility**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![WCAG: 2.1 AA](https://img.shields.io/badge/WCAG-2.1%20AA-blue)

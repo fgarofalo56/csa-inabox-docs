@@ -1,6 +1,6 @@
 # ♿ Audio Accessibility Guide
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **♿ Accessibility**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **♿ Accessibility**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![WCAG: 2.1 AA](https://img.shields.io/badge/WCAG-2.1%20AA-blue)
@@ -109,8 +109,6 @@ Transcript prepared by: [Name/Service]
 Accuracy reviewed: [Yes/No]
 Last updated: [Date]
 Download: [Link to text file]
-```
-```
 
 ### Speaker Identification
 
@@ -141,8 +139,6 @@ MICHAEL: I have a different perspective...
 SPEAKER 1: [First voice]
 SPEAKER 2: [Second voice]
 AUDIENCE MEMBER: [Question from audience]
-```
-```
 
 ### Non-Speech Sounds
 
@@ -191,8 +187,6 @@ AUDIENCE MEMBER: [Question from audience]
 [Audio briefly distorted]
 [Connection interrupted]
 [Inaudible due to background noise]
-```
-```
 
 ### Timestamps
 
@@ -307,8 +301,6 @@ The cursor moves to the "Create a resource" tile and clicks.]
 with lots of cool features and options everywhere. It
 looks really nice and professional. The user seems to
 know what they're doing as they navigate around.]
-```
-```
 
 ## 🎙️ Clear Audio Guidelines
 

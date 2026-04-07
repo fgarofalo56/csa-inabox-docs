@@ -1,6 +1,6 @@
 # Delta Lake Examples for Azure Synapse Analytics
 
-[Home](../../../README.md) > [Code Examples](../../README.md) > Delta Lake
+[Home](../../README.md) > [Code Examples](../../README.md) > Delta Lake
 
 This section provides examples and best practices for working with Delta Lake in Azure Synapse Analytics. Delta Lake is an open-source storage layer that brings reliability to data lakes by providing ACID transactions, scalable metadata handling, and unifying streaming and batch data processing.
 
@@ -79,5 +79,5 @@ df = spark.read.format("delta").option("versionAsOf", 1).load("/delta/events")
 ## Related Resources
 
 - [Delta Lake Guide](../../delta-lake-guide.md) - Comprehensive guide to Delta Lake
-- [Delta Lake Architecture](../../architecture/delta-lakehouse/README.md) - Reference architecture for Delta Lake
-- [Performance Best Practices](../../best-practices/performance.md) - Performance optimization for Delta Lake
+- [Delta Lake Architecture](../../03-architecture-patterns/service-architectures/delta-lakehouse/README.md) - Reference architecture for Delta Lake
+- [Performance Best Practices](../../multimedia/video-tutorials/scripts/best-practices/performance.md) - Performance optimization for Delta Lake

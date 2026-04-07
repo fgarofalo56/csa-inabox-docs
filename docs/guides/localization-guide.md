@@ -1,6 +1,6 @@
 # Localization Guide
 
-[Home](../../README.md) > [Guides](README.md) > Localization Guide
+[Home](../README.md) > [Guides](README.md) > Localization Guide
 
 > Comprehensive guide for translating and localizing the CSA-in-a-Box documentation for international audiences. This guide covers translation workflows, terminology management, and contribution procedures.
 
@@ -300,7 +300,7 @@ def creerEspaceDeTravail(nom: str, région: str):
 
 Preserve commands; translate descriptions:
 
-```markdown
+````markdown
 <!-- CORRECT -->
 ## Installation d'Azure CLI
 
@@ -318,9 +318,7 @@ Exécutez la commande suivante :
 ```bash
 az --version  # version en français
 ```
-
-```text
-```
+````
 
 ### Links and References
 

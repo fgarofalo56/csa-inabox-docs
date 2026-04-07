@@ -1,6 +1,6 @@
 # 🏛️ Data Warehouse Patterns
 
-> __🏠 [Home](../../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __📦 [Batch](README.md)__ | __🏛️ DW Patterns__
+> __🏠 [Home](../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __📦 [Batch](README.md)__ | __🏛️ DW Patterns__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)

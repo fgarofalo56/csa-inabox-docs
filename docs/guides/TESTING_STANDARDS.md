@@ -1,6 +1,6 @@
 # TESTING STANDARDS
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **TESTING STANDARDS**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **TESTING STANDARDS**
 
 ## Overview
 

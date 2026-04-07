@@ -1,6 +1,6 @@
 # CODE STYLE GUIDE
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **CODE STYLE GUIDE**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **CODE STYLE GUIDE**
 
 ## Overview
 

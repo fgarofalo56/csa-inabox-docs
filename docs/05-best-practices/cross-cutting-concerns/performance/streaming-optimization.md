@@ -9,7 +9,7 @@ category: "Best Practices - Performance"
 
 # Streaming Workload Optimization
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **⚡ [Performance](./README.md)** | **🌊 Streaming**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **⚡ [Performance](./README.md)** | **🌊 Streaming**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)

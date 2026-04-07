@@ -1,6 +1,6 @@
 # MKDOCS DEPLOYMENT
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **MKDOCS DEPLOYMENT**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **MKDOCS DEPLOYMENT**
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Data Flow Animation Specifications
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **📊 Data Flow Animations**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **📊 Data Flow Animations**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: Lottie/SVG](https://img.shields.io/badge/Type-Lottie%2FSVG-blue)

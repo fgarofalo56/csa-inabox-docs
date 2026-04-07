@@ -1,6 +1,6 @@
 # Micro-Interaction Specifications
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **✨ Micro-interactions**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **✨ Micro-interactions**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: CSS/JavaScript](https://img.shields.io/badge/Type-CSS%2FJavaScript-blue)

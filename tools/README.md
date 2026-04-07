@@ -1,7 +1,7 @@
 # CSA Documentation Tools
 
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/your-org/csa-inabox-docs)
-[![Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen.svg)](https://github.com/your-org/csa-inabox-docs)
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/fgarofalo56/csa-inabox-docs)
+[![Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen.svg)](https://github.com/fgarofalo56/csa-inabox-docs)
 [![npm version](https://img.shields.io/badge/npm-1.0.0-blue.svg)](https://www.npmjs.com/package/csa-docs-tools)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 

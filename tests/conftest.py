@@ -18,13 +18,8 @@ from csa_docs_tools import (
     NavigationStructureValidator
 )
 
-
-@pytest.fixture(scope="session")
-def event_loop():
-    """Create an instance of the default event loop for the test session."""
-    loop = asyncio.get_event_loop_policy().new_event_loop()
-    yield loop
-    loop.close()
+# Use pytest-asyncio auto mode instead of deprecated event_loop fixture
+pytest_plugins = ['pytest_asyncio']
 
 
 @pytest.fixture

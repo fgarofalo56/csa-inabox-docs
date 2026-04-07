@@ -267,11 +267,6 @@ All remaining 13 tutorials have stub pages with:
 
 - [Medallion Architecture Tutorial](./batch/medallion-architecture-tutorial.md)
 
-### Infrastructure
-
-- [Bicep Templates](../../../infrastructure/tutorials/batch/medallion-architecture/)
-- [Sample Data](../../../examples/architecture-patterns/batch/data/)
-
 ### Contributing
 
 - [Tutorial Template](./TUTORIAL_TEMPLATE.md)

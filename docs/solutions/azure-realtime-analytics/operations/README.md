@@ -1,6 +1,6 @@
 # 🔧 Operations Documentation
 
-> **🏠 [Home](../../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 Operations**
+> **🏠 [Home](../../../README.md)** | **📚 [Documentation](../../../README.md)** | **🚀 [Solution](../README.md)** | **🔧 Operations**
 
 ---
 
@@ -10,7 +10,7 @@ Comprehensive operational procedures and guidelines for maintaining the Azure Re
 
 ## 📑 Table of Contents
 
-- [Monitoring & Observability](#monitoring--observability)
+- [Monitoring & Observability](#monitoring-observability)
 - [Performance Management](#performance-management)
 - [Disaster Recovery](#disaster-recovery)
 - [Maintenance Procedures](#maintenance-procedures)

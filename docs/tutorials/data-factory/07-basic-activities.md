@@ -1,6 +1,6 @@
 # ⚙️ Basic Pipeline Activities
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Basic Activities__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Basic Activities__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Basic_Activities-blue)
 ![Duration](https://img.shields.io/badge/Duration-20_minutes-green)

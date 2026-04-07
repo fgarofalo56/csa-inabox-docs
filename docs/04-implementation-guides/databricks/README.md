@@ -1,6 +1,6 @@
 # 🧪 Azure Databricks Implementation Guides
 
-> __🏠 [Home](../../../README.md)__ | __📘 [Implementation Guides](../README.md)__ | __🧪 Databricks__
+> __🏠 [Home](../../README.md)__ | __📘 [Implementation Guides](../README.md)__ | __🧪 Databricks__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Guides](https://img.shields.io/badge/Guides-7+-blue?style=flat-square)

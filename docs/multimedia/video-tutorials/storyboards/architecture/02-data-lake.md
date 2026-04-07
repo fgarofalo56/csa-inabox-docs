@@ -1,6 +1,6 @@
 # Data Lake Architecture Storyboard
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Storyboards** | **Data Lake**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Storyboards** | **Data Lake**
 
 ![Status: Planning](https://img.shields.io/badge/Status-Planning-blue)
 ![Type: Storyboard](https://img.shields.io/badge/Type-Storyboard-purple)
@@ -104,7 +104,7 @@ Storage Account
 ## Related Content
 
 - [Foundation Storyboard](01-foundation.md)
-- [Data Lake Script](../scripts/architecture/02-data-lake.md)
+- [Data Lake Script](02-data-lake.md)
 
 ---
 

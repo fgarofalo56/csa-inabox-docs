@@ -961,6 +961,6 @@ Congratulations! You have completed the Azure Synapse Analytics tutorial series.
 ## Additional Resources
 
 - [Azure Synapse Documentation](https://docs.microsoft.com/azure/synapse-analytics/)
-- [Best Practices Guide](../../best-practices/index.md)
-- [Troubleshooting Guide](../../troubleshooting/index.md)
-- [Code Examples](../../code-examples/index.md)
+- [Best Practices Guide](../../05-best-practices/README.md)
+- [Troubleshooting Guide](../../07-troubleshooting/README.md)
+- [Code Examples](../../06-code-examples/README.md)

@@ -1,22 +1,18 @@
 name: Link Checker
 
 on:
-  # Run on push to main branch
   push:
     branches: [main, master]
     paths:
       - 'docs/**/*.md'
       - 'README.md'
-  # Run on pull requests
   pull_request:
     branches: [main, master]
     paths:
       - 'docs/**/*.md'
       - 'README.md'
-  # Run on a schedule (weekly on Monday at 9:00 AM)
   schedule:
     - cron: '0 9 * * 1'
-  # Allow manual triggering
   workflow_dispatch:
 
 permissions:
@@ -27,121 +23,93 @@ permissions:
 jobs:
   check-links:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
-          fetch-depth: 0  # Fetch all history for proper link checking
-        
-      - name: Set up Python
-        uses: actions/setup-python@v6
+          fetch-depth: 0
+
+      - name: Setup Python environment
+        uses: ./.github/actions/setup-python-env
         with:
-          python-version: '3.11'  # Using more recent Python
-          cache: 'pip'  # Enable pip caching
-          
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests
-          pip install colorama  # For better console output
-          
-      - name: Debug environment
-        run: |
-          echo "GitHub workspace: $GITHUB_WORKSPACE"
-          echo "Directory structure (top-level):"
-          ls -la
+          install-extras: 'test'
 
       - name: Run link checker
         id: run_checker
         run: |
-          echo "Running inline link checker..."
-          python -c "import sys; print(f'Python version: {sys.version}')"
+          echo "Running link checker..."
           python << 'PYEOF' 2>&1 | tee link_checker_output.log
-          import os
-          import re
+          import asyncio
           from pathlib import Path
 
-          docs_dir = Path('docs')
-          broken_links = []
-          total_links = 0
+          try:
+              from csa_docs_tools import LinkValidator
 
-          for md_file in sorted(docs_dir.rglob('*.md')):
-              try:
-                  content = md_file.read_text(encoding='utf-8', errors='replace')
-              except Exception:
-                  continue
+              async def validate():
+                  async with LinkValidator(Path('.')) as validator:
+                      results = await validator.validate_all_links(check_external=False)
+                      report = validator.generate_report(results)
+                      print(f'Total internal links checked: {report["total_links"]}')
+                      print(f'Broken links found: {report["broken_links"]}')
+                      if report['broken_links'] > 0:
+                          print('\nBroken links:')
+                          for broken in report.get('broken_link_details', [])[:20]:
+                              print(f'  {broken["file"]}: {broken["url"]}')
 
-              links = re.findall(r'\[([^\]]*)\]\(([^)]+)\)', content)
+              asyncio.run(validate())
+          except ImportError:
+              # Fallback to simple regex-based checker
+              import re
 
-              for text, link in links:
-                  # Skip external links, anchors, and mailto
-                  if link.startswith(('http://', 'https://', '#', 'mailto:')):
+              docs_dir = Path('docs')
+              broken_links = []
+              total_links = 0
+
+              for md_file in sorted(docs_dir.rglob('*.md')):
+                  try:
+                      content = md_file.read_text(encoding='utf-8', errors='replace')
+                  except Exception:
                       continue
 
-                  total_links += 1
-                  # Strip anchor
-                  link_path = link.split('#')[0].split('?')[0]
-                  if not link_path:
-                      continue
+                  links = re.findall(r'\[([^\]]*)\]\(([^)]+)\)', content)
 
-                  if link_path.startswith('/'):
-                      target = Path('docs') / link_path.lstrip('/')
-                  else:
-                      target = md_file.parent / link_path
+                  for text, link in links:
+                      if link.startswith(('http://', 'https://', '#', 'mailto:')):
+                          continue
 
-                  target_str = str(target)
-                  if not Path(target_str).exists():
-                      if not Path(target_str + '.md').exists():
-                          if not Path(target_str.rstrip('/') + '/README.md').exists():
-                              broken_links.append((str(md_file), link))
+                      total_links += 1
+                      link_path = link.split('#')[0].split('?')[0]
+                      if not link_path:
+                          continue
 
-          # Generate report
-          report_dir = Path('project_tracking/planning')
-          report_dir.mkdir(parents=True, exist_ok=True)
-          report_path = report_dir / 'link_check_report.md'
+                      if link_path.startswith('/'):
+                          target = Path('docs') / link_path.lstrip('/')
+                      else:
+                          target = md_file.parent / link_path
 
-          with open(report_path, 'w') as f:
-              f.write(f'# Link Check Report\n\n')
-              f.write(f'Total internal links checked: {total_links}\n')
-              f.write(f'Broken links found: {len(broken_links)}\n\n')
+                      target_str = str(target)
+                      if not Path(target_str).exists():
+                          if not Path(target_str + '.md').exists():
+                              if not Path(target_str.rstrip('/') + '/README.md').exists():
+                                  broken_links.append((str(md_file), link))
+
+              print(f'Total internal links checked: {total_links}')
+              print(f'Broken links found: {len(broken_links)}')
               if broken_links:
-                  f.write('## Broken Links\n\n')
-                  for file_path, link in broken_links[:50]:
-                      f.write(f'- `{file_path}`: `{link}`\n')
-                  if len(broken_links) > 50:
-                      f.write(f'\n... and {len(broken_links) - 50} more\n')
-
-          print(f'Total internal links checked: {total_links}')
-          print(f'Broken links found: {len(broken_links)}')
-          if broken_links:
-              print('\nSample broken links (first 10):')
-              for file_path, link in broken_links[:10]:
-                  print(f'  {file_path}: {link}')
-
-          # Exit with 0 - report findings but don't fail the workflow
+                  print('\nBroken links (first 20):')
+                  for file_path, link in broken_links[:20]:
+                      print(f'  {file_path}: {link}')
           PYEOF
-          echo "checker_exit_code=0" >> $GITHUB_OUTPUT
+          echo "checker_exit_code=$?" >> $GITHUB_OUTPUT
 
-      - name: Capture link checker output
-        if: always()
-        run: |
-          if [ -f "link_checker_output.log" ]; then
-            echo "Link checker log contents:"
-            cat link_checker_output.log
-          else
-            echo "No link checker output log found."
-          fi
-          
       - name: Upload link check report
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: link-check-report
-          path: |
-            project_tracking/planning/link_check_report.md
-            link_checker_output.log
-          
+          path: link_checker_output.log
+
       - name: Create or update issue on broken links
         if: steps.run_checker.outputs.checker_exit_code != '0'
         uses: actions/github-script@v8
@@ -149,72 +117,37 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
-            
-            // Read the link check report
-            let reportContent = '';
-            try {
-              reportContent = fs.readFileSync('project_tracking/planning/link_check_report.md', 'utf8');
-            } catch (error) {
-              console.error(`Error reading report file: ${error.message}`);
-              reportContent = '⚠️ **Error reading link check report file.** Please check the workflow logs for details.';
-            }
-            
-            // Read the full log output for debugging info
+
             let logOutput = '';
             try {
               logOutput = fs.readFileSync('link_checker_output.log', 'utf8');
             } catch (error) {
-              console.error(`Error reading log file: ${error.message}`);
+              logOutput = 'Error reading link checker log.';
             }
-            
-            const debugInfo = `
-            ## Debug Information
-            \`\`\`
-            ${logOutput.substring(0, 1500)}... (truncated)
-            \`\`\`
-            `;
-            
-            // Search for existing open issues about broken links
+
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
               labels: ['broken-links']
             });
-            
-            const issueTitle = '🔗 Broken Links Detected';
-            const issueBody = `## Broken Links Report\n\nThe link checker has detected broken links in the documentation.\n\n${reportContent}\n\n### How to Fix\n\n1. Check if the linked files or URLs exist\n2. Update or remove broken links\n3. For external links, ensure they are still valid\n\n${debugInfo}\n\nPlease fix these links to ensure documentation integrity.`;
-            
+
+            const issueTitle = 'Broken Links Detected';
+            const issueBody = `## Broken Links Report\n\nThe link checker has detected broken links in the documentation.\n\n\`\`\`\n${logOutput.substring(0, 3000)}\n\`\`\`\n\nPlease fix these links to ensure documentation integrity.`;
+
             if (issues.length > 0) {
-              // Update existing issue
-              const issue = issues[0];
               await github.rest.issues.update({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: issue.number,
+                issue_number: issues[0].number,
                 body: issueBody
               });
-              console.log(`Updated existing issue #${issue.number}`);
             } else {
-              // Create new issue
-              const { data: newIssue } = await github.rest.issues.create({
+              await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 title: issueTitle,
                 body: issueBody,
                 labels: ['broken-links', 'documentation', 'bug']
               });
-              console.log(`Created new issue #${newIssue.number}`);
             }
-            
-      - name: Run diagnostics on failure
-        if: failure()
-        run: |
-          echo "Running diagnostics..."
-          python -c "
-          import sys, os
-          print(f'Python version: {sys.version}')
-          print(f'Current directory: {os.getcwd()}')
-          print('Docs directory exists:', os.path.isdir('docs'))
-          print('Number of md files:', len(list(__import__('pathlib').Path('docs').rglob('*.md'))))
-          "

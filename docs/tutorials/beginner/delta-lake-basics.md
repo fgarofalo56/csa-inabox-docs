@@ -1,6 +1,6 @@
 # 🔺 Delta Lake Basics
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__ | __🔺 Delta Lake__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__ | __🔺 Delta Lake__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Level](https://img.shields.io/badge/Level-Beginner-green)
@@ -483,7 +483,7 @@ __Slow queries__
 
 ### __Guides__
 
-- [Delta Lake Optimization](../../best-practices/delta-lake-optimization.md)
+- [Delta Lake Optimization](../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
 - [Synapse Delta Lake](../../02-services/analytics-compute/azure-synapse/spark-pools/delta-lakehouse/README.md)
 
 ## 🎉 Summary

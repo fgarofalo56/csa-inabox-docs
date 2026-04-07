@@ -1,6 +1,6 @@
 # 🎯 Beginner Tutorials
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🎯 Beginner__
 
 ![Level](https://img.shields.io/badge/Level-Beginner-green)
 

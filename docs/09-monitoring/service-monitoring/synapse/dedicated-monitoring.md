@@ -1,6 +1,6 @@
 # Dedicated SQL Pool Monitoring
 
-> **[Home](../../../README.md)** | **[Monitoring](../../README.md)** | **[Synapse](../synapse)** | **Dedicated SQL Pool Monitoring**
+> **[Home](../../../README.md)** | **[Monitoring](../../README.md)** | **[Synapse](../synapse/README.md)** | **Dedicated SQL Pool Monitoring**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Service](https://img.shields.io/badge/Service-Synapse%20Dedicated%20SQL-purple?style=flat-square)
@@ -371,9 +371,9 @@ ORDER BY skew_percent DESC;
 
 ## Related Documentation
 
-- [Dedicated SQL Best Practices](../../../best-practices/sql-performance/README.md)
-- [Dedicated SQL Troubleshooting](../../../troubleshooting/dedicated-sql-troubleshooting.md)
-- [Workload Management](../../../02-services/analytics-compute/azure-synapse/sql-pools/workload-management.md)
+- [Dedicated SQL Best Practices](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
+- [Dedicated SQL Troubleshooting](../../../07-troubleshooting/README.md)
+- [Workload Management](../../../02-services/analytics-compute/azure-synapse/sql-pools/README.md)
 
 ---
 

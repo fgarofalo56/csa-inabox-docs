@@ -1,6 +1,6 @@
 # Translation Status
 
-> **Home [Home](../../README.md)** | **Documentation** | **Internationalization**
+> **Home [Home](../README.md)** | **Documentation** | **Internationalization**
 
 ---
 

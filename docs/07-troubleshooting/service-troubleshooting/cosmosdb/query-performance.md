@@ -1,6 +1,6 @@
 # Azure Cosmos DB Query Performance Troubleshooting
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[🌐 Cosmos DB](README.md)** | **👤 Query Performance**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **[🌐 Cosmos DB](README.md)** | **👤 Query Performance**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)
 

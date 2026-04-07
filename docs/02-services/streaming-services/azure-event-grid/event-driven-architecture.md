@@ -1,6 +1,6 @@
 # 🔄 Event-Driven Architecture
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __🌐 [Event Grid](README.md)__ | __🔄 Event-Driven Architecture__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __🌐 [Event Grid](README.md)__ | __🔄 Event-Driven Architecture__
 
 ![Pattern](https://img.shields.io/badge/Pattern-Event%20Driven-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)

@@ -128,9 +128,10 @@ export class DiagramGenerationService {
    * @returns {string} - Output file path
    */
   generateOutputPath(placeholderFile, outputDir) {
-    const path = require('path');
+    // ESM-compatible path join (avoids require('path') in ESM modules)
     const outputFileName = placeholderFile.filename; // This already includes .png
-    return path.join(outputDir, outputFileName);
+    const sep = outputDir.endsWith('/') || outputDir.endsWith('\\') ? '' : '/';
+    return `${outputDir}${sep}${outputFileName}`.replace(/\\/g, '/');
   }
 
   /**

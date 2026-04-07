@@ -1,6 +1,6 @@
 # 🌍 Environment Management
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Environment Management__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Environment Management__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Environment_Management-blue)
 ![Duration](https://img.shields.io/badge/Duration-10_minutes-green)
@@ -195,8 +195,8 @@ Congratulations! You've completed the Azure Data Factory Tutorial Series.
 ### Additional Resources
 
 - [Azure Data Factory Documentation](https://docs.microsoft.com/azure/data-factory/)
-- [ADF Best Practices](../../best-practices/README.md)
-- [Architecture Patterns](../../architecture/README.md)
+- [ADF Best Practices](../../05-best-practices/README.md)
+- [Architecture Patterns](../../solutions/azure-realtime-analytics/architecture/README.md)
 - [Community Forums](https://github.com/Azure/Azure-DataFactory/discussions)
 
 ### Feedback

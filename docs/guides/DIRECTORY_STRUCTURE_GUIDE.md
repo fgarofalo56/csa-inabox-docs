@@ -23,7 +23,7 @@ Files created in wrong locations MUST be moved immediately. This is NOT optional
 
 ## 📋 Table of Contents
 
-- [🚨 CRITICAL RULES - READ FIRST](#critical-rules---read-first)
+- [🚨 CRITICAL RULES - READ FIRST](#critical-rules-read-first)
   - [⛔ STOP Before Creating Any File](#stop-before-creating-any-file)
   - [🔴 Violations Will Be Rejected](#violations-will-be-rejected)
 - [📋 Table of Contents](#table-of-contents)
@@ -48,8 +48,8 @@ Files created in wrong locations MUST be moved immediately. This is NOT optional
   - [Configuration Files](#configuration-files)
   - [Documentation](#documentation)
   - [Scripts](#scripts)
-- [🎯 What Goes Where - Quick Reference](#what-goes-where---quick-reference)
-- [❌ Anti-Patterns - NEVER Do This](#anti-patterns---never-do-this)
+- [🎯 What Goes Where - Quick Reference](#what-goes-where-quick-reference)
+- [❌ Anti-Patterns - NEVER Do This](#anti-patterns-never-do-this)
   - [🚫 NEVER Place Files:](#never-place-files)
   - [🚫 NEVER Create:](#never-create)
 - [✅ Validation Checklist](#validation-checklist)

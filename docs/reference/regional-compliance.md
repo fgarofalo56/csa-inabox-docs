@@ -1,6 +1,6 @@
 # Regional Compliance and Data Governance
 
-[Home](../../README.md) > [Reference](README.md) > Regional Compliance
+[Home](../README.md) > [Reference](README.md) > Regional Compliance
 
 > Comprehensive guide to regional compliance requirements, data residency regulations, and governance considerations for Cloud Scale Analytics deployments across different geographic regions.
 
@@ -28,10 +28,10 @@ The General Data Protection Regulation (GDPR) applies to organizations processin
 
 | Requirement | Azure Synapse Implementation | Documentation |
 |-------------|------------------------------|---------------|
-| Data Protection by Design | Built-in security controls, encryption, access management | [Security Best Practices](../best-practices/security.md) |
-| Right to Access | Query capabilities, data export tools | [Data Export Guide](../code-examples/delta-lake/README.md) |
-| Right to Erasure | Delete operations, data purging capabilities | [Data Management](../best-practices/data-governance.md) |
-| Data Portability | Export to standard formats (CSV, Parquet, JSON) | [Integration Guide](../code-examples/integration-guide.md) |
+| Data Protection by Design | Built-in security controls, encryption, access management | [Security Best Practices](security.md) |
+| Right to Access | Query capabilities, data export tools | [Data Export Guide](../06-code-examples/delta-lake/README.md) |
+| Right to Erasure | Delete operations, data purging capabilities | [Data Management](../05-best-practices/README.md) |
+| Data Portability | Export to standard formats (CSV, Parquet, JSON) | [Integration Guide](../06-code-examples/integration-guide.md) |
 | Consent Management | Row-level security, audit logging | [Security Reference](security.md) |
 
 ### GDPR-Compliant Architecture Patterns
@@ -681,8 +681,8 @@ class DataTransferController:
 ## Related Resources
 
 - [Azure Regions Reference](azure-regions.md)
-- [Security Best Practices](../best-practices/security.md)
-- [Data Governance Guide](../best-practices/data-governance.md)
+- [Security Best Practices](security.md)
+- [Data Governance Guide](../05-best-practices/README.md)
 - [Compliance Guide](../security/compliance-guide.md)
 - [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center)
 - [Azure Compliance Documentation](https://docs.microsoft.com/en-us/azure/compliance/)

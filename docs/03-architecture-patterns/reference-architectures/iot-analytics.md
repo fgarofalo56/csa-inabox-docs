@@ -1,6 +1,6 @@
 # 🏭 IoT Analytics Reference Architecture
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🌐 [Reference Architectures](README.md)__ | __🏭 IoT Analytics__
+> __🏠 [Home](../../README.md)__ | __📖 [Architecture Patterns](../README.md)__ | __🌐 [Reference Architectures](README.md)__ | __🏭 IoT Analytics__
 
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -770,7 +770,7 @@ resource streamAnalyticsJob 'Microsoft.StreamAnalytics/streamingjobs@2021-10-01-
 ## 📚 Related Resources
 
 - [Lambda Architecture](../streaming-architectures/lambda-architecture.md)
-- [Time-Series Patterns](../../best-practices/performance-optimization.md)
+- [Time-Series Patterns](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
 - [Edge Computing Guide](../../tutorials/README.md)
 
 ---

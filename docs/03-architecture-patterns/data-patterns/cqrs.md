@@ -1,6 +1,6 @@
 # 📊 CQRS Pattern
 
-> __🏠 [Home](../../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __📊 Data Patterns__ | __CQRS__
+> __🏠 [Home](../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __📊 Data Patterns__ | __CQRS__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)

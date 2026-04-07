@@ -1,6 +1,6 @@
 # 🏗️ Tutorial 2: Synapse Workspace Basics
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ [Synapse Series](README.md)__ | __🏗️ Workspace Basics__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🏗️ [Synapse Series](README.md)__ | __🏗️ Workspace Basics__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-02_Workspace_Basics-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)

@@ -1,6 +1,6 @@
 # Data Mesh Architecture Pattern
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🏗️ [Architecture Patterns](../README.md)** | **Data Mesh**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🏗️ [Architecture Patterns](../README.md)** | **Data Mesh**
 
 ![Status](https://img.shields.io/badge/Status-Emerging%20Pattern-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -1042,8 +1042,8 @@ versioning:
 
 **Related Documentation**:
 - [Medallion Architecture](medallion-architecture.md)
-- [Azure Purview Integration](../../code-examples/integration/azure-purview.md)
-- [Organizational Patterns](../../best-practices/data-governance.md)
+- [Azure Purview Integration](../../06-code-examples/integration/azure-purview.md)
+- [Organizational Patterns](../../05-best-practices/README.md)
 
 ---
 

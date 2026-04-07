@@ -1,6 +1,6 @@
 # CONTENT STANDARDS
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **CONTENT STANDARDS**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **CONTENT STANDARDS**
 
 ## Overview
 

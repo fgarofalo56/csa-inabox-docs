@@ -1,6 +1,6 @@
 # 🔗 Azure Purview Data Lineage
 
-> __🏠 [Home](../../../../README.md)__ | __🛠️ [Services](../../README.md)__ | __🔐 Data Governance__ | __🔗 Lineage__
+> __🏠 [Home](../../../README.md)__ | __🛠️ [Services](../../README.md)__ | __🔐 Data Governance__ | __🔗 Lineage__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)

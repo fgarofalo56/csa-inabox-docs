@@ -1,6 +1,6 @@
 # 📦 Brand Assets Collection
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎨 [Brand](../README.md)** | **📦 Assets**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎨 [Brand](../README.md)** | **📦 Assets**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Repository](https://img.shields.io/badge/Type-Repository-blue)
@@ -396,7 +396,7 @@ git sparse-checkout set assets/logos assets/colors
 ## 📚 Related Resources
 
 - [Brand Guidelines](../../production-guide/brand-guidelines.md)
-- [Visual Style Guide](../../../VISUAL-STYLE-GUIDE.md)
+- [Visual Style Guide](../../../guides/VISUAL-STYLE-GUIDE.md)
 - [Asset Management](../../production-guide/asset-management.md)
 
 ---

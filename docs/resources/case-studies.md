@@ -1,6 +1,6 @@
 # 📊 Azure Analytics Customer Case Studies
 
-> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__ | __📊 Case Studies__
+> __🏠 [Home](../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__ | __📊 Case Studies__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Case Studies](https://img.shields.io/badge/Case%20Studies-12+-blue?style=flat-square)
@@ -14,12 +14,12 @@ Real-world implementations of Azure Cloud Scale Analytics across industries, sho
 
 - [Overview](#overview)
 - [Financial Services](#financial-services)
-- [Retail & E-Commerce](#retail--e-commerce)
-- [Healthcare & Life Sciences](#healthcare--life-sciences)
+- [Retail & E-Commerce](#retail-e-commerce)
+- [Healthcare & Life Sciences](#healthcare-life-sciences)
 - [Manufacturing](#manufacturing)
-- [Energy & Utilities](#energy--utilities)
+- [Energy & Utilities](#energy-utilities)
 - [Telecommunications](#telecommunications)
-- [Media & Entertainment](#media--entertainment)
+- [Media & Entertainment](#media-entertainment)
 - [Public Sector](#public-sector)
 - [Implementation Insights](#implementation-insights)
 - [ROI Analysis](#roi-analysis)

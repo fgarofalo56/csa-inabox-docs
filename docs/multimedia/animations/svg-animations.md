@@ -1,6 +1,6 @@
 # SVG Animation Specifications
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **📐 SVG Animations**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **📐 SVG Animations**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: SVG/SMIL](https://img.shields.io/badge/Type-SVG%2FSMIL-blue)

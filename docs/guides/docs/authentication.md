@@ -1,6 +1,6 @@
 # 🔐 Authentication Guide
 
-> **🏠 [Home](../../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **📋 [Docs](./README.md)** | **🔐 Authentication**
+> **🏠 [Home](../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **📋 [Docs](../README.md)** | **🔐 Authentication**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
@@ -649,7 +649,7 @@ az keyvault secret set \
 ### Internal Guides
 
 - [Technical Setup Guide](../technical-setup.md) - Azure resource setup
-- [Security Best Practices](../../devops/security-best-practices.md) - Security guidelines
+- [Security Best Practices](../../10-devops/security-best-practices.md) - Security guidelines
 - [Best Practices Guide](./best-practices.md) - General best practices
 
 ### Azure Documentation

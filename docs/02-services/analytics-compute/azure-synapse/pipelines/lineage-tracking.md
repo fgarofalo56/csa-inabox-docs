@@ -1,6 +1,6 @@
 # 🔗 Pipeline Lineage Tracking
 
-> __🏠 [Home](../../../../../README.md)__ | __🛠️ [Services](../../../README.md)__ | __📊 [Synapse](../README.md)__ | __🔗 Lineage Tracking__
+> __🏠 [Home](../../../../README.md)__ | __🛠️ [Services](../../../README.md)__ | __📊 [Synapse](../README.md)__ | __🔗 Lineage Tracking__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)

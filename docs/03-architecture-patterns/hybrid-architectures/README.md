@@ -1,6 +1,6 @@
 # 🔀 Hybrid Architecture Patterns
 
-> __🏠 [Home](../../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __🔀 Hybrid Architectures__
+> __🏠 [Home](../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __🔀 Hybrid Architectures__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Patterns](https://img.shields.io/badge/Patterns-4+-blue?style=flat-square)
@@ -139,7 +139,7 @@ resource expressRouteCircuit 'Microsoft.Network/expressRouteCircuits@2023-05-01'
 
 - [Global Data Distribution](global-data-distribution.md)
 - [Network Security](../../05-best-practices/cross-cutting-concerns/networking/README.md)
-- [Migration Strategies](../../05-best-practices/migration-strategies.md)
+- [Migration Strategies](../../05-best-practices/README.md)
 
 ---
 

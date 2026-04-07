@@ -1,6 +1,6 @@
 # Change Data Capture with Azure Data Factory
 
-> __[Home](../../../README.md)__ | __[Implementation](../README.md)__ | __[Integration](README.md)__ | __Data Factory CDC__
+> __[Home](../../README.md)__ | __[Implementation](../README.md)__ | __[Integration](README.md)__ | __Data Factory CDC__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -272,7 +272,7 @@ def apply_cdc_changes(cdc_path: str, target_table: str):
 
 - [Databricks CDC](capture-databricks.md)
 - [Synapse CDC](capture-synapse-analytics.md)
-- [Data Factory Best Practices](../../05-best-practices/service-specific/data-factory.md)
+- [Data Factory Best Practices](../../05-best-practices/README.md)
 
 ---
 

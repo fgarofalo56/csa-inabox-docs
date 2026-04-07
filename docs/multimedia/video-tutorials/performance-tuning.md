@@ -1,6 +1,6 @@
 # Video Script: Performance Tuning for Azure Synapse
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Performance Tuning**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Performance Tuning**
 
 ![Duration: 32 minutes](https://img.shields.io/badge/Duration-32%20minutes-blue)
 ![Level: Advanced](https://img.shields.io/badge/Level-Advanced-red)

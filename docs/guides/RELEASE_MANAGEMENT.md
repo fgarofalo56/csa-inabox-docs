@@ -1,6 +1,6 @@
 # RELEASE MANAGEMENT
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **RELEASE MANAGEMENT**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **RELEASE MANAGEMENT**
 
 ## Overview
 

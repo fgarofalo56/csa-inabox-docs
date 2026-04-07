@@ -1,6 +1,6 @@
 # 🤝 Contributing to CSA Multimedia
 
-> **🏠 [Home](../../README.md)** | **📖 [Documentation](../README.md)** | **🎬 [Multimedia](./ README.md)** | **🤝 Contributing**
+> **🏠 [Home](../README.md)** | **📖 [Documentation](../README.md)** | **🎬 [Multimedia](README.md)** | **🤝 Contributing**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Contributors: Welcome](https://img.shields.io/badge/Contributors-Welcome-blue)
@@ -82,7 +82,7 @@ Provide narration, voiceovers, or audio guides:
 
 1. Browse [open content requests](https://github.com/csa-inabox/csa-inabox-docs/issues?q=is%3Aissue+is%3Aopen+label%3Amultimedia)
 2. Check [multimedia roadmap](https://github.com/csa-inabox/csa-inabox-docs/projects/multimedia-roadmap)
-3. Or propose new content via [content request](../requests/README.md)
+3. Or propose new content via [content request](requests/README.md)
 
 ### Step 2: Set Up Environment
 
@@ -369,7 +369,7 @@ Join weekly office hours:
 ### Contributors
 
 All contributors are recognized:
-- Listed in [CONTRIBUTORS.md](../../CONTRIBUTORS.md)
+- Listed in [CONTRIBUTORS.md](../README.md)
 - Featured in release notes
 - Acknowledged in content credits
 
@@ -386,9 +386,9 @@ Significant contributions may receive:
 
 ### Templates
 
-- [Video Script Template](templates/video-script-template.md)
-- [Diagram Template](templates/diagram-template.fig)
-- [Demo Component Template](templates/demo-component-template.tsx)
+- [Video Script Template](templates/README.md)
+- *Template: diagram-template.fig (coming soon)*
+- *Template: demo-component-template.tsx (coming soon)*
 
 ### Tools
 

@@ -1,6 +1,6 @@
 # 🐘 Azure HDInsight
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🐘 Azure HDInsight**
+> **🏠 [Home](../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🐘 Azure HDInsight**
 
 ![Status](https://img.shields.io/badge/Status-Migration-blue?style=flat-square)
 ![Tier](https://img.shields.io/badge/Tier-Enterprise-purple?style=flat-square)
@@ -302,7 +302,7 @@ Enable auto-scaling to adjust worker nodes based on demand:
 
 Save up to 72% with Azure Reserved VM Instances for production clusters.
 
-**[📖 Detailed Cost Guide →](../../../05-best-practices/cross-cutting-concerns/cost-optimization/hdinsight-cost-optimization.md)**
+**[📖 Detailed Cost Guide →](../../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)**
 
 ---
 
@@ -423,7 +423,7 @@ az hdinsight create \
   --no-wait
 ```
 
-**[📖 Security Best Practices →](../../../05-best-practices/cross-cutting-concerns/security/hdinsight-security.md)**
+**[📖 Security Best Practices →](../../../05-best-practices/cross-cutting-concerns/security/README.md)**
 
 ### Monitoring & Logging
 
@@ -510,7 +510,7 @@ hdi_compute = HDInsightCompute.attach(
 )
 ```
 
-**[📖 Integration Examples →](../../../04-implementation-guides/integration-scenarios/hdinsight-integrations.md)**
+**[📖 Integration Examples →](../../../04-implementation-guides/integration-scenarios/README.md)**
 
 ---
 
@@ -737,9 +737,9 @@ graph LR
 
 ### 🔧 Code Examples
 
-- **[Spark Jobs](../../../06-code-examples/by-service/hdinsight/spark-jobs.md)** - Spark application examples
-- **[Hive Queries](../../../06-code-examples/by-service/hdinsight/hive-queries.md)** - SQL query examples
-- **[Kafka Producers](../../../06-code-examples/by-service/hdinsight/kafka-examples.md)** - Streaming examples
+- **[Spark Jobs](../../../06-code-examples/README.md)** - Spark application examples
+- **[Hive Queries](../../../06-code-examples/README.md)** - SQL query examples
+- **[Kafka Producers](../../../06-code-examples/README.md)** - Streaming examples
 
 ### 🏗️ Architecture Patterns
 

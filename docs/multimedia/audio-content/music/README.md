@@ -1,6 +1,6 @@
 # Background Music Library
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎵 [Audio Content](../README.md)** | **Music**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎵 [Audio Content](../README.md)** | **Music**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Music Library](https://img.shields.io/badge/Type-Music-blue)
@@ -260,7 +260,7 @@ audio/
 ## Related Resources
 
 - [Sound Effects Library](../sound-effects/README.md)
-- [Audio Production Guide](../audio-production-workflow.md)
+- [Audio Production Guide](../../production-guide/audio-production-workflow.md)
 - [Video Tutorial Production](../../video-tutorials/README.md)
 
 ---

@@ -1,6 +1,6 @@
 # ⏰ Pipeline Triggers & Scheduling
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Triggers__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Triggers__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Pipeline_Triggers-blue)
 ![Duration](https://img.shields.io/badge/Duration-20_minutes-green)

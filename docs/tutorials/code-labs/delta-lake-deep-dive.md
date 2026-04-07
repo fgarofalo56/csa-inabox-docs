@@ -1,6 +1,6 @@
 # 🏞️ Delta Lake Deep Dive Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🏞️ Delta Lake**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🏞️ Delta Lake**
 
 ![Lab](https://img.shields.io/badge/Lab-Delta_Lake-blue)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)

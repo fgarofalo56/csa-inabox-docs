@@ -1,6 +1,6 @@
 # 📻 Episode: Cloud-Scale Analytics Architecture Patterns
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Cloud Architecture**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🎧 [Audio Content](../README.md)** | **📻 Cloud Architecture**
 
 ![Episode: 003](https://img.shields.io/badge/Episode-003-blue)
 ![Duration: 30 min](https://img.shields.io/badge/Duration-30min-green)

@@ -49,7 +49,11 @@ class NavigationStructureValidator:
         try:
             with open(self.mkdocs_config, 'r', encoding='utf-8') as f:
                 self.config = yaml.safe_load(f)
-                
+
+            if self.config is None:
+                logger.error(f"MkDocs config is empty: {self.mkdocs_config}")
+                return False
+
             self.docs_dir = self.docs_root / self.config.get('docs_dir', 'docs')
             self.nav_structure = self.config.get('nav', [])
             return True
@@ -427,8 +431,8 @@ class NavigationStructureValidator:
         """Generate recommendations based on validation results."""
         recommendations = []
         
-        error_count = sum(len(issues) for issues in validation_results.values() if any(i.severity == 'error' for i in issues))
-        warning_count = sum(len(issues) for issues in validation_results.values() if any(i.severity == 'warning' for i in issues))
+        error_count = sum(1 for issues in validation_results.values() for i in issues if i.severity == 'error')
+        warning_count = sum(1 for issues in validation_results.values() for i in issues if i.severity == 'warning')
         
         if error_count > 0:
             recommendations.append("Fix navigation errors to ensure proper site functionality")

@@ -2,7 +2,6 @@
 
 import subprocess
 import tempfile
-import shutil
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 import yaml
@@ -38,9 +37,13 @@ class DocumentationBuildTester:
         try:
             with open(self.mkdocs_config, 'r', encoding='utf-8') as f:
                 config = yaml.safe_load(f)
-                
+
+            if config is None:
+                errors.append("mkdocs.yml is empty")
+                return False, errors
+
             # Check required fields
-            required_fields = ['site_name', 'docs_dir']
+            required_fields = ['site_name']
             for field in required_fields:
                 if field not in config:
                     errors.append(f"Required field '{field}' missing from mkdocs.yml")
@@ -97,6 +100,8 @@ class DocumentationBuildTester:
                 
         except subprocess.TimeoutExpired:
             return False, "", "Build timed out after 5 minutes"
+        except FileNotFoundError:
+            return False, "", "mkdocs executable not found. Install with: pip install mkdocs"
         except Exception as e:
             return False, "", f"Build error: {e}"
     
@@ -145,7 +150,7 @@ class DocumentationBuildTester:
     
     def get_build_statistics(self) -> Dict:
         """Get statistics about the documentation build.
-        
+
         Returns:
             Dictionary with build statistics
         """
@@ -156,12 +161,32 @@ class DocumentationBuildTester:
             'nav_valid': False,
             'build_successful': False
         }
-        
-        # Count markdown files
-        docs_dir = self.docs_root / "docs"
+
+        # Derive docs_dir from mkdocs.yml config (not hardcoded)
+        docs_dir_name = 'docs'  # default
+        try:
+            with open(self.mkdocs_config, 'r', encoding='utf-8') as f:
+                config = yaml.safe_load(f)
+                if config and 'docs_dir' in config:
+                    docs_dir_name = config['docs_dir']
+        except Exception as e:
+            logger.debug(f"Could not read docs_dir from mkdocs.yml, using default 'docs': {e}")
+
+        docs_dir = self.docs_root / docs_dir_name
         if docs_dir.exists():
-            stats['total_markdown_files'] = len(list(docs_dir.glob("**/*.md")))
-            stats['total_assets'] = len(list(docs_dir.glob("**/*.{png,jpg,jpeg,gif,svg,pdf}")))
+            # Single traversal to count markdown files and assets
+            asset_extensions = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.pdf'}
+            md_count = 0
+            asset_count = 0
+            for item in docs_dir.rglob("*"):
+                if item.is_file():
+                    suffix = item.suffix.lower()
+                    if suffix == '.md':
+                        md_count += 1
+                    elif suffix in asset_extensions:
+                        asset_count += 1
+            stats['total_markdown_files'] = md_count
+            stats['total_assets'] = asset_count
         
         # Check config validity
         stats['config_valid'], _ = self.validate_mkdocs_config()

@@ -1,6 +1,6 @@
 # 🎬 Multimedia Content & Tutorials Hub
 
-> __🏠 [Home](../../README.md)__ | __📖 Documentation__ | __🎬 Multimedia Hub__
+> __🏠 [Home](../README.md)__ | __📖 Documentation__ | __🎬 Multimedia Hub__
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Multimedia](https://img.shields.io/badge/Type-Multimedia-purple)
@@ -135,7 +135,7 @@ Track engagement and effectiveness:
 
 ## 🤝 Contributing
 
-We welcome contributions! See our [contribution guide](../../CONTRIBUTING.md) for:
+We welcome contributions! See our [contribution guide](../guides/CONTRIBUTING.md) for:
 
 - Content submission guidelines
 - Quality standards checklist

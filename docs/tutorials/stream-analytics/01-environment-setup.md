@@ -1,6 +1,6 @@
 # 🚀 Tutorial 1: Environment Setup and Prerequisites
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __🚀 Environment Setup__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __🚀 Environment Setup__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-01_Environment_Setup-blue)
 ![Duration](https://img.shields.io/badge/Duration-30_minutes-green)

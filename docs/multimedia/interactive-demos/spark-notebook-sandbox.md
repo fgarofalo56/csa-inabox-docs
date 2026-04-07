@@ -1,6 +1,6 @@
 # 🎯 Spark Notebook Interactive Sandbox
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Spark Sandbox**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Spark Sandbox**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -835,9 +835,9 @@ df = df.na.fill({"price": 0.0})
 
 ### Code Examples
 
-- [Spark Best Practices](../../code-examples/README.md)
-- [Performance Tuning Guide](../../best-practices/spark-performance.md)
-- [Delta Lake Examples](../../code-examples/delta-lake-guide.md)
+- [Spark Best Practices](../../06-code-examples/README.md)
+- [Performance Tuning Guide](../../05-best-practices/service-specific/synapse/spark-performance.md)
+- [Delta Lake Examples](../../06-code-examples/delta-lake-guide.md)
 
 ## 💬 Feedback
 

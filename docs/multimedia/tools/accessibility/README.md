@@ -1,6 +1,6 @@
 # ♿ Multimedia Accessibility Tools
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🛠️ [Tools](../README.md)** | **♿ Accessibility**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **🛠️ [Tools](../README.md)** | **♿ Accessibility**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![WCAG: 2.1 AA](https://img.shields.io/badge/WCAG-2.1_AA-blue)

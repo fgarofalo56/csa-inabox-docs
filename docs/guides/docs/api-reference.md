@@ -1,6 +1,6 @@
 # API Reference Template
 
-> **Home [Home](../../../README.md)** | **Documentation** | **Guides [Guides](../README.md)** | **Templates**
+> **Home [Home](../../README.md)** | **Documentation** | **Guides [Guides](../README.md)** | **Templates**
 
 ---
 

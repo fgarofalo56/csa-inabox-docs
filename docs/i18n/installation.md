@@ -25,7 +25,7 @@ Before installing, ensure you have:
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-org/csa-inabox-docs.git
+git clone https://github.com/fgarofalo56/csa-inabox-docs.git
 cd csa-inabox-docs
 ```
 
@@ -87,7 +87,7 @@ az staticwebapp create \
 ```yaml
 site_name: CSA in-a-Box Documentation
 site_url: https://docs.example.com
-repo_url: https://github.com/your-org/csa-inabox-docs
+repo_url: https://github.com/fgarofalo56/csa-inabox-docs
 
 theme:
   name: material

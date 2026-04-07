@@ -1,6 +1,6 @@
 # Streaming Architecture Patterns for Cloud Scale Analytics
 
-> **🏠 [Home](../../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ Streaming Architectures**
+> **🏠 [Home](../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ Streaming Architectures**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Patterns](https://img.shields.io/badge/Patterns-4-blue?style=flat-square)

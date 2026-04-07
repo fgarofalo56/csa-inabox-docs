@@ -1,6 +1,6 @@
 # 🔧 Tutorial 3: Stream Analytics Job Creation
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __🔧 Job Creation__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __🌊 [Stream Analytics Series](README.md)__ | __🔧 Job Creation__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-03_Job_Creation-blue)
 ![Duration](https://img.shields.io/badge/Duration-35_minutes-green)

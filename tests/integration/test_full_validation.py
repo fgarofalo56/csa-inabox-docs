@@ -25,58 +25,95 @@ class TestFullValidationWorkflow:
         markdown_checker = MarkdownQualityChecker(temp_docs_root)
         image_validator = ImageReferenceValidator(temp_docs_root)
         nav_validator = NavigationStructureValidator(temp_docs_root)
-        
-        # Test build validation
+
+        # Test config validation (does not require mkdocs subprocess)
         config_valid, config_errors = build_tester.validate_mkdocs_config()
         assert config_valid, f"Config validation failed: {config_errors}"
-        
+
         nav_valid, nav_errors = build_tester.validate_nav_structure()
         assert nav_valid, f"Navigation validation failed: {nav_errors}"
-        
-        # Test build process (mocked)
-        with patch('subprocess.run') as mock_run:
-            mock_run.return_value.returncode = 0
-            mock_run.return_value.stdout = "Build successful"
-            mock_run.return_value.stderr = ""
-            
-            build_success, stdout, stderr = build_tester.test_build()
-            assert build_success, f"Build failed: {stderr}"
-        
+
         # Test markdown quality
         quality_results = markdown_checker.check_all_files()
         quality_report = markdown_checker.generate_quality_report(quality_results)
-        
+
         assert quality_report['total_files'] > 0
         assert 'quality_score' in quality_report
-        
+
         # Test image validation
         image_results = image_validator.validate_all_images()
         image_report = image_validator.generate_image_report(image_results)
-        
+
         assert 'total_images' in image_report
         assert 'image_health_score' in image_report
-        
+
         # Test navigation validation
         nav_results = nav_validator.validate_all_navigation()
         nav_report = nav_validator.generate_navigation_report(nav_results)
-        
+
         assert 'navigation_health_score' in nav_report
         assert 'total_issues' in nav_report
-        
+
         # Aggregate results
         overall_health_score = (
             quality_report['quality_score'] * 0.3 +
             image_report['image_health_score'] * 0.3 +
             nav_report['navigation_health_score'] * 0.4
         )
-        
-        print(f"\nOverall Documentation Health Score: {overall_health_score:.2f}")
-        print(f"Quality Score: {quality_report['quality_score']:.2f}")
-        print(f"Image Health Score: {image_report['image_health_score']:.2f}")
-        print(f"Navigation Health Score: {nav_report['navigation_health_score']:.2f}")
-        
-        # Basic health check
+
         assert overall_health_score > 0
+
+    @pytest.mark.integration
+    @pytest.mark.asyncio
+    async def test_anchor_link_validation(self, temp_docs_root):
+        """Test that anchor links are validated against actual headings."""
+        docs_dir = temp_docs_root / "docs"
+
+        # Create a file with headings and anchor links
+        anchor_test = docs_dir / "anchor_test.md"
+        anchor_test.write_text("""# Main Heading
+
+## Getting Started
+
+Some content here.
+
+### Installation
+
+Install steps.
+
+## API Reference
+
+API docs here.
+""")
+        # Create a file that links to those anchors
+        linker = docs_dir / "linker.md"
+        linker.write_text("""# Linker
+
+- [Valid anchor](anchor_test.md#getting-started)
+- [Valid anchor 2](anchor_test.md#installation)
+- [Broken anchor](anchor_test.md#nonexistent-section)
+- [Same-file anchor that exists](#linker)
+- [Same-file anchor that does not exist](#bogus)
+""")
+
+        async with LinkValidator(temp_docs_root) as validator:
+            results = await validator.validate_all_links(check_external=False)
+
+            # Filter to only anchor_test / linker results
+            anchor_results = [r for r in results if 'linker' in r.source_file]
+
+            broken = [r for r in anchor_results if not r.is_valid]
+            valid = [r for r in anchor_results if r.is_valid]
+
+            broken_urls = {r.url for r in broken}
+            assert 'anchor_test.md#nonexistent-section' in broken_urls, \
+                "Should detect broken anchor in another file"
+            assert '#bogus' in broken_urls, \
+                "Should detect broken same-file anchor"
+
+            valid_urls = {r.url for r in valid}
+            assert 'anchor_test.md#getting-started' in valid_urls
+            assert 'anchor_test.md#installation' in valid_urls
 
     @pytest.mark.integration
     @pytest.mark.asyncio

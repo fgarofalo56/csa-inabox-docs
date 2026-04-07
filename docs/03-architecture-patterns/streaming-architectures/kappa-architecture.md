@@ -1,6 +1,6 @@
 # Kappa Architecture Pattern
 
-> **🏠 [Home](../../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ [Streaming Architectures](README.md)** | **Kappa Architecture**
+> **🏠 [Home](../../README.md)** | **📖 [Architecture Patterns](../README.md)** | **⚡ [Streaming Architectures](README.md)** | **Kappa Architecture**
 
 ![Stream-First](https://img.shields.io/badge/Type-Stream%20Only-green?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -1280,9 +1280,9 @@ class FinancialTransactionProcessor:
 
 ### Code Examples
 
-- [Kappa Architecture Samples](../../code-examples/kappa-architecture/)
-- [Structured Streaming Examples](../../code-examples/structured-streaming/)
-- [Event Replay Patterns](../../code-examples/event-replay/)
+- [Code Examples Overview](../../06-code-examples/README.md)
+- [Streaming Pipeline Example](../../06-code-examples/integration-examples/streaming-pipeline/README.md)
+- [Event Hubs Examples](../../06-code-examples/by-service/event-hubs/README.md)
 
 ### Related Patterns
 

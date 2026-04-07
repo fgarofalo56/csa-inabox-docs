@@ -1,6 +1,6 @@
 # 🎯 Azure Data Factory Fundamentals
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Fundamentals__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Fundamentals__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-ADF_Fundamentals-blue)
 ![Duration](https://img.shields.io/badge/Duration-15_minutes-green)
@@ -389,7 +389,7 @@ __ADF Solution__:
 
 - [Azure Data Factory Documentation](https://docs.microsoft.com/azure/data-factory/)
 - [ADF Pricing Calculator](https://azure.microsoft.com/pricing/details/data-factory/)
-- [ADF Best Practices](../../best-practices/README.md)
+- [ADF Best Practices](../../05-best-practices/README.md)
 - [ADF Design Patterns](https://docs.microsoft.com/azure/architecture/data-guide/)
 
 ## 🎯 Knowledge Check

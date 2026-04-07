@@ -9,7 +9,7 @@ category: "Best Practices - Cost"
 
 # Event Hubs Capture Cost Optimization
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **💲 [Cost Optimization](./README.md)** | **Event Hubs Capture**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **💲 [Cost Optimization](./README.md)** | **Event Hubs Capture**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)
@@ -540,8 +540,8 @@ result = analyze_capture_efficiency(resource_id)
 
 ## Related Resources
 
-- [Event Hubs Cost Optimization](./eventhub-cost.md)
-- [Storage Optimization](./storage-optimization.md)
+- [Event Hubs Cost Optimization](README.md)
+- [Storage Optimization](./README.md)
 - [Streaming Performance](../performance/streaming-optimization.md)
 - [Event Hubs Best Practices](https://learn.microsoft.com/azure/event-hubs/event-hubs-capture-overview)
 

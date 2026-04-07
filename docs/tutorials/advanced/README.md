@@ -1,6 +1,6 @@
 # 🚀 Advanced Tutorials
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🚀 Advanced__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🚀 Advanced__
 
 ![Level](https://img.shields.io/badge/Level-Advanced-red)
 
@@ -240,12 +240,12 @@ These tutorials prepare you for:
 
 - [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/)
 - [Reference Architectures](../../03-architecture-patterns/reference-architectures/README.md)
-- [Best Practices](../../best-practices/README.md)
+- [Best Practices](../../05-best-practices/README.md)
 
 ### __Performance__
 
-- [Performance Optimization](../../best-practices/performance-optimization.md)
-- [Cost Optimization](../../best-practices/cost-optimization.md)
+- [Performance Optimization](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Cost Optimization](../../05-best-practices/README.md)
 
 ### __Migration**
 

@@ -119,6 +119,6 @@ GROUP BY customer_id
 ## Next Steps
 
 1. [Shared Metadata Architecture](../shared-metadata/README.md)
-2. [Best Practices](../../best-practices/README.md)
-3. [Code Examples](../../code-examples/README.md)
-4. [Security Guide](../../reference/security.md)
+2. [Best Practices](../../data-patterns/README.md)
+3. [Code Examples](../../data-patterns/README.md)
+4. [Security Guide](../../../README.md)

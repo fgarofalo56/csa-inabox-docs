@@ -38,6 +38,9 @@ param sparkPoolMinNodeCount int = 3
 @maxValue(200)
 param sparkPoolMaxNodeCount int = 10
 
+@description('Enable secure networking (deny-by-default, no public access). Set to true for production.')
+param secureMode bool = false
+
 // Variables
 var dataLakeFileSystemName = 'datalake'
 var keyVaultName = 'kv-${uniqueString(resourceGroup().id)}'
@@ -57,7 +60,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
     supportsHttpsTrafficOnly: true
     allowBlobPublicAccess: false
     networkAcls: {
-      defaultAction: 'Allow'
+      defaultAction: secureMode ? 'Deny' : 'Allow'
       bypass: 'AzureServices'
     }
     encryption: {
@@ -74,7 +77,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2023-01-01' = {
       keySource: 'Microsoft.Storage'
     }
   }
-  
+
   tags: {
     Environment: 'Tutorial'
     Pattern: 'Medallion'
@@ -118,10 +121,10 @@ resource keyVault 'Microsoft.KeyVault/vaults@2023-02-01' = {
     }
     tenantId: subscription().tenantId
     enableSoftDelete: true
-    softDeleteRetentionInDays: 7
+    softDeleteRetentionInDays: secureMode ? 90 : 7
     enableRbacAuthorization: true
     networkAcls: {
-      defaultAction: 'Allow'
+      defaultAction: secureMode ? 'Deny' : 'Allow'
       bypass: 'AzureServices'
     }
   }
@@ -166,7 +169,7 @@ resource synapseWorkspace 'Microsoft.Synapse/workspaces@2021-06-01' = {
     sqlAdministratorLogin: sqlAdministratorLogin
     sqlAdministratorLoginPassword: sqlAdministratorLoginPassword
     managedResourceGroupName: 'synapsemrg-${synapseWorkspaceName}'
-    publicNetworkAccess: 'Enabled'
+    publicNetworkAccess: secureMode ? 'Disabled' : 'Enabled'
   }
   
   tags: {
@@ -215,8 +218,8 @@ resource sparkPool 'Microsoft.Synapse/workspaces/bigDataPools@2021-06-01' = {
   }
 }
 
-// Firewall rule to allow all Azure services
-resource firewallRuleAzureServices 'Microsoft.Synapse/workspaces/firewallRules@2021-06-01' = {
+// Firewall rule to allow all Azure services (only in non-secure mode)
+resource firewallRuleAzureServices 'Microsoft.Synapse/workspaces/firewallRules@2021-06-01' = if (!secureMode) {
   parent: synapseWorkspace
   name: 'AllowAllWindowsAzureIps'
   properties: {

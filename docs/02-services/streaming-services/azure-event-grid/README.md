@@ -1,6 +1,6 @@
 # 🌐 Azure Event Grid
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __🌐 Azure Event Grid__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __🌐 Azure Event Grid__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Tier](https://img.shields.io/badge/Tier-Basic%20%7C%20Premium-purple?style=flat-square)
@@ -507,8 +507,8 @@ for metric in response.metrics:
 ### Best Practices
 
 - [__Reliability Patterns__](../../../05-best-practices/operational-excellence/eventgrid-reliability.md)
-- [__Security Configuration__](../../../05-best-practices/cross-cutting-concerns/security/eventgrid-security.md)
-- [__Performance Optimization__](../../../05-best-practices/cross-cutting-concerns/performance/eventgrid-optimization.md)
+- [__Security Configuration__](../../../05-best-practices/cross-cutting-concerns/security/README.md)
+- [__Performance Optimization__](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # Script Writing Guidelines for Video Tutorials
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Script Writing**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Script Writing**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Updated: 2025](https://img.shields.io/badge/Updated-2025-blue)

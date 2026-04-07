@@ -1,6 +1,6 @@
 # 🎯 Event-Driven Data Pipelines - Automated ETL with Event Grid
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __🎯 Event-Driven Pipelines__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __🎯 Event-Driven Pipelines__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-50min-blue?style=flat-square)
@@ -718,7 +718,7 @@ az network private-endpoint create \
 ## 📚 Next Steps
 
 - **[Add Logic Apps for complex orchestration](../../08-solutions/logic-apps-integration/README.md)**
-- **[Implement data quality validation](../../best-practices/data-quality.md)**
+- **[Implement data quality validation](../../solutions/azure-realtime-analytics/implementation/data-quality.md)**
 - **[Build data lineage tracking](../../08-solutions/data-governance/lineage.md)**
 
 ---

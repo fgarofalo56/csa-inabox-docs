@@ -1,6 +1,6 @@
 # 📑 Executive Templates - CSA-in-a-Box
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📋 [Templates](../README.md)** | **👤 Executive**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📋 [Templates](../README.md)** | **👤 Executive**
 
 ![Type: Templates](https://img.shields.io/badge/Type-Templates-blue)
 ![Category: Executive](https://img.shields.io/badge/Category-Executive-purple)

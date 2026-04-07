@@ -1,6 +1,6 @@
 # 🌐 Stream Analytics to Cosmos DB - Global Operational Data
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __🌐 Stream Analytics to Cosmos DB__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __🌐 Stream Analytics to Cosmos DB__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-40min-blue?style=flat-square)
@@ -476,7 +476,7 @@ az cosmosdb sql container throughput update \
 
 - **[Add Azure Functions for change feed processing](../../08-solutions/change-feed-processor/README.md)**
 - **[Integrate with Synapse Link for analytics](stream-analytics-synapse.md)**
-- **[Implement global distribution strategy](../../best-practices/global-distribution.md)**
+- **[Implement global distribution strategy](../../reference/cosmosdb/global-distribution.md)**
 
 ---
 

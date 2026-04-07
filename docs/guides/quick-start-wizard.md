@@ -1,6 +1,6 @@
 # Quick Start Wizard
 
-[🏠 Home](../../README.md) > [📖 Guides](./README.md) > 🚀 Quick Start Wizard
+[🏠 Home](../README.md) > [📖 Guides](./README.md) > 🚀 Quick Start Wizard
 
 > 🚀 __Get Started Fast__
 > This wizard helps you find the right starting point based on your role, experience level, and goals.
@@ -68,7 +68,7 @@ __Week 3-4: Synapse Workspace Setup__
 __Week 5-8: Core Skills Development__
 
 1. ✅ Learn SQL on Synapse
-   - [Serverless SQL Guide](../code-examples/serverless-sql-guide.md)
+   - [Serverless SQL Guide](../06-code-examples/serverless-sql-guide.md)
    - Query data lake files
    - Create external tables
 
@@ -79,54 +79,54 @@ __Week 5-8: Core Skills Development__
 
 __Next Steps:__
 
-- Move to [Intermediate Track](#intermediate-track-data-engineer)
-- Practice with [Code Examples](../code-examples/README.md)
+- Move to [Intermediate Track](#intermediate-track)
+- Practice with [Code Examples](../06-code-examples/README.md)
 - Join community discussions
 
-#### 🟡 Intermediate Track (3-12 months experience) {#intermediate-track-data-engineer}
+#### 🟡 Intermediate Track (3-12 months experience) {#intermediate-track}
 
 __Month 1-2: Advanced Pipeline Development__
 
 1. ✅ Complex data orchestration
-   - [Data Factory Integration](../code-examples/integration/azure-data-factory.md)
+   - [Data Factory Integration](../06-code-examples/integration/azure-data-factory.md)
    - Dynamic pipelines with parameters
    - Error handling and retry logic
 
 2. ✅ Delta Lake implementation
-   - [Delta Lake Guide](../code-examples/delta-lake-guide.md)
-   - [Delta Lakehouse Architecture](../architecture/delta-lakehouse/README.md)
+   - [Delta Lake Guide](../06-code-examples/delta-lake-guide.md)
+   - [Delta Lakehouse Architecture](../03-architecture-patterns/service-architectures/delta-lakehouse/README.md)
    - ACID transactions and time travel
 
 __Month 3-4: Performance Optimization__
 
 1. ✅ Query optimization
-   - [SQL Performance Best Practices](../best-practices/sql-performance.md)
+   - [SQL Performance Best Practices](../05-best-practices/service-specific/synapse/sql-performance.md)
    - Indexing strategies
    - Statistics management
 
 2. ✅ Spark optimization
-   - [Spark Performance Guide](../best-practices/spark-performance.md)
+   - [Spark Performance Guide](../05-best-practices/service-specific/synapse/spark-performance.md)
    - Partitioning strategies
    - Memory tuning
 
 __Month 5-6: Production Readiness__
 
 1. ✅ CI/CD implementation
-   - [Pipeline CI/CD](../devops/pipeline-ci-cd.md)
+   - [Pipeline CI/CD](../10-devops/pipeline-ci-cd.md)
    - Deployment automation
    - Testing strategies
 
 2. ✅ Monitoring and troubleshooting
-   - [Monitoring Setup](../monitoring/monitoring-setup.md)
-   - [Guided Troubleshooting](../troubleshooting/guided-troubleshooting.md)
+   - [Monitoring Setup](../09-monitoring/monitoring-setup.md)
+   - [Guided Troubleshooting](../07-troubleshooting/guided-troubleshooting.md)
    - Alert configuration
 
 __Next Steps:__
 
-- Move to [Advanced Track](#advanced-track-data-engineer)
+- Move to [Advanced Track](#advanced-track)
 - Explore [Real-time Analytics Solutions](../08-solutions/azure-realtime-analytics/README.md)
 
-#### 🔴 Advanced Track (1+ years experience) {#advanced-track-data-engineer}
+#### 🔴 Advanced Track (1+ years experience) {#advanced-track}
 
 __Focus Areas:__
 
@@ -136,12 +136,12 @@ __Focus Areas:__
    - Hybrid cloud integration
 
 2. ✅ Cost optimization at scale
-   - [Cost Optimization Guide](../best-practices/cost-optimization.md)
+   - [Cost Optimization Guide](../05-best-practices/README.md)
    - Resource scheduling
    - Storage lifecycle management
 
 3. ✅ Security and governance
-   - [Security Best Practices](../best-practices/security.md)
+   - [Security Best Practices](../reference/security.md)
    - Data classification
    - Compliance implementation
 
@@ -179,14 +179,14 @@ __Week 1-2: Getting Started__
    - Studio navigation
 
 2. ✅ Query data lake with SQL
-   - [Serverless SQL Guide](../code-examples/serverless-sql-guide.md)
+   - [Serverless SQL Guide](../06-code-examples/serverless-sql-guide.md)
    - OPENROWSET function
    - File formats (CSV, Parquet, JSON)
 
 __Week 3-4: Data Analysis__
 
 1. ✅ Aggregations and analytics
-   - [Query Optimization](../code-examples/serverless-sql/query-optimization.md)
+   - [Query Optimization](../06-code-examples/serverless-sql/query-optimization.md)
    - GROUP BY and window functions
    - Common table expressions (CTEs)
 
@@ -203,7 +203,7 @@ __Week 5-8: Visualization__
    - Report optimization
 
 2. ✅ Best practices
-   - [Performance Tips](../best-practices/serverless-sql-best-practices.md)
+   - [Performance Tips](../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
    - Query patterns
    - Cost management
 
@@ -217,7 +217,7 @@ __Advanced Analytics:__
    - Time-series analysis
 
 2. ✅ Performance optimization
-   - [SQL Performance](../best-practices/sql-performance.md)
+   - [SQL Performance](../05-best-practices/service-specific/synapse/sql-performance.md)
    - Statistics usage
    - Query troubleshooting
 
@@ -236,7 +236,7 @@ __Self-Service BI:__
    - Advanced DAX
 
 2. ✅ Machine learning basics
-   - [Azure ML Integration](../code-examples/integration/azure-ml.md)
+   - [Azure ML Integration](../06-code-examples/integration/azure-ml.md)
    - Predictive analytics
    - ML model consumption
 
@@ -276,13 +276,13 @@ __Foundation:__
 __Week 2-4: Core Patterns__
 
 1. ✅ Integration patterns
-   - [Integration Guide](../code-examples/integration-guide.md)
+   - [Integration Guide](../06-code-examples/integration-guide.md)
    - Service connectivity
    - Network architecture
 
 2. ✅ Security architecture
-   - [Network Security](../best-practices/network-security.md)
-   - [Private Link Architecture](../architecture/private-link-architecture.md)
+   - [Network Security](../05-best-practices/cross-cutting-concerns/networking/network-security.md)
+   - [Private Link Architecture](../03-architecture-patterns/service-architectures/private-link-architecture.md)
    - Identity and access
 
 #### 🟡 Intermediate Track
@@ -295,12 +295,12 @@ __Solution Design:__
    - Hybrid scenarios
 
 2. ✅ Operational excellence
-   - [Monitoring Architecture](../monitoring/README.md)
+   - [Monitoring Architecture](../09-monitoring/README.md)
    - Disaster recovery
    - High availability
 
 3. ✅ Cost optimization
-   - [Cost Best Practices](../best-practices/cost-optimization.md)
+   - [Cost Best Practices](../05-best-practices/README.md)
    - Resource sizing
    - Pricing models
 
@@ -314,7 +314,7 @@ __Enterprise Architecture:__
    - Data sovereignty
 
 2. ✅ Governance at scale
-   - [Security Best Practices](../best-practices/security.md)
+   - [Security Best Practices](../reference/security.md)
    - Azure Policy integration
    - Compliance automation
 
@@ -350,12 +350,12 @@ __Week 1-2: Deployment__
 __Week 3-4: Operations__
 
 1. ✅ Monitoring basics
-   - [Monitoring Setup](../monitoring/monitoring-setup.md)
+   - [Monitoring Setup](../09-monitoring/monitoring-setup.md)
    - Azure Monitor integration
    - Log Analytics
 
 2. ✅ Troubleshooting
-   - [Guided Troubleshooting](../troubleshooting/guided-troubleshooting.md)
+   - [Guided Troubleshooting](../07-troubleshooting/guided-troubleshooting.md)
    - Common issues
    - Support escalation
 
@@ -369,13 +369,13 @@ __Advanced Operations:__
    - Azure CLI
 
 2. ✅ Performance management
-   - [Performance Monitoring](../best-practices/performance-optimization.md)
+   - [Performance Monitoring](../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
    - Capacity planning
    - Resource optimization
 
 3. ✅ DevOps practices
-   - [CI/CD Pipelines](../devops/pipeline-ci-cd.md)
-   - [Automated Testing](../devops/automated-testing.md)
+   - [CI/CD Pipelines](../10-devops/pipeline-ci-cd.md)
+   - [Automated Testing](../10-devops/automated-testing.md)
    - Deployment automation
 
 ---
@@ -408,7 +408,7 @@ __Using Analytics:__
    - Schedule refreshes
 
 2. ✅ Self-service queries (optional)
-   - [Serverless SQL basics](../code-examples/serverless-sql-guide.md)
+   - [Serverless SQL basics](../06-code-examples/serverless-sql-guide.md)
    - Simple SELECT queries
    - Save favorite queries
 
@@ -504,10 +504,10 @@ Use this to track your progress:
 
 | Your Role | Start Here | Then Move To | Master This |
 |-----------|------------|--------------|-------------|
-| __Data Engineer__ | [Environment Setup](../tutorials/synapse/01-environment-setup.md) | [Delta Lake Guide](../code-examples/delta-lake-guide.md) | [Architecture Patterns](../architecture/README.md) |
-| __Data Analyst__ | [Serverless SQL Guide](../code-examples/serverless-sql-guide.md) | [Query Optimization](../code-examples/serverless-sql/query-optimization.md) | [Best Practices](../best-practices/README.md) |
-| __Architect__ | [Architecture Overview](../architecture/README.md) | [Reference Architectures](../architecture/delta-lakehouse/README.md) | [Solutions](../08-solutions/README.md) |
-| __Admin__ | [Environment Setup](../tutorials/synapse/01-environment-setup.md) | [Monitoring Setup](../monitoring/monitoring-setup.md) | [Security Best Practices](../best-practices/security.md) |
+| __Data Engineer__ | [Environment Setup](../tutorials/synapse/01-environment-setup.md) | [Delta Lake Guide](../06-code-examples/delta-lake-guide.md) | [Architecture Patterns](../solutions/azure-realtime-analytics/architecture/README.md) |
+| __Data Analyst__ | [Serverless SQL Guide](../06-code-examples/serverless-sql-guide.md) | [Query Optimization](../06-code-examples/serverless-sql/query-optimization.md) | [Best Practices](../05-best-practices/README.md) |
+| __Architect__ | [Architecture Overview](../solutions/azure-realtime-analytics/architecture/README.md) | [Reference Architectures](../03-architecture-patterns/service-architectures/delta-lakehouse/README.md) | [Solutions](../08-solutions/README.md) |
+| __Admin__ | [Environment Setup](../tutorials/synapse/01-environment-setup.md) | [Monitoring Setup](../09-monitoring/monitoring-setup.md) | [Security Best Practices](../reference/security.md) |
 
 ---
 
@@ -523,19 +523,19 @@ Use this to track your progress:
 ### Month 1 (Beginners)
 
 - [ ] Role-specific tutorials (see above)
-- [ ] [Best Practices Overview](../best-practices/README.md)
-- [ ] [Troubleshooting Guide](../troubleshooting/guided-troubleshooting.md)
+- [ ] [Best Practices Overview](../05-best-practices/README.md)
+- [ ] [Troubleshooting Guide](../07-troubleshooting/guided-troubleshooting.md)
 
 ### Month 3 (Intermediate)
 
-- [ ] [Architecture Patterns](../architecture/README.md)
-- [ ] [Performance Optimization](../best-practices/performance-optimization.md)
-- [ ] [Code Examples](../code-examples/README.md)
+- [ ] [Architecture Patterns](../solutions/azure-realtime-analytics/architecture/README.md)
+- [ ] [Performance Optimization](../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [ ] [Code Examples](../06-code-examples/README.md)
 
 ### Month 6+ (Advanced)
 
 - [ ] [Solutions](../08-solutions/README.md)
-- [ ] [DevOps Practices](../devops/pipeline-ci-cd.md)
+- [ ] [DevOps Practices](../10-devops/pipeline-ci-cd.md)
 - [ ] [Contributing Guide](./CONTRIBUTING_GUIDE.md)
 
 ---
@@ -574,7 +574,7 @@ __Stuck? Here's how to get unstuck:__
 
 1. __Search this documentation__ - Use the search bar
 2. __Check FAQ__ - [Frequently Asked Questions](../faq.md)
-3. __Troubleshooting Guide__ - [Guided Troubleshooting](../troubleshooting/guided-troubleshooting.md)
+3. __Troubleshooting Guide__ - [Guided Troubleshooting](../07-troubleshooting/guided-troubleshooting.md)
 4. __Community Forums__ - Ask questions
 5. __Azure Support__ - For account/service issues
 

@@ -1,6 +1,6 @@
 # PERFORMANCE OPTIMIZATION
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **PERFORMANCE OPTIMIZATION**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **PERFORMANCE OPTIMIZATION**
 
 ## Overview
 

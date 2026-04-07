@@ -1,6 +1,6 @@
 # 🔒 Secure Connectivity Patterns
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Secure Connectivity__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Secure Connectivity__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Secure_Connectivity-blue)
 ![Duration](https://img.shields.io/badge/Duration-15_minutes-green)
@@ -472,7 +472,7 @@ ALTER ROLE db_datareader ADD MEMBER [adf-tutorial-dev-001];
 - [ADF Managed Virtual Network](https://docs.microsoft.com/azure/data-factory/managed-virtual-network-private-endpoint)
 - [Managed Identity Documentation](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/)
 - [Azure Private Link](https://docs.microsoft.com/azure/private-link/)
-- [Security Best Practices](../../best-practices/security.md)
+- [Security Best Practices](../../reference/security.md)
 
 ## 🚀 Next Steps
 

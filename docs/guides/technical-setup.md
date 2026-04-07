@@ -1,6 +1,6 @@
 # 🔧 Technical Setup Guide
 
-> **🏠 [Home](../../README.md)** | **📚 Documentation** | **📖 [Guides](./README.md)** | **🔧 Technical Setup**
+> **🏠 [Home](../README.md)** | **📚 Documentation** | **📖 [Guides](./README.md)** | **🔧 Technical Setup**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
@@ -58,8 +58,6 @@ This comprehensive guide walks through the complete technical setup process for 
 ### Python Packages
 ```bash
 pip install azure-cli azure-identity azure-storage-blob azure-synapse-spark
-```
-```
 
 ### System Requirements
 
@@ -775,7 +773,7 @@ az synapse workspace firewall-rule create \
 
 - [Development Guide](./DEVELOPMENT_GUIDE.md) - Development workflow
 - [Deployment Guide](./deployment-guide.md) - Production deployment
-- [Security Best Practices](../devops/security-best-practices.md) - Security guidelines
+- [Security Best Practices](../10-devops/security-best-practices.md) - Security guidelines
 - [Monitoring Guide](./monitoring.md) - Monitoring setup
 
 ### Azure Documentation

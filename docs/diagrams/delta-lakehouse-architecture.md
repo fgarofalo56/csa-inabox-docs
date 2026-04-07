@@ -1,6 +1,6 @@
 # Delta Lakehouse Architecture Diagram
 
-[🏠 Home](../../README.md) > [📊 Diagrams](README.md) > Delta Lakehouse Architecture
+[🏠 Home](../README.md) > [📊 Diagrams](README.md) > Delta Lakehouse Architecture
 
 ## Overview
 
@@ -508,10 +508,10 @@ graph TB
 
 ## Reference Architecture Links
 
-- [Detailed Architecture](../architecture/delta-lakehouse/detailed-architecture.md)
-- [Implementation Guide](../tutorials/synapse/delta-lakehouse-tutorial.md)
-- [Best Practices](../best-practices/delta-lake-optimization.md)
-- [Code Examples](../code-examples/delta-lake/README.md)
+- [Detailed Architecture](../03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md)
+- [Implementation Guide](../tutorials/synapse/README.md)
+- [Best Practices](../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
+- [Code Examples](../06-code-examples/delta-lake/README.md)
 
 ---
 

@@ -172,8 +172,8 @@ az storage fs access set \
 ## Related Documentation
 
 - [Storage Monitoring](../../../09-monitoring/service-monitoring/storage/README.md)
-- [Data Governance](../../data-governance/README.md)
-- [Security Best Practices](../../security/README.md)
+- [Data Governance](../../cross-cutting-concerns/data-governance/README.md)
+- [Security Best Practices](../../cross-cutting-concerns/security/README.md)
 
 ---
 

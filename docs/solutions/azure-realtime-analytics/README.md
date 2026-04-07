@@ -1,6 +1,6 @@
 # 🚀 Azure Real-Time Analytics Solution
 
-> **🏠 [Home](../../../README.md)** | **📚 [Documentation](../../README.md)** | **🏗️ [Solutions](../README.md)**
+> **🏠 [Home](../../README.md)** | **📚 [Documentation](../../README.md)** | **🏗️ [Solutions](../README.md)**
 
 ---
 
@@ -21,7 +21,7 @@ Enterprise-grade real-time analytics platform built on Microsoft Azure with Data
 - [Quick Start](#quick-start)
 - [Documentation](#documentation)
 - [Performance Metrics](#performance-metrics)
-- [Security & Compliance](#security--compliance)
+- [Security & Compliance](#security-compliance)
 - [Support](#support)
 
 ---
@@ -184,7 +184,7 @@ graph TB
 
 ```bash
 # Clone repository
-git clone https://github.com/your-org/azure-realtime-analytics.git
+git clone https://github.com/fgarofalo56/csa-inabox-docs.git
 cd azure-realtime-analytics
 
 # Deploy infrastructure

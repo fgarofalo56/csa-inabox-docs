@@ -1,6 +1,6 @@
 # 🔌 Hybrid Connectivity Patterns
 
-> __🏠 [Home](../../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __🔗 Integration Patterns__ | __Hybrid Connectivity__
+> __🏠 [Home](../../README.md)__ | __🏗️ [Architecture](../README.md)__ | __🔗 Integration Patterns__ | __Hybrid Connectivity__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)

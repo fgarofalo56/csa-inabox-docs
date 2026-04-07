@@ -1,6 +1,6 @@
 # 🎧 Audio Content & Narration Scripts
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎧 Audio Content__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎧 Audio Content__
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Episodes: 12+](https://img.shields.io/badge/Episodes-12+-blue)
@@ -18,7 +18,7 @@ Professional audio content including podcast episodes, voice-over narrations, au
 
 __Duration__: 25 minutes  
 __Guests__: Product Team Lead, Solutions Architect  
-__[Listen](./episodes/ep01-introduction.mp3)__ | __[Transcript](./transcripts/ep01-introduction.md)__
+*Audio: ep01-introduction.mp3 (coming soon)*
 
 ```markdown
 ## Episode Script Outline
@@ -70,13 +70,13 @@ Thanks for listening to Cloud Scale Insights!"
 
 __Duration__: 30 minutes  
 __Guests__: Data Architect, Azure MVP  
-__[Listen](./episodes/ep02-data-lake.mp3)__ | __[Transcript](./transcripts/ep02-data-lake.md)__
+*Audio: ep02-data-lake.mp3 (coming soon)*
 
 #### Episode 3: Performance Optimization Strategies
 
 __Duration__: 35 minutes  
 __Guests__: Performance Engineer, Customer Success Manager  
-__[Listen](./episodes/ep03-performance.mp3)__ | __[Transcript](./transcripts/ep03-performance.md)__
+*Audio: ep03-performance.mp3 (coming soon)*
 
 ### Podcast Production Guidelines
 
@@ -634,10 +634,6 @@ distribution:
 ## 📚 Resources
 
 - [Audio Production Guide](./guides/production-guide.md)
-- [Voice Talent Directory](./talent/directory.md)
-- [Music Library](./music/library.md)
-- [Sound Effects Collection](./sfx/collection.md)
-- [Transcript Templates](./templates/transcripts//README.md)
 - [Accessibility Standards](./guides/accessibility.md)
 
 ---

@@ -1,6 +1,6 @@
 # Video Script: Serverless SQL Mastery
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Serverless SQL Mastery**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Serverless SQL Mastery**
 
 ![Duration: 30 minutes](https://img.shields.io/badge/Duration-30%20minutes-blue)
 ![Level: Intermediate](https://img.shields.io/badge/Level-Intermediate-yellow)

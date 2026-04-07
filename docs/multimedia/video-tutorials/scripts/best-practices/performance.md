@@ -1,6 +1,6 @@
 # Performance Best Practices Video Script
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Performance**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📹 [Video Tutorials](../../README.md)** | **Scripts** | **Performance**
 
 ![Status: Draft](https://img.shields.io/badge/Status-Draft-yellow)
 ![Duration: 20 minutes](https://img.shields.io/badge/Duration-20%20minutes-blue)

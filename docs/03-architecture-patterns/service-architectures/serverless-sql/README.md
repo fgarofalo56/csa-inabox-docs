@@ -20,7 +20,7 @@ Serverless SQL architecture in Azure Synapse Analytics allows you to query data 
 
 ## Architecture Overview
 
-![Serverless SQL Pool Architecture](../../diagrams/serverless-sql-architecture.svg)
+<!-- Diagram: Serverless SQL Pool Architecture showing on-demand query processing engine over data lake storage (image to be added) -->
 
 Serverless SQL pools in Azure Synapse Analytics provide a serverless distributed query processing engine for big data analytics. The architecture is designed to support on-demand query execution over data stored in your data lake without the need to manage infrastructure.
 
@@ -50,7 +50,7 @@ For best performance with Serverless SQL:
 
 ## Related Resources
 
-- [Best Practices for Serverless SQL](../../best-practices/README.md)
-- [Serverless SQL Guide](../../code-examples/serverless-sql-guide.md)
-- [Performance Optimization](../../best-practices/performance.md)
-- [Cost Management](../../best-practices/cost-optimization.md)
+- [Best Practices for Serverless SQL](../../data-patterns/README.md)
+- [Serverless SQL Guide](../../../06-code-examples/serverless-sql-guide.md)
+- [Performance Optimization](../../../multimedia/video-tutorials/scripts/best-practices/performance.md)
+- [Cost Management](../../README.md)

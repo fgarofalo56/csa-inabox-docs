@@ -1,6 +1,6 @@
 # Video Script: Advanced Azure Synapse Features
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Advanced Features**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **Advanced Features**
 
 ![Duration: 30 minutes](https://img.shields.io/badge/Duration-30%20minutes-blue)
 ![Level: Advanced](https://img.shields.io/badge/Level-Advanced-red)

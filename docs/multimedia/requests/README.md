@@ -1,6 +1,6 @@
 # 📋 Multimedia Content Requests
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📋 Requests**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📋 Requests**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Process: Defined](https://img.shields.io/badge/Process-Defined-blue)

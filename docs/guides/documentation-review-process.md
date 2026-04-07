@@ -1,6 +1,6 @@
 # 📋 Documentation Review Process
 
-[🏠 Home](../../README.md) > [📖 Guides](README.md) > 📋 Documentation Review Process
+[🏠 Home](../README.md) > [📖 Guides](README.md) > 📋 Documentation Review Process
 
 > 🔄 __Continuous Improvement Framework__
 > Establish a systematic approach to maintaining documentation quality through regular reviews, feedback collection, and iterative improvements.

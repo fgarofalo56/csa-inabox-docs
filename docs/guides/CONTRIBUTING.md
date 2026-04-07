@@ -1,6 +1,6 @@
 # Contributing to CSA-in-a-Box Documentation
 
-> **Home [Home](../../README.md)** | **Documentation** | **Guides [Guides](./README.md)**
+> **Home [Home](../README.md)** | **Documentation** | **Guides [Guides](./README.md)**
 
 ---
 
@@ -462,7 +462,7 @@ See [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md) for complete standards.
 
 ### Essential Reading
 
-- [README.md](../../README.md) - Project overview
+- [README.md](../README.md) - Project overview
 - [DIRECTORY_STRUCTURE_GUIDE.md](./DIRECTORY_STRUCTURE_GUIDE.md) - File organization
 - [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md) - Documentation standards
 - [DEVELOPMENT_GUIDE.md](./DEVELOPMENT_GUIDE.md) - Development setup

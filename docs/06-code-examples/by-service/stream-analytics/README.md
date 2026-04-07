@@ -1,6 +1,6 @@
 # Azure Stream Analytics - Code Examples
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💻 [Code Examples](../../README.md)** | **🌊 Stream Analytics Examples**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💻 [Code Examples](../../README.md)** | **🌊 Stream Analytics Examples**
 
 ![Service](https://img.shields.io/badge/Service-Azure_Stream_Analytics-blue)
 ![Language](https://img.shields.io/badge/Language-Stream_Analytics_SQL-orange)
@@ -826,7 +826,7 @@ FROM
 ## Additional Resources
 
 - [Stream Analytics Documentation](../../../02-services/streaming-services/azure-stream-analytics/README.md)
-- [Best Practices](../../../best-practices/README.md)
+- [Best Practices](../../../05-best-practices/README.md)
 - [Query Language Reference](https://docs.microsoft.com/stream-analytics-query/stream-analytics-query-language-reference)
 
 ---

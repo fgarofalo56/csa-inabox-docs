@@ -1,6 +1,6 @@
 # 🔄 Visual Pipeline Builder Demo
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Pipeline Builder**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎮 [Interactive Demos](README.md)** | **👤 Pipeline Builder**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Interactive](https://img.shields.io/badge/Type-Interactive-purple)
@@ -703,10 +703,10 @@ const expressions = {
 
 ## 📚 Additional Resources
 
-- [Pipeline Activities Reference](../../code-examples/integration-guide.md)
-- [Data Factory Best Practices](../../best-practices/pipeline-optimization.md)
+- [Pipeline Activities Reference](../../06-code-examples/integration-guide.md)
+- [Data Factory Best Practices](../../05-best-practices/cross-cutting-concerns/development/pipeline-optimization.md)
 - [Expression Language Reference](https://docs.microsoft.com/azure/data-factory/control-flow-expression-language-functions)
-- [Troubleshooting Guide](../../troubleshooting/pipeline-troubleshooting/README.md)
+- [Troubleshooting Guide](../../07-troubleshooting/service-troubleshooting/storage/README.md)
 
 ## 💬 Feedback
 

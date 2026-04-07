@@ -1,6 +1,6 @@
 # 🔧 Presentation Customization Guide - CSA-in-a-Box
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **📋 [Guides](README.md)** | **👤 Customization**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **📋 [Guides](README.md)** | **👤 Customization**
 
 ![Type: Guide](https://img.shields.io/badge/Type-Guide-blue)
 ![Audience: Content Creators](https://img.shields.io/badge/Audience-Content%20Creators-orange)

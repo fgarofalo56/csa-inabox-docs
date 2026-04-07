@@ -1,6 +1,6 @@
 # 🌍 Cross-Region Integration Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🔗 [Integration](README.md)** | **🌍 Cross-Region**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **🔗 [Integration](README.md)** | **🌍 Cross-Region**
 
 ![Level](https://img.shields.io/badge/Level-Advanced-red)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)

@@ -1,6 +1,6 @@
 # 🚀 Azure Data Factory Environment Setup
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Environment Setup__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Environment Setup__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Environment_Setup-blue)
 ![Duration](https://img.shields.io/badge/Duration-20_minutes-green)
@@ -352,7 +352,7 @@ For production environments, enable managed virtual network:
 ```text
 Azure DevOps Git Configuration:
 ├── Repository type: Azure DevOps Git
-├── Azure DevOps organization: your-org
+├── Azure DevOps organization: your-azure-org
 ├── Project name: adf-tutorial
 ├── Repository name: adf-tutorial-repo
 ├── Collaboration branch: main

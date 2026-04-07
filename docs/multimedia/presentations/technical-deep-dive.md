@@ -1,6 +1,6 @@
 # 🔧 Technical Deep Dive Presentation - CSA-in-a-Box
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 [Presentations](README.md)** | **👤 Technical Deep Dive**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 [Presentations](README.md)** | **👤 Technical Deep Dive**
 
 ![Type: Technical](https://img.shields.io/badge/Type-Technical-orange)
 ![Duration: 60-90 min](https://img.shields.io/badge/Duration-60--90%20min-green)

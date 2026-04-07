@@ -1,6 +1,6 @@
 # 🔗 Integration Scenarios
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 Integration Scenarios__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 Integration Scenarios__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Scenarios](https://img.shields.io/badge/Scenarios-6-blue?style=flat-square)
@@ -420,7 +420,7 @@ Set up monitoring and apply optimization best practices.
 | **Stream Analytics + Synapse** | Synapse DWUs, Storage | Pause when idle, use result set caching |
 | **Event-Driven Pipelines** | Data Factory activities, Storage | Optimize trigger frequency, batch operations |
 
-**[📖 Detailed Cost Guide →](../../best-practices/cost-optimization.md)**
+**[📖 Detailed Cost Guide →](../../05-best-practices/README.md)**
 
 ---
 
@@ -447,7 +447,7 @@ Set up monitoring and apply optimization best practices.
 - Implement **data masking** for sensitive fields
 - Configure **diagnostic logging** and auditing
 
-**[📖 Security Guide →](../../best-practices/security.md)**
+**[📖 Security Guide →](../../reference/security.md)**
 
 ---
 

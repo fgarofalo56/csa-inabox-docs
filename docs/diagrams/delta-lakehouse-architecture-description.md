@@ -1,6 +1,6 @@
 # 🏞️ Delta Lakehouse Architecture Description
 
-> __🏠 [Home](../../README.md)__ | __📊 [Diagrams](README.md)__ | __🏞️ Delta Lakehouse Architecture__
+> __🏠 [Home](../README.md)__ | __📊 [Diagrams](README.md)__ | __🏞️ Delta Lakehouse Architecture__
 
 ![Status](https://img.shields.io/badge/Status-Reference-blue?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -725,21 +725,21 @@ graph LR
 
 ### Architecture Documentation
 
-- [Delta Lakehouse Overview](../architecture/delta-lakehouse-overview.md)
-- [Detailed Architecture](../architecture/delta-lakehouse/detailed-architecture.md)
+- [Delta Lakehouse Overview](../03-architecture-patterns/service-architectures/delta-lakehouse-overview.md)
+- [Detailed Architecture](../03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md)
 - [Architecture Patterns](../03-architecture-patterns/README.md)
 
 ### Implementation Guides
 
-- [Delta Lake Guide](../code-examples/delta-lake-guide.md)
+- [Delta Lake Guide](../06-code-examples/delta-lake-guide.md)
 - [Synapse Spark Tutorial](../tutorials/synapse/README.md)
-- [Best Practices](../best-practices/delta-lake-optimization.md)
+- [Best Practices](../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
 
 ### Code Examples
 
-- [Auto-loader Implementation](../code-examples/delta-lake/ingestion/auto-loader.md)
-- [Table Optimization](../code-examples/delta-lake/optimization/table-optimization.md)
-- [Change Data Capture](../code-examples/delta-lake/cdc/change-data-capture.md)
+- [Auto-loader Implementation](../06-code-examples/delta-lake/ingestion/auto-loader.md)
+- [Table Optimization](../06-code-examples/delta-lake/optimization/table-optimization.md)
+- [Change Data Capture](../06-code-examples/delta-lake/cdc/change-data-capture.md)
 
 ---
 

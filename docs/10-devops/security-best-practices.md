@@ -1,6 +1,6 @@
 # Security Best Practices for DevOps
 
-> **Home [Home](../../README.md)** | **Documentation** | **DevOps**
+> **Home [Home](../README.md)** | **Documentation** | **DevOps**
 
 ---
 

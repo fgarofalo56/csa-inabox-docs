@@ -1,6 +1,6 @@
 # 🌳 Hierarchical Namespace in ADLS Gen2
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🏞️ [ADLS Gen2](README.md)__ | __🌳 Hierarchical Namespace__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🗃️ Storage Services__ | __🏞️ [ADLS Gen2](README.md)__ | __🌳 Hierarchical Namespace__
 
 ![Performance](https://img.shields.io/badge/Performance-Optimized-green?style=flat-square)
 ![Feature](https://img.shields.io/badge/Feature-Core-blue?style=flat-square)

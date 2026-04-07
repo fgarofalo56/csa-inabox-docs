@@ -1,6 +1,6 @@
 # 📚 SDK Documentation Guide
 
-> **🏠 [Home](../../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **📋 [Docs](./README.md)** | **📚 SDKs**
+> **🏠 [Home](../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **📋 [Docs](../README.md)** | **📚 SDKs**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)

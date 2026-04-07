@@ -1,6 +1,6 @@
 # QUALITY ASSURANCE
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **QUALITY ASSURANCE**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **QUALITY ASSURANCE**
 
 ## Overview
 

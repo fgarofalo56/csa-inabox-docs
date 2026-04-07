@@ -1,6 +1,6 @@
 # ❓ Executive FAQ - Azure Cloud Scale Analytics
 
-> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__ | __❓ Executive FAQ__
+> __🏠 [Home](../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__ | __❓ Executive FAQ__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Questions](https://img.shields.io/badge/Questions-50+-blue?style=flat-square)
@@ -12,10 +12,10 @@ Comprehensive answers to common executive and business questions about Azure Clo
 
 ## 📋 Table of Contents
 
-- [Strategy & Business Value](#strategy--business-value)
-- [Cost & ROI](#cost--roi)
-- [Risk & Security](#risk--security)
-- [Implementation & Timeline](#implementation--timeline)
+- [Strategy & Business Value](#strategy-business-value)
+- [Cost & ROI](#cost-roi)
+- [Risk & Security](#risk-security)
+- [Implementation & Timeline](#implementation-timeline)
 - [Competitive Positioning](#competitive-positioning)
 
 ---
@@ -1349,7 +1349,7 @@ __Best for__:
 - [__Competitive Analysis__](competitive-analysis.md) - Platform comparisons
 - [__Market Research__](market-research.md) - Industry trends
 - [__Architecture Patterns__](../03-architecture-patterns/README.md)
-- [__Cost Optimization Guide__](../05-best-practices/cost-optimization.md)
+- [__Cost Optimization Guide__](../05-best-practices/README.md)
 
 ---
 

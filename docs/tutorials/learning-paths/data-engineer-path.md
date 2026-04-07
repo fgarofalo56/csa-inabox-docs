@@ -1,6 +1,6 @@
 # 📊 Data Engineer Learning Path
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🛤️ [Learning Paths](README.md)__ | __📊 Data Engineer__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🛤️ [Learning Paths](README.md)__ | __📊 Data Engineer__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Duration](https://img.shields.io/badge/Duration-10--12_weeks-blue)
@@ -91,8 +91,8 @@ __Hands-on Exercises:__
 __Resources:__
 
 - [Azure Synapse Environment Setup](../../synapse/01-environment-setup.md)
-- [Azure Data Lake Storage Best Practices](../../../best-practices/delta-lake-optimization.md)
-- [Security Best Practices](../../../best-practices/security.md)
+- [Azure Data Lake Storage Best Practices](../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
+- [Security Best Practices](../../reference/security.md)
 
 __Assessment Questions:__
 
@@ -121,8 +121,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [SQL Performance Optimization](../../../best-practices/sql-performance.md)
-- [Serverless SQL Best Practices](../../../best-practices/serverless-sql-best-practices.md)
+- [SQL Performance Optimization](../../05-best-practices/service-specific/synapse/sql-performance.md)
+- [Serverless SQL Best Practices](../../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
 
 __Assessment Questions:__
 
@@ -151,8 +151,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Python Best Practices for Data Engineering](../../../code-examples/README.md)
-- [Automated Testing Guide](../../../devops/automated-testing.md)
+- [Python Best Practices for Data Engineering](../../06-code-examples/README.md)
+- [Automated Testing Guide](../../10-devops/automated-testing.md)
 
 __Assessment Questions:__
 
@@ -181,8 +181,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Delta Lakehouse Architecture](../../../architecture/delta-lakehouse/README.md)
-- [Data Modeling Best Practices](../../../best-practices/README.md)
+- [Delta Lakehouse Architecture](../../03-architecture-patterns/service-architectures/delta-lakehouse/README.md)
+- [Data Modeling Best Practices](../../05-best-practices/README.md)
 
 __Assessment Questions:__
 
@@ -216,7 +216,7 @@ __Hands-on Exercises:__
 __Resources:__
 
 - [PySpark Fundamentals](../../code-labs/pyspark-fundamentals.md)
-- [Spark Performance Optimization](../../../best-practices/spark-performance.md)
+- [Spark Performance Optimization](../../05-best-practices/service-specific/synapse/spark-performance.md)
 
 __Assessment Questions:__
 
@@ -245,9 +245,9 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Delta Lake Guide](../../../code-examples/delta-lake-guide.md)
-- [Delta Lake Optimization](../../../code-examples/delta-lake/optimization/table-optimization.md)
-- [Change Data Capture](../../../code-examples/delta-lake/cdc/change-data-capture.md)
+- [Delta Lake Guide](../../06-code-examples/delta-lake-guide.md)
+- [Delta Lake Optimization](../../06-code-examples/delta-lake/optimization/table-optimization.md)
+- [Change Data Capture](../../06-code-examples/delta-lake/cdc/change-data-capture.md)
 
 __Assessment Questions:__
 
@@ -276,8 +276,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Azure Data Factory Integration](../../../code-examples/integration/azure-data-factory.md)
-- [Pipeline Optimization](../../../best-practices/pipeline-optimization.md)
+- [Azure Data Factory Integration](../../06-code-examples/integration/azure-data-factory.md)
+- [Pipeline Optimization](../../05-best-practices/cross-cutting-concerns/development/pipeline-optimization.md)
 
 __Assessment Questions:__
 
@@ -306,8 +306,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Data Quality Best Practices](../../../best-practices/README.md)
-- [Monitoring Setup](../../../monitoring/monitoring-setup.md)
+- [Data Quality Best Practices](../../05-best-practices/README.md)
+- [Monitoring Setup](../../09-monitoring/monitoring-setup.md)
 
 __Assessment Questions:__
 
@@ -340,8 +340,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Architecture Patterns](../../../03-architecture-patterns/README.md)
-- [Delta Lakehouse Architecture](../../../architecture/delta-lakehouse/detailed-architecture.md)
+- [Architecture Patterns](../../03-architecture-patterns/README.md)
+- [Delta Lakehouse Architecture](../../03-architecture-patterns/service-architectures/delta-lakehouse/detailed-architecture.md)
 
 __Assessment Questions:__
 
@@ -370,8 +370,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Performance Optimization](../../../best-practices/performance-optimization.md)
-- [Cost Optimization](../../../best-practices/cost-optimization.md)
+- [Performance Optimization](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Cost Optimization](../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
 
 __Assessment Questions:__
 
@@ -400,9 +400,9 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Security Best Practices](../../../best-practices/security.md)
-- [Network Security](../../../best-practices/network-security.md)
-- [Azure Purview Integration](../../../code-examples/integration/azure-purview.md)
+- [Security Best Practices](../../reference/security.md)
+- [Network Security](../../05-best-practices/cross-cutting-concerns/networking/network-security.md)
+- [Azure Purview Integration](../../06-code-examples/integration/azure-purview.md)
 
 __Assessment Questions:__
 
@@ -435,8 +435,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Pipeline CI/CD](../../../devops/pipeline-ci-cd.md)
-- [Automated Testing](../../../devops/automated-testing.md)
+- [Pipeline CI/CD](../../10-devops/pipeline-ci-cd.md)
+- [Automated Testing](../../10-devops/automated-testing.md)
 
 __Assessment Questions:__
 
@@ -465,9 +465,9 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Monitoring Setup](../../../monitoring/monitoring-setup.md)
-- [Spark Monitoring](../../../monitoring/spark-monitoring.md)
-- [SQL Monitoring](../../../monitoring/sql-monitoring.md)
+- [Monitoring Setup](../../09-monitoring/monitoring-setup.md)
+- [Spark Monitoring](../../09-monitoring/spark-monitoring.md)
+- [SQL Monitoring](../../09-monitoring/sql-monitoring.md)
 
 __Assessment Questions:__
 
@@ -496,8 +496,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Troubleshooting Guide](../../../troubleshooting/README.md)
-- [Spark Troubleshooting](../../../troubleshooting.md)
+- [Troubleshooting Guide](../../07-troubleshooting/README.md)
+- [Spark Troubleshooting](../../solutions/azure-realtime-analytics/operations/troubleshooting.md)
 
 __Assessment Questions:__
 
@@ -526,8 +526,8 @@ __Hands-on Exercises:__
 
 __Resources:__
 
-- [Cost Optimization](../../../best-practices/cost-optimization.md)
-- [Performance Optimization](../../../best-practices/performance-optimization.md)
+- [Cost Optimization](../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
+- [Performance Optimization](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
 
 __Assessment Questions:__
 

@@ -1,6 +1,6 @@
 # Video Script: Security Best Practices for Azure Synapse Analytics
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Security Best Practices**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📹 [Video Tutorials](README.md)** | **👤 Security Best Practices**
 
 ![Duration: 32 minutes](https://img.shields.io/badge/Duration-32%20minutes-blue)
 ![Level: Advanced](https://img.shields.io/badge/Level-Advanced-red)

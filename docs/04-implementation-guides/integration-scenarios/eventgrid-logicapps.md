@@ -1,6 +1,6 @@
 # Event Grid Integration with Logic Apps
 
-> __[Home](../../../README.md)__ | __[Implementation](../README.md)__ | __[Integration](README.md)__ | __EventGrid + Logic Apps__
+> __[Home](../../README.md)__ | __[Implementation](../README.md)__ | __[Integration](README.md)__ | __EventGrid + Logic Apps__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Beginner-green?style=flat-square)

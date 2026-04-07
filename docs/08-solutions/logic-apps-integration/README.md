@@ -1,6 +1,6 @@
 # Logic Apps Integration Solution
 
-> __[Home](../../../README.md)__ | __[Solutions](../../08-solutions/README.md)__ | __Logic Apps Integration__
+> __[Home](../../README.md)__ | __[Solutions](../../08-solutions/README.md)__ | __Logic Apps Integration__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Beginner-green?style=flat-square)

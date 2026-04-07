@@ -1,6 +1,6 @@
 # 🔍 Spark SQL Tutorial
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔥 Intermediate__ | __🔍 Spark SQL__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔥 Intermediate__ | __🔍 Spark SQL__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Level](https://img.shields.io/badge/Level-Intermediate-yellow)

@@ -1,6 +1,6 @@
 # 🔄 Workflow Automation with Azure Logic Apps
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔧 [Orchestration](../README.md)__ | __⚡ [Logic Apps](README.md)__ | __🔄 Workflow Automation__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔧 [Orchestration](../README.md)__ | __⚡ [Logic Apps](README.md)__ | __🔄 Workflow Automation__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 ![Type](https://img.shields.io/badge/Type-Integration%20Patterns-blue?style=flat-square)
@@ -20,7 +20,7 @@ This guide provides practical patterns and examples for implementing workflow au
 - [Common Workflow Patterns](#common-workflow-patterns)
 - [Business Process Automation](#business-process-automation)
 - [System Integration Patterns](#system-integration-patterns)
-- [Error Handling & Retry Patterns](#error-handling--retry-patterns)
+- [Error Handling & Retry Patterns](#error-handling-retry-patterns)
 - [Best Practices](#best-practices)
 
 ---

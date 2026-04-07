@@ -1,6 +1,6 @@
 # 📑 Technical Templates - CSA-in-a-Box
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📋 [Templates](../README.md)** | **👤 Technical**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📋 [Templates](../README.md)** | **👤 Technical**
 
 ![Type: Templates](https://img.shields.io/badge/Type-Templates-blue)
 ![Category: Technical](https://img.shields.io/badge/Category-Technical-purple)

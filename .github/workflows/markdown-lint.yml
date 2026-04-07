@@ -13,13 +13,16 @@ on:
       - '.github/workflows/markdown-lint.yml'
   workflow_dispatch:  # Allow manual triggering
 
+permissions:
+  contents: read
+
 # Environment variables for controlling behavior
 env:
   # Set to 'true' to make the workflow fail on lint errors
   STRICT_MODE: 'true'
   # Set error threshold - workflow will only fail if more than this number of errors are found
-  # This allows for gradual enforcement as errors are fixed
-  ERROR_THRESHOLD: '5000'  # High threshold to accommodate current state while fixing issues incrementally
+  # Reduced from 5000 to enforce gradual quality improvement
+  ERROR_THRESHOLD: '200'
 
 jobs:
   markdownlint:
@@ -27,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
@@ -70,24 +73,26 @@ jobs:
           cat markdown-lint-report/summary.md
       
       - name: Upload lint results
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: markdown-lint-results
           path: markdown-lint-report
           retention-days: 14
 
       - name: Check for lint issues
-        if: ${{ steps.lint.outputs.issue-count != '0' }}
+        if: ${{ steps.lint.outputs.issue-count != '0' && steps.lint.outputs.issue-count != '' }}
         run: |
-          echo "::warning::Found ${{ steps.lint.outputs.issue-count }} markdown linting issues. Check the workflow artifacts for details."
-          
+          ISSUE_COUNT="${{ steps.lint.outputs.issue-count }}"
+          THRESHOLD="${{ env.ERROR_THRESHOLD }}"
+          echo "::warning::Found ${ISSUE_COUNT} markdown linting issues. Check the workflow artifacts for details."
+
           # Fail the workflow if in strict mode and issues exceed the threshold
           if [ "${{ env.STRICT_MODE }}" = "true" ]; then
-            if [ ${{ steps.lint.outputs.issue-count }} -gt ${{ env.ERROR_THRESHOLD }} ]; then
-              echo "::error::Failing build due to too many markdown lint issues (${{ steps.lint.outputs.issue-count }} > ${{ env.ERROR_THRESHOLD }})"
+            if [ "${ISSUE_COUNT}" -gt "${THRESHOLD}" ] 2>/dev/null; then
+              echo "::error::Failing build due to too many markdown lint issues (${ISSUE_COUNT} > ${THRESHOLD})"
               exit 1
             else
-              echo "Continuing despite lint issues (${{ steps.lint.outputs.issue-count }} <= ${{ env.ERROR_THRESHOLD }} threshold)"
+              echo "Continuing despite lint issues (${ISSUE_COUNT} <= ${THRESHOLD} threshold)"
             fi
           else
             echo "Continuing despite lint issues (STRICT_MODE is disabled)"

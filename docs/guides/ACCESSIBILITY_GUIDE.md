@@ -1,6 +1,6 @@
 # ACCESSIBILITY GUIDE
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **ACCESSIBILITY GUIDE**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **ACCESSIBILITY GUIDE**
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # 💻 Interactive Code Labs
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __💻 Code Labs__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 Tutorials__ | __💻 Code Labs__
 
 ![Code Labs](https://img.shields.io/badge/Format-Interactive_Code_Labs-blue)
 ![Hands On](https://img.shields.io/badge/Learning-Hands_On-green)
@@ -100,7 +100,7 @@ __Option A: Local Development__
 
 ```bash
 # Clone the lab repository
-git clone https://github.com/your-org/csa-code-labs
+git clone https://github.com/fgarofalo56/csa-inabox-docs
 cd csa-code-labs
 
 # Set up Python environment
@@ -119,14 +119,14 @@ __Option B: Azure Cloud Shell__
 # https://shell.azure.com
 
 # Clone and start
-git clone https://github.com/your-org/csa-code-labs
+git clone https://github.com/fgarofalo56/csa-inabox-docs
 cd csa-code-labs
 ./setup-cloud-shell.sh
 ```
 
 __Option C: GitHub Codespaces__ *(Recommended for beginners)*
 
-1. Open [Code Labs Repository](https://github.com/your-org/csa-code-labs)
+1. Open [Code Labs Repository](https://github.com/fgarofalo56/csa-inabox-docs)
 2. Click "Code" → "Open with Codespaces"  
 3. Choose "Create codespace on main"
 4. Environment automatically configured!
@@ -281,9 +281,9 @@ If local setup isn't possible:
 
 ### __Getting Help__
 
-- __💬 Discussion Forums__: [GitHub Discussions](https://github.com/your-org/csa-code-labs/discussions)
-- __🐛 Bug Reports__: [GitHub Issues](https://github.com/your-org/csa-code-labs/issues)
-- __📧 Direct Support__: <codelab-support@your-org.com>
+- __💬 Discussion Forums__: [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox-docs/discussions)
+- __🐛 Bug Reports__: [GitHub Issues](https://github.com/fgarofalo56/csa-inabox-docs/issues)
+- __📧 Direct Support__: <codelab-support@example.com>
 - __👥 Study Groups__: Join [Discord Community](https://discord.gg/csa-learning)
 
 ### __Contributing__

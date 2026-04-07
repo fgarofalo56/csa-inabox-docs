@@ -1,12 +1,12 @@
-/* Custom Breadcrumbs */
+/* Custom Breadcrumbs — uses <nav><ol> for WCAG compliance */
 .breadcrumbs {
     padding: 8px 0;
     margin-bottom: 16px;
     font-size: 14px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.breadcrumbs ul {
+.breadcrumbs ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -22,7 +22,7 @@
 .breadcrumbs li:not(:last-child)::after {
     content: "/";
     margin-left: 8px;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.54); /* WCAG AA contrast on white */
 }
 
 .breadcrumbs a {
@@ -34,11 +34,16 @@
     text-decoration: underline;
 }
 
-/* Related Content */
+.breadcrumbs [aria-current="page"] {
+    font-weight: 600;
+    color: var(--md-default-fg-color);
+}
+
+/* Related Content — rendered as <aside> complementary landmark */
 .related-content {
     margin-top: 32px;
     padding-top: 16px;
-    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .related-content h2 {
@@ -57,13 +62,13 @@
 
 .related-content-item {
     padding: 12px 16px;
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     transition: background-color 0.2s;
 }
 
 .related-content-item:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .related-content-link {
@@ -75,5 +80,57 @@
 .related-content-description {
     margin-top: 4px;
     font-size: 0.85rem;
-    opacity: 0.8;
+    color: var(--md-default-fg-color--light); /* Use theme variable for contrast */
+}
+
+/* Focus-visible styles for keyboard navigation (WCAG 2.4.7) */
+*:focus-visible {
+    outline: 2px solid var(--md-accent-fg-color, #448aff);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Remove focus ring for mouse clicks */
+*:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Ensure skip-to-content link is accessible */
+.md-skip {
+    position: absolute;
+    top: -9999px;
+    left: 0;
+    z-index: 100;
+    padding: 8px 16px;
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.md-skip:focus-visible {
+    top: 0;
+}
+
+/* Reduced motion preference — disable animations */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High-contrast mode support */
+@media (prefers-contrast: more) {
+    .breadcrumbs li:not(:last-child)::after {
+        color: rgba(0, 0, 0, 0.87);
+    }
+
+    .related-content-item {
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
 }

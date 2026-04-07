@@ -1,6 +1,6 @@
 # Azure Synapse Query Performance Troubleshooting
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../../../README.md)** | **[⚡ Synapse](README.md)** | **👤 Query Performance**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../../README.md)** | **[⚡ Synapse](README.md)** | **👤 Query Performance**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)
 
@@ -782,8 +782,8 @@ Contact Microsoft Support if:
 
 - [Connectivity Troubleshooting](connectivity.md)
 - [Scaling Issues](scaling.md)
-- [Best Practices: Performance Optimization](../../../best-practices/performance-optimization.md)
-- [SQL Performance Best Practices](../../../best-practices/sql-performance.md)
+- [Best Practices: Performance Optimization](../../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [SQL Performance Best Practices](../../../05-best-practices/service-specific/synapse/sql-performance.md)
 - [Synapse SQL Performance Documentation](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-best-practices)
 
 ---

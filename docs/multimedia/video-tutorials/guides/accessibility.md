@@ -1,6 +1,6 @@
 # Video Accessibility Guidelines
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Accessibility Guidelines**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Accessibility Guidelines**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Compliance: WCAG 2.1 AA](https://img.shields.io/badge/Compliance-WCAG%202.1%20AA-blue)

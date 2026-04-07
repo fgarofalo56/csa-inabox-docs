@@ -1,6 +1,6 @@
 # ⚡ Performance Optimization
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Optimization__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Optimization__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Performance_Optimization-blue)
 ![Duration](https://img.shields.io/badge/Duration-10_minutes-green)
@@ -55,7 +55,7 @@ __Optimize Azure Data Factory pipelines for maximum performance and cost efficie
 ## 📚 Additional Resources
 
 - [Copy Activity Performance](https://docs.microsoft.com/azure/data-factory/copy-activity-performance)
-- [Performance Tuning Guide](../../best-practices/performance-optimization.md)
+- [Performance Tuning Guide](../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
 
 ## 🚀 Next Steps
 

@@ -1,6 +1,6 @@
 # 🤝 Contributing Guide
 
-> __🏠 [Home](../../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
+> __🏠 [Home](../README.md)__ | __📚 Documentation__ | __📖 [Guides](./README.md)__
 
 ---
 
@@ -70,9 +70,9 @@ Need help? Ask in [GitHub Discussions](https://github.com/fgarofalo56/csa-inabox
 
 | Contribution Type | Description | Skill Level | Issue Template |
 |------------------|-------------|-------------|----------------|
-| __Report Bugs__ 🐛 | Report issues and problems | Beginner | [Bug Report](https://github.com/your-org/csa-inabox-docs/issues/new?template=bug-report.md) |
-| __Suggest Features__ 💡 | Propose new features or improvements | Beginner | [Feature Request](https://github.com/your-org/csa-inabox-docs/issues/new?template=feature_request.md) |
-| __Request Docs__ 📋 | Request new or improved documentation | Beginner | [Documentation Request](https://github.com/your-org/csa-inabox-docs/issues/new?template=documentation-request.md) |
+| __Report Bugs__ 🐛 | Report issues and problems | Beginner | [Bug Report](https://github.com/fgarofalo56/csa-inabox-docs/issues/new?template=bug-report.md) |
+| __Suggest Features__ 💡 | Propose new features or improvements | Beginner | [Feature Request](https://github.com/fgarofalo56/csa-inabox-docs/issues/new?template=feature_request.md) |
+| __Request Docs__ 📋 | Request new or improved documentation | Beginner | [Documentation Request](https://github.com/fgarofalo56/csa-inabox-docs/issues/new?template=documentation-request.md) |
 | __Fix Typos__ ✏️ | Correct spelling and grammar | Beginner | Direct PR |
 | __Improve Docs__ 📚 | Enhance existing documentation | Intermediate | Direct PR |
 | __Add Examples__ 📝 | Create new examples and tutorials | Intermediate | Direct PR |
@@ -337,8 +337,6 @@ Optimize your Synapse SQL queries using these techniques:
    - Partition by date for time-series data
    - Ensure partitions have >1 million rows
 
-```text
-```
 
 ---
 
@@ -566,7 +564,7 @@ Any other relevant details
 
 ### Essential Reading
 
-- [README.md](../../README.md) - Project overview
+- [README.md](../README.md) - Project overview
 - [DIRECTORY_STRUCTURE_GUIDE.md](./DIRECTORY_STRUCTURE_GUIDE.md) - File organization
 - [MARKDOWN_STYLE_GUIDE.md](./MARKDOWN_STYLE_GUIDE.md) - Documentation standards
 - [DEVELOPMENT_GUIDE.md](./DEVELOPMENT_GUIDE.md) - Development setup

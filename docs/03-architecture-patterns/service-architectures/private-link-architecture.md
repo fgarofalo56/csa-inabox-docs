@@ -48,7 +48,7 @@ Azure Private Link provides secure private connectivity to Azure Synapse Analyti
 
 ## Reference Architecture
 
-![Azure Synapse Analytics Private Link reference architecture showing private endpoints, virtual networks, and secure connectivity patterns](../images/diagrams/architecture-private-link-architecture-diagram-1.png)
+<!-- Diagram: Azure Synapse Analytics Private Link reference architecture showing private endpoints, virtual networks, and secure connectivity patterns (image to be added) -->
 
 ## Private Endpoint Design
 
@@ -176,7 +176,7 @@ Configure these hybrid connectivity patterns:
 3. __Point-to-Site VPN__ - For individual client connections
 4. __DNS Forwarding__ - Configure DNS forwarding for on-premises name resolution
 
-![Hybrid connectivity architecture for Azure Synapse Analytics showing ExpressRoute, VPN connections, and DNS forwarding for on-premises integration](../images/diagrams/architecture-private-link-architecture-diagram-2.png)
+<!-- Diagram: Hybrid connectivity architecture for Azure Synapse Analytics showing ExpressRoute, VPN connections, and DNS forwarding for on-premises integration (image to be added) -->
 
 ## Scalability and High Availability
 

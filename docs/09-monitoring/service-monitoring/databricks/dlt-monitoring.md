@@ -277,8 +277,8 @@ high_cost_pipelines = dbu_metrics \
 ## Related Documentation
 
 - [Databricks Monitoring Index](README.md)
-- [Delta Lake Best Practices](../../../best-practices/delta-lake-optimization.md)
-- [Pipeline Troubleshooting](../../../troubleshooting/pipeline-troubleshooting/README.md)
+- [Delta Lake Best Practices](../../../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
+- [Pipeline Troubleshooting](../../../07-troubleshooting/service-troubleshooting/storage/README.md)
 
 ---
 

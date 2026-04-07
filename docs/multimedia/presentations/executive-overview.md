@@ -1,6 +1,6 @@
 # 📊 Executive Overview Presentation - CSA-in-a-Box
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 [Presentations](README.md)** | **👤 Executive Overview**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📊 [Presentations](README.md)** | **👤 Executive Overview**
 
 ![Type: Executive](https://img.shields.io/badge/Type-Executive-blue)
 ![Duration: 30-45 min](https://img.shields.io/badge/Duration-30--45%20min-green)
@@ -861,9 +861,9 @@ Enterprise analytics platform built on Microsoft Azure, providing:
 
 ### Presentation Development
 
-- **Template**: [Download Executive Template](../templates/executive-presentation-template.pptx)
+- **Template**: *executive-presentation-template.pptx (coming soon)*
 - **Brand Assets**: [Corporate Brand Guidelines](../../guides/brand-guidelines.md)
-- **Financial Models**: [ROI Calculator](../templates/roi-calculator.xlsx)
+- **Financial Models**: *roi-calculator.xlsx (coming soon)*
 
 ### Content Resources
 

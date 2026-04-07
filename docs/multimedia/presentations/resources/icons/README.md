@@ -1,6 +1,6 @@
 # 📚 Icons Resources - CSA-in-a-Box
 
-> **🏠 [Home](../../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📊 [Presentations](../../README.md)** | **📦 Resources** | **👤 Icons**
+> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../../README.md)** | **🎬 [Multimedia](../../../README.md)** | **📊 [Presentations](../../README.md)** | **📦 Resources** | **👤 Icons**
 
 ![Type: Resources](https://img.shields.io/badge/Type-Resources-blue)
 ![Category: ](https://img.shields.io/badge/Category--green)

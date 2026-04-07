@@ -1,6 +1,6 @@
 # Automated Testing for Synapse Analytics
 
-[Home](../../README.md) > DevOps > Automated Testing
+[Home](../README.md) > DevOps > Automated Testing
 
 !!! abstract "Overview"
     This guide covers automated testing strategies for Azure Synapse Analytics, including pipeline testing, data validation, and continuous integration approaches.

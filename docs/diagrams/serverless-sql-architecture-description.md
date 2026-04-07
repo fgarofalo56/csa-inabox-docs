@@ -1,6 +1,6 @@
 # ☁️ Serverless SQL Architecture Description
 
-> __🏠 [Home](../../README.md)__ | __📊 [Diagrams](README.md)__ | __☁️ Serverless SQL Architecture__
+> __🏠 [Home](../README.md)__ | __📊 [Diagrams](README.md)__ | __☁️ Serverless SQL Architecture__
 
 ![Status](https://img.shields.io/badge/Status-Reference-blue?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -801,20 +801,20 @@ ORDER BY start_time DESC;
 
 ### Architecture Documentation
 
-- [Serverless SQL Overview](../architecture/serverless-sql/serverless-overview.md)
-- [Detailed Architecture](../architecture/serverless-sql/detailed-architecture.md)
+- [Serverless SQL Overview](../03-architecture-patterns/service-architectures/serverless-sql/serverless-overview.md)
+- [Detailed Architecture](../03-architecture-patterns/service-architectures/serverless-sql/detailed-architecture.md)
 - [Architecture Patterns](../03-architecture-patterns/README.md)
 
 ### Implementation Guides
 
-- [Serverless SQL Guide](../code-examples/serverless-sql-guide.md)
-- [Query Optimization](../code-examples/serverless-sql/query-optimization.md)
-- [Best Practices](../best-practices/serverless-sql-best-practices.md)
+- [Serverless SQL Guide](../06-code-examples/serverless-sql-guide.md)
+- [Query Optimization](../06-code-examples/serverless-sql/query-optimization.md)
+- [Best Practices](../05-best-practices/service-specific/synapse/serverless-sql-best-practices.md)
 
 ### Performance & Cost
 
-- [Performance Optimization](../best-practices/performance-optimization.md)
-- [Cost Optimization](../best-practices/cost-optimization.md)
+- [Performance Optimization](../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Cost Optimization](../05-best-practices/README.md)
 
 ---
 

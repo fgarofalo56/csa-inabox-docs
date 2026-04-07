@@ -9,7 +9,7 @@ category: "Best Practices - Cost"
 
 # Azure Databricks Cost Optimization
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **💲 [Cost Optimization](./README.md)** | **Databricks Costs**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💡 [Best Practices](../../README.md)** | **💲 [Cost Optimization](./README.md)** | **Databricks Costs**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)
@@ -656,7 +656,7 @@ w.clusters.edit(
 ## Related Resources
 
 - [Cost Optimization Overview](./README.md)
-- [Storage Cost Optimization](./storage-optimization.md)
+- [Storage Cost Optimization](./README.md)
 - [Delta Lake Best Practices](../../service-specific/databricks/delta-lake.md)
 - [Azure Databricks Pricing](https://azure.microsoft.com/pricing/details/databricks/)
 

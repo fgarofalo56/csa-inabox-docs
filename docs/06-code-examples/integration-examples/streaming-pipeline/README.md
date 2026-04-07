@@ -1,6 +1,6 @@
 # End-to-End Streaming Data Pipeline
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💻 [Code Examples](../../README.md)** | **🔄 Streaming Pipeline**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **💻 [Code Examples](../../README.md)** | **🔄 Streaming Pipeline**
 
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)
 ![Architecture](https://img.shields.io/badge/Architecture-Event_Hubs_→_Stream_Analytics_→_Synapse-blue)
@@ -820,8 +820,8 @@ ORDER BY WindowEnd DESC;
 ## Additional Resources
 
 - [Architecture Patterns](../../../03-architecture-patterns/README.md)
-- [Best Practices](../../../best-practices/README.md)
-- [Troubleshooting Guide](../../../troubleshooting/README.md)
+- [Best Practices](../../../05-best-practices/README.md)
+- [Troubleshooting Guide](../../../07-troubleshooting/README.md)
 
 ---
 

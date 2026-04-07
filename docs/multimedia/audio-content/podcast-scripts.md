@@ -1,6 +1,6 @@
 # Podcast Episode Scripts
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🎙️ Podcast Scripts**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **🎙️ Podcast Scripts**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Episodes: 12+](https://img.shields.io/badge/Episodes-12+-blue)
@@ -277,7 +277,7 @@ Provide guests with:
 
 - [Narration Guidelines](narration-guidelines.md)
 - [Recording Setup](recording-setup.md)
-- [Podcast Episodes](podcast-episodes/)
+- [Podcast Episodes](podcast-episodes/README.md)
 
 ---
 

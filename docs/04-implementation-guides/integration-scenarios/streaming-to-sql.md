@@ -1,6 +1,6 @@
 # 💾 Streaming to SQL - Stream Analytics to Azure SQL
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __💾 Streaming to SQL__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🚀 [Implementation Guides](../README.md)__ | __🔗 [Integration Scenarios](README.md)__ | __💾 Streaming to SQL__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
 ![Duration](https://img.shields.io/badge/Duration-45min-blue?style=flat-square)

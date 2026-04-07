@@ -1,6 +1,6 @@
 # 📤 Publishing Workflow Guide
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **📎 [Production Guide](README.md)**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Version: 1.0](https://img.shields.io/badge/Version-1.0-blue)
@@ -180,7 +180,7 @@ content_metadata:
 
 ### Documentation Site
 
-```markdown
+````markdown
 ## Embedding Video
 
 ```html
@@ -188,7 +188,7 @@ content_metadata:
   <source src="https://cdn.example.com/video.mp4" type="video/mp4">
   <track kind="captions" src="captions.vtt" srclang="en">
 </video>
-```
+````
 
 ## 🔍 Post-Publishing Tasks
 

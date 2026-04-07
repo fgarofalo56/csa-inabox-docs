@@ -1,6 +1,6 @@
 # 📋 Presentation Guides - CSA-in-a-Box
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **👤 Guides**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📊 [Presentations](../README.md)** | **👤 Guides**
 
 ![Type: Documentation](https://img.shields.io/badge/Type-Documentation-blue)
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)

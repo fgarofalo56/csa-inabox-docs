@@ -249,9 +249,9 @@ HDInsightYarnMetrics
 
 ## Related Documentation
 
-- [Spark Performance Tuning](../../../best-practices/spark-performance/README.md)
+- [Spark Performance Tuning](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
 - [Kafka Best Practices](../../../02-services/streaming-services/azure-event-hubs/README.md)
-- [HDInsight Troubleshooting](../../../troubleshooting/spark-troubleshooting.md)
+- [HDInsight Troubleshooting](../../../07-troubleshooting/spark-troubleshooting.md)
 
 ---
 

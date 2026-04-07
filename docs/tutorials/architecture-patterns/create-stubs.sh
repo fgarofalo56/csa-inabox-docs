@@ -6,7 +6,7 @@
 cat > streaming/kappa-architecture-tutorial.md << 'EOF'
 # 🔄 Kappa Architecture - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🔄 Kappa Architecture**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🔄 Kappa Architecture**
 
 ![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -27,7 +27,7 @@ EOF
 cat > batch/data-mesh-tutorial.md << 'EOF'
 # 🕸️ Data Mesh - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🕸️ Data Mesh**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🕸️ Data Mesh**
 
 ![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -47,7 +47,7 @@ EOF
 cat > batch/hub-spoke-tutorial.md << 'EOF'
 # 🌟 Hub & Spoke Model - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🌟 Hub & Spoke**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🌟 Hub & Spoke**
 
 ![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)
@@ -68,7 +68,7 @@ EOF
 cat > hybrid/lambda-kappa-hybrid-tutorial.md << 'EOF'
 # ⚡🌊 Lambda-Kappa Hybrid - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **⚡🌊 Hybrid**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **⚡🌊 Hybrid**
 
 ![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -89,7 +89,7 @@ EOF
 cat > reference/iot-analytics-tutorial.md << 'EOF'
 # 🏭 IoT Analytics - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🏭 IoT Analytics**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🏭 IoT Analytics**
 
 ![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -109,7 +109,7 @@ EOF
 cat > reference/retail-analytics-tutorial.md << 'EOF'
 # 🛒 Retail Analytics - Complete Tutorial
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🛒 Retail Analytics**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎓 [Tutorials](../../README.md)** | **🏗️ [Architecture Tutorials](../README.md)** | **🛒 Retail Analytics**
 
 ![Status](https://img.shields.io/badge/Status-Coming_Soon-yellow?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow?style=flat-square)

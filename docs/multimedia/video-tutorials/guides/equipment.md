@@ -1,6 +1,6 @@
 # Video Production Equipment Requirements
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Equipment Guide**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📹 [Video Tutorials](../README.md)** | **👤 Equipment Guide**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Updated: 2025](https://img.shields.io/badge/Updated-2025-blue)

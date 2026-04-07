@@ -1,6 +1,6 @@
 # QUALITY STANDARDS
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **QUALITY STANDARDS**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **QUALITY STANDARDS**
 
 ## Overview
 

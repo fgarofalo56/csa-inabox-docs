@@ -1,6 +1,6 @@
 # UI Transition Specifications
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **🎭 Transitions**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 [Animations](README.md)** | **🎭 Transitions**
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Type: CSS](https://img.shields.io/badge/Type-CSS-blue)

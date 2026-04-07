@@ -1,6 +1,6 @@
 # 🎛️ HDInsight Cluster Types
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🐘 [Azure HDInsight](README.md)** | **🎛️ Cluster Types**
+> **🏠 [Home](../../../README.md)** | **📖 [Overview](../../../01-overview/README.md)** | **🛠️ [Services](../../README.md)** | **💾 Analytics Compute** | **🐘 [Azure HDInsight](README.md)** | **🎛️ Cluster Types**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red?style=flat-square)
@@ -1704,10 +1704,10 @@ az hdinsight monitor enable \
 
 ### Code Examples
 
-- **[Spark Jobs](../../../06-code-examples/by-service/hdinsight/spark-examples.md)** - Spark code samples
-- **[Hive Queries](../../../06-code-examples/by-service/hdinsight/hive-examples.md)** - SQL examples
-- **[HBase Applications](../../../06-code-examples/by-service/hdinsight/hbase-examples.md)** - NoSQL code
-- **[Kafka Examples](../../../06-code-examples/by-service/hdinsight/kafka-examples.md)** - Streaming code
+- **[Spark Jobs](../../../06-code-examples/README.md)** - Spark code samples
+- **[Hive Queries](../../../06-code-examples/README.md)** - SQL examples
+- **[HBase Applications](../../../06-code-examples/README.md)** - NoSQL code
+- **[Kafka Examples](../../../06-code-examples/README.md)** - Streaming code
 
 ---
 

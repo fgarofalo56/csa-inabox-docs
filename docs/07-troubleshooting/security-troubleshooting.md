@@ -1,6 +1,6 @@
 # Security Troubleshooting - CSA in-a-Box
 
-> **[🏠 Home](../../README.md)** | **[📖 Documentation](../README.md)** | **[🔧 Troubleshooting](README.md)** | **👤 Security Issues**
+> **[🏠 Home](../README.md)** | **[📖 Documentation](../README.md)** | **[🔧 Troubleshooting](README.md)** | **👤 Security Issues**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Advanced-red)
 
@@ -830,8 +830,8 @@ AzureActivity
 
 | Resource | Description |
 |----------|-------------|
-| [Network Security Best Practices](../best-practices/network-security.md) | Network security configuration |
-| [Data Governance](../best-practices/data-governance.md) | Data classification and protection |
+| [Network Security Best Practices](../05-best-practices/cross-cutting-concerns/networking/network-security.md) | Network security configuration |
+| [Data Governance](../05-best-practices/README.md) | Data classification and protection |
 | [Security Checklist](../reference/security-checklist.md) | Security validation checklist |
 
 ### External Resources

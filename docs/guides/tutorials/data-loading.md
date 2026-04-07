@@ -1,6 +1,6 @@
 # 📥 Data Loading Tutorial
 
-> **🏠 [Home](../../../README.md)** | **📚 Documentation** | **📖 [Guides](../README.md)** | **🎓 [Tutorials](./README.md)** | **📥 Data Loading**
+> **🏠 [Home](../../tutorials/README.md)** | **📚 Documentation** | **📖 [Guides](../../tutorials/README.md)** | **🎓 [Tutorials](../../tutorials/README.md)** | **📥 Data Loading**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Version](https://img.shields.io/badge/Version-1.0.0-blue)
@@ -523,7 +523,7 @@ Now that you've completed this tutorial, you're ready for:
 
 1. ✅ **[First Pipeline Tutorial](./first-pipeline.md)** - Build end-to-end pipeline
 2. ✅ **[Spark Basics Tutorial](./spark-basics.md)** - Learn PySpark fundamentals
-3. ✅ **[Data Transformation Patterns](../../code-examples/delta-lake/README.md)** - Advanced transformations
+3. ✅ **[Data Transformation Patterns](../../06-code-examples/delta-lake/README.md)** - Advanced transformations
 
 ### Additional Resources
 

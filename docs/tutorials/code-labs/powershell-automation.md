@@ -1,6 +1,6 @@
 # ⚡ PowerShell Automation Scripts Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **⚡ PowerShell Automation**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **⚡ PowerShell Automation**
 
 ![Lab](https://img.shields.io/badge/Lab-PowerShell_Automation-blue)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)

@@ -1,6 +1,6 @@
 # ⚙️ Configuration Generator Tool
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🛠️ [Tools](README.md)** | **⚙️ Config Generator**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🛠️ [Tools](README.md)** | **⚙️ Config Generator**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Utility](https://img.shields.io/badge/Type-Utility-blue)

@@ -1,6 +1,6 @@
 # 📋 Implementing Compliance Controls Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **📋 Compliance**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **📋 Compliance**
 
 ![Lab](https://img.shields.io/badge/Lab-Compliance_Controls-blue)
 ![Duration](https://img.shields.io/badge/Duration-3--4_hours-green)

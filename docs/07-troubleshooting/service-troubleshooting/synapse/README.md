@@ -1,6 +1,6 @@
 # Azure Synapse Troubleshooting Overview
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **👤 Azure Synapse**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../README.md)** | **👤 Azure Synapse**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)
 
@@ -33,8 +33,8 @@ This section provides detailed troubleshooting guidance for Azure Synapse Analyt
 | **Connectivity Failures** | High | Critical | [Connectivity Guide](connectivity.md) |
 | **Query Performance** | High | Medium | [Query Performance Guide](query-performance.md) |
 | **Scaling Issues** | Medium | High | [Scaling Guide](scaling.md) |
-| **Authentication Errors** | Medium | Critical | [Authentication Guide](../../../troubleshooting/authentication-troubleshooting.md) |
-| **Pipeline Failures** | Medium | Medium | [Pipeline Guide](../../../troubleshooting/pipeline-troubleshooting.md) |
+| **Authentication Errors** | Medium | Critical | [Authentication Guide](../../authentication-troubleshooting.md) |
+| **Pipeline Failures** | Medium | Medium | [Pipeline Guide](../../pipeline-troubleshooting.md) |
 
 ---
 
@@ -167,11 +167,11 @@ Before diving into specific guides, collect this information:
 
 | Error Code/Message | Likely Cause | Quick Fix | Detailed Guide |
 |:-------------------|:-------------|:----------|:---------------|
-| `Error 40613` | Resource limit reached | Scale up or wait | [Scaling](scaling.md#resource-limits) |
-| `Error 40501` | Service busy | Retry with backoff | [Query Performance](query-performance.md#service-busy) |
-| `Error 18456` | Authentication failed | Check credentials | [Security](../../../troubleshooting/authentication-troubleshooting.md) |
-| `Timeout expired` | Query too slow | Optimize query | [Query Performance](query-performance.md#timeout-errors) |
-| `Connection failed` | Network issue | Check firewall | [Connectivity](connectivity.md#firewall-issues) |
+| `Error 40613` | Resource limit reached | Scale up or wait | [Scaling](scaling.md) |
+| `Error 40501` | Service busy | Retry with backoff | [Query Performance](query-performance.md) |
+| `Error 18456` | Authentication failed | Check credentials | [Security](../../authentication-troubleshooting.md) |
+| `Timeout expired` | Query too slow | Optimize query | [Query Performance](query-performance.md) |
+| `Connection failed` | Network issue | Check firewall | [Connectivity](connectivity.md) |
 
 ---
 

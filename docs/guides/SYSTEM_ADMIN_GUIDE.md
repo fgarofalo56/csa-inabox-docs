@@ -1,6 +1,6 @@
 # SYSTEM ADMIN GUIDE
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **SYSTEM ADMIN GUIDE**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **SYSTEM ADMIN GUIDE**
 
 ## Overview
 

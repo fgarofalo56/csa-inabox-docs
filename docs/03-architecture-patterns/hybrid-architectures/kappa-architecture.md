@@ -1,6 +1,6 @@
 # Kappa Architecture
 
-> **🏠 [Home](../../../README.md)** | **📖 [Architecture Patterns](../../README.md)** | **🔀 [Hybrid Architectures](./README.md)** | **Kappa Architecture**
+> **🏠 [Home](../../README.md)** | **📖 [Architecture Patterns](../../README.md)** | **🔀 [Hybrid Architectures](./README.md)** | **Kappa Architecture**
 
 ## Overview
 

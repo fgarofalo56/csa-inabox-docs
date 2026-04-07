@@ -1,6 +1,6 @@
 # CICD GUIDE
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **CICD GUIDE**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **CICD GUIDE**
 
 ## Overview
 

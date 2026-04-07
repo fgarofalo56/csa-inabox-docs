@@ -1,6 +1,6 @@
 # Monitoring Setup Guide
 
-[Home](../../README.md) > Monitoring > Monitoring Setup
+[Home](../README.md) > Monitoring > Monitoring Setup
 
 !!! abstract "Overview"
 This guide covers the setup and configuration of monitoring solutions for Azure Synapse Analytics, including Azure Monitor, Log Analytics, and alerting.

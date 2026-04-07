@@ -1,6 +1,6 @@
 # TEMPLATE SYSTEM
 
-> **🏠 [Home](../../README.md)** | **📖 [Guides](./README.md)** | **TEMPLATE SYSTEM**
+> **🏠 [Home](../README.md)** | **📖 [Guides](./README.md)** | **TEMPLATE SYSTEM**
 
 ## Overview
 

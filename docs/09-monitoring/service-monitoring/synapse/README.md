@@ -875,9 +875,9 @@ SynapseIntegrationPipelineRuns
 ### Additional Guides
 
 - [General Monitoring Guide](../../README.md)
-- [Performance Optimization](../../../best-practices/performance-optimization.md)
-- [Security Best Practices](../../../best-practices/security.md)
-- [Cost Optimization](../../../best-practices/cost-optimization.md)
+- [Performance Optimization](../../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
+- [Security Best Practices](../../../reference/security.md)
+- [Cost Optimization](../../../05-best-practices/README.md)
 
 ---
 

@@ -1,6 +1,6 @@
 # 🌊 Event Streaming Basics
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 [Event Hubs](README.md)__ | __🌊 Event Streaming Basics__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 [Event Hubs](README.md)__ | __🌊 Event Streaming Basics__
 
 ![Complexity](https://img.shields.io/badge/Complexity-Beginner-green?style=flat-square)
 ![Type](https://img.shields.io/badge/Type-Conceptual-blue?style=flat-square)
@@ -629,15 +629,15 @@ def calculate_consumer_lag(partition_context, event):
 
 ### Best Practices
 
-- [__Performance Tuning__](../../../05-best-practices/cross-cutting-concerns/performance/eventhub-optimization.md)
-- [__Security Configuration__](../../../05-best-practices/cross-cutting-concerns/security/eventhub-security.md)
+- [__Performance Tuning__](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
+- [__Security Configuration__](../../../05-best-practices/cross-cutting-concerns/security/README.md)
 - [__Disaster Recovery__](../../../05-best-practices/operational-excellence/eventhub-dr.md)
 
 ### Code Examples
 
-- [__Python SDK Examples__](../../../06-code-examples/by-service/event-hubs/python-examples.md)
-- [__C# SDK Examples__](../../../06-code-examples/by-service/event-hubs/dotnet-examples.md)
-- [__Integration Scenarios__](../../../06-code-examples/integration-examples/eventhub-patterns.md)
+- [__Python SDK Examples__](../../../06-code-examples/by-service/event-hubs/README.md)
+- [__C# SDK Examples__](../../../06-code-examples/by-service/event-hubs/README.md)
+- [__Integration Scenarios__](../../../06-code-examples/README.md)
 
 ---
 

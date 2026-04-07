@@ -1,6 +1,6 @@
 # 🔗 Linked Services & Datasets
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Linked Services__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎓 [Tutorials](../README.md)__ | __🔄 [Data Factory](README.md)__ | __Linked Services__
 
 ![Tutorial](https://img.shields.io/badge/Tutorial-Linked_Services-blue)
 ![Duration](https://img.shields.io/badge/Duration-20_minutes-green)

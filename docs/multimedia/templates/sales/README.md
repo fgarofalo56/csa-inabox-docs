@@ -1,6 +1,6 @@
 # 📑 Sales Templates - CSA-in-a-Box
 
-> **🏠 [Home](../../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📋 [Templates](../README.md)** | **👤 Sales**
+> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../../README.md)** | **🎬 [Multimedia](../../README.md)** | **📋 [Templates](../README.md)** | **👤 Sales**
 
 ![Type: Templates](https://img.shields.io/badge/Type-Templates-blue)
 ![Category: Sales](https://img.shields.io/badge/Category-Sales-purple)

@@ -1,6 +1,6 @@
 # 📨 Azure Event Hubs
 
-> __🏠 [Home](../../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 Azure Event Hubs__
+> __🏠 [Home](../../../README.md)__ | __📖 [Overview](../../../01-overview/README.md)__ | __🛠️ [Services](../../README.md)__ | __🔄 [Streaming Services](../README.md)__ | __📨 Azure Event Hubs__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Tier](https://img.shields.io/badge/Tier-Standard%20%7C%20Premium%20%7C%20Dedicated-purple?style=flat-square)
@@ -379,9 +379,9 @@ except KeyboardInterrupt:
 
 ### 🎯 Best Practices
 
-- [__Performance Optimization__](../../../05-best-practices/cross-cutting-concerns/performance/eventhub-optimization.md)
-- [__Security Configuration__](../../../05-best-practices/cross-cutting-concerns/security/eventhub-security.md)
-- [__Cost Optimization__](../../../05-best-practices/cross-cutting-concerns/cost-optimization/eventhub-cost.md)
+- [__Performance Optimization__](../../../05-best-practices/cross-cutting-concerns/performance/README.md)
+- [__Security Configuration__](../../../05-best-practices/cross-cutting-concerns/security/README.md)
+- [__Cost Optimization__](../../../05-best-practices/cross-cutting-concerns/cost-optimization/README.md)
 
 ---
 

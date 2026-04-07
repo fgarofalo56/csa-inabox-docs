@@ -1,6 +1,6 @@
 # 🎨 Brand Assets & Resources
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 Brand**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎨 Brand**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Assets](https://img.shields.io/badge/Type-Assets-blue)
@@ -16,11 +16,11 @@ Centralized repository for Cloud Scale Analytics brand assets, including logos, 
 
 | Asset Type | Format | Download | Usage |
 |------------|--------|----------|-------|
-| Logo (Primary) | SVG, PNG | [Download](assets/logo-primary.svg) | Main brand representation |
-| Logo (White) | SVG, PNG | [Download](assets/logo-white.svg) | Dark backgrounds |
-| Logo (Icon Only) | SVG, PNG | [Download](assets/logo-icon.svg) | Favicons, small spaces |
-| Color Palette | CSS, SCSS | [Download](assets/colors.css) | Web development |
-| Typography | WOFF2, TTF | [Download](assets/fonts/) | All text content |
+| Logo (Primary) | SVG, PNG | *logo-primary.svg (coming soon)* | Main brand representation |
+| Logo (White) | SVG, PNG | *logo-white.svg (coming soon)* | Dark backgrounds |
+| Logo (Icon Only) | SVG, PNG | *logo-icon.svg (coming soon)* | Favicons, small spaces |
+| Color Palette | CSS, SCSS | *colors.css (coming soon)* | Web development |
+| Typography | WOFF2, TTF | *fonts (coming soon)* | All text content |
 | Templates | Various | [Browse](../templates/README.md) | Video, presentations |
 
 ## 🎨 Brand Colors
@@ -354,7 +354,7 @@ Used with permission under [License Type].
 
 Full brand guidelines available at:
 - [Brand Guidelines PDF](../production-guide/brand-guidelines.md)
-- [Visual Style Guide](../../VISUAL-STYLE-GUIDE.md)
+- [Visual Style Guide](../../guides/VISUAL-STYLE-GUIDE.md)
 - [Markdown Style Guide](../../guides/MARKDOWN_STYLE_GUIDE.md)
 
 ## 🔗 Related Resources

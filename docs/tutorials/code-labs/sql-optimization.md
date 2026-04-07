@@ -1,6 +1,6 @@
 # 🎯 SQL Query Optimization Lab
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🎯 SQL Optimization**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎓 Tutorials** | **💻 [Code Labs](README.md)** | **🎯 SQL Optimization**
 
 ![Lab](https://img.shields.io/badge/Lab-SQL_Optimization-blue)
 ![Duration](https://img.shields.io/badge/Duration-2--3_hours-green)

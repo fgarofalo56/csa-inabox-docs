@@ -1,6 +1,6 @@
 # Guided Troubleshooting
 
-[🏠 Home](../../README.md) > [🔧 Troubleshooting](./README.md) > 🧭 Guided Troubleshooting
+[🏠 Home](../README.md) > [🔧 Troubleshooting](./README.md) > 🧭 Guided Troubleshooting
 
 > 🧭 __Interactive Diagnostic Guide__
 > Follow this step-by-step decision tree to diagnose and resolve common Azure Synapse Analytics issues quickly and effectively.
@@ -122,7 +122,7 @@ __Solutions:__
 - Assign required roles: `Storage Blob Data Contributor`, `Synapse Contributor`
 - Wait up to 5 minutes for role propagation
 
-📚 __Related:__ [Security Best Practices](../best-practices/security.md#azure-active-directory-integration)
+📚 __Related:__ [Security Best Practices](../reference/security.md)
 
 #### Step 2C: Service Principal
 
@@ -174,7 +174,7 @@ __Solutions:__
 - Ensure password meets complexity requirements
 - Check if account is locked or disabled
 
-📚 __Related:__ [SQL Performance](../best-practices/sql-performance.md)
+📚 __Related:__ [SQL Performance](../05-best-practices/service-specific/synapse/sql-performance.md)
 
 ---
 
@@ -282,7 +282,7 @@ __Solutions:__
 - Enable "Allow Azure services and resources to access this workspace"
 - For private endpoints, disable public network access
 
-📚 __Related:__ [Network Security](../best-practices/network-security.md)
+📚 __Related:__ [Network Security](../05-best-practices/cross-cutting-concerns/networking/network-security.md)
 
 #### Certificate Issues
 
@@ -379,7 +379,7 @@ __Common Issues:__
 | Memory spills | Insufficient memory grant | Increase DWU, optimize query |
 | Lock waits | Concurrent operations | Use snapshot isolation |
 
-📚 __Related:__ [SQL Performance Best Practices](../best-practices/sql-performance.md)
+📚 __Related:__ [SQL Performance Best Practices](../05-best-practices/service-specific/synapse/sql-performance.md)
 
 #### Spark Performance Diagnostics
 
@@ -398,7 +398,7 @@ __Common Issues:__
 | OOM errors | Insufficient memory | Increase executor memory |
 | Spill to disk | Memory pressure | Optimize transformations |
 
-📚 __Related:__ [Spark Performance Best Practices](../best-practices/spark-performance.md)
+📚 __Related:__ [Spark Performance Best Practices](../05-best-practices/service-specific/synapse/spark-performance.md)
 
 #### Pipeline Performance Diagnostics
 
@@ -416,7 +416,7 @@ __Common Issues:__
 | Mapping data flow slow | Small cluster | Scale up integration runtime |
 | Lookup timeout | Large result set | Use query optimization |
 
-📚 __Related:__ [Pipeline Optimization](../best-practices/pipeline-optimization.md)
+📚 __Related:__ [Pipeline Optimization](../05-best-practices/cross-cutting-concerns/development/pipeline-optimization.md)
 
 ---
 
@@ -490,7 +490,7 @@ __Solutions:__
 - Z-ORDER on frequently filtered columns: `OPTIMIZE <table_name> ZORDER BY (column1, column2)`
 - Vacuum old files: `VACUUM <table_name> RETAIN 168 HOURS`
 
-📚 __Related:__ [Delta Lake Optimization](../best-practices/delta-lake-optimization.md)
+📚 __Related:__ [Delta Lake Optimization](../05-best-practices/service-specific/databricks/delta-lake-optimization.md)
 
 ---
 
@@ -640,8 +640,8 @@ When all else fails, work through this checklist:
 | Resource | Description | Link |
 |----------|-------------|------|
 | 🔧 __Troubleshooting Hub__ | All troubleshooting guides | [Troubleshooting](./README.md) |
-| 📖 __Best Practices__ | Prevention strategies | [Best Practices](../best-practices/README.md) |
-| 📊 __Monitoring Setup__ | Proactive monitoring | [Monitoring](../monitoring/README.md) |
+| 📖 __Best Practices__ | Prevention strategies | [Best Practices](../05-best-practices/README.md) |
+| 📊 __Monitoring Setup__ | Proactive monitoring | [Monitoring](../09-monitoring/README.md) |
 | 💬 __FAQ__ | Common questions | [FAQ](../faq.md) |
 
 ---

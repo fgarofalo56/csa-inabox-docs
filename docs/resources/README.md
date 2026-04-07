@@ -1,6 +1,6 @@
 # 💼 Business Resources
 
-> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__
+> __🏠 [Home](../README.md)__ | __📖 [Documentation](../README.md)__ | __💼 Resources__
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)
 ![Resources](https://img.shields.io/badge/Resources-4-blue?style=flat-square)

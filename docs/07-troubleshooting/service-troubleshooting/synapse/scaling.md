@@ -1,6 +1,6 @@
 # Azure Synapse Scaling Troubleshooting
 
-> **[🏠 Home](../../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../../../README.md)** | **[⚡ Synapse](README.md)** | **👤 Scaling**
+> **[🏠 Home](../../../README.md)** | **[📖 Documentation](../../../README.md)** | **[🔧 Troubleshooting](../../../README.md)** | **[⚡ Synapse](README.md)** | **👤 Scaling**
 
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen) ![Complexity](https://img.shields.io/badge/Complexity-Intermediate-yellow)
 
@@ -801,8 +801,8 @@ Contact Microsoft Support if:
 
 - [Connectivity Troubleshooting](connectivity.md)
 - [Query Performance](query-performance.md)
-- [Cost Optimization Best Practices](../../../best-practices/cost-optimization.md)
-- [Performance Optimization](../../../best-practices/performance-optimization.md)
+- [Cost Optimization Best Practices](../../../05-best-practices/README.md)
+- [Performance Optimization](../../../05-best-practices/cross-cutting-concerns/performance/performance-optimization.md)
 - [Synapse Capacity Management](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-manage-compute-overview)
 
 ---

@@ -1,6 +1,6 @@
 # ✂️ Audio Editing Guidelines
 
-> **🏠 [Home](../../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **✂️ Editing Guidelines**
+> **🏠 [Home](../../README.md)** | **📖 [Documentation](../../README.md)** | **🎬 [Multimedia](../README.md)** | **🎧 [Audio Content](README.md)** | **✂️ Editing Guidelines**
 
 ![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Type: Technical Guide](https://img.shields.io/badge/Type-Technical-blue)

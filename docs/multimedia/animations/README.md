@@ -1,6 +1,6 @@
 # 🎨 Animation Storyboards & Motion Graphics
 
-> __🏠 [Home](../../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎨 Animations__
+> __🏠 [Home](../../README.md)__ | __📖 [Documentation](../../README.md)__ | __🎬 Multimedia__ | __🎨 Animations__
 
 ![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen)
 ![Animations: 30+](https://img.shields.io/badge/Animations-30+-blue)
@@ -18,7 +18,7 @@ High-quality animations and motion graphics that bring Cloud Scale Analytics con
 
 __Duration__: 30 seconds  
 __Format__: Lottie JSON  
-__[View Animation](./animations/stream-processing.json)__ | __[Storyboard](./storyboards/stream-processing.md)__
+*Animation: stream-processing.json (coming soon)* | __[Storyboard](./storyboards/stream-processing.md)__
 
 ```json
 {
@@ -58,7 +58,7 @@ __[View Animation](./animations/stream-processing.json)__ | __[Storyboard](./sto
 
 __Duration__: 45 seconds  
 __Format__: SVG Animation  
-__[View Animation](./animations/etl-pipeline.svg)__ | __[Storyboard](./storyboards/etl-pipeline.md)__
+*Animation: etl-pipeline.svg (coming soon)* | __[Storyboard](./storyboards/etl-pipeline.md)__
 
 ```svg
 <svg viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +141,7 @@ __[View Animation](./animations/etl-pipeline.svg)__ | __[Storyboard](./storyboar
 
 __Duration__: 60 seconds  
 __Format__: After Effects + Lottie  
-__[View Animation](./animations/scaling-architecture.json)__
+*Animation: scaling-architecture.json (coming soon)*
 
 Storyboard:
 
@@ -156,7 +156,7 @@ Storyboard:
 
 __Duration__: 90 seconds  
 __Format__: SVG + CSS Animation  
-__[View Animation](./animations/modernization.html)__
+*Animation: modernization.html (coming soon)*
 
 ```html
 <!DOCTYPE html>
@@ -271,7 +271,7 @@ __[View Animation](./animations/modernization.html)__
 
 __Duration__: 40 seconds  
 __Format__: Lottie  
-__[View Animation](./animations/data-ingestion.json)__
+*Animation: data-ingestion.json (coming soon)*
 
 ```javascript
 // Lottie Animation Controller
@@ -335,7 +335,7 @@ class DataIngestionAnimation {
 
 __Duration__: 35 seconds  
 __Format__: SVG + GSAP  
-__[View Animation](./animations/security-layers.html)__
+*Animation: security-layers.html (coming soon)*
 
 ```javascript
 // GSAP Timeline for Security Animation
@@ -412,7 +412,7 @@ securityTimeline
 
 __Duration__: 50 seconds  
 __Format__: Canvas Animation  
-__[View Animation](./animations/microservices.html)__
+*Animation: microservices.html (coming soon)*
 
 ```javascript
 // Canvas-based Microservices Animation
@@ -575,9 +575,9 @@ class Message {
 
 ### After Effects Templates
 
-- __[Data Flow Template](./templates/after-effects/data-flow.aep)__
-- __[Architecture Diagram Template](./templates/after-effects/architecture.aep)__
-- __[Process Animation Template](./templates/after-effects/process.aep)__
+- *Template: data-flow.aep (coming soon)*
+- *Template: architecture.aep (coming soon)*
+- *Template: process.aep (coming soon)*
 
 ### Lottie Export Settings
 
