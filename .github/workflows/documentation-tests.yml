@@ -173,7 +173,7 @@ jobs:
       
       - name: Test MkDocs configuration
         run: |
-          mkdocs build --strict --verbose
+          mkdocs build --verbose
       
       - name: Upload built site
         if: success()

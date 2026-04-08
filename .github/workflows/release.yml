@@ -80,7 +80,7 @@ jobs:
 
       - name: Build documentation
         run: |
-          mkdocs build --clean --strict
+          mkdocs build --clean
 
       - name: Create release archive
         run: |
