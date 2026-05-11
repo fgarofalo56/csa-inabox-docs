@@ -1,4 +1,17 @@
-# 🌐 Cloud Scale Analytics Documentation
+# ⚠️ This Repository Has Been Retired
+
+> **This repository is no longer maintained.** All content has been folded into the
+> **Complete Cloud Scale Analytics in a Box** repository.
+>
+> - **New repository:** https://github.com/fgarofalo56/csa-inabox
+> - **New documentation site:** https://fgarofalo56.github.io/csa-inabox/
+>
+> Please update any bookmarks, links, or references to point to the new location.
+> No further updates, issues, or pull requests will be accepted here.
+
+---
+
+# 🌐 Cloud Scale Analytics Documentation (Archived)
 
 <div align="center">
 
